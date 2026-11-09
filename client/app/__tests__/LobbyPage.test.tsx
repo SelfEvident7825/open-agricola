@@ -549,7 +549,7 @@ describe('LobbyPage player count selection', () => {
   it('creates a four-player classic hotseat and excludes incompatible expansions', async () => {
     render(<LobbyPage />)
     fireEvent.click(screen.getByRole('button', { name: 'Local Hotseat' }))
-    fireEvent.click(screen.getByRole('radio', { name: 'platform.classicEdition' }))
+    fireEvent.click(screen.getByRole('radio', { name: 'Classic Agricola (preview)' }))
     expect(screen.queryByRole('button', { name: '2 Players' })).toBeNull()
     expect(screen.getByRole('button', { name: '4 Players' })).toBeDefined()
     expect(screen.getByRole('checkbox', { name: /Enable Parent Cards/ })).toBeDisabled()
@@ -561,6 +561,17 @@ describe('LobbyPage player count selection', () => {
 
 
 describe('team creation options', () => {
+  it('clears the classic selection when switching to the revised team mode', async () => {
+    render(<LobbyPage />)
+    fireEvent.click(screen.getByRole('button', { name: 'Local Hotseat' }))
+    fireEvent.click(screen.getByRole('radio', { name: 'Classic Agricola (preview)' }))
+    fireEvent.click(screen.getByRole('button', { name: 'Cancel' }))
+    fireEvent.click(screen.getByRole('button', { name: 'Team game', exact: true }))
+    expect(screen.queryByRole('radio', { name: 'Classic Agricola (preview)' })).toBeNull()
+    expect(screen.getByRole('button', { name: '6 Players' })).toBeVisible()
+    fireEvent.click(screen.getByRole('button', { name: 'Create Game', exact: true }))
+    expect(vi.mocked(startRoomCreation).mock.calls.at(-1)?.[0].gameEdition).toBeUndefined()
+  })
   it('marks team entrances and explains Beta only on the creation panel', async () => {
     render(<LobbyPage />)
     expect(within(screen.getByRole('button', { name: 'Team game', exact: true })).getByText('Beta')).toBeVisible()
