@@ -18,6 +18,8 @@ export type CardFieldSlot = (CardFieldStack & { below?: CardFieldStack[] }) | nu
 export type CardFieldDef = {
   allowedCrops: readonly Crop[]
   capacity: number
+  /** Each sowing slot is a distinct logical field (classic Copse). */
+  separateFields?: boolean
 }
 
 export type CardFieldReapContext = {
@@ -195,7 +197,7 @@ const getCardFields = (player: PlayerState): readonly LogicalField[] =>
   [...new Set(playedCardIds(player))]
     .filter((cardId) => cardFieldDefs.has(cardId))
     .sort()
-    .map((cardId): LogicalField => {
+    .flatMap((cardId): LogicalField[] => {
       const slots = readSlots(player, cardId)
       const logicalSlots = Object.freeze(slots.map((slot, index) => {
         const stack = slot ? freezeStack({ kind: slot.crop, remaining: slot.remaining }) : null
@@ -208,7 +210,7 @@ const getCardFields = (player: PlayerState): readonly LogicalField[] =>
             : []),
         })
       }))
-      return Object.freeze({
+      const field: LogicalField = Object.freeze({
         id: `card:${cardId}`,
         kind: 'card',
         row: -1,
@@ -219,6 +221,11 @@ const getCardFields = (player: PlayerState): readonly LogicalField[] =>
         groupKey: cardId,
         allowedCrops: Object.freeze([...cardFieldDefs.get(cardId)!.allowedCrops]),
       })
+      return cardFieldDefs.get(cardId)!.separateFields
+        ? logicalSlots.map(slot => Object.freeze({ ...field, id: `card:${cardId}:${slot.index}`,
+            col: slot.tile.col, groupKey: `${cardId}:${slot.index}`,
+            stacks: slot.layers, slots: Object.freeze([slot]) }))
+        : [field]
     })
 
 export const getLogicalFields = (player: PlayerState): readonly LogicalField[] =>
@@ -253,11 +260,11 @@ export const mutateLogicalFields = (
     player.fields.find((field) => farmyardFieldId(field) === target.fieldId)
   const cardTarget = (target: LogicalFieldTarget) => {
     if (!target.fieldId.startsWith('card:')) return
-    const cardId = target.fieldId.slice('card:'.length)
+    const [cardId, slotSuffix] = target.fieldId.slice('card:'.length).split(':')
     if (!playedCardIds(player).includes(cardId)) return
     const def = cardFieldDefs.get(cardId)
     if (!def) return
-    const slot = target.slot ?? 0
+    const slot = target.slot ?? (slotSuffix === undefined ? 0 : Number(slotSuffix))
     if (!Number.isSafeInteger(slot) || slot < 0 || slot >= def.capacity) return
     return { cardId, def, slot, slots: readSlots(player, cardId, def) }
   }
@@ -548,7 +555,7 @@ export const makeCardFieldImpl = (
             tile: { row: -1, col: baseCol + i },
             allowedCrops: [...def.allowedCrops],
             sourceCard: cardId,
-            groupKey: def.capacity > 1 ? cardId : undefined,
+            groupKey: def.separateFields ? `${cardId}:${i}` : def.capacity > 1 ? cardId : undefined,
           })
         }
         return entries

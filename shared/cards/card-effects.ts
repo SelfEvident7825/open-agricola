@@ -289,6 +289,11 @@ export type CardEffect = {
   getRuleContributions?: (player: Readonly<PlayerState>) => CardRuleContributions | void
   getStatePresentation?: (player: Readonly<PlayerState>) => CardStatePresentation | void
   computeHarvestBreedOrderPriority?: (state: GameState, player: PlayerState) => number | void
+  /** Higher values feed later; equal priorities preserve the normal seat order. */
+  computeHarvestFeedingOrderPriority?: (state: GameState, player: PlayerState) => number
+  /** Applies to ordinary and card-granted placements, including temporary guests. */
+  blocksWorkerPlacement?: (state: GameState, player: PlayerState) => boolean
+  permitsActionSpaceEntry?: (state: GameState, owner: PlayerState, actor: PlayerState, spaceId: string) => boolean
   computePastureCapacityModifiers?: (
     player: PlayerState,
     state: GameState,
@@ -379,6 +384,18 @@ export const getCardEffect = (id: string): CardEffect | null => {
   if (custom) return custom
   return active.getEffect(id) ?? null
 }
+
+export const isWorkerPlacementBlocked = (state: GameState, player: PlayerState): boolean =>
+  [...(player.improvements ?? []), ...(player.minorPlayed ?? []), ...(player.occupationPlayed ?? [])].some(id =>
+    getCardEffect(id)?.blocksWorkerPlacement?.(state, player) === true)
+
+export const cardEffectsPermitSpaceEntry = (state: GameState, actor: PlayerState, spaceId: string): boolean =>
+  state.players.every(owner => [...owner.improvements, ...owner.minorPlayed, ...owner.occupationPlayed].every(id =>
+    getCardEffect(id)?.permitsActionSpaceEntry?.(state, owner, actor, spaceId) !== false))
+
+export const getHarvestFeedingOrderPriority = (state: GameState, player: PlayerState): number =>
+  Math.max(0, ...[...player.improvements, ...player.minorPlayed, ...player.occupationPlayed].map(id =>
+    getCardEffect(id)?.computeHarvestFeedingOrderPriority?.(state, player) ?? 0))
 
 export const resourceCommitmentsSatisfied = (state: GameState): boolean => {
   const totals = new Map<string, Partial<Resource>>()

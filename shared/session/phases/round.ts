@@ -28,7 +28,7 @@ import { applyActionPlacement, canEnterActionSpace } from '../action-entry-query
 import { endTurnScope, recordActionSnapshot, readActionSnapshotExtraData } from '../../cards/helpers/action-snapshot.ts'
 import { collectBeforeActionSpaceUseFlows } from '../../cards/card-listeners.ts'
 import { recordActionSpaceUse } from '../../domain/action-space-use'
-import { shouldSkipPlayerTurn, hasPendingExtraTurn, collectExtraTurnFlow, skipPendingExtraTurn } from '../../cards/card-effects.ts'
+import { isWorkerPlacementBlocked, shouldSkipPlayerTurn, hasPendingExtraTurn, collectExtraTurnFlow, skipPendingExtraTurn } from '../../cards/card-effects.ts'
 import { tagAnytimeTurnFlow, tagInjectedAnytimeFlow } from '../../engine/action-context-flags.ts'
 import { appendImmediateEvents } from '../../events/append.ts'
 import { hasPendingOrdinaryCardDrawChoice } from '../ordinary-card-draw.ts'
@@ -52,7 +52,7 @@ export const nextSeatedPlayerIdx = (
 ): number => walkSeats(state, players, current, direction, 1, actionHooks)
 
 const canTakeRotationTurn = (state: GameState, candidate: PlayerState | undefined, actionHooks?: ActionHookRegistry): boolean =>
-  candidate !== undefined && (workersAvailable(state, candidate) > 0 || hasPendingExtraTurn(state, candidate, actionHooks))
+  candidate !== undefined && !isWorkerPlacementBlocked(state, candidate) && (workersAvailable(state, candidate) > 0 || hasPendingExtraTurn(state, candidate, actionHooks))
 
 const walkSeats = (
   state: GameState,
@@ -108,14 +108,14 @@ export const nextWorkRotationIdx = (state: GameState, current: number, actionHoo
  * extra-turn gating applied to `nextSeatedPlayerIdx` and the rotation skip loop.
  */
 export const roundWorkComplete = (state: GameState, actionHooks?: ActionHookRegistry): boolean =>
-  state.players.every((p) => workersAvailable(state, p) <= 0 && !hasPendingExtraTurn(state, p, actionHooks))
+  state.players.every((p) => !canTakeRotationTurn(state, p, actionHooks))
 
 export const startPendingExtraTurnIfAny = (core: GameCore): boolean => {
   if (core.engineStackDepth() > 0) return false
   const state = core.state
   if (hasPendingOrdinaryCardDrawChoice(state)) return false
   const current = state.players[state.currentPlayerIndex]
-  if (!current || state.roundPhase !== 'work' || state.gameOver || state.phase !== 'playing') return false
+  if (!current || state.roundPhase !== 'work' || state.gameOver || state.phase !== 'playing' || isWorkerPlacementBlocked(state, current)) return false
   const extra = collectExtraTurnFlow(state, current, workersAvailable(state, current) > 0, core.actionHooks)
   if (!extra) return false
   if (state.enableFarmersOfTheMoor && hasHealthyWorkerAtHome(state, current) && extra.flow.type === 'xor' && !extra.cardId) {
@@ -652,7 +652,7 @@ export const handleConfirmNextPlayerResolved = (
     // A 0-worker player is normally skipped — unless a card owes them an extra
     // turn (e.g. A92 AdoptiveParents), in which case the rotation stops on them
     // so the contributed flow can be offered below.
-    if (workersAvailable(state, current) <= 0 && !hasPendingExtraTurn(state, current, core.actionHooks)) {
+    if (!canTakeRotationTurn(state, current, core.actionHooks)) {
       const next = nextWorkRotationIdx(state, state.currentPlayerIndex, core.actionHooks)
       if (next === state.currentPlayerIndex) break
       state.currentPlayerIndex = next

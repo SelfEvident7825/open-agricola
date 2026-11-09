@@ -79,6 +79,7 @@ See [ADR 0017](../adr/0017-logical-field-ownership-boundary.md).
 cardField?: {
   allowedCrops: readonly ('grain' | 'vegetable' | 'wood' | 'stone')[]
   capacity: number
+  separateFields?: boolean
 }
 ```
 
@@ -87,9 +88,9 @@ cardField?: {
 - Storage accepts every legal field good. `allowedCrops` is the ordinary Sow capability, not the storage schema: `place` enforces it unless a card effect bypasses it explicitly; Sow and `replace` always enforce it; `insertBottom` adds a rule-granted crop under the top without a new slot or the Sow whitelist.
 - `fieldOperationFlow` `move` accepts `sourceCrops`; the destination continuation rechecks the source crop and quantity, destination occupancy and `allowedCrops` before storing positions or mutating.
 - Card Field slots store a top `{ crop, remaining }` and optional `below` layers. Normal Reap takes one crop per occupied slot; extra and whole-field harvest continue through lower layers.
-- A Card Field has one stable Logical Field id and one `groupKey`; its slots keep stable coordinates. Base field scoring counts Farmyard Fields only.
+- A Card Field normally has one stable Logical Field id and one `groupKey`; `separateFields` gives each slot its own logical identity and group while retaining stable coordinates. Base field scoring counts Farmyard Fields only.
 - `onReap` runs only for reap; `onCropRemoved` for every real removal. Each runs after the shared mutation, once per crop, and returned flows join the ordinary parallel reaction. A selection resolves a removal callback's flow before its next parent continuation.
-- `reap` is the single reaping implementation for both storage owners ([Stage hooks](hooks.md#stage-hooks)). A multi-slot Card Field reaps every occupied slot but counts once per Logical Field and crop.
+- `reap` is the single reaping implementation for both storage owners ([Stage hooks](hooks.md#stage-hooks)). A multi-slot Card Field reaps every occupied slot but counts once per Logical Field and crop. The harvest-count tag `retain-harvested-crops` takes goods from supply, leaves the stack intact and emits no crop-removal callback. `actionContext.sowStackDelta` adjusts initial stacks on the prepared copy before the atomic sow commit.
 - The low-level adapter inside `card-field.ts` is the only Card Impl code that touches `PlayerState.fields`; `check:card-impl-boundaries` rejects any property or bracket access named `fields` in other production card and helper sources, whatever the receiver, with no allowlist.
 
 Tests: `shared/cards/__tests__/{AB,CD,EM}-logical-field-boundary.test.ts`, `shared/actions/effects/__tests__/{reap,sow-permissions}.test.ts`.
@@ -116,3 +117,5 @@ Classic sources use a separate ID namespace and deal pool; unsupported classic c
 `occupationCount` weights logical occupation requirements and counts while each card remains one played card. `plowEffect` identifies mutually exclusive plow uses; the helper stores the Action Space Use identity in card-local state. Returning a played improvement also removes that card owner's future scheduled goods.
 
 Breeding first checks `getBreedThreshold()`, then `getBreedOffspringCount()` applies each played card's `computeBreedOffspringCount` to the default one offspring. Results are finite, floored and nonnegative; placement and breed summaries use the resulting count. `computeHarvestBreedOrderPriority()` only changes ordering.
+
+`blocksWorkerPlacement` and `permitsActionSpaceEntry` are pure card queries checked by ordinary and card-driven placement admission. Work rotation skips blocked players; physical worker counts remain registry-free. Scheduled temporary workers use `supplyUse.availableFromRound` and `returnRound`, remain outside family size and feeding, and survive serialization. `computeHarvestFeedingOrderPriority` sorts only the feeding queue, preserving normal seating order for ties. Tests: `server/__tests__/classic-i-session.test.ts` and `shared/cards/__tests__/classic-i-rules.test.ts`.

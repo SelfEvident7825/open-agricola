@@ -151,13 +151,23 @@ const finalizeSow = (
       }
     }
   }
+  // Apply restricted stack sizes to the prepared copy, before committing it.
+  const stackDelta = ctx.actionContext?.sowStackDelta
+  if (typeof stackDelta === 'number' && Number.isSafeInteger(stackDelta) && stackDelta !== 0) {
+    for (const crop of crops) {
+      const adjusted = stackDelta > 0
+        ? mutations.grow({ row: crop.row, col: crop.col }, stackDelta)
+        : mutations.remove({ row: crop.row, col: crop.col }, -stackDelta)
+      if (!adjusted.ok) return { type: 'fail', errorKey: 'invalid sow stack size', recoverable: true }
+    }
+  }
   const farmOperation = commitFarmOperation(player, { kind: 'crops', positions: crops, preparedPlayer: nextPlayer, sourceCardId: ctx.sourceCard }, ctx.eventSink)
   ctx.eventSink?.emit<'farm.sown'>({
     type: 'farm.sown',
     sows: crops.map((crop) => ({
       location: { kind: 'field', playerId: player.id, row: crop.row, col: crop.col },
       crop: crop.crop,
-      added: sowedAmount(crop.crop),
+      added: sowedAmount(crop.crop) + (typeof stackDelta === 'number' ? stackDelta : 0),
     })),
   })
   return { type: 'ok', farmOperations: [farmOperation] }

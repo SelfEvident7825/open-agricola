@@ -330,6 +330,8 @@ export type Worker = {
     sourceCard?: string
     disposition: SupplyWorkerSource['disposition']
     status: 'reserved' | 'pending' | 'temporary'
+    /** A scheduled guest cannot work before this round. */
+    availableFromRound?: number
     returnRound?: number
   }
 }

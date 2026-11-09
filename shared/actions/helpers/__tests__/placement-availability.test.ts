@@ -13,8 +13,8 @@ describe('computeAllowedPlacementSpaces', () => {
   it('can be imported by the runtime from place-farmer without module init cycles', () => {
     expect(() =>
       execFileSync(
-        'pnpm',
-        ['exec', 'tsx', '-e', "import './shared/actions/effects/place-farmer.ts'"],
+        process.execPath,
+        ['--import', 'tsx', '--input-type=module', '-e', "import './shared/actions/effects/place-farmer.ts'"],
         {
           cwd: process.cwd(),
           stdio: 'pipe',
