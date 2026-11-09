@@ -4,7 +4,7 @@
   "applicationBase": "d4fbac1b912df3b85418df6bf07e17dc197d0443",
   "deliveryOrigin": "Classic/E and I source deliveries integrated onto current upstream history.",
   "languagePin": {
-    "repository": "titanxxh/open-agricola-i18n",
+    "repository": "SelfEvident7825/open-agricola-i18n",
     "revision": "3055aeca9e67f0c8f3ed7077e79047cd0c23006e",
     "manifestSha256": "19e057a4f5c18a39af0283dc6d08367d6fb2ce24f0790ff49c97ff65b8bc2320"
   },
@@ -640,7 +640,7 @@
     "The selected scope is not the full repository suite or all card combinations.",
     "Database integration was not run locally: Docker/PostgreSQL are unavailable.",
     "Browser end-to-end tests were not run in this preparation pass.",
-    "GitHub authentication is absent: commits are local; no push, PR, CI run, merge or deployment has occurred.",
-    "The language revision must be published and its repository updated if pushed to a fork before application CI."
+    "This report records local validation. GitHub CI results must be checked on the pull requests for their current heads before merging or deploying.",
+    "The language revision is published in SelfEvident7825/open-agricola-i18n. The application pins that reachable fork until the companion language change is accepted upstream."
   ]
 }
