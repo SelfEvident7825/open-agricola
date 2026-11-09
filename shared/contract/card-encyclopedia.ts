@@ -17,7 +17,7 @@ export type EncyclopediaPublicType =
 
 /** Declared deck / expansion order; the catalog's default order starts from this. */
 export const ENCYCLOPEDIA_GROUPS = [
-  'A', 'B', 'C', 'D', 'E', 'M', 'majorStandard', 'major56', 'majorMoor', 'parents', 'moor', 'seasons',
+  'A', 'B', 'C', 'D', 'E', 'M', 'majorStandard', 'major56', 'majorMoor', 'parents', 'moor', 'seasons', 'classic',
 ] as const
 
 export type EncyclopediaGroup = typeof ENCYCLOPEDIA_GROUPS[number]
@@ -67,6 +67,7 @@ export type EncyclopediaScore = { readonly fixed: number | null; readonly extraV
 export type EncyclopediaPlayers = { readonly minimum: number } | { readonly counts: readonly number[] }
 
 export type EncyclopediaEntry = {
+  readonly availableInGame?: boolean
   readonly key: string
   readonly sourceKind: EncyclopediaSourceKind
   readonly sourceId: string

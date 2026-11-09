@@ -46,7 +46,14 @@ const buildOccupationCostProvider = (
   player: PlayerState,
   occupationId: string,
   costOverride?: Partial<PlayerState['resources']>,
-) => () => costOverride ?? getOccupationCost(player, occupationId) ?? {}
+) => () => {
+  const cost = { ...(getOccupationCost(player, occupationId) ?? {}) }
+  for (const [key, amount] of Object.entries(costOverride ?? {})) {
+    const resource = key as keyof Resource
+    cost[resource] = (cost[resource] ?? 0) + (amount ?? 0)
+  }
+  return cost
+}
 
 const canAffordOccupationPreviewCost = (
   state: GameState,
@@ -441,7 +448,7 @@ const resolveOccupationActionPaymentCost = (
     player,
     'occupation',
     occupationId,
-    () => baseCost,
+    buildOccupationCostProvider(player, occupationId, baseCost),
     actionCardId,
     actionHooks,
   )

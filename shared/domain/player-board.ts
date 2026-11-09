@@ -2,7 +2,7 @@ import type { GameState, PlayerState } from '../contract/types.ts'
 import type { AnimalKey } from '../contract/animals.ts'
 import { Farmyard } from './farmyard.ts'
 import { FarmInteraction } from './farmyard-interaction.ts'
-import { AnimalZones } from './animal-zones.ts'
+import { AnimalZones, computeAnimalZones } from './animal-zones.ts'
 
 type AnimalType = AnimalKey
 
@@ -29,7 +29,7 @@ export class PlayerBoard {
     this.player = player
     this.state = state
     this.animals = new AnimalZones(player, state)
-    this.farmyard = new Farmyard(player, state, () => this.animals.nonPastureAnimalCounts())
+    this.farmyard = new Farmyard(player, state, () => this.animals.nonPastureAnimalCounts(), candidate => computeAnimalZones(candidate, state).filter(zone => zone.zoneType === 'pasture'))
     this.farmInteraction = new FarmInteraction(player)
   }
 

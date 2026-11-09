@@ -1,3 +1,4 @@
+import { animalZoneCapacity } from '../contract/animal-zone-capacity'
 import { commitFarmOperation } from './farm-operations'
 import { animalZoneOccupancyGroup, areZoneOccupancyLimitsSatisfied } from '../contract/animal-zone-occupancy'
 import { countRoomAnimals } from './animals'
@@ -34,6 +35,7 @@ export type AnimalZone = {
   id: string
   zoneType: 'pasture' | 'house' | 'stable' | 'card'
   capacity: number
+  reservedCapacity?: Partial<Record<AnimalKey, number>>
   blocked?: boolean
   houseAnimalZone?: boolean
   animalType?: AnimalType | null
@@ -238,7 +240,7 @@ export const normalizeAnimalCountsForZone = (
   for (const meeple of invalid) {
     counts[meeple.type] = Math.max(0, (counts[meeple.type] ?? 0) - 1)
   }
-  counts = clampAnimalCountsToCapacity(counts, zone.capacity).counts
+  counts = clampAnimalCountsToCapacity(counts, animalZoneCapacity(zone, counts)).counts
   return counts
 }
 
@@ -480,6 +482,7 @@ export const computeAnimalZones = (
         capacity,
         animalType: pasture.animalType ?? null,
         animalCount: pasture.animalCount,
+        ...(pasture.animalCounts ? { animalCounts: pasture.animalCounts } : {}),
         pastureIndex: index,
       }
     }),
@@ -706,7 +709,7 @@ const canPlaceAnimalInWorkZone = (
     return null
   }
   const next = candidateZoneWithAnimal(zone, type)
-  return computeInvalidAnimalsForZone(state, player, next).length === 0 ? next : null
+  return next.animalCount <= animalZoneCapacity(next, next.animalCounts) && computeInvalidAnimalsForZone(state, player, next).length === 0 ? next : null
 }
 
 export const canAccommodateAnimalTotals = (
@@ -779,7 +782,7 @@ export const prefillAnimalZones = (
   for (const zone of workZones) {
     for (const type of ALL_ANIMAL_KEYS) placed[type] = (placed[type] ?? 0) + (zone.animalCounts[type] ?? 0)
     const occupied = ALL_ANIMAL_KEYS.filter((type) => (zone.animalCounts[type] ?? 0) > 0)
-    if (zone.animalCount > zone.capacity
+    if (zone.animalCount > animalZoneCapacity(zone, zone.animalCounts)
       || (zone.blocked && zone.animalCount > 0)
       || occupied.some((type) => !keys.includes(type))
       || (!allowsMixedAnimalTypes(zone) && occupied.length > 1)
@@ -877,7 +880,7 @@ export const enforceAnimalCapacity = (
   state: GameState = { completedFeedingPhases: 0 } as GameState,
 ) => {
   const zones = computeAnimalZones(player, state)
-  const zoneCapacity = (id: string) => zones.find((z) => z.id === id)?.capacity ?? 0
+  const zoneCapacity = (id: string, type: AnimalType) => { const zone = zones.find(z => z.id === id); return zone ? animalZoneCapacity(zone, { [type]: zone.capacity }) : 0 }
 
   const animalKeys = animalKeysForState(state)
   const totals: Partial<Record<AnimalType, number>> = {}
@@ -891,18 +894,15 @@ export const enforceAnimalCapacity = (
     if (assignment) stableAnimals[key] = { ...assignment }
   })
   commitFarmOperation(player, { kind: 'pastures', positions: [], pastures: player.pastures.map((pasture) => {
-    const capacity = zoneCapacity(pasture.id)
-    if (pasture.animalType) {
-      const remaining = totals[pasture.animalType] ?? 0
-      const count = Math.min(remaining, capacity)
-      totals[pasture.animalType] = remaining - count
-      return {
-        ...pasture,
-        animalCount: count,
-        animalType: count > 0 ? pasture.animalType : null,
-      }
-    }
-    return { ...pasture, animalCount: 0, animalType: null }
+    const zone = zones.find(z => z.id === pasture.id)!
+    const current = readAnimalCountsForZoneAssignment(pasture)
+    const requested = Object.fromEntries(animalKeys.map(type => [type, Math.min(current[type] ?? 0, totals[type] ?? 0)]))
+    const counts = normalizeAnimalCountsForZone(state, player, zone, { animalCounts: requested })
+    // Preserve existing assignments before filling empty slots below.
+    for (const type of animalKeys) totals[type] = (totals[type] ?? 0) - (counts[type] ?? 0)
+    const { animalCounts: _oldCounts, ...rest } = pasture
+    const type = singleAnimalType(counts)
+    return { ...rest, animalType: type, animalCount: sumAnimalCounts(counts), ...(type === null && sumAnimalCounts(counts) > 0 ? { animalCounts: compactAnimalCounts(counts) } : {}) }
   }) })
   const houseZones = zones.filter(zone => zone.zoneType === 'house')
   player.houseAnimals = {}
@@ -922,7 +922,7 @@ export const enforceAnimalCapacity = (
     const assignment = stableAnimals[key]
     if (!assignment) return
     const type = assignment.animalType
-    const cap = zoneCapacity(`stable:${key}`)
+    const cap = zoneCapacity(`stable:${key}`, type)
     const remaining = totals[type] ?? 0
     const count = Math.min(remaining, cap)
     totals[type] = remaining - count
@@ -930,7 +930,7 @@ export const enforceAnimalCapacity = (
     else delete stableAnimals[key]
   })
   const fillPasture = (pasture: Pasture, animalType: AnimalType) => {
-    const capacity = zoneCapacity(pasture.id)
+    const capacity = zoneCapacity(pasture.id, animalType)
     const remaining = totals[animalType] ?? 0
     if (remaining <= 0) return pasture
     const count = Math.min(remaining, capacity)
@@ -942,7 +942,23 @@ export const enforceAnimalCapacity = (
     }
   }
   commitFarmOperation(player, { kind: 'pastures', positions: [], pastures: player.pastures.map((pasture) => {
-    if (pasture.animalType) return pasture
+    const zone = zones.find(z => z.id === pasture.id)!
+    if (allowsMixedAnimalTypes(zone)) {
+      const counts = readAnimalCountsForZoneAssignment(pasture)
+      for (const animal of animalKeys) {
+        while ((totals[animal] ?? 0) > 0) {
+          const next = { ...counts, [animal]: (counts[animal] ?? 0) + 1 }
+          if (sumAnimalCounts(next) > animalZoneCapacity(zone, next)) break
+          counts[animal] = (counts[animal] ?? 0) + 1
+          totals[animal]! -= 1
+        }
+      }
+      return { ...pasture, animalType: singleAnimalType(counts), animalCount: sumAnimalCounts(counts), animalCounts: compactAnimalCounts(counts) }
+    }
+    if (pasture.animalType) {
+      totals[pasture.animalType] = (totals[pasture.animalType] ?? 0) + pasture.animalCount
+      return fillPasture(pasture, pasture.animalType)
+    }
     for (const animalType of animalKeys) {
       const next = fillPasture(pasture, animalType)
       if (next.animalType) return next
@@ -957,9 +973,9 @@ export const enforceAnimalCapacity = (
   }
   looseStableKeys.forEach((key) => {
     if (stableAnimals[key]) return
-    const capacity = zoneCapacity(`stable:${key}`)
-    if (capacity <= 0) return
     for (const animalType of animalKeys) {
+      const capacity = zoneCapacity(`stable:${key}`, animalType)
+      if (capacity <= 0) continue
       if ((totals[animalType] ?? 0) <= 0) continue
       const animalCount = Math.min(totals[animalType] ?? 0, capacity)
       stableAnimals[key] = { animalType, animalCount }
@@ -971,8 +987,7 @@ export const enforceAnimalCapacity = (
   for (const animalType of animalKeys) {
     player.resources[animalType] = reservedCardTotals[animalType] ?? 0
     player.resources[animalType] += player.pastures
-      .filter((pasture) => pasture.animalType === animalType)
-      .reduce((sum, pasture) => sum + pasture.animalCount, 0)
+      .reduce((sum, pasture) => sum + (readAnimalCountsForZoneAssignment(pasture)[animalType] ?? 0), 0)
     player.resources[animalType] += Object.values(player.houseAnimals).filter(animal => animal === animalType).length
     Object.values(stableAnimals).forEach((assignment) => {
       if (assignment.animalType === animalType) player.resources[animalType] = (player.resources[animalType] ?? 0) + assignment.animalCount

@@ -57,6 +57,7 @@ type RoomRow = {
   enable_farmers_of_the_moor: number
   enable_moor_balance_rules: number
   allow_incomplete_farmers_of_the_moor_minor_deal: number
+  game_edition: 'revised' | 'classic'
   enable_snake_opening: number
   hotseat: number
   started_at: number | null
@@ -195,6 +196,7 @@ const roomValues = (
   enableMoorBalanceRules: meta.enableFarmersOfTheMoor === true && meta.enableMoorBalanceRules === true ? 1 : 0,
   allowIncompleteFarmersOfTheMoorMinorDeal:
     meta.allowIncompleteFarmersOfTheMoorMinorDeal === true ? 1 : 0,
+  gameEdition: meta.gameEdition ?? 'revised',
   enableSnakeOpening: meta.enableSnakeOpening === true ? 1 : 0,
   hotseat: meta.hotseat === true ? 1 : 0,
   startedAt: meta.startedAt ?? null,
@@ -241,6 +243,7 @@ const toSnapshot = (
     enableFarmersOfTheMoor: row.enable_farmers_of_the_moor === 1,
     enableMoorBalanceRules: row.enable_moor_balance_rules === 1,
     allowIncompleteFarmersOfTheMoorMinorDeal: row.allow_incomplete_farmers_of_the_moor_minor_deal === 1,
+    gameEdition: row.game_edition,
     enableSnakeOpening: row.enable_snake_opening === 1,
     hotseat: row.hotseat === 1,
     status: toStatus(row.status),
@@ -303,7 +306,7 @@ export class PostgresRoomPersistence implements RoomPersistence {
               custom_cards_runtime_json,
               replay_recording, replay_viewer_build_id, replay_game_build_id,
               enable_parent_cards, draft_parents, enable_through_the_seasons, enable_farmers_of_the_moor, enable_moor_balance_rules,
-              allow_incomplete_farmers_of_the_moor_minor_deal, enable_snake_opening, hotseat, started_at, updated_at
+              allow_incomplete_farmers_of_the_moor_minor_deal, enable_snake_opening, game_edition, hotseat, started_at, updated_at
        FROM rooms LEFT JOIN game_creation_configurations ON game_creation_configurations.room_id=rooms.id WHERE id = ?`,
     )
     this.loadPlayers = db.prepare(
@@ -315,13 +318,13 @@ export class PostgresRoomPersistence implements RoomPersistence {
         custom_cards_runtime_json, solo_hand_mode,
         replay_recording, replay_viewer_build_id, replay_game_build_id,
         enable_parent_cards, draft_parents, enable_through_the_seasons, enable_farmers_of_the_moor, enable_moor_balance_rules,
-        allow_incomplete_farmers_of_the_moor_minor_deal, enable_snake_opening, hotseat, started_at, created_at, updated_at
+        allow_incomplete_farmers_of_the_moor_minor_deal, enable_snake_opening, game_edition, hotseat, started_at, created_at, updated_at
       ) VALUES (
         @id, @createdBy, @teamMembersJson::jsonb, @invitedUserIds::jsonb, @colorConfirmationPlayerIndex, @stateJson, @inputWindowJson, @endProposalJson, @awaitingRematchPlayers, @maxPlayers, @status, COALESCE(@version, 0), @customCardIds,
         @customCards, @soloHandMode,
         @replayRecording, @replayViewerBuildId, @replayGameBuildId,
         @enableParentCards, @draftParents, @enableThroughTheSeasons, @enableFarmersOfTheMoor, @enableMoorBalanceRules,
-        @allowIncompleteFarmersOfTheMoorMinorDeal, @enableSnakeOpening, @hotseat, @startedAt, @now, @now
+        @allowIncompleteFarmersOfTheMoorMinorDeal, @enableSnakeOpening, @gameEdition, @hotseat, @startedAt, @now, @now
       )
       ON CONFLICT(id) DO UPDATE SET
         team_members_json = excluded.team_members_json,
@@ -345,6 +348,7 @@ export class PostgresRoomPersistence implements RoomPersistence {
         enable_moor_balance_rules = excluded.enable_moor_balance_rules,
         allow_incomplete_farmers_of_the_moor_minor_deal = excluded.allow_incomplete_farmers_of_the_moor_minor_deal,
         enable_snake_opening = excluded.enable_snake_opening,
+        game_edition = excluded.game_edition,
         hotseat = excluded.hotseat,
         started_at = COALESCE(rooms.started_at, excluded.started_at),
         version = COALESCE(@version, rooms.version),
@@ -420,7 +424,7 @@ export class PostgresRoomPersistence implements RoomPersistence {
              rooms.replay_recording, rooms.replay_viewer_build_id, rooms.replay_game_build_id,
              rooms.enable_parent_cards, rooms.draft_parents,
              rooms.enable_through_the_seasons, rooms.enable_farmers_of_the_moor,
-             rooms.allow_incomplete_farmers_of_the_moor_minor_deal, rooms.enable_snake_opening, rooms.hotseat,
+             rooms.allow_incomplete_farmers_of_the_moor_minor_deal, rooms.enable_snake_opening, rooms.game_edition, rooms.hotseat,
              rooms.started_at, rooms.updated_at,
              room_players.user_id AS player_user_id, room_players.player_index
       FROM rooms

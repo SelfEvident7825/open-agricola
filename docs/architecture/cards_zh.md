@@ -105,7 +105,7 @@ cardField?: {
 - 只有同一个 helper 或通用机制能服务至少两张当前或近期目标卡时才抽取；在此之前逻辑留在卡牌文件内。
 - 跨卡身份与能力查询使用类型化 metadata 和已打出卡 helper：`getPlayedCardDefinitions(player)`、`collectCardDefinitionsAs(player, type)` 与 `playerHasCardCapability(player, capability, { asType? })`，只读取已打出区域；`asType` 复用 `cardCountsAs` 处理双类型身份。已注册的能力 metadata（`shared/cards/helpers/card-type.ts` 中的 `CardCapability` union，例如 `fireplaceIdentity`、`joineryIdentity`、`blocksRenovation` 与 `animalHolder`）位于 `meta`，不增加前端行为。`ovenIdentity` 是 OA 的烤炉家族身份，不代表一定有烤面包兑换；升级卡可保留计分身份，并用 `firewoodBuildTrigger: false` 退出建造触发。
 - `check:card-impl-boundaries` 属于 `pnpm run check:architecture`，拒绝生产 Card Source 在运行时读取其他非大改良卡的 ID。显式例外是 `Major_*`、`reaches`、`allowedPurchases` 与前置候选列表。
-- 印刷文字点名其他卡牌时，卡牌可在 `reaches` 中声明 named printed target，只读取其公开事实（存在、owner、是否打出），从不读其私有状态；检查器例外只绑定一对精确的来源与目标。
+- 印刷文字点名其他卡牌时，卡牌可在 `reaches` 中声明 named printed target，只读取其公开事实（存在、owner、是否打出），从不读其私有状态；检查器例外只绑定一对精确的来源与目标。已声明目标也可与公开行动/事件身份或字面量身份列表比较，私有状态索引仍被拒绝。声明式 `returnCards` 同样属于显式身份列表。
 - metadata 审计必须为新增的 metadata 字段补 fixture。
 
 ## 小改良传牌
@@ -114,3 +114,9 @@ cardField?: {
 
 `actions/helpers/minor-card-passing.ts` 负责购买及显式 `pass-minor-card-to-left` 行动的传递终点和公开事件。只有一名真实参与者时，卡移出游戏并发出 reason 为 `passed` 的 `card.destroyed`，不回到本人手牌或普通抽牌供给。支付和完整的 `onBuy` continuation 仍各执行一次；已有对局恢复时保留耗尽的空手牌。多人传递使用真实下家并保留普通交牌事件。Session 回归位于 Clay Embankment、Shifting Cultivation 与 Savings Deposit 的测试文件。
 
+
+旧农卡牌使用独立标识和发牌池；未实现卡牌仅供查阅。卡牌田坐标在两个版本间保持隔离。
+
+`occupationCount` 为职业需求与数量计算提供权重，但每张卡仍是一张已打出卡。`plowEffect` 标识互斥的犁效果，helper 在卡牌自身状态中保存行动格使用身份。退回已打出的发展卡时，也移除该持有者由此卡安排的未来资源。
+
+繁殖先由 `getBreedThreshold()` 检查资格，再由 `getBreedOffspringCount()` 将各已打出卡的 `computeBreedOffspringCount` 应用于默认 1 个后代。结果为有限非负整数；安置和摘要使用同一数量。`computeHarvestBreedOrderPriority()` 仅改变顺序。

@@ -1508,4 +1508,21 @@ describe('waiting room player colors', () => {
     expect(restored.session.state.players.map(player => player.color)).toEqual(['red', 'blue'])
     restored.session.dispose()
   })
+  it('preserves classic edition and four players on a hotseat rematch', async () => {
+    const ctx = newCtx(); ctx.currentUserId = 'u1'
+    await dispatch(ctx, { type: 'createRoom', maxPlayers: 4, hotseat: true, gameEdition: 'classic' })
+    expect(ctx.currentRoom!.session.state.gameEdition).toBe('classic')
+    await markRoomStarted(ctx)
+    await dispatch(ctx, { type: 'newGame', seed: 309 })
+    expect(ctx.currentRoom!.session.state.gameEdition).toBe('classic')
+    expect(ctx.currentRoom!.session.state.players).toHaveLength(4)
+    expect(ctx.currentRoom!.session.state.players.flatMap(p => p.minorHand).every(id => id.startsWith('OLD_'))).toBe(true)
+  })
+  it('rejects classic room configurations before creating a room', async () => {
+    const ctx = newCtx(); ctx.currentUserId = 'u1'
+    await dispatch(ctx, { type: 'createRoom', maxPlayers: 2, hotseat: true, gameEdition: 'classic' })
+    expect(ctx.currentRoom).toBeNull()
+    expect(JSON.stringify(sentMessagesOf(ctx))).toContain('four players')
+  })
+
 })

@@ -1,6 +1,7 @@
 import { unavailableTeamFeature } from './experimental-features'
 import { CLIENT_CAPABILITIES_HEADER, CLIENT_REFRESH_MESSAGE, parseClientCapabilities, requiresCooperationCapability, TEAM_COOPERATION_CAPABILITY } from '../shared/contract/client-capabilities'
 import { parseTeamConfiguration, type TeamConfiguration } from '../shared/contract/team'
+import { classicSetupError } from '../shared/contract/game-edition'
 import { parseCommitSelectionPayload, type CommitSelectionPayload } from '../shared/contract/protocol/commit-selection'
 import { parseFenceSelectionPayload } from '../shared/contract/protocol/farm-selection'
 import type { FenceSelectionQuote } from '../shared/contract/protocol/game'
@@ -668,6 +669,8 @@ const handleAuthorizedGameRoute = async (
       await sendJson(res, 400, { ok: false, error: draftOptions.error })
       return true
     }
+    const editionError = classicSetupError(raw)
+    if (editionError) { await sendJson(res, 400, { ok: false, error: editionError }); return true }
     let setup: ReturnType<typeof parseGameSetupRequest>
     try { setup = parseGameSetupRequest(raw, draftOptions.value) }
     catch (error) { await sendJson(res, 400, { ok: false, error: error instanceof Error ? error.message : 'Invalid team configuration' }); return true }

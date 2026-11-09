@@ -16,6 +16,8 @@ import {
 import type { CardExchange } from '../../shared/contract/cards'
 
 export type CardMeta = {
+  gameEdition?: 'revised' | 'classic'
+  originalId?: string
   authored?: true
   id: string
   name: string

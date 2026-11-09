@@ -4,7 +4,7 @@ import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { parseCardFile, type CardMeta } from './build-cards-manifest'
 
-const CATALOG_DECKS = ['A', 'B', 'C', 'D', 'E', 'M', 'community'] as const
+const CATALOG_DECKS = ['A', 'B', 'C', 'D', 'E', 'M', 'community', 'classic'] as const
 const RUNTIME_DECKS = [...CATALOG_DECKS, '__stubs__'] as const
 const MAJOR_DECK = 'major'
 
@@ -183,9 +183,8 @@ type GeneratedCatalogCardDefinition = CardDefinition & {
   kind: 'minor' | 'occupation' | 'playerAction'
 }
 
-export const catalogCardDefinitions: readonly GeneratedCatalogCardDefinition[] = [
-${definitionArray(catalogSources, catalogMetas)}
-]
+${Array.from({length: Math.ceil(catalogSources.length / 100)}, (_, i) => `const batch${i}: readonly GeneratedCatalogCardDefinition[] = [\n${definitionArray(catalogSources.slice(i * 100, (i + 1) * 100), catalogMetas)}\n]`).join('\n')}
+export const catalogCardDefinitions: readonly GeneratedCatalogCardDefinition[] = [${Array.from({length: Math.ceil(catalogSources.length / 100)}, (_, i) => `...batch${i}`).join(', ')}]
 
 const isMinorLike = (card: GeneratedCatalogCardDefinition) =>
   card.kind === 'minor' ||

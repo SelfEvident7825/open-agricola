@@ -61,6 +61,7 @@ export function LobbyPage() {
   const [invitedPlayers, setInvitedPlayers] = useState<InvitablePlayer[]>([])
   const [draftMode, setDraftMode] = useState<'none' | 'simultaneous'>('none')
   const [draftPoolSize, setDraftPoolSize] = useState<number>(8)
+  const [gameEdition, setGameEdition] = useState<'revised' | 'classic'>('revised')
   const [enableCommunityDeck, setEnableCommunityDeck] = useState(false)
   const [workshopCards, setWorkshopCards] = useState<RoomWorkshopCard[]>([])
   const [selectedWorkshopCardIds, setSelectedWorkshopCardIds] = useState<string[]>([])
@@ -153,6 +154,7 @@ export function LobbyPage() {
     // so it takes the same transport and only adds the hotseat flag.
     const params: Record<string, string> = {
       transport: 'ws',
+      ...(gameEdition === 'classic' ? { gameEdition: 'classic' } : {}),
       maxPlayers: String(selectedMaxPlayers),
       ...(selectMode === 'hotseat' ? { hotseat: '1' } : {}),
     }
@@ -354,7 +356,7 @@ export function LobbyPage() {
               {isTeamMode && <p className="community-deck-toggle-hint">{t(selectMode === 'team' ? 'team.teamHint' : 'team.multihandHint')}</p>}
               <div className="player-select-label">{t('platform.selectPlayerCount')}</div>
               <div className="player-select-options">
-                {(isTeamMode ? [4, 6] : [2, 3, 4, 5, 6]).map(n => (
+                {(gameEdition === 'classic' ? [4] : isTeamMode ? [4, 6] : [2, 3, 4, 5, 6]).map(n => (
                   <button
                     key={n}
                     type="button"
@@ -393,6 +395,15 @@ export function LobbyPage() {
                   )}
                 </fieldset>
               )}
+              <fieldset className="room-access-options">
+                <legend>{t('platform.edition')}</legend>
+                <label><input type="radio" name="edition" checked={gameEdition === 'revised'} onChange={() => setGameEdition('revised')} />{t('platform.revisedEdition')}</label>
+                <label><input type="radio" name="edition" checked={gameEdition === 'classic'} onChange={() => {
+                  setGameEdition('classic'); setSelectedMaxPlayers(4); setEnableCommunityDeck(false); setSelectedWorkshopCardIds([])
+                  setEnableParentCards(false); setEnableThroughTheSeasons(false); setEnableFarmersOfTheMoor(false); setEnableSnakeOpening(false)
+                }} />{t('platform.classicEdition')}</label>
+                {gameEdition === 'classic' && <p>{t('platform.classicPreviewNote')}</p>}
+              </fieldset>
               <div className="player-select-label">{t('platform.draftModeLabel')}</div>
               <div className="player-select-options">
                 <button
@@ -432,7 +443,7 @@ export function LobbyPage() {
                   <label className="community-deck-toggle">
                     <input
                       type="checkbox"
-                      checked={enableCommunityDeck}
+                      disabled={gameEdition === 'classic'} checked={enableCommunityDeck}
                       onChange={(e) => setEnableCommunityDeck(e.target.checked)}
                     />
                     <span>
@@ -492,7 +503,7 @@ export function LobbyPage() {
               <label className="community-deck-toggle">
                 <input
                   type="checkbox"
-                  checked={enableParentCards}
+                  disabled={gameEdition === 'classic'} checked={enableParentCards}
                   onChange={(e) => setEnableParentCards(e.target.checked)}
                 />
                 <span>{t('platform.enableParentCards')}</span>
@@ -500,7 +511,7 @@ export function LobbyPage() {
               <label className="community-deck-toggle">
                 <input
                   type="checkbox"
-                  checked={enableThroughTheSeasons}
+                  disabled={gameEdition === 'classic'} checked={enableThroughTheSeasons}
                   onChange={(e) => setEnableThroughTheSeasons(e.target.checked)}
                 />
                 <span>{t('platform.enableThroughTheSeasons')}</span>
@@ -508,7 +519,7 @@ export function LobbyPage() {
               <label className="community-deck-toggle">
                 <input
                   type="checkbox"
-                  checked={enableFarmersOfTheMoor}
+                  disabled={gameEdition === 'classic'} checked={enableFarmersOfTheMoor}
                   onChange={(e) => {
                     setEnableFarmersOfTheMoor(e.target.checked)
                     if (!e.target.checked) {
@@ -596,6 +607,7 @@ export function LobbyPage() {
               <li key={room.id} className={`room-item${room.teamConfig ? ' room-item--team' : ''}`}>
                 <span className="room-id">
                   {t('platform.roomLabel', { id: room.id })}
+                  {room.gameEdition === 'classic' && <> · {t('platform.classicEdition')}</>}
                   {room.access === 'invited' && <small className="room-access-badge">{t('platform.roomAccessInvited')}</small>}
                 </span>
                 <span className="room-players">{t(room.teamConfig ? 'team.seatsFilled' : 'platform.playerCount', { current: String(room.playerCount), max: String(room.maxPlayers) })}</span>

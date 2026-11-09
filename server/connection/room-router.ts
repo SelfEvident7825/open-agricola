@@ -5,6 +5,7 @@ import type { ExperimentalFeatureId } from '../../shared/contract/experimental-f
 import { admitTeamMember, planTeamSeating, teamWaitingState } from '../game/team-room'
 import { addRoomSpectator, isRoomSpectator, removeRoomSpectator } from '../game/room-spectators'
 import { isPublicSpectatableRoom } from '../game/room'
+import { classicSetupError } from '../../shared/contract/game-edition'
 import type { FenceSelectionQuote } from '../../shared/contract/protocol/game'
 import { parseCommitSelectionPayload } from '../../shared/contract/protocol/commit-selection'
 import { playerColorOptions } from '../../shared/contract/state-constants'
@@ -666,6 +667,8 @@ async function handleCreateRoom(ctx: ConnectionCtx, msg: Extract<ClientCommand, 
   }
   const draftOptions = parseDraftOptions(input)
   if (!draftOptions.ok) { sendCommandError(ctx, draftOptions.error, msg.requestId); return }
+  const editionError = classicSetupError(input)
+  if (editionError) { sendCommandError(ctx, editionError, msg.requestId); return }
   let setup: ReturnType<typeof parseGameSetupRequest>
   try { setup = parseGameSetupRequest(input, draftOptions.value) }
   catch (error) { sendCommandError(ctx, error instanceof Error ? error.message : 'Invalid team configuration', msg.requestId); return }
@@ -749,6 +752,7 @@ async function handleCreateRoom(ctx: ConnectionCtx, msg: Extract<ClientCommand, 
     enableFarmersOfTheMoor: setup.enableFarmersOfTheMoor,
     enableMoorBalanceRules: setup.enableMoorBalanceRules,
     allowIncompleteFarmersOfTheMoorMinorDeal: setup.allowIncompleteFarmersOfTheMoorMinorDeal,
+    gameEdition: setup.gameEdition,
     enableSnakeOpening: setup.enableSnakeOpening,
   }
   ctx.committer?.lockNewRoom(room)
@@ -1568,6 +1572,7 @@ async function handleNewGame(ctx: ConnectionCtx, msg: Extract<ClientCommand, { t
   const enableFarmersOfTheMoor = room.enableFarmersOfTheMoor ?? (room.session.state.enableFarmersOfTheMoor === true)
   const enableMoorBalanceRules = enableFarmersOfTheMoor && room.session.state.enableMoorBalanceRules === true
   const allowIncompleteFarmersOfTheMoorMinorDeal = room.allowIncompleteFarmersOfTheMoorMinorDeal ?? false
+  const gameEdition = room.gameEdition ?? room.session.state.gameEdition
   const enableSnakeOpening = room.enableSnakeOpening ?? (room.session.state.enableSnakeOpening === true)
   const teamConfig = room.session.state.team?.configuration
   let created: ReturnType<typeof createIsolatedGameSession>
@@ -1590,6 +1595,7 @@ async function handleNewGame(ctx: ConnectionCtx, msg: Extract<ClientCommand, { t
         enableFarmersOfTheMoor,
         enableMoorBalanceRules,
         allowIncompleteFarmersOfTheMoorMinorDeal,
+        gameEdition,
         enableSnakeOpening,
       },
     )
@@ -1703,7 +1709,7 @@ async function handleNewGame(ctx: ConnectionCtx, msg: Extract<ClientCommand, { t
           : isDevRoom(nextRoomId) || room.hotseat === true || room.players.length >= room.maxPlayers ? 'playing' : 'waiting',
         colorConfirmationPlayerIndex: undefined,
         enableParentCards, draftMode, draftPoolSize, enableThroughTheSeasons,
-        enableFarmersOfTheMoor, enableMoorBalanceRules, allowIncompleteFarmersOfTheMoorMinorDeal, enableSnakeOpening,
+        enableFarmersOfTheMoor, enableMoorBalanceRules, allowIncompleteFarmersOfTheMoorMinorDeal, enableSnakeOpening, gameEdition,
         customCardDbIds: reloaded.loadedDbIds, customCards,
       }
       nextRoom.startedAt = nextRoom.status === 'playing' ? Date.now() : undefined

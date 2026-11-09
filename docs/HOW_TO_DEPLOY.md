@@ -894,3 +894,22 @@ Round labels have 18 possible values; with five message types, 13 size bucket/co
 To disable visualization reversibly, stop `prometheus grafana node-exporter accounts-exporter` with the operations Compose file; keep their data directories for later restart. Never remove volumes as a rollback step. The application reports unknown when trend storage is unavailable; gameplay durability and routing remain authoritative. This implementation does not deploy production, inject failures or certify capacity.
 
 Configuration follows the official [Grafana auth proxy documentation](https://grafana.com/docs/grafana/latest/setup-grafana/configure-access/configure-authentication/auth-proxy/) and [Prometheus discovery/configuration documentation](https://prometheus.io/docs/prometheus/latest/configuration/configuration/).
+
+## Rebuilt classic preview (2026-11-08)
+
+The classic preview is reconstructed from application base `72bfc8f7`, the original agricolaoldnice archive, and the two-card BGA patch. It is not a byte-identical recovery of the unavailable previous archive. It supports four players and keeps classic dealing separate from revised dealing. There are 1,024 classic hand-card faces; 199 have native implementations and 825 are reference-only. All 126 source E-deck cards now have native effects; this includes 89 newly implemented cards and corrections to earlier ports. Method matching and integration tests are not a per-card rules certification.
+
+The delivered source contains sibling `open-agricola` and `open-agricola-i18n` directories. Set `AGRICOLA_I18N_DIR=../open-agricola-i18n` before build/test/start. The pinned language commit is local and has not been pushed upstream. For a deployment, first publish the language repository to your own fork, update `i18n.ref.repository` to that fork and keep the matching revision and manifest digest. Then publish both application frontend and backend through the existing deployment process. Database migration 033 persists the selected edition. No remote changes or deployment are performed by modifying this source.
+
+The light source archive omits classic PNGs. In Windows PowerShell from `open-agricola`, recover them from the existing BGA checkout with:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\restore-classic-art.ps1 -Source "D:\agricolaoldnice"
+$env:AGRICOLA_I18N_DIR = "../open-agricola-i18n"
+npx.cmd --yes pnpm@10.33.0 install --frozen-lockfile
+npx.cmd --yes pnpm@10.33.0 run build
+```
+
+The full archive includes all 1,024 PNGs. For the full application, use the existing `restart-local.sh` workflow in WSL2 with Docker running; a successful frontend build alone does not start the database, object storage, or authoritative server. Base-game artwork still follows the project's existing asset-host configuration. Both delivery archives exclude dependencies, build outputs, environment secrets and Git history.
+
+Manual card ports must remove the generated-import marker on their first line before rerunning `scripts/import-classic-cards.ts`; otherwise the importer owns that file. The importer preserves files without that marker.

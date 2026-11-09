@@ -58,6 +58,7 @@ type ClientCommandBody =
       name?: string
       customCardIds?: string[]
       /** When true, include community-deck cards in the deal pool. Default false. */
+      gameEdition?: 'revised' | 'classic'
       enableCommunityDeck?: boolean
       /** When true, start the Parent Cards expansion selection phase before play. Default false. */
       enableParentCards?: boolean
@@ -165,6 +166,7 @@ export type ServerEvent =
 
 export type RoomSummary = {
   teamConfig?: import('../team').TeamConfiguration
+  gameEdition?: 'revised' | 'classic'
   id: string
   playerCount: number
   maxPlayers: number

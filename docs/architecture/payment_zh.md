@@ -40,3 +40,5 @@
 **季节费用调整**（[ADR 0034](../adr/0034-seasonal-adjustments-belong-to-settlement-events.md)）：结算宿主把 `seasonalAdjustments: { season, resources }[]` 经 pay child、`PaymentCtx` 和 `PaymentReceipt` 带入 `resource.paid` 与公开收据。候选费用通过 `CardCostCandidateMetadata` 携带调整；只有选中的代表路径进入收据，不合并替代路径。延续原费用的资源替代保留候选调整，固定价替换则随旧来源一起清除。有符号资源表示后续替代之前的实际成本减免，独立于 `resourcesPaid` 和卡牌 Cost Attribution。没有实际影响时不记；有影响而最终付款为零时仍产生收据和支付事实。展示读取已记录的数量，不增加资源移动或季节卡牌状态。
 
 测试：`shared/actions/payment/__tests__/protected-fee.test.ts`、`server/__tests__/partner-fences-session.test.ts`、`shared/actions/payment/internal/__tests__/{candidate-closure,cost-modifier-permutation-probe,enumerate,cost-modifiers}.test.ts`、`shared/actions/payment/__tests__/{solver,card-purchase}.test.ts`、`shared/actions/effects/__tests__/{improvement-cost-candidates,pay-supply-token,pay-seasonal-adjustment,renovation}.test.ts`、`server/__tests__/{seasonal-fence-payment,seasonal-major-payment}-session.test.ts`。
+
+`Trade.groupScope: 'unit'` 使互斥组上限按购买单位生效：同一单位不能叠加替代基础费用，多个单位可以分别使用替代费用。职业支付会把卡面额外费用加在本次培训费用之上，免费培训仍保留卡面额外费用。

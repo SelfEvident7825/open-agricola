@@ -128,3 +128,5 @@ Detail for cards in [Accepted differences](#2-accepted-differences) whose differ
 | `D176_Woodshacker` | In the work phase, the owner's first / second wood-accumulation use this round gives an extra 1 / 2 clay, counted by actual uses this round (repeated uses of the same space count) and reset when returning home. |
 | `D178_SubstituteTeacher` | Registers an owner-only Action Space, available once all three visible Lessons spaces are actually occupied; the reward is 1 building resource or grain + vegetable. |
 | `D179_Bullcatcher` | Registers an owner-only Action Space, available when the Action Spaces of round slots 3 and 6 are both occupied and the owner still has an available worker; using it gives 1 cattle + 2 food. |
+
+Classic preview: 1,024 hand-card faces, 199 native ports, 825 reference-only cards. All 126 source E-deck cards have native effects. Inventory and provenance: `docs/classic/migration-manifest.json`; original PHP methods: `reference/classic/source-cards.json`. Integration coverage does not certify every card.

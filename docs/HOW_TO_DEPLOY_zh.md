@@ -914,3 +914,22 @@ Prometheus 每 15 秒 scrape（超时 5 秒），每 15 秒发现有效应用租
 `scripts/update-whats-new.ts` 上传前用服务端同一解析器校验文件，再沿用二维码的哈希校验与原子替换。无效文件会报出具体字段（如 `releases[1].date`）并被拒绝，线上说明保持不变。成功输出包含 `whatsNewSha256`、版本数和最新版本。保留源文件；重新发布旧副本即可恢复旧说明。
 
 接口只允许 GET/HEAD，并返回 `Cache-Control: no-store`。文件缺失返回 404，手工改坏返回 503，两种情况都隐藏按钮。浏览器每次加载页面读取一次。红点标记玩家上次打开之后的新版本，记录保存在各自浏览器；首次访问只把最新版本计为未读。
+
+## 旧农重建试运行版（2026-11-08）
+
+此版根据应用基础提交 `72bfc8f7`、原始 agricolaoldnice 源码和两张卡的 BGA 补丁重新构建，并非上次失效压缩包的逐字节恢复。支持四人旧农开局，新旧农牌池分开。目前包含 1024 张旧农手牌的卡面，199 张接入原生效果，825 张仅供查阅；**源项目 E 包 126 张均已接入原生效果（新增 89 张，并修正此前部分迁移）**。源码方法匹配和集成测试不等于每张卡都经过规则验收。
+
+源码包内有并排的 `open-agricola` 和 `open-agricola-i18n` 两个文件夹。构建、测试和启动前设置 `AGRICOLA_I18N_DIR=../open-agricola-i18n`。当前固定的语言提交只在本次本地版本中，尚未推送上游。真正上线前，先将语言仓库发布到自己的 fork，修改 `i18n.ref.repository` 指向它，并保留匹配的提交和清单哈希，再按原有部署流程发布应用前端和后端。数据库迁移 033 保存游戏版本选择。修改这些源码不会自动影响线上网站；本次没有推送或部署。
+
+轻量源码包省略了旧农 PNG。你已有 `D:\agricolaoldnice`，可在 `open-agricola` 文件夹打开 PowerShell，执行：
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\restore-classic-art.ps1 -Source "D:\agricolaoldnice"
+$env:AGRICOLA_I18N_DIR = "../open-agricola-i18n"
+npx.cmd --yes pnpm@10.33.0 install --frozen-lockfile
+npx.cmd --yes pnpm@10.33.0 run build
+```
+
+完整版已包含全部 1024 张旧农 PNG，不需要第一条复制命令。运行完整网站需要在 WSL2 中使用已有的 `restart-local.sh` 流程，并启动 Docker；仅前端构建成功不会启动数据库、对象存储和游戏服务器。基础游戏素材仍使用项目已有的素材站配置。两种交付包均不含依赖目录、构建输出、环境密钥或 Git 历史。
+
+手工实现卡牌时，先删除该文件首行的 generated-import 标记，再运行 `scripts/import-classic-cards.ts`；无该标记的文件会被保留，带标记的文件仍由导入器生成。
