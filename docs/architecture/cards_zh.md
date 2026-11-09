@@ -81,6 +81,7 @@ export const CardName = defineOccupationCard({   // the constant shares the file
 cardField?: {
   allowedCrops: readonly ('grain' | 'vegetable' | 'wood' | 'stone')[]
   capacity: number
+  separateFields?: boolean
 }
 ```
 
@@ -89,9 +90,9 @@ cardField?: {
 - 存储接受所有合法田地货物。`allowedCrops` 是普通播种能力，不是存储 schema：`place` 默认执行该白名单，卡牌效果可显式绕过；播种与 `replace` 始终执行；`insertBottom` 在顶层之下加入规则授予的作物，不新增槽，也不受播种白名单限制。
 - `fieldOperationFlow` 的 `move` 接受 `sourceCrops`；目标续行在保存位置或修改田地之前重新检查来源作物与数量、目标占用与 `allowedCrops`。
 - Card Field 槽保存顶层 `{ crop, remaining }` 与可选的 `below` 层。普通收割每个有作物的槽取一个；额外与整田收获继续深入下层。
-- Card Field 只有一个稳定的 Logical Field id 和一个 `groupKey`；槽保持稳定坐标。基础田地计分只计 Farmyard Field。
+- Card Field 默认只有一个稳定的 Logical Field id 和一个 `groupKey`；`separateFields` 为各槽分别提供逻辑身份及分组，坐标仍保持稳定。基础田地计分只计 Farmyard Field。
 - `onReap` 只在收割时执行；`onCropRemoved` 在每次真实移除时执行。两者都在共享修改之后、按作物各执行一次，返回的 flow 并入普通 parallel 反应。selection 会先解决移除回调返回的 flow，再进入它的下一个父级续行。
-- `reap` 是两种存储 owner 共用的唯一收割实现（[阶段 hook](hooks_zh.md#阶段-hook)）。多槽 Card Field 收割每个有作物的槽，但每个 Logical Field 与作物只计一次。
+- `reap` 是两种存储 owner 共用的唯一收割实现（[阶段 hook](hooks_zh.md#阶段-hook)）。多槽 Card Field 收割每个有作物的槽，但每个 Logical Field 与作物只计一次。收割数量标签 `retain-harvested-crops` 从供应区取货，保留田中堆叠，不触发作物移除回调。`actionContext.sowStackDelta` 在播种原子提交前调整准备副本的初始堆叠。
 - `card-field.ts` 内部的底层 adapter 是唯一触碰 `PlayerState.fields` 的 Card Impl 代码；`check:card-impl-boundaries` 在其他生产卡牌与 helper 源码中拒绝任何名为 `fields` 的属性或下标访问，无论接收者是谁，没有白名单。
 
 测试：`shared/cards/__tests__/{AB,CD,EM}-logical-field-boundary.test.ts`、`shared/actions/effects/__tests__/{reap,sow-permissions}.test.ts`。
@@ -118,3 +119,5 @@ cardField?: {
 `occupationCount` 为职业需求与数量计算提供权重，但每张卡仍是一张已打出卡。`plowEffect` 标识互斥的犁效果，helper 在卡牌自身状态中保存行动格使用身份。退回已打出的发展卡时，也移除该持有者由此卡安排的未来资源。
 
 繁殖先由 `getBreedThreshold()` 检查资格，再由 `getBreedOffspringCount()` 将各已打出卡的 `computeBreedOffspringCount` 应用于默认 1 个后代。结果为有限非负整数；安置和摘要使用同一数量。`computeHarvestBreedOrderPriority()` 仅改变顺序。
+
+`blocksWorkerPlacement` 和 `permitsActionSpaceEntry` 是普通及卡牌额外派人都会检查的纯查询。工作阶段轮转会跳过受限玩家，实体工人数查询不读取卡牌注册表。预约的临时工人使用 `supplyUse.availableFromRound` 与 `returnRound`，不计家庭人数及喂养需求，可序列化恢复。`computeHarvestFeedingOrderPriority` 只排序喂养队列，相同优先级保留正常座位顺序。测试：`server/__tests__/classic-i-session.test.ts`、`shared/cards/__tests__/classic-i-rules.test.ts`。

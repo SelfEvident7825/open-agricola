@@ -128,4 +128,4 @@ Detail for cards in [Accepted differences](#2-accepted-differences) whose differ
 | `D178_SubstituteTeacher` | Registers an owner-only Action Space, available once all three visible Lessons spaces are actually occupied; the reward is 1 building resource or grain + vegetable. |
 | `D179_Bullcatcher` | Registers an owner-only Action Space, available when the Action Spaces of round slots 3 and 6 are both occupied and the owner still has an available worker; using it gives 1 cattle + 2 food. |
 
-Classic preview: 1,024 hand-card faces, 199 native ports, 825 reference-only cards. All 126 source E-deck cards have native effects. Inventory and provenance: `docs/classic/migration-manifest.json`; original PHP methods: `reference/classic/source-cards.json`. Integration coverage does not certify every card.
+Classic preview: 1,024 hand-card faces, 270 native ports, 754 reference-only cards. All 126 source E-deck and 91 source I-deck cards have native effects. Inventory and provenance: `docs/classic/migration-manifest.json`; original PHP methods: `reference/classic/source-cards.json`. Integration coverage does not certify every card.

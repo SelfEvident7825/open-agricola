@@ -30480,7 +30480,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": false,
     "extraVp": true,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I100.png",
     "locales": {
       "zh": {
@@ -30491,7 +30491,8 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
         "prerequisite": ""
       }
     },
-    "kind": "minor"
+    "playerActionCardType": "minor",
+    "kind": "playerAction"
   },
   {
     "id": "OLD_I101_AnimalFeed",
@@ -30508,7 +30509,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "已播种田×4",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I101.png",
     "locales": {
       "zh": {
@@ -30576,7 +30577,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I103.png",
     "locales": {
       "zh": {
@@ -30606,7 +30607,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": true,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I104.png",
     "locales": {
       "zh": {
@@ -30635,7 +30636,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "players": "1+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I219.png",
     "locales": {
       "zh": {
@@ -30664,7 +30665,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "players": "1+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I220.png",
     "locales": {
       "zh": {
@@ -30693,7 +30694,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "players": "1+",
     "passing": false,
     "extraVp": true,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I221.png",
     "locales": {
       "zh": {
@@ -30722,7 +30723,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "players": "1+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I222.png",
     "locales": {
       "zh": {
@@ -30751,7 +30752,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "players": "1+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I223.png",
     "locales": {
       "zh": {
@@ -30780,7 +30781,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "players": "3+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I224.png",
     "locales": {
       "zh": {
@@ -30839,7 +30840,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "players": "1+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I226.png",
     "locales": {
       "zh": {
@@ -30868,7 +30869,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "players": "1+",
     "passing": false,
     "extraVp": true,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I227.png",
     "locales": {
       "zh": {
@@ -30897,7 +30898,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "players": "1+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I228.png",
     "locales": {
       "zh": {
@@ -30926,7 +30927,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "players": "1+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I229.png",
     "locales": {
       "zh": {
@@ -30955,7 +30956,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "players": "4+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I230.png",
     "locales": {
       "zh": {
@@ -30966,7 +30967,8 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
         "prerequisite": ""
       }
     },
-    "kind": "occupation"
+    "playerActionCardType": "occupation",
+    "kind": "playerAction"
   },
   {
     "id": "OLD_I231_Manservant",
@@ -31014,7 +31016,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "players": "1+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I232.png",
     "locales": {
       "zh": {
@@ -31043,7 +31045,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "players": "1+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I233.png",
     "locales": {
       "zh": {
@@ -31074,7 +31076,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "players": "1+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I234.png",
     "locales": {
       "zh": {
@@ -31163,7 +31165,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "players": "4+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I237.png",
     "locales": {
       "zh": {
@@ -31192,7 +31194,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "players": "1+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I238.png",
     "locales": {
       "zh": {
@@ -31221,7 +31223,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "players": "1+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I239.png",
     "locales": {
       "zh": {
@@ -31280,7 +31282,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "players": "1+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I241.png",
     "locales": {
       "zh": {
@@ -31339,7 +31341,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "players": "1+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I243.png",
     "locales": {
       "zh": {
@@ -31368,7 +31370,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "players": "1+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I244.png",
     "locales": {
       "zh": {
@@ -31427,7 +31429,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "players": "3+",
     "passing": false,
     "extraVp": true,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I246.png",
     "locales": {
       "zh": {
@@ -31456,7 +31458,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "players": "3+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I247.png",
     "locales": {
       "zh": {
@@ -31467,6 +31469,41 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
         "prerequisite": ""
       }
     },
+    "exchanges": [
+      {
+        "from": {
+          "sheep": 1
+        },
+        "to": {
+          "food": 1
+        },
+        "triggers": [
+          "anytime"
+        ]
+      },
+      {
+        "from": {
+          "boar": 1
+        },
+        "to": {
+          "food": 2
+        },
+        "triggers": [
+          "anytime"
+        ]
+      },
+      {
+        "from": {
+          "cattle": 1
+        },
+        "to": {
+          "food": 3
+        },
+        "triggers": [
+          "anytime"
+        ]
+      }
+    ],
     "kind": "occupation"
   },
   {
@@ -31485,7 +31522,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "players": "3+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I248.png",
     "locales": {
       "zh": {
@@ -31545,7 +31582,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "players": "4+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I250.png",
     "locales": {
       "zh": {
@@ -31574,7 +31611,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "players": "3+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I251.png",
     "locales": {
       "zh": {
@@ -31633,7 +31670,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "players": "3+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I253.png",
     "locales": {
       "zh": {
@@ -31662,7 +31699,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "players": "3+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I254.png",
     "locales": {
       "zh": {
@@ -31691,7 +31728,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "players": "3+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I255.png",
     "locales": {
       "zh": {
@@ -31719,7 +31756,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I256.png",
     "locales": {
       "zh": {
@@ -31730,6 +31767,20 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
         "prerequisite": ""
       }
     },
+    "exchanges": [
+      {
+        "from": {
+          "stone": 1
+        },
+        "to": {
+          "food": 3
+        },
+        "triggers": [
+          "harvest"
+        ],
+        "max": 1
+      }
+    ],
     "kind": "occupation"
   },
   {
@@ -31748,7 +31799,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "players": "3+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I257.png",
     "locales": {
       "zh": {
@@ -31777,7 +31828,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "players": "3+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I258.png",
     "locales": {
       "zh": {
@@ -31788,6 +31839,20 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
         "prerequisite": ""
       }
     },
+    "exchanges": [
+      {
+        "from": {
+          "wood": 1
+        },
+        "to": {
+          "food": 2
+        },
+        "triggers": [
+          "harvest"
+        ],
+        "max": 1
+      }
+    ],
     "kind": "occupation"
   },
   {
@@ -31836,7 +31901,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "players": "3+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I260.png",
     "locales": {
       "zh": {
@@ -31895,7 +31960,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "players": "3+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I262.png",
     "locales": {
       "zh": {
@@ -31924,7 +31989,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "players": "3+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I263.png",
     "locales": {
       "zh": {
@@ -31953,7 +32018,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "players": "3+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I264.png",
     "locales": {
       "zh": {
@@ -31982,7 +32047,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "players": "3+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I265.png",
     "locales": {
       "zh": {
@@ -32013,7 +32078,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     },
     "passing": false,
     "extraVp": true,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I337.png",
     "locales": {
       "zh": {
@@ -32024,7 +32089,8 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
         "prerequisite": "职业×3"
       }
     },
-    "kind": "minor"
+    "playerActionCardType": "minor",
+    "kind": "playerAction"
   },
   {
     "id": "OLD_I340_Rancher",
@@ -32042,7 +32108,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "players": "4+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I340.png",
     "locales": {
       "zh": {
@@ -32087,6 +32153,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
         "prerequisite": "职业×1"
       }
     },
+    "plowEffect": true,
     "kind": "minor"
   },
   {
@@ -32107,7 +32174,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     },
     "passing": true,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I64.png",
     "locales": {
       "zh": {
@@ -32137,7 +32204,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "退还1个烤炉",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I65.png",
     "locales": {
       "zh": {
@@ -32148,6 +32215,30 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
         "prerequisite": "退还1个烤炉"
       }
     },
+    "returnCards": [
+      "Major_ClayOven",
+      "Major_StoneOven",
+      "OLD_E27_WoodredOven",
+      "OLD_WA012_CastironOven",
+      "OLD_G065_BeehiveOven",
+      "OLD_G073_ErrantOven"
+    ],
+    "isBaking": true,
+    "ovenIdentity": true,
+    "exchanges": [
+      {
+        "from": {
+          "grain": 1
+        },
+        "to": {
+          "food": 5
+        },
+        "triggers": [
+          "bake-bread"
+        ],
+        "max": 2
+      }
+    ],
     "kind": "minor"
   },
   {
@@ -32168,7 +32259,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "退还1个井",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I66.png",
     "locales": {
       "zh": {
@@ -32179,6 +32270,16 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
         "prerequisite": "退还1个井"
       }
     },
+    "returnCards": [
+      "Major_Well",
+      "OLD_WM062_BackyardWell",
+      "OLD_WA019_LaGraceFountain",
+      "OLD_WA020_MarketFountain",
+      "OLD_NL042_DrawWell"
+    ],
+    "alsoCountsAs": [
+      "major"
+    ],
     "kind": "minor"
   },
   {
@@ -32232,7 +32333,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I68.png",
     "locales": {
       "zh": {
@@ -32243,6 +32344,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
         "prerequisite": ""
       }
     },
+    "plowEffect": true,
     "kind": "minor"
   },
   {
@@ -32291,7 +32393,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I70.png",
     "locales": {
       "zh": {
@@ -32319,7 +32421,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I71.png",
     "locales": {
       "zh": {
@@ -32330,6 +32432,16 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
         "prerequisite": ""
       }
     },
+    "altCosts": [
+      {
+        "wood": 3,
+        "reed": 2
+      },
+      {
+        "clay": 3,
+        "reed": 2
+      }
+    ],
     "kind": "minor"
   },
   {
@@ -32350,7 +32462,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     },
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I72.png",
     "locales": {
       "zh": {
@@ -32380,7 +32492,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": true,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I73.png",
     "locales": {
       "zh": {
@@ -32413,7 +32525,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     },
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I74.png",
     "locales": {
       "zh": {
@@ -32443,7 +32555,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I75.png",
     "locales": {
       "zh": {
@@ -32454,6 +32566,20 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
         "prerequisite": ""
       }
     },
+    "exchanges": [
+      {
+        "from": {
+          "grain": 1
+        },
+        "to": {
+          "food": 2
+        },
+        "triggers": [
+          "harvest"
+        ],
+        "max": 2
+      }
+    ],
     "kind": "minor"
   },
   {
@@ -32473,7 +32599,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I76.png",
     "locales": {
       "zh": {
@@ -32539,7 +32665,8 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
       "allowedCrops": [
         "wood"
       ],
-      "capacity": 2
+      "capacity": 2,
+      "separateFields": true
     },
     "originalId": "I78_Copse",
     "gameEdition": "classic",
@@ -32612,7 +32739,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     },
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I80.png",
     "locales": {
       "zh": {
@@ -32642,7 +32769,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": true,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I81.png",
     "locales": {
       "zh": {
@@ -32672,7 +32799,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I82.png",
     "locales": {
       "zh": {
@@ -32702,7 +32829,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": false,
     "extraVp": true,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I83.png",
     "locales": {
       "zh": {
@@ -32769,7 +32896,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "退还壁炉",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I85.png",
     "locales": {
       "zh": {
@@ -32780,6 +32907,70 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
         "prerequisite": "退还壁炉"
       }
     },
+    "returnCards": [
+      "Major_CookingHearth1",
+      "Major_CookingHearth2",
+      "OLD_K128_CookingHearth"
+    ],
+    "isCookery": true,
+    "isBaking": true,
+    "exchanges": [
+      {
+        "from": {
+          "vegetable": 1
+        },
+        "to": {
+          "food": 4
+        },
+        "triggers": [
+          "anytime"
+        ]
+      },
+      {
+        "from": {
+          "sheep": 1
+        },
+        "to": {
+          "food": 2
+        },
+        "triggers": [
+          "anytime"
+        ]
+      },
+      {
+        "from": {
+          "boar": 1
+        },
+        "to": {
+          "food": 3
+        },
+        "triggers": [
+          "anytime"
+        ]
+      },
+      {
+        "from": {
+          "cattle": 1
+        },
+        "to": {
+          "food": 4
+        },
+        "triggers": [
+          "anytime"
+        ]
+      },
+      {
+        "from": {
+          "grain": 1
+        },
+        "to": {
+          "food": 3
+        },
+        "triggers": [
+          "bake-bread"
+        ]
+      }
+    ],
     "kind": "minor"
   },
   {
@@ -32797,7 +32988,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": false,
     "extraVp": true,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I86.png",
     "locales": {
       "zh": {
@@ -32808,6 +32999,16 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
         "prerequisite": ""
       }
     },
+    "altCosts": [
+      {
+        "wood": 2,
+        "reed": 2
+      },
+      {
+        "clay": 2,
+        "reed": 2
+      }
+    ],
     "kind": "minor"
   },
   {
@@ -32827,7 +33028,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I87.png",
     "locales": {
       "zh": {
@@ -32888,7 +33089,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": false,
     "extraVp": true,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I89.png",
     "locales": {
       "zh": {
@@ -32919,7 +33120,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     },
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I90.png",
     "locales": {
       "zh": {
@@ -32949,7 +33150,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I91.png",
     "locales": {
       "zh": {
@@ -32977,7 +33178,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "动物×2",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I92.png",
     "locales": {
       "zh": {
@@ -33008,7 +33209,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I93.png",
     "locales": {
       "zh": {
@@ -33038,7 +33239,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": false,
     "extraVp": true,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I94.png",
     "locales": {
       "zh": {
@@ -33068,7 +33269,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I95.png",
     "locales": {
       "zh": {
@@ -33096,7 +33297,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": true,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I96.png",
     "locales": {
       "zh": {
@@ -33107,6 +33308,14 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
         "prerequisite": ""
       }
     },
+    "altCosts": [
+      {
+        "wood": 2
+      },
+      {
+        "clay": 2
+      }
+    ],
     "kind": "minor"
   },
   {
@@ -33127,7 +33336,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I97.png",
     "locales": {
       "zh": {
@@ -33158,7 +33367,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": false,
     "extraVp": true,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I98.png",
     "locales": {
       "zh": {
@@ -33169,6 +33378,20 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
         "prerequisite": ""
       }
     },
+    "exchanges": [
+      {
+        "from": {
+          "vegetable": 1
+        },
+        "to": {
+          "food": 4
+        },
+        "triggers": [
+          "harvest"
+        ],
+        "max": 1
+      }
+    ],
     "kind": "minor"
   },
   {
@@ -33186,7 +33409,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "3 Grain Fields",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/card-art/classic/I99.png",
     "locales": {
       "zh": {

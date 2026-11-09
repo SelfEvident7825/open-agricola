@@ -192,7 +192,10 @@ export const reap = (
     for (const slot of orderedSlots) {
       const amount = planned.get(slot.key) ?? 0
       if (amount <= 0 || !slot.stack) continue
-      const removed = mutations.remove({ fieldId: logicalField.id, slot: slot.index }, amount)
+      const retained = tags.includes('retain-harvested-crops')
+      const removed = retained
+        ? { ok: true, crop: slot.stack.kind, ownerCallback: undefined }
+        : mutations.remove({ fieldId: logicalField.id, slot: slot.index }, amount)
       if (!removed.ok || !removed.crop) {
         throw new Error(`[reap] failed to persist ${logicalField.id} slot ${slot.index}`)
       }
@@ -222,7 +225,7 @@ export const reap = (
       appendHarvestedCrop(reapSummary, slot.tile.row, slot.tile.col, kind, amount, sources)
       appendHarvestCountApplication(reapSummary, slot.tile.row, slot.tile.col, kind, amount, sources, tags, scope)
       appendHarvestedPosition(reapSummary, logicalField.row, logicalField.col)
-      eventSink?.emit<'farm.cropRemoved'>({
+      if (!retained) eventSink?.emit<'farm.cropRemoved'>({
         type: 'farm.cropRemoved',
         sourceCardId: logicalField.sourceCard ?? options.sourceCard,
         crops: [cropEvent],
@@ -232,7 +235,7 @@ export const reap = (
       eventSink?.emit<'resource.moved'>({
         type: 'resource.moved',
         resources: { [kind]: amount },
-        from: cropEvent.location,
+        from: retained ? { kind: 'supply' } : cropEvent.location,
         to: { kind: 'player', playerId: player.id },
         reason: 'reap',
         trigger,

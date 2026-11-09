@@ -506,7 +506,8 @@
     "source": "I/I63_MoldboardPlough.php",
     "sourceSha256": "4cac27f1771f1a9a8603d027b21ca2a09c24460ed0fd3f85476ffca1b357017e",
     "status": "native-port",
-    "reusedFrom": "B019_MoldboardPlow"
+    "reusedFrom": "B019_MoldboardPlow",
+    "manual": true
   },
   {
     "id": "OLD_I64_Alms",
@@ -514,7 +515,8 @@
     "kind": "minor",
     "source": "I/I64_Alms.php",
     "sourceSha256": "090d8ed5b807856513b71fe308a641930f87a2a15f706bcc544ea9586a88dc9b",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I65_BakersKitchen",
@@ -522,7 +524,8 @@
     "kind": "minor",
     "source": "I/I65_BakersKitchen.php",
     "sourceSha256": "f5ad65ad7932c5820c8137f153197343904de8d873c2a2bd656ee730adc7057f",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I66_VillageWell",
@@ -530,7 +533,8 @@
     "kind": "minor",
     "source": "I/I66_VillageWell.php",
     "sourceSha256": "b70a3230305885c98867122587b2ab0efaaa188aa06e4c04b3f59bbf0763dfe3",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I67_ThreshingBoard",
@@ -539,7 +543,8 @@
     "source": "I/I67_ThreshingBoard.php",
     "sourceSha256": "6e39d5f3a2ec6cde8821c8466f358cb40e8809d503155c2e2cd4f7b9a826dba9",
     "status": "native-port",
-    "reusedFrom": "A024_ThreshingBoard"
+    "reusedFrom": "A024_ThreshingBoard",
+    "manual": true
   },
   {
     "id": "OLD_I68_Harrow",
@@ -547,7 +552,8 @@
     "kind": "minor",
     "source": "I/I68_Harrow.php",
     "sourceSha256": "3998541b33259e1197dca369494314f479ba7649c7bb357b9d8cab8b46a20867",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I69_StrawberryPatch",
@@ -556,7 +562,8 @@
     "source": "I/I69_StrawberryPatch.php",
     "sourceSha256": "87399e2958b6d79e263c989e327d1a762957d30950be77274412a0a84f2294a0",
     "status": "native-port",
-    "reusedFrom": "B045_StrawberryPatch"
+    "reusedFrom": "B045_StrawberryPatch",
+    "manual": true
   },
   {
     "id": "OLD_I70_Punner",
@@ -564,7 +571,8 @@
     "kind": "minor",
     "source": "I/I70_Punner.php",
     "sourceSha256": "868a9cf2fb38effcbed940c9d3d1f4fcaf34a4e332d8cfc4354a6d7393a75f89",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I71_HolidayHouse",
@@ -572,7 +580,8 @@
     "kind": "minor",
     "source": "I/I71_HolidayHouse.php",
     "sourceSha256": "8a5d847230f5fdc7e0db9690ba0b1bf94f0e691045ec5cf879089d14f8ff6625",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I72_GoosePond",
@@ -580,7 +589,8 @@
     "kind": "minor",
     "source": "I/I72_GoosePond.php",
     "sourceSha256": "3d4e74ec87c18082d9c625e42b13d2fd6ff5c86fe006260ee7488361f38de36a",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I73_Guest",
@@ -588,7 +598,8 @@
     "kind": "minor",
     "source": "I/I73_Guest.php",
     "sourceSha256": "acb2fd9c7d2c84ae14358673951d4ac3be36722b476648d4ce921a6ab1988f92",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I74_GrainCart",
@@ -596,7 +607,8 @@
     "kind": "minor",
     "source": "I/I74_GrainCart.php",
     "sourceSha256": "6394de9d470f898298aee02c8869a0913af3663274595a3823afa95b54ca5d8b",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I75_HandMill",
@@ -604,7 +616,8 @@
     "kind": "minor",
     "source": "I/I75_HandMill.php",
     "sourceSha256": "2b2ecbb37a7b8b7ba5f201612ca900414146ed387f50d3a1ab9771534345c0e9",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I76_Rake",
@@ -612,7 +625,8 @@
     "kind": "minor",
     "source": "I/I76_Rake.php",
     "sourceSha256": "0f2cd5c888648d6f50567e29f71c14245364e8a47495b2c5596b5870c37e280b",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I77_ShepherdsCrook",
@@ -621,7 +635,8 @@
     "source": "I/I77_ShepherdsCrook.php",
     "sourceSha256": "66c04c6618322b873e070d326fe7b3ddcd4950167606a6ef0269128451d3754d",
     "status": "native-port",
-    "reusedFrom": "A083_ShepherdsCrook"
+    "reusedFrom": "A083_ShepherdsCrook",
+    "manual": true
   },
   {
     "id": "OLD_I78_Copse",
@@ -630,7 +645,8 @@
     "source": "I/I78_Copse.php",
     "sourceSha256": "eefdf3867cd4fccd437003899c18f5ad05ef3f878b4776d247bf8bd9a02de2c1",
     "status": "native-port",
-    "reusedFrom": "D075_WoodField"
+    "reusedFrom": "D075_WoodField",
+    "manual": true
   },
   {
     "id": "OLD_I79_WoodCart",
@@ -639,7 +655,8 @@
     "source": "I/I79_WoodCart.php",
     "sourceSha256": "e5ed9d25ab5e3f2b5cfc6ede5adf7bc0b8344e7ff359c9655261b3af27720604",
     "status": "native-port",
-    "reusedFrom": "C076_WoodCart"
+    "reusedFrom": "C076_WoodCart",
+    "manual": true
   },
   {
     "id": "OLD_I80_Spinney",
@@ -647,7 +664,8 @@
     "kind": "minor",
     "source": "I/I80_Spinney.php",
     "sourceSha256": "1f05c60cd93c442049c97e89bffb11e41b5078bfdd614ee7b11c244c12efbb3d",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I81_WoodenHutExtension",
@@ -655,7 +673,8 @@
     "kind": "minor",
     "source": "I/I81_WoodenHutExtension.php",
     "sourceSha256": "3ec5d4fa54e39e54021a63cd1df39ac65f49b1096c58924d3c2bacb681299b4a",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I82_WoodenCrane",
@@ -663,7 +682,8 @@
     "kind": "minor",
     "source": "I/I82_WoodenCrane.php",
     "sourceSha256": "7ce7bd869a6acb7f7dde44102b049a089fb761f69a10971450a6fd1c865bcb0a",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I83_WoodenPath",
@@ -671,7 +691,8 @@
     "kind": "minor",
     "source": "I/I83_WoodenPath.php",
     "sourceSha256": "ddc89e6fce2cdc98f715adc40ace5848c93ecf0e1fd4f776f451ab77b9bfd7a2",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I84_ChickenCoop",
@@ -680,7 +701,8 @@
     "source": "I/I84_ChickenCoop.php",
     "sourceSha256": "72a059490e41d3f81d4db47f850fd75c61f59d2e44032b8d7581b81f792e1b61",
     "status": "native-port",
-    "reusedFrom": "C044_ChickenCoop"
+    "reusedFrom": "C044_ChickenCoop",
+    "manual": true
   },
   {
     "id": "OLD_I85_CookingCorner",
@@ -688,7 +710,8 @@
     "kind": "minor",
     "source": "I/I85_CookingCorner.php",
     "sourceSha256": "79db20478ad341f32e7a5b1a4812a06c1773424de0492cb35ea2413ad9845fe0",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I86_CornStorehouse",
@@ -696,7 +719,8 @@
     "kind": "minor",
     "source": "I/I86_CornStorehouse.php",
     "sourceSha256": "cb1a5b7d853d0b10531d5d64686ff66e7fecc1604d9048eb2942c718078799e1",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I87_Flagon",
@@ -704,7 +728,8 @@
     "kind": "minor",
     "source": "I/I87_Flagon.php",
     "sourceSha256": "3d12f7a43b49526bb5c0a539fa8908f749e773a67e96a543244ee2ad91322837",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I88_Lasso",
@@ -713,7 +738,8 @@
     "source": "I/I88_Lasso.php",
     "sourceSha256": "872a2168384479f81828d6061bfc7b98af70be095910db30d9048c398931351f",
     "status": "native-port",
-    "reusedFrom": "B024_Lasso"
+    "reusedFrom": "B024_Lasso",
+    "manual": true
   },
   {
     "id": "OLD_I89_ClayPath",
@@ -721,7 +747,8 @@
     "kind": "minor",
     "source": "I/I89_ClayPath.php",
     "sourceSha256": "e8eeebed1d72a1dca64a0f8ebbb61b570d7a38a1713d793754eeff48838c77b2",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I90_PlanterBox",
@@ -729,7 +756,8 @@
     "kind": "minor",
     "source": "I/I90_PlanterBox.php",
     "sourceSha256": "dc15ed0bca499035fbd51d1bde3dd2378047cc2b0b0a3fcd6ad14012142b0eb3",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I91_Ladder",
@@ -737,7 +765,8 @@
     "kind": "minor",
     "source": "I/I91_Ladder.php",
     "sourceSha256": "43a3f1c5236096f7945c211f71ebeaeca1ee26f2b821d5a0b0b6e4e0b9c26c18",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I92_Manure",
@@ -745,7 +774,8 @@
     "kind": "minor",
     "source": "I/I92_Manure.php",
     "sourceSha256": "272a04bd353e07b747359542bffc7e317a4c9c9589a788c0a6acce41566bb756",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I93_MilkingShed",
@@ -753,7 +783,8 @@
     "kind": "minor",
     "source": "I/I93_MilkingShed.php",
     "sourceSha256": "e3880dd6dcb6abab0b3a21192f09cb906383e1e82c363363f9022a7f42aa99cf",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I94_PavedRoad",
@@ -761,7 +792,8 @@
     "kind": "minor",
     "source": "I/I94_PavedRoad.php",
     "sourceSha256": "8976cf51604659743d0588447ebfb015bedb2bf09f439cfea1783161b5268c1e",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I95_FishTrap",
@@ -769,7 +801,8 @@
     "kind": "minor",
     "source": "I/I95_FishTrap.php",
     "sourceSha256": "2d1c420c867620bf760030b0188f9c3705887a8d931008808cd10f0c99bbfc53",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I96_ReedExchange",
@@ -777,7 +810,8 @@
     "kind": "minor",
     "source": "I/I96_ReedExchange.php",
     "sourceSha256": "648fc1e777e4f1f199633a3941d25e9146dc193398eb73c1436ddd23261858c5",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I97_Slaughterhouse",
@@ -785,7 +819,8 @@
     "kind": "minor",
     "source": "I/I97_Slaughterhouse.php",
     "sourceSha256": "d39d123e5d1c1c6d3b4e11bb9065999efeaf81f335880989318361503713d232",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I98_SchnapsDistillery",
@@ -793,7 +828,8 @@
     "kind": "minor",
     "source": "I/I98_SchnapsDistillery.php",
     "sourceSha256": "904d473273c3c699abfe817eded3974168220e96826544a40c434c2b2ce4f6e0",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I99_StrawthatchedRoof",
@@ -801,7 +837,8 @@
     "kind": "minor",
     "source": "I/I99_StrawthatchedRoof.php",
     "sourceSha256": "ecd29edbce657b21ecdaf6d25d5545a68fb82f040c9f02368b78b2bc083078eb",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I100_Tavern",
@@ -809,7 +846,8 @@
     "kind": "minor",
     "source": "I/I100_Tavern.php",
     "sourceSha256": "0b549e72ce696f28f26062c885f4a712e2027fe5a44e060c0ba9cb25307c44bf",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I101_AnimalFeed",
@@ -817,7 +855,8 @@
     "kind": "minor",
     "source": "I/I101_AnimalFeed.php",
     "sourceSha256": "5f39271677ca75517986db03b8241a791ddf27072ce654330bbffb27d43d6914",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I102_WildlifeReserve",
@@ -826,7 +865,8 @@
     "source": "I/I102_WildlifeReserve.php",
     "sourceSha256": "b4b38e103a9f9e656aa69a97faee577992440ef2534a03e4adf9b219f70eaca3",
     "status": "native-port",
-    "reusedFrom": "C011_WildlifeReserve"
+    "reusedFrom": "C011_WildlifeReserve",
+    "manual": true
   },
   {
     "id": "OLD_I103_WaterMill",
@@ -834,7 +874,8 @@
     "kind": "minor",
     "source": "I/I103_WaterMill.php",
     "sourceSha256": "50a5115481e05f651f2b2747a99bb137134f7a7af5000884e2d8204400219518",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I104_WeeklyMarket",
@@ -842,7 +883,8 @@
     "kind": "minor",
     "source": "I/I104_WeeklyMarket.php",
     "sourceSha256": "6150080590daddaf76a1c5f57896bdfceec9d8b29de9657029fad67b9d156cf3",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I337_ClayDeposit",
@@ -850,7 +892,8 @@
     "kind": "minor",
     "source": "I/I337_ClayDeposit.php",
     "sourceSha256": "cfe331b91fa5fc08cf2b5cb567da1aac3745c8f144edac6be5a04f5f5306ce0c",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K105_Acreage",
@@ -4798,7 +4841,8 @@
     "kind": "occupation",
     "source": "I/I219_Fieldsman.php",
     "sourceSha256": "e17ba81dcec0f1ec6b2bc4f68c12c2f83eeea57c97f1815e825df50bc3ccdbda",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I220_WellBuilder",
@@ -4806,7 +4850,8 @@
     "kind": "occupation",
     "source": "I/I220_WellBuilder.php",
     "sourceSha256": "ff8f02883cf3720dfcb98b721a5bdeecbd2c770ff747344ba9360bb79587a0d8",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I221_VillageElder",
@@ -4814,7 +4859,8 @@
     "kind": "occupation",
     "source": "I/I221_VillageElder.php",
     "sourceSha256": "274a8f16af9a7a4756c4528b1c9a55b463774d1de75b0b8ab25fc14ce78bf289",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I222_SocialClimber",
@@ -4822,7 +4868,8 @@
     "kind": "occupation",
     "source": "I/I222_SocialClimber.php",
     "sourceSha256": "a9ffc70638fb6399efd45843ebf66aab791096bf1de60d5cbd63c63a842b444b",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I223_HarvestHelper",
@@ -4830,7 +4877,8 @@
     "kind": "occupation",
     "source": "I/I223_HarvestHelper.php",
     "sourceSha256": "2ebfcf00a735512423c48199365278bae5892f8567bc6d7ffac7545a2c7223c8",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I224_FieldWorker",
@@ -4838,7 +4886,8 @@
     "kind": "occupation",
     "source": "I/I224_FieldWorker.php",
     "sourceSha256": "77fe5bbaba188486f3fce85a25ad3eb2e09dac3a853c4f0447f88ce3e480aec4",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I225_FieldWatchman",
@@ -4847,7 +4896,8 @@
     "source": "I/I225_FieldWatchman.php",
     "sourceSha256": "94230ce2f1e813fc5ed2df0875cba75d4124c102766a5fafc541464ac9a83387",
     "status": "native-port",
-    "reusedFrom": "C090_FieldWatchman"
+    "reusedFrom": "C090_FieldWatchman",
+    "manual": true
   },
   {
     "id": "OLD_I226_Gardener",
@@ -4855,7 +4905,8 @@
     "kind": "occupation",
     "source": "I/I226_Gardener.php",
     "sourceSha256": "4f7568698e418f43eb4d20b49d9de7eed759bab9d0de771dac028d58c0dc5008",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I227_ChurchWarden",
@@ -4863,7 +4914,8 @@
     "kind": "occupation",
     "source": "I/I227_ChurchWarden.php",
     "sourceSha256": "7ffb905efff26ec21da615f879aebf5275fd31296cc2dca1f681afb362d229f1",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I228_Businessman",
@@ -4871,7 +4923,8 @@
     "kind": "occupation",
     "source": "I/I228_Businessman.php",
     "sourceSha256": "8b1ea647fbe8addb1baf319ac007a28ab8712a3e66bb090c631ba39c949765d3",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I229_Sycophant",
@@ -4879,7 +4932,8 @@
     "kind": "occupation",
     "source": "I/I229_Sycophant.php",
     "sourceSha256": "3e4cfe5c353baa242d6d13d7c5e26826da32e679a553cec550194cb4ae8d881d",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I230_ClayDigger",
@@ -4887,7 +4941,8 @@
     "kind": "occupation",
     "source": "I/I230_ClayDigger.php",
     "sourceSha256": "454b75e004abc56e9d45e9d98311fc4f91d47d4640a7aacbc4cc00547026f1af",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I231_Manservant",
@@ -4896,7 +4951,8 @@
     "source": "I/I231_Manservant.php",
     "sourceSha256": "fa83872d5b606b2c228ce8da29d64bb99954bd474ad68f1ef4b627e7c8d3c5d4",
     "status": "native-port",
-    "reusedFrom": "B107_Manservant"
+    "reusedFrom": "B107_Manservant",
+    "manual": true
   },
   {
     "id": "OLD_I232_Midwife",
@@ -4904,7 +4960,8 @@
     "kind": "occupation",
     "source": "I/I232_Midwife.php",
     "sourceSha256": "1357c194a54c4457e0ad684640df5bda96fc174ae7aaed720057a91d986e9255",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I233_FarmSteward",
@@ -4912,7 +4969,8 @@
     "kind": "occupation",
     "source": "I/I233_FarmSteward.php",
     "sourceSha256": "d5ebfe43651caa5118efe33d8fb9f7db149cfabbf05d6eb42e12f6b4db932f49",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I234_WoodBuyer",
@@ -4920,7 +4978,8 @@
     "kind": "occupation",
     "source": "I/I234_WoodBuyer.php",
     "sourceSha256": "9543cb16b8b5e51a85c589a20b3e058e5e0000d87735b51ed693ebbde2c536a2",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I235_WoodCollector",
@@ -4929,7 +4988,8 @@
     "source": "I/I235_WoodCollector.php",
     "sourceSha256": "9582ae41f3421f1f1f6fc833dbd15cd7997e3b4b705a4638cd286cb4597d9d00",
     "status": "native-port",
-    "reusedFrom": "C118_WoodCollector"
+    "reusedFrom": "C118_WoodCollector",
+    "manual": true
   },
   {
     "id": "OLD_I236_HideFarmer",
@@ -4938,7 +4998,8 @@
     "source": "I/I236_HideFarmer.php",
     "sourceSha256": "c469a6b7c41b852607ace1104b84b7a5c4bcaef1ed7ad13306494dadcd516da1",
     "status": "native-port",
-    "reusedFrom": "D132_HideFarmer"
+    "reusedFrom": "D132_HideFarmer",
+    "manual": true
   },
   {
     "id": "OLD_I237_Juggler",
@@ -4946,7 +5007,8 @@
     "kind": "occupation",
     "source": "I/I237_Juggler.php",
     "sourceSha256": "4b3ea2d4ce462b3c128fb908408dcc7eba763edab04f38a0880d9a79dd72b918",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I238_Chamberlain",
@@ -4954,7 +5016,8 @@
     "kind": "occupation",
     "source": "I/I238_Chamberlain.php",
     "sourceSha256": "9ea1d6ae8a44d92c575431558fb0df3ac8eeab462d753fe28c74c306e2a19d75",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I239_CornProteer",
@@ -4962,7 +5025,8 @@
     "kind": "occupation",
     "source": "I/I239_CornProteer.php",
     "sourceSha256": "eb2c3b877ab3ef2ef0fb008954c9bfa2aab69935329da84e987b260aa04870ea",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I240_Cowherd",
@@ -4971,7 +5035,8 @@
     "source": "I/I240_Cowherd.php",
     "sourceSha256": "df10c483e61fe1b9ba53b7280c631227aeae3387da626442687bc27f5cad6c6a",
     "status": "native-port",
-    "reusedFrom": "C147_Cowherd"
+    "reusedFrom": "C147_Cowherd",
+    "manual": true
   },
   {
     "id": "OLD_I241_ClayPlasterer",
@@ -4979,7 +5044,8 @@
     "kind": "occupation",
     "source": "I/I241_ClayPlasterer.php",
     "sourceSha256": "4311e0f8363e9532dd49873ef3458d0481876440a904369ad2dd9170561ad4af",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I242_ClayHutBuilder",
@@ -4988,7 +5054,8 @@
     "source": "I/I242_ClayHutBuilder.php",
     "sourceSha256": "c8ebcb10ef727f1ea7b145d441b7eaaa2d7acbb498075b7f471b4f01164c1aa8",
     "status": "native-port",
-    "reusedFrom": "A120_ClayHutBuilder"
+    "reusedFrom": "A120_ClayHutBuilder",
+    "manual": true
   },
   {
     "id": "OLD_I243_Bricklayer",
@@ -4996,7 +5063,8 @@
     "kind": "occupation",
     "source": "I/I243_Bricklayer.php",
     "sourceSha256": "1f69c064076be01093c91bff2cd8b91723fdfd7fe57dd8816d8b4f94f92003c1",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I244_Layabout",
@@ -5004,7 +5072,8 @@
     "kind": "occupation",
     "source": "I/I244_Layabout.php",
     "sourceSha256": "01816fbabe4735b800bdbed4d62d556c9ba0c78a79a52ad8987cfd0e7cca1843",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I245_MarketCrier",
@@ -5013,7 +5082,8 @@
     "source": "I/I245_MarketCrier.php",
     "sourceSha256": "e6a9023a9a961bda50616c087fd2bcfbf97a47095c7fb7b8f7d22ead11310b8b",
     "status": "native-port",
-    "reusedFrom": "C142_MarketCrier"
+    "reusedFrom": "C142_MarketCrier",
+    "manual": true
   },
   {
     "id": "OLD_I246_MilkingHand",
@@ -5021,7 +5091,8 @@
     "kind": "occupation",
     "source": "I/I246_MilkingHand.php",
     "sourceSha256": "38f819d432300a43a7b9a66110327e33c1ee7116a0ef570b30ad9de494b7e23b",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I247_Butcher",
@@ -5029,7 +5100,8 @@
     "kind": "occupation",
     "source": "I/I247_Butcher.php",
     "sourceSha256": "c03b54327fb9effb6e142b08cc4a9794c070082292b6a9383cfec79cb22e85d8",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I248_NetFisherman",
@@ -5037,7 +5109,8 @@
     "kind": "occupation",
     "source": "I/I248_NetFisherman.php",
     "sourceSha256": "b73636ad2167c9f478ea90a18570d519ecc71b199c17a6c6ee171dd0ca022368",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I249_Puppeteer",
@@ -5046,7 +5119,8 @@
     "source": "I/I249_Puppeteer.php",
     "sourceSha256": "4b4bebc372d10961e23a02871fbe1c21afb9f1deee2ed1c7f92d83d2b51d42d2",
     "status": "native-port",
-    "reusedFrom": "C152_Puppeteer"
+    "reusedFrom": "C152_Puppeteer",
+    "manual": true
   },
   {
     "id": "OLD_I250_SheepWhisperer",
@@ -5054,7 +5128,8 @@
     "kind": "occupation",
     "source": "I/I250_SheepWhisperer.php",
     "sourceSha256": "5a0774da7a1c16f9d2afee282ba932556718ed4979b335dad010172f932ec15e",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I251_ReedBuyer",
@@ -5062,7 +5137,8 @@
     "kind": "occupation",
     "source": "I/I251_ReedBuyer.php",
     "sourceSha256": "88b6e19a879d3c22aa6384113520679123f484aaffe036db7dab926bd18d071d",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I252_PigBreeder",
@@ -5071,7 +5147,8 @@
     "source": "I/I252_PigBreeder.php",
     "sourceSha256": "39b8923f84d4ab57a4ecb33150814783b792c65289708eb131df24f7e01d4998",
     "status": "native-port",
-    "reusedFrom": "A165_PigBreeder"
+    "reusedFrom": "A165_PigBreeder",
+    "manual": true
   },
   {
     "id": "OLD_I253_PigCatcher",
@@ -5079,7 +5156,8 @@
     "kind": "occupation",
     "source": "I/I253_PigCatcher.php",
     "sourceSha256": "a09a4310b76f34c7fc7028e132a96a9974c9a3c908004f19a7c9551db021f4b8",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I254_Groom",
@@ -5087,7 +5165,8 @@
     "kind": "occupation",
     "source": "I/I254_Groom.php",
     "sourceSha256": "31874c7453bd6a36b09fc4e01ede33c131ef661fb9dcdf3a8ad1ca55ea73a17b",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I255_StoneBuyer",
@@ -5095,7 +5174,8 @@
     "kind": "occupation",
     "source": "I/I255_StoneBuyer.php",
     "sourceSha256": "8d9cab2a0485e7b15ad06d7b169f4fef2c59e7d20757ce395bab955b91b732dc",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I256_StoneCarver",
@@ -5103,7 +5183,8 @@
     "kind": "occupation",
     "source": "I/I256_StoneCarver.php",
     "sourceSha256": "5a7b7e5a282323dbf02303d5e6b547bad05e2d4e049f124d807fd33234f792cd",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I257_StreetMusician",
@@ -5111,7 +5192,8 @@
     "kind": "occupation",
     "source": "I/I257_StreetMusician.php",
     "sourceSha256": "4f6dfa699ec1ed95ffc0565211c0ce8e3e590cece7d52053f17c11353aefc384",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I258_Cabinetmaker",
@@ -5119,7 +5201,8 @@
     "kind": "occupation",
     "source": "I/I258_Cabinetmaker.php",
     "sourceSha256": "2cf22469933d2f2eed66269e72c2186b28da1431f060d5c2016b36f5812bd1de",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I259_AnimalDealer",
@@ -5128,7 +5211,8 @@
     "source": "I/I259_AnimalDealer.php",
     "sourceSha256": "389d2c97c4455e880a9c3ba4ca407b399e721e5f3e1a3d058a90b18ff2797eae",
     "status": "native-port",
-    "reusedFrom": "A147_AnimalDealer"
+    "reusedFrom": "A147_AnimalDealer",
+    "manual": true
   },
   {
     "id": "OLD_I260_Taster",
@@ -5136,7 +5220,8 @@
     "kind": "occupation",
     "source": "I/I260_Taster.php",
     "sourceSha256": "dc9dfa7d452a30bc80b5c49f126d5e7bd546d0032bfd845769742e6a7f796313",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I261_Outrider",
@@ -5145,7 +5230,8 @@
     "source": "I/I261_Outrider.php",
     "sourceSha256": "08fd30f4d836a6eec686747797b69e671480dba15ef6e47e67a272e9a3119195",
     "status": "native-port",
-    "reusedFrom": "C160_Outrider"
+    "reusedFrom": "C160_Outrider",
+    "manual": true
   },
   {
     "id": "OLD_I262_WaterCarrier",
@@ -5153,7 +5239,8 @@
     "kind": "occupation",
     "source": "I/I262_WaterCarrier.php",
     "sourceSha256": "2aaa6b7e5caaf4cba2bf475628b4036191670c5237a1cec8bd0c6e560aa60aa4",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I263_FenceBuilder",
@@ -5161,7 +5248,8 @@
     "kind": "occupation",
     "source": "I/I263_FenceBuilder.php",
     "sourceSha256": "f70b0b32c8069c09c89cccaa3c322e79609e95fd874ed298288b7100c3f7a98b",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I264_Fencer",
@@ -5169,7 +5257,8 @@
     "kind": "occupation",
     "source": "I/I264_Fencer.php",
     "sourceSha256": "b0f442d027582e0c02c7ebac86f7300c09f18378f362de92108f66992a002109",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I265_FenceDeliveryman",
@@ -5177,7 +5266,8 @@
     "kind": "occupation",
     "source": "I/I265_FenceDeliveryman.php",
     "sourceSha256": "3c8270e08372f58e77bfff0259603db7300906cbacad7b84c55af6ad1671bf10",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K266_Serf",
@@ -5568,7 +5658,8 @@
     "kind": "occupation",
     "source": "I/I340_Rancher.php",
     "sourceSha256": "4d7e6c8c6e52a343be77b0dd7d68bf8e71c7c7a4cb50b6aaf7abe79663a69303",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_E341_Guildmaster",

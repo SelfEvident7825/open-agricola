@@ -115,7 +115,7 @@ Before game end: after round 14 onAfterRoundEnd completes, without opening round
   onBeforeEndGame -> preScoringWindow -> gameover
 ```
 
-Stage hooks return `ActionFlow` and run as resumable subflows through `EngineStack`. **Stage Dispatch** ([ADR 0008](../adr/0008-node-parallel-reaction-dispatch.md)) is the shared model for preparation windows, StartOfTurn, turn end, Before-Harvest, Harvest field and before-end:
+Stage hooks return resumable `ActionFlow` subflows through `EngineStack`. **Stage Dispatch** ([ADR 0008](../adr/0008-node-parallel-reaction-dispatch.md)) unifies preparation, turn-start/end, before-harvest, field and before-end windows:
 
 - Each window freezes its player order (clockwise from the Start Player Marker where the rule says so) and, on each player's entry, captures a fixed tree of `activate-card-effect` sources using ownership, hand-enabled hooks and the pure `stageEligibility` query. Discovery never filters by current affordability.
 - One source expands directly; several enter `ParallelNode(mode='trigger-select')`. Handlers, payment and mandatory / pass state are recomputed from a live cloned-state preview after each selection. Completed sources never replay; cards played inside a window join only later windows.
@@ -135,7 +135,7 @@ Window-specific invariants:
 - **Harvest preparation**: `harvestPrepWindow` offers only payable, use-limited Harvest exchanges that produce a demanded good, from `preHarvestGoodsWanted` / `preHarvestGoodsWantedBeforeReap` / `maySkipHarvestFieldPhase` metadata. Usage is recorded per source and round.
 - **Reap**: `reap` is an internal action. A full Harvest uses `trigger: { phase: 'harvest' }`; a private field phase reaps without Harvest summaries. `computeHarvestCount()` returns counts with `sources` / `tags` / `scope`, changed only through `registerHarvestCountModifier()`. Per-crop `reap` events accumulate into one parallel flow before `onAfterReap`.
 - **Post-reap anytime**: offered in Harvest order before feeding is computed; rebuilt after each flow.
-- **Feeding**: `computeHarvestFeedingRequirement()` changes only through `registerHarvestFeedingRequirementModifier()`. The feed request carries an authoritative exchange catalog ([Anytime window policy](actions.md#anytime-window-policy)); `handleFeedResolved()` validates the whole ordered plan before any mutation.
+- **Feeding**: `computeHarvestFeedingOrderPriority` sorts the queue with stable ties. `computeHarvestFeedingRequirement()` changes only through `registerHarvestFeedingRequirementModifier()`. The request carries the exchange catalog ([Anytime window policy](actions.md#anytime-window-policy)); `handleFeedResolved()` validates the whole ordered plan before any mutation.
 - **Breeding**: hooks control thresholds, offspring counts and order; see [cards](cards.md).
 - **Harvest summaries** are rule facts: `harvestReapSummary` (crops, positions, count applications) and `harvestBreedSummary` (placed newborns, settled after placement) last until `onAfterHarvest`; cards compose them through `getHarvestOutcome()`.
 - **Before end**: `onBeforeEndGame` dispatches in target seating order with `beforeEndGameScope`; `handHooks` cannot use it. `preScoringWindow` then offers `preScoring: true` or `'only'` anytime listeners per player before `gameOver`. `'only'` excludes earlier windows at menu and execution admission; `true` retains ordinary availability. Pre-scoring spending uses explicit flows; Scoring Reserve never deducts real resources.

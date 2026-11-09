@@ -1,38 +1,42 @@
 {
-  "date": "2026-11-08",
-  "build": "classic-full-e-deck",
+  "date": "2026-11-09",
+  "build": "classic-full-e-and-i-decks",
   "applicationBase": "72bfc8f756aadca3d0b2d79e875b4201a9302523",
+  "implementationBase": "97a6c96d1844084698af5e751ca4259344012692",
+  "implementationBaseNote": "Local git baseline reconstructed byte-for-byte from the previous full E-deck source archive. This is not an upstream GitHub commit.",
   "languagePin": {
     "repository": "titanxxh/open-agricola-i18n",
-    "revision": "9e88a3e0bcb1d1669ee9e9de7e33d7257d867e22",
-    "manifestSha256": "409882f8b66c8cfc83f371ce459aae9fa2abafc4b0fda235d900937a5df97e61"
+    "revision": "270b740a4d0517055ce4396de989f02d8e03ddd5",
+    "manifestSha256": "4e8142c307fdd75787003d4da4e0455b9b0473cc7882bdf334b9a513856e9554"
   },
   "classic": {
     "handCards": 1024,
-    "nativeEffects": 199,
-    "referenceOnly": 825,
+    "nativeEffects": 270,
+    "referenceOnly": 754,
     "E": {
       "total": 126,
       "nativeEffects": 126,
+      "referenceOnly": 0
+    },
+    "I": {
+      "total": 91,
+      "nativeEffects": 91,
       "referenceOnly": 0,
-      "newlyImplemented": 89,
-      "previouslyImplemented": 37
+      "newlyImplemented": 71,
+      "previouslyImplemented": 20
     }
   },
   "checks": [
     {
-      "scope": "Classic E rules and four-player GameSession cases, shared payment/renovation/breeding/fencing/animal regressions, related revised cards, client animal draft and tooling/docs gates",
-      "files": 53,
-      "tests": 885,
+      "scope": "Classic E/I rules and four-player GameSession cases; shared payment, renovation, sowing/reaping, logical fields, worker supply/rotation, feeding, animals, related revised cards and tooling/docs regressions",
+      "files": 82,
+      "tests": 1334,
       "skipped": 1,
       "failed": 0,
       "status": "PASS",
-      "eDeckBehaviorTests": 195,
-      "eDeckTestFiles": {
-        "shared/cards/__tests__/classic-e-rules.test.ts": 96,
-        "server/__tests__/classic-e-session.test.ts": 99
-      },
-      "skippedCase": "Existing renovation-computeCosts-matrix-session: E027_PiggyBank does not target renovation (revised deck, unrelated to OLD_E)."
+      "iDeckTests": 168,
+      "eDeckTests": 195,
+      "skippedCase": "Existing renovation-computeCosts-matrix-session: E027_PiggyBank does not target renovation (revised deck, unrelated to classic)."
     },
     {
       "scope": "TypeScript project build",
@@ -42,8 +46,7 @@
     {
       "scope": "Vite production build",
       "command": "AGRICOLA_I18N_DIR=../open-agricola-i18n NODE_OPTIONS=--max-old-space-size=4096 node node_modules/vite/bin/vite.js build",
-      "status": "PASS",
-      "note": "A transient upstream public-asset metadata HTTP 503 was resolved by retry."
+      "status": "PASS"
     },
     {
       "scope": "i18n audit",
@@ -55,34 +58,36 @@
       "status": "PASS"
     },
     {
-      "scope": "Card implementation and state boundaries; test state-copy guard",
+      "scope": "Card implementation and state boundaries; test state-copy and test-project coverage checks",
       "status": "PASS"
     },
     {
-      "scope": "Changed-file ESLint, with recheck of subsequently changed files",
+      "scope": "Changed TypeScript files ESLint",
       "errors": 0,
-      "remainingWarnings": 2,
-      "status": "PASS_WITH_WARNINGS",
-      "note": "Existing React hook warnings in FarmBoard.tsx."
+      "warnings": 0,
+      "status": "PASS"
     },
     {
-      "scope": "Classic importer preserves handwritten implementations",
+      "scope": "Classic importer preserves handwritten card implementations",
       "filesPreserved": 1024,
       "sourceChanges": 0,
-      "manifestRecords": 1024,
-      "nativePorts": 199,
+      "nativePorts": 270,
       "status": "PASS"
+    },
+    {
+      "scope": "Architecture TypeScript and browser entry boundaries",
+      "status": "PASS",
+      "note": "Both production entry closures remain free of rule runtime; base artwork remains resolved by the existing asset host."
     }
   ],
   "limitations": [
-    "All 126 E-deck records in the supplied classic BGA source are implemented and available for dealing; this does not establish exhaustive correctness for every possible card combination.",
-    "The 73 native-effect ports outside E retain the previous source-method-based migration and have not all received independent rule-by-rule acceptance.",
-    "The remaining 825 hand cards outside E are visible references and are excluded from dealing.",
-    "The site still shares its base game engine; this release does not claim to port every historical Agricola rules difference.",
-    "No browser full-game acceptance, full repository test suite, GitHub CI, push or deployment was performed.",
+    "All 126 E-deck and 91 I-deck records in the supplied agricolaoldnice source have native effects and are available for dealing; automated cases do not exhaust every possible card combination.",
+    "The 53 native ports outside E/I retain the previous source-method-based migration and have not all received independent rule-by-rule acceptance.",
+    "The remaining 754 hand cards outside E/I are visible references and excluded from dealing.",
+    "The site continues to share its base game engine; this is not a claim to port every historical Agricola rules difference.",
+    "No browser full-game acceptance, full repository test suite, remote CI, push or deployment was performed.",
     "The language revision is local and unpublished; use the bundled sibling language directory for local builds."
   ],
-  "implementationBase": "a2955726",
   "testFiles": [
     {
       "path": "server/__tests__/A102_Grocer-session.test.ts",
@@ -110,8 +115,18 @@
       "skipped": 0
     },
     {
+      "path": "server/__tests__/B24_Lasso-session.test.ts",
+      "passed": 12,
+      "skipped": 0
+    },
+    {
       "path": "server/__tests__/C013_WoodSlideHammer-renovation-session.test.ts",
       "passed": 7,
+      "skipped": 0
+    },
+    {
+      "path": "server/__tests__/D121_ClayPlasterer-session.test.ts",
+      "passed": 9,
       "skipped": 0
     },
     {
@@ -120,8 +135,28 @@
       "skipped": 0
     },
     {
+      "path": "shared/cards/__tests__/A112_D72_harvest-count.test.ts",
+      "passed": 16,
+      "skipped": 0
+    },
+    {
+      "path": "shared/cards/__tests__/AB-logical-field-boundary.test.ts",
+      "passed": 7,
+      "skipped": 0
+    },
+    {
       "path": "shared/cards/__tests__/C8_PlantFertilizer.test.ts",
       "passed": 13,
+      "skipped": 0
+    },
+    {
+      "path": "shared/cards/__tests__/CD-logical-field-boundary.test.ts",
+      "passed": 5,
+      "skipped": 0
+    },
+    {
+      "path": "shared/cards/__tests__/EM-logical-field-boundary.test.ts",
+      "passed": 3,
       "skipped": 0
     },
     {
@@ -142,6 +177,11 @@
     {
       "path": "shared/cards/__tests__/classic-e-rules.test.ts",
       "passed": 96,
+      "skipped": 0
+    },
+    {
+      "path": "shared/cards/__tests__/classic-i-rules.test.ts",
+      "passed": 63,
       "skipped": 0
     },
     {
@@ -167,6 +207,16 @@
     {
       "path": "shared/cards/__tests__/renovation-fencing-cost-semantics.test.ts",
       "passed": 9,
+      "skipped": 0
+    },
+    {
+      "path": "shared/cards/helpers/__tests__/card-field.test.ts",
+      "passed": 23,
+      "skipped": 0
+    },
+    {
+      "path": "shared/actions/helpers/__tests__/placement-availability.test.ts",
+      "passed": 7,
       "skipped": 0
     },
     {
@@ -200,13 +250,58 @@
       "skipped": 0
     },
     {
+      "path": "shared/actions/effects/__tests__/reap-listener.test.ts",
+      "passed": 5,
+      "skipped": 0
+    },
+    {
+      "path": "shared/actions/effects/__tests__/reap-private-trigger.test.ts",
+      "passed": 6,
+      "skipped": 0
+    },
+    {
+      "path": "shared/actions/effects/__tests__/reap.test.ts",
+      "passed": 12,
+      "skipped": 0
+    },
+    {
       "path": "shared/actions/effects/__tests__/renovation.test.ts",
       "passed": 18,
       "skipped": 0
     },
     {
+      "path": "shared/actions/effects/__tests__/sow-permissions.test.ts",
+      "passed": 12,
+      "skipped": 0
+    },
+    {
+      "path": "shared/actions/effects/__tests__/sow-resolveChoice.test.ts",
+      "passed": 7,
+      "skipped": 0
+    },
+    {
+      "path": "shared/actions/effects/__tests__/sow-seed-budget.test.ts",
+      "passed": 1,
+      "skipped": 0
+    },
+    {
+      "path": "shared/actions/effects/__tests__/sow.test.ts",
+      "passed": 9,
+      "skipped": 0
+    },
+    {
+      "path": "server/__tests__/A92-extra-turn-session.test.ts",
+      "passed": 11,
+      "skipped": 0
+    },
+    {
       "path": "server/__tests__/animal-reorg-prefill-session.test.ts",
       "passed": 7,
+      "skipped": 0
+    },
+    {
+      "path": "server/__tests__/card-field-scoring-session.test.ts",
+      "passed": 11,
       "skipped": 0
     },
     {
@@ -217,6 +312,16 @@
     {
       "path": "server/__tests__/classic-edition-session.test.ts",
       "passed": 22,
+      "skipped": 0
+    },
+    {
+      "path": "server/__tests__/classic-i-grain-sale-session.test.ts",
+      "passed": 5,
+      "skipped": 0
+    },
+    {
+      "path": "server/__tests__/classic-i-session.test.ts",
+      "passed": 100,
       "skipped": 0
     },
     {
@@ -240,8 +345,28 @@
       "skipped": 0
     },
     {
+      "path": "server/__tests__/first-round-start-session.test.ts",
+      "passed": 24,
+      "skipped": 0
+    },
+    {
       "path": "server/__tests__/harvest-breeding-cooking-session.test.ts",
       "passed": 14,
+      "skipped": 0
+    },
+    {
+      "path": "server/__tests__/harvest-feed-conversion-listener-session.test.ts",
+      "passed": 1,
+      "skipped": 0
+    },
+    {
+      "path": "server/__tests__/harvest-session.test.ts",
+      "passed": 11,
+      "skipped": 0
+    },
+    {
+      "path": "server/__tests__/logical-field-sow-session.test.ts",
+      "passed": 7,
       "skipped": 0
     },
     {
@@ -260,9 +385,29 @@
       "skipped": 0
     },
     {
+      "path": "server/__tests__/private-field-phase-session.test.ts",
+      "passed": 1,
+      "skipped": 0
+    },
+    {
+      "path": "server/__tests__/reap-completion-session.test.ts",
+      "passed": 11,
+      "skipped": 0
+    },
+    {
       "path": "server/__tests__/renovation-computeCosts-matrix-session.test.ts",
       "passed": 8,
       "skipped": 1
+    },
+    {
+      "path": "server/__tests__/round-end-helper.test.ts",
+      "passed": 1,
+      "skipped": 0
+    },
+    {
+      "path": "server/__tests__/round-space-before-rewards-session.test.ts",
+      "passed": 36,
+      "skipped": 0
     },
     {
       "path": "server/__tests__/seasonal-fence-payment-session.test.ts",
@@ -272,6 +417,11 @@
     {
       "path": "server/__tests__/stable-payment-session.test.ts",
       "passed": 5,
+      "skipped": 0
+    },
+    {
+      "path": "server/__tests__/supply-workers-session.test.ts",
+      "passed": 33,
       "skipped": 0
     },
     {
