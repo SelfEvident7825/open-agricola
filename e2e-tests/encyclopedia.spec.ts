@@ -25,8 +25,9 @@ async function walkRepresentativePath(page: Page, layout: Layout) {
 
   const search = page.getByRole('searchbox', { name: 'Search cards' })
   await search.fill('a004')
-  await expectResults(page, 1)
-  await expect(galleryEntries(page)).toHaveAccessibleName('View Baseboards')
+  await expectResults(page, 2)
+  await expect(galleryEntries(page).first()).toHaveAccessibleName('View Baseboards')
+  await expect(galleryEntries(page).nth(1)).toHaveAccessibleName('View 啤酒桌')
   await search.fill('')
   await expectCatalog(page)
 

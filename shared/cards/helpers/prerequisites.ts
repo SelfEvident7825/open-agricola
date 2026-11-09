@@ -14,7 +14,10 @@ type CardPrerequisiteSource = Pick<
 >
 
 export const countOccupations = (player: PlayerState) =>
-  player.occupationPlayed.reduce((sum,id) => sum + (getRegisteredOccupation(id)?.occupationCount ?? 1),0) + (player.extraOccupationsFromCards?.length ?? 0)
+  player.occupationPlayed.reduce(
+    (sum, id) => sum + (getRegisteredOccupation(id)?.occupationCount ?? 1),
+    0,
+  ) + (player.extraOccupationsFromCards?.length ?? 0)
 
 const countAllImprovements = (player: PlayerState) =>
   player.improvements.length + player.minorPlayed.length

@@ -652,10 +652,7 @@ const getRemainingTradeGroupUses = (
   return Math.max(0, trade.groupMax - getTradeGroupUsage(tradesUsed, trade))
 }
 
-const isWithinTradeGroupLimits = (
-  tradesUsed: TradeUsage[],
-  units = 1,
-) => {
+const isWithinTradeGroupLimits = (tradesUsed: TradeUsage[], units = 1) => {
   const groups = new Map<string, { max: number; used: number }>()
   for (const entry of tradesUsed) {
     if (entry.times <= 0 || !entry.trade.groupId || entry.trade.groupMax === undefined) continue

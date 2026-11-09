@@ -76,11 +76,12 @@ test.describe(DESKTOP.name, () => {
 
     await panel.getByRole('button', { name: 'Clear filters' }).click()
     await option(panel, 'Upgrade by returning a card').check()
-    await expectResults(page, 11)
+    await expectResults(page, 15)
     expect(await galleryNames(page)).toEqual([
       'View Oriental Fireplace', 'View Earth Oven', 'View Oven Installation', 'View Open Grill', 'View Horse Butchery',
       'View Living History Museum', 'View Cooking Hearth', 'View Cooking Hearth', 'View Cooking Hearth',
       'View Cookhouse', 'View Cookhouse',
+      'View 烘焙师烤炉', 'View 烘焙厨房', 'View 村中水井', 'View 烹饪角',
     ])
 
     await panel.getByRole('button', { name: 'Clear filters' }).click()
@@ -101,6 +102,30 @@ test.describe(DESKTOP.name, () => {
     await expectResults(page, 0)
   })
 
+  test('F4 browses classic cards separately and distinguishes reference-only cards from playable E cards', async () => {
+    await openCatalog(page)
+    await option(sidebar(page), 'Classic Agricola (preview)').check()
+    await expectResults(page, 1024)
+
+    const search = page.getByRole('searchbox')
+    await search.fill('OLD_BI01_SparrenCastle')
+    await expectResults(page, 1)
+    const notice = 'Reference only: this card effect is not ported and this card is not dealt.'
+    await expect(galleryEntries(page)).toContainText(notice)
+    await galleryEntries(page).click()
+    await expect(page.getByRole('dialog')).toHaveAccessibleName('施帕仁堡')
+    await expect(page.getByRole('dialog')).toContainText(notice)
+    await page.getByRole('button', { name: 'Close details' }).click()
+
+    await search.fill('OLD_E30_Canoe')
+    await expectResults(page, 1)
+    await expect(galleryEntries(page)).toHaveAccessibleName('View 独木舟')
+    await expect(galleryEntries(page)).not.toContainText(notice)
+    await galleryEntries(page).click()
+    await expect(page.getByRole('dialog')).toHaveAccessibleName('独木舟')
+    await expect(page.getByRole('dialog')).not.toContainText(notice)
+  })
+
   test('F3 keeps negative decimal bounds, unlisted points and bonus marks apart', async () => {
     await openCatalog(page)
     const panel = sidebar(page)
@@ -113,7 +138,7 @@ test.describe(DESKTOP.name, () => {
     expect(await galleryNames(page)).toEqual(['View Mother PR01'])
     await minimum.fill('-1')
     await maximum.fill('0')
-    await expectResults(page, 14)
+    await expectResults(page, 833)
     await option(panel, 'Father').check()
     await expectResults(page, 0)
     await option(panel, 'No fixed points listed').check()
@@ -217,7 +242,7 @@ test.describe(MOBILE.name, () => {
     await tabTo(page, page.getByRole('button', { name: 'Remove filter: Deck B' }))
     await page.keyboard.press('Enter')
 
-    await expectResults(page, 218)
+    await expectResults(page, 1242)
     await expect(page.getByRole('button', { name: 'Remove filter: Fixed points ≥ -1' })).toBeFocused()
   })
 })
@@ -286,14 +311,14 @@ test.describe(LANDSCAPE.name, () => {
 
     await option(panel, 'Marked with bonus points').check()
 
-    await expect(confirm).toHaveText('Show results (135)')
+    await expect(confirm).toHaveText('Show results (301)')
     await expect(close).toBeInViewport({ ratio: 1 })
     await expect(confirm).toBeInViewport({ ratio: 1 })
     await page.screenshot({ path: test.info().outputPath('landscape-filter-panel.png') })
 
     await confirm.click()
 
-    await expectResults(page, 135)
+    await expectResults(page, 301)
     await expect(page.getByRole('button', { name: 'Filters (1)' })).toBeFocused()
     await expectNoHorizontalOverflow(page)
   })

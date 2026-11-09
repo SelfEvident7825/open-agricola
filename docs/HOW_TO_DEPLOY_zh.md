@@ -883,6 +883,10 @@ Prometheus 每 15 秒 scrape（超时 5 秒），每 15 秒发现有效应用租
 
 译文在独立的 `open-agricola-i18n` 仓库中。先发布语言提交并完成语言验证，再将 `i18n.ref` 指向可访问的仓库、提交和清单哈希，然后运行应用 CI。语言 PR 合入前可使用 fork 中的提交。本地使用并排的两个仓库时，设置 `AGRICOLA_I18N_DIR=../open-agricola-i18n`；这个本地配置不能让 CI 访问尚未发布的提交。
 
-`docs/classic/validation.json` 记录实际执行的本地验证范围。GitHub CI、数据库集成和浏览器验收仍需分别提供发布证据。应用分支包含旧农原始卡图和来源记录。修改、提交源码或发 PR 都不会部署网站；审核后按已有发布流程部署前端和后端。
+旧农卡图放在独立仓库 `titanxxh/open-agricola-assets` 的 `assets/classic/<deck>/` 下，与应用源码分开。先发布素材提交，等待 Pages 部署及线上逐文件字节校验通过，再更新应用的 `public-assets.ref`；`public-assets.required.json` 列出全部旧农卡图。fork 中的素材提交不能替代正式素材站点的部署。旧农卡图与新版卡图使用同一套带版本号的公开素材 URL 契约。
+
+`docs/classic/validation.json` 记录实际执行的本地验证范围。GitHub CI、数据库集成和浏览器验收仍需分别提供发布证据。旧农源码的来源记录仍保留在应用仓库中。修改、提交源码或发 PR 都不会部署网站；审核后按已有发布流程部署前端和后端。
 
 手工实现卡牌后，应删除文件首行的生成导入标记，再运行 `scripts/import-classic-cards.ts`；没有该标记的文件会被保留。
+
+卡牌模块按源系列分组存放在 `shared/cards/classic/<deck>/`。运行 `node --import tsx scripts/import-classic-cards.ts` 重新生成元数据及带生成标记的模块。如需同时复制原图，必须同时提供包含旧项目 `deck*` 图片文件夹的目录和独立素材仓库目录：`node --import tsx scripts/import-classic-cards.ts <legacy-image-root> <assets-checkout-root>`。图片只写入素材仓库的 `assets/classic/<deck>/`，不会写入应用仓库。Windows 下可用 `scripts/restore-classic-art.ps1 -Source <agricolaoldnice-root> -AssetsRoot <assets-checkout-root>` 单独恢复图片。

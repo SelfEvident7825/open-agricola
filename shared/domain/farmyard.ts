@@ -139,7 +139,12 @@ export type FencePastureBounds = {
   count?: Bounds
   totalSize?: Bounds
 }
-export type PastureCapacityProfile = { id: string; capacity: number; reservedCapacity?: Partial<Record<AnimalKey, number>>; allowedAnimalType?: AnimalKey | null }
+export type PastureCapacityProfile = {
+  id: string
+  capacity: number
+  reservedCapacity?: Partial<Record<AnimalKey, number>>
+  allowedAnimalType?: AnimalKey | null
+}
 
 export type FenceValidationOptions = {
   skipPayment?: boolean
@@ -393,8 +398,11 @@ const enforcePastureAnimalCapacity = (
       ((player.resources?.[animalType] ?? 0) as number) - (nonPastureTotals[animalType] ?? 0),
     )
   }
-  const profileFor = (pasture: Pasture): PastureCapacityProfile => profiles?.find(z => z.id === pasture.id)
-    ?? { id: pasture.id, capacity: getPastureCapacity(player, pasture) }
+  const profileFor = (pasture: Pasture): PastureCapacityProfile =>
+    profiles?.find((z) => z.id === pasture.id) ?? {
+      id: pasture.id,
+      capacity: getPastureCapacity(player, pasture),
+    }
   const write = (pasture: Pasture, counts: Partial<Record<AnimalKey, number>>) => {
     const compact = compactAnimalCounts(counts)
     pasture.animalCount = sumAnimalCounts(compact)
@@ -404,7 +412,9 @@ const enforcePastureAnimalCapacity = (
   }
   for (const pasture of player.pastures) {
     const profile = profileFor(pasture)
-    const previous = pasture.animalCounts ?? (pasture.animalType ? { [pasture.animalType]: pasture.animalCount } : {})
+    const previous =
+      pasture.animalCounts ??
+      (pasture.animalType ? { [pasture.animalType]: pasture.animalCount } : {})
     const counts: Partial<Record<AnimalKey, number>> = {}
     for (const animal of animalTypes) {
       const desired = Math.min(previous[animal] ?? 0, totals[animal] ?? 0)
@@ -412,27 +422,40 @@ const enforcePastureAnimalCapacity = (
       for (let n = 0; n < desired; n++) {
         const next = { ...counts, [animal]: (counts[animal] ?? 0) + 1 }
         if (sumAnimalCounts(next) > animalZoneCapacity(profile, next)) break
-        counts[animal] = next[animal]; totals[animal] = (totals[animal] ?? 0) - 1
+        counts[animal] = next[animal]
+        totals[animal] = (totals[animal] ?? 0) - 1
       }
     }
     write(pasture, counts)
   }
   for (const pasture of player.pastures) {
     const profile = profileFor(pasture)
-    const counts: Partial<Record<AnimalKey, number>> = { ...(pasture.animalCounts ?? (pasture.animalType ? { [pasture.animalType]: pasture.animalCount } : {})) }
+    const counts: Partial<Record<AnimalKey, number>> = {
+      ...(pasture.animalCounts ??
+        (pasture.animalType ? { [pasture.animalType]: pasture.animalCount } : {})),
+    }
     for (const animal of animalTypes) {
-      if (profile.allowedAnimalType !== null && sumAnimalCounts(counts) > 0 && !counts[animal]) continue
+      if (profile.allowedAnimalType !== null && sumAnimalCounts(counts) > 0 && !counts[animal])
+        continue
       while ((totals[animal] ?? 0) > 0) {
         const next = { ...counts, [animal]: (counts[animal] ?? 0) + 1 }
         if (sumAnimalCounts(next) > animalZoneCapacity(profile, next)) break
-        counts[animal] = next[animal]; totals[animal] = (totals[animal] ?? 0) - 1
+        counts[animal] = next[animal]
+        totals[animal] = (totals[animal] ?? 0) - 1
       }
     }
     write(pasture, counts)
   }
   for (const animal of animalTypes) {
-    const count = player.pastures.reduce((n, pasture) => n + (pasture.animalCounts?.[animal] ?? (pasture.animalType === animal ? pasture.animalCount : 0)), 0)
-    player.resources[animal] = count + Math.min(nonPastureTotals[animal] ?? 0, player.resources[animal] ?? 0)
+    const count = player.pastures.reduce(
+      (n, pasture) =>
+        n +
+        (pasture.animalCounts?.[animal] ??
+          (pasture.animalType === animal ? pasture.animalCount : 0)),
+      0,
+    )
+    player.resources[animal] =
+      count + Math.min(nonPastureTotals[animal] ?? 0, player.resources[animal] ?? 0)
   }
 }
 
@@ -1192,7 +1215,7 @@ export const validateFenceSelection = <T extends PlayerFarmState>(
   const pastures: Pasture[] = pastureRegions.map((region, index) => ({
     animalType: null,
     animalCount: 0,
-    ...normalized.pastures.find(p => regionKey(p.tiles ?? []) === regionKey(region.tiles)),
+    ...normalized.pastures.find((p) => regionKey(p.tiles ?? []) === regionKey(region.tiles)),
     id: `pasture-${index + 1}`,
     tiles: region.tiles,
   }))
@@ -1307,7 +1330,12 @@ export const validateFenceSelection = <T extends PlayerFarmState>(
     fenceSegments: [...(normalized.fenceSegments ?? []), ...newSegments],
     pastures,
   }
-  enforcePastureAnimalCapacity(updated, normalized, options.nonPastureAnimalCounts, options.pastureCapacityProfiles?.(updated))
+  enforcePastureAnimalCapacity(
+    updated,
+    normalized,
+    options.nonPastureAnimalCounts,
+    options.pastureCapacityProfiles?.(updated),
+  )
   if (options.preserveAnimalTotals) {
     const animalTotalsAfter = {
       sheep: updated.resources?.sheep ?? 0,
@@ -1421,8 +1449,15 @@ export class Farmyard {
     const options = {
       ...(spec.options ?? {}),
       ...(spec.fenceSources === undefined ? {} : { fenceSources: spec.fenceSources }),
-      ...(this.nonPastureAnimalCounts ? { nonPastureAnimalCounts: this.nonPastureAnimalCounts() } : {}),
-      ...(this.pastureCapacityProfiles ? { pastureCapacityProfiles: (player: PlayerFarmState) => this.pastureCapacityProfiles!(player as PlayerState) } : {}),
+      ...(this.nonPastureAnimalCounts
+        ? { nonPastureAnimalCounts: this.nonPastureAnimalCounts() }
+        : {}),
+      ...(this.pastureCapacityProfiles
+        ? {
+            pastureCapacityProfiles: (player: PlayerFarmState) =>
+              this.pastureCapacityProfiles!(player as PlayerState),
+          }
+        : {}),
     }
     return validateFenceSelection(
       this.player,

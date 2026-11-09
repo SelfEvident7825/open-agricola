@@ -67,11 +67,15 @@ describe('card encyclopedia catalog membership (D1)', () => {
     expect(contaminated.map((entry) => entry.key)).toEqual(entries.map((entry) => entry.key))
     expect(entries.filter((entry) => /CUSTOM_|STUB_/.test(entry.sourceId))).toEqual([])
   })
+
   it('marks classic reference-only cards and keeps their original printed number', () => {
     const classic = entries.filter(entry => entry.group === 'classic')
     expect(classic).toHaveLength(1024)
-    expect(classic.filter(entry => entry.availableInGame)).toHaveLength(110)
+    expect(classic.filter(entry => entry.availableInGame)).toHaveLength(270)
+    const classicEI = classic.filter(entry => /^OLD_[EI]\d/.test(entry.sourceId))
+    expect(classicEI).toHaveLength(217)
+    expect(classicEI.every(entry => entry.availableInGame)).toBe(true)
+    expect(classic.filter(entry => entry.availableInGame === false)).toHaveLength(754)
     expect(classic.find(entry => entry.sourceId === 'OLD_E30_Canoe')?.displayNumber).toBe('E30')
   })
-
 })

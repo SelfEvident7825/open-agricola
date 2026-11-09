@@ -248,6 +248,7 @@ describe('farm action events', () => {
     const placeEvents: DraftGameEvent[] = []
     const placePlayer = player()
     const placeState = {
+      round: 1,
       players: [placePlayer],
       actionSpaces: [space('forest')],
       currentPlayerIndex: 0,

@@ -118,8 +118,9 @@ const subtractFromCountsByZone = (
 export const getAssignedAnimalsByType = (player: PlayerState, state?: GameState): AnimalCounts => {
   const result: AnimalCounts = { ...ZERO }
   for (const pasture of player.pastures ?? []) {
-    if (pasture.animalCounts) { addCounts(result, pasture.animalCounts) }
-    else if (pasture.animalType && pasture.animalCount > 0 && isAnimalKey(pasture.animalType)) {
+    if (pasture.animalCounts) {
+      addCounts(result, pasture.animalCounts)
+    } else if (pasture.animalType && pasture.animalCount > 0 && isAnimalKey(pasture.animalType)) {
       result[pasture.animalType] = (result[pasture.animalType] ?? 0) + pasture.animalCount
     }
   }
@@ -173,7 +174,10 @@ export const subtractAnimalsFromBoard = (
       if (remaining <= 0) break
       if (pasture.animalCounts) {
         const take = Math.min(pasture.animalCounts[type] ?? 0, remaining)
-        pasture.animalCounts = compactAnimalCounts({ ...pasture.animalCounts, [type]: (pasture.animalCounts[type] ?? 0) - take })
+        pasture.animalCounts = compactAnimalCounts({
+          ...pasture.animalCounts,
+          [type]: (pasture.animalCounts[type] ?? 0) - take,
+        })
         pasture.animalCount = sumAnimalCounts(pasture.animalCounts)
         pasture.animalType = singleAnimalType(pasture.animalCounts)
         remaining -= take

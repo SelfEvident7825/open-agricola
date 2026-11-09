@@ -31,20 +31,20 @@ for (const layout of LAYOUTS) {
         .toEqual(['View Fireplace', 'View Fireplace', 'View Fireplace', 'View Oriental Fireplace'])
 
       await searchBox(page).fill('a004')
-      await expect(resultCount(page)).toHaveText('Results: 1')
-      await expect(galleryEntries(page)).toHaveAccessibleName('View Baseboards')
+      await expect(resultCount(page)).toHaveText('Results: 2')
+      expect(await galleryNames(page)).toEqual(['View Baseboards', 'View 啤酒桌'])
 
       await searchBox(page).fill('FIREPLACE vegetable')
-      await expect(resultCount(page)).toHaveText('Results: 5')
+      await expect(resultCount(page)).toHaveText('Results: 6')
       expect(await galleryNames(page))
-        .toEqual(['View Fireplace', 'View Fireplace', 'View Fireplace', 'View Vegetable Slicer', 'View Oriental Fireplace'])
+        .toEqual(['View Fireplace', 'View Fireplace', 'View Fireplace', 'View Vegetable Slicer', 'View Oriental Fireplace', 'View 简易火炉'])
       await page.screenshot({ path: test.info().outputPath('search-results.png') })
 
       await page.getByRole('button', { name: /^Display language/ }).click()
       await page.getByRole('option', { name: '简体中文' }).click()
-      await expect(resultCount(page)).toHaveText('5 条结果')
+      await expect(resultCount(page)).toHaveText('6 条结果')
       await expect(page.getByRole('searchbox', { name: '搜索卡牌' })).toHaveValue('FIREPLACE vegetable')
-      await expect.poll(() => galleryNames(page)).toEqual(['查看 火炉', '查看 火炉', '查看 火炉', '查看 蔬果刨刀', '查看 东方火炉'])
+      await expect.poll(() => galleryNames(page)).toEqual(['查看 火炉', '查看 火炉', '查看 火炉', '查看 蔬果刨刀', '查看 东方火炉', '查看 简易火炉'])
     })
 
     test('Q1 waits for an input method to finish before searching', async ({ browserName }) => {
@@ -62,7 +62,8 @@ for (const layout of LAYOUTS) {
       await cdp.send('Input.insertText', { text: '木头' })
       await expect(searchBox(page)).toHaveValue('木头')
       await expect(resultCount(page)).not.toHaveText(catalogCount!)
-      await expect(galleryEntries(page).nth(2)).toHaveAccessibleName('View Baseboards')
+      await expect(galleryEntries(page).filter({ hasText: 'Baseboards' })).toHaveAccessibleName('View Baseboards')
+      await expect(galleryEntries(page).filter({ hasText: '木头地' })).toHaveAccessibleName('View 木头地')
     })
 
     test('Q2 finds icon text by 木头, 木材 and the English name, and every word must match', async () => {

@@ -11,27 +11,17 @@ import { canEnterSpace } from '../../actions/helpers/placement-availability'
 import type { DraftGameEvent } from '../../contract/events'
 import type { ActionFlow, Resource } from '../../contract/types'
 import { computeAnimalZones } from '../../domain/animal-zones'
-import {
-  availableWorkers,
-  familySize,
-  getFamilyTokenLimit,
-} from '../../domain/player'
+import { availableWorkers, familySize, getFamilyTokenLimit } from '../../domain/player'
 import { getOwnOrdinaryFenceReserveCount } from '../../domain/supply-tokens'
 import { returnSupplyWorkers } from '../../domain/supply-workers'
-import {
-  createInitialState,
-} from '../../session/state-bootstrap'
+import { createInitialState } from '../../session/state-bootstrap'
 import {
   getCardEffect,
   getHarvestFeedingOrderPriority,
   isWorkerPlacementBlocked,
 } from '../card-effects'
 import { classicMinors, classicOccupations } from '../catalog'
-import {
-  deriveVirtualTileCol,
-  getLogicalFields,
-  mutateLogicalFields,
-} from '../helpers/card-field'
+import { deriveVirtualTileCol, getLogicalFields, mutateLogicalFields } from '../helpers/card-field'
 import { readCardExtraData } from '../helpers/card-state'
 import { ALL_CARD_IMPLS } from '../register-all'
 import { installOfficialCardRegistry } from './card-environment'
@@ -50,8 +40,7 @@ const setup = (numbers: number[] = []) => {
     p.occupationPlayed = []
     p.improvements = []
     p.cardStates = {}
-    for (const k of Object.keys(p.resources))
-      p.resources[k as keyof Resource] = 0
+    for (const k of Object.keys(p.resources)) p.resources[k as keyof Resource] = 0
   }
   for (const n of numbers) {
     const card = id(n)
@@ -69,8 +58,7 @@ const flowGains = (flow: ActionFlow | void): Partial<Resource> => {
   const result: Partial<Resource> = {}
   for (const child of flow.children)
     for (const [key, value] of Object.entries(flowGains(child)))
-      result[key as keyof Resource] =
-        (result[key as keyof Resource] ?? 0) + (value ?? 0)
+      result[key as keyof Resource] = (result[key as keyof Resource] ?? 0) + (value ?? 0)
   return result
 }
 
@@ -79,10 +67,7 @@ describe('classic I — four-player printed rules', () => {
     const deck = cards.filter((c) => c.deck === 'I')
     expect(deck).toHaveLength(91)
     expect(
-      deck.every(
-        (c) =>
-          c.implemented === true && c.artUrl?.startsWith('/card-art/classic/I'),
-      ),
+      deck.every((c) => c.implemented === true && c.artUrl?.startsWith('/assets/classic/I/I')),
     ).toBe(true)
     expect(deck.every((c) => ALL_CARD_IMPLS[c.id] !== undefined)).toBe(true)
   })
@@ -104,9 +89,7 @@ describe('classic I — four-player printed rules', () => {
     const { state, player } = setup([n])
     state.round = round
     expect(
-      flowGains(getCardEffect(id(n))!.onBuy!(state, player))[
-        n === 64 ? 'food' : 'wood'
-      ] ?? 0,
+      flowGains(getCardEffect(id(n))!.onBuy!(state, player))[n === 64 ? 'food' : 'wood'] ?? 0,
     ).toBe(amount)
   })
   it.each([
@@ -117,23 +100,16 @@ describe('classic I — four-player printed rules', () => {
     [235, 10, [11, 12, 13, 14], { wood: 1 }],
     [250, 3, [7, 10, 12, 14], { sheep: 1 }],
     [250, 8, [12], { sheep: 1 }],
-  ] as const)(
-    'I%i schedules exact future rounds from %i',
-    (n, round, rounds, resources) => {
-      const { state, player } = setup([n])
-      state.round = round
-      getCardEffect(id(n))!.onBuy!(state, player)
-      const entries = state.pendingFutureMeeples.flatMap((r) =>
-        normalizeFutureSchedule(round, r),
-      )
-      expect(entries.map((e) => e.round)).toEqual(rounds)
-      expect(
-        entries.every(
-          (e) => JSON.stringify(e.resources) === JSON.stringify(resources),
-        ),
-      ).toBe(true)
-    },
-  )
+  ] as const)('I%i schedules exact future rounds from %i', (n, round, rounds, resources) => {
+    const { state, player } = setup([n])
+    state.round = round
+    getCardEffect(id(n))!.onBuy!(state, player)
+    const entries = state.pendingFutureMeeples.flatMap((r) => normalizeFutureSchedule(round, r))
+    expect(entries.map((e) => e.round)).toEqual(rounds)
+    expect(entries.every((e) => JSON.stringify(e.resources) === JSON.stringify(resources))).toBe(
+      true,
+    )
+  })
   const recipes = [
     [65, 'bake-bread', 'grain', 5, 2],
     [75, 'harvest', 'grain', 2, 2],
@@ -149,51 +125,46 @@ describe('classic I — four-player printed rules', () => {
     [256, 'harvest', 'stone', 3, 1],
     [258, 'harvest', 'wood', 2, 1],
   ] as const
-  it.each(recipes)(
-    'I%i converts %s %s into %i food',
-    (n, window, resource, food, max) => {
-      const { state, player } = setup([n])
-      player.resources[resource] = 5
-      state.roundPhase = window === 'harvest' ? 'harvest' : 'work'
-      const recipe = getExchangeCatalog({
+  it.each(recipes)('I%i converts %s %s into %i food', (n, window, resource, food, max) => {
+    const { state, player } = setup([n])
+    player.resources[resource] = 5
+    state.roundPhase = window === 'harvest' ? 'harvest' : 'work'
+    const recipe = getExchangeCatalog({
+      state,
+      player,
+      windows: [window],
+    }).find((t) => t.sourceId === id(n) && t.from[resource] === 1)!
+    expect(recipe).toBeDefined()
+    const entry = {
+      trade: recipe.trade,
+      count: 1,
+      ...(window === 'harvest' ? { harvestRound: state.round } : {}),
+    }
+    expect(
+      executeExchangeBatch({
         state,
         player,
-        windows: [window],
-      }).find((t) => t.sourceId === id(n) && t.from[resource] === 1)!
-      expect(recipe).toBeDefined()
-      const entry = {
-        trade: recipe.trade,
-        count: 1,
-        ...(window === 'harvest' ? { harvestRound: state.round } : {}),
-      }
+        entries: [entry],
+        reorganizeAnimals: false,
+      }).type,
+    ).toBe('ok')
+    expect(player.resources[resource]).toBe(4)
+    expect(player.resources.food).toBe(food)
+    if (max && window === 'harvest')
       expect(
-        executeExchangeBatch({
+        validateExchangeBatch({
           state,
           player,
-          entries: [entry],
-          reorganizeAnimals: false,
-        }).type,
-      ).toBe('ok')
-      expect(player.resources[resource]).toBe(4)
-      expect(player.resources.food).toBe(food)
-      if (max && window === 'harvest')
-        expect(
-          validateExchangeBatch({
-            state,
-            player,
-            entries: [{ ...entry, count: max }],
-          }),
-        ).toBe(false)
-    },
-  )
+          entries: [{ ...entry, count: max }],
+        }),
+      ).toBe(false)
+  })
   it.each([5, 6, 7])(
     'I98 scores the fifth and sixth vegetables, including fields (%i)',
     (total) => {
       const { state, player } = setup([98])
       player.resources.vegetable = total - 2
-      player.fields = [
-        { row: 0, col: 1, stacks: [{ kind: 'vegetable', remaining: 2 }] },
-      ]
+      player.fields = [{ row: 0, col: 1, stacks: [{ kind: 'vegetable', remaining: 2 }] }]
       expect(
         getCardEffect(id(98))!.computeBonusScore!(state, player, {
           categories: [],
@@ -212,10 +183,9 @@ describe('classic I — four-player printed rules', () => {
   ])('I246 gives food at the old cattle thresholds (%i)', (cattle, food) => {
     const { state, player } = setup([246])
     player.resources.cattle = cattle
-    expect(
-      flowGains(getCardEffect(id(246))!.onHarvestFieldPhase!(state, player))
-        .food ?? 0,
-    ).toBe(food)
+    expect(flowGains(getCardEffect(id(246))!.onHarvestFieldPhase!(state, player)).food ?? 0).toBe(
+      food,
+    )
     expect(
       getCardEffect(id(246))!.computeBonusScore!(state, player, {
         categories: [],
@@ -226,9 +196,9 @@ describe('classic I — four-player printed rules', () => {
     const { state, player } = setup([93])
     state.players[1]!.resources.sheep = 5
     state.players[2]!.resources.cattle = 6
-    expect(
-      flowGains(getCardEffect(id(93))!.onHarvestFieldPhase!(state, player)),
-    ).toEqual({ food: 3 })
+    expect(flowGains(getCardEffect(id(93))!.onHarvestFieldPhase!(state, player))).toEqual({
+      food: 3,
+    })
     expect(getCardEffect(id(93))!.onAfterReap).toBeUndefined()
   })
   it.each([
@@ -260,38 +230,30 @@ describe('classic I — four-player printed rules', () => {
     returnSupplyWorkers(state)
     state.round = 7
     expect(availableWorkers(state, player)).toHaveLength(6)
-    const restored = rehydrateState(JSON.parse(JSON.stringify(serializeState(state, { actionHooks: undefined })))).state
+    const restored = rehydrateState(
+      JSON.parse(JSON.stringify(serializeState(state, { actionHooks: undefined }))),
+    ).state
     expect(availableWorkers(restored, restored.players[0]!)).toHaveLength(6)
     returnSupplyWorkers(state)
     expect(availableWorkers(state, player)).toHaveLength(5)
   })
-  it.each([13, 14])(
-    'I71 blocks all round-14 workers, including a guest (%i)',
-    (round) => {
-      const { state, player } = setup([71, 73])
-      state.round = 13
-      getCardEffect(id(73))!.onBuy!(state, player)
-      state.round = round
-      expect(isWorkerPlacementBlocked(state, player)).toBe(round === 14)
-      expect(availableWorkers(state, player)).toHaveLength(round === 14 ? 3 : 2)
-    },
-  )
+  it.each([13, 14])('I71 blocks all round-14 workers, including a guest (%i)', (round) => {
+    const { state, player } = setup([71, 73])
+    state.round = 13
+    getCardEffect(id(73))!.onBuy!(state, player)
+    state.round = round
+    expect(isWorkerPlacementBlocked(state, player)).toBe(round === 14)
+    expect(availableWorkers(state, player)).toHaveLength(round === 14 ? 3 : 2)
+  })
   it('I78 has two independently counted fields, harvests and mutates both', () => {
     const { state, player } = setup([78])
-    expect(cards.find(c => c.id === id(78))!.cardField?.separateFields).toBe(true)
+    expect(cards.find((c) => c.id === id(78))!.cardField?.separateFields).toBe(true)
     const m = mutateLogicalFields(state, player)
     for (let i = 0; i < 2; i++)
-      expect(
-        m.place({ row: -1, col: deriveVirtualTileCol(id(78), i) }, 'wood', 3)
-          .ok,
-      ).toBe(true)
-    expect(
-      getLogicalFields(player).filter((f) => f.stacks.length),
-    ).toHaveLength(2)
+      expect(m.place({ row: -1, col: deriveVirtualTileCol(id(78), i) }, 'wood', 3).ok).toBe(true)
+    expect(getLogicalFields(player).filter((f) => f.stacks.length)).toHaveLength(2)
     expect(reap(state, player).reapSummary.resources).toEqual({ wood: 2 })
-    expect(getLogicalFields(player).map((f) => f.stacks[0]?.remaining)).toEqual(
-      [2, 2],
-    )
+    expect(getLogicalFields(player).map((f) => f.stacks[0]?.remaining)).toEqual([2, 2])
   })
   it.each(['harvest', 'private-field-phase'])(
     'I226 retains farm and card vegetables during %s',
@@ -299,14 +261,8 @@ describe('classic I — four-player printed rules', () => {
       const { state, player } = setup([226])
       const field = 'OLD_E18_BeanField'
       player.minorPlayed.push(field)
-      player.fields = [
-        { row: 0, col: 1, stacks: [{ kind: 'vegetable', remaining: 1 }] },
-      ]
-      mutateLogicalFields(state, player).place(
-        { fieldId: 'card:' + field },
-        'vegetable',
-        1,
-      )
+      player.fields = [{ row: 0, col: 1, stacks: [{ kind: 'vegetable', remaining: 1 }] }]
+      mutateLogicalFields(state, player).place({ fieldId: 'card:' + field }, 'vegetable', 1)
       const events: DraftGameEvent[] = []
       reap(
         state,
@@ -315,16 +271,10 @@ describe('classic I — four-player printed rules', () => {
         { trigger: { phase } },
       )
       expect(player.resources.vegetable).toBe(2)
+      expect(getLogicalFields(player).map((f) => f.stacks[0]?.remaining)).toEqual([1, 1])
+      expect(events.filter((e) => e.type === 'farm.cropRemoved')).toHaveLength(0)
       expect(
-        getLogicalFields(player).map((f) => f.stacks[0]?.remaining),
-      ).toEqual([1, 1])
-      expect(events.filter((e) => e.type === 'farm.cropRemoved')).toHaveLength(
-        0,
-      )
-      expect(
-        events
-          .filter((e) => e.type === 'resource.moved')
-          .every((e) => e.from.kind === 'supply'),
+        events.filter((e) => e.type === 'resource.moved').every((e) => e.from.kind === 'supply'),
       ).toBe(true)
     },
   )
@@ -347,21 +297,18 @@ describe('classic I — four-player printed rules', () => {
       ).toBe(true)
     }
   })
-  it.each([1, 5, 9])(
-    'I265 reserves only deliverable fences (played round %i)',
-    (round) => {
-      const { state, player } = setup([265])
-      state.round = round
-      getCardEffect(id(265))!.onBuy!(state, player)
-      const count = round === 1 ? 8 : round === 5 ? 4 : 0
-      expect(getOwnOrdinaryFenceReserveCount(player)).toBe(15 - count)
-      if (count) {
-        state.round = round + 6
-        getCardEffect(id(265))!.onRoundStart!(state, player)
-        expect(getOwnOrdinaryFenceReserveCount(player)).toBe(19 - count)
-      }
-    },
-  )
+  it.each([1, 5, 9])('I265 reserves only deliverable fences (played round %i)', (round) => {
+    const { state, player } = setup([265])
+    state.round = round
+    getCardEffect(id(265))!.onBuy!(state, player)
+    const count = round === 1 ? 8 : round === 5 ? 4 : 0
+    expect(getOwnOrdinaryFenceReserveCount(player)).toBe(15 - count)
+    if (count) {
+      state.round = round + 6
+      getCardEffect(id(265))!.onRoundStart!(state, player)
+      expect(getOwnOrdinaryFenceReserveCount(player)).toBe(19 - count)
+    }
+  })
   it('I263 takes one actual supply fence and binds its chosen action space', () => {
     const { state, player } = setup([263])
     getCardEffect(id(263))!.resolveChoice!(state, player, 'forest', {
@@ -372,16 +319,12 @@ describe('classic I — four-player printed rules', () => {
   })
   it('I97 feeds later without changing the priority of the other three players', () => {
     const { state } = setup([97])
-    expect(
-      state.players.map((p) => getHarvestFeedingOrderPriority(state, p)),
-    ).toEqual([1, 0, 0, 0])
+    expect(state.players.map((p) => getHarvestFeedingOrderPriority(state, p))).toEqual([1, 0, 0, 0])
   })
   it('I221 awards all tied leaders and counts Village Well once', () => {
     const { state, player } = setup([221, 66])
     state.players[1]!.improvements = ['Major_Well']
-    expect(
-      getCardEffect(id(221))!.computeSharedPostScore!(state, player, []),
-    ).toEqual([
+    expect(getCardEffect(id(221))!.computeSharedPostScore!(state, player, [])).toEqual([
       { playerId: player.id, score: 3 },
       { playerId: state.players[1]!.id, score: 3 },
     ])
@@ -390,14 +333,9 @@ describe('classic I — four-player printed rules', () => {
     const { state, player } = setup([102])
     player.minorPlayed.push('OLD_E59_DrinkingTrough')
     player.occupationPlayed.push('OLD_E29_ShepherdsPipe')
-    expect(
-      computeAnimalZones(player, state).find((z) => z.cardId === id(102))
-        ?.capacity,
-    ).toBe(7)
+    expect(computeAnimalZones(player, state).find((z) => z.cardId === id(102))?.capacity).toBe(7)
     const effect = getCardEffect(id(102))!
-    const zone = computeAnimalZones(player, state).find(
-      (z) => z.cardId === id(102),
-    )!
+    const zone = computeAnimalZones(player, state).find((z) => z.cardId === id(102))!
     expect(
       effect.getInvalidAnimals!(
         player,
@@ -411,12 +349,7 @@ describe('classic I — four-player printed rules', () => {
       ),
     ).toHaveLength(0)
     expect(
-      effect.getInvalidAnimals!(
-        player,
-        zone,
-        Array(4).fill({ type: 'boar' }),
-        state,
-      ),
+      effect.getInvalidAnimals!(player, zone, Array(4).fill({ type: 'boar' }), state),
     ).toHaveLength(1)
   })
 })

@@ -17,7 +17,19 @@ export type EncyclopediaPublicType =
 
 /** Declared deck / expansion order; the catalog's default order starts from this. */
 export const ENCYCLOPEDIA_GROUPS = [
-  'A', 'B', 'C', 'D', 'E', 'M', 'majorStandard', 'major56', 'majorMoor', 'parents', 'moor', 'seasons', 'classic',
+  'A',
+  'B',
+  'C',
+  'D',
+  'E',
+  'M',
+  'majorStandard',
+  'major56',
+  'majorMoor',
+  'parents',
+  'moor',
+  'seasons',
+  'classic',
 ] as const
 
 export type EncyclopediaGroup = typeof ENCYCLOPEDIA_GROUPS[number]

@@ -1,12 +1,6 @@
 import { afterEach, describe, expect, it } from 'vitest'
-import {
-  rehydrateState,
-  serializeSessionSnapshot,
-} from '../../shared/session/serialization'
-import {
-  GameSession,
-  type SessionResponse,
-} from '../game/authoritative-session'
+import { rehydrateState, serializeSessionSnapshot } from '../../shared/session/serialization'
+import { GameSession, type SessionResponse } from '../game/authoritative-session'
 
 const CARD_ID = 'OLD_I239_CornProteer'
 const SALE = 'OLD_I239-grain-sale-anytime'
@@ -39,10 +33,7 @@ const setup = () => {
   return session
 }
 
-const confirmSwitches = (
-  session: GameSession,
-  initial: SessionResponse,
-): SessionResponse => {
+const confirmSwitches = (session: GameSession, initial: SessionResponse): SessionResponse => {
   let response = initial
   for (
     let step = 0;
@@ -51,21 +42,13 @@ const confirmSwitches = (
     response.interaction.request.kind === 'confirm-player-switch';
     step++
   ) {
-    response = session.resolveChoice(
-      response.interaction.request.fromPlayerIndex,
-      'confirm',
-    )
+    response = session.resolveChoice(response.interaction.request.fromPlayerIndex, 'confirm')
     expect(response.ok, response.error).toBe(true)
   }
   return response
 }
 
-const answer = (
-  session: GameSession,
-  initial: SessionResponse,
-  player: number,
-  value: string,
-) => {
+const answer = (session: GameSession, initial: SessionResponse, player: number, value: string) => {
   const response = confirmSwitches(session, initial)
   expect(response.interaction.stateId).toBe('wait')
   expect(response.interaction.playerIndex).toBe(player)
@@ -100,9 +83,10 @@ describe('classic I239 — four-player negotiated grain sales', () => {
         grain: 1,
         food: 5,
       })
-      expect(response.state.players[multiple ? 2 : 1]!.resources).toMatchObject(
-        { grain: 1, food: 1 },
-      )
+      expect(response.state.players[multiple ? 2 : 1]!.resources).toMatchObject({
+        grain: 1,
+        food: 1,
+      })
       expect(response.state.players[multiple ? 1 : 2]!.resources.food).toBe(3)
     },
   )
@@ -113,9 +97,7 @@ describe('classic I239 — four-player negotiated grain sales', () => {
     buyer.resources.food = 1
     buyer.resources.sheep = 1
     buyer.houseAnimals = Object.fromEntries(
-      buyer.roomTiles
-        .slice(0, 1)
-        .map((tile) => [`${tile.row}-${tile.col}`, 'sheep']),
+      buyer.roomTiles.slice(0, 1).map((tile) => [`${tile.row}-${tile.col}`, 'sheep']),
     )
     buyer.improvements = ['Major_Fireplace1']
     let response = confirmSwitches(session, session.takeAnytimeAction(0, SALE))
@@ -150,16 +132,9 @@ describe('classic I239 — four-player negotiated grain sales', () => {
 
   it('restores public responses and completes the same sale after serialization', () => {
     const session = setup()
-    const response = answer(
-      session,
-      session.takeAnytimeAction(0, SALE),
-      1,
-      'buy',
-    )
+    const response = answer(session, session.takeAnytimeAction(0, SALE), 1, 'buy')
     const snapshot = serializeSessionSnapshot(session.state, session)
-    const restored = new GameSession(
-      rehydrateState(JSON.parse(JSON.stringify(snapshot))),
-    )
+    const restored = new GameSession(rehydrateState(JSON.parse(JSON.stringify(snapshot))))
     sessions.push(restored)
     let next = restored.getState()
     expect(next.state.players[0]!.cardStates[CARD_ID]?.extraData?.sale).toEqual(
@@ -186,24 +161,19 @@ describe('classic I239 — four-player negotiated grain sales', () => {
       grain: 2,
       food: 3,
     })
-    for (const index of [1, 2, 3])
-      response = answer(session, response, index, 'decline')
+    for (const index of [1, 2, 3]) response = answer(session, response, index, 'decline')
     response = confirmSwitches(session, response)
     expect(response.state.players[0]!.resources).toMatchObject({
       grain: 1,
       food: 6,
     })
-    expect(
-      response.state.players.slice(1).map((player) => player.resources.food),
-    ).toEqual([3, 3, 3])
-    expect(
-      response.state.players[0]!.cardStates[CARD_ID]?.extraData?.sale,
-    ).toBeUndefined()
-    expect(
-      response.state.log.some((entry) =>
-        JSON.stringify(entry.params).includes(CARD_ID),
-      ),
-    ).toBe(true)
+    expect(response.state.players.slice(1).map((player) => player.resources.food)).toEqual([
+      3, 3, 3,
+    ])
+    expect(response.state.players[0]!.cardStates[CARD_ID]?.extraData?.sale).toBeUndefined()
+    expect(response.state.log.some((entry) => JSON.stringify(entry.params).includes(CARD_ID))).toBe(
+      true,
+    )
     expect(session.takeAnytimeAction(0, SALE).ok).toBe(true)
   })
 })

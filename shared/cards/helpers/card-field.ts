@@ -222,9 +222,16 @@ const getCardFields = (player: PlayerState): readonly LogicalField[] =>
         allowedCrops: Object.freeze([...cardFieldDefs.get(cardId)!.allowedCrops]),
       })
       return cardFieldDefs.get(cardId)!.separateFields
-        ? logicalSlots.map(slot => Object.freeze({ ...field, id: `card:${cardId}:${slot.index}`,
-            col: slot.tile.col, groupKey: `${cardId}:${slot.index}`,
-            stacks: slot.layers, slots: Object.freeze([slot]) }))
+        ? logicalSlots.map((slot) =>
+            Object.freeze({
+              ...field,
+              id: `card:${cardId}:${slot.index}`,
+              col: slot.tile.col,
+              groupKey: `${cardId}:${slot.index}`,
+              stacks: slot.layers,
+              slots: Object.freeze([slot]),
+            }),
+          )
         : [field]
     })
 

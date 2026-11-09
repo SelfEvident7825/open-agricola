@@ -1,4 +1,4 @@
-import { beforeEach, describe, expect, it } from 'vitest'
+import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { renderToStaticMarkup } from 'react-dom/server'
 
 import { PlayerCard } from '../PlayerCard'
@@ -387,6 +387,35 @@ describe('PlayerCard dual-type rendering (alsoCountsAs)', () => {
     expect(html).not.toContain('/assets/revised/')
     // `cover` would crop a non-square image against the ~0.95:1 icon box.
     expect(html).toContain('background-size:contain')
+  })
+
+  it('loads classic art from the versioned public asset host', () => {
+    const base = 'https://titanxxh.github.io/open-agricola-assets/'
+    const version = '0123456789abcdef0123456789abcdef01234567'
+    vi.stubEnv('VITE_PUBLIC_ASSET_BASE_URL', base)
+    vi.stubEnv('VITE_PUBLIC_ASSET_VERSION', version)
+    vi.stubEnv('BASE_URL', '/open-agricola/')
+
+    try {
+      const html = renderToStaticMarkup(
+        <PlayerCard locale="en" cardId="OLD_E49_WritingDesk" cardType="minor" cardMeta={{
+          id: 'OLD_E49_WritingDesk',
+          originalId: 'E49_WritingDesk',
+          name: 'Writing Desk',
+          deck: 'E',
+          number: 49,
+          desc: [],
+          artUrl: '/assets/classic/E/E49.png',
+        }} />,
+      )
+
+      expect(html).toContain(`${base}assets/classic/E/E49.png?v=${version}`)
+      expect(html).not.toContain('/open-agricola/assets/classic/')
+      expect(html).not.toContain('/card-art/classic/')
+      expect(html).toContain('background-size:contain')
+    } finally {
+      vi.unstubAllEnvs()
+    }
   })
 
   it.each(['/card-art/e1a2b3.png','https://old-api.example/old-api/card-art/e1a2b3.png'])('fits workshop draft art from %s inside the icon box on the current API', artUrl => {

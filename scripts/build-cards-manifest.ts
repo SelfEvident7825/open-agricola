@@ -2,7 +2,7 @@
 /**
  * Build cards manifest for lazy loading.
  *
- * Scans shared/cards/{A,B,C,D,E,M,major,community}/*.ts plus dev/test stubs in
+ * Recursively scans shared/cards/{A,B,C,D,E,M,major,community,classic}, plus dev/test stubs in
  * shared/cards/__stubs__/*.ts and extracts meta fields from Card Source files.
  *
  * Output: public/cards-manifest.json
@@ -11,6 +11,7 @@ import ts from 'typescript'
 import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { walkSourceFiles } from './source-files'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
@@ -497,12 +498,14 @@ export function buildCardsManifest(cardsRoot: string): CardsManifest {
   const repoRoot = path.resolve(cardsRoot, '..', '..')
   const scanDir = (deckDir: string, parseOptions?: ParseCardFileOptions) => {
     if (!fs.existsSync(deckDir)) return
-    const files = fs.readdirSync(deckDir).filter((f) => f.endsWith('.ts') && !f.endsWith('.test.ts'))
-    for (const file of files) {
-      const filePath = path.join(deckDir, file)
+    const files = walkSourceFiles(deckDir, /\.ts$/).filter((file) =>
+      !file.endsWith('.test.ts')
+      && !path.relative(deckDir, file).split(path.sep).includes('__tests__'),
+    )
+    for (const filePath of files) {
       const { metas } = parseCardFile(filePath, parseOptions)
       if (metas.length === 0) continue
-      const modulePath = path.relative(repoRoot, filePath.replace(/\.ts$/, ''))
+      const modulePath = path.relative(repoRoot, filePath.replace(/\.ts$/, '')).split(path.sep).join('/')
       for (const meta of metas) {
         if (!meta.id) continue
         if (manifest[meta.id]) continue // prefer the first definition we encounter

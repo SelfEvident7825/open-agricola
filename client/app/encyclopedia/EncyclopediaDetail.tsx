@@ -102,6 +102,7 @@ function EntryDetail({ item, locale, titleId, onClose }: { item: EncyclopediaIte
         <Fact label={t(locale, 'platform.cost')}><CostFact cost={entry.cost} locale={locale} /></Fact>
         <Fact label={t(locale, 'ui.encyclopedia.detail.points')}><PointsFact entry={entry} locale={locale} /></Fact>
       </dl>
+      {entry.availableInGame === false ? <p className="encyclopedia-detail__note">{t(locale, 'platform.classicReferenceOnly')}</p> : null}
       <div className="encyclopedia-detail__face">
         <EncyclopediaFace item={item} locale={locale} />
       </div>

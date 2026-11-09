@@ -1,22 +1,12 @@
 import { afterEach, describe, expect, it } from 'vitest'
 import { getCardDefinition } from '../../shared/cards/catalog'
-import {
-  deriveVirtualTileCol,
-  getLogicalFields,
-} from '../../shared/cards/helpers/card-field'
+import { deriveVirtualTileCol, getLogicalFields } from '../../shared/cards/helpers/card-field'
 import { ALL_CARD_IMPLS } from '../../shared/cards/register-all'
 import type { GameState, Resource } from '../../shared/contract/types'
 import { familySize, markAllWorkersUsed } from '../../shared/domain/player'
-import type {
-  GameSession,
-  SessionResponse,
-} from '../game/authoritative-session'
+import type { GameSession, SessionResponse } from '../game/authoritative-session'
 import { build as buildRooms } from './_helpers/audit/ae-negative-28-construct'
-import {
-  playMinor,
-  playOccupation,
-  sessionOptions,
-} from './_helpers/card-regression-session'
+import { playMinor, playOccupation, sessionOptions } from './_helpers/card-regression-session'
 import { completePlowUse } from './_helpers/plow-use'
 import { createWorkSession } from './_helpers/session-fixtures'
 const options = {
@@ -30,11 +20,7 @@ afterEach(() => {
 })
 const id = (number: number) =>
   Object.keys(ALL_CARD_IMPLS).find((id) => id.startsWith(`OLD_I${number}_`))!
-const make = (
-  cards: string[],
-  configure?: (state: GameState) => void,
-  played = true,
-) => {
+const make = (cards: string[], configure?: (state: GameState) => void, played = true) => {
   const s = createWorkSession({
     options,
     configure: (state) => {
@@ -45,16 +31,12 @@ const make = (
         p.occupationPlayed = []
         p.improvements = []
         p.cardStates = {}
-        for (const key of Object.keys(p.resources))
-          p.resources[key as keyof Resource] = 0
+        for (const key of Object.keys(p.resources)) p.resources[key as keyof Resource] = 0
       }
       const p = state.players[0]!
       for (const card of cards) {
-        const kind =
-          getCardDefinition(card)?.playerActionCardType ??
-          getCardDefinition(card)?.kind
-        if (kind === 'occupation')
-          (played ? p.occupationPlayed : p.occupationHand).push(card)
+        const kind = getCardDefinition(card)?.playerActionCardType ?? getCardDefinition(card)?.kind
+        if (kind === 'occupation') (played ? p.occupationPlayed : p.occupationHand).push(card)
         else (played ? p.minorPlayed : p.minorHand).push(card)
       }
       configure?.(state)
@@ -67,19 +49,11 @@ const ok = (r: SessionResponse) => {
   expect(r.ok, r.error).toBe(true)
   return r
 }
-const accept = (
-  s: GameSession,
-  start: SessionResponse,
-  preferred?: string,
-): SessionResponse => {
+const accept = (s: GameSession, start: SessionResponse, preferred?: string): SessionResponse => {
   let r = ok(start)
   for (let i = 0; i < 16 && r.interaction.stateId === 'wait'; i++) {
     const int = r.interaction
-    if (
-      int.request.kind === 'confirm-next-player' ||
-      int.request.kind === 'farm-select'
-    )
-      break
+    if (int.request.kind === 'confirm-next-player' || int.request.kind === 'farm-select') break
     if (int.request.kind === 'animal-reorg') {
       r = ok(
         s.resolveChoice(int.playerIndex, 'confirm', {
@@ -95,22 +69,14 @@ const accept = (
     const choices = sessionOptions(r).filter((o) => !o.disabled)
     const option =
       choices.find((o) => o.value === preferred) ??
-      choices.find(
-        (o) => !['__skip__', '__pass__', '__done__'].includes(o.value),
-      )
+      choices.find((o) => !['__skip__', '__pass__', '__done__'].includes(o.value))
     if (!option) break
     r = ok(s.resolveChoice(int.playerIndex, option.value))
   }
   return r
 }
 describe('classic I — four-player actions and undo', () => {
-  const cases: [
-    number,
-    string,
-    Partial<Resource>,
-    Partial<Resource>,
-    number?,
-  ][] = [
+  const cases: [number, string, Partial<Resource>, Partial<Resource>, number?][] = [
     [74, 'grain-seeds', {}, { grain: 3 }],
     [95, 'fishing', { food: 2 }, { food: 3 }],
     [95, 'reed-bank', { reed: 2 }, { reed: 2, food: 1 }],
@@ -129,17 +95,12 @@ describe('classic I — four-player actions and undo', () => {
         state.round = round
         state.roundActionOrder[0] = space
         state.players[0]!.resources.food = [251, 255].includes(n) ? 1 : 0
-        Object.assign(
-          state.actionSpaces.find((a) => a.id === space)!.resources,
-          pile,
-        )
+        Object.assign(state.actionSpaces.find((a) => a.id === space)!.resources, pile)
       })
       const r = accept(s, s.takeAction(0, space))
       expect(r.state.players[0]!.resources).toMatchObject(expected)
       const u = ok(s.undoAction())
-      expect(
-        u.state.actionSpaces.find((a) => a.id === space)!.resources,
-      ).toMatchObject(pile)
+      expect(u.state.actionSpaces.find((a) => a.id === space)!.resources).toMatchObject(pile)
       expect(u.state.players[0]!.resources.wood).toBe(0)
     },
   )
@@ -153,34 +114,18 @@ describe('classic I — four-player actions and undo', () => {
         },
         false,
       )
-      expect(
-        ok(s.takeAction(0, 'forest')).state.players[0]!.resources,
-      ).toMatchObject({ wood: 3, food: 0, boar: 0 })
+      expect(ok(s.takeAction(0, 'forest')).state.players[0]!.resources).toMatchObject({
+        wood: 3,
+        food: 0,
+        boar: 0,
+      })
     },
   )
   it.each([
-    [
-      80,
-      'forest',
-      { wood: 3, food: 0 },
-      { wood: 2, food: 0 },
-      { wood: 1, food: 0 },
-    ],
-    [
-      234,
-      'forest',
-      { wood: 3, food: 0 },
-      { wood: 2, food: 1 },
-      { wood: 1, food: 0 },
-    ],
+    [80, 'forest', { wood: 3, food: 0 }, { wood: 2, food: 0 }, { wood: 1, food: 0 }],
+    [234, 'forest', { wood: 3, food: 0 }, { wood: 2, food: 1 }, { wood: 1, food: 0 }],
     [251, 'reed-bank', { reed: 2 }, { reed: 1, food: 2 }, { reed: 1, food: 0 }],
-    [
-      255,
-      'western-quarry',
-      { stone: 2 },
-      { stone: 1, food: 2 },
-      { stone: 1, food: 0 },
-    ],
+    [255, 'western-quarry', { stone: 2 }, { stone: 1, food: 2 }, { stone: 1, food: 0 }],
     [257, 'traveling-players', { food: 2 }, { food: 2 }, { grain: 1 }],
   ] as const)(
     'I%i resolves opponent transfers with the owner choosing',
@@ -193,10 +138,7 @@ describe('classic I — four-player actions and undo', () => {
           state.players[1]!.minorPlayed = [id(n)]
         }
         state.players[1]!.resources.food = [234, 251, 255].includes(n) ? 1 : 0
-        Object.assign(
-          state.actionSpaces.find((a) => a.id === space)!.resources,
-          pile,
-        )
+        Object.assign(state.actionSpaces.find((a) => a.id === space)!.resources, pile)
       })
       const r = accept(s, s.takeAction(0, space))
       expect(r.state.players[0]!.resources).toMatchObject(actor)
@@ -240,18 +182,13 @@ describe('classic I — four-player actions and undo', () => {
     [243, 'clay', 2, { clay: 6, reed: 4 }],
     [91, 'wood', 2, { wood: 10, reed: 2 }],
     [99, 'clay', 1, { clay: 5 }],
-  ] as const)(
-    'I%i builds %s ×%i for the printed cost',
-    (n, house, count, paid) => {
-      const s = make([id(n)], (state) => {
-        state.players[0]!.houseType = house
-        Object.assign(state.players[0]!.resources, paid)
-      })
-      expect(buildRooms(s, count, paid).r.state.players[0]!.rooms).toBe(
-        2 + count,
-      )
-    },
-  )
+  ] as const)('I%i builds %s ×%i for the printed cost', (n, house, count, paid) => {
+    const s = make([id(n)], (state) => {
+      state.players[0]!.houseType = house
+      Object.assign(state.players[0]!.resources, paid)
+    })
+    expect(buildRooms(s, count, paid).r.state.players[0]!.rooms).toBe(2 + count)
+  })
   it('I220 builds the Well via a minor action for one wood and one stone', () => {
     const s = make([id(220)], (state) => {
       Object.assign(state.players[0]!.resources, { wood: 1, stone: 1 })
@@ -284,9 +221,9 @@ describe('classic I — four-player actions and undo', () => {
           })),
         }),
       )
-      expect(
-        r.state.players[0]!.fields.map((f) => f.stacks[0]!.remaining),
-      ).toEqual(Array(count).fill(count === 1 ? 5 : count === 2 ? 4 : 3))
+      expect(r.state.players[0]!.fields.map((f) => f.stacks[0]!.remaining)).toEqual(
+        Array(count).fill(count === 1 ? 5 : count === 2 ? 4 : 3),
+      )
     },
   )
   it('I219 counts the two I78 wood columns as two fields', () => {
@@ -305,14 +242,11 @@ describe('classic I — four-player actions and undo', () => {
         })),
       }),
     )
-    expect(
-      getLogicalFields(r.state.players[0]!).map((f) => f.stacks[0]!.remaining),
-    ).toEqual([4, 4])
+    expect(getLogicalFields(r.state.players[0]!).map((f) => f.stacks[0]!.remaining)).toEqual([4, 4])
   })
   it.each([63, 68])('I%i plows exactly two fields and is reversible', (n) => {
     const s = make([id(n)], (state) => {
-      if (n === 63)
-        state.players[0]!.cardStates[id(n)] = { stack: ['field', 'field'] }
+      if (n === 63) state.players[0]!.cardStates[id(n)] = { stack: ['field', 'field'] }
     })
     const r = completePlowUse(s, ok(s.takeAction(0, 'farmland')), id(n))
     expect(r.state.players[0]!.fields).toHaveLength(2)
@@ -346,15 +280,11 @@ describe('classic I — four-player actions and undo', () => {
       i++
     ) {
       if (r.interaction.request.kind === 'confirm-player-switch')
-        r = ok(
-          s.resolveChoice(r.interaction.request.fromPlayerIndex, 'confirm'),
-        )
+        r = ok(s.resolveChoice(r.interaction.request.fromPlayerIndex, 'confirm'))
       else r = ok(s.resolveChoice(r.interaction.playerIndex, '__skip__'))
     }
     expect(r.state.players[0]!.resources.reed).toBe(2)
-    expect(r.state.players[1]!.cardStates[id(251)]?.extraData?.seenRound).toBe(
-      1,
-    )
+    expect(r.state.players[1]!.cardStates[id(251)]?.extraData?.seenRound).toBe(1)
   })
 })
 
@@ -375,16 +305,12 @@ const finishRound = (s: GameSession, start: SessionResponse) => {
       continue
     }
     if (i.request.kind === 'animal-reorg') {
-      r = ok(
-        s.resolveChoice(i.playerIndex, 'confirm', { zones: i.request.zones }),
-      )
+      r = ok(s.resolveChoice(i.playerIndex, 'confirm', { zones: i.request.zones }))
       continue
     }
     const o =
       sessionOptions(r).find(
-        (o) =>
-          !o.disabled &&
-          !['__skip__', '__pass__', '__done__', 'cancel'].includes(o.value),
+        (o) => !o.disabled && !['__skip__', '__pass__', '__done__', 'cancel'].includes(o.value),
       ) ?? sessionOptions(r).find((o) => !o.disabled)
     expect(o, JSON.stringify(i)).toBeDefined()
     r = ok(s.resolveChoice(r.interaction.playerIndex, o!.value))
@@ -413,10 +339,7 @@ describe('classic I — purchases, harvesting and multiplayer choices', () => {
         r = ok(s.resolveChoice(int.request.fromPlayerIndex, 'confirm'))
         continue
       }
-      if (
-        int.request.kind === 'farm-select' &&
-        int.request.farm.farmType === 'plow'
-      ) {
+      if (int.request.kind === 'farm-select' && int.request.farm.farmType === 'plow') {
         r = ok(
           s.commitSelectionChoice(int.playerIndex, {
             tile: int.request.farm.selectableTiles[0],
@@ -425,9 +348,7 @@ describe('classic I — purchases, harvesting and multiplayer choices', () => {
         continue
       }
       const choice = sessionOptions(r).find(
-        (o) =>
-          !o.disabled &&
-          !['__skip__', '__done__', '__pass__'].includes(o.value),
+        (o) => !o.disabled && !['__skip__', '__done__', '__pass__'].includes(o.value),
       )
       expect(choice, JSON.stringify(int)).toBeDefined()
       r = ok(s.resolveChoice(int.playerIndex, choice!.value))
@@ -451,30 +372,27 @@ describe('classic I — purchases, harvesting and multiplayer choices', () => {
   it.each([
     [240, 'cattle-market', 'cattle'],
     [259, 'sheep-market', 'sheep'],
-  ] as const)(
-    'I%i provides an extra animal at its market',
-    (n, space, animal) => {
-      const s = make([id(n)], (state) => {
-        state.roundActionOrder[0] = space
-        state.players[0]!.resources.food = 1
-        state.players[0]!.pastures = [
-          {
-            id: 'animals',
-            tiles: [
-              { row: 0, col: 1 },
-              { row: 0, col: 2 },
-            ],
-            animalType: null,
-            animalCount: 0,
-          },
-        ]
-        state.actionSpaces.find((a) => a.id === space)!.resources[animal] = 1
-      })
-      const r = accept(s, s.takeAction(0, space))
-      expect(r.state.players[0]!.resources[animal]).toBe(2)
-      expect(r.state.players[0]!.resources.food).toBe(n === 259 ? 0 : 1)
-    },
-  )
+  ] as const)('I%i provides an extra animal at its market', (n, space, animal) => {
+    const s = make([id(n)], (state) => {
+      state.roundActionOrder[0] = space
+      state.players[0]!.resources.food = 1
+      state.players[0]!.pastures = [
+        {
+          id: 'animals',
+          tiles: [
+            { row: 0, col: 1 },
+            { row: 0, col: 2 },
+          ],
+          animalType: null,
+          animalCount: 0,
+        },
+      ]
+      state.actionSpaces.find((a) => a.id === space)!.resources[animal] = 1
+    })
+    const r = accept(s, s.takeAction(0, space))
+    expect(r.state.players[0]!.resources[animal]).toBe(2)
+    expect(r.state.players[0]!.resources.food).toBe(n === 259 ? 0 : 1)
+  })
   it('I245 gives its owner extra grain and a vegetable while supplying grain to all opponents', () => {
     const s = make([id(245)])
     const r = accept(s, s.takeAction(0, 'grain-seeds'))
@@ -486,9 +404,7 @@ describe('classic I — purchases, harvesting and multiplayer choices', () => {
       state.players[1]!.occupationPlayed = [id(249)]
       state.players[1]!.occupationHand = [id(235)]
       state.players[1]!.resources.food = 1
-      state.actionSpaces.find(
-        (a) => a.id === 'traveling-players',
-      )!.resources.food = 2
+      state.actionSpaces.find((a) => a.id === 'traveling-players')!.resources.food = 2
     })
     const r = accept(s, s.takeAction(0, 'traveling-players'))
     expect(r.state.players[1]!.occupationPlayed).toContain(id(235))
@@ -507,9 +423,7 @@ describe('classic I — purchases, harvesting and multiplayer choices', () => {
       [id(244)],
       (state) => {
         state.round = 4
-        state.players[0]!.fields = [
-          { row: 0, col: 1, stacks: [{ kind: 'grain', remaining: 3 }] },
-        ]
+        state.players[0]!.fields = [{ row: 0, col: 1, stacks: [{ kind: 'grain', remaining: 3 }] }]
         for (const p of state.players) p.resources.food = 20
       },
       false,
@@ -562,14 +476,9 @@ describe('classic I — purchases, harvesting and multiplayer choices', () => {
     })
     ok(s.takeAction(0, 'farmland'))
     let r = ok(s.takeAnytimeAction(0, 'exchange'))
-    const option = sessionOptions(r).find(
-      (o) => (o.effectPreview?.resourcesPaid?.sheep ?? 0) > 0,
-    )!
+    const option = sessionOptions(r).find((o) => (o.effectPreview?.resourcesPaid?.sheep ?? 0) > 0)!
     expect(option).toBeDefined()
-    r = accept(
-      s,
-      s.resolveChoice(0, 'bulk:' + option.value.split(':')[1] + '=2'),
-    )
+    r = accept(s, s.resolveChoice(0, 'bulk:' + option.value.split(':')[1] + '=2'))
     expect(r.state.players[0]!.resources.food).toBe(4)
     expect(r.state.players[1]!.resources.food).toBe(1)
   })
@@ -595,27 +504,22 @@ describe('classic I — purchases, harvesting and multiplayer choices', () => {
     [96, { clay: 2 }],
     [104, { grain: 3 }],
     [64, {}],
-  ] as const)(
-    'I%i pays the printed cost, grants its reward and passes left (%j)',
-    (n, paid) => {
-      const s = make(
-        [id(n)],
-        (state) => {
-          state.round = 5
-          Object.assign(state.players[0]!.resources, paid)
-        },
-        false,
-      )
-      const r = accept(s, playMinor(s, id(n)))
-      expect(r.state.players[0]!.minorPlayed).not.toContain(id(n))
-      expect(r.state.players[1]!.minorHand).toContain(id(n))
-      expect(
-        r.state.players[0]!.resources[
-          n === 96 ? 'reed' : n === 104 ? 'vegetable' : 'food'
-        ],
-      ).toBe(n === 64 ? 4 : 2)
-    },
-  )
+  ] as const)('I%i pays the printed cost, grants its reward and passes left (%j)', (n, paid) => {
+    const s = make(
+      [id(n)],
+      (state) => {
+        state.round = 5
+        Object.assign(state.players[0]!.resources, paid)
+      },
+      false,
+    )
+    const r = accept(s, playMinor(s, id(n)))
+    expect(r.state.players[0]!.minorPlayed).not.toContain(id(n))
+    expect(r.state.players[1]!.minorHand).toContain(id(n))
+    expect(
+      r.state.players[0]!.resources[n === 96 ? 'reed' : n === 104 ? 'vegetable' : 'food'],
+    ).toBe(n === 64 ? 4 : 2)
+  })
   it('I64 is unavailable with a played occupation', () => {
     const s = make(
       [id(64)],
@@ -625,9 +529,7 @@ describe('classic I — purchases, harvesting and multiplayer choices', () => {
       false,
     )
     const r = s.takeAction(0, 'meeting-place')
-    expect(
-      sessionOptions(r).some((o) => o.value === id(64) && !o.disabled),
-    ).toBe(false)
+    expect(sessionOptions(r).some((o) => o.value === id(64) && !o.disabled)).toBe(false)
   })
   it.each([
     [65, 'Major_ClayOven', { stone: 1 }],
@@ -640,8 +542,9 @@ describe('classic I — purchases, harvesting and multiplayer choices', () => {
         [id(n)],
         (state) => {
           state.players[0]!.improvements = [returned]
-          state.availableMajorImprovements =
-            state.availableMajorImprovements.filter((c) => c !== returned)
+          state.availableMajorImprovements = state.availableMajorImprovements.filter(
+            (c) => c !== returned,
+          )
           Object.assign(state.players[0]!.resources, paid)
           state.futureMeeples = [
             {
@@ -660,9 +563,7 @@ describe('classic I — purchases, harvesting and multiplayer choices', () => {
       expect(r.state.players[0]!.minorPlayed).toContain(id(n))
       expect(r.state.players[0]!.improvements).not.toContain(returned)
       expect(r.state.availableMajorImprovements).toContain(returned)
-      expect(r.state.futureMeeples.some((x) => x.cardId === returned)).toBe(
-        false,
-      )
+      expect(r.state.futureMeeples.some((x) => x.cardId === returned)).toBe(false)
     },
   )
   it('I85 cannot return a Fireplace in place of a Cooking Hearth', () => {
@@ -674,9 +575,7 @@ describe('classic I — purchases, harvesting and multiplayer choices', () => {
       false,
     )
     const r = s.takeAction(0, 'meeting-place')
-    expect(
-      sessionOptions(r).some((o) => o.value === id(85) && !o.disabled),
-    ).toBe(false)
+    expect(sessionOptions(r).some((o) => o.value === id(85) && !o.disabled)).toBe(false)
   })
   it('I87 gives its owner four food and each opponent one food for a newly built Well', () => {
     const s = make([id(220)], (state) => {
@@ -723,72 +622,54 @@ describe('classic I — purchases, harvesting and multiplayer choices', () => {
       ).toEqual([12, 13, 14].slice(0, count).map((round) => [round, amount]))
     },
   )
-  it.each([100, 337, 230])(
-    'I%i creates a usable extra action space when played',
-    (n) => {
-      const s = make(
-        [id(n)],
-        (state) => {
-          Object.assign(state.players[0]!.resources, { wood: 2, stone: 2 })
-          if (n === 337)
-            state.players[0]!.occupationPlayed = [id(235), id(256), id(258)]
-        },
-        false,
-      )
-      const r = accept(
-        s,
-        n === 230 ? playOccupation(s, id(n)) : playMinor(s, id(n)),
-      )
-      const space = r.state.actionSpaces.find((a) => a.id === id(n))
-      expect(space).toBeDefined()
-      if (n === 230) expect(space!.resources.clay).toBe(3)
-    },
-  )
+  it.each([100, 337, 230])('I%i creates a usable extra action space when played', (n) => {
+    const s = make(
+      [id(n)],
+      (state) => {
+        Object.assign(state.players[0]!.resources, { wood: 2, stone: 2 })
+        if (n === 337) state.players[0]!.occupationPlayed = [id(235), id(256), id(258)]
+      },
+      false,
+    )
+    const r = accept(s, n === 230 ? playOccupation(s, id(n)) : playMinor(s, id(n)))
+    const space = r.state.actionSpaces.find((a) => a.id === id(n))
+    expect(space).toBeDefined()
+    if (n === 230) expect(space!.resources.clay).toBe(3)
+  })
   it.each([
     [100, 0, 'food', 3],
     [337, 1, 'clay', 5],
     [230, 3, 'clay', 4],
-  ] as const)(
-    'another player uses I%i and pays its owner',
-    (n, fee, resource, amount) => {
-      const s = make([], (state) => {
-        ;(n === 230
-          ? state.players[1]!.occupationPlayed
-          : state.players[1]!.minorPlayed
-        ).push(id(n))
-        state.players[0]!.resources.food = fee
-      })
-      if (n === 230) {
-        s.state.actionSpaces.find((a) => a.id === id(n))!.resources.clay = 4
-        s.loadState(s.state)
-      }
-      const r = accept(s, s.takeAction(0, id(n)))
-      expect(r.state.players[0]!.resources[resource]).toBe(amount)
-      expect(r.state.players[1]!.resources.food).toBe(fee)
-    },
-  )
-  it.each([100, 337])(
-    'I%i owner can choose two bonus points instead of resources',
-    (n) => {
-      const s = make([id(n)])
-      let r = ok(s.takeAction(0, id(n)))
-      const option = sessionOptions(r).find(
-        (o) =>
-          o.labelKey === 'actions.bonus-vp.name' ||
-          o.effectPreview?.kind === 'bonusVp' ||
-          o.effectPreview?.bonusVp === 2,
-      )
-      expect(option, JSON.stringify(r.interaction)).toBeDefined()
-      r = accept(s, s.resolveChoice(0, option!.value))
-      expect(r.state.players[0]!.cardStates[id(n)]?.counters?.bonusVp).toBe(2)
-    },
-  )
+  ] as const)('another player uses I%i and pays its owner', (n, fee, resource, amount) => {
+    const s = make([], (state) => {
+      ;(n === 230 ? state.players[1]!.occupationPlayed : state.players[1]!.minorPlayed).push(id(n))
+      state.players[0]!.resources.food = fee
+    })
+    if (n === 230) {
+      s.state.actionSpaces.find((a) => a.id === id(n))!.resources.clay = 4
+      s.loadState(s.state)
+    }
+    const r = accept(s, s.takeAction(0, id(n)))
+    expect(r.state.players[0]!.resources[resource]).toBe(amount)
+    expect(r.state.players[1]!.resources.food).toBe(fee)
+  })
+  it.each([100, 337])('I%i owner can choose two bonus points instead of resources', (n) => {
+    const s = make([id(n)])
+    let r = ok(s.takeAction(0, id(n)))
+    const option = sessionOptions(r).find(
+      (o) =>
+        o.labelKey === 'actions.bonus-vp.name' ||
+        o.effectPreview?.kind === 'bonusVp' ||
+        o.effectPreview?.bonusVp === 2,
+    )
+    expect(option, JSON.stringify(r.interaction)).toBeDefined()
+    r = accept(s, s.resolveChoice(0, option!.value))
+    expect(r.state.players[0]!.cardStates[id(n)]?.counters?.bonusVp).toBe(2)
+  })
   it('I92 and I226 take a private harvest at the end of a non-harvest round, leaving the vegetable planted', () => {
     const s = make([id(92), id(226)], (state) => {
       state.round = 2
-      state.players[0]!.fields = [
-        { row: 0, col: 1, stacks: [{ kind: 'vegetable', remaining: 2 }] },
-      ]
+      state.players[0]!.fields = [{ row: 0, col: 1, stacks: [{ kind: 'vegetable', remaining: 2 }] }]
       for (const p of state.players) markAllWorkersUsed(state, p)
     })
     const r = finishRound(s, s.performRoundEnd())
@@ -799,9 +680,7 @@ describe('classic I — purchases, harvesting and multiplayer choices', () => {
   it('I86 sows only grain in stacks of two after the private field phase', () => {
     const s = make([id(92), id(86)], (state) => {
       state.round = 2
-      state.players[0]!.fields = [
-        { row: 0, col: 1, stacks: [{ kind: 'grain', remaining: 1 }] },
-      ]
+      state.players[0]!.fields = [{ row: 0, col: 1, stacks: [{ kind: 'grain', remaining: 1 }] }]
       for (const p of state.players) markAllWorkersUsed(state, p)
     })
     let r = accept(s, s.performRoundEnd())
@@ -814,18 +693,14 @@ describe('classic I — purchases, harvesting and multiplayer choices', () => {
         crops: [{ row: 0, col: 1, crop: 'grain' }],
       }),
     )
-    expect(r.state.players[0]!.fields[0]!.stacks).toEqual([
-      { kind: 'grain', remaining: 2 },
-    ])
+    expect(r.state.players[0]!.fields[0]!.stacks).toEqual([{ kind: 'grain', remaining: 2 }])
     expect(r.state.players[0]!.resources.grain).toBe(0)
   })
   it('I103 offers only the player taking a private field phase the milling trade', () => {
     const s = make([id(92)], (state) => {
       state.round = 2
       state.players[1]!.minorPlayed = [id(103)]
-      state.players[0]!.fields = [
-        { row: 0, col: 1, stacks: [{ kind: 'grain', remaining: 1 }] },
-      ]
+      state.players[0]!.fields = [{ row: 0, col: 1, stacks: [{ kind: 'grain', remaining: 1 }] }]
       state.players[1]!.resources.grain = 1
       for (const p of state.players) markAllWorkersUsed(state, p)
     })
@@ -845,9 +720,7 @@ describe('classic I — purchases, harvesting and multiplayer choices', () => {
     })
     const r = finishRound(s, s.performRoundEnd())
     expect(r.state.players.map((p) => p.resources.grain)).toEqual([1, 1, 1, 1])
-    expect(r.state.players.map((p) => p.resources.food)).toEqual([
-      22, 18, 18, 18,
-    ])
+    expect(r.state.players.map((p) => p.resources.food)).toEqual([22, 18, 18, 18])
   })
   it('I248 collects fishing food on return home after visiting reed bank', () => {
     const s = make([id(248)], (state) => {
@@ -860,9 +733,7 @@ describe('classic I — purchases, harvesting and multiplayer choices', () => {
     s.loadState(s.state)
     const r = finishRound(s, s.performRoundEnd())
     expect(r.state.players[0]!.resources.food).toBe(5)
-    expect(
-      r.state.actionSpaces.find((a) => a.id === 'fishing')!.resources.food,
-    ).toBe(1)
+    expect(r.state.actionSpaces.find((a) => a.id === 'fishing')!.resources.food).toBe(1)
   })
   it('I223 takes one grain from a chosen opponent and compensates that opponent with two food', () => {
     const s = make([id(223)], (state) => {
@@ -871,14 +742,10 @@ describe('classic I — purchases, harvesting and multiplayer choices', () => {
         p.resources.food = 20
         markAllWorkersUsed(state, p)
       }
-      state.players[1]!.fields = [
-        { row: 0, col: 1, stacks: [{ kind: 'grain', remaining: 3 }] },
-      ]
+      state.players[1]!.fields = [{ row: 0, col: 1, stacks: [{ kind: 'grain', remaining: 3 }] }]
     })
     const r = finishRound(s, s.performRoundEnd())
-    expect(r.state.players.map((p) => p.resources.food)).toEqual([
-      16, 18, 16, 16,
-    ])
+    expect(r.state.players.map((p) => p.resources.food)).toEqual([16, 18, 16, 16])
     expect(r.state.players[0]!.resources.grain).toBe(1)
     expect(r.state.players[1]!.fields[0]!.stacks[0]!.remaining).toBe(1)
   })
@@ -892,9 +759,7 @@ describe('classic I — purchases, harvesting and multiplayer choices', () => {
     let r = ok(s.performRoundEnd())
     for (let i = 0; i < 16 && r.interaction.stateId === 'wait'; i++) {
       if (r.interaction.request.kind === 'confirm-player-switch') {
-        r = ok(
-          s.resolveChoice(r.interaction.request.fromPlayerIndex, 'confirm'),
-        )
+        r = ok(s.resolveChoice(r.interaction.request.fromPlayerIndex, 'confirm'))
         continue
       }
       const options = sessionOptions(r)
@@ -904,19 +769,16 @@ describe('classic I — purchases, harvesting and multiplayer choices', () => {
         break
       }
       const next = options.find(
-        (o) =>
-          !o.disabled &&
-          !['__skip__', '__done__', '__pass__'].includes(o.value),
+        (o) => !o.disabled && !['__skip__', '__done__', '__pass__'].includes(o.value),
       )
       expect(next, JSON.stringify(r.interaction)).toBeDefined()
       r = ok(s.resolveChoice(r.interaction.playerIndex, next!.value))
     }
     expect(r.state.players[1]!.resources).toMatchObject({ food: 0, grain: 1 })
     expect(r.state.players[0]!.resources.food).toBe(1)
-    expect(
-      r.state.actionSpaces.find((a) => a.id === 'grain-seeds')!.takenBy[0]
-        ?.playerId,
-    ).toBe(r.state.players[1]!.id)
+    expect(r.state.actionSpaces.find((a) => a.id === 'grain-seeds')!.takenBy[0]?.playerId).toBe(
+      r.state.players[1]!.id,
+    )
   })
 })
 
@@ -928,16 +790,12 @@ describe('classic I — placement, renovation and cross-player regressions', () 
       const s = make([id(88)], (state) => {
         state.round = 14
         state.actionSpaces.find((a) => a.id === 'forest')!.resources.wood = 3
-        state.actionSpaces.find(
-          (a) => a.id === 'sheep-market',
-        )!.resources.sheep = 1
+        state.actionSpaces.find((a) => a.id === 'sheep-market')!.resources.sheep = 1
       })
       const r = accept(s, s.takeAction(0, first), second)
       expect(
         r.state.actionSpaces
-          .filter((a) =>
-            a.takenBy?.some((w) => w.playerId === r.state.players[0]!.id),
-          )
+          .filter((a) => a.takenBy?.some((w) => w.playerId === r.state.players[0]!.id))
           .map((a) => a.id)
           .sort(),
       ).toEqual(['forest', 'sheep-market'])
@@ -952,13 +810,10 @@ describe('classic I — placement, renovation and cross-player regressions', () 
     const s = make([id(88)], (state) => {
       state.round = 14
       state.actionSpaces.find((a) => a.id === 'forest')!.resources.wood = 3
-      state.actionSpaces.find((a) => a.id === 'sheep-market')!.resources.sheep =
-        1
+      state.actionSpaces.find((a) => a.id === 'sheep-market')!.resources.sheep = 1
     })
     let r = ok(s.takeAction(0, 'forest'))
-    const use = sessionOptions(r).find(
-      (o) => o.value !== '__skip__' && !o.disabled,
-    )!
+    const use = sessionOptions(r).find((o) => o.value !== '__skip__' && !o.disabled)!
     r = ok(s.resolveChoice(0, use.value))
     expect(
       sessionOptions(r).every((o) =>
@@ -967,28 +822,25 @@ describe('classic I — placement, renovation and cross-player regressions', () 
     ).toBe(true)
     expect(s.resolveChoice(0, 'grain-seeds').ok).toBe(false)
   })
-  it.each([true, false])(
-    'I67 offers baking only when played (%s)',
-    (played) => {
-      const s = make(
-        [id(67)],
-        (state) => {
-          state.players[0]!.improvements = ['Major_Fireplace1']
-          state.players[0]!.resources.grain = 1
-        },
-        played,
-      )
-      const r = accept(s, s.takeAction(0, 'farmland'))
-      expect(r.state.players[0]!.resources).toMatchObject({
-        grain: played ? 0 : 1,
-        food: played ? 2 : 0,
-      })
-      expect(r.interaction).toMatchObject({
-        stateId: 'wait',
-        request: { kind: 'farm-select', farm: { farmType: 'plow' } },
-      })
-    },
-  )
+  it.each([true, false])('I67 offers baking only when played (%s)', (played) => {
+    const s = make(
+      [id(67)],
+      (state) => {
+        state.players[0]!.improvements = ['Major_Fireplace1']
+        state.players[0]!.resources.grain = 1
+      },
+      played,
+    )
+    const r = accept(s, s.takeAction(0, 'farmland'))
+    expect(r.state.players[0]!.resources).toMatchObject({
+      grain: played ? 0 : 1,
+      food: played ? 2 : 0,
+    })
+    expect(r.interaction).toMatchObject({
+      stateId: 'wait',
+      request: { kind: 'farm-select', farm: { farmType: 'plow' } },
+    })
+  })
   it.each([true, false])(
     'I77 grants sheep only for a newly enclosed large pasture (%s)',
     (large) => {
@@ -998,16 +850,7 @@ describe('classic I — placement, renovation and cross-player regressions', () 
       })
       accept(s, s.takeAction(0, 'fencing'))
       const edges = large
-        ? [
-            'H-0-1',
-            'H-0-2',
-            'H-2-1',
-            'H-2-2',
-            'V-0-1',
-            'V-1-1',
-            'V-0-3',
-            'V-1-3',
-          ]
+        ? ['H-0-1', 'H-0-2', 'H-2-1', 'H-2-2', 'V-0-1', 'V-1-1', 'V-0-3', 'V-1-3']
         : ['H-0-1', 'H-1-1', 'V-0-1', 'V-0-2']
       const r = accept(s, s.commitSelectionChoice(0, { edges }))
       expect(r.state.players[0]!.resources).toMatchObject({
@@ -1022,36 +865,31 @@ describe('classic I — placement, renovation and cross-player regressions', () 
       Object.assign(state.players[0]!.resources, { wood: 1, clay: 3 })
     })
     const r = accept(s, playMinor(s, id(83)), id(89))
-    expect(r.state.players[0]!.minorPlayed).toEqual(
-      expect.arrayContaining([id(83), id(89)]),
-    )
+    expect(r.state.players[0]!.minorPlayed).toEqual(expect.arrayContaining([id(83), id(89)]))
     expect(r.state.players[0]!.resources).toMatchObject({ wood: 0, clay: 0 })
   })
-  it.each([true, false])(
-    'I241 admits one-clay renovation only while played (%s)',
-    (played) => {
-      const s = make(
-        [id(241)],
-        (state) => {
-          state.round = 14
-          state.players[0]!.roomTiles = [0, 1, 2].map((row) => ({
-            row,
-            col: 0,
-          }))
-          state.players[0]!.rooms = 3
-          Object.assign(state.players[0]!.resources, { clay: 1, reed: 1 })
-        },
-        played,
-      )
-      if (!played) {
-        expect(s.takeAction(0, 'house-redevelopment').ok).toBe(false)
-        return
-      }
-      const r = accept(s, s.takeAction(0, 'house-redevelopment'))
-      expect(r.state.players[0]!.houseType).toBe('clay')
-      expect(r.state.players[0]!.resources).toMatchObject({ clay: 0, reed: 0 })
-    },
-  )
+  it.each([true, false])('I241 admits one-clay renovation only while played (%s)', (played) => {
+    const s = make(
+      [id(241)],
+      (state) => {
+        state.round = 14
+        state.players[0]!.roomTiles = [0, 1, 2].map((row) => ({
+          row,
+          col: 0,
+        }))
+        state.players[0]!.rooms = 3
+        Object.assign(state.players[0]!.resources, { clay: 1, reed: 1 })
+      },
+      played,
+    )
+    if (!played) {
+      expect(s.takeAction(0, 'house-redevelopment').ok).toBe(false)
+      return
+    }
+    const r = accept(s, s.takeAction(0, 'house-redevelopment'))
+    expect(r.state.players[0]!.houseType).toBe('clay')
+    expect(r.state.players[0]!.resources).toMatchObject({ clay: 0, reed: 0 })
+  })
   it('I224 pays the owner once when another player sows two fields in a four-player game', () => {
     const s = make([], (state) => {
       state.roundActionOrder[0] = 'grain-utilization'
@@ -1104,9 +942,7 @@ describe('classic I — placement, renovation and cross-player regressions', () 
         crops: [1, 2].map((col) => ({ row: 0, col, crop: 'grain' })),
       }),
     )
-    expect(
-      r.state.players[0]!.fields.map((f) => f.stacks[0]!.remaining),
-    ).toEqual([5, 3])
+    expect(r.state.players[0]!.fields.map((f) => f.stacks[0]!.remaining)).toEqual([5, 3])
   })
   it('I263 offers a paid fence action after its marked space', () => {
     const s = make([id(263)], (state) => {
@@ -1149,43 +985,63 @@ describe('classic I — placement, renovation and cross-player regressions', () 
 
 describe('classic I — end game and harvest ordering', () => {
   it('I101 adds one housed animal before scoring', () => {
-    const s = make([id(101)], state => {
+    const s = make([id(101)], (state) => {
       state.round = 14
       state.players[0]!.resources.sheep = 1
-      state.players[0]!.pastures = [{ id: 'sheep', tiles: [{ row: 0, col: 1 }], animalType: 'sheep', animalCount: 1 }]
-      for (const p of state.players) { p.resources.food = 20; markAllWorkersUsed(state, p) }
+      state.players[0]!.pastures = [
+        { id: 'sheep', tiles: [{ row: 0, col: 1 }], animalType: 'sheep', animalCount: 1 },
+      ]
+      for (const p of state.players) {
+        p.resources.food = 20
+        markAllWorkersUsed(state, p)
+      }
     })
     const r = finishRound(s, s.performRoundEnd())
     expect(r.state.players[0]!.resources.sheep).toBe(2)
     expect(r.state.players[0]!.resources.food).toBe(16)
   })
   it('I97 feeds after the other three players', () => {
-    const s = make([id(97)], state => {
+    const s = make([id(97)], (state) => {
       state.round = 4
-      for (const p of state.players) { p.resources.food = 0; p.resources.grain = 1; markAllWorkersUsed(state, p) }
+      for (const p of state.players) {
+        p.resources.food = 0
+        p.resources.grain = 1
+        markAllWorkersUsed(state, p)
+      }
     })
     let r = ok(s.performRoundEnd())
     const order: number[] = []
     for (let n = 0; n < 60 && r.interaction.stateId === 'wait'; n++) {
       const i = r.interaction
-      if (i.request.kind === 'feed') { order.push(i.playerIndex); r = ok(s.resolveChoice(i.playerIndex, 'confirm', { selections: [] })) }
-      else if (i.request.kind === 'confirm-player-switch') r = ok(s.resolveChoice(i.request.fromPlayerIndex, 'confirm'))
-      else if (i.request.kind === 'confirm-next-player') r = ok(s.resolveChoice(i.playerIndex, 'confirm'))
-      else { const option = sessionOptions(r).find(o => !o.disabled); if (!option) break; r = ok(s.resolveChoice(i.playerIndex, option.value)) }
+      if (i.request.kind === 'feed') {
+        order.push(i.playerIndex)
+        r = ok(s.resolveChoice(i.playerIndex, 'confirm', { selections: [] }))
+      } else if (i.request.kind === 'confirm-player-switch')
+        r = ok(s.resolveChoice(i.request.fromPlayerIndex, 'confirm'))
+      else if (i.request.kind === 'confirm-next-player')
+        r = ok(s.resolveChoice(i.playerIndex, 'confirm'))
+      else {
+        const option = sessionOptions(r).find((o) => !o.disabled)
+        if (!option) break
+        r = ok(s.resolveChoice(i.playerIndex, option.value))
+      }
     }
     expect(order).toHaveLength(4)
     expect(order[3]).toBe(0)
-    expect(new Set(order)).toEqual(new Set([0,1,2,3]))
+    expect(new Set(order)).toEqual(new Set([0, 1, 2, 3]))
   })
   it('I254 builds a stable for one wood at the start of a stone-house round', () => {
-    const s = make([id(254)], state => {
+    const s = make([id(254)], (state) => {
       state.round = 2
       state.players[0]!.houseType = 'stone'
       state.players[0]!.resources.wood = 1
       for (const p of state.players) markAllWorkersUsed(state, p)
     })
     const offered = accept(s, s.performRoundEnd())
-    expect(offered.interaction).toMatchObject({ stateId: 'wait', request: { kind: 'farm-select', farm: { farmType: 'stable' } } })
+    expect(offered.interaction).toMatchObject({
+      stateId: 'wait',
+      request: { kind: 'farm-select', farm: { farmType: 'stable' } },
+    })
     const r = accept(s, s.commitSelectionChoice(0, { stables: [{ row: 0, col: 1 }] }))
     expect(r.state.players[0]!.resources.wood).toBe(0)
     expect(r.state.players[0]!.stableTiles).toEqual([{ row: 0, col: 1 }])
@@ -1194,9 +1050,12 @@ describe('classic I — end game and harvest ordering', () => {
 
 describe('classic I — holiday work rotation', () => {
   it('I71 skips round-14 work without removing or starving the family', () => {
-    const s = make([id(71)], state => {
+    const s = make([id(71)], (state) => {
       state.round = 13
-      for (const p of state.players) { p.resources.food = 20; markAllWorkersUsed(state, p) }
+      for (const p of state.players) {
+        p.resources.food = 20
+        markAllWorkersUsed(state, p)
+      }
     })
     const r = finishRound(s, s.performRoundEnd())
     expect(r.state.round).toBe(14)
@@ -1206,22 +1065,26 @@ describe('classic I — holiday work rotation', () => {
     expect(s.takeAction(0, 'grain-seeds').ok).toBe(false)
   })
   it('I227 records five distinct people placed by another player', () => {
-    const s = make([], state => {
+    const s = make([], (state) => {
       state.round = 14
       state.players[1]!.occupationPlayed = [id(227)]
       for (const p of state.players) {
         p.resources.food = 20
         if (p !== state.players[0]) markAllWorkersUsed(state, p)
       }
-      state.players[0]!.workers.forEach(w => { w.isActive = true; w.isNewborn = false })
-      state.actionSpaces.find(a => a.id === 'forest')!.resources.wood = 3
-      state.actionSpaces.find(a => a.id === 'fishing')!.resources.food = 2
-      state.actionSpaces.find(a => a.id === 'reed-bank')!.resources.reed = 1
+      state.players[0]!.workers.forEach((w) => {
+        w.isActive = true
+        w.isNewborn = false
+      })
+      state.actionSpaces.find((a) => a.id === 'forest')!.resources.wood = 3
+      state.actionSpaces.find((a) => a.id === 'fishing')!.resources.food = 2
+      state.actionSpaces.find((a) => a.id === 'reed-bank')!.resources.reed = 1
     })
     let r = s.getState()
-    for (const space of ['grain-seeds','forest','fishing','reed-bank','day-laborer']) {
+    for (const space of ['grain-seeds', 'forest', 'fishing', 'reed-bank', 'day-laborer']) {
       r = accept(s, s.takeAction(0, space))
-      if (r.interaction.stateId === 'wait' && r.interaction.request.kind === 'confirm-next-player') r = ok(s.resolveChoice(r.interaction.playerIndex, 'confirm'))
+      if (r.interaction.stateId === 'wait' && r.interaction.request.kind === 'confirm-next-player')
+        r = ok(s.resolveChoice(r.interaction.playerIndex, 'confirm'))
     }
     expect(r.state.players[0]!.cardStates[id(227)]?.extraData?.round14Workers).toHaveLength(5)
     expect(r.state.players[1]!.cardStates[id(227)]?.extraData?.round14Workers).toBeUndefined()

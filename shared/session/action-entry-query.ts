@@ -49,7 +49,11 @@ export const canEnterActionSpace = (
   space: ActionSpace,
   options: ActionEntryQueryOptions,
 ): boolean => {
-  if (isWorkerPlacementBlocked(state, player) || !cardEffectsPermitSpaceEntry(state, player, space.id)) return false
+  if (
+    isWorkerPlacementBlocked(state, player) ||
+    !cardEffectsPermitSpaceEntry(state, player, space.id)
+  )
+    return false
   if (isSpaceBlocked(space)) return false
   if (!canUseExclusiveSpace(space, player, state)) return false
   if (space.strictCanExecute || options.isActionDoable) {
@@ -77,7 +81,11 @@ export const canProjectActionEntry = (
   space: ActionSpace,
   options: ActionEntryAvailabilityOptions,
 ): boolean => {
-  if (isWorkerPlacementBlocked(state, player) || !cardEffectsPermitSpaceEntry(state, player, space.id)) return false
+  if (
+    isWorkerPlacementBlocked(state, player) ||
+    !cardEffectsPermitSpaceEntry(state, player, space.id)
+  )
+    return false
   if (!canEnterSpace(space, player, state)) return false
   if (!canMoorWorkerEnterSpace(state, player, space.id)) return false
   if (isSpaceBlocked(space)) return false

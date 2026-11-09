@@ -1,6 +1,6 @@
 {
   "date": "2026-11-09",
-  "build": "classic-e-i-pr",
+  "build": "classic-e-i-review-fixes",
   "applicationBase": "d4fbac1b912df3b85418df6bf07e17dc197d0443",
   "deliveryOrigin": "Classic/E and I source deliveries integrated onto current upstream history.",
   "languagePin": {
@@ -27,620 +27,83 @@
   },
   "checks": [
     {
-      "scope": "Classic E/I four-player sessions and rule tests, revised shared-mechanism regressions, current draft/recovery, hotseat/team setup and lobby",
+      "scope": "Classic E/I sessions, revised mechanism regressions, draft/recovery, lobby and repaired runtime invariants",
       "status": "PASS",
-      "files": 91,
-      "passed": 1453,
+      "files": 93,
+      "passed": 1464,
       "failed": 0,
-      "skipped": 1,
-      "fileResults": [
-        {
-          "file": "server/__tests__/A102_Grocer-session.test.ts",
-          "passed": 12,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "server/__tests__/A143_Stonecutter-parity-session.test.ts",
-          "passed": 5,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "server/__tests__/A143_Stonecutter-session.test.ts",
-          "passed": 6,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "server/__tests__/B099_Tutor-logical-occupation-session.test.ts",
-          "passed": 4,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "server/__tests__/B099_Tutor-session.test.ts",
-          "passed": 4,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "server/__tests__/B24_Lasso-session.test.ts",
-          "passed": 12,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "server/__tests__/C013_WoodSlideHammer-renovation-session.test.ts",
-          "passed": 7,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "server/__tests__/D121_ClayPlasterer-session.test.ts",
-          "passed": 9,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "server/__tests__/E109_BraidMaker-session.test.ts",
-          "passed": 10,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "shared/cards/__tests__/A112_D72_harvest-count.test.ts",
-          "passed": 16,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "shared/cards/__tests__/AB-logical-field-boundary.test.ts",
-          "passed": 7,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "shared/cards/__tests__/C8_PlantFertilizer.test.ts",
-          "passed": 13,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "shared/cards/__tests__/CD-logical-field-boundary.test.ts",
-          "passed": 5,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "shared/cards/__tests__/EM-logical-field-boundary.test.ts",
-          "passed": 3,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "shared/cards/__tests__/animal-capacity-modifier.test.ts",
-          "passed": 15,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "shared/cards/__tests__/card-cost-fixed-candidates.test.ts",
-          "passed": 11,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "shared/cards/__tests__/card-source.test.ts",
-          "passed": 3,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "shared/cards/__tests__/classic-e-rules.test.ts",
-          "passed": 96,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "shared/cards/__tests__/classic-i-rules.test.ts",
-          "passed": 63,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "shared/cards/__tests__/construct-cost-alternatives.test.ts",
-          "passed": 8,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "shared/cards/__tests__/fence-listener-events.test.ts",
-          "passed": 4,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "shared/cards/__tests__/house-animal-zone-tags.test.ts",
-          "passed": 4,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "shared/cards/__tests__/listener-purity-guard.test.ts",
-          "passed": 21,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "shared/cards/__tests__/renovation-fencing-cost-semantics.test.ts",
-          "passed": 9,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "shared/cards/helpers/__tests__/card-field.test.ts",
-          "passed": 23,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "shared/session/__tests__/ordinary-card-draw-decks.test.ts",
-          "passed": 5,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "shared/session/__tests__/serialization-filter.test.ts",
-          "passed": 17,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "shared/actions/helpers/__tests__/placement-availability.test.ts",
-          "passed": 7,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "shared/actions/effects/__tests__/breed.test.ts",
-          "passed": 14,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "shared/actions/effects/__tests__/construct-resolveChoice.test.ts",
-          "passed": 22,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "shared/actions/effects/__tests__/exchange-breeding.test.ts",
-          "passed": 6,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "shared/actions/effects/__tests__/fence-resolveChoice.test.ts",
-          "passed": 34,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "shared/actions/effects/__tests__/fencing-entry-guard.test.ts",
-          "passed": 7,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "shared/actions/effects/__tests__/occupation-log.test.ts",
-          "passed": 6,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "shared/actions/effects/__tests__/reap-listener.test.ts",
-          "passed": 5,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "shared/actions/effects/__tests__/reap-private-trigger.test.ts",
-          "passed": 6,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "shared/actions/effects/__tests__/reap.test.ts",
-          "passed": 12,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "shared/actions/effects/__tests__/renovation.test.ts",
-          "passed": 18,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "shared/actions/effects/__tests__/sow-permissions.test.ts",
-          "passed": 12,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "shared/actions/effects/__tests__/sow-resolveChoice.test.ts",
-          "passed": 7,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "shared/actions/effects/__tests__/sow-seed-budget.test.ts",
-          "passed": 1,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "shared/actions/effects/__tests__/sow.test.ts",
-          "passed": 9,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "server/__tests__/A92-extra-turn-session.test.ts",
-          "passed": 11,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "server/__tests__/animal-reorg-prefill-session.test.ts",
-          "passed": 7,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "server/__tests__/card-field-scoring-session.test.ts",
-          "passed": 11,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "server/__tests__/classic-e-session.test.ts",
-          "passed": 99,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "server/__tests__/classic-edition-session.test.ts",
-          "passed": 23,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "server/__tests__/classic-i-grain-sale-session.test.ts",
-          "passed": 5,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "server/__tests__/classic-i-session.test.ts",
-          "passed": 100,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "server/__tests__/construct-room-payment-session.test.ts",
-          "passed": 5,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "server/__tests__/farmyard-animal-scoring-session.test.ts",
-          "passed": 30,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "server/__tests__/fence-payment-session.test.ts",
-          "passed": 2,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "server/__tests__/fence-validation.test.ts",
-          "passed": 43,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "server/__tests__/first-round-start-session.test.ts",
-          "passed": 24,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "server/__tests__/harvest-breeding-cooking-session.test.ts",
-          "passed": 14,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "server/__tests__/harvest-feed-conversion-listener-session.test.ts",
-          "passed": 1,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "server/__tests__/harvest-session.test.ts",
-          "passed": 11,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "server/__tests__/hotseat-setup-session.test.ts",
-          "passed": 26,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "server/__tests__/legacy-draft-recovery-session.test.ts",
-          "passed": 5,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "server/__tests__/logical-field-sow-session.test.ts",
-          "passed": 7,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "server/__tests__/non-harvest-breeding-log-session.test.ts",
-          "passed": 2,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "server/__tests__/occupation-action-preview-session.test.ts",
-          "passed": 11,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "server/__tests__/payment-choice-identity-session.test.ts",
-          "passed": 3,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "server/__tests__/private-field-phase-session.test.ts",
-          "passed": 1,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "server/__tests__/reap-completion-session.test.ts",
-          "passed": 11,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "server/__tests__/renovation-computeCosts-matrix-session.test.ts",
-          "passed": 8,
-          "failed": 0,
-          "skipped": 1
-        },
-        {
-          "file": "server/__tests__/round-end-helper.test.ts",
-          "passed": 1,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "server/__tests__/round-space-before-rewards-session.test.ts",
-          "passed": 36,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "server/__tests__/seasonal-fence-payment-session.test.ts",
-          "passed": 9,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "server/__tests__/stable-payment-session.test.ts",
-          "passed": 5,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "server/__tests__/supply-workers-session.test.ts",
-          "passed": 33,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "server/__tests__/team-scoring-session.test.ts",
-          "passed": 2,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "server/game/__tests__/draft-session.test.ts",
-          "passed": 14,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "shared/domain/__tests__/animal-prefill.test.ts",
-          "passed": 10,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "shared/domain/__tests__/animal-zones.test.ts",
-          "passed": 32,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "shared/domain/__tests__/animals-subtract.test.ts",
-          "passed": 10,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "shared/domain/__tests__/animals.test.ts",
-          "passed": 15,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "shared/domain/__tests__/farmyard.test.ts",
-          "passed": 5,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "shared/domain/__tests__/pasture.test.ts",
-          "passed": 2,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "shared/draft/__tests__/draft-manager.test.ts",
-          "passed": 9,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "shared/draft/__tests__/legacy-draft.test.ts",
-          "passed": 9,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "shared/actions/payment/internal/__tests__/cost-modifier-permutation-probe.test.ts",
-          "passed": 8,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "shared/actions/payment/internal/__tests__/cost-modifiers.test.ts",
-          "passed": 24,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "shared/actions/payment/internal/__tests__/payment-bonus-choice-index.test.ts",
-          "passed": 3,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "shared/actions/payment/internal/__tests__/room-payment.test.ts",
-          "passed": 4,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "client/app/__tests__/LobbyPage.test.tsx",
-          "passed": 31,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "client/app/__tests__/animal-reorg-draft-presentation.test.tsx",
-          "passed": 3,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "client/app/__tests__/use-animal-reorg-flow.test.ts",
-          "passed": 23,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "scripts/__tests__/check-card-impl-boundaries.test.ts",
-          "passed": 133,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "scripts/__tests__/check-test-state-copies.test.ts",
-          "passed": 4,
-          "failed": 0,
-          "skipped": 0
-        },
-        {
-          "file": "scripts/__tests__/docs-budget.test.ts",
-          "passed": 10,
-          "failed": 0,
-          "skipped": 0
-        }
-      ]
+      "skipped": 1
     },
     {
-      "scope": "Language repository tests",
+      "scope": "Encyclopedia components, full catalog and symmetric bilingual search",
       "status": "PASS",
-      "passed": 10
+      "files": 18,
+      "passed": 158
+    },
+    {
+      "scope": "PlayerCard and public asset URL/manifest contracts",
+      "status": "PASS",
+      "files": 3,
+      "passed": 81
+    },
+    {
+      "scope": "Classic E/I rules and nested card generation",
+      "status": "PASS",
+      "files": 4,
+      "passed": 173
+    },
+    {
+      "scope": "Static and inline import relocation, nested generator and manifest fixtures",
+      "status": "PASS",
+      "passed": 15
+    },
+    {
+      "scope": "Source boundaries and card generation fixtures",
+      "status": "PASS",
+      "passed": 16
     },
     {
       "scope": "TypeScript project and architecture type checks",
       "status": "PASS"
     },
     {
-      "scope": "Vite production build",
-      "status": "PASS"
-    },
-    {
-      "scope": "Changed TypeScript ESLint",
+      "scope": "Changed card, helper, generator, component and rule files ESLint",
       "status": "PASS",
-      "files": 1096,
       "errors": 0,
-      "warnings": 27
+      "notes": "Existing room-router Hook naming warnings remain."
     },
     {
-      "scope": "check-generated-cards-sync",
-      "status": "PASS"
+      "scope": "Generated card synchronization and test project coverage",
+      "status": "PASS",
+      "discoveredTestFiles": 2127
     },
     {
-      "scope": "check-card-impl-boundaries",
-      "status": "PASS"
+      "scope": "Classic source relocation audit and disposable importer rerun",
+      "status": "PASS",
+      "cards": 1024,
+      "manualPortsPreserved": 217
     },
     {
-      "scope": "check-card-state-boundaries",
-      "status": "PASS"
-    },
-    {
-      "scope": "check-test-state-copies",
-      "status": "PASS"
-    },
-    {
-      "scope": "check-test-project-coverage",
-      "status": "PASS"
-    },
-    {
-      "scope": "i18n-audit",
-      "status": "PASS"
-    },
-    {
-      "scope": "Production browser and replay entry dependency closures",
-      "status": "PASS"
-    },
-    {
-      "scope": "Documentation budgets after integration notes were updated",
-      "status": "PASS"
+      "scope": "Asset migration SHA-256 equality and asset build byte validation",
+      "status": "PASS",
+      "migratedImages": 1024,
+      "validatedAssetFiles": 2156
     }
   ],
   "limitations": [
     "One existing unrelated E027_PiggyBank renovation test is skipped.",
-    "The selected scope is not the full repository suite or all card combinations.",
+    "Test scopes above overlap and must not be added together. These are local checks, not a full repository or all-card-combination certification.",
     "Database integration was not run locally: Docker/PostgreSQL are unavailable.",
-    "Browser end-to-end tests were not run in this preparation pass.",
-    "This report records local validation. GitHub CI results must be checked on the pull requests for their current heads before merging or deploying.",
-    "The language revision is published in SelfEvident7825/open-agricola-i18n. The application pins that reachable fork until the companion language change is accepted upstream."
-  ]
+    "The canonical browser harness stopped before execution because the local tsx CLI could not open its IPC pipe. No new Playwright result is claimed.",
+    "The application asset manifest includes the proposed classic images, while public-assets.ref intentionally remains the currently deployed upstream revision. Remote asset validation blocks until the companion asset PR is merged, deployed and the application pin is updated.",
+    "GitHub CI is authoritative for the current PR head; the prior head had failing runtime and encyclopedia checks addressed by this revision. Check the live PR for current results before merging or deploying.",
+    "The language pin targets the published companion fork revision until the language PR is accepted upstream."
+  ],
+  "reviewedPullRequest": "https://github.com/titanxxh/open-agricola/pull/1623",
+  "assetDependency": {
+    "pullRequest": "https://github.com/titanxxh/open-agricola-assets/pull/1",
+    "proposedRevision": "7bfa83f676eedb201f1a8b2a50bd52c939bf2226",
+    "currentlyDeployedPin": "dcd4ecbdb5cbf13520d833e0e7f5f872e5f9ec9c",
+    "status": "Pending upstream merge and canonical Pages deployment; update public-assets.ref only after successful deployment and live verification."
+  }
 }

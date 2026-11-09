@@ -11,6 +11,42 @@ const writeSource = (filePath: string, source: string) => {
 }
 
 describe('checkGeneratedCardsSync', () => {
+  it('keeps nested classic decks in the catalog and registers only implemented cards', () => {
+    const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'generated-classic-decks-'))
+    const cardsRoot = path.join(tmp, 'shared', 'cards')
+    try {
+      writeSource(
+        path.join(cardsRoot, 'classic', 'E', 'OLD_E001_Source.ts'),
+        `export const OLD_E001_Source = defineMinorCard({
+          meta: { id: 'OLD_E001_Source', name: 'Classic E', deck: 'E', number: 1, desc: [], cost: {}, gameEdition: 'classic' },
+          impl: {},
+        })`,
+      )
+      writeSource(
+        path.join(cardsRoot, 'classic', 'I', 'OLD_I001_Reference.ts'),
+        `export const OLD_I001_Reference = defineOccupationCard({
+          meta: { id: 'OLD_I001_Reference', name: 'Classic I', deck: 'I', number: 1, desc: [], cost: {}, gameEdition: 'classic', implemented: false },
+        })`,
+      )
+      writeSource(
+        path.join(cardsRoot, 'classic', 'E', '__tests__', 'fixture.ts'),
+        `export const TEST_Only = defineMinorCard({ meta: { id: 'TEST_Only' }, impl: {} })`,
+      )
+
+      const generated = buildRegisterAll({ repoRoot: tmp })
+
+      expect(generated.catalogDefinitionCount).toBe(2)
+      expect(generated.catalogGenerated).toContain('OLD_E001_Source')
+      expect(generated.catalogGenerated).toContain('OLD_I001_Reference')
+      expect(generated.implCount).toBe(1)
+      expect(generated.registerAll).toContain("from './classic/E/OLD_E001_Source'")
+      expect(generated.registerAll).not.toContain('OLD_I001_Reference')
+      expect(generated.registerAll).not.toContain('TEST_Only')
+    } finally {
+      fs.rmSync(tmp, { recursive: true, force: true })
+    }
+  })
+
   it('reports stale generated Card Source catalog artifacts without rewriting them', () => {
     const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'generated-cards-sync-'))
     const cardsRoot = path.join(tmp, 'shared', 'cards')
