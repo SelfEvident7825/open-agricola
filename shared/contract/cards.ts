@@ -121,6 +121,8 @@ export type CardDefinition = {
   cardField?: {
     allowedCrops: readonly ('grain' | 'vegetable' | 'wood' | 'stone')[]
     capacity: number
+    /** Slots count as distinct logical fields rather than one multi-slot field. */
+    separateFields?: boolean
   }
   artUrl?: string
   locales?: Record<string, {

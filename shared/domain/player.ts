@@ -70,6 +70,7 @@ export const availableWorkers = (state: GameState, p: PlayerState): Worker[] => 
   const held = getCardHeldWorkerIds(p)
   return (p.workers ?? []).filter((worker) =>
     (worker.isActive || worker.supplyUse?.status === 'temporary') &&
+    (worker.supplyUse?.availableFromRound ?? 0) <= state.round &&
     !worker.isNewborn &&
     !isWorkerOnAnySpace(state, p.id, worker.id) &&
     !held.has(worker.id),

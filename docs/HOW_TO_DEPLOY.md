@@ -895,9 +895,9 @@ To disable visualization reversibly, stop `prometheus grafana node-exporter acco
 
 Configuration follows the official [Grafana auth proxy documentation](https://grafana.com/docs/grafana/latest/setup-grafana/configure-access/configure-authentication/auth-proxy/) and [Prometheus discovery/configuration documentation](https://prometheus.io/docs/prometheus/latest/configuration/configuration/).
 
-## Rebuilt classic preview (2026-11-08)
+## Rebuilt classic preview (2026-11-09)
 
-The classic preview is reconstructed from application base `72bfc8f7`, the original agricolaoldnice archive, and the two-card BGA patch. It is not a byte-identical recovery of the unavailable previous archive. It supports four players and keeps classic dealing separate from revised dealing. There are 1,024 classic hand-card faces; 199 have native implementations and 825 are reference-only. All 126 source E-deck cards now have native effects; this includes 89 newly implemented cards and corrections to earlier ports. Method matching and integration tests are not a per-card rules certification.
+The classic preview is reconstructed from application base `72bfc8f7`, the original agricolaoldnice archive, and the two-card BGA patch. It is not a byte-identical recovery of the unavailable previous archive. It supports four players and keeps classic dealing separate from revised dealing. There are 1,024 classic hand-card faces; 270 have native implementations and 754 are reference-only. All 126 source E-deck cards and all 91 source I-deck cards now have native effects. The I update adds 71 implementations and reviews the 20 existing I ports. Method matching and integration tests are not a per-card rules certification.
 
 The delivered source contains sibling `open-agricola` and `open-agricola-i18n` directories. Set `AGRICOLA_I18N_DIR=../open-agricola-i18n` before build/test/start. The pinned language commit is local and has not been pushed upstream. For a deployment, first publish the language repository to your own fork, update `i18n.ref.repository` to that fork and keep the matching revision and manifest digest. Then publish both application frontend and backend through the existing deployment process. Database migration 033 persists the selected edition. No remote changes or deployment are performed by modifying this source.
 
