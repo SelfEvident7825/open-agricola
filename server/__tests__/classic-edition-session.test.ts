@@ -6,6 +6,7 @@ import { createWorkSession } from './_helpers/session-fixtures'
 import { GameSession } from '../game/authoritative-session'
 import { parseGameSetupRequest, buildInitialStateOptions } from '../game/game-setup-options'
 import { deriveVirtualTileCol } from '../../shared/cards/helpers/card-field'
+import { draftSeatProgress } from '../../shared/projections/draft-progress'
 
 const CARD = 'OLD_E30_Canoe'
 const options = { playerCount: 4, gameEdition: 'classic' as const, ordinaryCardDeckSeed: 42 }
@@ -42,7 +43,11 @@ describe('classic edition recovery', () => {
   it('deals 10-card draft pools with no reference-only or revised cards', () => {
     const state = createInitialState(42, {...options, draftMode: 'simultaneous', draftPoolSize: 10})
     expect(state.phase).toBe('draft')
-    const pools = Object.values(state.draft!.pools)
+    const pools = state.players.map(player => {
+      const progress = draftSeatProgress(state.draft!, player.id)
+      if (progress.kind !== 'selecting') throw new Error('Expected a draft choice')
+      return progress.pool
+    })
     expect(pools).toHaveLength(4)
     for (const p of pools) { expect(p.occ).toHaveLength(10); expect(p.minor).toHaveLength(10) }
     expect(new Set(pools.flatMap(p => [...p.occ,...p.minor])).size).toBe(80)
@@ -63,6 +68,11 @@ describe('classic edition recovery', () => {
   it('maps both creation paths to the same classic options and rejects unknown editions', () => {
     expect(buildInitialStateOptions(parseGameSetupRequest({maxPlayers:4,gameEdition:'classic'},null)).gameEdition).toBe('classic')
     expect(() => parseGameSetupRequest({maxPlayers:4,gameEdition:'invalid'},null)).toThrow(/Unknown/)
+  })
+  it('rejects classic team games without changing the revised team setup', () => {
+    const teamConfig = { mode: 'team', seatsPerTeam: 2, seating: 'separated', scoring: 'sum', teammateVisibility: 'shared' }
+    expect(() => parseGameSetupRequest({ maxPlayers: 4, gameEdition: 'classic', teamConfig }, null)).toThrow(/team or multihand/)
+    expect(parseGameSetupRequest({ maxPlayers: 4, teamConfig }, null).teamConfig).toEqual(teamConfig)
   })
   it('imports every hand card with truthful playability and original metadata', () => {
     expect(classicMinors.length+classicOccupations.length).toBe(1024)
