@@ -670,7 +670,10 @@ const handleAuthorizedGameRoute = async (
       return true
     }
     const editionError = classicSetupError(raw)
-    if (editionError) { await sendJson(res, 400, { ok: false, error: editionError }); return true }
+    if (editionError) {
+      await sendJson(res, 400, { ok: false, error: editionError })
+      return true
+    }
     let setup: ReturnType<typeof parseGameSetupRequest>
     try { setup = parseGameSetupRequest(raw, draftOptions.value) }
     catch (error) { await sendJson(res, 400, { ok: false, error: error instanceof Error ? error.message : 'Invalid team configuration' }); return true }

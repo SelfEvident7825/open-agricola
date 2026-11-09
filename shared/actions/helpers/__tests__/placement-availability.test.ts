@@ -14,7 +14,13 @@ describe('computeAllowedPlacementSpaces', () => {
     expect(() =>
       execFileSync(
         process.execPath,
-        ['--import', 'tsx', '--input-type=module', '-e', "import './shared/actions/effects/place-farmer.ts'"],
+        [
+          '--import',
+          'tsx',
+          '--input-type=module',
+          '-e',
+          "import './shared/actions/effects/place-farmer.ts'",
+        ],
         {
           cwd: process.cwd(),
           stdio: 'pipe',

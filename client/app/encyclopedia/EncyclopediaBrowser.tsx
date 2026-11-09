@@ -130,6 +130,7 @@ function GalleryEntry({ item, locale, onOpen }: { item: EncyclopediaItem; locale
           {nameField ? <EncyclopediaFieldValue text={nameField} locale={locale} markId={markId}>{name}</EncyclopediaFieldValue> : name}
         </span>
         <span className="encyclopedia-gallery__meta">{meta}</span>
+        {entry.availableInGame === false ? <span className="encyclopedia-gallery__meta">{t(locale, 'platform.classicReferenceOnly')}</span> : null}
       </button>
     </li>
   )

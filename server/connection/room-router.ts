@@ -668,7 +668,10 @@ async function handleCreateRoom(ctx: ConnectionCtx, msg: Extract<ClientCommand, 
   const draftOptions = parseDraftOptions(input)
   if (!draftOptions.ok) { sendCommandError(ctx, draftOptions.error, msg.requestId); return }
   const editionError = classicSetupError(input)
-  if (editionError) { sendCommandError(ctx, editionError, msg.requestId); return }
+  if (editionError) {
+    sendCommandError(ctx, editionError, msg.requestId)
+    return
+  }
   let setup: ReturnType<typeof parseGameSetupRequest>
   try { setup = parseGameSetupRequest(input, draftOptions.value) }
   catch (error) { sendCommandError(ctx, error instanceof Error ? error.message : 'Invalid team configuration', msg.requestId); return }
@@ -1708,9 +1711,17 @@ async function handleNewGame(ctx: ConnectionCtx, msg: Extract<ClientCommand, { t
         status: teamMembers ? startsTeamImmediately ? 'playing' : 'waiting'
           : isDevRoom(nextRoomId) || room.hotseat === true || room.players.length >= room.maxPlayers ? 'playing' : 'waiting',
         colorConfirmationPlayerIndex: undefined,
-        enableParentCards, draftMode, draftPoolSize, enableThroughTheSeasons,
-        enableFarmersOfTheMoor, enableMoorBalanceRules, allowIncompleteFarmersOfTheMoorMinorDeal, enableSnakeOpening, gameEdition,
-        customCardDbIds: reloaded.loadedDbIds, customCards,
+        enableParentCards,
+        draftMode,
+        draftPoolSize,
+        enableThroughTheSeasons,
+        enableFarmersOfTheMoor,
+        enableMoorBalanceRules,
+        allowIncompleteFarmersOfTheMoorMinorDeal,
+        enableSnakeOpening,
+        gameEdition,
+        customCardDbIds: reloaded.loadedDbIds,
+        customCards,
       }
       nextRoom.startedAt = nextRoom.status === 'playing' ? Date.now() : undefined
       ctx.committer!.lockNewRoom(nextRoom)

@@ -293,7 +293,12 @@ export type CardEffect = {
   computeHarvestFeedingOrderPriority?: (state: GameState, player: PlayerState) => number
   /** Applies to ordinary and card-granted placements, including temporary guests. */
   blocksWorkerPlacement?: (state: GameState, player: PlayerState) => boolean
-  permitsActionSpaceEntry?: (state: GameState, owner: PlayerState, actor: PlayerState, spaceId: string) => boolean
+  permitsActionSpaceEntry?: (
+    state: GameState,
+    owner: PlayerState,
+    actor: PlayerState,
+    spaceId: string,
+  ) => boolean
   computePastureCapacityModifiers?: (
     player: PlayerState,
     state: GameState,
@@ -387,16 +392,30 @@ export const getCardEffect = (id: string): CardEffect | null => {
 }
 
 export const isWorkerPlacementBlocked = (state: GameState, player: PlayerState): boolean =>
-  [...(player.improvements ?? []), ...(player.minorPlayed ?? []), ...(player.occupationPlayed ?? [])].some(id =>
-    getCardEffect(id)?.blocksWorkerPlacement?.(state, player) === true)
+  [
+    ...(player.improvements ?? []),
+    ...(player.minorPlayed ?? []),
+    ...(player.occupationPlayed ?? []),
+  ].some((id) => getCardEffect(id)?.blocksWorkerPlacement?.(state, player) === true)
 
-export const cardEffectsPermitSpaceEntry = (state: GameState, actor: PlayerState, spaceId: string): boolean =>
-  state.players.every(owner => [...owner.improvements, ...owner.minorPlayed, ...owner.occupationPlayed].every(id =>
-    getCardEffect(id)?.permitsActionSpaceEntry?.(state, owner, actor, spaceId) !== false))
+export const cardEffectsPermitSpaceEntry = (
+  state: GameState,
+  actor: PlayerState,
+  spaceId: string,
+): boolean =>
+  state.players.every((owner) =>
+    [...owner.improvements, ...owner.minorPlayed, ...owner.occupationPlayed].every(
+      (id) => getCardEffect(id)?.permitsActionSpaceEntry?.(state, owner, actor, spaceId) !== false,
+    ),
+  )
 
 export const getHarvestFeedingOrderPriority = (state: GameState, player: PlayerState): number =>
-  Math.max(0, ...[...player.improvements, ...player.minorPlayed, ...player.occupationPlayed].map(id =>
-    getCardEffect(id)?.computeHarvestFeedingOrderPriority?.(state, player) ?? 0))
+  Math.max(
+    0,
+    ...[...player.improvements, ...player.minorPlayed, ...player.occupationPlayed].map(
+      (id) => getCardEffect(id)?.computeHarvestFeedingOrderPriority?.(state, player) ?? 0,
+    ),
+  )
 
 export const resourceCommitmentsSatisfied = (state: GameState): boolean => {
   const totals = new Map<string, Partial<Resource>>()
@@ -609,7 +628,12 @@ export const getBreedableAnimalCount = (
   return count
 }
 
-export const getBreedOffspringCount = (state: GameState, player: PlayerState, animal: BreedAnimalType, ctx: BreedThresholdContext): number => {
+export const getBreedOffspringCount = (
+  state: GameState,
+  player: PlayerState,
+  animal: BreedAnimalType,
+  ctx: BreedThresholdContext,
+): number => {
   let count = 1
   for (const id of [...player.improvements, ...player.minorPlayed, ...player.occupationPlayed]) {
     const next = getCardEffect(id)?.computeBreedOffspringCount?.(state, player, animal, count, ctx)

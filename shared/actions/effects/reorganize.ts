@@ -178,11 +178,18 @@ const applyReorganizeMutate = (
   const pastureZones = zones.filter((z) => z.zoneType === 'pasture')
   commitFarmOperation(player, { kind: 'pastures', positions: [], pastures: player.pastures.map((p) => {
     const a = pastureZones.find((z) => z.id === p.id)
-    const zone = computed.find(z => z.id === p.id)!
+    const zone = computed.find((z) => z.id === p.id)!
     const counts = normalizeAnimalCountsForZone(state, player, { ...zone, animalType: null }, a)
     const animalType = singleAnimalType(counts)
     const { animalCounts: _oldCounts, ...rest } = p
-    return { ...rest, animalType, animalCount: sumAnimalCounts(counts), ...(animalType === null && sumAnimalCounts(counts) > 0 ? { animalCounts: compactAnimalCounts(counts) } : {}) }
+    return {
+      ...rest,
+      animalType,
+      animalCount: sumAnimalCounts(counts),
+      ...(animalType === null && sumAnimalCounts(counts) > 0
+        ? { animalCounts: compactAnimalCounts(counts) }
+        : {}),
+    }
   }) })
 
   player.houseAnimals = Object.fromEntries(zones

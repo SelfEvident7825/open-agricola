@@ -9,6 +9,38 @@ const fixturesRoot = path.resolve(__dirname, 'fixtures/cards')
 const extendedFixturesRoot = path.resolve(__dirname, 'fixtures/manifest-fixtures')
 
 describe('buildCardsManifest', () => {
+  it('keeps classic metadata and lazy module paths after grouping sources by deck', () => {
+    const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'cards-manifest-classic-'))
+    const cardsRoot = path.join(tmp, 'shared', 'cards')
+    const deckRoot = path.join(cardsRoot, 'classic', 'I')
+    fs.mkdirSync(path.join(deckRoot, '__tests__'), { recursive: true })
+    try {
+      fs.writeFileSync(
+        path.join(deckRoot, 'OLD_I001_Source.ts'),
+        `export const OLD_I001_Source = defineOccupationCard({
+          meta: { id: 'OLD_I001_Source', originalId: 'I001_Source', gameEdition: 'classic', name: 'Classic', deck: 'I', number: 1, desc: ['Printed rule'], cost: {} },
+        })`,
+      )
+      fs.writeFileSync(
+        path.join(deckRoot, '__tests__', 'fixture.ts'),
+        `export const TEST_Only = defineMinorCard({ meta: { id: 'TEST_Only' } })`,
+      )
+
+      const manifest = buildCardsManifest(cardsRoot)
+
+      expect(Object.keys(manifest)).toEqual(['OLD_I001_Source'])
+      expect(manifest.OLD_I001_Source?.meta).toMatchObject({
+        gameEdition: 'classic',
+        originalId: 'I001_Source',
+        deck: 'I',
+        desc: ['Printed rule'],
+      })
+      expect(manifest.OLD_I001_Source?.module).toBe('shared/cards/classic/I/OLD_I001_Source')
+    } finally {
+      fs.rmSync(tmp, { recursive: true, force: true })
+    }
+  })
+
   it('projects the maintainer-selected Moor printed values into the public manifest and generated catalog', () => {
     const manifest = buildCardsManifest(path.resolve(__dirname, '../../shared/cards'))
     expect(manifest['M090_WinterStorehouse']?.meta.vp).toBe(0)

@@ -79,9 +79,12 @@ const aliasTerms = (
   plainText: ReadonlyMap<string, string>,
 ): string[] => CARD_TEXT_SEARCH_ALIASES.flatMap(({ nameKey, aliases }) => languages.flatMap((language) => {
   const canonical = translate(language, nameKey).toLowerCase()
-  const printed = iconNameKeys.has(nameKey) || (!!canonical && !!plainText.get(language.id)?.toLowerCase().includes(canonical))
+  const terms = [translate(language, nameKey), ...aliases.map((alias) => translate(language, alias.nameKey))].filter(Boolean)
+  const text = plainText.get(language.id)?.toLowerCase() ?? ''
+  const printed = iconNameKeys.has(nameKey) || terms.some((term) => text.includes(term.toLowerCase()))
   if (!printed) return []
-  return aliases.map((alias) => translate(language, alias.nameKey)).filter((alias) => alias && alias.toLowerCase() !== canonical)
+  // A printed alias (for example classic 木头) must also match its canonical name (木材).
+  return terms.filter((term) => term.toLowerCase() !== canonical || !text.includes(canonical))
 }))
 
 const searchDocument = (entry: EncyclopediaEntry, languages: readonly EncyclopediaLanguage[]): EncyclopediaSearchDocument => {

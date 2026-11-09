@@ -73,6 +73,26 @@ describe('encyclopedia search documents from injected languages', () => {
     })
   })
 
+  it('indexes canonical resource names when a classic description prints their aliases', () => {
+    const [entry] = pick('card:OLD_E30_Canoe')
+    const [document] = buildSearchDocuments([{ ...entry, text: {
+      name: [{ literal: 'Alias fixture' }],
+      body: [{ literal: '获得1木头，并建造1马厩。' }],
+    } }], [{
+      id: 'zh',
+      messages: {
+        'resources.wood': '木材',
+        'ui.encyclopedia.searchAliases.wood': '木头',
+        'resources.stable': '畜栏',
+        'ui.encyclopedia.searchAliases.stable': '马厩',
+      },
+      ownKeys: new Set(),
+    }])
+
+    expect(document.locales.zh.body?.text).toBe('获得1木头，并建造1马厩。')
+    expect(document.extraTerms).toEqual(['木材', '木头', '畜栏', '马厩'])
+  })
+
   it('marks per field text that falls back to English or is missing everywhere', () => {
     expect(mother.identifiers).toEqual(['PR01'])
     expect(mother.locales).toEqual({

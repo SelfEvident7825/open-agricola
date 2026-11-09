@@ -210,47 +210,48 @@ const toSnapshot = (
   // Restored rooms keep their accepted creation choices for rematches and source checks.
   const creationConfiguration = row.creation_configuration_json ? parseGameCreationRecord(row.creation_configuration_json) : null
   return {
-  ...(creationConfiguration ? { creationConfiguration } : {}),
-  id: row.id,
-  version: row.version,
-  serialized: row.state_json ? (JSON.parse(row.state_json) as PersistedSessionSnapshot) : null,
-  meta: {
-    teamMembers: parseTeamRoomMembers(row.team_members_json),
-    awaitingRematchPlayers: row.awaiting_rematch_players === 1,
-    endProposal: row.end_proposal_json ? JSON.parse(row.end_proposal_json) as GameEndProposal : null,
-    ...(row.input_window_json ? { inputWindow: JSON.parse(row.input_window_json) as RoomInputWindow } : {}),
-    createdBy: row.created_by,
-    access: decodeRoomAccess(row.invited_user_ids),
-    startedAt: row.started_at,
-    maxPlayers: row.max_players,
-    ...(row.solo_hand_mode ? { soloHandMode: row.solo_hand_mode } : {}),
-    customCardDbIds: parseCustomCardDbIds(row.custom_card_ids),
-    ...(row.custom_cards_runtime_json === null
-      ? {}
-      : { customCards: parseCustomCards(row.custom_cards_runtime_json) }),
-    ...(row.replay_recording === null
-      ? {}
-      : { replayRecording: row.replay_recording === 1 }),
-    ...(row.replay_viewer_build_id === null
-      ? {}
-      : { replayViewerBuildId: row.replay_viewer_build_id }),
-    ...(row.replay_game_build_id === null
-      ? {}
-      : { replayGameBuildId: row.replay_game_build_id }),
-    enableParentCards: row.enable_parent_cards === 1,
-    draftParents: row.draft_parents === null ? undefined : row.draft_parents === 1,
-    enableThroughTheSeasons: row.enable_through_the_seasons === 1,
-    enableFarmersOfTheMoor: row.enable_farmers_of_the_moor === 1,
-    enableMoorBalanceRules: row.enable_moor_balance_rules === 1,
-    allowIncompleteFarmersOfTheMoorMinorDeal: row.allow_incomplete_farmers_of_the_moor_minor_deal === 1,
-    gameEdition: row.game_edition,
-    enableSnakeOpening: row.enable_snake_opening === 1,
-    hotseat: row.hotseat === 1,
-    status: toStatus(row.status),
-    colorConfirmationPlayerIndex: row.color_confirmation_player_index ?? undefined,
-    players,
-  },
-  updatedAt: row.updated_at,
+    ...(creationConfiguration ? { creationConfiguration } : {}),
+    id: row.id,
+    version: row.version,
+    serialized: row.state_json ? (JSON.parse(row.state_json) as PersistedSessionSnapshot) : null,
+    meta: {
+      teamMembers: parseTeamRoomMembers(row.team_members_json),
+      awaitingRematchPlayers: row.awaiting_rematch_players === 1,
+      endProposal: row.end_proposal_json
+        ? (JSON.parse(row.end_proposal_json) as GameEndProposal)
+        : null,
+      ...(row.input_window_json
+        ? { inputWindow: JSON.parse(row.input_window_json) as RoomInputWindow }
+        : {}),
+      createdBy: row.created_by,
+      access: decodeRoomAccess(row.invited_user_ids),
+      startedAt: row.started_at,
+      maxPlayers: row.max_players,
+      ...(row.solo_hand_mode ? { soloHandMode: row.solo_hand_mode } : {}),
+      customCardDbIds: parseCustomCardDbIds(row.custom_card_ids),
+      ...(row.custom_cards_runtime_json === null
+        ? {}
+        : { customCards: parseCustomCards(row.custom_cards_runtime_json) }),
+      ...(row.replay_recording === null ? {} : { replayRecording: row.replay_recording === 1 }),
+      ...(row.replay_viewer_build_id === null
+        ? {}
+        : { replayViewerBuildId: row.replay_viewer_build_id }),
+      ...(row.replay_game_build_id === null ? {} : { replayGameBuildId: row.replay_game_build_id }),
+      enableParentCards: row.enable_parent_cards === 1,
+      draftParents: row.draft_parents === null ? undefined : row.draft_parents === 1,
+      enableThroughTheSeasons: row.enable_through_the_seasons === 1,
+      enableFarmersOfTheMoor: row.enable_farmers_of_the_moor === 1,
+      enableMoorBalanceRules: row.enable_moor_balance_rules === 1,
+      allowIncompleteFarmersOfTheMoorMinorDeal:
+        row.allow_incomplete_farmers_of_the_moor_minor_deal === 1,
+      gameEdition: row.game_edition,
+      enableSnakeOpening: row.enable_snake_opening === 1,
+      hotseat: row.hotseat === 1,
+      status: toStatus(row.status),
+      colorConfirmationPlayerIndex: row.color_confirmation_player_index ?? undefined,
+      players,
+    },
+    updatedAt: row.updated_at,
   }
 }
 

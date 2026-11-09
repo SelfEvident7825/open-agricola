@@ -14,7 +14,12 @@ import {
   computeAnimalZones,
   readAnimalCountsForZoneAssignment,
 } from '../../domain/animal-zones'
-import { getBreedableAnimalCount, getBreedOffspringCount, getBreedThreshold, shouldEnforceReorganizeOnLastHarvest } from '../../cards/card-effects'
+import {
+  getBreedableAnimalCount,
+  getBreedOffspringCount,
+  getBreedThreshold,
+  shouldEnforceReorganizeOnLastHarvest,
+} from '../../cards/card-effects'
 import type { BreedAnimalType } from '../../cards/card-effects'
 
 export type BreedOptions = {
@@ -87,7 +92,8 @@ export const breed = (
     if (breedableCount < threshold) continue
     const offspring = getBreedOffspringCount(state, player, type, ctx)
     if (offspring <= 0) continue
-    placementMinimums[type] = Math.max(0, threshold - (breedableCount - (player.resources[type] ?? 0))) + offspring
+    placementMinimums[type] =
+      Math.max(0, threshold - (breedableCount - (player.resources[type] ?? 0))) + offspring
     player.resources[type] += offspring
     summary.resources[type] = offspring
     summary.animalTypes += 1

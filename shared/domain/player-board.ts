@@ -29,7 +29,13 @@ export class PlayerBoard {
     this.player = player
     this.state = state
     this.animals = new AnimalZones(player, state)
-    this.farmyard = new Farmyard(player, state, () => this.animals.nonPastureAnimalCounts(), candidate => computeAnimalZones(candidate, state).filter(zone => zone.zoneType === 'pasture'))
+    this.farmyard = new Farmyard(
+      player,
+      state,
+      () => this.animals.nonPastureAnimalCounts(),
+      (candidate) =>
+        computeAnimalZones(candidate, state).filter((zone) => zone.zoneType === 'pasture'),
+    )
     this.farmInteraction = new FarmInteraction(player)
   }
 

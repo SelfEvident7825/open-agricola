@@ -1,4 +1,3 @@
-import { t } from '../../../shared/i18n'
 import type { ReactNode } from 'react'
 import type { EncyclopediaFace as EncyclopediaFaceRef } from '../../../shared/contract/card-encyclopedia'
 import type { Locale } from '../../../shared/i18n'
@@ -85,10 +84,9 @@ export function EncyclopediaFace({ item, locale }: { item: EncyclopediaItem; loc
   const face = item.entry.face
   const view = faceView(face)
   const status = useImageStatus(view.artUrls?.(face) ?? [])
-  const content = status === 'failed' ? (
-      <EncyclopediaTextFace item={item} locale={locale} imageMissing>
-        {view.withoutArt?.({ face, item, locale })}
-      </EncyclopediaTextFace>
+  return status === 'failed' ? (
+    <EncyclopediaTextFace item={item} locale={locale} imageMissing>
+      {view.withoutArt?.({ face, item, locale })}
+    </EncyclopediaTextFace>
   ) : view.render({ face, item, locale })
-  return <div>{item.entry.availableInGame === false && <p>{t(locale, 'platform.classicReferenceOnly')}</p>}{content}</div>
 }

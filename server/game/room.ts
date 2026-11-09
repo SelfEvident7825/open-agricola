@@ -338,8 +338,17 @@ export const removePlayerFromRoom = (
 
 type RoomLikeForSummary = Pick<
   Room,
-  'id' | 'players' | 'seatOwners' | 'maxPlayers' | 'createdBy' | 'hotseat' | 'access' | 'status' | 'gameEdition'
-> & Partial<Pick<Room, 'teamMembers' | 'waitingTeamConnections' | 'session'>>
+  | 'id'
+  | 'players'
+  | 'seatOwners'
+  | 'maxPlayers'
+  | 'createdBy'
+  | 'hotseat'
+  | 'access'
+  | 'status'
+  | 'gameEdition'
+> &
+  Partial<Pick<Room, 'teamMembers' | 'waitingTeamConnections' | 'session'>>
 
 export function summarizeRoomsForLobby(
   source: Iterable<RoomLikeForSummary>,

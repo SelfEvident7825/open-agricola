@@ -42,18 +42,16 @@ const compactContext = (
 ): Record<string, unknown> | undefined =>
   Object.keys(context).length > 0 ? context : undefined
 
-const buildOccupationCostProvider = (
-  player: PlayerState,
-  occupationId: string,
-  costOverride?: Partial<PlayerState['resources']>,
-) => () => {
-  const cost = { ...(getOccupationCost(player, occupationId) ?? {}) }
-  for (const [key, amount] of Object.entries(costOverride ?? {})) {
-    const resource = key as keyof Resource
-    cost[resource] = (cost[resource] ?? 0) + (amount ?? 0)
+const buildOccupationCostProvider =
+  (player: PlayerState, occupationId: string, costOverride?: Partial<PlayerState['resources']>) =>
+  () => {
+    const cost = { ...(getOccupationCost(player, occupationId) ?? {}) }
+    for (const [key, amount] of Object.entries(costOverride ?? {})) {
+      const resource = key as keyof Resource
+      cost[resource] = (cost[resource] ?? 0) + (amount ?? 0)
+    }
+    return cost
   }
-  return cost
-}
 
 const canAffordOccupationPreviewCost = (
   state: GameState,

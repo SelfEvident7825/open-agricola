@@ -1,6 +1,11 @@
 import { createTeamActionSpaces } from '../team/action-spaces'
 import { createTeamState } from '../domain/team-scoring'
-import { gameEditionOf, classicDeckIds, classicSetupError, type GameEdition } from '../contract/game-edition'
+import {
+  gameEditionOf,
+  classicDeckIds,
+  classicSetupError,
+  type GameEdition,
+} from '../contract/game-edition'
 import { restoreSessionState } from './state-recovery'
 import { isMoorBalanceRulesEnabled } from '../contract/game-variants'
 // Catalog-dependent state helpers (server-facing).
@@ -26,7 +31,8 @@ import {
   standardMajorImprovementIds,
 } from '../cards/major/supply'
 import {
-  implementedClassicMinors, implementedClassicOccupations,
+  implementedClassicMinors,
+  implementedClassicOccupations,
   implementedMinorImprovementCards,
   implementedOccupationCards,
   implementedCommunityMinors,
@@ -148,9 +154,14 @@ export const dealHands = (
   gameEdition: GameEdition = 'revised',
 ) => {
   const rng = createSeededRng(seed, 'deal-hands')
-  const allowedDecks = new Set<string>(gameEdition === 'classic' ? (deckIds?.length ? deckIds.filter(id => (classicDeckIds as readonly string[]).includes(id)) : classicDeckIds) : normalizeDeckIds(deckIds))
-  const allow = (players: string | undefined) =>
-    cardAllowedForPlayerCount(players, playerCount)
+  const allowedDecks = new Set<string>(
+    gameEdition === 'classic'
+      ? deckIds?.length
+        ? deckIds.filter((id) => (classicDeckIds as readonly string[]).includes(id))
+        : classicDeckIds
+      : normalizeDeckIds(deckIds),
+  )
+  const allow = (players: string | undefined) => cardAllowedForPlayerCount(players, playerCount)
   const lookupPlayersField = (id: string): string | undefined =>
     getCustomMinorImprovement(id)?.players
     ?? getCustomOccupation(id)?.players
@@ -158,31 +169,37 @@ export const dealHands = (
     ?? getRegisteredOccupation(id)?.players
     ?? undefined
   const allowExtra = (id: string) => allow(lookupPlayersField(id))
-  const minorPool = Array.from(new Set([
-    ...(gameEdition === 'classic' ? implementedClassicMinors : implementedMinorImprovementCards)
-      .filter((card) => allowedDecks.has(card.deck))
-      .filter((card) => allow(card.players))
-      .map((card) => card.id),
-    ...(enableCommunityDeck
-      ? implementedCommunityMinors
-          .filter((card) => allow(card.players))
-          .map((card) => card.id)
-      : []),
-    ...extraMinorIds.filter(allowExtra),
-  ]))
-  const occupationPool = Array.from(new Set([
-    ...(gameEdition === 'classic' ? implementedClassicOccupations : implementedOccupationCards)
-      .filter((card) => allowedDecks.has(card.deck))
-      .filter((card) => allow(card.players))
-      .map((card) => card.id),
-    ...(enableCommunityDeck
-      ? implementedCommunityOccupations
-          .filter((card) => allow(card.players))
-          .map((card) => card.id)
-      : []),
-    ...extraOccupationIds.filter(allowExtra),
-  ]))
-  if (gameEdition === 'classic' && (minorPool.length < playerCount * handSize || occupationPool.length < playerCount * handSize)) throw new Error('Insufficient implemented classic cards for this deal')
+  const minorPool = Array.from(
+    new Set([
+      ...(gameEdition === 'classic' ? implementedClassicMinors : implementedMinorImprovementCards)
+        .filter((card) => allowedDecks.has(card.deck))
+        .filter((card) => allow(card.players))
+        .map((card) => card.id),
+      ...(enableCommunityDeck
+        ? implementedCommunityMinors.filter((card) => allow(card.players)).map((card) => card.id)
+        : []),
+      ...extraMinorIds.filter(allowExtra),
+    ]),
+  )
+  const occupationPool = Array.from(
+    new Set([
+      ...(gameEdition === 'classic' ? implementedClassicOccupations : implementedOccupationCards)
+        .filter((card) => allowedDecks.has(card.deck))
+        .filter((card) => allow(card.players))
+        .map((card) => card.id),
+      ...(enableCommunityDeck
+        ? implementedCommunityOccupations
+            .filter((card) => allow(card.players))
+            .map((card) => card.id)
+        : []),
+      ...extraOccupationIds.filter(allowExtra),
+    ]),
+  )
+  if (
+    gameEdition === 'classic' &&
+    (minorPool.length < playerCount * handSize || occupationPool.length < playerCount * handSize)
+  )
+    throw new Error('Insufficient implemented classic cards for this deal')
   const shuffledMinor = shuffleWithRng(minorPool, rng)
   const shuffledOccupation = shuffleWithRng(occupationPool, rng)
   const minorHands: string[][] = []
@@ -220,7 +237,10 @@ const createFallbackOrdinaryCardDecks = (
   seed: GameSeed,
   draft: GameState['draft'],
   enableCommunityDeck: boolean,
-  options: Pick<InitialStateOptions, 'extraMinorIds' | 'extraOccupationIds' | 'deckIds' | 'gameEdition'> = {},
+  options: Pick<
+    InitialStateOptions,
+    'extraMinorIds' | 'extraOccupationIds' | 'deckIds' | 'gameEdition'
+  > = {},
 ): OrdinaryCardDecks => {
   const full = dealHands(
     players.length,
@@ -253,7 +273,13 @@ const normalizeOrdinaryCardDecks = (
       minor: decks.minor.filter((id): id is string => typeof id === 'string'),
     }
   }
-  return createFallbackOrdinaryCardDecks(players, seed, raw.draft ?? null, raw.enableCommunityDeck ?? false, { gameEdition: raw.gameEdition })
+  return createFallbackOrdinaryCardDecks(
+    players,
+    seed,
+    raw.draft ?? null,
+    raw.enableCommunityDeck ?? false,
+    { gameEdition: raw.gameEdition },
+  )
 }
 
 type ActionDefinitionLookup = (id: string) => ActionDefinition | undefined
@@ -355,7 +381,18 @@ export const normalizeState = (raw: GameState, getActionDefinition?: ActionDefin
         (player.minorHand?.length ?? 0) === 0 ||
         (player.occupationHand?.length ?? 0) === 0,
     )
-  const dealtHands = needsHands ? dealHands(raw.players.length, seed, [], [], undefined, 7, false, gameEditionOf(raw.gameEdition)) : null
+  const dealtHands = needsHands
+    ? dealHands(
+        raw.players.length,
+        seed,
+        [],
+        [],
+        undefined,
+        7,
+        false,
+        gameEditionOf(raw.gameEdition),
+      )
+    : null
   const players = raw.players.map((player, index) => {
     const improvements = player.improvements ?? []
     const minorHand = player.minorHand ?? []
@@ -678,7 +715,16 @@ const createInitialPlayers = (
         ]),
       }
     } else {
-      dealtHands = dealHands(count, seed, extraMinorIds, extraOccupationIds, deckIds, 7, enableCommunityDeck, gameEditionOf(options.gameEdition))
+      dealtHands = dealHands(
+        count,
+        seed,
+        extraMinorIds,
+        extraOccupationIds,
+        deckIds,
+        7,
+        enableCommunityDeck,
+        gameEditionOf(options.gameEdition),
+      )
     }
   }
   const base: Array<{

@@ -189,7 +189,7 @@ export const PlayerCard = ({
   const moorMajor = cardType === 'major' ? getMoorMajorDisplay(cardId) : undefined
   const deck = getDeckFromId(cardData?.originalId ?? cardId)
   const runtimeArt = artUrl === undefined ? getCustomCardArtUrl(cardId) : artUrl
-  const staticArt = (cardData?.artUrl?.startsWith('/card-art/community/') || cardData?.artUrl?.startsWith('/card-art/classic/'))
+  const staticArt = (cardData?.artUrl?.startsWith('/card-art/community/') || cardData?.artUrl?.startsWith('/assets/'))
     ? cardData.artUrl
     : undefined
 
@@ -228,7 +228,9 @@ export const PlayerCard = ({
       const base = import.meta.env.BASE_URL.endsWith('/')
         ? import.meta.env.BASE_URL
         : `${import.meta.env.BASE_URL}/`
-      const fullUrl = `${base}${staticArt.replace(/^\/+/, '')}`
+      const fullUrl = staticArt.startsWith('/assets/')
+        ? publicAssetUrl(staticArt)
+        : `${base}${staticArt.replace(/^\/+/, '')}`
       return {
         backgroundImage: `url(${fullUrl})`,
         backgroundSize: 'contain',

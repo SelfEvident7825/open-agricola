@@ -225,13 +225,14 @@ export const reap = (
       appendHarvestedCrop(reapSummary, slot.tile.row, slot.tile.col, kind, amount, sources)
       appendHarvestCountApplication(reapSummary, slot.tile.row, slot.tile.col, kind, amount, sources, tags, scope)
       appendHarvestedPosition(reapSummary, logicalField.row, logicalField.col)
-      if (!retained) eventSink?.emit<'farm.cropRemoved'>({
-        type: 'farm.cropRemoved',
-        sourceCardId: logicalField.sourceCard ?? options.sourceCard,
-        crops: [cropEvent],
-        reason: 'reap',
-        trigger,
-      })
+      if (!retained)
+        eventSink?.emit<'farm.cropRemoved'>({
+          type: 'farm.cropRemoved',
+          sourceCardId: logicalField.sourceCard ?? options.sourceCard,
+          crops: [cropEvent],
+          reason: 'reap',
+          trigger,
+        })
       eventSink?.emit<'resource.moved'>({
         type: 'resource.moved',
         resources: { [kind]: amount },

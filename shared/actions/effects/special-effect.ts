@@ -620,11 +620,36 @@ export const specialEffectAction: ActionDefinition = {
         }> = []
         for (const loc of p.locations) {
           if (loc.kind === 'field') {
-            const logical = getLogicalFields(target).find(f => f.slots.some(slot => slot.tile.row === loc.row && slot.tile.col === loc.col))
-            const slot = logical?.slots.find(slot => slot.tile.row === loc.row && slot.tile.col === loc.col)
-            if (!logical || !slot?.stack) throw new Error(`plant-additional-good: missing field at row=${loc.row} col=${loc.col}`)
-            crops.push({ location: logical.kind === 'card' ? { kind: 'card', playerId: target.id, cardId: logical.sourceCard! } : { kind: 'field', playerId: target.id, row: loc.row, col: loc.col }, crop: slot.stack.kind, amount: 1 })
-            mutations.push(() => { mutateLogicalFields(state!, target, { sourceCard, emitEvents: false }).grow({ fieldId: logical.id, slot: slot.index }) })
+            const matchesTile = (tile: { row: number; col: number }) =>
+              tile.row === loc.row && tile.col === loc.col
+            const logical = getLogicalFields(target).find(
+              (field) => matchesTile(field) || field.slots.some((slot) => matchesTile(slot.tile)),
+            )
+            if (!logical) {
+              throw new Error(
+                `plant-additional-good: missing field at row=${loc.row} col=${loc.col}`,
+              )
+            }
+            const slots = logical.slots.filter((slot) => matchesTile(slot.tile))
+            const stack = readGrowableStack(
+              slots.map((slot) => slot.stack),
+              `field row=${loc.row} col=${loc.col}`,
+            )
+            const slot = slots.find((slot) => slot.stack === stack)!
+            crops.push({
+              location:
+                logical.kind === 'card'
+                  ? { kind: 'card', playerId: target.id, cardId: logical.sourceCard! }
+                  : { kind: 'field', playerId: target.id, row: loc.row, col: loc.col },
+              crop: stack.kind,
+              amount: 1,
+            })
+            mutations.push(() => {
+              mutateLogicalFields(state!, target, { sourceCard, emitEvents: false }).grow({
+                fieldId: logical.id,
+                slot: slot.index,
+              })
+            })
           } else {
             const stacks =
               readCardExtraData<CardFieldStack[]>(target, loc.cardId, 'cardFieldStacks') ?? []

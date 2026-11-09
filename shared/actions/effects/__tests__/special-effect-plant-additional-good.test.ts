@@ -93,9 +93,12 @@ describe('special-effect: plant-additional-good — invariant violations', () =>
     ).toThrow(/missing field/)
   })
 
-  it('throws when field has no stack with remaining>=1', () => {
+  it.each([
+    { label: 'empty', stacks: [] },
+    { label: 'depleted', stacks: [{ kind: 'grain' as const, remaining: 0 }] },
+  ])('throws when an $label field has no stack with remaining>=1', ({ stacks }) => {
     const player = makePlayer({
-      fields: [{ row: 0, col: 1, stacks: [] }],
+      fields: [{ row: 0, col: 1, stacks }],
     })
     expect(() =>
       exec(player, {

@@ -38,6 +38,16 @@ describe('encyclopedia detail', () => {
     expect(within(screen.getByRole('region', { name: '规则补充' })).getByText('中英文均暂缺')).toBeInTheDocument()
   })
 
+  it('labels classic reference-only cards outside the face so the face keeps its layout', () => {
+    const entry = cardEntry('OLD_BI01_SparrenCastle', 'BI01', { group: 'classic', availableInGame: false })
+    const { container } = render(<EncyclopediaDetail entryKey={entry.key} item={itemFor(entry)} locale="en" onClose={() => {}} />)
+
+    const notice = screen.getByText('Reference only: this card effect is not ported and this card is not dealt.')
+    expect(notice).toBeVisible()
+    expect(container.querySelector('.encyclopedia-detail__face')).not.toContainElement(notice)
+    expect(fact('Deck or expansion')).toHaveTextContent('Classic Agricola (preview)')
+  })
+
   it('lists every printed cost option and the fields that do not apply', () => {
     render(<EncyclopediaDetail entryKey={BASEBOARDS.key} item={itemFor(BASEBOARDS)} locale="en" onClose={() => {}} />)
 

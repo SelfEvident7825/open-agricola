@@ -709,7 +709,10 @@ const canPlaceAnimalInWorkZone = (
     return null
   }
   const next = candidateZoneWithAnimal(zone, type)
-  return next.animalCount <= animalZoneCapacity(next, next.animalCounts) && computeInvalidAnimalsForZone(state, player, next).length === 0 ? next : null
+  return next.animalCount <= animalZoneCapacity(next, next.animalCounts) &&
+    computeInvalidAnimalsForZone(state, player, next).length === 0
+    ? next
+    : null
 }
 
 export const canAccommodateAnimalTotals = (
@@ -782,12 +785,16 @@ export const prefillAnimalZones = (
   for (const zone of workZones) {
     for (const type of ALL_ANIMAL_KEYS) placed[type] = (placed[type] ?? 0) + (zone.animalCounts[type] ?? 0)
     const occupied = ALL_ANIMAL_KEYS.filter((type) => (zone.animalCounts[type] ?? 0) > 0)
-    if (zone.animalCount > animalZoneCapacity(zone, zone.animalCounts)
-      || (zone.blocked && zone.animalCount > 0)
-      || occupied.some((type) => !keys.includes(type))
-      || (!allowsMixedAnimalTypes(zone) && occupied.length > 1)
-      || (zone.allowedAnimalType != null && occupied.some((type) => type !== zone.allowedAnimalType))
-      || computeInvalidAnimalsForZone(state, player, zone).length > 0) return zones
+    if (
+      zone.animalCount > animalZoneCapacity(zone, zone.animalCounts) ||
+      (zone.blocked && zone.animalCount > 0) ||
+      occupied.some((type) => !keys.includes(type)) ||
+      (!allowsMixedAnimalTypes(zone) && occupied.length > 1) ||
+      (zone.allowedAnimalType != null &&
+        occupied.some((type) => type !== zone.allowedAnimalType)) ||
+      computeInvalidAnimalsForZone(state, player, zone).length > 0
+    )
+      return zones
     if (groupKey(zone) !== undefined && zone.animalCount > 0) {
       exclusiveCounts.set(groupKey(zone), (exclusiveCounts.get(groupKey(zone)) ?? 0) + 1)
     }
@@ -880,7 +887,10 @@ export const enforceAnimalCapacity = (
   state: GameState = { completedFeedingPhases: 0 } as GameState,
 ) => {
   const zones = computeAnimalZones(player, state)
-  const zoneCapacity = (id: string, type: AnimalType) => { const zone = zones.find(z => z.id === id); return zone ? animalZoneCapacity(zone, { [type]: zone.capacity }) : 0 }
+  const zoneCapacity = (id: string, type: AnimalType) => {
+    const zone = zones.find((z) => z.id === id)
+    return zone ? animalZoneCapacity(zone, { [type]: zone.capacity }) : 0
+  }
 
   const animalKeys = animalKeysForState(state)
   const totals: Partial<Record<AnimalType, number>> = {}
@@ -894,15 +904,24 @@ export const enforceAnimalCapacity = (
     if (assignment) stableAnimals[key] = { ...assignment }
   })
   commitFarmOperation(player, { kind: 'pastures', positions: [], pastures: player.pastures.map((pasture) => {
-    const zone = zones.find(z => z.id === pasture.id)!
+    const zone = zones.find((z) => z.id === pasture.id)!
     const current = readAnimalCountsForZoneAssignment(pasture)
-    const requested = Object.fromEntries(animalKeys.map(type => [type, Math.min(current[type] ?? 0, totals[type] ?? 0)]))
+    const requested = Object.fromEntries(
+      animalKeys.map((type) => [type, Math.min(current[type] ?? 0, totals[type] ?? 0)]),
+    )
     const counts = normalizeAnimalCountsForZone(state, player, zone, { animalCounts: requested })
     // Preserve existing assignments before filling empty slots below.
     for (const type of animalKeys) totals[type] = (totals[type] ?? 0) - (counts[type] ?? 0)
     const { animalCounts: _oldCounts, ...rest } = pasture
     const type = singleAnimalType(counts)
-    return { ...rest, animalType: type, animalCount: sumAnimalCounts(counts), ...(type === null && sumAnimalCounts(counts) > 0 ? { animalCounts: compactAnimalCounts(counts) } : {}) }
+    return {
+      ...rest,
+      animalType: type,
+      animalCount: sumAnimalCounts(counts),
+      ...(type === null && sumAnimalCounts(counts) > 0
+        ? { animalCounts: compactAnimalCounts(counts) }
+        : {}),
+    }
   }) })
   const houseZones = zones.filter(zone => zone.zoneType === 'house')
   player.houseAnimals = {}
@@ -942,7 +961,7 @@ export const enforceAnimalCapacity = (
     }
   }
   commitFarmOperation(player, { kind: 'pastures', positions: [], pastures: player.pastures.map((pasture) => {
-    const zone = zones.find(z => z.id === pasture.id)!
+    const zone = zones.find((z) => z.id === pasture.id)!
     if (allowsMixedAnimalTypes(zone)) {
       const counts = readAnimalCountsForZoneAssignment(pasture)
       for (const animal of animalKeys) {
@@ -953,7 +972,12 @@ export const enforceAnimalCapacity = (
           totals[animal]! -= 1
         }
       }
-      return { ...pasture, animalType: singleAnimalType(counts), animalCount: sumAnimalCounts(counts), animalCounts: compactAnimalCounts(counts) }
+      return {
+        ...pasture,
+        animalType: singleAnimalType(counts),
+        animalCount: sumAnimalCounts(counts),
+        animalCounts: compactAnimalCounts(counts),
+      }
     }
     if (pasture.animalType) {
       totals[pasture.animalType] = (totals[pasture.animalType] ?? 0) + pasture.animalCount
@@ -986,8 +1010,10 @@ export const enforceAnimalCapacity = (
   player.stableAnimals = stableAnimals
   for (const animalType of animalKeys) {
     player.resources[animalType] = reservedCardTotals[animalType] ?? 0
-    player.resources[animalType] += player.pastures
-      .reduce((sum, pasture) => sum + (readAnimalCountsForZoneAssignment(pasture)[animalType] ?? 0), 0)
+    player.resources[animalType] += player.pastures.reduce(
+      (sum, pasture) => sum + (readAnimalCountsForZoneAssignment(pasture)[animalType] ?? 0),
+      0,
+    )
     player.resources[animalType] += Object.values(player.houseAnimals).filter(animal => animal === animalType).length
     Object.values(stableAnimals).forEach((assignment) => {
       if (assignment.animalType === animalType) player.resources[animalType] = (player.resources[animalType] ?? 0) + assignment.animalCount

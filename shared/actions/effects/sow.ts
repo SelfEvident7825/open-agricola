@@ -155,10 +155,12 @@ const finalizeSow = (
   const stackDelta = ctx.actionContext?.sowStackDelta
   if (typeof stackDelta === 'number' && Number.isSafeInteger(stackDelta) && stackDelta !== 0) {
     for (const crop of crops) {
-      const adjusted = stackDelta > 0
-        ? mutations.grow({ row: crop.row, col: crop.col }, stackDelta)
-        : mutations.remove({ row: crop.row, col: crop.col }, -stackDelta)
-      if (!adjusted.ok) return { type: 'fail', errorKey: 'invalid sow stack size', recoverable: true }
+      const adjusted =
+        stackDelta > 0
+          ? mutations.grow({ row: crop.row, col: crop.col }, stackDelta)
+          : mutations.remove({ row: crop.row, col: crop.col }, -stackDelta)
+      if (!adjusted.ok)
+        return { type: 'fail', errorKey: 'invalid sow stack size', recoverable: true }
     }
   }
   const farmOperation = commitFarmOperation(player, { kind: 'crops', positions: crops, preparedPlayer: nextPlayer, sourceCardId: ctx.sourceCard }, ctx.eventSink)

@@ -24,15 +24,16 @@ describe('queryEncyclopedia on the generated bilingual search documents', () => 
       'D025_WitchesDanceFloor',
       'M106_HorseButchery',
       'M107_PotRoastRecipe',
+      'OLD_E20_SimpleFireplace',
     ]
     expect(ids('fireplace')).toEqual(expected)
     expect(ids('FIREPLACE')).toEqual(expected)
-    expect(ids('fireplace vegetable')).toEqual(['Major_Fireplace1', 'Major_Fireplace2', 'Major_Fireplace3', 'A041_VegetableSlicer', 'A060_OrientalFireplace'])
+    expect(ids('fireplace vegetable')).toEqual(['Major_Fireplace1', 'Major_Fireplace2', 'Major_Fireplace3', 'A041_VegetableSlicer', 'A060_OrientalFireplace', 'OLD_E20_SimpleFireplace'])
   })
 
-  it('finds a Moor major improvement by the number printed on it', () => {
-    expect(ids('M005')).toEqual(['Major_Moor_VillageChurch'])
-    expect(ids('m005')).toEqual(['Major_Moor_VillageChurch'])
+  it('ranks the exact Moor printed number before a classic identifier containing it', () => {
+    expect(ids('M005')).toEqual(['Major_Moor_VillageChurch', 'OLD_WM005_BeeKeeper'])
+    expect(ids('m005')).toEqual(['Major_Moor_VillageChurch', 'OLD_WM005_BeeKeeper'])
   })
 
   it('finds the same wood cards by 木头 as by 木材, and 马厩 reaches every 畜栏 card', () => {
@@ -46,7 +47,7 @@ describe('queryEncyclopedia on the generated bilingual search documents', () => 
   })
 
   it('never matches the arrow icon or the CSS class behind an icon', () => {
-    expect(ids('arrow')).toEqual(['A105_BarrowPusher', 'B018_GrasslandHarrow', 'D001_ZigzagHarrow', 'D017_DrillHarrow', 'M127_Wheelbarrow'])
+    expect(ids('arrow')).toEqual(['A105_BarrowPusher', 'B018_GrasslandHarrow', 'D001_ZigzagHarrow', 'D017_DrillHarrow', 'M127_Wheelbarrow', 'OLD_I68_Harrow', 'OLD_WM054_WheelbarrowPusher'])
     expect(ids('res-icon-wood')).toEqual([])
   })
 })

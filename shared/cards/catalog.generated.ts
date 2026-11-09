@@ -15924,7 +15924,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/BI01.png",
+    "artUrl": "/assets/classic/BI/BI01.png",
     "locales": {
       "zh": {
         "name": "施帕仁堡",
@@ -15955,7 +15955,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/BI02.png",
+    "artUrl": "/assets/classic/BI/BI02.png",
     "locales": {
       "zh": {
         "name": "扑克牌",
@@ -15983,7 +15983,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/BI03.png",
+    "artUrl": "/assets/classic/BI/BI03.png",
     "locales": {
       "zh": {
         "name": "发酵粉",
@@ -16016,7 +16016,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/BI04.png",
+    "artUrl": "/assets/classic/BI/BI04.png",
     "locales": {
       "zh": {
         "name": "游乐场",
@@ -16046,7 +16046,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/BI05.png",
+    "artUrl": "/assets/classic/BI/BI05.png",
     "locales": {
       "zh": {
         "name": "私家动物园",
@@ -16076,7 +16076,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/BI06.png",
+    "artUrl": "/assets/classic/BI/BI06.png",
     "locales": {
       "zh": {
         "name": "Bi扩卡牌",
@@ -16104,7 +16104,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/BI07.png",
+    "artUrl": "/assets/classic/BI/BI07.png",
     "locales": {
       "zh": {
         "name": "亚麻纺织厂",
@@ -16132,7 +16132,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/BI08.png",
+    "artUrl": "/assets/classic/BI/BI08.png",
     "locales": {
       "zh": {
         "name": "吉士",
@@ -16162,7 +16162,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/BI09.png",
+    "artUrl": "/assets/classic/BI/BI09.png",
     "locales": {
       "zh": {
         "name": "斗牛场",
@@ -16193,7 +16193,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/BI10.png",
+    "artUrl": "/assets/classic/BI/BI10.png",
     "locales": {
       "zh": {
         "name": "北纬52度",
@@ -16225,7 +16225,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/BI11.png",
+    "artUrl": "/assets/classic/BI/BI11.png",
     "locales": {
       "zh": {
         "name": "大教堂",
@@ -16253,7 +16253,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/BI12.png",
+    "artUrl": "/assets/classic/BI/BI12.png",
     "locales": {
       "zh": {
         "name": "天空桥",
@@ -16283,7 +16283,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/BI13.png",
+    "artUrl": "/assets/classic/BI/BI13.png",
     "locales": {
       "zh": {
         "name": "木制纽扣",
@@ -16312,7 +16312,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/BI14.png",
+    "artUrl": "/assets/classic/BI/BI14.png",
     "locales": {
       "zh": {
         "name": "亚麻城织布工",
@@ -16341,7 +16341,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/BI15.png",
+    "artUrl": "/assets/classic/BI/BI15.png",
     "locales": {
       "zh": {
         "name": "吸血鬼",
@@ -16370,7 +16370,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/BI16.png",
+    "artUrl": "/assets/classic/BI/BI16.png",
     "locales": {
       "zh": {
         "name": "研究所创始人",
@@ -16399,7 +16399,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/BI17.png",
+    "artUrl": "/assets/classic/BI/BI17.png",
     "locales": {
       "zh": {
         "name": "足球射手",
@@ -16428,7 +16428,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/BI18.png",
+    "artUrl": "/assets/classic/BI/BI18.png",
     "locales": {
       "zh": {
         "name": "苹果农夫",
@@ -16457,7 +16457,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/BI19.png",
+    "artUrl": "/assets/classic/BI/BI19.png",
     "locales": {
       "zh": {
         "name": "女执事",
@@ -16486,7 +16486,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/BI20.png",
+    "artUrl": "/assets/classic/BI/BI20.png",
     "locales": {
       "zh": {
         "name": "生存主义者",
@@ -16515,7 +16515,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/BI21.png",
+    "artUrl": "/assets/classic/BI/BI21.png",
     "locales": {
       "zh": {
         "name": "总编",
@@ -16544,7 +16544,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/BI22.png",
+    "artUrl": "/assets/classic/BI/BI22.png",
     "locales": {
       "zh": {
         "name": "抗争歌手",
@@ -16573,7 +16573,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/BI23.png",
+    "artUrl": "/assets/classic/BI/BI23.png",
     "locales": {
       "zh": {
         "name": "系统理论家",
@@ -16602,7 +16602,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/BI24.png",
+    "artUrl": "/assets/classic/BI/BI24.png",
     "locales": {
       "zh": {
         "name": "合作社成员",
@@ -16631,7 +16631,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/C01.png",
+    "artUrl": "/assets/classic/C/C01.png",
     "locales": {
       "zh": {
         "name": "统治者",
@@ -16660,7 +16660,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/C02.png",
+    "artUrl": "/assets/classic/C/C02.png",
     "locales": {
       "zh": {
         "name": "周末工作者",
@@ -16689,7 +16689,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/C03.png",
+    "artUrl": "/assets/classic/C/C03.png",
     "locales": {
       "zh": {
         "name": "万能博士",
@@ -16718,7 +16718,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/C04.png",
+    "artUrl": "/assets/classic/C/C04.png",
     "locales": {
       "zh": {
         "name": "国家教师",
@@ -16747,7 +16747,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/C05.png",
+    "artUrl": "/assets/classic/C/C05.png",
     "locales": {
       "zh": {
         "name": "英雄",
@@ -16776,7 +16776,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/C06.png",
+    "artUrl": "/assets/classic/C/C06.png",
     "locales": {
       "zh": {
         "name": "预言家",
@@ -16805,7 +16805,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/C07.png",
+    "artUrl": "/assets/classic/C/C07.png",
     "locales": {
       "zh": {
         "name": "官僚",
@@ -16834,7 +16834,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/C08.png",
+    "artUrl": "/assets/classic/C/C08.png",
     "locales": {
       "zh": {
         "name": "风笛手",
@@ -16863,7 +16863,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/C09.png",
+    "artUrl": "/assets/classic/C/C09.png",
     "locales": {
       "zh": {
         "name": "独生子女",
@@ -16892,7 +16892,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/C10.png",
+    "artUrl": "/assets/classic/C/C10.png",
     "locales": {
       "zh": {
         "name": "告密者",
@@ -16921,7 +16921,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/C11.png",
+    "artUrl": "/assets/classic/C/C11.png",
     "locales": {
       "zh": {
         "name": "强盗",
@@ -16950,7 +16950,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/C12.png",
+    "artUrl": "/assets/classic/C/C12.png",
     "locales": {
       "zh": {
         "name": "大主教",
@@ -16980,7 +16980,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/C13.png",
+    "artUrl": "/assets/classic/C/C13.png",
     "locales": {
       "zh": {
         "name": "点金手",
@@ -17011,7 +17011,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/C14.png",
+    "artUrl": "/assets/classic/C/C14.png",
     "locales": {
       "zh": {
         "name": "校舍",
@@ -17041,7 +17041,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/C15.png",
+    "artUrl": "/assets/classic/C/C15.png",
     "locales": {
       "zh": {
         "name": "啤酒节",
@@ -17071,7 +17071,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/C16.png",
+    "artUrl": "/assets/classic/C/C16.png",
     "locales": {
       "zh": {
         "name": "厢体货车",
@@ -17101,7 +17101,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/C17.png",
+    "artUrl": "/assets/classic/C/C17.png",
     "locales": {
       "zh": {
         "name": "教堂",
@@ -17131,7 +17131,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/C18.png",
+    "artUrl": "/assets/classic/C/C18.png",
     "locales": {
       "zh": {
         "name": "啤酒花田",
@@ -17161,7 +17161,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/C19.png",
+    "artUrl": "/assets/classic/C/C19.png",
     "locales": {
       "zh": {
         "name": "酒窖",
@@ -17194,7 +17194,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/C20.png",
+    "artUrl": "/assets/classic/C/C20.png",
     "locales": {
       "zh": {
         "name": "炉",
@@ -17224,7 +17224,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/C21.png",
+    "artUrl": "/assets/classic/C/C21.png",
     "locales": {
       "zh": {
         "name": "维纳斯雕像",
@@ -17257,7 +17257,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/C22.png",
+    "artUrl": "/assets/classic/C/C22.png",
     "locales": {
       "zh": {
         "name": "圣经",
@@ -17287,7 +17287,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/C23.png",
+    "artUrl": "/assets/classic/C/C23.png",
     "locales": {
       "zh": {
         "name": "饥饿墙",
@@ -17318,7 +17318,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/C24.png",
+    "artUrl": "/assets/classic/C/C24.png",
     "locales": {
       "zh": {
         "name": "五年计划",
@@ -17349,7 +17349,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E11.png",
+    "artUrl": "/assets/classic/E/E11.png",
     "locales": {
       "zh": {
         "name": "走耕",
@@ -17379,7 +17379,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E12.png",
+    "artUrl": "/assets/classic/E/E12.png",
     "locales": {
       "zh": {
         "name": "鱼竿",
@@ -17410,7 +17410,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E13.png",
+    "artUrl": "/assets/classic/E/E13.png",
     "locales": {
       "zh": {
         "name": "斧头",
@@ -17438,7 +17438,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E14.png",
+    "artUrl": "/assets/classic/E/E14.png",
     "locales": {
       "zh": {
         "name": "烘焙师烤炉",
@@ -17491,7 +17491,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E147.png",
+    "artUrl": "/assets/classic/E/E147.png",
     "locales": {
       "zh": {
         "name": "地皮商",
@@ -17520,7 +17520,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E148.png",
+    "artUrl": "/assets/classic/E/E148.png",
     "locales": {
       "zh": {
         "name": "智者",
@@ -17550,7 +17550,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E149.png",
+    "artUrl": "/assets/classic/E/E149.png",
     "locales": {
       "zh": {
         "name": "高级烘焙师",
@@ -17580,7 +17580,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E15.png",
+    "artUrl": "/assets/classic/E/E15.png",
     "locales": {
       "zh": {
         "name": "烤盘",
@@ -17610,7 +17610,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E150.png",
+    "artUrl": "/assets/classic/E/E150.png",
     "locales": {
       "zh": {
         "name": "烘焙师",
@@ -17640,7 +17640,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": false,
     "extraVp": false,
-    "artUrl": "/card-art/classic/E151.png",
+    "artUrl": "/assets/classic/E/E151.png",
     "locales": {
       "zh": {
         "name": "建筑大师",
@@ -17669,7 +17669,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E152.png",
+    "artUrl": "/assets/classic/E/E152.png",
     "locales": {
       "zh": {
         "name": "采莓工",
@@ -17698,7 +17698,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E153.png",
+    "artUrl": "/assets/classic/E/E153.png",
     "locales": {
       "zh": {
         "name": "乞丐",
@@ -17742,7 +17742,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E154.png",
+    "artUrl": "/assets/classic/E/E154.png",
     "locales": {
       "zh": {
         "name": "家庭酿酒师",
@@ -17771,7 +17771,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E155.png",
+    "artUrl": "/assets/classic/E/E155.png",
     "locales": {
       "zh": {
         "name": "面包贩",
@@ -17800,7 +17800,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": true,
-    "artUrl": "/card-art/classic/E156.png",
+    "artUrl": "/assets/classic/E/E156.png",
     "locales": {
       "zh": {
         "name": "制刷工",
@@ -17829,7 +17829,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E157.png",
+    "artUrl": "/assets/classic/E/E157.png",
     "locales": {
       "zh": {
         "name": "盖顶工",
@@ -17858,7 +17858,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E158.png",
+    "artUrl": "/assets/classic/E/E158.png",
     "locales": {
       "zh": {
         "name": "车工",
@@ -17900,7 +17900,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E159.png",
+    "artUrl": "/assets/classic/E/E159.png",
     "locales": {
       "zh": {
         "name": "一家之主",
@@ -17928,7 +17928,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E16.png",
+    "artUrl": "/assets/classic/E/E16.png",
     "locales": {
       "zh": {
         "name": "建筑材料",
@@ -17957,7 +17957,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E160.png",
+    "artUrl": "/assets/classic/E/E160.png",
     "locales": {
       "zh": {
         "name": "农民",
@@ -17986,7 +17986,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E161.png",
+    "artUrl": "/assets/classic/E/E161.png",
     "locales": {
       "zh": {
         "name": "渔夫",
@@ -18015,7 +18015,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E162.png",
+    "artUrl": "/assets/classic/E/E162.png",
     "locales": {
       "zh": {
         "name": "售肉商",
@@ -18044,7 +18044,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E163.png",
+    "artUrl": "/assets/classic/E/E163.png",
     "locales": {
       "zh": {
         "name": "护田人",
@@ -18073,7 +18073,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E164.png",
+    "artUrl": "/assets/classic/E/E164.png",
     "locales": {
       "zh": {
         "name": "林场主",
@@ -18103,7 +18103,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": true,
-    "artUrl": "/card-art/classic/E165.png",
+    "artUrl": "/assets/classic/E/E165.png",
     "locales": {
       "zh": {
         "name": "自由农民",
@@ -18132,7 +18132,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E166.png",
+    "artUrl": "/assets/classic/E/E166.png",
     "locales": {
       "zh": {
         "name": "花园工人",
@@ -18162,7 +18162,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E167.png",
+    "artUrl": "/assets/classic/E/E167.png",
     "locales": {
       "zh": {
         "name": "杂耍艺人",
@@ -18192,7 +18192,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E168.png",
+    "artUrl": "/assets/classic/E/E168.png",
     "locales": {
       "zh": {
         "name": "蔬菜商",
@@ -18221,7 +18221,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E169.png",
+    "artUrl": "/assets/classic/E/E169.png",
     "locales": {
       "zh": {
         "name": "说书人",
@@ -18252,7 +18252,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E17.png",
+    "artUrl": "/assets/classic/E/E17.png",
     "locales": {
       "zh": {
         "name": "风车磨坊",
@@ -18294,7 +18294,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": true,
-    "artUrl": "/card-art/classic/E170.png",
+    "artUrl": "/assets/classic/E/E170.png",
     "locales": {
       "zh": {
         "name": "地产管理人",
@@ -18323,7 +18323,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E171.png",
+    "artUrl": "/assets/classic/E/E171.png",
     "locales": {
       "zh": {
         "name": "码头工人",
@@ -18488,7 +18488,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": true,
-    "artUrl": "/card-art/classic/E172.png",
+    "artUrl": "/assets/classic/E/E172.png",
     "locales": {
       "zh": {
         "name": "酋长",
@@ -18517,7 +18517,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": true,
-    "artUrl": "/card-art/classic/E173.png",
+    "artUrl": "/assets/classic/E/E173.png",
     "locales": {
       "zh": {
         "name": "酋长女儿",
@@ -18547,7 +18547,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E174.png",
+    "artUrl": "/assets/classic/E/E174.png",
     "locales": {
       "zh": {
         "name": "家庭教师",
@@ -18577,7 +18577,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E175.png",
+    "artUrl": "/assets/classic/E/E175.png",
     "locales": {
       "zh": {
         "name": "篱笆护理员",
@@ -18606,7 +18606,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E176.png",
+    "artUrl": "/assets/classic/E/E176.png",
     "locales": {
       "zh": {
         "name": "伐木工",
@@ -18635,7 +18635,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": true,
-    "artUrl": "/card-art/classic/E177.png",
+    "artUrl": "/assets/classic/E/E177.png",
     "locales": {
       "zh": {
         "name": "木屋建筑工",
@@ -18664,7 +18664,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E178.png",
+    "artUrl": "/assets/classic/E/E178.png",
     "locales": {
       "zh": {
         "name": "小屋建造工",
@@ -18694,7 +18694,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E179.png",
+    "artUrl": "/assets/classic/E/E179.png",
     "locales": {
       "zh": {
         "name": "商人",
@@ -18735,7 +18735,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E18.png",
+    "artUrl": "/assets/classic/E/E18.png",
     "locales": {
       "zh": {
         "name": "豆田",
@@ -18764,7 +18764,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E180.png",
+    "artUrl": "/assets/classic/E/E180.png",
     "locales": {
       "zh": {
         "name": "小园主",
@@ -18793,7 +18793,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E181.png",
+    "artUrl": "/assets/classic/E/E181.png",
     "locales": {
       "zh": {
         "name": "厨师",
@@ -18823,7 +18823,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E182.png",
+    "artUrl": "/assets/classic/E/E182.png",
     "locales": {
       "zh": {
         "name": "烧炭工",
@@ -18851,7 +18851,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E183.png",
+    "artUrl": "/assets/classic/E/E183.png",
     "locales": {
       "zh": {
         "name": "编筐工",
@@ -18895,7 +18895,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E184.png",
+    "artUrl": "/assets/classic/E/E184.png",
     "locales": {
       "zh": {
         "name": "杂货商",
@@ -18926,7 +18926,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E185.png",
+    "artUrl": "/assets/classic/E/E185.png",
     "locales": {
       "zh": {
         "name": "烧砖工",
@@ -18979,7 +18979,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E186.png",
+    "artUrl": "/assets/classic/E/E186.png",
     "locales": {
       "zh": {
         "name": "售土商",
@@ -19066,7 +19066,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E187.png",
+    "artUrl": "/assets/classic/E/E187.png",
     "locales": {
       "zh": {
         "name": "运土工",
@@ -19095,7 +19095,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E188.png",
+    "artUrl": "/assets/classic/E/E188.png",
     "locales": {
       "zh": {
         "name": "和泥匠",
@@ -19125,7 +19125,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E189.png",
+    "artUrl": "/assets/classic/E/E189.png",
     "locales": {
       "zh": {
         "name": "庄园领主",
@@ -19156,7 +19156,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E19.png",
+    "artUrl": "/assets/classic/E/E19.png",
     "locales": {
       "zh": {
         "name": "三足锅",
@@ -19185,7 +19185,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E190.png",
+    "artUrl": "/assets/classic/E/E190.png",
     "locales": {
       "zh": {
         "name": "女仆",
@@ -19215,7 +19215,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": false,
     "extraVp": false,
-    "artUrl": "/card-art/classic/E191.png",
+    "artUrl": "/assets/classic/E/E191.png",
     "locales": {
       "zh": {
         "name": "泥水匠",
@@ -19245,7 +19245,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E192.png",
+    "artUrl": "/assets/classic/E/E192.png",
     "locales": {
       "zh": {
         "name": "赞助商",
@@ -19275,7 +19275,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E193.png",
+    "artUrl": "/assets/classic/E/E193.png",
     "locales": {
       "zh": {
         "name": "牧师",
@@ -19305,7 +19305,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E194.png",
+    "artUrl": "/assets/classic/E/E194.png",
     "locales": {
       "zh": {
         "name": "驭犁者",
@@ -19335,7 +19335,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E195.png",
+    "artUrl": "/assets/classic/E/E195.png",
     "locales": {
       "zh": {
         "name": "制犁工",
@@ -19371,7 +19371,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E196.png",
+    "artUrl": "/assets/classic/E/E196.png",
     "locales": {
       "zh": {
         "name": "采菇人",
@@ -19400,7 +19400,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": true,
-    "artUrl": "/card-art/classic/E197.png",
+    "artUrl": "/assets/classic/E/E197.png",
     "locales": {
       "zh": {
         "name": "吹牛大王",
@@ -19429,7 +19429,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E198.png",
+    "artUrl": "/assets/classic/E/E198.png",
     "locales": {
       "zh": {
         "name": "捕鼠人",
@@ -19459,7 +19459,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E199.png",
+    "artUrl": "/assets/classic/E/E199.png",
     "locales": {
       "zh": {
         "name": "装修工",
@@ -19495,7 +19495,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E20.png",
+    "artUrl": "/assets/classic/E/E20.png",
     "locales": {
       "zh": {
         "name": "简易火炉",
@@ -19591,7 +19591,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E200.png",
+    "artUrl": "/assets/classic/E/E200.png",
     "locales": {
       "zh": {
         "name": "建筑复原师",
@@ -19621,7 +19621,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E201.png",
+    "artUrl": "/assets/classic/E/E201.png",
     "locales": {
       "zh": {
         "name": "驯牛人",
@@ -19651,7 +19651,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E202.png",
+    "artUrl": "/assets/classic/E/E202.png",
     "locales": {
       "zh": {
         "name": "季节工",
@@ -19680,7 +19680,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E203.png",
+    "artUrl": "/assets/classic/E/E203.png",
     "locales": {
       "zh": {
         "name": "牧羊人",
@@ -19709,7 +19709,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E204.png",
+    "artUrl": "/assets/classic/E/E204.png",
     "locales": {
       "zh": {
         "name": "牧羊人管理员",
@@ -19738,7 +19738,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E205.png",
+    "artUrl": "/assets/classic/E/E205.png",
     "locales": {
       "zh": {
         "name": "打苇人",
@@ -19767,7 +19767,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E206.png",
+    "artUrl": "/assets/classic/E/E206.png",
     "locales": {
       "zh": {
         "name": "猪倌",
@@ -19797,7 +19797,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E207.png",
+    "artUrl": "/assets/classic/E/E207.png",
     "locales": {
       "zh": {
         "name": "马厩帮工",
@@ -19827,7 +19827,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E208.png",
+    "artUrl": "/assets/classic/E/E208.png",
     "locales": {
       "zh": {
         "name": "马厩管理员",
@@ -19856,7 +19856,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E209.png",
+    "artUrl": "/assets/classic/E/E209.png",
     "locales": {
       "zh": {
         "name": "采石工",
@@ -19903,7 +19903,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E21.png",
+    "artUrl": "/assets/classic/E/E21.png",
     "locales": {
       "zh": {
         "name": "半木梁房",
@@ -19932,7 +19932,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E210.png",
+    "artUrl": "/assets/classic/E/E210.png",
     "locales": {
       "zh": {
         "name": "运石工",
@@ -19962,7 +19962,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E211.png",
+    "artUrl": "/assets/classic/E/E211.png",
     "locales": {
       "zh": {
         "name": "切石工",
@@ -19991,7 +19991,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E212.png",
+    "artUrl": "/assets/classic/E/E212.png",
     "locales": {
       "zh": {
         "name": "舞者",
@@ -20021,7 +20021,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E213.png",
+    "artUrl": "/assets/classic/E/E213.png",
     "locales": {
       "zh": {
         "name": "牲畜饲养员",
@@ -20050,7 +20050,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E214.png",
+    "artUrl": "/assets/classic/E/E214.png",
     "locales": {
       "zh": {
         "name": "制陶工",
@@ -20093,7 +20093,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": true,
-    "artUrl": "/card-art/classic/E215.png",
+    "artUrl": "/assets/classic/E/E215.png",
     "locales": {
       "zh": {
         "name": "动物租用人",
@@ -20122,7 +20122,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E216.png",
+    "artUrl": "/assets/classic/E/E216.png",
     "locales": {
       "zh": {
         "name": "动物管理员",
@@ -20152,7 +20152,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E217.png",
+    "artUrl": "/assets/classic/E/E217.png",
     "locales": {
       "zh": {
         "name": "地方官",
@@ -20182,7 +20182,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E218.png",
+    "artUrl": "/assets/classic/E/E218.png",
     "locales": {
       "zh": {
         "name": "木匠",
@@ -20212,7 +20212,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E22.png",
+    "artUrl": "/assets/classic/E/E22.png",
     "locales": {
       "zh": {
         "name": "木筏",
@@ -20243,7 +20243,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E23.png",
+    "artUrl": "/assets/classic/E/E23.png",
     "locales": {
       "zh": {
         "name": "食槽",
@@ -20276,7 +20276,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E24.png",
+    "artUrl": "/assets/classic/E/E24.png",
     "locales": {
       "zh": {
         "name": "畜栏",
@@ -20304,7 +20304,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E25.png",
+    "artUrl": "/assets/classic/E/E25.png",
     "locales": {
       "zh": {
         "name": "调味料",
@@ -20334,7 +20334,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E26.png",
+    "artUrl": "/assets/classic/E/E26.png",
     "locales": {
       "zh": {
         "name": "木工刨",
@@ -20365,7 +20365,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E27.png",
+    "artUrl": "/assets/classic/E/E27.png",
     "locales": {
       "zh": {
         "name": "木造烤炉",
@@ -20410,7 +20410,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": true,
-    "artUrl": "/card-art/classic/E28.png",
+    "artUrl": "/assets/classic/E/E28.png",
     "locales": {
       "zh": {
         "name": "木靴",
@@ -20439,7 +20439,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E29.png",
+    "artUrl": "/assets/classic/E/E29.png",
     "locales": {
       "zh": {
         "name": "兽角笛",
@@ -20473,7 +20473,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E30.png",
+    "artUrl": "/assets/classic/E/E30.png",
     "locales": {
       "zh": {
         "name": "独木舟",
@@ -20507,7 +20507,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E31.png",
+    "artUrl": "/assets/classic/E/E31.png",
     "locales": {
       "zh": {
         "name": "鲤鱼池",
@@ -20537,7 +20537,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E32.png",
+    "artUrl": "/assets/classic/E/E32.png",
     "locales": {
       "zh": {
         "name": "土豆挖掘器",
@@ -20567,7 +20567,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E33.png",
+    "artUrl": "/assets/classic/E/E33.png",
     "locales": {
       "zh": {
         "name": "陶器",
@@ -20596,7 +20596,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E338.png",
+    "artUrl": "/assets/classic/E/E338.png",
     "locales": {
       "zh": {
         "name": "饲料颗粒",
@@ -20633,7 +20633,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E34.png",
+    "artUrl": "/assets/classic/E/E34.png",
     "locales": {
       "zh": {
         "name": "篮子",
@@ -20662,7 +20662,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E341.png",
+    "artUrl": "/assets/classic/E/E341.png",
     "locales": {
       "zh": {
         "name": "公会主席",
@@ -20693,7 +20693,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E35.png",
+    "artUrl": "/assets/classic/E/E35.png",
     "locales": {
       "zh": {
         "name": "谷物铲",
@@ -20724,7 +20724,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E36.png",
+    "artUrl": "/assets/classic/E/E36.png",
     "locales": {
       "zh": {
         "name": "砖造屋顶",
@@ -20755,7 +20755,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E37.png",
+    "artUrl": "/assets/classic/E/E37.png",
     "locales": {
       "zh": {
         "name": "砖造支柱",
@@ -20783,7 +20783,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E38.png",
+    "artUrl": "/assets/classic/E/E38.png",
     "locales": {
       "zh": {
         "name": "圣母像",
@@ -20814,7 +20814,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E39.png",
+    "artUrl": "/assets/classic/E/E39.png",
     "locales": {
       "zh": {
         "name": "货摊",
@@ -20845,7 +20845,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E40.png",
+    "artUrl": "/assets/classic/E/E40.png",
     "locales": {
       "zh": {
         "name": "迷你圈地",
@@ -20875,7 +20875,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E41.png",
+    "artUrl": "/assets/classic/E/E41.png",
     "locales": {
       "zh": {
         "name": "磨盘",
@@ -20903,7 +20903,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E42.png",
+    "artUrl": "/assets/classic/E/E42.png",
     "locales": {
       "zh": {
         "name": "邻里互助",
@@ -20934,7 +20934,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E43.png",
+    "artUrl": "/assets/classic/E/E43.png",
     "locales": {
       "zh": {
         "name": "果树",
@@ -20965,7 +20965,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E44.png",
+    "artUrl": "/assets/classic/E/E44.png",
     "locales": {
       "zh": {
         "name": "无水厕所",
@@ -20996,7 +20996,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E45.png",
+    "artUrl": "/assets/classic/E/E45.png",
     "locales": {
       "zh": {
         "name": "私有林地",
@@ -21030,7 +21030,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E46.png",
+    "artUrl": "/assets/classic/E/E46.png",
     "locales": {
       "zh": {
         "name": "运粮推车",
@@ -21070,7 +21070,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E47.png",
+    "artUrl": "/assets/classic/E/E47.png",
     "locales": {
       "zh": {
         "name": "莴苣田",
@@ -21102,7 +21102,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E48.png",
+    "artUrl": "/assets/classic/E/E48.png",
     "locales": {
       "zh": {
         "name": "芦苇塘",
@@ -21136,7 +21136,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E49.png",
+    "artUrl": "/assets/classic/E/E49.png",
     "locales": {
       "zh": {
         "name": "写字台",
@@ -21166,7 +21166,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E50.png",
+    "artUrl": "/assets/classic/E/E50.png",
     "locales": {
       "zh": {
         "name": "泥铲",
@@ -21196,7 +21196,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E51.png",
+    "artUrl": "/assets/classic/E/E51.png",
     "locales": {
       "zh": {
         "name": "纺锤",
@@ -21227,7 +21227,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E52.png",
+    "artUrl": "/assets/classic/E/E52.png",
     "locales": {
       "zh": {
         "name": "小马厩",
@@ -21258,7 +21258,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E53.png",
+    "artUrl": "/assets/classic/E/E53.png",
     "locales": {
       "zh": {
         "name": "黄油桶",
@@ -21289,7 +21289,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E54.png",
+    "artUrl": "/assets/classic/E/E54.png",
     "locales": {
       "zh": {
         "name": "采石场",
@@ -21320,7 +21320,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E55.png",
+    "artUrl": "/assets/classic/E/E55.png",
     "locales": {
       "zh": {
         "name": "扩建石屋",
@@ -21351,7 +21351,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E56.png",
+    "artUrl": "/assets/classic/E/E56.png",
     "locales": {
       "zh": {
         "name": "夹石钳",
@@ -21381,7 +21381,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E57.png",
+    "artUrl": "/assets/classic/E/E57.png",
     "locales": {
       "zh": {
         "name": "鸽舍",
@@ -21414,7 +21414,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E58.png",
+    "artUrl": "/assets/classic/E/E58.png",
     "locales": {
       "zh": {
         "name": "兽笼",
@@ -21446,7 +21446,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E59.png",
+    "artUrl": "/assets/classic/E/E59.png",
     "locales": {
       "zh": {
         "name": "饮水槽",
@@ -21477,7 +21477,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E60.png",
+    "artUrl": "/assets/classic/E/E60.png",
     "locales": {
       "zh": {
         "name": "牛市",
@@ -21510,7 +21510,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E61.png",
+    "artUrl": "/assets/classic/E/E61.png",
     "locales": {
       "zh": {
         "name": "车犁",
@@ -21545,7 +21545,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/E62.png",
+    "artUrl": "/assets/classic/E/E62.png",
     "locales": {
       "zh": {
         "name": "转犁",
@@ -21576,7 +21576,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL001.png",
+    "artUrl": "/assets/classic/FL/FL001.png",
     "locales": {
       "zh": {
         "name": "农用推车",
@@ -21607,7 +21607,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL002.png",
+    "artUrl": "/assets/classic/FL/FL002.png",
     "locales": {
       "zh": {
         "name": "比利时庭院",
@@ -21635,7 +21635,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL003.png",
+    "artUrl": "/assets/classic/FL/FL003.png",
     "locales": {
       "zh": {
         "name": "比利时牧羊犬",
@@ -21665,7 +21665,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL004.png",
+    "artUrl": "/assets/classic/FL/FL004.png",
     "locales": {
       "zh": {
         "name": "教学楼",
@@ -21693,7 +21693,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL005.png",
+    "artUrl": "/assets/classic/FL/FL005.png",
     "locales": {
       "zh": {
         "name": "人间乐园",
@@ -21726,7 +21726,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL006.png",
+    "artUrl": "/assets/classic/FL/FL006.png",
     "locales": {
       "zh": {
         "name": "菊苣田",
@@ -21760,7 +21760,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL007.png",
+    "artUrl": "/assets/classic/FL/FL007.png",
     "locales": {
       "zh": {
         "name": "钻石交易所",
@@ -21790,7 +21790,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL008.png",
+    "artUrl": "/assets/classic/FL/FL008.png",
     "locales": {
       "zh": {
         "name": "木制自行车",
@@ -21820,7 +21820,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL009.png",
+    "artUrl": "/assets/classic/FL/FL009.png",
     "locales": {
       "zh": {
         "name": "乌木鞋",
@@ -21850,7 +21850,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL010.png",
+    "artUrl": "/assets/classic/FL/FL010.png",
     "locales": {
       "zh": {
         "name": "停靠的马车",
@@ -21880,7 +21880,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL011.png",
+    "artUrl": "/assets/classic/FL/FL011.png",
     "locales": {
       "zh": {
         "name": "黄发男孩",
@@ -21910,7 +21910,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL012.png",
+    "artUrl": "/assets/classic/FL/FL012.png",
     "locales": {
       "zh": {
         "name": "马车",
@@ -21940,7 +21940,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL013.png",
+    "artUrl": "/assets/classic/FL/FL013.png",
     "locales": {
       "zh": {
         "name": "礼品桌",
@@ -21971,7 +21971,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL014.png",
+    "artUrl": "/assets/classic/FL/FL014.png",
     "locales": {
       "zh": {
         "name": "荷兰琴酒厂",
@@ -22003,7 +22003,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "vp": 0,
     "passing": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/FL015.png",
+    "artUrl": "/assets/classic/FL/FL015.png",
     "locales": {
       "zh": {
         "name": "避暑宅院",
@@ -22033,7 +22033,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL016.png",
+    "artUrl": "/assets/classic/FL/FL016.png",
     "locales": {
       "zh": {
         "name": "撒尿女童像",
@@ -22063,7 +22063,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL017.png",
+    "artUrl": "/assets/classic/FL/FL017.png",
     "locales": {
       "zh": {
         "name": "梭形桌",
@@ -22098,7 +22098,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL018.png",
+    "artUrl": "/assets/classic/FL/FL018.png",
     "locales": {
       "zh": {
         "name": "办公室",
@@ -22134,7 +22134,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "gameEdition": "classic",
     "passing": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/FL019.png",
+    "artUrl": "/assets/classic/FL/FL019.png",
     "locales": {
       "zh": {
         "name": "灯笼奇观",
@@ -22164,7 +22164,7 @@ const batch11: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL020.png",
+    "artUrl": "/assets/classic/FL/FL020.png",
     "locales": {
       "zh": {
         "name": "爱情花园",
@@ -22196,7 +22196,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL021.png",
+    "artUrl": "/assets/classic/FL/FL021.png",
     "locales": {
       "zh": {
         "name": "山顶的狮子",
@@ -22226,7 +22226,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL022.png",
+    "artUrl": "/assets/classic/FL/FL022.png",
     "locales": {
       "zh": {
         "name": "麦田迷宫",
@@ -22257,7 +22257,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL023.png",
+    "artUrl": "/assets/classic/FL/FL023.png",
     "locales": {
       "zh": {
         "name": "胡萝卜博物馆",
@@ -22288,7 +22288,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL024.png",
+    "artUrl": "/assets/classic/FL/FL024.png",
     "locales": {
       "zh": {
         "name": "情人幽会",
@@ -22319,7 +22319,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL025.png",
+    "artUrl": "/assets/classic/FL/FL025.png",
     "locales": {
       "zh": {
         "name": "安乐乡",
@@ -22350,7 +22350,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL026.png",
+    "artUrl": "/assets/classic/FL/FL026.png",
     "locales": {
       "zh": {
         "name": "焦糖饼干店",
@@ -22378,7 +22378,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL027.png",
+    "artUrl": "/assets/classic/FL/FL027.png",
     "locales": {
       "zh": {
         "name": "修道院啤酒",
@@ -22406,7 +22406,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL028.png",
+    "artUrl": "/assets/classic/FL/FL028.png",
     "locales": {
       "zh": {
         "name": "肉丁土豆泥",
@@ -22436,7 +22436,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL029.png",
+    "artUrl": "/assets/classic/FL/FL029.png",
     "locales": {
       "zh": {
         "name": "捕鸟器",
@@ -22467,7 +22467,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL030.png",
+    "artUrl": "/assets/classic/FL/FL030.png",
     "locales": {
       "zh": {
         "name": "野猪狩猎",
@@ -22496,7 +22496,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL031.png",
+    "artUrl": "/assets/classic/FL/FL031.png",
     "locales": {
       "zh": {
         "name": "绘画大师",
@@ -22525,7 +22525,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL032.png",
+    "artUrl": "/assets/classic/FL/FL032.png",
     "locales": {
       "zh": {
         "name": "长者",
@@ -22554,7 +22554,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL033.png",
+    "artUrl": "/assets/classic/FL/FL033.png",
     "locales": {
       "zh": {
         "name": "雕刻家",
@@ -22583,7 +22583,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL034.png",
+    "artUrl": "/assets/classic/FL/FL034.png",
     "locales": {
       "zh": {
         "name": "方济会修士",
@@ -22613,7 +22613,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/FL035.png",
+    "artUrl": "/assets/classic/FL/FL035.png",
     "locales": {
       "zh": {
         "name": "共济会员",
@@ -22642,7 +22642,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL036.png",
+    "artUrl": "/assets/classic/FL/FL036.png",
     "locales": {
       "zh": {
         "name": "售菜商",
@@ -22671,7 +22671,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL037.png",
+    "artUrl": "/assets/classic/FL/FL037.png",
     "locales": {
       "zh": {
         "name": "粗鲁的烘焙师",
@@ -22700,7 +22700,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL038.png",
+    "artUrl": "/assets/classic/FL/FL038.png",
     "locales": {
       "zh": {
         "name": "羊群主人",
@@ -22729,7 +22729,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL039.png",
+    "artUrl": "/assets/classic/FL/FL039.png",
     "locales": {
       "zh": {
         "name": "宇宙学家",
@@ -22758,7 +22758,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL040.png",
+    "artUrl": "/assets/classic/FL/FL040.png",
     "locales": {
       "zh": {
         "name": "解剖学家",
@@ -22787,7 +22787,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL041.png",
+    "artUrl": "/assets/classic/FL/FL041.png",
     "locales": {
       "zh": {
         "name": "油炸厨师",
@@ -22816,7 +22816,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL042.png",
+    "artUrl": "/assets/classic/FL/FL042.png",
     "locales": {
       "zh": {
         "name": "成功企业家",
@@ -22845,7 +22845,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL043.png",
+    "artUrl": "/assets/classic/FL/FL043.png",
     "locales": {
       "zh": {
         "name": "玛丽·德·美第奇",
@@ -22874,7 +22874,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL044.png",
+    "artUrl": "/assets/classic/FL/FL044.png",
     "locales": {
       "zh": {
         "name": "海归",
@@ -22903,7 +22903,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL045.png",
+    "artUrl": "/assets/classic/FL/FL045.png",
     "locales": {
       "zh": {
         "name": "辍学者",
@@ -22933,7 +22933,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/FL046.png",
+    "artUrl": "/assets/classic/FL/FL046.png",
     "locales": {
       "zh": {
         "name": "马厩建造师",
@@ -22962,7 +22962,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL047.png",
+    "artUrl": "/assets/classic/FL/FL047.png",
     "locales": {
       "zh": {
         "name": "彼得·勃鲁盖尔",
@@ -22991,7 +22991,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL048.png",
+    "artUrl": "/assets/classic/FL/FL048.png",
     "locales": {
       "zh": {
         "name": "植物学家",
@@ -23020,7 +23020,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL049.png",
+    "artUrl": "/assets/classic/FL/FL049.png",
     "locales": {
       "zh": {
         "name": "会计师",
@@ -23049,7 +23049,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL050.png",
+    "artUrl": "/assets/classic/FL/FL050.png",
     "locales": {
       "zh": {
         "name": "肉类供应商",
@@ -23078,7 +23078,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL051.png",
+    "artUrl": "/assets/classic/FL/FL051.png",
     "locales": {
       "zh": {
         "name": "北海渔民",
@@ -23107,7 +23107,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL052.png",
+    "artUrl": "/assets/classic/FL/FL052.png",
     "locales": {
       "zh": {
         "name": "三流作家",
@@ -23136,7 +23136,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL053.png",
+    "artUrl": "/assets/classic/FL/FL053.png",
     "locales": {
       "zh": {
         "name": "咖啡厅歌手",
@@ -23165,7 +23165,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL054.png",
+    "artUrl": "/assets/classic/FL/FL054.png",
     "locales": {
       "zh": {
         "name": "法国民谣歌手",
@@ -23194,7 +23194,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL055.png",
+    "artUrl": "/assets/classic/FL/FL055.png",
     "locales": {
       "zh": {
         "name": "隐士",
@@ -23223,7 +23223,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL056.png",
+    "artUrl": "/assets/classic/FL/FL056.png",
     "locales": {
       "zh": {
         "name": "佛兰德爱国者",
@@ -23252,7 +23252,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL057.png",
+    "artUrl": "/assets/classic/FL/FL057.png",
     "locales": {
       "zh": {
         "name": "随军牧师",
@@ -23281,7 +23281,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL058.png",
+    "artUrl": "/assets/classic/FL/FL058.png",
     "locales": {
       "zh": {
         "name": "称金人",
@@ -23310,7 +23310,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL059.png",
+    "artUrl": "/assets/classic/FL/FL059.png",
     "locales": {
       "zh": {
         "name": "啃柱子的小孩",
@@ -23339,7 +23339,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL060.png",
+    "artUrl": "/assets/classic/FL/FL060.png",
     "locales": {
       "zh": {
         "name": "德高望重的英雄",
@@ -23369,7 +23369,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/FL061.png",
+    "artUrl": "/assets/classic/FL/FL061.png",
     "locales": {
       "zh": {
         "name": "布拉克尔鸡",
@@ -23399,7 +23399,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR001.png",
+    "artUrl": "/assets/classic/FR/FR001.png",
     "locales": {
       "zh": {
         "name": "遗弃的柳树",
@@ -23430,7 +23430,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR002.png",
+    "artUrl": "/assets/classic/FR/FR002.png",
     "locales": {
       "zh": {
         "name": "苦艾酒",
@@ -23458,7 +23458,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR003.png",
+    "artUrl": "/assets/classic/FR/FR003.png",
     "locales": {
       "zh": {
         "name": "游乐园",
@@ -23486,7 +23486,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR004.png",
+    "artUrl": "/assets/classic/FR/FR004.png",
     "locales": {
       "zh": {
         "name": "苹果园",
@@ -23517,7 +23517,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR005.png",
+    "artUrl": "/assets/classic/FR/FR005.png",
     "locales": {
       "zh": {
         "name": "艺术花园",
@@ -23547,7 +23547,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR006.png",
+    "artUrl": "/assets/classic/FR/FR006.png",
     "locales": {
       "zh": {
         "name": "獾",
@@ -23575,7 +23575,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR007.png",
+    "artUrl": "/assets/classic/FR/FR007.png",
     "locales": {
       "zh": {
         "name": "法式长面包",
@@ -23606,7 +23606,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR008.png",
+    "artUrl": "/assets/classic/FR/FR008.png",
     "locales": {
       "zh": {
         "name": "理发店",
@@ -23636,7 +23636,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR009.png",
+    "artUrl": "/assets/classic/FR/FR009.png",
     "locales": {
       "zh": {
         "name": "浴室",
@@ -23664,7 +23664,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR010.png",
+    "artUrl": "/assets/classic/FR/FR010.png",
     "locales": {
       "zh": {
         "name": "户外早餐",
@@ -23695,7 +23695,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR011.png",
+    "artUrl": "/assets/classic/FR/FR011.png",
     "locales": {
       "zh": {
         "name": "砖厂",
@@ -23726,7 +23726,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR012.png",
+    "artUrl": "/assets/classic/FR/FR012.png",
     "locales": {
       "zh": {
         "name": "法式奶酪",
@@ -23756,7 +23756,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR013.png",
+    "artUrl": "/assets/classic/FR/FR013.png",
     "locales": {
       "zh": {
         "name": "变色龙",
@@ -23784,7 +23784,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR014.png",
+    "artUrl": "/assets/classic/FR/FR014.png",
     "locales": {
       "zh": {
         "name": "巧克力",
@@ -23814,7 +23814,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR015.png",
+    "artUrl": "/assets/classic/FR/FR015.png",
     "locales": {
       "zh": {
         "name": "茶歇",
@@ -23844,7 +23844,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR016.png",
+    "artUrl": "/assets/classic/FR/FR016.png",
     "locales": {
       "zh": {
         "name": "玉米垛",
@@ -23875,7 +23875,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR017.png",
+    "artUrl": "/assets/classic/FR/FR017.png",
     "locales": {
       "zh": {
         "name": "日记本",
@@ -23905,7 +23905,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR018.png",
+    "artUrl": "/assets/classic/FR/FR018.png",
     "locales": {
       "zh": {
         "name": "环绕围墙",
@@ -23936,7 +23936,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR019.png",
+    "artUrl": "/assets/classic/FR/FR019.png",
     "locales": {
       "zh": {
         "name": "晚祷",
@@ -23964,7 +23964,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR020.png",
+    "artUrl": "/assets/classic/FR/FR020.png",
     "locales": {
       "zh": {
         "name": "五环",
@@ -23992,7 +23992,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR021.png",
+    "artUrl": "/assets/classic/FR/FR021.png",
     "locales": {
       "zh": {
         "name": "平坦小山",
@@ -24020,7 +24020,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR022.png",
+    "artUrl": "/assets/classic/FR/FR022.png",
     "locales": {
       "zh": {
         "name": "法式假发",
@@ -24050,7 +24050,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR023.png",
+    "artUrl": "/assets/classic/FR/FR023.png",
     "locales": {
       "zh": {
         "name": "高脚杯",
@@ -24078,7 +24078,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR024.png",
+    "artUrl": "/assets/classic/FR/FR024.png",
     "locales": {
       "zh": {
         "name": "金玫瑰",
@@ -24108,7 +24108,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR025.png",
+    "artUrl": "/assets/classic/FR/FR025.png",
     "locales": {
       "zh": {
         "name": "麦磨烤炉",
@@ -24139,7 +24139,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR026.png",
+    "artUrl": "/assets/classic/FR/FR026.png",
     "locales": {
       "zh": {
         "name": "石窟",
@@ -24169,7 +24169,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR027.png",
+    "artUrl": "/assets/classic/FR/FR027.png",
     "locales": {
       "zh": {
         "name": "界镐犁",
@@ -24200,7 +24200,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR028.png",
+    "artUrl": "/assets/classic/FR/FR028.png",
     "locales": {
       "zh": {
         "name": "吊床",
@@ -24230,7 +24230,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR029.png",
+    "artUrl": "/assets/classic/FR/FR029.png",
     "locales": {
       "zh": {
         "name": "干草耙",
@@ -24260,7 +24260,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR030.png",
+    "artUrl": "/assets/classic/FR/FR030.png",
     "locales": {
       "zh": {
         "name": "干草堆",
@@ -24290,7 +24290,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR031.png",
+    "artUrl": "/assets/classic/FR/FR031.png",
     "locales": {
       "zh": {
         "name": "热浪",
@@ -24321,7 +24321,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR032.png",
+    "artUrl": "/assets/classic/FR/FR032.png",
     "locales": {
       "zh": {
         "name": "家庭作业",
@@ -24351,7 +24351,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR033.png",
+    "artUrl": "/assets/classic/FR/FR033.png",
     "locales": {
       "zh": {
         "name": "儿童天地",
@@ -24379,7 +24379,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR034.png",
+    "artUrl": "/assets/classic/FR/FR034.png",
     "locales": {
       "zh": {
         "name": "厨房餐桌",
@@ -24410,7 +24410,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR035.png",
+    "artUrl": "/assets/classic/FR/FR035.png",
     "locales": {
       "zh": {
         "name": "灯塔",
@@ -24438,7 +24438,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR036.png",
+    "artUrl": "/assets/classic/FR/FR036.png",
     "locales": {
       "zh": {
         "name": "三月",
@@ -24471,7 +24471,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR037.png",
+    "artUrl": "/assets/classic/FR/FR037.png",
     "locales": {
       "zh": {
         "name": "项链",
@@ -24499,7 +24499,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR038.png",
+    "artUrl": "/assets/classic/FR/FR038.png",
     "locales": {
       "zh": {
         "name": "果园",
@@ -24529,7 +24529,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR039.png",
+    "artUrl": "/assets/classic/FR/FR039.png",
     "locales": {
       "zh": {
         "name": "骑马狩猎",
@@ -24559,7 +24559,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR040.png",
+    "artUrl": "/assets/classic/FR/FR040.png",
     "locales": {
       "zh": {
         "name": "公墓",
@@ -24587,7 +24587,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR041.png",
+    "artUrl": "/assets/classic/FR/FR041.png",
     "locales": {
       "zh": {
         "name": "工坊",
@@ -24615,7 +24615,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR042.png",
+    "artUrl": "/assets/classic/FR/FR042.png",
     "locales": {
       "zh": {
         "name": "山洲",
@@ -24645,7 +24645,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR043.png",
+    "artUrl": "/assets/classic/FR/FR043.png",
     "locales": {
       "zh": {
         "name": "沙发",
@@ -24673,7 +24673,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR044.png",
+    "artUrl": "/assets/classic/FR/FR044.png",
     "locales": {
       "zh": {
         "name": "星级料理",
@@ -24704,7 +24704,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/FR045.png",
+    "artUrl": "/assets/classic/FR/FR045.png",
     "locales": {
       "zh": {
         "name": "重建石屋",
@@ -24732,7 +24732,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR046.png",
+    "artUrl": "/assets/classic/FR/FR046.png",
     "locales": {
       "zh": {
         "name": "茅草小屋",
@@ -24762,7 +24762,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR047.png",
+    "artUrl": "/assets/classic/FR/FR047.png",
     "locales": {
       "zh": {
         "name": "周日学校",
@@ -24792,7 +24792,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR048.png",
+    "artUrl": "/assets/classic/FR/FR048.png",
     "locales": {
       "zh": {
         "name": "游泳工作室",
@@ -24820,7 +24820,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR049.png",
+    "artUrl": "/assets/classic/FR/FR049.png",
     "locales": {
       "zh": {
         "name": "勒阿佛尔港",
@@ -24850,7 +24850,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR050.png",
+    "artUrl": "/assets/classic/FR/FR050.png",
     "locales": {
       "zh": {
         "name": "打谷犁",
@@ -24878,7 +24878,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR051.png",
+    "artUrl": "/assets/classic/FR/FR051.png",
     "locales": {
       "zh": {
         "name": "时间表",
@@ -24912,7 +24912,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR052.png",
+    "artUrl": "/assets/classic/FR/FR052.png",
     "locales": {
       "zh": {
         "name": "公有树林",
@@ -24945,7 +24945,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR053.png",
+    "artUrl": "/assets/classic/FR/FR053.png",
     "locales": {
       "zh": {
         "name": "散步湖畔",
@@ -24979,7 +24979,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR054.png",
+    "artUrl": "/assets/classic/FR/FR054.png",
     "locales": {
       "zh": {
         "name": "杜乐丽花园",
@@ -25007,7 +25007,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR055.png",
+    "artUrl": "/assets/classic/FR/FR055.png",
     "locales": {
       "zh": {
         "name": "丰收菜园",
@@ -25037,7 +25037,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR056.png",
+    "artUrl": "/assets/classic/FR/FR056.png",
     "locales": {
       "zh": {
         "name": "洒水壶",
@@ -25067,7 +25067,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR057.png",
+    "artUrl": "/assets/classic/FR/FR057.png",
     "locales": {
       "zh": {
         "name": "野味",
@@ -25095,7 +25095,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR058.png",
+    "artUrl": "/assets/classic/FR/FR058.png",
     "locales": {
       "zh": {
         "name": "冬季朽木",
@@ -25126,7 +25126,7 @@ const batch12: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR059.png",
+    "artUrl": "/assets/classic/FR/FR059.png",
     "locales": {
       "zh": {
         "name": "女巫领域",
@@ -25159,7 +25159,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/FR060.png",
+    "artUrl": "/assets/classic/FR/FR060.png",
     "locales": {
       "zh": {
         "name": "木锯",
@@ -25188,7 +25188,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR061.png",
+    "artUrl": "/assets/classic/FR/FR061.png",
     "locales": {
       "zh": {
         "name": "土地改革者",
@@ -25217,7 +25217,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR062.png",
+    "artUrl": "/assets/classic/FR/FR062.png",
     "locales": {
       "zh": {
         "name": "动物福利主义者",
@@ -25246,7 +25246,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR063.png",
+    "artUrl": "/assets/classic/FR/FR063.png",
     "locales": {
       "zh": {
         "name": "艺术总监",
@@ -25275,7 +25275,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR064.png",
+    "artUrl": "/assets/classic/FR/FR064.png",
     "locales": {
       "zh": {
         "name": "大奖得主",
@@ -25304,7 +25304,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR065.png",
+    "artUrl": "/assets/classic/FR/FR065.png",
     "locales": {
       "zh": {
         "name": "施主",
@@ -25333,7 +25333,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR066.png",
+    "artUrl": "/assets/classic/FR/FR066.png",
     "locales": {
       "zh": {
         "name": "水手长",
@@ -25362,7 +25362,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR067.png",
+    "artUrl": "/assets/classic/FR/FR067.png",
     "locales": {
       "zh": {
         "name": "白菜爱好者",
@@ -25391,7 +25391,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR068.png",
+    "artUrl": "/assets/classic/FR/FR068.png",
     "locales": {
       "zh": {
         "name": "卡牌玩家",
@@ -25420,7 +25420,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR069.png",
+    "artUrl": "/assets/classic/FR/FR069.png",
     "locales": {
       "zh": {
         "name": "爱猫人",
@@ -25449,7 +25449,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR070.png",
+    "artUrl": "/assets/classic/FR/FR070.png",
     "locales": {
       "zh": {
         "name": "牛只贩子",
@@ -25478,7 +25478,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR071.png",
+    "artUrl": "/assets/classic/FR/FR071.png",
     "locales": {
       "zh": {
         "name": "幼儿保姆",
@@ -25507,7 +25507,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR072.png",
+    "artUrl": "/assets/classic/FR/FR072.png",
     "locales": {
       "zh": {
         "name": "娼妓",
@@ -25536,7 +25536,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR073.png",
+    "artUrl": "/assets/classic/FR/FR073.png",
     "locales": {
       "zh": {
         "name": "悲惨世界·尚万强",
@@ -25565,7 +25565,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR074.png",
+    "artUrl": "/assets/classic/FR/FR074.png",
     "locales": {
       "zh": {
         "name": "乡村医生",
@@ -25594,7 +25594,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR075.png",
+    "artUrl": "/assets/classic/FR/FR075.png",
     "locales": {
       "zh": {
         "name": "牛仔与妈妈",
@@ -25623,7 +25623,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR076.png",
+    "artUrl": "/assets/classic/FR/FR076.png",
     "locales": {
       "zh": {
         "name": "讨债人",
@@ -25652,7 +25652,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR077.png",
+    "artUrl": "/assets/classic/FR/FR077.png",
     "locales": {
       "zh": {
         "name": "鸽子猎人",
@@ -25681,7 +25681,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR078.png",
+    "artUrl": "/assets/classic/FR/FR078.png",
     "locales": {
       "zh": {
         "name": "绘图天才",
@@ -25710,7 +25710,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR079.png",
+    "artUrl": "/assets/classic/FR/FR079.png",
     "locales": {
       "zh": {
         "name": "苦艾酒爱好者",
@@ -25739,7 +25739,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR080.png",
+    "artUrl": "/assets/classic/FR/FR080.png",
     "locales": {
       "zh": {
         "name": "剑术大师",
@@ -25768,7 +25768,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR081.png",
+    "artUrl": "/assets/classic/FR/FR081.png",
     "locales": {
       "zh": {
         "name": "提琴手",
@@ -25797,7 +25797,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR082.png",
+    "artUrl": "/assets/classic/FR/FR082.png",
     "locales": {
       "zh": {
         "name": "园艺爱好者",
@@ -25826,7 +25826,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR083.png",
+    "artUrl": "/assets/classic/FR/FR083.png",
     "locales": {
       "zh": {
         "name": "好朋友",
@@ -25855,7 +25855,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR084.png",
+    "artUrl": "/assets/classic/FR/FR084.png",
     "locales": {
       "zh": {
         "name": "小麦投资商",
@@ -25884,7 +25884,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR085.png",
+    "artUrl": "/assets/classic/FR/FR085.png",
     "locales": {
       "zh": {
         "name": "收割庄稼者",
@@ -25913,7 +25913,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR086.png",
+    "artUrl": "/assets/classic/FR/FR086.png",
     "locales": {
       "zh": {
         "name": "革命主谋",
@@ -25942,7 +25942,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR087.png",
+    "artUrl": "/assets/classic/FR/FR087.png",
     "locales": {
       "zh": {
         "name": "移民者的儿子",
@@ -25971,7 +25971,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR088.png",
+    "artUrl": "/assets/classic/FR/FR088.png",
     "locales": {
       "zh": {
         "name": "熟练工人",
@@ -26000,7 +26000,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR089.png",
+    "artUrl": "/assets/classic/FR/FR089.png",
     "locales": {
       "zh": {
         "name": "园艺大师",
@@ -26029,7 +26029,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR090.png",
+    "artUrl": "/assets/classic/FR/FR090.png",
     "locales": {
       "zh": {
         "name": "柠檬交易商",
@@ -26058,7 +26058,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR091.png",
+    "artUrl": "/assets/classic/FR/FR091.png",
     "locales": {
       "zh": {
         "name": "手工劳动者",
@@ -26087,7 +26087,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR092.png",
+    "artUrl": "/assets/classic/FR/FR092.png",
     "locales": {
       "zh": {
         "name": "武术家",
@@ -26116,7 +26116,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR093.png",
+    "artUrl": "/assets/classic/FR/FR093.png",
     "locales": {
       "zh": {
         "name": "主谋",
@@ -26145,7 +26145,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR094.png",
+    "artUrl": "/assets/classic/FR/FR094.png",
     "locales": {
       "zh": {
         "name": "小气鬼",
@@ -26174,7 +26174,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR095.png",
+    "artUrl": "/assets/classic/FR/FR095.png",
     "locales": {
       "zh": {
         "name": "火枪手",
@@ -26203,7 +26203,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR096.png",
+    "artUrl": "/assets/classic/FR/FR096.png",
     "locales": {
       "zh": {
         "name": "海洋学家",
@@ -26232,7 +26232,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR097.png",
+    "artUrl": "/assets/classic/FR/FR097.png",
     "locales": {
       "zh": {
         "name": "木地板装修工",
@@ -26261,7 +26261,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR098.png",
+    "artUrl": "/assets/classic/FR/FR098.png",
     "locales": {
       "zh": {
         "name": "巴氏消毒法专家",
@@ -26290,7 +26290,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR099.png",
+    "artUrl": "/assets/classic/FR/FR099.png",
     "locales": {
       "zh": {
         "name": "削梨工",
@@ -26320,7 +26320,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/FR100.png",
+    "artUrl": "/assets/classic/FR/FR100.png",
     "locales": {
       "zh": {
         "name": "烟斗客",
@@ -26349,7 +26349,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR101.png",
+    "artUrl": "/assets/classic/FR/FR101.png",
     "locales": {
       "zh": {
         "name": "精力充沛者",
@@ -26378,7 +26378,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR102.png",
+    "artUrl": "/assets/classic/FR/FR102.png",
     "locales": {
       "zh": {
         "name": "长官",
@@ -26407,7 +26407,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR103.png",
+    "artUrl": "/assets/classic/FR/FR103.png",
     "locales": {
       "zh": {
         "name": "检察官",
@@ -26436,7 +26436,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR104.png",
+    "artUrl": "/assets/classic/FR/FR104.png",
     "locales": {
       "zh": {
         "name": "赛马场经理",
@@ -26465,7 +26465,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR105.png",
+    "artUrl": "/assets/classic/FR/FR105.png",
     "locales": {
       "zh": {
         "name": "改革家",
@@ -26494,7 +26494,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR106.png",
+    "artUrl": "/assets/classic/FR/FR106.png",
     "locales": {
       "zh": {
         "name": "帆船制造商",
@@ -26523,7 +26523,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR107.png",
+    "artUrl": "/assets/classic/FR/FR107.png",
     "locales": {
       "zh": {
         "name": "雕刻家之子",
@@ -26552,7 +26552,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR108.png",
+    "artUrl": "/assets/classic/FR/FR108.png",
     "locales": {
       "zh": {
         "name": "铲土工",
@@ -26581,7 +26581,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR109.png",
+    "artUrl": "/assets/classic/FR/FR109.png",
     "locales": {
       "zh": {
         "name": "舞台之星",
@@ -26610,7 +26610,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR110.png",
+    "artUrl": "/assets/classic/FR/FR110.png",
     "locales": {
       "zh": {
         "name": "流浪者",
@@ -26639,7 +26639,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR111.png",
+    "artUrl": "/assets/classic/FR/FR111.png",
     "locales": {
       "zh": {
         "name": "太阳农夫",
@@ -26668,7 +26668,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR112.png",
+    "artUrl": "/assets/classic/FR/FR112.png",
     "locales": {
       "zh": {
         "name": "高塔建造师",
@@ -26697,7 +26697,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR113.png",
+    "artUrl": "/assets/classic/FR/FR113.png",
     "locales": {
       "zh": {
         "name": "开拓者",
@@ -26726,7 +26726,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR114.png",
+    "artUrl": "/assets/classic/FR/FR114.png",
     "locales": {
       "zh": {
         "name": "火鸡饲养员",
@@ -26755,7 +26755,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR115.png",
+    "artUrl": "/assets/classic/FR/FR115.png",
     "locales": {
       "zh": {
         "name": "独轮车司机",
@@ -26784,7 +26784,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR116.png",
+    "artUrl": "/assets/classic/FR/FR116.png",
     "locales": {
       "zh": {
         "name": "橡木贤者",
@@ -26813,7 +26813,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR117.png",
+    "artUrl": "/assets/classic/FR/FR117.png",
     "locales": {
       "zh": {
         "name": "法国人的皇帝·拿破仑",
@@ -26842,7 +26842,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR118.png",
+    "artUrl": "/assets/classic/FR/FR118.png",
     "locales": {
       "zh": {
         "name": "木头收集者",
@@ -26871,7 +26871,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR119.png",
+    "artUrl": "/assets/classic/FR/FR119.png",
     "locales": {
       "zh": {
         "name": "工作狂人",
@@ -26900,7 +26900,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/FR120.png",
+    "artUrl": "/assets/classic/FR/FR120.png",
     "locales": {
       "zh": {
         "name": "写作狂人",
@@ -26929,7 +26929,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G001.png",
+    "artUrl": "/assets/classic/G/G001.png",
     "locales": {
       "zh": {
         "name": "另类设计师",
@@ -26958,7 +26958,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/G002.png",
+    "artUrl": "/assets/classic/G/G002.png",
     "locales": {
       "zh": {
         "name": "完美农夫",
@@ -26987,7 +26987,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G003.png",
+    "artUrl": "/assets/classic/G/G003.png",
     "locales": {
       "zh": {
         "name": "动物饲养员",
@@ -27016,7 +27016,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G004.png",
+    "artUrl": "/assets/classic/G/G004.png",
     "locales": {
       "zh": {
         "name": "学徒工",
@@ -27045,7 +27045,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G005.png",
+    "artUrl": "/assets/classic/G/G005.png",
     "locales": {
       "zh": {
         "name": "建筑设计师",
@@ -27074,7 +27074,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G006.png",
+    "artUrl": "/assets/classic/G/G006.png",
     "locales": {
       "zh": {
         "name": "手艺人",
@@ -27103,7 +27103,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G007.png",
+    "artUrl": "/assets/classic/G/G007.png",
     "locales": {
       "zh": {
         "name": "天文学家",
@@ -27132,7 +27132,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G008.png",
+    "artUrl": "/assets/classic/G/G008.png",
     "locales": {
       "zh": {
         "name": "拍卖商",
@@ -27161,7 +27161,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G009.png",
+    "artUrl": "/assets/classic/G/G009.png",
     "locales": {
       "zh": {
         "name": "烘焙师女儿",
@@ -27190,7 +27190,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G010.png",
+    "artUrl": "/assets/classic/G/G010.png",
     "locales": {
       "zh": {
         "name": "琵琶演奏家",
@@ -27219,7 +27219,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G011.png",
+    "artUrl": "/assets/classic/G/G011.png",
     "locales": {
       "zh": {
         "name": "胡萝卜烘焙师",
@@ -27248,7 +27248,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G012.png",
+    "artUrl": "/assets/classic/G/G012.png",
     "locales": {
       "zh": {
         "name": "胡萝卜种植者",
@@ -27277,7 +27277,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G013.png",
+    "artUrl": "/assets/classic/G/G013.png",
     "locales": {
       "zh": {
         "name": "砖屋起家者",
@@ -27306,7 +27306,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G014.png",
+    "artUrl": "/assets/classic/G/G014.png",
     "locales": {
       "zh": {
         "name": "早起者",
@@ -27335,7 +27335,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G015.png",
+    "artUrl": "/assets/classic/G/G015.png",
     "locales": {
       "zh": {
         "name": "家庭顾问",
@@ -27364,7 +27364,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G016.png",
+    "artUrl": "/assets/classic/G/G016.png",
     "locales": {
       "zh": {
         "name": "栅栏帮手",
@@ -27393,7 +27393,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G017.png",
+    "artUrl": "/assets/classic/G/G017.png",
     "locales": {
       "zh": {
         "name": "卖鱼人",
@@ -27422,7 +27422,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G018.png",
+    "artUrl": "/assets/classic/G/G018.png",
     "locales": {
       "zh": {
         "name": "渔夫学徒",
@@ -27451,7 +27451,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/G019.png",
+    "artUrl": "/assets/classic/G/G019.png",
     "locales": {
       "zh": {
         "name": "美食评论家",
@@ -27480,7 +27480,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G020.png",
+    "artUrl": "/assets/classic/G/G020.png",
     "locales": {
       "zh": {
         "name": "特权人士",
@@ -27509,7 +27509,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G021.png",
+    "artUrl": "/assets/classic/G/G021.png",
     "locales": {
       "zh": {
         "name": "隐士",
@@ -27538,7 +27538,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G022.png",
+    "artUrl": "/assets/classic/G/G022.png",
     "locales": {
       "zh": {
         "name": "玻璃工",
@@ -27567,7 +27567,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/G023.png",
+    "artUrl": "/assets/classic/G/G023.png",
     "locales": {
       "zh": {
         "name": "贪吃鬼",
@@ -27596,7 +27596,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G024.png",
+    "artUrl": "/assets/classic/G/G024.png",
     "locales": {
       "zh": {
         "name": "嫁接育种商",
@@ -27625,7 +27625,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G025.png",
+    "artUrl": "/assets/classic/G/G025.png",
     "locales": {
       "zh": {
         "name": "女商人",
@@ -27654,7 +27654,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G026.png",
+    "artUrl": "/assets/classic/G/G026.png",
     "locales": {
       "zh": {
         "name": "谷物农夫",
@@ -27683,7 +27683,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/G027.png",
+    "artUrl": "/assets/classic/G/G027.png",
     "locales": {
       "zh": {
         "name": "谷物情人",
@@ -27712,7 +27712,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/G028.png",
+    "artUrl": "/assets/classic/G/G028.png",
     "locales": {
       "zh": {
         "name": "脾气暴躁者",
@@ -27741,7 +27741,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G029.png",
+    "artUrl": "/assets/classic/G/G029.png",
     "locales": {
       "zh": {
         "name": "港口管理员",
@@ -27770,7 +27770,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/G030.png",
+    "artUrl": "/assets/classic/G/G030.png",
     "locales": {
       "zh": {
         "name": "校长",
@@ -27799,7 +27799,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G031.png",
+    "artUrl": "/assets/classic/G/G031.png",
     "locales": {
       "zh": {
         "name": "帮工",
@@ -27828,7 +27828,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G032.png",
+    "artUrl": "/assets/classic/G/G032.png",
     "locales": {
       "zh": {
         "name": "业余爱好者",
@@ -27857,7 +27857,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G033.png",
+    "artUrl": "/assets/classic/G/G033.png",
     "locales": {
       "zh": {
         "name": "锄头制造商",
@@ -27886,7 +27886,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G034.png",
+    "artUrl": "/assets/classic/G/G034.png",
     "locales": {
       "zh": {
         "name": "发明家",
@@ -27915,7 +27915,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G035.png",
+    "artUrl": "/assets/classic/G/G035.png",
     "locales": {
       "zh": {
         "name": "求职者",
@@ -27944,7 +27944,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G036.png",
+    "artUrl": "/assets/classic/G/G036.png",
     "locales": {
       "zh": {
         "name": "中年成家者",
@@ -27973,7 +27973,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/G037.png",
+    "artUrl": "/assets/classic/G/G037.png",
     "locales": {
       "zh": {
         "name": "晚睡者",
@@ -28002,7 +28002,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/G038.png",
+    "artUrl": "/assets/classic/G/G038.png",
     "locales": {
       "zh": {
         "name": "烘焙师学徒",
@@ -28031,7 +28031,7 @@ const batch13: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G039.png",
+    "artUrl": "/assets/classic/G/G039.png",
     "locales": {
       "zh": {
         "name": "数学家",
@@ -28062,7 +28062,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G040.png",
+    "artUrl": "/assets/classic/G/G040.png",
     "locales": {
       "zh": {
         "name": "矿工",
@@ -28091,7 +28091,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G041.png",
+    "artUrl": "/assets/classic/G/G041.png",
     "locales": {
       "zh": {
         "name": "流浪汉",
@@ -28120,7 +28120,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G042.png",
+    "artUrl": "/assets/classic/G/G042.png",
     "locales": {
       "zh": {
         "name": "最古老的职业",
@@ -28149,7 +28149,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G043.png",
+    "artUrl": "/assets/classic/G/G043.png",
     "locales": {
       "zh": {
         "name": "机会主义者",
@@ -28178,7 +28178,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G044.png",
+    "artUrl": "/assets/classic/G/G044.png",
     "locales": {
       "zh": {
         "name": "采珠人",
@@ -28207,7 +28207,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G045.png",
+    "artUrl": "/assets/classic/G/G045.png",
     "locales": {
       "zh": {
         "name": "朝圣者",
@@ -28236,7 +28236,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G046.png",
+    "artUrl": "/assets/classic/G/G046.png",
     "locales": {
       "zh": {
         "name": "池塘看守员",
@@ -28266,7 +28266,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/G047.png",
+    "artUrl": "/assets/classic/G/G047.png",
     "locales": {
       "zh": {
         "name": "资源采集者",
@@ -28295,7 +28295,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G048.png",
+    "artUrl": "/assets/classic/G/G048.png",
     "locales": {
       "zh": {
         "name": "马戏团领班",
@@ -28324,7 +28324,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G049.png",
+    "artUrl": "/assets/classic/G/G049.png",
     "locales": {
       "zh": {
         "name": "播种能手",
@@ -28353,7 +28353,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G050.png",
+    "artUrl": "/assets/classic/G/G050.png",
     "locales": {
       "zh": {
         "name": "歌唱家",
@@ -28382,7 +28382,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G051.png",
+    "artUrl": "/assets/classic/G/G051.png",
     "locales": {
       "zh": {
         "name": "运石工",
@@ -28411,7 +28411,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G052.png",
+    "artUrl": "/assets/classic/G/G052.png",
     "locales": {
       "zh": {
         "name": "石头贸易商",
@@ -28440,7 +28440,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G053.png",
+    "artUrl": "/assets/classic/G/G053.png",
     "locales": {
       "zh": {
         "name": "石头堆砌工",
@@ -28469,7 +28469,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G054.png",
+    "artUrl": "/assets/classic/G/G054.png",
     "locales": {
       "zh": {
         "name": "收税官",
@@ -28498,7 +28498,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G055.png",
+    "artUrl": "/assets/classic/G/G055.png",
     "locales": {
       "zh": {
         "name": "松露采集者",
@@ -28527,7 +28527,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G056.png",
+    "artUrl": "/assets/classic/G/G056.png",
     "locales": {
       "zh": {
         "name": "替身演员",
@@ -28556,7 +28556,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G057.png",
+    "artUrl": "/assets/classic/G/G057.png",
     "locales": {
       "zh": {
         "name": "素食主义者",
@@ -28585,7 +28585,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/G058.png",
+    "artUrl": "/assets/classic/G/G058.png",
     "locales": {
       "zh": {
         "name": "乡村农夫",
@@ -28614,7 +28614,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G059.png",
+    "artUrl": "/assets/classic/G/G059.png",
     "locales": {
       "zh": {
         "name": "吹牛的骗子",
@@ -28643,7 +28643,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G060.png",
+    "artUrl": "/assets/classic/G/G060.png",
     "locales": {
       "zh": {
         "name": "织毛衣的人",
@@ -28674,7 +28674,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G061.png",
+    "artUrl": "/assets/classic/G/G061.png",
     "locales": {
       "zh": {
         "name": "历书",
@@ -28704,7 +28704,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G062.png",
+    "artUrl": "/assets/classic/G/G062.png",
     "locales": {
       "zh": {
         "name": "动物农场",
@@ -28735,7 +28735,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G063.png",
+    "artUrl": "/assets/classic/G/G063.png",
     "locales": {
       "zh": {
         "name": "烘焙田",
@@ -28764,7 +28764,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/G064.png",
+    "artUrl": "/assets/classic/G/G064.png",
     "locales": {
       "zh": {
         "name": "交易小屋",
@@ -28794,7 +28794,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G065.png",
+    "artUrl": "/assets/classic/G/G065.png",
     "locales": {
       "zh": {
         "name": "蜂窝烤炉",
@@ -28822,7 +28822,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/G066.png",
+    "artUrl": "/assets/classic/G/G066.png",
     "locales": {
       "zh": {
         "name": "诞生石",
@@ -28853,7 +28853,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/G067.png",
+    "artUrl": "/assets/classic/G/G067.png",
     "locales": {
       "zh": {
         "name": "丰收",
@@ -28886,7 +28886,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G068.png",
+    "artUrl": "/assets/classic/G/G068.png",
     "locales": {
       "zh": {
         "name": "编年史",
@@ -28919,7 +28919,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G069.png",
+    "artUrl": "/assets/classic/G/G069.png",
     "locales": {
       "zh": {
         "name": "皆伐",
@@ -28952,7 +28952,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/G070.png",
+    "artUrl": "/assets/classic/G/G070.png",
     "locales": {
       "zh": {
         "name": "畜栏",
@@ -28982,7 +28982,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G071.png",
+    "artUrl": "/assets/classic/G/G071.png",
     "locales": {
       "zh": {
         "name": "牛铃",
@@ -29015,7 +29015,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G072.png",
+    "artUrl": "/assets/classic/G/G072.png",
     "locales": {
       "zh": {
         "name": "粪肥",
@@ -29043,7 +29043,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G073.png",
+    "artUrl": "/assets/classic/G/G073.png",
     "locales": {
       "zh": {
         "name": "移动烤炉",
@@ -29073,7 +29073,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G074.png",
+    "artUrl": "/assets/classic/G/G074.png",
     "locales": {
       "zh": {
         "name": "额外努力",
@@ -29104,7 +29104,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/G075.png",
+    "artUrl": "/assets/classic/G/G075.png",
     "locales": {
       "zh": {
         "name": "农夫市场",
@@ -29134,7 +29134,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G076.png",
+    "artUrl": "/assets/classic/G/G076.png",
     "locales": {
       "zh": {
         "name": "花园工具",
@@ -29165,7 +29165,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G077.png",
+    "artUrl": "/assets/classic/G/G077.png",
     "locales": {
       "zh": {
         "name": "手钻",
@@ -29193,7 +29193,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G078.png",
+    "artUrl": "/assets/classic/G/G078.png",
     "locales": {
       "zh": {
         "name": "小麦市场",
@@ -29223,7 +29223,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G079.png",
+    "artUrl": "/assets/classic/G/G079.png",
     "locales": {
       "zh": {
         "name": "锤子",
@@ -29254,7 +29254,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G080.png",
+    "artUrl": "/assets/classic/G/G080.png",
     "locales": {
       "zh": {
         "name": "秋收盛宴",
@@ -29284,7 +29284,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/G081.png",
+    "artUrl": "/assets/classic/G/G081.png",
     "locales": {
       "zh": {
         "name": "草棚",
@@ -29314,7 +29314,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G082.png",
+    "artUrl": "/assets/classic/G/G082.png",
     "locales": {
       "zh": {
         "name": "雇佣助手",
@@ -29342,7 +29342,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G083.png",
+    "artUrl": "/assets/classic/G/G083.png",
     "locales": {
       "zh": {
         "name": "节日礼物",
@@ -29373,7 +29373,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/G084.png",
+    "artUrl": "/assets/classic/G/G084.png",
     "locales": {
       "zh": {
         "name": "马棚",
@@ -29403,7 +29403,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/G085.png",
+    "artUrl": "/assets/classic/G/G085.png",
     "locales": {
       "zh": {
         "name": "灌溉渠",
@@ -29433,7 +29433,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G086.png",
+    "artUrl": "/assets/classic/G/G086.png",
     "locales": {
       "zh": {
         "name": "流动雇工",
@@ -29463,7 +29463,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G087.png",
+    "artUrl": "/assets/classic/G/G087.png",
     "locales": {
       "zh": {
         "name": "魔法豌豆",
@@ -29494,7 +29494,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/G088.png",
+    "artUrl": "/assets/classic/G/G088.png",
     "locales": {
       "zh": {
         "name": "肉馅饼",
@@ -29527,7 +29527,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G089.png",
+    "artUrl": "/assets/classic/G/G089.png",
     "locales": {
       "zh": {
         "name": "流动工人",
@@ -29560,7 +29560,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/G090.png",
+    "artUrl": "/assets/classic/G/G090.png",
     "locales": {
       "zh": {
         "name": "草地围栏",
@@ -29591,7 +29591,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G091.png",
+    "artUrl": "/assets/classic/G/G091.png",
     "locales": {
       "zh": {
         "name": "毛皮屋顶",
@@ -29619,7 +29619,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G092.png",
+    "artUrl": "/assets/classic/G/G092.png",
     "locales": {
       "zh": {
         "name": "松树林",
@@ -29647,7 +29647,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G093.png",
+    "artUrl": "/assets/classic/G/G093.png",
     "locales": {
       "zh": {
         "name": "富产之地",
@@ -29677,7 +29677,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G094.png",
+    "artUrl": "/assets/classic/G/G094.png",
     "locales": {
       "zh": {
         "name": "陶艺轮车",
@@ -29708,7 +29708,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G095.png",
+    "artUrl": "/assets/classic/G/G095.png",
     "locales": {
       "zh": {
         "name": "私立市场",
@@ -29736,7 +29736,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G096.png",
+    "artUrl": "/assets/classic/G/G096.png",
     "locales": {
       "zh": {
         "name": "私立学校",
@@ -29766,7 +29766,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G097.png",
+    "artUrl": "/assets/classic/G/G097.png",
     "locales": {
       "zh": {
         "name": "滑轮",
@@ -29794,7 +29794,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/G098.png",
+    "artUrl": "/assets/classic/G/G098.png",
     "locales": {
       "zh": {
         "name": "南瓜馅饼",
@@ -29827,7 +29827,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G099.png",
+    "artUrl": "/assets/classic/G/G099.png",
     "locales": {
       "zh": {
         "name": "芦苇河床",
@@ -29857,7 +29857,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G100.png",
+    "artUrl": "/assets/classic/G/G100.png",
     "locales": {
       "zh": {
         "name": "芦苇甩卖",
@@ -29888,7 +29888,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G101.png",
+    "artUrl": "/assets/classic/G/G101.png",
     "locales": {
       "zh": {
         "name": "木屋改建",
@@ -29918,7 +29918,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G102.png",
+    "artUrl": "/assets/classic/G/G102.png",
     "locales": {
       "zh": {
         "name": "香肠研磨机",
@@ -29952,7 +29952,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G103.png",
+    "artUrl": "/assets/classic/G/G103.png",
     "locales": {
       "zh": {
         "name": "长柄镰刀",
@@ -29986,7 +29986,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G104.png",
+    "artUrl": "/assets/classic/G/G104.png",
     "locales": {
       "zh": {
         "name": "季节性作物",
@@ -30017,7 +30017,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G105.png",
+    "artUrl": "/assets/classic/G/G105.png",
     "locales": {
       "zh": {
         "name": "种子撒布机",
@@ -30050,7 +30050,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G106.png",
+    "artUrl": "/assets/classic/G/G106.png",
     "locales": {
       "zh": {
         "name": "共享墙壁",
@@ -30083,7 +30083,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G107.png",
+    "artUrl": "/assets/classic/G/G107.png",
     "locales": {
       "zh": {
         "name": "羊市场",
@@ -30111,7 +30111,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G108.png",
+    "artUrl": "/assets/classic/G/G108.png",
     "locales": {
       "zh": {
         "name": "牧羊犬",
@@ -30141,7 +30141,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/G109.png",
+    "artUrl": "/assets/classic/G/G109.png",
     "locales": {
       "zh": {
         "name": "羊皮地毯",
@@ -30172,7 +30172,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G110.png",
+    "artUrl": "/assets/classic/G/G110.png",
     "locales": {
       "zh": {
         "name": "铁锹",
@@ -30202,7 +30202,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G111.png",
+    "artUrl": "/assets/classic/G/G111.png",
     "locales": {
       "zh": {
         "name": "镰刀",
@@ -30236,7 +30236,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G112.png",
+    "artUrl": "/assets/classic/G/G112.png",
     "locales": {
       "zh": {
         "name": "石头吊车",
@@ -30266,7 +30266,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G113.png",
+    "artUrl": "/assets/classic/G/G113.png",
     "locales": {
       "zh": {
         "name": "石制厨房",
@@ -30294,7 +30294,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/G114.png",
+    "artUrl": "/assets/classic/G/G114.png",
     "locales": {
       "zh": {
         "name": "石器工坊",
@@ -30327,7 +30327,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G115.png",
+    "artUrl": "/assets/classic/G/G115.png",
     "locales": {
       "zh": {
         "name": "养鱼场",
@@ -30361,7 +30361,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G116.png",
+    "artUrl": "/assets/classic/G/G116.png",
     "locales": {
       "zh": {
         "name": "树屋",
@@ -30391,7 +30391,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G117.png",
+    "artUrl": "/assets/classic/G/G117.png",
     "locales": {
       "zh": {
         "name": "蔬菜勺",
@@ -30421,7 +30421,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G118.png",
+    "artUrl": "/assets/classic/G/G118.png",
     "locales": {
       "zh": {
         "name": "冬季花园",
@@ -30451,7 +30451,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/G119.png",
+    "artUrl": "/assets/classic/G/G119.png",
     "locales": {
       "zh": {
         "name": "木桥",
@@ -30482,7 +30482,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": true,
-    "artUrl": "/card-art/classic/I100.png",
+    "artUrl": "/assets/classic/I/I100.png",
     "locales": {
       "zh": {
         "name": "酒馆",
@@ -30511,7 +30511,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I101.png",
+    "artUrl": "/assets/classic/I/I101.png",
     "locales": {
       "zh": {
         "name": "畜食槽",
@@ -30546,7 +30546,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I102.png",
+    "artUrl": "/assets/classic/I/I102.png",
     "locales": {
       "zh": {
         "name": "野生保护区",
@@ -30579,7 +30579,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I103.png",
+    "artUrl": "/assets/classic/I/I103.png",
     "locales": {
       "zh": {
         "name": "水磨坊",
@@ -30609,7 +30609,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I104.png",
+    "artUrl": "/assets/classic/I/I104.png",
     "locales": {
       "zh": {
         "name": "周末市场",
@@ -30638,7 +30638,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I219.png",
+    "artUrl": "/assets/classic/I/I219.png",
     "locales": {
       "zh": {
         "name": "田地主人",
@@ -30667,7 +30667,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I220.png",
+    "artUrl": "/assets/classic/I/I220.png",
     "locales": {
       "zh": {
         "name": "打井人",
@@ -30696,7 +30696,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": true,
-    "artUrl": "/card-art/classic/I221.png",
+    "artUrl": "/assets/classic/I/I221.png",
     "locales": {
       "zh": {
         "name": "村长",
@@ -30725,7 +30725,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I222.png",
+    "artUrl": "/assets/classic/I/I222.png",
     "locales": {
       "zh": {
         "name": "上流生活",
@@ -30754,7 +30754,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I223.png",
+    "artUrl": "/assets/classic/I/I223.png",
     "locales": {
       "zh": {
         "name": "秋收帮工",
@@ -30783,7 +30783,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I224.png",
+    "artUrl": "/assets/classic/I/I224.png",
     "locales": {
       "zh": {
         "name": "种田工",
@@ -30813,7 +30813,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I225.png",
+    "artUrl": "/assets/classic/I/I225.png",
     "locales": {
       "zh": {
         "name": "农田巡逻",
@@ -30842,7 +30842,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I226.png",
+    "artUrl": "/assets/classic/I/I226.png",
     "locales": {
       "zh": {
         "name": "园丁",
@@ -30871,7 +30871,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": true,
-    "artUrl": "/card-art/classic/I227.png",
+    "artUrl": "/assets/classic/I/I227.png",
     "locales": {
       "zh": {
         "name": "教会管理员",
@@ -30900,7 +30900,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I228.png",
+    "artUrl": "/assets/classic/I/I228.png",
     "locales": {
       "zh": {
         "name": "生意人",
@@ -30929,7 +30929,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I229.png",
+    "artUrl": "/assets/classic/I/I229.png",
     "locales": {
       "zh": {
         "name": "谄言者",
@@ -30958,7 +30958,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I230.png",
+    "artUrl": "/assets/classic/I/I230.png",
     "locales": {
       "zh": {
         "name": "挖土工",
@@ -30989,7 +30989,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I231.png",
+    "artUrl": "/assets/classic/I/I231.png",
     "locales": {
       "zh": {
         "name": "男仆",
@@ -31018,7 +31018,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I232.png",
+    "artUrl": "/assets/classic/I/I232.png",
     "locales": {
       "zh": {
         "name": "助产士",
@@ -31047,7 +31047,7 @@ const batch14: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I233.png",
+    "artUrl": "/assets/classic/I/I233.png",
     "locales": {
       "zh": {
         "name": "农场干事",
@@ -31078,7 +31078,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I234.png",
+    "artUrl": "/assets/classic/I/I234.png",
     "locales": {
       "zh": {
         "name": "购木商",
@@ -31108,7 +31108,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I235.png",
+    "artUrl": "/assets/classic/I/I235.png",
     "locales": {
       "zh": {
         "name": "拾木工",
@@ -31138,7 +31138,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": true,
-    "artUrl": "/card-art/classic/I236.png",
+    "artUrl": "/assets/classic/I/I236.png",
     "locales": {
       "zh": {
         "name": "贫农",
@@ -31167,7 +31167,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I237.png",
+    "artUrl": "/assets/classic/I/I237.png",
     "locales": {
       "zh": {
         "name": "杂技演员",
@@ -31196,7 +31196,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I238.png",
+    "artUrl": "/assets/classic/I/I238.png",
     "locales": {
       "zh": {
         "name": "内侍",
@@ -31225,7 +31225,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I239.png",
+    "artUrl": "/assets/classic/I/I239.png",
     "locales": {
       "zh": {
         "name": "小麦奸商",
@@ -31255,7 +31255,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I240.png",
+    "artUrl": "/assets/classic/I/I240.png",
     "locales": {
       "zh": {
         "name": "牧牛人",
@@ -31284,7 +31284,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I241.png",
+    "artUrl": "/assets/classic/I/I241.png",
     "locales": {
       "zh": {
         "name": "墙土修补工",
@@ -31314,7 +31314,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I242.png",
+    "artUrl": "/assets/classic/I/I242.png",
     "locales": {
       "zh": {
         "name": "砖屋建筑工",
@@ -31343,7 +31343,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I243.png",
+    "artUrl": "/assets/classic/I/I243.png",
     "locales": {
       "zh": {
         "name": "砌砖工",
@@ -31372,7 +31372,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I244.png",
+    "artUrl": "/assets/classic/I/I244.png",
     "locales": {
       "zh": {
         "name": "懒汉",
@@ -31402,7 +31402,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I245.png",
+    "artUrl": "/assets/classic/I/I245.png",
     "locales": {
       "zh": {
         "name": "叫卖贩",
@@ -31431,7 +31431,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": true,
-    "artUrl": "/card-art/classic/I246.png",
+    "artUrl": "/assets/classic/I/I246.png",
     "locales": {
       "zh": {
         "name": "挤奶工",
@@ -31460,7 +31460,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I247.png",
+    "artUrl": "/assets/classic/I/I247.png",
     "locales": {
       "zh": {
         "name": "屠夫",
@@ -31524,7 +31524,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I248.png",
+    "artUrl": "/assets/classic/I/I248.png",
     "locales": {
       "zh": {
         "name": "网鱼人",
@@ -31555,7 +31555,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I249.png",
+    "artUrl": "/assets/classic/I/I249.png",
     "locales": {
       "zh": {
         "name": "木偶艺人",
@@ -31584,7 +31584,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I250.png",
+    "artUrl": "/assets/classic/I/I250.png",
     "locales": {
       "zh": {
         "name": "驯羊人",
@@ -31613,7 +31613,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I251.png",
+    "artUrl": "/assets/classic/I/I251.png",
     "locales": {
       "zh": {
         "name": "购苇商",
@@ -31643,7 +31643,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I252.png",
+    "artUrl": "/assets/classic/I/I252.png",
     "locales": {
       "zh": {
         "name": "野猪哺育师",
@@ -31672,7 +31672,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I253.png",
+    "artUrl": "/assets/classic/I/I253.png",
     "locales": {
       "zh": {
         "name": "捕猪人",
@@ -31701,7 +31701,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I254.png",
+    "artUrl": "/assets/classic/I/I254.png",
     "locales": {
       "zh": {
         "name": "马夫",
@@ -31730,7 +31730,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I255.png",
+    "artUrl": "/assets/classic/I/I255.png",
     "locales": {
       "zh": {
         "name": "购石商",
@@ -31758,7 +31758,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I256.png",
+    "artUrl": "/assets/classic/I/I256.png",
     "locales": {
       "zh": {
         "name": "石雕工",
@@ -31801,7 +31801,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I257.png",
+    "artUrl": "/assets/classic/I/I257.png",
     "locales": {
       "zh": {
         "name": "街头乐手",
@@ -31830,7 +31830,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I258.png",
+    "artUrl": "/assets/classic/I/I258.png",
     "locales": {
       "zh": {
         "name": "家具匠",
@@ -31874,7 +31874,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I259.png",
+    "artUrl": "/assets/classic/I/I259.png",
     "locales": {
       "zh": {
         "name": "动物交易员",
@@ -31903,7 +31903,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I260.png",
+    "artUrl": "/assets/classic/I/I260.png",
     "locales": {
       "zh": {
         "name": "试味员",
@@ -31933,7 +31933,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I261.png",
+    "artUrl": "/assets/classic/I/I261.png",
     "locales": {
       "zh": {
         "name": "先驱者",
@@ -31962,7 +31962,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I262.png",
+    "artUrl": "/assets/classic/I/I262.png",
     "locales": {
       "zh": {
         "name": "运水工",
@@ -31991,7 +31991,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I263.png",
+    "artUrl": "/assets/classic/I/I263.png",
     "locales": {
       "zh": {
         "name": "栅栏建造工",
@@ -32020,7 +32020,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I264.png",
+    "artUrl": "/assets/classic/I/I264.png",
     "locales": {
       "zh": {
         "name": "筑篱工",
@@ -32049,7 +32049,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I265.png",
+    "artUrl": "/assets/classic/I/I265.png",
     "locales": {
       "zh": {
         "name": "运篱工",
@@ -32080,7 +32080,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": true,
-    "artUrl": "/card-art/classic/I337.png",
+    "artUrl": "/assets/classic/I/I337.png",
     "locales": {
       "zh": {
         "name": "黏土矿床",
@@ -32110,7 +32110,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I340.png",
+    "artUrl": "/assets/classic/I/I340.png",
     "locales": {
       "zh": {
         "name": "农场工人",
@@ -32144,7 +32144,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I63.png",
+    "artUrl": "/assets/classic/I/I63.png",
     "locales": {
       "zh": {
         "name": "铧式犁",
@@ -32176,7 +32176,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I64.png",
+    "artUrl": "/assets/classic/I/I64.png",
     "locales": {
       "zh": {
         "name": "救济品",
@@ -32206,7 +32206,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I65.png",
+    "artUrl": "/assets/classic/I/I65.png",
     "locales": {
       "zh": {
         "name": "烘焙厨房",
@@ -32261,7 +32261,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I66.png",
+    "artUrl": "/assets/classic/I/I66.png",
     "locales": {
       "zh": {
         "name": "村中水井",
@@ -32305,7 +32305,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I67.png",
+    "artUrl": "/assets/classic/I/I67.png",
     "locales": {
       "zh": {
         "name": "打谷板",
@@ -32335,7 +32335,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I68.png",
+    "artUrl": "/assets/classic/I/I68.png",
     "locales": {
       "zh": {
         "name": "耙",
@@ -32365,7 +32365,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I69.png",
+    "artUrl": "/assets/classic/I/I69.png",
     "locales": {
       "zh": {
         "name": "草莓园",
@@ -32395,7 +32395,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I70.png",
+    "artUrl": "/assets/classic/I/I70.png",
     "locales": {
       "zh": {
         "name": "夯具",
@@ -32423,7 +32423,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I71.png",
+    "artUrl": "/assets/classic/I/I71.png",
     "locales": {
       "zh": {
         "name": "度假屋",
@@ -32464,7 +32464,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I72.png",
+    "artUrl": "/assets/classic/I/I72.png",
     "locales": {
       "zh": {
         "name": "鹅塘",
@@ -32494,7 +32494,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I73.png",
+    "artUrl": "/assets/classic/I/I73.png",
     "locales": {
       "zh": {
         "name": "客人",
@@ -32527,7 +32527,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I74.png",
+    "artUrl": "/assets/classic/I/I74.png",
     "locales": {
       "zh": {
         "name": "小麦推车",
@@ -32557,7 +32557,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I75.png",
+    "artUrl": "/assets/classic/I/I75.png",
     "locales": {
       "zh": {
         "name": "手磨机",
@@ -32601,7 +32601,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I76.png",
+    "artUrl": "/assets/classic/I/I76.png",
     "locales": {
       "zh": {
         "name": "钉耙",
@@ -32632,7 +32632,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I77.png",
+    "artUrl": "/assets/classic/I/I77.png",
     "locales": {
       "zh": {
         "name": "牧羊杖",
@@ -32674,7 +32674,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I78.png",
+    "artUrl": "/assets/classic/I/I78.png",
     "locales": {
       "zh": {
         "name": "木头地",
@@ -32708,7 +32708,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I79.png",
+    "artUrl": "/assets/classic/I/I79.png",
     "locales": {
       "zh": {
         "name": "木头推车",
@@ -32741,7 +32741,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I80.png",
+    "artUrl": "/assets/classic/I/I80.png",
     "locales": {
       "zh": {
         "name": "灌木丛",
@@ -32771,7 +32771,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I81.png",
+    "artUrl": "/assets/classic/I/I81.png",
     "locales": {
       "zh": {
         "name": "扩建木屋",
@@ -32801,7 +32801,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I82.png",
+    "artUrl": "/assets/classic/I/I82.png",
     "locales": {
       "zh": {
         "name": "木吊车",
@@ -32831,7 +32831,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": true,
-    "artUrl": "/card-art/classic/I83.png",
+    "artUrl": "/assets/classic/I/I83.png",
     "locales": {
       "zh": {
         "name": "木板路",
@@ -32870,7 +32870,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I84.png",
+    "artUrl": "/assets/classic/I/I84.png",
     "locales": {
       "zh": {
         "name": "鸡舍",
@@ -32898,7 +32898,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I85.png",
+    "artUrl": "/assets/classic/I/I85.png",
     "locales": {
       "zh": {
         "name": "烹饪角",
@@ -32990,7 +32990,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": true,
-    "artUrl": "/card-art/classic/I86.png",
+    "artUrl": "/assets/classic/I/I86.png",
     "locales": {
       "zh": {
         "name": "谷仓",
@@ -33030,7 +33030,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I87.png",
+    "artUrl": "/assets/classic/I/I87.png",
     "locales": {
       "zh": {
         "name": "大酒壶",
@@ -33061,7 +33061,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I88.png",
+    "artUrl": "/assets/classic/I/I88.png",
     "locales": {
       "zh": {
         "name": "套索",
@@ -33091,7 +33091,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": true,
-    "artUrl": "/card-art/classic/I89.png",
+    "artUrl": "/assets/classic/I/I89.png",
     "locales": {
       "zh": {
         "name": "砖头路",
@@ -33122,7 +33122,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I90.png",
+    "artUrl": "/assets/classic/I/I90.png",
     "locales": {
       "zh": {
         "name": "播种筒",
@@ -33152,7 +33152,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I91.png",
+    "artUrl": "/assets/classic/I/I91.png",
     "locales": {
       "zh": {
         "name": "梯子",
@@ -33180,7 +33180,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I92.png",
+    "artUrl": "/assets/classic/I/I92.png",
     "locales": {
       "zh": {
         "name": "肥料",
@@ -33211,7 +33211,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I93.png",
+    "artUrl": "/assets/classic/I/I93.png",
     "locales": {
       "zh": {
         "name": "挤奶棚",
@@ -33241,7 +33241,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": true,
-    "artUrl": "/card-art/classic/I94.png",
+    "artUrl": "/assets/classic/I/I94.png",
     "locales": {
       "zh": {
         "name": "石板路",
@@ -33271,7 +33271,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I95.png",
+    "artUrl": "/assets/classic/I/I95.png",
     "locales": {
       "zh": {
         "name": "鱼篓",
@@ -33299,7 +33299,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I96.png",
+    "artUrl": "/assets/classic/I/I96.png",
     "locales": {
       "zh": {
         "name": "芦苇交易",
@@ -33338,7 +33338,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I97.png",
+    "artUrl": "/assets/classic/I/I97.png",
     "locales": {
       "zh": {
         "name": "屠宰场",
@@ -33369,7 +33369,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": true,
-    "artUrl": "/card-art/classic/I98.png",
+    "artUrl": "/assets/classic/I/I98.png",
     "locales": {
       "zh": {
         "name": "烈酒蒸馏器",
@@ -33411,7 +33411,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/I99.png",
+    "artUrl": "/assets/classic/I/I99.png",
     "locales": {
       "zh": {
         "name": "麦造屋顶",
@@ -33442,7 +33442,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K105.png",
+    "artUrl": "/assets/classic/K/K105.png",
     "locales": {
       "zh": {
         "name": "一亩田",
@@ -33472,7 +33472,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K106.png",
+    "artUrl": "/assets/classic/K/K106.png",
     "locales": {
       "zh": {
         "name": "烘焙坊",
@@ -33505,7 +33505,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K107.png",
+    "artUrl": "/assets/classic/K/K107.png",
     "locales": {
       "zh": {
         "name": "木料",
@@ -33539,7 +33539,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K108.png",
+    "artUrl": "/assets/classic/K/K108.png",
     "locales": {
       "zh": {
         "name": "蜂巢",
@@ -33569,7 +33569,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K109.png",
+    "artUrl": "/assets/classic/K/K109.png",
     "locales": {
       "zh": {
         "name": "烧烤叉",
@@ -33600,7 +33600,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/K110.png",
+    "artUrl": "/assets/classic/K/K110.png",
     "locales": {
       "zh": {
         "name": "酿酒厂",
@@ -33630,7 +33630,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K111.png",
+    "artUrl": "/assets/classic/K/K111.png",
     "locales": {
       "zh": {
         "name": "面包托铲",
@@ -33664,7 +33664,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/K112.png",
+    "artUrl": "/assets/classic/K/K112.png",
     "locales": {
       "zh": {
         "name": "书架",
@@ -33698,7 +33698,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/K113.png",
+    "artUrl": "/assets/classic/K/K113.png",
     "locales": {
       "zh": {
         "name": "连枷",
@@ -33730,7 +33730,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/K114.png",
+    "artUrl": "/assets/classic/K/K114.png",
     "locales": {
       "zh": {
         "name": "鸭塘",
@@ -33764,7 +33764,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/K115.png",
+    "artUrl": "/assets/classic/K/K115.png",
     "locales": {
       "zh": {
         "name": "摆杆步犁",
@@ -33801,7 +33801,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/K116.png",
+    "artUrl": "/assets/classic/K/K116.png",
     "locales": {
       "zh": {
         "name": "粮仓",
@@ -33835,7 +33835,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/K117.png",
+    "artUrl": "/assets/classic/K/K117.png",
     "locales": {
       "zh": {
         "name": "小型温室",
@@ -33863,7 +33863,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K118.png",
+    "artUrl": "/assets/classic/K/K118.png",
     "locales": {
       "zh": {
         "name": "水肥",
@@ -33896,7 +33896,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K119.png",
+    "artUrl": "/assets/classic/K/K119.png",
     "locales": {
       "zh": {
         "name": "钩状犁",
@@ -33926,7 +33926,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/K120.png",
+    "artUrl": "/assets/classic/K/K120.png",
     "locales": {
       "zh": {
         "name": "家用山羊",
@@ -33956,7 +33956,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K121.png",
+    "artUrl": "/assets/classic/K/K121.png",
     "locales": {
       "zh": {
         "name": "锯木架",
@@ -33984,7 +33984,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/K122.png",
+    "artUrl": "/assets/classic/K/K122.png",
     "locales": {
       "zh": {
         "name": "大家具工坊",
@@ -34014,7 +34014,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/K123.png",
+    "artUrl": "/assets/classic/K/K123.png",
     "locales": {
       "zh": {
         "name": "木制保险箱",
@@ -34044,7 +34044,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K124.png",
+    "artUrl": "/assets/classic/K/K124.png",
     "locales": {
       "zh": {
         "name": "轭具",
@@ -34074,7 +34074,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K125.png",
+    "artUrl": "/assets/classic/K/K125.png",
     "locales": {
       "zh": {
         "name": "扫帚",
@@ -34104,7 +34104,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K126.png",
+    "artUrl": "/assets/classic/K/K126.png",
     "locales": {
       "zh": {
         "name": "手网",
@@ -34134,7 +34134,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K127.png",
+    "artUrl": "/assets/classic/K/K127.png",
     "locales": {
       "zh": {
         "name": "响板",
@@ -34162,7 +34162,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K128.png",
+    "artUrl": "/assets/classic/K/K128.png",
     "locales": {
       "zh": {
         "name": "壁炉",
@@ -34190,7 +34190,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K129.png",
+    "artUrl": "/assets/classic/K/K129.png",
     "locales": {
       "zh": {
         "name": "一捆小麦",
@@ -34218,7 +34218,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K130.png",
+    "artUrl": "/assets/classic/K/K130.png",
     "locales": {
       "zh": {
         "name": "药草园",
@@ -34250,7 +34250,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/K131.png",
+    "artUrl": "/assets/classic/K/K131.png",
     "locales": {
       "zh": {
         "name": "黏土坑",
@@ -34281,7 +34281,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K132.png",
+    "artUrl": "/assets/classic/K/K132.png",
     "locales": {
       "zh": {
         "name": "扩建砖屋",
@@ -34315,7 +34315,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "vp": 0,
     "passing": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/K133.png",
+    "artUrl": "/assets/classic/K/K133.png",
     "locales": {
       "zh": {
         "name": "挤奶凳",
@@ -34347,7 +34347,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K134.png",
+    "artUrl": "/assets/classic/K/K134.png",
     "locales": {
       "zh": {
         "name": "公牛挽具",
@@ -34375,7 +34375,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/K135.png",
+    "artUrl": "/assets/classic/K/K135.png",
     "locales": {
       "zh": {
         "name": "马",
@@ -34406,7 +34406,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K136.png",
+    "artUrl": "/assets/classic/K/K136.png",
     "locales": {
       "zh": {
         "name": "木造屋顶",
@@ -34437,7 +34437,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K137.png",
+    "artUrl": "/assets/classic/K/K137.png",
     "locales": {
       "zh": {
         "name": "萝卜地",
@@ -34468,7 +34468,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K138.png",
+    "artUrl": "/assets/classic/K/K138.png",
     "locales": {
       "zh": {
         "name": "芦苇小屋",
@@ -34499,7 +34499,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/K139.png",
+    "artUrl": "/assets/classic/K/K139.png",
     "locales": {
       "zh": {
         "name": "卧室",
@@ -34530,7 +34530,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K140.png",
+    "artUrl": "/assets/classic/K/K140.png",
     "locales": {
       "zh": {
         "name": "天鹅湖",
@@ -34560,7 +34560,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K141.png",
+    "artUrl": "/assets/classic/K/K141.png",
     "locales": {
       "zh": {
         "name": "野猪",
@@ -34594,7 +34594,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/K142.png",
+    "artUrl": "/assets/classic/K/K142.png",
     "locales": {
       "zh": {
         "name": "石头推车",
@@ -34622,7 +34622,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K143.png",
+    "artUrl": "/assets/classic/K/K143.png",
     "locales": {
       "zh": {
         "name": "石头交易",
@@ -34655,7 +34655,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/K144.png",
+    "artUrl": "/assets/classic/K/K144.png",
     "locales": {
       "zh": {
         "name": "豪宅",
@@ -34686,7 +34686,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K145.png",
+    "artUrl": "/assets/classic/K/K145.png",
     "locales": {
       "zh": {
         "name": "林间牧场",
@@ -34720,7 +34720,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "gameEdition": "classic",
     "passing": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/K146.png",
+    "artUrl": "/assets/classic/K/K146.png",
     "locales": {
       "zh": {
         "name": "织布机",
@@ -34749,7 +34749,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K266.png",
+    "artUrl": "/assets/classic/K/K266.png",
     "locales": {
       "zh": {
         "name": "农奴",
@@ -34779,7 +34779,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/K267.png",
+    "artUrl": "/assets/classic/K/K267.png",
     "locales": {
       "zh": {
         "name": "养父母",
@@ -34808,7 +34808,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K268.png",
+    "artUrl": "/assets/classic/K/K268.png",
     "locales": {
       "zh": {
         "name": "计件工",
@@ -34837,7 +34837,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K269.png",
+    "artUrl": "/assets/classic/K/K269.png",
     "locales": {
       "zh": {
         "name": "空中飞人",
@@ -34866,7 +34866,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K270.png",
+    "artUrl": "/assets/classic/K/K270.png",
     "locales": {
       "zh": {
         "name": "奶妈",
@@ -34895,7 +34895,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K271.png",
+    "artUrl": "/assets/classic/K/K271.png",
     "locales": {
       "zh": {
         "name": "教育家",
@@ -34924,7 +34924,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K272.png",
+    "artUrl": "/assets/classic/K/K272.png",
     "locales": {
       "zh": {
         "name": "架梁工",
@@ -34953,7 +34953,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/K273.png",
+    "artUrl": "/assets/classic/K/K273.png",
     "locales": {
       "zh": {
         "name": "制盆工",
@@ -34983,7 +34983,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/K274.png",
+    "artUrl": "/assets/classic/K/K274.png",
     "locales": {
       "zh": {
         "name": "有机农",
@@ -35012,7 +35012,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K275.png",
+    "artUrl": "/assets/classic/K/K275.png",
     "locales": {
       "zh": {
         "name": "懒惰的学生",
@@ -35041,7 +35041,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/K276.png",
+    "artUrl": "/assets/classic/K/K276.png",
     "locales": {
       "zh": {
         "name": "警官",
@@ -35070,7 +35070,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K277.png",
+    "artUrl": "/assets/classic/K/K277.png",
     "locales": {
       "zh": {
         "name": "制造商",
@@ -35099,7 +35099,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K278.png",
+    "artUrl": "/assets/classic/K/K278.png",
     "locales": {
       "zh": {
         "name": "护林人",
@@ -35128,7 +35128,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K279.png",
+    "artUrl": "/assets/classic/K/K279.png",
     "locales": {
       "zh": {
         "name": "博学士",
@@ -35157,7 +35157,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/K280.png",
+    "artUrl": "/assets/classic/K/K280.png",
     "locales": {
       "zh": {
         "name": "剥皮工",
@@ -35186,7 +35186,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K281.png",
+    "artUrl": "/assets/classic/K/K281.png",
     "locales": {
       "zh": {
         "name": "流动商贩",
@@ -35216,7 +35216,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/K282.png",
+    "artUrl": "/assets/classic/K/K282.png",
     "locales": {
       "zh": {
         "name": "房屋管理员",
@@ -35245,7 +35245,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K283.png",
+    "artUrl": "/assets/classic/K/K283.png",
     "locales": {
       "zh": {
         "name": "运木工",
@@ -35274,7 +35274,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K284.png",
+    "artUrl": "/assets/classic/K/K284.png",
     "locales": {
       "zh": {
         "name": "木头分配员",
@@ -35303,7 +35303,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K285.png",
+    "artUrl": "/assets/classic/K/K285.png",
     "locales": {
       "zh": {
         "name": "锡匠",
@@ -35332,7 +35332,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K286.png",
+    "artUrl": "/assets/classic/K/K286.png",
     "locales": {
       "zh": {
         "name": "小农",
@@ -35361,7 +35361,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K287.png",
+    "artUrl": "/assets/classic/K/K287.png",
     "locales": {
       "zh": {
         "name": "仓库簿记",
@@ -35391,7 +35391,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/K288.png",
+    "artUrl": "/assets/classic/K/K288.png",
     "locales": {
       "zh": {
         "name": "仓库管理员",
@@ -35420,7 +35420,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K289.png",
+    "artUrl": "/assets/classic/K/K289.png",
     "locales": {
       "zh": {
         "name": "乡下人",
@@ -35449,7 +35449,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K290.png",
+    "artUrl": "/assets/classic/K/K290.png",
     "locales": {
       "zh": {
         "name": "黏土工",
@@ -35478,7 +35478,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K291.png",
+    "artUrl": "/assets/classic/K/K291.png",
     "locales": {
       "zh": {
         "name": "情圣",
@@ -35507,7 +35507,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K292.png",
+    "artUrl": "/assets/classic/K/K292.png",
     "locales": {
       "zh": {
         "name": "女商贩",
@@ -35537,7 +35537,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/K293.png",
+    "artUrl": "/assets/classic/K/K293.png",
     "locales": {
       "zh": {
         "name": "犁田工",
@@ -35567,7 +35567,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/K294.png",
+    "artUrl": "/assets/classic/K/K294.png",
     "locales": {
       "zh": {
         "name": "拾柴者",
@@ -35596,7 +35596,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K295.png",
+    "artUrl": "/assets/classic/K/K295.png",
     "locales": {
       "zh": {
         "name": "野牛哺育师",
@@ -35626,7 +35626,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/K296.png",
+    "artUrl": "/assets/classic/K/K296.png",
     "locales": {
       "zh": {
         "name": "种子贩售商",
@@ -35655,7 +35655,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K297.png",
+    "artUrl": "/assets/classic/K/K297.png",
     "locales": {
       "zh": {
         "name": "养羊专业户",
@@ -35684,7 +35684,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K298.png",
+    "artUrl": "/assets/classic/K/K298.png",
     "locales": {
       "zh": {
         "name": "放羊的男孩",
@@ -35713,7 +35713,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K299.png",
+    "artUrl": "/assets/classic/K/K299.png",
     "locales": {
       "zh": {
         "name": "屠宰工",
@@ -35742,7 +35742,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K300.png",
+    "artUrl": "/assets/classic/K/K300.png",
     "locales": {
       "zh": {
         "name": "烈酒蒸馏师",
@@ -35771,7 +35771,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/K301.png",
+    "artUrl": "/assets/classic/K/K301.png",
     "locales": {
       "zh": {
         "name": "木雕工",
@@ -35800,7 +35800,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K302.png",
+    "artUrl": "/assets/classic/K/K302.png",
     "locales": {
       "zh": {
         "name": "驯猪人",
@@ -35829,7 +35829,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K303.png",
+    "artUrl": "/assets/classic/K/K303.png",
     "locales": {
       "zh": {
         "name": "碎石工",
@@ -35858,7 +35858,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K304.png",
+    "artUrl": "/assets/classic/K/K304.png",
     "locales": {
       "zh": {
         "name": "兽医",
@@ -35887,7 +35887,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K305.png",
+    "artUrl": "/assets/classic/K/K305.png",
     "locales": {
       "zh": {
         "name": "动物驯养员",
@@ -35916,7 +35916,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K306.png",
+    "artUrl": "/assets/classic/K/K306.png",
     "locales": {
       "zh": {
         "name": "驯兽师",
@@ -35945,7 +35945,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K307.png",
+    "artUrl": "/assets/classic/K/K307.png",
     "locales": {
       "zh": {
         "name": "哺育师",
@@ -35974,7 +35974,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K308.png",
+    "artUrl": "/assets/classic/K/K308.png",
     "locales": {
       "zh": {
         "name": "工头",
@@ -36003,7 +36003,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K309.png",
+    "artUrl": "/assets/classic/K/K309.png",
     "locales": {
       "zh": {
         "name": "纺织工",
@@ -36032,7 +36032,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K310.png",
+    "artUrl": "/assets/classic/K/K310.png",
     "locales": {
       "zh": {
         "name": "资源销售商",
@@ -36061,7 +36061,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K311.png",
+    "artUrl": "/assets/classic/K/K311.png",
     "locales": {
       "zh": {
         "name": "魔术师",
@@ -36090,7 +36090,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K312.png",
+    "artUrl": "/assets/classic/K/K312.png",
     "locales": {
       "zh": {
         "name": "栅栏监管员",
@@ -36121,7 +36121,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/K339.png",
+    "artUrl": "/assets/classic/K/K339.png",
     "locales": {
       "zh": {
         "name": "毛皮",
@@ -36150,7 +36150,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/K342.png",
+    "artUrl": "/assets/classic/K/K342.png",
     "locales": {
       "zh": {
         "name": "马戏驯兽师",
@@ -36181,7 +36181,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL001.png",
+    "artUrl": "/assets/classic/NL/NL001.png",
     "locales": {
       "zh": {
         "name": "荷兰风车",
@@ -36214,7 +36214,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL002.png",
+    "artUrl": "/assets/classic/NL/NL002.png",
     "locales": {
       "zh": {
         "name": "起居室",
@@ -36245,7 +36245,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL003.png",
+    "artUrl": "/assets/classic/NL/NL003.png",
     "locales": {
       "zh": {
         "name": "灾荒之年",
@@ -36273,7 +36273,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL004.png",
+    "artUrl": "/assets/classic/NL/NL004.png",
     "locales": {
       "zh": {
         "name": "起司市场",
@@ -36319,7 +36319,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/NL005.png",
+    "artUrl": "/assets/classic/NL/NL005.png",
     "locales": {
       "zh": {
         "name": "工作室",
@@ -36352,7 +36352,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL006.png",
+    "artUrl": "/assets/classic/NL/NL006.png",
     "locales": {
       "zh": {
         "name": "后院",
@@ -36382,7 +36382,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL007.png",
+    "artUrl": "/assets/classic/NL/NL007.png",
     "locales": {
       "zh": {
         "name": "舞台",
@@ -36413,7 +36413,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL008.png",
+    "artUrl": "/assets/classic/NL/NL008.png",
     "locales": {
       "zh": {
         "name": "水上小屋",
@@ -36445,7 +36445,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/NL009.png",
+    "artUrl": "/assets/classic/NL/NL009.png",
     "locales": {
       "zh": {
         "name": "杂物房",
@@ -36478,7 +36478,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL010.png",
+    "artUrl": "/assets/classic/NL/NL010.png",
     "locales": {
       "zh": {
         "name": "情书",
@@ -36508,7 +36508,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL011.png",
+    "artUrl": "/assets/classic/NL/NL011.png",
     "locales": {
       "zh": {
         "name": "痰盂",
@@ -36537,7 +36537,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/NL012.png",
+    "artUrl": "/assets/classic/NL/NL012.png",
     "locales": {
       "zh": {
         "name": "小溪",
@@ -36568,7 +36568,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL013.png",
+    "artUrl": "/assets/classic/NL/NL013.png",
     "locales": {
       "zh": {
         "name": "蚱蜢",
@@ -36598,7 +36598,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL014.png",
+    "artUrl": "/assets/classic/NL/NL014.png",
     "locales": {
       "zh": {
         "name": "壕沟",
@@ -36631,7 +36631,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL015.png",
+    "artUrl": "/assets/classic/NL/NL015.png",
     "locales": {
       "zh": {
         "name": "划艇",
@@ -36661,7 +36661,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL016.png",
+    "artUrl": "/assets/classic/NL/NL016.png",
     "locales": {
       "zh": {
         "name": "房车",
@@ -36689,7 +36689,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL017.png",
+    "artUrl": "/assets/classic/NL/NL017.png",
     "locales": {
       "zh": {
         "name": "修士誓言",
@@ -36719,7 +36719,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL018.png",
+    "artUrl": "/assets/classic/NL/NL018.png",
     "locales": {
       "zh": {
         "name": "前庭花园",
@@ -36750,7 +36750,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/NL019.png",
+    "artUrl": "/assets/classic/NL/NL019.png",
     "locales": {
       "zh": {
         "name": "牛奶罐",
@@ -36780,7 +36780,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL020.png",
+    "artUrl": "/assets/classic/NL/NL020.png",
     "locales": {
       "zh": {
         "name": "海滩椅",
@@ -36813,7 +36813,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL021.png",
+    "artUrl": "/assets/classic/NL/NL021.png",
     "locales": {
       "zh": {
         "name": "大型温室",
@@ -36847,7 +36847,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/NL022.png",
+    "artUrl": "/assets/classic/NL/NL022.png",
     "locales": {
       "zh": {
         "name": "书柜",
@@ -36878,7 +36878,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL023.png",
+    "artUrl": "/assets/classic/NL/NL023.png",
     "locales": {
       "zh": {
         "name": "石头银行",
@@ -36908,7 +36908,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL024.png",
+    "artUrl": "/assets/classic/NL/NL024.png",
     "locales": {
       "zh": {
         "name": "公园长椅",
@@ -36936,7 +36936,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL025.png",
+    "artUrl": "/assets/classic/NL/NL025.png",
     "locales": {
       "zh": {
         "name": "最低薪资",
@@ -36966,7 +36966,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL026.png",
+    "artUrl": "/assets/classic/NL/NL026.png",
     "locales": {
       "zh": {
         "name": "庭院木头",
@@ -36996,7 +36996,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL027.png",
+    "artUrl": "/assets/classic/NL/NL027.png",
     "locales": {
       "zh": {
         "name": "麦捆",
@@ -37026,7 +37026,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL028.png",
+    "artUrl": "/assets/classic/NL/NL028.png",
     "locales": {
       "zh": {
         "name": "修剪柳树",
@@ -37054,7 +37054,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL029.png",
+    "artUrl": "/assets/classic/NL/NL029.png",
     "locales": {
       "zh": {
         "name": "丘陵宅院",
@@ -37085,7 +37085,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/NL030.png",
+    "artUrl": "/assets/classic/NL/NL030.png",
     "locales": {
       "zh": {
         "name": "陶制烟斗",
@@ -37116,7 +37116,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL031.png",
+    "artUrl": "/assets/classic/NL/NL031.png",
     "locales": {
       "zh": {
         "name": "蔬菜园",
@@ -37146,7 +37146,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL032.png",
+    "artUrl": "/assets/classic/NL/NL032.png",
     "locales": {
       "zh": {
         "name": "木鞋",
@@ -37177,7 +37177,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/NL033.png",
+    "artUrl": "/assets/classic/NL/NL033.png",
     "locales": {
       "zh": {
         "name": "烹鱼锅",
@@ -37207,7 +37207,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL034.png",
+    "artUrl": "/assets/classic/NL/NL034.png",
     "locales": {
       "zh": {
         "name": "金色耳环",
@@ -37237,7 +37237,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL035.png",
+    "artUrl": "/assets/classic/NL/NL035.png",
     "locales": {
       "zh": {
         "name": "木造三角墙",
@@ -37270,7 +37270,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL036.png",
+    "artUrl": "/assets/classic/NL/NL036.png",
     "locales": {
       "zh": {
         "name": "单面犁",
@@ -37298,7 +37298,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL037.png",
+    "artUrl": "/assets/classic/NL/NL037.png",
     "locales": {
       "zh": {
         "name": "罂粟花田",
@@ -37326,7 +37326,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL038.png",
+    "artUrl": "/assets/classic/NL/NL038.png",
     "locales": {
       "zh": {
         "name": "灌木丛",
@@ -37358,7 +37358,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL039.png",
+    "artUrl": "/assets/classic/NL/NL039.png",
     "locales": {
       "zh": {
         "name": "空投飞机",
@@ -37388,7 +37388,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL040.png",
+    "artUrl": "/assets/classic/NL/NL040.png",
     "locales": {
       "zh": {
         "name": "牛车",
@@ -37419,7 +37419,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL041.png",
+    "artUrl": "/assets/classic/NL/NL041.png",
     "locales": {
       "zh": {
         "name": "运河",
@@ -37451,7 +37451,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/NL042.png",
+    "artUrl": "/assets/classic/NL/NL042.png",
     "locales": {
       "zh": {
         "name": "提水井",
@@ -37480,7 +37480,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/NL043.png",
+    "artUrl": "/assets/classic/NL/NL043.png",
     "locales": {
       "zh": {
         "name": "玻璃瓶",
@@ -37510,7 +37510,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL044.png",
+    "artUrl": "/assets/classic/NL/NL044.png",
     "locales": {
       "zh": {
         "name": "煎饼锅",
@@ -37538,7 +37538,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL045.png",
+    "artUrl": "/assets/classic/NL/NL045.png",
     "locales": {
       "zh": {
         "name": "荷兰山",
@@ -37569,7 +37569,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL046.png",
+    "artUrl": "/assets/classic/NL/NL046.png",
     "locales": {
       "zh": {
         "name": "救济院",
@@ -37597,7 +37597,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL047.png",
+    "artUrl": "/assets/classic/NL/NL047.png",
     "locales": {
       "zh": {
         "name": "早熟麦",
@@ -37625,7 +37625,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL048.png",
+    "artUrl": "/assets/classic/NL/NL048.png",
     "locales": {
       "zh": {
         "name": "郁金香花田",
@@ -37656,7 +37656,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/NL049.png",
+    "artUrl": "/assets/classic/NL/NL049.png",
     "locales": {
       "zh": {
         "name": "锯木厂",
@@ -37687,7 +37687,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL050.png",
+    "artUrl": "/assets/classic/NL/NL050.png",
     "locales": {
       "zh": {
         "name": "夜巡",
@@ -37715,7 +37715,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL051.png",
+    "artUrl": "/assets/classic/NL/NL051.png",
     "locales": {
       "zh": {
         "name": "马车之旅",
@@ -37747,7 +37747,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL052.png",
+    "artUrl": "/assets/classic/NL/NL052.png",
     "locales": {
       "zh": {
         "name": "东印度公司",
@@ -37777,7 +37777,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL053.png",
+    "artUrl": "/assets/classic/NL/NL053.png",
     "locales": {
       "zh": {
         "name": "船屋",
@@ -37810,7 +37810,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL054.png",
+    "artUrl": "/assets/classic/NL/NL054.png",
     "locales": {
       "zh": {
         "name": "马拉船",
@@ -37840,7 +37840,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL055.png",
+    "artUrl": "/assets/classic/NL/NL055.png",
     "locales": {
       "zh": {
         "name": "金制头盔",
@@ -37870,7 +37870,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL056.png",
+    "artUrl": "/assets/classic/NL/NL056.png",
     "locales": {
       "zh": {
         "name": "不可能的盒子",
@@ -37902,7 +37902,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL057.png",
+    "artUrl": "/assets/classic/NL/NL057.png",
     "locales": {
       "zh": {
         "name": "欢乐屋",
@@ -37932,7 +37932,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL058.png",
+    "artUrl": "/assets/classic/NL/NL058.png",
     "locales": {
       "zh": {
         "name": "白柏树",
@@ -37963,7 +37963,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL059.png",
+    "artUrl": "/assets/classic/NL/NL059.png",
     "locales": {
       "zh": {
         "name": "豆篮",
@@ -37995,7 +37995,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/NL060.png",
+    "artUrl": "/assets/classic/NL/NL060.png",
     "locales": {
       "zh": {
         "name": "简陋木屋",
@@ -38024,7 +38024,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL061.png",
+    "artUrl": "/assets/classic/NL/NL061.png",
     "locales": {
       "zh": {
         "name": "雇主",
@@ -38053,7 +38053,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL062.png",
+    "artUrl": "/assets/classic/NL/NL062.png",
     "locales": {
       "zh": {
         "name": "商业艺术家",
@@ -38082,7 +38082,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL063.png",
+    "artUrl": "/assets/classic/NL/NL063.png",
     "locales": {
       "zh": {
         "name": "挖掘工",
@@ -38111,7 +38111,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL064.png",
+    "artUrl": "/assets/classic/NL/NL064.png",
     "locales": {
       "zh": {
         "name": "牧羊人",
@@ -38140,7 +38140,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL065.png",
+    "artUrl": "/assets/classic/NL/NL065.png",
     "locales": {
       "zh": {
         "name": "酿酒师",
@@ -38169,7 +38169,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL066.png",
+    "artUrl": "/assets/classic/NL/NL066.png",
     "locales": {
       "zh": {
         "name": "食用牡蛎者",
@@ -38198,7 +38198,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL067.png",
+    "artUrl": "/assets/classic/NL/NL067.png",
     "locales": {
       "zh": {
         "name": "学校管理员",
@@ -38227,7 +38227,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL068.png",
+    "artUrl": "/assets/classic/NL/NL068.png",
     "locales": {
       "zh": {
         "name": "自学自修者",
@@ -38256,7 +38256,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL069.png",
+    "artUrl": "/assets/classic/NL/NL069.png",
     "locales": {
       "zh": {
         "name": "水貂饲养员",
@@ -38285,7 +38285,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL070.png",
+    "artUrl": "/assets/classic/NL/NL070.png",
     "locales": {
       "zh": {
         "name": "左派自由主义者",
@@ -38314,7 +38314,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL071.png",
+    "artUrl": "/assets/classic/NL/NL071.png",
     "locales": {
       "zh": {
         "name": "女佣",
@@ -38343,7 +38343,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL072.png",
+    "artUrl": "/assets/classic/NL/NL072.png",
     "locales": {
       "zh": {
         "name": "救世军军官",
@@ -38372,7 +38372,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL073.png",
+    "artUrl": "/assets/classic/NL/NL073.png",
     "locales": {
       "zh": {
         "name": "同伴",
@@ -38401,7 +38401,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL074.png",
+    "artUrl": "/assets/classic/NL/NL074.png",
     "locales": {
       "zh": {
         "name": "农田使者",
@@ -38430,7 +38430,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL075.png",
+    "artUrl": "/assets/classic/NL/NL075.png",
     "locales": {
       "zh": {
         "name": "荷兰总督",
@@ -38459,7 +38459,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL076.png",
+    "artUrl": "/assets/classic/NL/NL076.png",
     "locales": {
       "zh": {
         "name": "奶酪运输员",
@@ -38488,7 +38488,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL077.png",
+    "artUrl": "/assets/classic/NL/NL077.png",
     "locales": {
       "zh": {
         "name": "厨房女仆",
@@ -38518,7 +38518,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/NL078.png",
+    "artUrl": "/assets/classic/NL/NL078.png",
     "locales": {
       "zh": {
         "name": "水上工人",
@@ -38547,7 +38547,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL079.png",
+    "artUrl": "/assets/classic/NL/NL079.png",
     "locales": {
       "zh": {
         "name": "农夫的女儿",
@@ -38576,7 +38576,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL080.png",
+    "artUrl": "/assets/classic/NL/NL080.png",
     "locales": {
       "zh": {
         "name": "哈勒姆女巫",
@@ -38605,7 +38605,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL081.png",
+    "artUrl": "/assets/classic/NL/NL081.png",
     "locales": {
       "zh": {
         "name": "自由斗士",
@@ -38634,7 +38634,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL082.png",
+    "artUrl": "/assets/classic/NL/NL082.png",
     "locales": {
       "zh": {
         "name": "骑士",
@@ -38663,7 +38663,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL083.png",
+    "artUrl": "/assets/classic/NL/NL083.png",
     "locales": {
       "zh": {
         "name": "造篮者之子",
@@ -38692,7 +38692,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL084.png",
+    "artUrl": "/assets/classic/NL/NL084.png",
     "locales": {
       "zh": {
         "name": "大议长",
@@ -38721,7 +38721,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL085.png",
+    "artUrl": "/assets/classic/NL/NL085.png",
     "locales": {
       "zh": {
         "name": "测量官",
@@ -38750,7 +38750,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL086.png",
+    "artUrl": "/assets/classic/NL/NL086.png",
     "locales": {
       "zh": {
         "name": "投资商",
@@ -38779,7 +38779,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL087.png",
+    "artUrl": "/assets/classic/NL/NL087.png",
     "locales": {
       "zh": {
         "name": "远方的公主",
@@ -38808,7 +38808,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL088.png",
+    "artUrl": "/assets/classic/NL/NL088.png",
     "locales": {
       "zh": {
         "name": "裁缝",
@@ -38837,7 +38837,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL089.png",
+    "artUrl": "/assets/classic/NL/NL089.png",
     "locales": {
       "zh": {
         "name": "将军",
@@ -38866,7 +38866,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL090.png",
+    "artUrl": "/assets/classic/NL/NL090.png",
     "locales": {
       "zh": {
         "name": "称珍珠的女人",
@@ -38895,7 +38895,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL091.png",
+    "artUrl": "/assets/classic/NL/NL091.png",
     "locales": {
       "zh": {
         "name": "丑角艺术家",
@@ -38924,7 +38924,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL092.png",
+    "artUrl": "/assets/classic/NL/NL092.png",
     "locales": {
       "zh": {
         "name": "田径女冠军",
@@ -38953,7 +38953,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL093.png",
+    "artUrl": "/assets/classic/NL/NL093.png",
     "locales": {
       "zh": {
         "name": "律师",
@@ -38982,7 +38982,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL094.png",
+    "artUrl": "/assets/classic/NL/NL094.png",
     "locales": {
       "zh": {
         "name": "游戏的人",
@@ -39011,7 +39011,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL095.png",
+    "artUrl": "/assets/classic/NL/NL095.png",
     "locales": {
       "zh": {
         "name": "田间苦工",
@@ -39040,7 +39040,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL096.png",
+    "artUrl": "/assets/classic/NL/NL096.png",
     "locales": {
       "zh": {
         "name": "洗衣妇",
@@ -39069,7 +39069,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL097.png",
+    "artUrl": "/assets/classic/NL/NL097.png",
     "locales": {
       "zh": {
         "name": "奶酪销售员",
@@ -39098,7 +39098,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL098.png",
+    "artUrl": "/assets/classic/NL/NL098.png",
     "locales": {
       "zh": {
         "name": "速滑冠军",
@@ -39127,7 +39127,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL099.png",
+    "artUrl": "/assets/classic/NL/NL099.png",
     "locales": {
       "zh": {
         "name": "多产作家",
@@ -39156,7 +39156,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL100.png",
+    "artUrl": "/assets/classic/NL/NL100.png",
     "locales": {
       "zh": {
         "name": "眼镜制造商",
@@ -39185,7 +39185,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL101.png",
+    "artUrl": "/assets/classic/NL/NL101.png",
     "locales": {
       "zh": {
         "name": "发现者",
@@ -39214,7 +39214,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL102.png",
+    "artUrl": "/assets/classic/NL/NL102.png",
     "locales": {
       "zh": {
         "name": "王储",
@@ -39243,7 +39243,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL103.png",
+    "artUrl": "/assets/classic/NL/NL103.png",
     "locales": {
       "zh": {
         "name": "特工舞者",
@@ -39272,7 +39272,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL104.png",
+    "artUrl": "/assets/classic/NL/NL104.png",
     "locales": {
       "zh": {
         "name": "小麦收割工",
@@ -39301,7 +39301,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL105.png",
+    "artUrl": "/assets/classic/NL/NL105.png",
     "locales": {
       "zh": {
         "name": "砍树工",
@@ -39330,7 +39330,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL106.png",
+    "artUrl": "/assets/classic/NL/NL106.png",
     "locales": {
       "zh": {
         "name": "爱情使者",
@@ -39359,7 +39359,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL107.png",
+    "artUrl": "/assets/classic/NL/NL107.png",
     "locales": {
       "zh": {
         "name": "媒婆",
@@ -39388,7 +39388,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL108.png",
+    "artUrl": "/assets/classic/NL/NL108.png",
     "locales": {
       "zh": {
         "name": "理性主义者",
@@ -39418,7 +39418,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/NL109.png",
+    "artUrl": "/assets/classic/NL/NL109.png",
     "locales": {
       "zh": {
         "name": "打谷者",
@@ -39447,7 +39447,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL110.png",
+    "artUrl": "/assets/classic/NL/NL110.png",
     "locales": {
       "zh": {
         "name": "树枝收集者",
@@ -39476,7 +39476,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL111.png",
+    "artUrl": "/assets/classic/NL/NL111.png",
     "locales": {
       "zh": {
         "name": "耕种帮手",
@@ -39505,7 +39505,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL112.png",
+    "artUrl": "/assets/classic/NL/NL112.png",
     "locales": {
       "zh": {
         "name": "割麦工",
@@ -39534,7 +39534,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL113.png",
+    "artUrl": "/assets/classic/NL/NL113.png",
     "locales": {
       "zh": {
         "name": "女权者",
@@ -39564,7 +39564,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/NL114.png",
+    "artUrl": "/assets/classic/NL/NL114.png",
     "locales": {
       "zh": {
         "name": "运河船夫",
@@ -39593,7 +39593,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL115.png",
+    "artUrl": "/assets/classic/NL/NL115.png",
     "locales": {
       "zh": {
         "name": "黏土烘焙师",
@@ -39622,7 +39622,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL116.png",
+    "artUrl": "/assets/classic/NL/NL116.png",
     "locales": {
       "zh": {
         "name": "吃土豆的人",
@@ -39652,7 +39652,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/NL117.png",
+    "artUrl": "/assets/classic/NL/NL117.png",
     "locales": {
       "zh": {
         "name": "冬季看守",
@@ -39682,7 +39682,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": false,
     "extraVp": false,
-    "artUrl": "/card-art/classic/NL118.png",
+    "artUrl": "/assets/classic/NL/NL118.png",
     "locales": {
       "zh": {
         "name": "土豆收割工",
@@ -39711,7 +39711,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL119.png",
+    "artUrl": "/assets/classic/NL/NL119.png",
     "locales": {
       "zh": {
         "name": "收集者",
@@ -39740,7 +39740,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/NL120.png",
+    "artUrl": "/assets/classic/NL/NL120.png",
     "locales": {
       "zh": {
         "name": "唱诗班男孩",
@@ -39769,7 +39769,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/O01.png",
+    "artUrl": "/assets/classic/O/O01.png",
     "locales": {
       "zh": {
         "name": "金主",
@@ -39798,7 +39798,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/O02.png",
+    "artUrl": "/assets/classic/O/O02.png",
     "locales": {
       "zh": {
         "name": "行为艺术家",
@@ -39827,7 +39827,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/O03.png",
+    "artUrl": "/assets/classic/O/O03.png",
     "locales": {
       "zh": {
         "name": "心理医生",
@@ -39856,7 +39856,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/O04.png",
+    "artUrl": "/assets/classic/O/O04.png",
     "locales": {
       "zh": {
         "name": "滑雪教练",
@@ -39885,7 +39885,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/O05.png",
+    "artUrl": "/assets/classic/O/O05.png",
     "locales": {
       "zh": {
         "name": "迷人的流浪汉",
@@ -39914,7 +39914,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/O06.png",
+    "artUrl": "/assets/classic/O/O06.png",
     "locales": {
       "zh": {
         "name": "意见领袖",
@@ -39944,7 +39944,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/O07.png",
+    "artUrl": "/assets/classic/O/O07.png",
     "locales": {
       "zh": {
         "name": "建筑大亨",
@@ -39973,7 +39973,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/O08.png",
+    "artUrl": "/assets/classic/O/O08.png",
     "locales": {
       "zh": {
         "name": "环保主义者",
@@ -40002,7 +40002,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/O09.png",
+    "artUrl": "/assets/classic/O/O09.png",
     "locales": {
       "zh": {
         "name": "家庭合唱团",
@@ -40031,7 +40031,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/O10.png",
+    "artUrl": "/assets/classic/O/O10.png",
     "locales": {
       "zh": {
         "name": "交际舞者",
@@ -40060,7 +40060,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/O11.png",
+    "artUrl": "/assets/classic/O/O11.png",
     "locales": {
       "zh": {
         "name": "权贵",
@@ -40089,7 +40089,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/O12.png",
+    "artUrl": "/assets/classic/O/O12.png",
     "locales": {
       "zh": {
         "name": "钢琴神童",
@@ -40119,7 +40119,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/O13.png",
+    "artUrl": "/assets/classic/O/O13.png",
     "locales": {
       "zh": {
         "name": "咖啡屋",
@@ -40153,7 +40153,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/O14.png",
+    "artUrl": "/assets/classic/O/O14.png",
     "locales": {
       "zh": {
         "name": "狂欢节",
@@ -40184,7 +40184,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/O15.png",
+    "artUrl": "/assets/classic/O/O15.png",
     "locales": {
       "zh": {
         "name": "乡村舞会",
@@ -40215,7 +40215,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/O16.png",
+    "artUrl": "/assets/classic/O/O16.png",
     "locales": {
       "zh": {
         "name": "中立主义",
@@ -40245,7 +40245,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/O17.png",
+    "artUrl": "/assets/classic/O/O17.png",
     "locales": {
       "zh": {
         "name": "间×1",
@@ -40278,7 +40278,7 @@ const batch17: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/O18.png",
+    "artUrl": "/assets/classic/O/O18.png",
     "locales": {
       "zh": {
         "name": "肉槌",
@@ -40311,7 +40311,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/O19.png",
+    "artUrl": "/assets/classic/O/O19.png",
     "locales": {
       "zh": {
         "name": "义务教育",
@@ -40342,7 +40342,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/O20.png",
+    "artUrl": "/assets/classic/O/O20.png",
     "locales": {
       "zh": {
         "name": "临时住宅",
@@ -40375,7 +40375,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/O21.png",
+    "artUrl": "/assets/classic/O/O21.png",
     "locales": {
       "zh": {
         "name": "葡萄园",
@@ -40405,7 +40405,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/O22.png",
+    "artUrl": "/assets/classic/O/O22.png",
     "locales": {
       "zh": {
         "name": "特色建筑",
@@ -40436,7 +40436,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/O23.png",
+    "artUrl": "/assets/classic/O/O23.png",
     "locales": {
       "zh": {
         "name": "皮短裤",
@@ -40467,7 +40467,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/O24.png",
+    "artUrl": "/assets/classic/O/O24.png",
     "locales": {
       "zh": {
         "name": "老橡树",
@@ -40496,7 +40496,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/PI01.png",
+    "artUrl": "/assets/classic/PI/PI01.png",
     "locales": {
       "zh": {
         "name": "Museum Caretaker",
@@ -40525,7 +40525,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/PI02.png",
+    "artUrl": "/assets/classic/PI/PI02.png",
     "locales": {
       "zh": {
         "name": "Altruist",
@@ -40554,7 +40554,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/PI03.png",
+    "artUrl": "/assets/classic/PI/PI03.png",
     "locales": {
       "zh": {
         "name": "Acquirer",
@@ -40583,7 +40583,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/PI04.png",
+    "artUrl": "/assets/classic/PI/PI04.png",
     "locales": {
       "zh": {
         "name": "Wolf",
@@ -40612,7 +40612,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/PI05.png",
+    "artUrl": "/assets/classic/PI/PI05.png",
     "locales": {
       "zh": {
         "name": "Spice Trader",
@@ -40641,7 +40641,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/PI06.png",
+    "artUrl": "/assets/classic/PI/PI06.png",
     "locales": {
       "zh": {
         "name": "Pioneer",
@@ -40670,7 +40670,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/PI07.png",
+    "artUrl": "/assets/classic/PI/PI07.png",
     "locales": {
       "zh": {
         "name": "Marriage Counselor",
@@ -40699,7 +40699,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/PI08.png",
+    "artUrl": "/assets/classic/PI/PI08.png",
     "locales": {
       "zh": {
         "name": "Land Surveyor",
@@ -40728,7 +40728,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/PI09.png",
+    "artUrl": "/assets/classic/PI/PI09.png",
     "locales": {
       "zh": {
         "name": "Blackberry Farmer",
@@ -40757,7 +40757,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/PI10.png",
+    "artUrl": "/assets/classic/PI/PI10.png",
     "locales": {
       "zh": {
         "name": "Professor",
@@ -40786,7 +40786,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/PI11.png",
+    "artUrl": "/assets/classic/PI/PI11.png",
     "locales": {
       "zh": {
         "name": "Sunrise Herder",
@@ -40815,7 +40815,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/PI12.png",
+    "artUrl": "/assets/classic/PI/PI12.png",
     "locales": {
       "zh": {
         "name": "Recluse",
@@ -40843,7 +40843,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/PI13.png",
+    "artUrl": "/assets/classic/PI/PI13.png",
     "locales": {
       "zh": {
         "name": "愤怒鸭",
@@ -40873,7 +40873,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/PI14.png",
+    "artUrl": "/assets/classic/PI/PI14.png",
     "locales": {
       "zh": {
         "name": "生育神殿",
@@ -40901,7 +40901,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/PI15.png",
+    "artUrl": "/assets/classic/PI/PI15.png",
     "locales": {
       "zh": {
         "name": "Animal Bedding",
@@ -40932,7 +40932,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/PI16.png",
+    "artUrl": "/assets/classic/PI/PI16.png",
     "locales": {
       "zh": {
         "name": "园丁茅屋",
@@ -40962,7 +40962,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/PI17.png",
+    "artUrl": "/assets/classic/PI/PI17.png",
     "locales": {
       "zh": {
         "name": "Wood Saw",
@@ -40990,7 +40990,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/PI18.png",
+    "artUrl": "/assets/classic/PI/PI18.png",
     "locales": {
       "zh": {
         "name": "Landscape Design",
@@ -41018,7 +41018,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/PI19.png",
+    "artUrl": "/assets/classic/PI/PI19.png",
     "locales": {
       "zh": {
         "name": "Briar Hedge",
@@ -41051,7 +41051,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/PI20.png",
+    "artUrl": "/assets/classic/PI/PI20.png",
     "locales": {
       "zh": {
         "name": "Skimmer Plow",
@@ -41082,7 +41082,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/PI21.png",
+    "artUrl": "/assets/classic/PI/PI21.png",
     "locales": {
       "zh": {
         "name": "干草叉",
@@ -41113,7 +41113,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/PI22.png",
+    "artUrl": "/assets/classic/PI/PI22.png",
     "locales": {
       "zh": {
         "name": "退休",
@@ -41143,7 +41143,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/PI23.png",
+    "artUrl": "/assets/classic/PI/PI23.png",
     "locales": {
       "zh": {
         "name": "Iron Hoe",
@@ -41173,7 +41173,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/PI24.png",
+    "artUrl": "/assets/classic/PI/PI24.png",
     "locales": {
       "zh": {
         "name": "Sheep Rug",
@@ -41202,7 +41202,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/PI26.png",
+    "artUrl": "/assets/classic/PI/PI26.png",
     "locales": {
       "zh": {
         "name": "Natural Philosopher",
@@ -41235,7 +41235,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA001.png",
+    "artUrl": "/assets/classic/WA/WA001.png",
     "locales": {
       "zh": {
         "name": "离合器",
@@ -41263,7 +41263,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA002.png",
+    "artUrl": "/assets/classic/WA/WA002.png",
     "locales": {
       "zh": {
         "name": "密林",
@@ -41291,7 +41291,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA003.png",
+    "artUrl": "/assets/classic/WA/WA003.png",
     "locales": {
       "zh": {
         "name": "乞援信",
@@ -41322,7 +41322,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "vp": 0,
     "passing": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/WA004.png",
+    "artUrl": "/assets/classic/WA/WA004.png",
     "locales": {
       "zh": {
         "name": "啤酒桌",
@@ -41352,7 +41352,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA005.png",
+    "artUrl": "/assets/classic/WA/WA005.png",
     "locales": {
       "zh": {
         "name": "啤酒博物馆",
@@ -41382,7 +41382,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA006.png",
+    "artUrl": "/assets/classic/WA/WA006.png",
     "locales": {
       "zh": {
         "name": "啤酒店",
@@ -41413,7 +41413,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA007.png",
+    "artUrl": "/assets/classic/WA/WA007.png",
     "locales": {
       "zh": {
         "name": "漫画店",
@@ -41443,7 +41443,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA008.png",
+    "artUrl": "/assets/classic/WA/WA008.png",
     "locales": {
       "zh": {
         "name": "蒸汽机",
@@ -41473,7 +41473,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA009.png",
+    "artUrl": "/assets/classic/WA/WA009.png",
     "locales": {
       "zh": {
         "name": "渔网",
@@ -41504,7 +41504,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA010.png",
+    "artUrl": "/assets/classic/WA/WA010.png",
     "locales": {
       "zh": {
         "name": "弗兰基桩",
@@ -41534,7 +41534,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA011.png",
+    "artUrl": "/assets/classic/WA/WA011.png",
     "locales": {
       "zh": {
         "name": "和平岛",
@@ -41564,7 +41564,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA012.png",
+    "artUrl": "/assets/classic/WA/WA012.png",
     "locales": {
       "zh": {
         "name": "铸铁烤炉",
@@ -41592,7 +41592,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA013.png",
+    "artUrl": "/assets/classic/WA/WA013.png",
     "locales": {
       "zh": {
         "name": "理想景观",
@@ -41622,7 +41622,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA014.png",
+    "artUrl": "/assets/classic/WA/WA014.png",
     "locales": {
       "zh": {
         "name": "猫舌饼干",
@@ -41653,7 +41653,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA015.png",
+    "artUrl": "/assets/classic/WA/WA015.png",
     "locales": {
       "zh": {
         "name": "无人之子",
@@ -41681,7 +41681,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA016.png",
+    "artUrl": "/assets/classic/WA/WA016.png",
     "locales": {
       "zh": {
         "name": "无土豆",
@@ -41711,7 +41711,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA017.png",
+    "artUrl": "/assets/classic/WA/WA017.png",
     "locales": {
       "zh": {
         "name": "智谋",
@@ -41741,7 +41741,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA018.png",
+    "artUrl": "/assets/classic/WA/WA018.png",
     "locales": {
       "zh": {
         "name": "修道院废墟",
@@ -41772,7 +41772,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/WA019.png",
+    "artUrl": "/assets/classic/WA/WA019.png",
     "locales": {
       "zh": {
         "name": "绵羊井",
@@ -41802,7 +41802,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA020.png",
+    "artUrl": "/assets/classic/WA/WA020.png",
     "locales": {
       "zh": {
         "name": "人工水井",
@@ -41833,7 +41833,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA021.png",
+    "artUrl": "/assets/classic/WA/WA021.png",
     "locales": {
       "zh": {
         "name": "泥磨机",
@@ -41864,7 +41864,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA022.png",
+    "artUrl": "/assets/classic/WA/WA022.png",
     "locales": {
       "zh": {
         "name": "神奇果酱",
@@ -41892,7 +41892,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA023.png",
+    "artUrl": "/assets/classic/WA/WA023.png",
     "locales": {
       "zh": {
         "name": "朝圣之地",
@@ -41924,7 +41924,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "gameEdition": "classic",
     "passing": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/WA024.png",
+    "artUrl": "/assets/classic/WA/WA024.png",
     "locales": {
       "zh": {
         "name": "壁炉台",
@@ -41954,7 +41954,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA025.png",
+    "artUrl": "/assets/classic/WA/WA025.png",
     "locales": {
       "zh": {
         "name": "萨克斯风",
@@ -41984,7 +41984,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA026.png",
+    "artUrl": "/assets/classic/WA/WA026.png",
     "locales": {
       "zh": {
         "name": "悬浮的石头",
@@ -42017,7 +42017,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA027.png",
+    "artUrl": "/assets/classic/WA/WA027.png",
     "locales": {
       "zh": {
         "name": "第六感学院",
@@ -42045,7 +42045,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA028.png",
+    "artUrl": "/assets/classic/WA/WA028.png",
     "locales": {
       "zh": {
         "name": "鹅肝",
@@ -42078,7 +42078,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA029.png",
+    "artUrl": "/assets/classic/WA/WA029.png",
     "locales": {
       "zh": {
         "name": "拱门",
@@ -42108,7 +42108,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA030.png",
+    "artUrl": "/assets/classic/WA/WA030.png",
     "locales": {
       "zh": {
         "name": "河运港口",
@@ -42137,7 +42137,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA031.png",
+    "artUrl": "/assets/classic/WA/WA031.png",
     "locales": {
       "zh": {
         "name": "水井巡查员",
@@ -42166,7 +42166,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA032.png",
+    "artUrl": "/assets/classic/WA/WA032.png",
     "locales": {
       "zh": {
         "name": "茅屋旅人",
@@ -42195,7 +42195,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA033.png",
+    "artUrl": "/assets/classic/WA/WA033.png",
     "locales": {
       "zh": {
         "name": "码头工人",
@@ -42224,7 +42224,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA034.png",
+    "artUrl": "/assets/classic/WA/WA034.png",
     "locales": {
       "zh": {
         "name": "基情兄弟",
@@ -42253,7 +42253,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA035.png",
+    "artUrl": "/assets/classic/WA/WA035.png",
     "locales": {
       "zh": {
         "name": "壁画画家",
@@ -42282,7 +42282,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA036.png",
+    "artUrl": "/assets/classic/WA/WA036.png",
     "locales": {
       "zh": {
         "name": "助产士",
@@ -42311,7 +42311,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA037.png",
+    "artUrl": "/assets/classic/WA/WA037.png",
     "locales": {
       "zh": {
         "name": "开国元勋",
@@ -42340,7 +42340,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA038.png",
+    "artUrl": "/assets/classic/WA/WA038.png",
     "locales": {
       "zh": {
         "name": "针线活教师",
@@ -42369,7 +42369,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA039.png",
+    "artUrl": "/assets/classic/WA/WA039.png",
     "locales": {
       "zh": {
         "name": "军事首领",
@@ -42398,7 +42398,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA040.png",
+    "artUrl": "/assets/classic/WA/WA040.png",
     "locales": {
       "zh": {
         "name": "小户农家",
@@ -42427,7 +42427,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA041.png",
+    "artUrl": "/assets/classic/WA/WA041.png",
     "locales": {
       "zh": {
         "name": "业余数学家",
@@ -42456,7 +42456,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA042.png",
+    "artUrl": "/assets/classic/WA/WA042.png",
     "locales": {
       "zh": {
         "name": "风景画家",
@@ -42486,7 +42486,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": false,
     "extraVp": false,
-    "artUrl": "/card-art/classic/WA043.png",
+    "artUrl": "/assets/classic/WA/WA043.png",
     "locales": {
       "zh": {
         "name": "搬运工",
@@ -42516,7 +42516,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/WA044.png",
+    "artUrl": "/assets/classic/WA/WA044.png",
     "locales": {
       "zh": {
         "name": "琵琶演奏家",
@@ -42545,7 +42545,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA045.png",
+    "artUrl": "/assets/classic/WA/WA045.png",
     "locales": {
       "zh": {
         "name": "唱作人",
@@ -42574,7 +42574,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA046.png",
+    "artUrl": "/assets/classic/WA/WA046.png",
     "locales": {
       "zh": {
         "name": "大侦探波罗",
@@ -42610,7 +42610,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/WA047.png",
+    "artUrl": "/assets/classic/WA/WA047.png",
     "locales": {
       "zh": {
         "name": "模型制造商",
@@ -42639,7 +42639,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA048.png",
+    "artUrl": "/assets/classic/WA/WA048.png",
     "locales": {
       "zh": {
         "name": "宗教创始人",
@@ -42668,7 +42668,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA049.png",
+    "artUrl": "/assets/classic/WA/WA049.png",
     "locales": {
       "zh": {
         "name": "看护人",
@@ -42697,7 +42697,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA050.png",
+    "artUrl": "/assets/classic/WA/WA050.png",
     "locales": {
       "zh": {
         "name": "神父",
@@ -42726,7 +42726,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA051.png",
+    "artUrl": "/assets/classic/WA/WA051.png",
     "locales": {
       "zh": {
         "name": "旅行社代理人",
@@ -42755,7 +42755,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA052.png",
+    "artUrl": "/assets/classic/WA/WA052.png",
     "locales": {
       "zh": {
         "name": "撒谷工",
@@ -42784,7 +42784,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA053.png",
+    "artUrl": "/assets/classic/WA/WA053.png",
     "locales": {
       "zh": {
         "name": "苏打水生产商",
@@ -42813,7 +42813,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA054.png",
+    "artUrl": "/assets/classic/WA/WA054.png",
     "locales": {
       "zh": {
         "name": "货物诈骗犯",
@@ -42842,7 +42842,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA055.png",
+    "artUrl": "/assets/classic/WA/WA055.png",
     "locales": {
       "zh": {
         "name": "街头歌手",
@@ -42871,7 +42871,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA056.png",
+    "artUrl": "/assets/classic/WA/WA056.png",
     "locales": {
       "zh": {
         "name": "超现实主义者",
@@ -42900,7 +42900,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA057.png",
+    "artUrl": "/assets/classic/WA/WA057.png",
     "locales": {
       "zh": {
         "name": "多面手",
@@ -42929,7 +42929,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA058.png",
+    "artUrl": "/assets/classic/WA/WA058.png",
     "locales": {
       "zh": {
         "name": "宇宙大爆炸理论家",
@@ -42958,7 +42958,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA059.png",
+    "artUrl": "/assets/classic/WA/WA059.png",
     "locales": {
       "zh": {
         "name": "德国选择党",
@@ -42987,7 +42987,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WA060.png",
+    "artUrl": "/assets/classic/WA/WA060.png",
     "locales": {
       "zh": {
         "name": "二胎母亲",
@@ -43016,7 +43016,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM001.png",
+    "artUrl": "/assets/classic/WM/WM001.png",
     "locales": {
       "zh": {
         "name": "女战士",
@@ -43045,7 +43045,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM002.png",
+    "artUrl": "/assets/classic/WM/WM002.png",
     "locales": {
       "zh": {
         "name": "动物商人",
@@ -43074,7 +43074,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM003.png",
+    "artUrl": "/assets/classic/WM/WM003.png",
     "locales": {
       "zh": {
         "name": "苹果小贩",
@@ -43103,7 +43103,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM004.png",
+    "artUrl": "/assets/classic/WM/WM004.png",
     "locales": {
       "zh": {
         "name": "业余面包师",
@@ -43132,7 +43132,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM005.png",
+    "artUrl": "/assets/classic/WM/WM005.png",
     "locales": {
       "zh": {
         "name": "养蜂人",
@@ -43161,7 +43161,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM006.png",
+    "artUrl": "/assets/classic/WM/WM006.png",
     "locales": {
       "zh": {
         "name": "借贷者",
@@ -43190,7 +43190,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM007.png",
+    "artUrl": "/assets/classic/WM/WM007.png",
     "locales": {
       "zh": {
         "name": "拾木者",
@@ -43219,7 +43219,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM008.png",
+    "artUrl": "/assets/classic/WM/WM008.png",
     "locales": {
       "zh": {
         "name": "面包运输工",
@@ -43248,7 +43248,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM009.png",
+    "artUrl": "/assets/classic/WM/WM009.png",
     "locales": {
       "zh": {
         "name": "化学家",
@@ -43279,7 +43279,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM010.png",
+    "artUrl": "/assets/classic/WM/WM010.png",
     "locales": {
       "zh": {
         "name": "修道院士",
@@ -43308,7 +43308,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM011.png",
+    "artUrl": "/assets/classic/WM/WM011.png",
     "locales": {
       "zh": {
         "name": "包工头",
@@ -43337,7 +43337,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM012.png",
+    "artUrl": "/assets/classic/WM/WM012.png",
     "locales": {
       "zh": {
         "name": "贪婪的农夫",
@@ -43366,7 +43366,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM013.png",
+    "artUrl": "/assets/classic/WM/WM013.png",
     "locales": {
       "zh": {
         "name": "西部牛仔",
@@ -43395,7 +43395,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM014.png",
+    "artUrl": "/assets/classic/WM/WM014.png",
     "locales": {
       "zh": {
         "name": "轮耕农",
@@ -43424,7 +43424,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM015.png",
+    "artUrl": "/assets/classic/WM/WM015.png",
     "locales": {
       "zh": {
         "name": "废品收购商",
@@ -43453,7 +43453,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM016.png",
+    "artUrl": "/assets/classic/WM/WM016.png",
     "locales": {
       "zh": {
         "name": "外交官",
@@ -43482,7 +43482,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM017.png",
+    "artUrl": "/assets/classic/WM/WM017.png",
     "locales": {
       "zh": {
         "name": "工程师",
@@ -43511,7 +43511,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM018.png",
+    "artUrl": "/assets/classic/WM/WM018.png",
     "locales": {
       "zh": {
         "name": "顶级建筑师",
@@ -43540,7 +43540,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM019.png",
+    "artUrl": "/assets/classic/WM/WM019.png",
     "locales": {
       "zh": {
         "name": "家庭计划者",
@@ -43569,7 +43569,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM020.png",
+    "artUrl": "/assets/classic/WM/WM020.png",
     "locales": {
       "zh": {
         "name": "农校毕业生",
@@ -43598,7 +43598,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM021.png",
+    "artUrl": "/assets/classic/WM/WM021.png",
     "locales": {
       "zh": {
         "name": "栅栏商",
@@ -43627,7 +43627,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM022.png",
+    "artUrl": "/assets/classic/WM/WM022.png",
     "locales": {
       "zh": {
         "name": "业余吃货",
@@ -43656,7 +43656,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM023.png",
+    "artUrl": "/assets/classic/WM/WM023.png",
     "locales": {
       "zh": {
         "name": "森林农夫",
@@ -43685,7 +43685,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM024.png",
+    "artUrl": "/assets/classic/WM/WM024.png",
     "locales": {
       "zh": {
         "name": "宝石猎人",
@@ -43714,7 +43714,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM025.png",
+    "artUrl": "/assets/classic/WM/WM025.png",
     "locales": {
       "zh": {
         "name": "教父",
@@ -43743,7 +43743,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM026.png",
+    "artUrl": "/assets/classic/WM/WM026.png",
     "locales": {
       "zh": {
         "name": "篱笆大师",
@@ -43772,7 +43772,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM027.png",
+    "artUrl": "/assets/classic/WM/WM027.png",
     "locales": {
       "zh": {
         "name": "房屋继承人",
@@ -43801,7 +43801,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM028.png",
+    "artUrl": "/assets/classic/WM/WM028.png",
     "locales": {
       "zh": {
         "name": "放牧人",
@@ -43830,7 +43830,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM029.png",
+    "artUrl": "/assets/classic/WM/WM029.png",
     "locales": {
       "zh": {
         "name": "丘陵农夫",
@@ -43859,7 +43859,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM030.png",
+    "artUrl": "/assets/classic/WM/WM030.png",
     "locales": {
       "zh": {
         "name": "囤货商",
@@ -43888,7 +43888,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM031.png",
+    "artUrl": "/assets/classic/WM/WM031.png",
     "locales": {
       "zh": {
         "name": "害羞的农孩",
@@ -43917,7 +43917,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM032.png",
+    "artUrl": "/assets/classic/WM/WM032.png",
     "locales": {
       "zh": {
         "name": "猎人",
@@ -43946,7 +43946,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM033.png",
+    "artUrl": "/assets/classic/WM/WM033.png",
     "locales": {
       "zh": {
         "name": "侍女",
@@ -43975,7 +43975,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM034.png",
+    "artUrl": "/assets/classic/WM/WM034.png",
     "locales": {
       "zh": {
         "name": "养殖专业户",
@@ -44004,7 +44004,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM035.png",
+    "artUrl": "/assets/classic/WM/WM035.png",
     "locales": {
       "zh": {
         "name": "邮差",
@@ -44033,7 +44033,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM036.png",
+    "artUrl": "/assets/classic/WM/WM036.png",
     "locales": {
       "zh": {
         "name": "星级大厨",
@@ -44062,7 +44062,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM037.png",
+    "artUrl": "/assets/classic/WM/WM037.png",
     "locales": {
       "zh": {
         "name": "马厩大师",
@@ -44091,7 +44091,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM038.png",
+    "artUrl": "/assets/classic/WM/WM038.png",
     "locales": {
       "zh": {
         "name": "极简主义者",
@@ -44120,7 +44120,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM039.png",
+    "artUrl": "/assets/classic/WM/WM039.png",
     "locales": {
       "zh": {
         "name": "典当商",
@@ -44149,7 +44149,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM040.png",
+    "artUrl": "/assets/classic/WM/WM040.png",
     "locales": {
       "zh": {
         "name": "垦荒者",
@@ -44178,7 +44178,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM041.png",
+    "artUrl": "/assets/classic/WM/WM041.png",
     "locales": {
       "zh": {
         "name": "政客",
@@ -44207,7 +44207,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM042.png",
+    "artUrl": "/assets/classic/WM/WM042.png",
     "locales": {
       "zh": {
         "name": "改建师",
@@ -44236,7 +44236,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM043.png",
+    "artUrl": "/assets/classic/WM/WM043.png",
     "locales": {
       "zh": {
         "name": "资源放贷者",
@@ -44265,7 +44265,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM044.png",
+    "artUrl": "/assets/classic/WM/WM044.png",
     "locales": {
       "zh": {
         "name": "筒仓女孩",
@@ -44294,7 +44294,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM045.png",
+    "artUrl": "/assets/classic/WM/WM045.png",
     "locales": {
       "zh": {
         "name": "马厩运输工",
@@ -44323,7 +44323,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM046.png",
+    "artUrl": "/assets/classic/WM/WM046.png",
     "locales": {
       "zh": {
         "name": "石头馆长",
@@ -44352,7 +44352,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM047.png",
+    "artUrl": "/assets/classic/WM/WM047.png",
     "locales": {
       "zh": {
         "name": "仓库看守员",
@@ -44381,7 +44381,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM048.png",
+    "artUrl": "/assets/classic/WM/WM048.png",
     "locales": {
       "zh": {
         "name": "周末工人",
@@ -44410,7 +44410,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM049.png",
+    "artUrl": "/assets/classic/WM/WM049.png",
     "locales": {
       "zh": {
         "name": "日出爱慕者",
@@ -44439,7 +44439,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM050.png",
+    "artUrl": "/assets/classic/WM/WM050.png",
     "locales": {
       "zh": {
         "name": "挂毯编织工",
@@ -44468,7 +44468,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM051.png",
+    "artUrl": "/assets/classic/WM/WM051.png",
     "locales": {
       "zh": {
         "name": "客栈老板",
@@ -44497,7 +44497,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM052.png",
+    "artUrl": "/assets/classic/WM/WM052.png",
     "locales": {
       "zh": {
         "name": "砖瓦制造工",
@@ -44526,7 +44526,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM053.png",
+    "artUrl": "/assets/classic/WM/WM053.png",
     "locales": {
       "zh": {
         "name": "乡巴佬",
@@ -44555,7 +44555,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM054.png",
+    "artUrl": "/assets/classic/WM/WM054.png",
     "locales": {
       "zh": {
         "name": "推车搬运工",
@@ -44584,7 +44584,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM055.png",
+    "artUrl": "/assets/classic/WM/WM055.png",
     "locales": {
       "zh": {
         "name": "木材工人",
@@ -44614,7 +44614,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM056.png",
+    "artUrl": "/assets/classic/WM/WM056.png",
     "locales": {
       "zh": {
         "name": "救济院",
@@ -44644,7 +44644,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM057.png",
+    "artUrl": "/assets/classic/WM/WM057.png",
     "locales": {
       "zh": {
         "name": "动物哺育室",
@@ -44674,7 +44674,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM058.png",
+    "artUrl": "/assets/classic/WM/WM058.png",
     "locales": {
       "zh": {
         "name": "苹果树",
@@ -44704,7 +44704,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM059.png",
+    "artUrl": "/assets/classic/WM/WM059.png",
     "locales": {
       "zh": {
         "name": "实习签约",
@@ -44732,7 +44732,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM060.png",
+    "artUrl": "/assets/classic/WM/WM060.png",
     "locales": {
       "zh": {
         "name": "阁楼",
@@ -44762,7 +44762,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM061.png",
+    "artUrl": "/assets/classic/WM/WM061.png",
     "locales": {
       "zh": {
         "name": "后门",
@@ -44790,7 +44790,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM062.png",
+    "artUrl": "/assets/classic/WM/WM062.png",
     "locales": {
       "zh": {
         "name": "后院水井",
@@ -44820,7 +44820,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM063.png",
+    "artUrl": "/assets/classic/WM/WM063.png",
     "locales": {
       "zh": {
         "name": "鸟笼",
@@ -44849,7 +44849,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM064.png",
+    "artUrl": "/assets/classic/WM/WM064.png",
     "locales": {
       "zh": {
         "name": "篝火",
@@ -44879,7 +44879,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM065.png",
+    "artUrl": "/assets/classic/WM/WM065.png",
     "locales": {
       "zh": {
         "name": "界碑",
@@ -44910,7 +44910,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM066.png",
+    "artUrl": "/assets/classic/WM/WM066.png",
     "locales": {
       "zh": {
         "name": "火盆",
@@ -44941,7 +44941,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM067.png",
+    "artUrl": "/assets/classic/WM/WM067.png",
     "locales": {
       "zh": {
         "name": "地下宝藏",
@@ -44972,7 +44972,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM068.png",
+    "artUrl": "/assets/classic/WM/WM068.png",
     "locales": {
       "zh": {
         "name": "经济作物",
@@ -45000,7 +45000,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM069.png",
+    "artUrl": "/assets/classic/WM/WM069.png",
     "locales": {
       "zh": {
         "name": "备用计划",
@@ -45028,7 +45028,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM070.png",
+    "artUrl": "/assets/classic/WM/WM070.png",
     "locales": {
       "zh": {
         "name": "发条人",
@@ -45059,7 +45059,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM071.png",
+    "artUrl": "/assets/classic/WM/WM071.png",
     "locales": {
       "zh": {
         "name": "曲奇饼",
@@ -45089,7 +45089,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM072.png",
+    "artUrl": "/assets/classic/WM/WM072.png",
     "locales": {
       "zh": {
         "name": "摇篮床",
@@ -45120,7 +45120,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM073.png",
+    "artUrl": "/assets/classic/WM/WM073.png",
     "locales": {
       "zh": {
         "name": "钻石矿车",
@@ -45149,7 +45149,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM074.png",
+    "artUrl": "/assets/classic/WM/WM074.png",
     "locales": {
       "zh": {
         "name": "毛驴",
@@ -45180,7 +45180,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM075.png",
+    "artUrl": "/assets/classic/WM/WM075.png",
     "locales": {
       "zh": {
         "name": "房屋拆迁",
@@ -45213,7 +45213,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM076.png",
+    "artUrl": "/assets/classic/WM/WM076.png",
     "locales": {
       "zh": {
         "name": "引水渠",
@@ -45241,7 +45241,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM077.png",
+    "artUrl": "/assets/classic/WM/WM077.png",
     "locales": {
       "zh": {
         "name": "根茎植物",
@@ -45275,7 +45275,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM078.png",
+    "artUrl": "/assets/classic/WM/WM078.png",
     "locales": {
       "zh": {
         "name": "农业学校",
@@ -45306,7 +45306,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM079.png",
+    "artUrl": "/assets/classic/WM/WM079.png",
     "locales": {
       "zh": {
         "name": "节日大厅",
@@ -45339,7 +45339,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM080.png",
+    "artUrl": "/assets/classic/WM/WM080.png",
     "locales": {
       "zh": {
         "name": "鱼钩",
@@ -45369,7 +45369,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM081.png",
+    "artUrl": "/assets/classic/WM/WM081.png",
     "locales": {
       "zh": {
         "name": "鱼塘",
@@ -45399,7 +45399,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM082.png",
+    "artUrl": "/assets/classic/WM/WM082.png",
     "locales": {
       "zh": {
         "name": "花盆",
@@ -45429,7 +45429,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM083.png",
+    "artUrl": "/assets/classic/WM/WM083.png",
     "locales": {
       "zh": {
         "name": "散养鸡",
@@ -45460,7 +45460,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM084.png",
+    "artUrl": "/assets/classic/WM/WM084.png",
     "locales": {
       "zh": {
         "name": "友谊牧场",
@@ -45493,7 +45493,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM085.png",
+    "artUrl": "/assets/classic/WM/WM085.png",
     "locales": {
       "zh": {
         "name": "水果蛋糕",
@@ -45524,7 +45524,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM086.png",
+    "artUrl": "/assets/classic/WM/WM086.png",
     "locales": {
       "zh": {
         "name": "大陶艺工坊",
@@ -45552,7 +45552,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM087.png",
+    "artUrl": "/assets/classic/WM/WM087.png",
     "locales": {
       "zh": {
         "name": "金牌",
@@ -45582,7 +45582,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM088.png",
+    "artUrl": "/assets/classic/WM/WM088.png",
     "locales": {
       "zh": {
         "name": "升降谷仓",
@@ -45612,7 +45612,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM089.png",
+    "artUrl": "/assets/classic/WM/WM089.png",
     "locales": {
       "zh": {
         "name": "家庭花园",
@@ -45642,7 +45642,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM090.png",
+    "artUrl": "/assets/classic/WM/WM090.png",
     "locales": {
       "zh": {
         "name": "蜜月旅行",
@@ -45673,7 +45673,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM091.png",
+    "artUrl": "/assets/classic/WM/WM091.png",
     "locales": {
       "zh": {
         "name": "铁犁",
@@ -45703,7 +45703,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM092.png",
+    "artUrl": "/assets/classic/WM/WM092.png",
     "locales": {
       "zh": {
         "name": "钥匙",
@@ -45733,7 +45733,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM093.png",
+    "artUrl": "/assets/classic/WM/WM093.png",
     "locales": {
       "zh": {
         "name": "引火柴",
@@ -45764,7 +45764,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM094.png",
+    "artUrl": "/assets/classic/WM/WM094.png",
     "locales": {
       "zh": {
         "name": "灯油",
@@ -45794,7 +45794,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM095.png",
+    "artUrl": "/assets/classic/WM/WM095.png",
     "locales": {
       "zh": {
         "name": "山洞",
@@ -45824,7 +45824,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM096.png",
+    "artUrl": "/assets/classic/WM/WM096.png",
     "locales": {
       "zh": {
         "name": "橡木桶",
@@ -45854,7 +45854,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM097.png",
+    "artUrl": "/assets/classic/WM/WM097.png",
     "locales": {
       "zh": {
         "name": "散养区",
@@ -45884,7 +45884,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM098.png",
+    "artUrl": "/assets/classic/WM/WM098.png",
     "locales": {
       "zh": {
         "name": "迷你动物园",
@@ -45915,7 +45915,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM099.png",
+    "artUrl": "/assets/classic/WM/WM099.png",
     "locales": {
       "zh": {
         "name": "退耕还牧",
@@ -45943,7 +45943,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM100.png",
+    "artUrl": "/assets/classic/WM/WM100.png",
     "locales": {
       "zh": {
         "name": "葡萄干",
@@ -45971,7 +45971,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM101.png",
+    "artUrl": "/assets/classic/WM/WM101.png",
     "locales": {
       "zh": {
         "name": "羊毛奖励",
@@ -46002,7 +46002,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM102.png",
+    "artUrl": "/assets/classic/WM/WM102.png",
     "locales": {
       "zh": {
         "name": "公羊",
@@ -46035,7 +46035,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM103.png",
+    "artUrl": "/assets/classic/WM/WM103.png",
     "locales": {
       "zh": {
         "name": "树莓",
@@ -46065,7 +46065,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM104.png",
+    "artUrl": "/assets/classic/WM/WM104.png",
     "locales": {
       "zh": {
         "name": "芦苇地",
@@ -46098,7 +46098,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM105.png",
+    "artUrl": "/assets/classic/WM/WM105.png",
     "locales": {
       "zh": {
         "name": "罗氏犁",
@@ -46128,7 +46128,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM106.png",
+    "artUrl": "/assets/classic/WM/WM106.png",
     "locales": {
       "zh": {
         "name": "废墟",
@@ -46159,7 +46159,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM107.png",
+    "artUrl": "/assets/classic/WM/WM107.png",
     "locales": {
       "zh": {
         "name": "仓促翻修",
@@ -46193,7 +46193,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM108.png",
+    "artUrl": "/assets/classic/WM/WM108.png",
     "locales": {
       "zh": {
         "name": "蒸锅",
@@ -46230,7 +46230,7 @@ const batch19: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM109.png",
+    "artUrl": "/assets/classic/WM/WM109.png",
     "locales": {
       "zh": {
         "name": "金钢犁",
@@ -46260,7 +46260,7 @@ const batch20: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM110.png",
+    "artUrl": "/assets/classic/WM/WM110.png",
     "locales": {
       "zh": {
         "name": "工具间",
@@ -46291,7 +46291,7 @@ const batch20: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM111.png",
+    "artUrl": "/assets/classic/WM/WM111.png",
     "locales": {
       "zh": {
         "name": "原状池塘",
@@ -46324,7 +46324,7 @@ const batch20: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM112.png",
+    "artUrl": "/assets/classic/WM/WM112.png",
     "locales": {
       "zh": {
         "name": "乡村学校",
@@ -46354,7 +46354,7 @@ const batch20: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM113.png",
+    "artUrl": "/assets/classic/WM/WM113.png",
     "locales": {
       "zh": {
         "name": "野外繁殖",
@@ -46383,7 +46383,7 @@ const batch20: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM114.png",
+    "artUrl": "/assets/classic/WM/WM114.png",
     "locales": {
       "zh": {
         "name": "酒窖",
@@ -46411,7 +46411,7 @@ const batch20: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/WM115.png",
+    "artUrl": "/assets/classic/WM/WM115.png",
     "locales": {
       "zh": {
         "name": "鱼饵",
@@ -46441,7 +46441,7 @@ const batch20: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/Z313.png",
+    "artUrl": "/assets/classic/Z/Z313.png",
     "locales": {
       "zh": {
         "name": "碟犁",
@@ -46471,7 +46471,7 @@ const batch20: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/Z314.png",
+    "artUrl": "/assets/classic/Z/Z314.png",
     "locales": {
       "zh": {
         "name": "木桶",
@@ -46502,7 +46502,7 @@ const batch20: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/Z315.png",
+    "artUrl": "/assets/classic/Z/Z315.png",
     "locales": {
       "zh": {
         "name": "酿酒师铜器",
@@ -46532,7 +46532,7 @@ const batch20: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/Z316.png",
+    "artUrl": "/assets/classic/Z/Z316.png",
     "locales": {
       "zh": {
         "name": "胸像",
@@ -46562,7 +46562,7 @@ const batch20: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/Z317.png",
+    "artUrl": "/assets/classic/Z/Z317.png",
     "locales": {
       "zh": {
         "name": "全家福",
@@ -46590,7 +46590,7 @@ const batch20: readonly GeneratedCatalogCardDefinition[] = [
     "passing": true,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/Z318.png",
+    "artUrl": "/assets/classic/Z/Z318.png",
     "locales": {
       "zh": {
         "name": "烧烤派对",
@@ -46618,7 +46618,7 @@ const batch20: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/Z319.png",
+    "artUrl": "/assets/classic/Z/Z319.png",
     "locales": {
       "zh": {
         "name": "南瓜籽油",
@@ -46651,7 +46651,7 @@ const batch20: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/Z320.png",
+    "artUrl": "/assets/classic/Z/Z320.png",
     "locales": {
       "zh": {
         "name": "五朔节花柱",
@@ -46680,7 +46680,7 @@ const batch20: readonly GeneratedCatalogCardDefinition[] = [
     "vp": 0,
     "passing": false,
     "implemented": true,
-    "artUrl": "/card-art/classic/Z321.png",
+    "artUrl": "/assets/classic/Z/Z321.png",
     "locales": {
       "zh": {
         "name": "大农庄",
@@ -46708,7 +46708,7 @@ const batch20: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/Z322.png",
+    "artUrl": "/assets/classic/Z/Z322.png",
     "locales": {
       "zh": {
         "name": "斗牛",
@@ -46738,7 +46738,7 @@ const batch20: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/Z323.png",
+    "artUrl": "/assets/classic/Z/Z323.png",
     "locales": {
       "zh": {
         "name": "巨无霸南瓜",
@@ -46768,7 +46768,7 @@ const batch20: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/Z324.png",
+    "artUrl": "/assets/classic/Z/Z324.png",
     "locales": {
       "zh": {
         "name": "稻草人",
@@ -46797,7 +46797,7 @@ const batch20: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/Z325.png",
+    "artUrl": "/assets/classic/Z/Z325.png",
     "locales": {
       "zh": {
         "name": "小镇姑娘",
@@ -46826,7 +46826,7 @@ const batch20: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/Z326.png",
+    "artUrl": "/assets/classic/Z/Z326.png",
     "locales": {
       "zh": {
         "name": "绅士",
@@ -46855,7 +46855,7 @@ const batch20: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/Z327.png",
+    "artUrl": "/assets/classic/Z/Z327.png",
     "locales": {
       "zh": {
         "name": "报信员",
@@ -46884,7 +46884,7 @@ const batch20: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/Z328.png",
+    "artUrl": "/assets/classic/Z/Z328.png",
     "locales": {
       "zh": {
         "name": "制桶工",
@@ -46913,7 +46913,7 @@ const batch20: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/Z329.png",
+    "artUrl": "/assets/classic/Z/Z329.png",
     "locales": {
       "zh": {
         "name": "驿站车夫",
@@ -46942,7 +46942,7 @@ const batch20: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/Z330.png",
+    "artUrl": "/assets/classic/Z/Z330.png",
     "locales": {
       "zh": {
         "name": "标本制作师",
@@ -46971,7 +46971,7 @@ const batch20: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/Z331.png",
+    "artUrl": "/assets/classic/Z/Z331.png",
     "locales": {
       "zh": {
         "name": "播种工",
@@ -47000,7 +47000,7 @@ const batch20: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/Z332.png",
+    "artUrl": "/assets/classic/Z/Z332.png",
     "locales": {
       "zh": {
         "name": "种子交易商",
@@ -47029,7 +47029,7 @@ const batch20: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/Z333.png",
+    "artUrl": "/assets/classic/Z/Z333.png",
     "locales": {
       "zh": {
         "name": "游戏设计师",
@@ -47058,7 +47058,7 @@ const batch20: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/Z334.png",
+    "artUrl": "/assets/classic/Z/Z334.png",
     "locales": {
       "zh": {
         "name": "舞蹈教师",
@@ -47087,7 +47087,7 @@ const batch20: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": true,
     "implemented": false,
-    "artUrl": "/card-art/classic/Z335.png",
+    "artUrl": "/assets/classic/Z/Z335.png",
     "locales": {
       "zh": {
         "name": "骰子雕刻工",
@@ -47116,7 +47116,7 @@ const batch20: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": false,
-    "artUrl": "/card-art/classic/Z336.png",
+    "artUrl": "/assets/classic/Z/Z336.png",
     "locales": {
       "zh": {
         "name": "双胞胎之母",
