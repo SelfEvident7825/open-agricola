@@ -432,7 +432,7 @@ export type FarmBoardView = {
   pastureTiles: Map<string, { pastureId: string; isCorner: boolean }>
   pastureDisplayMap: Map<
     string,
-    { animalType: AnimalType | null; animalCount: number }
+    { animalType: AnimalType | null; animalCount: number; animalCounts?: Partial<Record<AnimalType, number>> }
   >
   pastureCapacityMap: Map<string, number>
   houseDisplayMap: Map<string, { animalType: AnimalType | null; animalCount: number }>
@@ -1473,14 +1473,14 @@ export const FarmBoard = ({ view, actions, inlineCardStats = false, handOutlet, 
               {cropStack}
               {pastureInfo?.isCorner ? (
                 <div className="pasture-info">
-                  <div className="pasture-count"><AnimalCount count={pastureAnimalCount} animalType={pastureAnimalType} capacity={pastureCapacity} /></div>
+                  <div className="pasture-count"><AnimalCount count={pastureAnimalCount} animalType={pastureAnimalType} animalCounts={pastureDisplay?.animalCounts} capacity={pastureCapacity} /></div>
                   {isReorgActive ? (
                     <div className="pasture-controls">
                       {ANIMAL_CONTROL_TYPES.map((animalType) => {
                         const count =
-                          pastureAnimalType === animalType ? pastureAnimalCount : 0
+                          pastureDisplay?.animalCounts?.[animalType] ?? (pastureAnimalType === animalType ? pastureAnimalCount : 0)
                         const canDecrease =
-                          pastureAnimalType === animalType && count > 0
+                          count > 0
                         const canIncrease =
                           (reorgRemaining?.[animalType] ?? 0) > 0 &&
                           pastureCapacity > 0 &&

@@ -98,6 +98,7 @@ export const GameHeader = ({
             homeLinkLabel={t(locale, 'platform.backToLobbyPlain')}
           />
         )}
+        {state.gameEdition === 'classic' && <span>{t(locale, 'platform.classicEdition')}</span>}
         {!isSetup && <span className="header-round">R{state.round}/14</span>}
         {state.enableMoorBalanceRules === true && (
           <span className="header-moor-balance" data-testid="moor-balance-rules" title={t(locale, 'platform.moorBalanceRulesHint')}>

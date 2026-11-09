@@ -95,7 +95,7 @@ const parentScore = (card: ParentCardDefinition): EncyclopediaScore => card.kind
   : { fixed: null, extraVp: card.rewards.some((reward) => reward.effects.some((effect) => effect.type === 'bonus-points')) }
 
 const isOfficialOrdinaryCard = (card: OrdinaryCardSource) =>
-  OFFICIAL_DECKS.has(card.deck) && officialCardDeck(card.id) === card.deck
+  card.gameEdition === 'classic' || (OFFICIAL_DECKS.has(card.deck) && officialCardDeck(card.id) === card.deck)
 
 const ordinaryPublicType = (card: OrdinaryCardSource): 'minor' | 'occupation' => {
   if (card.kind !== 'playerAction') return card.kind
@@ -108,9 +108,10 @@ const ordinaryEntry = (card: OrdinaryCardSource): EncyclopediaEntry => {
   return entry({
     sourceKind: 'card',
     sourceId: card.id,
-    group: card.deck as EncyclopediaGroup,
+    group: card.gameEdition === 'classic' ? 'classic' : card.deck as EncyclopediaGroup,
+    ...(card.gameEdition === 'classic' ? { availableInGame: card.implemented !== false } : {}),
     publicType,
-    displayNumber: officialCardDisplayNumber(card.id) ?? null,
+    displayNumber: card.originalId?.split('_')[0] ?? officialCardDisplayNumber(card.id) ?? null,
     players: projectPlayers(card),
     face: { kind: 'card', cardId: card.id, cardType: publicType },
     text: cardTexts(card),
@@ -131,7 +132,7 @@ const majorEntry = (card: MajorCardSource, sources: EncyclopediaSources): Encycl
   sourceId: card.id,
   group: majorGroup(card, sources),
   publicType: 'major',
-  displayNumber: officialCardDisplayNumber(card.id) ?? null,
+  displayNumber: card.originalId?.split('_')[0] ?? officialCardDisplayNumber(card.id) ?? null,
   players: projectPlayers(card),
   face: { kind: 'card', cardId: card.id, cardType: 'major' },
   text: cardTexts(card),

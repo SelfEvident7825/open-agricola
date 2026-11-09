@@ -1,3 +1,4 @@
+import { animalZoneCapacity } from '../../shared/contract/animal-zone-capacity'
 import { useCallback, useMemo, useRef, useState } from 'react'
 import { ALL_ANIMAL_KEYS, type AnimalKey } from '../../shared/contract/animals'
 import type { GameState, InteractionAnimalReorgZone } from '../../shared/contract/types'
@@ -53,7 +54,7 @@ const zoneAnimalCounts = (zone: InteractionAnimalReorgZone) => {
 }
 
 const cardZoneAllowsMixedAnimals = (zone: InteractionAnimalReorgZone) =>
-  zone.zoneType === 'card' && zone.allowedAnimalType === null
+  zone.allowedAnimalType === null
 
 const addAnimalCounts = (
   target: Record<ReorgAnimalType, number>,
@@ -126,7 +127,7 @@ export const useAnimalReorgDraftPresentation = ({
       if (!player) return prev
       const current = prev.zones.find((zone) => zone.id === zoneId)
       if (!current) return prev
-      const capacity = current.capacity
+      const capacity = animalZoneCapacity(current, { [animalType]: current.capacity })
       const totals = prev.zones.reduce((acc, zone) => {
         addAnimalCounts(acc, zoneAnimalCounts(zone))
         return acc
@@ -148,8 +149,8 @@ export const useAnimalReorgDraftPresentation = ({
 
         if (cardZoneAllowsMixedAnimals(current)) {
           const nextCounts = { ...currentCounts }
-          if (animalCountsTotal(nextCounts) >= capacity) return prev
           nextCounts[animalType] += 1
+          if (animalCountsTotal(nextCounts) > animalZoneCapacity(current, nextCounts) || nextCounts[animalType] > remaining) return prev
           const nextTotal = animalCountsTotal(nextCounts)
           const zones = prev.zones.map((zone) => {
             if (zone.id !== zoneId) return zone

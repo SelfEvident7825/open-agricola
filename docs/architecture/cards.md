@@ -101,7 +101,7 @@ Tests: `shared/cards/__tests__/{AB,CD,EM}-logical-field-boundary.test.ts`, `shar
 - Extract a shared helper or generic mechanism only when it serves at least two current or near-term target cards; until then the logic stays in the card file.
 - Cross-card identity and capability queries use typed metadata and played-card helpers: `getPlayedCardDefinitions(player)`, `collectCardDefinitionsAs(player, type)` and `playerHasCardCapability(player, capability, { asType? })`, reading only played zones; `asType` reuses `cardCountsAs` for dual-type identity. Registered capability metadata (the `CardCapability` union in `shared/cards/helpers/card-type.ts`, such as `fireplaceIdentity`, `joineryIdentity`, `blocksRenovation` and `animalHolder`) lives in `meta` and adds no frontend behavior. `ovenIdentity` is OA's oven-family identity and does not imply a baking exchange; an upgrade can keep scoring identity and opt out of build triggers with `firewoodBuildTrigger: false`.
 - `check:card-impl-boundaries`, part of `pnpm run check:architecture`, rejects runtime reads of another non-major card's ID in production Card Sources. Explicit exceptions are `Major_*`, `reaches`, `allowedPurchases` and prerequisite candidate lists.
-- A card whose printed text names another card may declare it as a named printed target in `reaches` and read only its public facts (existence, owner, played status), never its private state; a checker exception binds one exact source-target pair.
+- A card whose printed text names another card may declare it as a named printed target in `reaches` and read only its public facts (existence, owner, played status), never its private state; a checker exception binds one exact source-target pair. Declared targets may be compared with public action/event identities or literal identity lists; private state indexing remains rejected. Declarative `returnCards` is also an explicit identity list.
 - Metadata audits must cover new metadata fields with fixtures.
 
 ## Minor-improvement passing
@@ -110,3 +110,9 @@ Tests: `shared/cards/__tests__/{AB,CD,EM}-logical-field-boundary.test.ts`, `shar
 
 `actions/helpers/minor-card-passing.ts` owns the passing destination and public event for purchases and the explicit `pass-minor-card-to-left` action. With one actual participant, the card leaves the game and emits `card.destroyed` with reason `passed`; it never returns to its owner's hand or enters the ordinary draw supply. Payment and the full `onBuy` continuation still execute once. Existing-game recovery preserves an exhausted hand. With multiple participants, passing uses the actual next participant and retains the ordinary hand-transfer event. Session regressions live with Clay Embankment, Shifting Cultivation and Savings Deposit.
 
+
+Classic sources use a separate ID namespace and deal pool; unsupported classic cards remain display-only. Card Fields reserve disjoint virtual coordinates for each edition.
+
+`occupationCount` weights logical occupation requirements and counts while each card remains one played card. `plowEffect` identifies mutually exclusive plow uses; the helper stores the Action Space Use identity in card-local state. Returning a played improvement also removes that card owner's future scheduled goods.
+
+Breeding first checks `getBreedThreshold()`, then `getBreedOffspringCount()` applies each played card's `computeBreedOffspringCount` to the default one offspring. Results are finite, floored and nonnegative; placement and breed summaries use the resulting count. `computeHarvestBreedOrderPriority()` only changes ordering.

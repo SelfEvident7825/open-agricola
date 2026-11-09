@@ -67,6 +67,18 @@ describe('PostgresRoomPersistence', () => {
     p = new PostgresRoomPersistence(db)
   })
 
+  it('round-trips the edition for a waiting room with no saved session', async () => {
+    await p.save('classic-wait', null, { ...META, maxPlayers: 4, status: 'waiting', gameEdition: 'classic' })
+    const snapshot = await p.load('classic-wait')
+    expect(snapshot?.meta.gameEdition).toBe('classic')
+    if (!snapshot) throw new Error('Missing classic waiting room')
+    const restored = snapshotToRoom(snapshot)
+    try {
+      expect(restored.session.state.gameEdition).toBe('classic')
+      expect(restored.session.state.players).toHaveLength(4)
+    } finally { restored.session.dispose() }
+  })
+
   it('save → load round-trips serialized + meta', async () => {
     ;(await p.save('r1', STATE, META))
     const snap = (await p.load('r1')) as RoomSnapshot

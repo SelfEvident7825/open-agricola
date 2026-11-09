@@ -72,3 +72,5 @@ Tests: `shared/domain/__tests__/`, `shared/actions/__tests__/animals.test.ts`, `
 
 `work.ended` closes work qualification after `onBeforeReturnHome` completes, before the return-position snapshot and temporary-worker return. End-work and before-return uses still qualify even when the displayed `roundPhase` is already `returning-home`; later return-home uses do not. This fact does not reorder stage hooks. Coverage: `server/__tests__/action-space-use-history-session.test.ts`.
 
+
+Mixed pastures store per-species `animalCounts`, with `animalType: null`; a single species uses the compact legacy fields. Explicit `allowedAnimalType: null` permits mixing. `reservedCapacity` reserves part of a zone for specified species; `contract/animal-zone-capacity.ts` is shared by authoritative normalization, placement and client drafts. PlayerBoard supplies effective pasture capacity profiles to fence validation, preserving existing assignments when regions stay unchanged. Normalization, animal payment and fence rebuilding retain per-species counts.

@@ -17,6 +17,7 @@ export type RoomStatus = 'waiting' | 'playing' | 'finished'
 
 export type RoomMeta = {
   teamMembers?: TeamRoomMember[]
+  gameEdition?: 'revised' | 'classic'
   endProposal?: GameEndProposal | null
   awaitingRematchPlayers?: boolean
   executionStamp?: ExecutionStamp

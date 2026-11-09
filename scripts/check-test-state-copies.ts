@@ -21,6 +21,8 @@ const isTest = (file: string): boolean => file.includes('/__tests__/') || /\.(te
 
 /** Tests whose subject is normalization or normalized restoration itself. */
 const exemptions = [
+  { file: 'shared/cards/__tests__/classic-e-rules.test.ts', reason: 'Tests persistence and normalization of mixed-species pastures.' },
+  { file: 'server/__tests__/classic-edition-session.test.ts', reason: 'Tests preservation of the classic edition during save normalization.' },
   { file: 'shared/session/__tests__/state-clone.test.ts', reason: 'Tests cloneState itself.' },
   { file: 'shared/session/__tests__/state-normalize-stats.test.ts', reason: 'Tests normalizeState itself.' },
   { file: 'shared/session/__tests__/fence-segments-normalize.test.ts', reason: 'Tests normalizeState itself.' },

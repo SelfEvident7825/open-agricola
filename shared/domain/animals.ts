@@ -7,6 +7,8 @@ import {
   isAnimalKey,
   readAnimalHolderCounts,
   sumAnimalCounts,
+  singleAnimalType,
+  compactAnimalCounts,
   writeAnimalHolderCounts,
 } from './animal-holder-state'
 export type { AnimalKey }
@@ -116,7 +118,8 @@ const subtractFromCountsByZone = (
 export const getAssignedAnimalsByType = (player: PlayerState, state?: GameState): AnimalCounts => {
   const result: AnimalCounts = { ...ZERO }
   for (const pasture of player.pastures ?? []) {
-    if (pasture.animalType && pasture.animalCount > 0 && isAnimalKey(pasture.animalType)) {
+    if (pasture.animalCounts) { addCounts(result, pasture.animalCounts) }
+    else if (pasture.animalType && pasture.animalCount > 0 && isAnimalKey(pasture.animalType)) {
       result[pasture.animalType] = (result[pasture.animalType] ?? 0) + pasture.animalCount
     }
   }
@@ -168,11 +171,20 @@ export const subtractAnimalsFromBoard = (
     // 1. pasture
     for (const pasture of player.pastures ?? []) {
       if (remaining <= 0) break
-      if (pasture.animalType !== type) continue
-      const take = Math.min(pasture.animalCount, remaining)
-      pasture.animalCount -= take
-      remaining -= take
-      if (pasture.animalCount <= 0) pasture.animalType = null
+      if (pasture.animalCounts) {
+        const take = Math.min(pasture.animalCounts[type] ?? 0, remaining)
+        pasture.animalCounts = compactAnimalCounts({ ...pasture.animalCounts, [type]: (pasture.animalCounts[type] ?? 0) - take })
+        pasture.animalCount = sumAnimalCounts(pasture.animalCounts)
+        pasture.animalType = singleAnimalType(pasture.animalCounts)
+        remaining -= take
+        if (pasture.animalType || !pasture.animalCount) delete pasture.animalCounts
+      } else {
+        if (pasture.animalType !== type) continue
+        const take = Math.min(pasture.animalCount, remaining)
+        pasture.animalCount -= take
+        remaining -= take
+        if (pasture.animalCount <= 0) pasture.animalType = null
+      }
     }
     // 2. house animal
     for (const [room, animal] of Object.entries(getRoomAnimals(player))) {

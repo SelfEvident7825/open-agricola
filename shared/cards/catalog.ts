@@ -9,14 +9,19 @@ import {
 const isCommunityCard = (card: CardDefinition) => card.deck === 'community'
 const isImplemented = (card: CardDefinition) => card.implemented !== false
 
-export const minorImprovementCards = minorImprovementCardsList.filter((card) => !isCommunityCard(card))
-export const occupationCards = occupationCardsList.filter((card) => !isCommunityCard(card))
+export const minorImprovementCards = minorImprovementCardsList.filter((card) => !isCommunityCard(card) && card.gameEdition !== 'classic')
+export const occupationCards = occupationCardsList.filter((card) => !isCommunityCard(card) && card.gameEdition !== 'classic')
+
+export const classicMinors = minorImprovementCardsList.filter(card => card.gameEdition === 'classic')
+export const classicOccupations = occupationCardsList.filter(card => card.gameEdition === 'classic')
+export const implementedClassicMinors = classicMinors.filter(isImplemented)
+export const implementedClassicOccupations = classicOccupations.filter(isImplemented)
 
 const communityMinors = minorImprovementCardsList.filter(isCommunityCard)
 const communityOccupations = occupationCardsList.filter(isCommunityCard)
 
-export const allMinorImprovementCards = [...minorImprovementCards, ...communityMinors]
-export const allOccupationCards = [...occupationCards, ...communityOccupations]
+export const allMinorImprovementCards = [...minorImprovementCards, ...communityMinors, ...classicMinors]
+export const allOccupationCards = [...occupationCards, ...communityOccupations, ...classicOccupations]
 
 export const implementedMinorImprovementCards = minorImprovementCards.filter(isImplemented)
 export const implementedOccupationCards = occupationCards.filter(isImplemented)

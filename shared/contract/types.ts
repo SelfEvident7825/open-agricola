@@ -128,6 +128,8 @@ export type Trade = {
   groupId?: string
   groupMin?: number
   groupMax?: number
+  /** Apply the group limit separately to each constructed unit. */
+  groupScope?: 'action' | 'unit'
   replaceUpTo?: boolean
   minCost?: Partial<Resource>
   maxCost?: Partial<Resource>
@@ -189,6 +191,8 @@ export type TradeModifier = {
   groupId?: string
   groupMin?: number
   groupMax?: number
+  /** Apply the group limit separately to each constructed unit. */
+  groupScope?: 'action' | 'unit'
   replaceUpTo?: boolean
   minCost?: Partial<Resource>
   maxCost?: Partial<Resource>
@@ -451,6 +455,7 @@ export type Pasture = {
   tiles: FarmTilePosition[]
   animalType: AnimalKey | null
   animalCount: number
+  animalCounts?: Partial<Record<AnimalKey, number>>
 }
 
 export type MajorEffectState = {
@@ -648,6 +653,7 @@ export type GameSeed = number | string
 
 export type GameState = {
   team?: import('./team').TeamState
+  gameEdition?: 'revised' | 'classic'
   round: number
   /** Opening hands, multiplayer draft, parent selection, or ordinary play. */
   phase: 'draft' | 'solo-hand-selection' | 'parent-selection' | 'playing'
@@ -1363,6 +1369,7 @@ export type InteractionAnimalReorgZone = {
   allowedAnimalType?: AnimalKey | null
   allowedAnimalTypes?: AnimalKey[]
   capacity: number
+  reservedCapacity?: Partial<Record<AnimalKey, number>>
   farmPosition?: FarmTilePosition
   countsFarmyardSpaceAsUnused?: boolean
   displaySource?: 'played-card' | 'farm-position' | 'borrowed-played-card'

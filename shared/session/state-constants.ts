@@ -82,6 +82,7 @@ export const defaultSandboxPlayerNames = ['Player 1', 'Player 2', 'Player 3', 'P
 export type InitialStateOptions = {
   teamConfig?: import('../contract/team').TeamConfiguration
   teamAssignments?: number[]
+  gameEdition?: 'revised' | 'classic'
   playerCount?: number
   soloHandMode?: SoloHandMode
   extraMinorIds?: string[]

@@ -1,0 +1,353 @@
+{
+  "date": "2026-11-08",
+  "build": "classic-full-e-deck",
+  "applicationBase": "72bfc8f756aadca3d0b2d79e875b4201a9302523",
+  "languagePin": {
+    "repository": "titanxxh/open-agricola-i18n",
+    "revision": "9e88a3e0bcb1d1669ee9e9de7e33d7257d867e22",
+    "manifestSha256": "409882f8b66c8cfc83f371ce459aae9fa2abafc4b0fda235d900937a5df97e61"
+  },
+  "classic": {
+    "handCards": 1024,
+    "nativeEffects": 199,
+    "referenceOnly": 825,
+    "E": {
+      "total": 126,
+      "nativeEffects": 126,
+      "referenceOnly": 0,
+      "newlyImplemented": 89,
+      "previouslyImplemented": 37
+    }
+  },
+  "checks": [
+    {
+      "scope": "Classic E rules and four-player GameSession cases, shared payment/renovation/breeding/fencing/animal regressions, related revised cards, client animal draft and tooling/docs gates",
+      "files": 53,
+      "tests": 885,
+      "skipped": 1,
+      "failed": 0,
+      "status": "PASS",
+      "eDeckBehaviorTests": 195,
+      "eDeckTestFiles": {
+        "shared/cards/__tests__/classic-e-rules.test.ts": 96,
+        "server/__tests__/classic-e-session.test.ts": 99
+      },
+      "skippedCase": "Existing renovation-computeCosts-matrix-session: E027_PiggyBank does not target renovation (revised deck, unrelated to OLD_E)."
+    },
+    {
+      "scope": "TypeScript project build",
+      "command": "node node_modules/typescript/bin/tsc --build --pretty false",
+      "status": "PASS"
+    },
+    {
+      "scope": "Vite production build",
+      "command": "AGRICOLA_I18N_DIR=../open-agricola-i18n NODE_OPTIONS=--max-old-space-size=4096 node node_modules/vite/bin/vite.js build",
+      "status": "PASS",
+      "note": "A transient upstream public-asset metadata HTTP 503 was resolved by retry."
+    },
+    {
+      "scope": "i18n audit",
+      "missingKeys": 0,
+      "status": "PASS"
+    },
+    {
+      "scope": "Generated card synchronization",
+      "status": "PASS"
+    },
+    {
+      "scope": "Card implementation and state boundaries; test state-copy guard",
+      "status": "PASS"
+    },
+    {
+      "scope": "Changed-file ESLint, with recheck of subsequently changed files",
+      "errors": 0,
+      "remainingWarnings": 2,
+      "status": "PASS_WITH_WARNINGS",
+      "note": "Existing React hook warnings in FarmBoard.tsx."
+    },
+    {
+      "scope": "Classic importer preserves handwritten implementations",
+      "filesPreserved": 1024,
+      "sourceChanges": 0,
+      "manifestRecords": 1024,
+      "nativePorts": 199,
+      "status": "PASS"
+    }
+  ],
+  "limitations": [
+    "All 126 E-deck records in the supplied classic BGA source are implemented and available for dealing; this does not establish exhaustive correctness for every possible card combination.",
+    "The 73 native-effect ports outside E retain the previous source-method-based migration and have not all received independent rule-by-rule acceptance.",
+    "The remaining 825 hand cards outside E are visible references and are excluded from dealing.",
+    "The site still shares its base game engine; this release does not claim to port every historical Agricola rules difference.",
+    "No browser full-game acceptance, full repository test suite, GitHub CI, push or deployment was performed.",
+    "The language revision is local and unpublished; use the bundled sibling language directory for local builds."
+  ],
+  "implementationBase": "a2955726",
+  "testFiles": [
+    {
+      "path": "server/__tests__/A102_Grocer-session.test.ts",
+      "passed": 12,
+      "skipped": 0
+    },
+    {
+      "path": "server/__tests__/A143_Stonecutter-parity-session.test.ts",
+      "passed": 5,
+      "skipped": 0
+    },
+    {
+      "path": "server/__tests__/A143_Stonecutter-session.test.ts",
+      "passed": 6,
+      "skipped": 0
+    },
+    {
+      "path": "server/__tests__/B099_Tutor-logical-occupation-session.test.ts",
+      "passed": 4,
+      "skipped": 0
+    },
+    {
+      "path": "server/__tests__/B099_Tutor-session.test.ts",
+      "passed": 4,
+      "skipped": 0
+    },
+    {
+      "path": "server/__tests__/C013_WoodSlideHammer-renovation-session.test.ts",
+      "passed": 7,
+      "skipped": 0
+    },
+    {
+      "path": "server/__tests__/E109_BraidMaker-session.test.ts",
+      "passed": 10,
+      "skipped": 0
+    },
+    {
+      "path": "shared/cards/__tests__/C8_PlantFertilizer.test.ts",
+      "passed": 13,
+      "skipped": 0
+    },
+    {
+      "path": "shared/cards/__tests__/animal-capacity-modifier.test.ts",
+      "passed": 15,
+      "skipped": 0
+    },
+    {
+      "path": "shared/cards/__tests__/card-cost-fixed-candidates.test.ts",
+      "passed": 11,
+      "skipped": 0
+    },
+    {
+      "path": "shared/cards/__tests__/card-source.test.ts",
+      "passed": 3,
+      "skipped": 0
+    },
+    {
+      "path": "shared/cards/__tests__/classic-e-rules.test.ts",
+      "passed": 96,
+      "skipped": 0
+    },
+    {
+      "path": "shared/cards/__tests__/construct-cost-alternatives.test.ts",
+      "passed": 8,
+      "skipped": 0
+    },
+    {
+      "path": "shared/cards/__tests__/fence-listener-events.test.ts",
+      "passed": 4,
+      "skipped": 0
+    },
+    {
+      "path": "shared/cards/__tests__/house-animal-zone-tags.test.ts",
+      "passed": 4,
+      "skipped": 0
+    },
+    {
+      "path": "shared/cards/__tests__/listener-purity-guard.test.ts",
+      "passed": 21,
+      "skipped": 0
+    },
+    {
+      "path": "shared/cards/__tests__/renovation-fencing-cost-semantics.test.ts",
+      "passed": 9,
+      "skipped": 0
+    },
+    {
+      "path": "shared/actions/effects/__tests__/breed.test.ts",
+      "passed": 14,
+      "skipped": 0
+    },
+    {
+      "path": "shared/actions/effects/__tests__/construct-resolveChoice.test.ts",
+      "passed": 22,
+      "skipped": 0
+    },
+    {
+      "path": "shared/actions/effects/__tests__/exchange-breeding.test.ts",
+      "passed": 6,
+      "skipped": 0
+    },
+    {
+      "path": "shared/actions/effects/__tests__/fence-resolveChoice.test.ts",
+      "passed": 34,
+      "skipped": 0
+    },
+    {
+      "path": "shared/actions/effects/__tests__/fencing-entry-guard.test.ts",
+      "passed": 7,
+      "skipped": 0
+    },
+    {
+      "path": "shared/actions/effects/__tests__/occupation-log.test.ts",
+      "passed": 6,
+      "skipped": 0
+    },
+    {
+      "path": "shared/actions/effects/__tests__/renovation.test.ts",
+      "passed": 18,
+      "skipped": 0
+    },
+    {
+      "path": "server/__tests__/animal-reorg-prefill-session.test.ts",
+      "passed": 7,
+      "skipped": 0
+    },
+    {
+      "path": "server/__tests__/classic-e-session.test.ts",
+      "passed": 99,
+      "skipped": 0
+    },
+    {
+      "path": "server/__tests__/classic-edition-session.test.ts",
+      "passed": 22,
+      "skipped": 0
+    },
+    {
+      "path": "server/__tests__/construct-room-payment-session.test.ts",
+      "passed": 5,
+      "skipped": 0
+    },
+    {
+      "path": "server/__tests__/farmyard-animal-scoring-session.test.ts",
+      "passed": 30,
+      "skipped": 0
+    },
+    {
+      "path": "server/__tests__/fence-payment-session.test.ts",
+      "passed": 2,
+      "skipped": 0
+    },
+    {
+      "path": "server/__tests__/fence-validation.test.ts",
+      "passed": 43,
+      "skipped": 0
+    },
+    {
+      "path": "server/__tests__/harvest-breeding-cooking-session.test.ts",
+      "passed": 14,
+      "skipped": 0
+    },
+    {
+      "path": "server/__tests__/non-harvest-breeding-log-session.test.ts",
+      "passed": 2,
+      "skipped": 0
+    },
+    {
+      "path": "server/__tests__/occupation-action-preview-session.test.ts",
+      "passed": 11,
+      "skipped": 0
+    },
+    {
+      "path": "server/__tests__/payment-choice-identity-session.test.ts",
+      "passed": 3,
+      "skipped": 0
+    },
+    {
+      "path": "server/__tests__/renovation-computeCosts-matrix-session.test.ts",
+      "passed": 8,
+      "skipped": 1
+    },
+    {
+      "path": "server/__tests__/seasonal-fence-payment-session.test.ts",
+      "passed": 9,
+      "skipped": 0
+    },
+    {
+      "path": "server/__tests__/stable-payment-session.test.ts",
+      "passed": 5,
+      "skipped": 0
+    },
+    {
+      "path": "shared/domain/__tests__/animal-prefill.test.ts",
+      "passed": 10,
+      "skipped": 0
+    },
+    {
+      "path": "shared/domain/__tests__/animal-zones.test.ts",
+      "passed": 32,
+      "skipped": 0
+    },
+    {
+      "path": "shared/domain/__tests__/animals-subtract.test.ts",
+      "passed": 10,
+      "skipped": 0
+    },
+    {
+      "path": "shared/domain/__tests__/animals.test.ts",
+      "passed": 15,
+      "skipped": 0
+    },
+    {
+      "path": "shared/domain/__tests__/farmyard.test.ts",
+      "passed": 5,
+      "skipped": 0
+    },
+    {
+      "path": "shared/domain/__tests__/pasture.test.ts",
+      "passed": 2,
+      "skipped": 0
+    },
+    {
+      "path": "shared/actions/payment/internal/__tests__/cost-modifier-permutation-probe.test.ts",
+      "passed": 8,
+      "skipped": 0
+    },
+    {
+      "path": "shared/actions/payment/internal/__tests__/cost-modifiers.test.ts",
+      "passed": 24,
+      "skipped": 0
+    },
+    {
+      "path": "shared/actions/payment/internal/__tests__/payment-bonus-choice-index.test.ts",
+      "passed": 3,
+      "skipped": 0
+    },
+    {
+      "path": "shared/actions/payment/internal/__tests__/room-payment.test.ts",
+      "passed": 4,
+      "skipped": 0
+    },
+    {
+      "path": "client/app/__tests__/animal-reorg-draft-presentation.test.tsx",
+      "passed": 3,
+      "skipped": 0
+    },
+    {
+      "path": "client/app/__tests__/use-animal-reorg-flow.test.ts",
+      "passed": 23,
+      "skipped": 0
+    },
+    {
+      "path": "scripts/__tests__/check-card-impl-boundaries.test.ts",
+      "passed": 133,
+      "skipped": 0
+    },
+    {
+      "path": "scripts/__tests__/check-test-state-copies.test.ts",
+      "passed": 4,
+      "skipped": 0
+    },
+    {
+      "path": "scripts/__tests__/docs-budget.test.ts",
+      "passed": 10,
+      "skipped": 0
+    }
+  ]
+}

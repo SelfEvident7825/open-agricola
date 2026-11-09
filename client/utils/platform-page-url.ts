@@ -26,6 +26,7 @@ const PAGE_SCOPED_QUERY_KEYS = [
   'enableMoorBalanceRules',
   'allowIncompleteFarmersOfTheMoorMinorDeal',
   'enableSnakeOpening',
+  'gameEdition',
   'customCards',
   'embedded',
   'devMode',

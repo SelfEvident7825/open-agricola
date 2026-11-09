@@ -996,6 +996,194 @@ import { M128_Workbench } from './M/M128_Workbench'
 import { M129_PlowhorseMarket } from './M/M129_PlowhorseMarket'
 import { M130_Nosebag } from './M/M130_Nosebag'
 import { M131_CattleStall } from './M/M131_CattleStall'
+import { OLD_E11_Field } from './classic/OLD_E11_Field'
+import { OLD_E12_FishingRod } from './classic/OLD_E12_FishingRod'
+import { OLD_E13_Axe } from './classic/OLD_E13_Axe'
+import { OLD_E14_BakersOven } from './classic/OLD_E14_BakersOven'
+import { OLD_E147_LandAgent } from './classic/OLD_E147_LandAgent'
+import { OLD_E149_MasterBaker } from './classic/OLD_E149_MasterBaker'
+import { OLD_E15_BakingTray } from './classic/OLD_E15_BakingTray'
+import { OLD_E150_Baker } from './classic/OLD_E150_Baker'
+import { OLD_E151_MasterBuilder } from './classic/OLD_E151_MasterBuilder'
+import { OLD_E152_BerryPicker } from './classic/OLD_E152_BerryPicker'
+import { OLD_E153_Mendicant } from './classic/OLD_E153_Mendicant'
+import { OLD_E155_BreadSeller } from './classic/OLD_E155_BreadSeller'
+import { OLD_E156_BrushMaker } from './classic/OLD_E156_BrushMaker'
+import { OLD_E157_Thatcher } from './classic/OLD_E157_Thatcher'
+import { OLD_E159_HeadoftheFamily } from './classic/OLD_E159_HeadoftheFamily'
+import { OLD_E16_BuildingMaterial } from './classic/OLD_E16_BuildingMaterial'
+import { OLD_E160_Farmer } from './classic/OLD_E160_Farmer'
+import { OLD_E161_Fisherman } from './classic/OLD_E161_Fisherman'
+import { OLD_E162_MeatSeller } from './classic/OLD_E162_MeatSeller'
+import { OLD_E163_FieldWarden } from './classic/OLD_E163_FieldWarden'
+import { OLD_E164_MasterForester } from './classic/OLD_E164_MasterForester'
+import { OLD_E165_YeomanFarmer } from './classic/OLD_E165_YeomanFarmer'
+import { OLD_E166_Undergardener } from './classic/OLD_E166_Undergardener'
+import { OLD_E167_Conjurer } from './classic/OLD_E167_Conjurer'
+import { OLD_E168_Greengrocer } from './classic/OLD_E168_Greengrocer'
+import { OLD_E169_Storyteller } from './classic/OLD_E169_Storyteller'
+import { OLD_E170_EstateManager } from './classic/OLD_E170_EstateManager'
+import { OLD_E172_Chief } from './classic/OLD_E172_Chief'
+import { OLD_E173_ChiefsDaughter } from './classic/OLD_E173_ChiefsDaughter'
+import { OLD_E174_Tutor } from './classic/OLD_E174_Tutor'
+import { OLD_E175_HedgeKeeper } from './classic/OLD_E175_HedgeKeeper'
+import { OLD_E176_Woodcutter } from './classic/OLD_E176_Woodcutter'
+import { OLD_E177_WoodenHutBuilder } from './classic/OLD_E177_WoodenHutBuilder'
+import { OLD_E178_HutBuilder } from './classic/OLD_E178_HutBuilder'
+import { OLD_E179_Merchant } from './classic/OLD_E179_Merchant'
+import { OLD_E18_BeanField } from './classic/OLD_E18_BeanField'
+import { OLD_E180_HobbyFarmer } from './classic/OLD_E180_HobbyFarmer'
+import { OLD_E181_Cook } from './classic/OLD_E181_Cook'
+import { OLD_E182_CharcoalBurner } from './classic/OLD_E182_CharcoalBurner'
+import { OLD_E184_Grocer } from './classic/OLD_E184_Grocer'
+import { OLD_E187_ClayDeliveryman } from './classic/OLD_E187_ClayDeliveryman'
+import { OLD_E188_ClayMixer } from './classic/OLD_E188_ClayMixer'
+import { OLD_E189_LordoftheManor } from './classic/OLD_E189_LordoftheManor'
+import { OLD_E19_GypsysCrock } from './classic/OLD_E19_GypsysCrock'
+import { OLD_E190_Maid } from './classic/OLD_E190_Maid'
+import { OLD_E191_Mason } from './classic/OLD_E191_Mason'
+import { OLD_E192_Patron } from './classic/OLD_E192_Patron'
+import { OLD_E193_Pastor } from './classic/OLD_E193_Pastor'
+import { OLD_E194_PloughDriver } from './classic/OLD_E194_PloughDriver'
+import { OLD_E195_PloughMaker } from './classic/OLD_E195_PloughMaker'
+import { OLD_E196_MushroomCollector } from './classic/OLD_E196_MushroomCollector'
+import { OLD_E197_Braggart } from './classic/OLD_E197_Braggart'
+import { OLD_E198_Ratcatcher } from './classic/OLD_E198_Ratcatcher'
+import { OLD_E199_Renovator } from './classic/OLD_E199_Renovator'
+import { OLD_E200_Conservator } from './classic/OLD_E200_Conservator'
+import { OLD_E201_CattleWhisperer } from './classic/OLD_E201_CattleWhisperer'
+import { OLD_E202_SeasonalWorker } from './classic/OLD_E202_SeasonalWorker'
+import { OLD_E203_Shepherd } from './classic/OLD_E203_Shepherd'
+import { OLD_E204_MasterShepherd } from './classic/OLD_E204_MasterShepherd'
+import { OLD_E205_ReedCollector } from './classic/OLD_E205_ReedCollector'
+import { OLD_E206_Swineherd } from './classic/OLD_E206_Swineherd'
+import { OLD_E207_Stablehand } from './classic/OLD_E207_Stablehand'
+import { OLD_E208_Stablemaster } from './classic/OLD_E208_Stablemaster'
+import { OLD_E21_HalftimberedHouse } from './classic/OLD_E21_HalftimberedHouse'
+import { OLD_E210_StoneCarrier } from './classic/OLD_E210_StoneCarrier'
+import { OLD_E211_Stonecutter } from './classic/OLD_E211_Stonecutter'
+import { OLD_E212_Dancer } from './classic/OLD_E212_Dancer'
+import { OLD_E213_Stockman } from './classic/OLD_E213_Stockman'
+import { OLD_E215_TenantFarmer } from './classic/OLD_E215_TenantFarmer'
+import { OLD_E216_AnimalKeeper } from './classic/OLD_E216_AnimalKeeper'
+import { OLD_E217_Reeve } from './classic/OLD_E217_Reeve'
+import { OLD_E218_Carpenter } from './classic/OLD_E218_Carpenter'
+import { OLD_E22_Raft } from './classic/OLD_E22_Raft'
+import { OLD_E23_Manger } from './classic/OLD_E23_Manger'
+import { OLD_E24_AnimalPen } from './classic/OLD_E24_AnimalPen'
+import { OLD_E25_Spices } from './classic/OLD_E25_Spices'
+import { OLD_E26_Plane } from './classic/OLD_E26_Plane'
+import { OLD_E27_WoodredOven } from './classic/OLD_E27_WoodredOven'
+import { OLD_E28_Clogs } from './classic/OLD_E28_Clogs'
+import { OLD_E29_ShepherdsPipe } from './classic/OLD_E29_ShepherdsPipe'
+import { OLD_E30_Canoe } from './classic/OLD_E30_Canoe'
+import { OLD_E31_CarpPond } from './classic/OLD_E31_CarpPond'
+import { OLD_E32_PotatoDibber } from './classic/OLD_E32_PotatoDibber'
+import { OLD_E33_Ceramics } from './classic/OLD_E33_Ceramics'
+import { OLD_E338_FeedPellets } from './classic/OLD_E338_FeedPellets'
+import { OLD_E34_Basket } from './classic/OLD_E34_Basket'
+import { OLD_E341_Guildmaster } from './classic/OLD_E341_Guildmaster'
+import { OLD_E35_CornScoop } from './classic/OLD_E35_CornScoop'
+import { OLD_E36_ClayRoof } from './classic/OLD_E36_ClayRoof'
+import { OLD_E37_ClaySupports } from './classic/OLD_E37_ClaySupports'
+import { OLD_E38_MadonnaStatue } from './classic/OLD_E38_MadonnaStatue'
+import { OLD_E39_MarketStall } from './classic/OLD_E39_MarketStall'
+import { OLD_E40_MiniPasture } from './classic/OLD_E40_MiniPasture'
+import { OLD_E41_Millstone } from './classic/OLD_E41_Millstone'
+import { OLD_E42_HelpfulNeighbours } from './classic/OLD_E42_HelpfulNeighbours'
+import { OLD_E43_FruitTree } from './classic/OLD_E43_FruitTree'
+import { OLD_E44_Outhouse } from './classic/OLD_E44_Outhouse'
+import { OLD_E45_PrivateForest } from './classic/OLD_E45_PrivateForest'
+import { OLD_E46_SackCart } from './classic/OLD_E46_SackCart'
+import { OLD_E47_LettucePatch } from './classic/OLD_E47_LettucePatch'
+import { OLD_E48_ReedPond } from './classic/OLD_E48_ReedPond'
+import { OLD_E49_WritingDesk } from './classic/OLD_E49_WritingDesk'
+import { OLD_E50_BuildersTrowel } from './classic/OLD_E50_BuildersTrowel'
+import { OLD_E51_Spindle } from './classic/OLD_E51_Spindle'
+import { OLD_E52_Stable } from './classic/OLD_E52_Stable'
+import { OLD_E53_ButterChurn } from './classic/OLD_E53_ButterChurn'
+import { OLD_E54_Quarry } from './classic/OLD_E54_Quarry'
+import { OLD_E55_StoneHouseExtension } from './classic/OLD_E55_StoneHouseExtension'
+import { OLD_E56_StoneTongs } from './classic/OLD_E56_StoneTongs'
+import { OLD_E57_Dovecote } from './classic/OLD_E57_Dovecote'
+import { OLD_E58_AnimalYard } from './classic/OLD_E58_AnimalYard'
+import { OLD_E59_DrinkingTrough } from './classic/OLD_E59_DrinkingTrough'
+import { OLD_E60_CattleMarket } from './classic/OLD_E60_CattleMarket'
+import { OLD_E61_RidingPlough } from './classic/OLD_E61_RidingPlough'
+import { OLD_E62_TurnwrestPlough } from './classic/OLD_E62_TurnwrestPlough'
+import { OLD_FL015_CourtyardGarden } from './classic/OLD_FL015_CourtyardGarden'
+import { OLD_FL019_LanternWonder } from './classic/OLD_FL019_LanternWonder'
+import { OLD_FL035_Freemason } from './classic/OLD_FL035_Freemason'
+import { OLD_FL046_StableArchitect } from './classic/OLD_FL046_StableArchitect'
+import { OLD_FR045_StoneHouseReconstruction } from './classic/OLD_FR045_StoneHouseReconstruction'
+import { OLD_FR060_WoodSaw } from './classic/OLD_FR060_WoodSaw'
+import { OLD_FR100_PipeSmoker } from './classic/OLD_FR100_PipeSmoker'
+import { OLD_G047_ResourceCollector } from './classic/OLD_G047_ResourceCollector'
+import { OLD_G064_BarteringHut } from './classic/OLD_G064_BarteringHut'
+import { OLD_G075_FarmersMarket } from './classic/OLD_G075_FarmersMarket'
+import { OLD_I102_WildlifeReserve } from './classic/OLD_I102_WildlifeReserve'
+import { OLD_I225_FieldWatchman } from './classic/OLD_I225_FieldWatchman'
+import { OLD_I231_Manservant } from './classic/OLD_I231_Manservant'
+import { OLD_I235_WoodCollector } from './classic/OLD_I235_WoodCollector'
+import { OLD_I236_HideFarmer } from './classic/OLD_I236_HideFarmer'
+import { OLD_I240_Cowherd } from './classic/OLD_I240_Cowherd'
+import { OLD_I242_ClayHutBuilder } from './classic/OLD_I242_ClayHutBuilder'
+import { OLD_I245_MarketCrier } from './classic/OLD_I245_MarketCrier'
+import { OLD_I249_Puppeteer } from './classic/OLD_I249_Puppeteer'
+import { OLD_I252_PigBreeder } from './classic/OLD_I252_PigBreeder'
+import { OLD_I259_AnimalDealer } from './classic/OLD_I259_AnimalDealer'
+import { OLD_I261_Outrider } from './classic/OLD_I261_Outrider'
+import { OLD_I63_MoldboardPlough } from './classic/OLD_I63_MoldboardPlough'
+import { OLD_I67_ThreshingBoard } from './classic/OLD_I67_ThreshingBoard'
+import { OLD_I69_StrawberryPatch } from './classic/OLD_I69_StrawberryPatch'
+import { OLD_I77_ShepherdsCrook } from './classic/OLD_I77_ShepherdsCrook'
+import { OLD_I78_Copse } from './classic/OLD_I78_Copse'
+import { OLD_I79_WoodCart } from './classic/OLD_I79_WoodCart'
+import { OLD_I84_ChickenCoop } from './classic/OLD_I84_ChickenCoop'
+import { OLD_I88_Lasso } from './classic/OLD_I88_Lasso'
+import { OLD_K112_Bookshelf } from './classic/OLD_K112_Bookshelf'
+import { OLD_K113_Flail } from './classic/OLD_K113_Flail'
+import { OLD_K114_DuckPond } from './classic/OLD_K114_DuckPond'
+import { OLD_K115_SwingPlough } from './classic/OLD_K115_SwingPlough'
+import { OLD_K116_Granary } from './classic/OLD_K116_Granary'
+import { OLD_K117_Greenhouse } from './classic/OLD_K117_Greenhouse'
+import { OLD_K120_HouseGoat } from './classic/OLD_K120_HouseGoat'
+import { OLD_K131_ClayPit } from './classic/OLD_K131_ClayPit'
+import { OLD_K133_MilkingStool } from './classic/OLD_K133_MilkingStool'
+import { OLD_K139_SleepingCorner } from './classic/OLD_K139_SleepingCorner'
+import { OLD_K142_StoneCart } from './classic/OLD_K142_StoneCart'
+import { OLD_K146_Loom } from './classic/OLD_K146_Loom'
+import { OLD_K267_AdoptiveParents } from './classic/OLD_K267_AdoptiveParents'
+import { OLD_K274_OrganicFarmer } from './classic/OLD_K274_OrganicFarmer'
+import { OLD_K282_HouseSteward } from './classic/OLD_K282_HouseSteward'
+import { OLD_K288_StorehouseKeeper } from './classic/OLD_K288_StorehouseKeeper'
+import { OLD_K293_Ploughman } from './classic/OLD_K293_Ploughman'
+import { OLD_K294_BrushwoodCollector } from './classic/OLD_K294_BrushwoodCollector'
+import { OLD_K296_SeedSeller } from './classic/OLD_K296_SeedSeller'
+import { OLD_NL005_Studio } from './classic/OLD_NL005_Studio'
+import { OLD_NL009_JunkRoom } from './classic/OLD_NL009_JunkRoom'
+import { OLD_NL012_Brook } from './classic/OLD_NL012_Brook'
+import { OLD_NL019_MilkJug } from './classic/OLD_NL019_MilkJug'
+import { OLD_NL022_Bookcase } from './classic/OLD_NL022_Bookcase'
+import { OLD_NL030_DutchClaypipe } from './classic/OLD_NL030_DutchClaypipe'
+import { OLD_NL033_HerringPot } from './classic/OLD_NL033_HerringPot'
+import { OLD_NL042_DrawWell } from './classic/OLD_NL042_DrawWell'
+import { OLD_NL043_Bottles } from './classic/OLD_NL043_Bottles'
+import { OLD_NL049_Lumbermill } from './classic/OLD_NL049_Lumbermill'
+import { OLD_NL060_Shack } from './classic/OLD_NL060_Shack'
+import { OLD_NL078_WaterWorker } from './classic/OLD_NL078_WaterWorker'
+import { OLD_NL109_Thresher } from './classic/OLD_NL109_Thresher'
+import { OLD_NL114_CanalBoatman } from './classic/OLD_NL114_CanalBoatman'
+import { OLD_NL117_Overwinterer } from './classic/OLD_NL117_Overwinterer'
+import { OLD_NL118_PotatoHarvester } from './classic/OLD_NL118_PotatoHarvester'
+import { OLD_O07_BuildingTycoon } from './classic/OLD_O07_BuildingTycoon'
+import { OLD_WA004_BeerTable } from './classic/OLD_WA004_BeerTable'
+import { OLD_WA019_LaGraceFountain } from './classic/OLD_WA019_LaGraceFountain'
+import { OLD_WA024_SmokingMantlepiece } from './classic/OLD_WA024_SmokingMantlepiece'
+import { OLD_WA043_Porter } from './classic/OLD_WA043_Porter'
+import { OLD_WA044_Lutenist } from './classic/OLD_WA044_Lutenist'
+import { OLD_WA047_PatternMaker } from './classic/OLD_WA047_PatternMaker'
+import { OLD_Z321_Ranch } from './classic/OLD_Z321_Ranch'
 import { STUB_BeforeBakeGainClay } from './__stubs__/STUB_BeforeBakeGainClay'
 import { Major_ClayOven } from './major/clay-oven'
 import { Major_StoneOven } from './major/stone-oven'
@@ -2011,6 +2199,194 @@ export const ALL_CARD_IMPLS: Readonly<Record<string, CardImpl>> = {
   'M129_PlowhorseMarket': M129_PlowhorseMarket.impl,
   'M130_Nosebag': M130_Nosebag.impl,
   'M131_CattleStall': M131_CattleStall.impl,
+  'OLD_E11_Field': OLD_E11_Field.impl,
+  'OLD_E12_FishingRod': OLD_E12_FishingRod.impl,
+  'OLD_E13_Axe': OLD_E13_Axe.impl,
+  'OLD_E14_BakersOven': OLD_E14_BakersOven.impl,
+  'OLD_E147_LandAgent': OLD_E147_LandAgent.impl,
+  'OLD_E149_MasterBaker': OLD_E149_MasterBaker.impl,
+  'OLD_E15_BakingTray': OLD_E15_BakingTray.impl,
+  'OLD_E150_Baker': OLD_E150_Baker.impl,
+  'OLD_E151_MasterBuilder': OLD_E151_MasterBuilder.impl,
+  'OLD_E152_BerryPicker': OLD_E152_BerryPicker.impl,
+  'OLD_E153_Mendicant': OLD_E153_Mendicant.impl,
+  'OLD_E155_BreadSeller': OLD_E155_BreadSeller.impl,
+  'OLD_E156_BrushMaker': OLD_E156_BrushMaker.impl,
+  'OLD_E157_Thatcher': OLD_E157_Thatcher.impl,
+  'OLD_E159_HeadoftheFamily': OLD_E159_HeadoftheFamily.impl,
+  'OLD_E16_BuildingMaterial': OLD_E16_BuildingMaterial.impl,
+  'OLD_E160_Farmer': OLD_E160_Farmer.impl,
+  'OLD_E161_Fisherman': OLD_E161_Fisherman.impl,
+  'OLD_E162_MeatSeller': OLD_E162_MeatSeller.impl,
+  'OLD_E163_FieldWarden': OLD_E163_FieldWarden.impl,
+  'OLD_E164_MasterForester': OLD_E164_MasterForester.impl,
+  'OLD_E165_YeomanFarmer': OLD_E165_YeomanFarmer.impl,
+  'OLD_E166_Undergardener': OLD_E166_Undergardener.impl,
+  'OLD_E167_Conjurer': OLD_E167_Conjurer.impl,
+  'OLD_E168_Greengrocer': OLD_E168_Greengrocer.impl,
+  'OLD_E169_Storyteller': OLD_E169_Storyteller.impl,
+  'OLD_E170_EstateManager': OLD_E170_EstateManager.impl,
+  'OLD_E172_Chief': OLD_E172_Chief.impl,
+  'OLD_E173_ChiefsDaughter': OLD_E173_ChiefsDaughter.impl,
+  'OLD_E174_Tutor': OLD_E174_Tutor.impl,
+  'OLD_E175_HedgeKeeper': OLD_E175_HedgeKeeper.impl,
+  'OLD_E176_Woodcutter': OLD_E176_Woodcutter.impl,
+  'OLD_E177_WoodenHutBuilder': OLD_E177_WoodenHutBuilder.impl,
+  'OLD_E178_HutBuilder': OLD_E178_HutBuilder.impl,
+  'OLD_E179_Merchant': OLD_E179_Merchant.impl,
+  'OLD_E18_BeanField': OLD_E18_BeanField.impl,
+  'OLD_E180_HobbyFarmer': OLD_E180_HobbyFarmer.impl,
+  'OLD_E181_Cook': OLD_E181_Cook.impl,
+  'OLD_E182_CharcoalBurner': OLD_E182_CharcoalBurner.impl,
+  'OLD_E184_Grocer': OLD_E184_Grocer.impl,
+  'OLD_E187_ClayDeliveryman': OLD_E187_ClayDeliveryman.impl,
+  'OLD_E188_ClayMixer': OLD_E188_ClayMixer.impl,
+  'OLD_E189_LordoftheManor': OLD_E189_LordoftheManor.impl,
+  'OLD_E19_GypsysCrock': OLD_E19_GypsysCrock.impl,
+  'OLD_E190_Maid': OLD_E190_Maid.impl,
+  'OLD_E191_Mason': OLD_E191_Mason.impl,
+  'OLD_E192_Patron': OLD_E192_Patron.impl,
+  'OLD_E193_Pastor': OLD_E193_Pastor.impl,
+  'OLD_E194_PloughDriver': OLD_E194_PloughDriver.impl,
+  'OLD_E195_PloughMaker': OLD_E195_PloughMaker.impl,
+  'OLD_E196_MushroomCollector': OLD_E196_MushroomCollector.impl,
+  'OLD_E197_Braggart': OLD_E197_Braggart.impl,
+  'OLD_E198_Ratcatcher': OLD_E198_Ratcatcher.impl,
+  'OLD_E199_Renovator': OLD_E199_Renovator.impl,
+  'OLD_E200_Conservator': OLD_E200_Conservator.impl,
+  'OLD_E201_CattleWhisperer': OLD_E201_CattleWhisperer.impl,
+  'OLD_E202_SeasonalWorker': OLD_E202_SeasonalWorker.impl,
+  'OLD_E203_Shepherd': OLD_E203_Shepherd.impl,
+  'OLD_E204_MasterShepherd': OLD_E204_MasterShepherd.impl,
+  'OLD_E205_ReedCollector': OLD_E205_ReedCollector.impl,
+  'OLD_E206_Swineherd': OLD_E206_Swineherd.impl,
+  'OLD_E207_Stablehand': OLD_E207_Stablehand.impl,
+  'OLD_E208_Stablemaster': OLD_E208_Stablemaster.impl,
+  'OLD_E21_HalftimberedHouse': OLD_E21_HalftimberedHouse.impl,
+  'OLD_E210_StoneCarrier': OLD_E210_StoneCarrier.impl,
+  'OLD_E211_Stonecutter': OLD_E211_Stonecutter.impl,
+  'OLD_E212_Dancer': OLD_E212_Dancer.impl,
+  'OLD_E213_Stockman': OLD_E213_Stockman.impl,
+  'OLD_E215_TenantFarmer': OLD_E215_TenantFarmer.impl,
+  'OLD_E216_AnimalKeeper': OLD_E216_AnimalKeeper.impl,
+  'OLD_E217_Reeve': OLD_E217_Reeve.impl,
+  'OLD_E218_Carpenter': OLD_E218_Carpenter.impl,
+  'OLD_E22_Raft': OLD_E22_Raft.impl,
+  'OLD_E23_Manger': OLD_E23_Manger.impl,
+  'OLD_E24_AnimalPen': OLD_E24_AnimalPen.impl,
+  'OLD_E25_Spices': OLD_E25_Spices.impl,
+  'OLD_E26_Plane': OLD_E26_Plane.impl,
+  'OLD_E27_WoodredOven': OLD_E27_WoodredOven.impl,
+  'OLD_E28_Clogs': OLD_E28_Clogs.impl,
+  'OLD_E29_ShepherdsPipe': OLD_E29_ShepherdsPipe.impl,
+  'OLD_E30_Canoe': OLD_E30_Canoe.impl,
+  'OLD_E31_CarpPond': OLD_E31_CarpPond.impl,
+  'OLD_E32_PotatoDibber': OLD_E32_PotatoDibber.impl,
+  'OLD_E33_Ceramics': OLD_E33_Ceramics.impl,
+  'OLD_E338_FeedPellets': OLD_E338_FeedPellets.impl,
+  'OLD_E34_Basket': OLD_E34_Basket.impl,
+  'OLD_E341_Guildmaster': OLD_E341_Guildmaster.impl,
+  'OLD_E35_CornScoop': OLD_E35_CornScoop.impl,
+  'OLD_E36_ClayRoof': OLD_E36_ClayRoof.impl,
+  'OLD_E37_ClaySupports': OLD_E37_ClaySupports.impl,
+  'OLD_E38_MadonnaStatue': OLD_E38_MadonnaStatue.impl,
+  'OLD_E39_MarketStall': OLD_E39_MarketStall.impl,
+  'OLD_E40_MiniPasture': OLD_E40_MiniPasture.impl,
+  'OLD_E41_Millstone': OLD_E41_Millstone.impl,
+  'OLD_E42_HelpfulNeighbours': OLD_E42_HelpfulNeighbours.impl,
+  'OLD_E43_FruitTree': OLD_E43_FruitTree.impl,
+  'OLD_E44_Outhouse': OLD_E44_Outhouse.impl,
+  'OLD_E45_PrivateForest': OLD_E45_PrivateForest.impl,
+  'OLD_E46_SackCart': OLD_E46_SackCart.impl,
+  'OLD_E47_LettucePatch': OLD_E47_LettucePatch.impl,
+  'OLD_E48_ReedPond': OLD_E48_ReedPond.impl,
+  'OLD_E49_WritingDesk': OLD_E49_WritingDesk.impl,
+  'OLD_E50_BuildersTrowel': OLD_E50_BuildersTrowel.impl,
+  'OLD_E51_Spindle': OLD_E51_Spindle.impl,
+  'OLD_E52_Stable': OLD_E52_Stable.impl,
+  'OLD_E53_ButterChurn': OLD_E53_ButterChurn.impl,
+  'OLD_E54_Quarry': OLD_E54_Quarry.impl,
+  'OLD_E55_StoneHouseExtension': OLD_E55_StoneHouseExtension.impl,
+  'OLD_E56_StoneTongs': OLD_E56_StoneTongs.impl,
+  'OLD_E57_Dovecote': OLD_E57_Dovecote.impl,
+  'OLD_E58_AnimalYard': OLD_E58_AnimalYard.impl,
+  'OLD_E59_DrinkingTrough': OLD_E59_DrinkingTrough.impl,
+  'OLD_E60_CattleMarket': OLD_E60_CattleMarket.impl,
+  'OLD_E61_RidingPlough': OLD_E61_RidingPlough.impl,
+  'OLD_E62_TurnwrestPlough': OLD_E62_TurnwrestPlough.impl,
+  'OLD_FL015_CourtyardGarden': OLD_FL015_CourtyardGarden.impl,
+  'OLD_FL019_LanternWonder': OLD_FL019_LanternWonder.impl,
+  'OLD_FL035_Freemason': OLD_FL035_Freemason.impl,
+  'OLD_FL046_StableArchitect': OLD_FL046_StableArchitect.impl,
+  'OLD_FR045_StoneHouseReconstruction': OLD_FR045_StoneHouseReconstruction.impl,
+  'OLD_FR060_WoodSaw': OLD_FR060_WoodSaw.impl,
+  'OLD_FR100_PipeSmoker': OLD_FR100_PipeSmoker.impl,
+  'OLD_G047_ResourceCollector': OLD_G047_ResourceCollector.impl,
+  'OLD_G064_BarteringHut': OLD_G064_BarteringHut.impl,
+  'OLD_G075_FarmersMarket': OLD_G075_FarmersMarket.impl,
+  'OLD_I102_WildlifeReserve': OLD_I102_WildlifeReserve.impl,
+  'OLD_I225_FieldWatchman': OLD_I225_FieldWatchman.impl,
+  'OLD_I231_Manservant': OLD_I231_Manservant.impl,
+  'OLD_I235_WoodCollector': OLD_I235_WoodCollector.impl,
+  'OLD_I236_HideFarmer': OLD_I236_HideFarmer.impl,
+  'OLD_I240_Cowherd': OLD_I240_Cowherd.impl,
+  'OLD_I242_ClayHutBuilder': OLD_I242_ClayHutBuilder.impl,
+  'OLD_I245_MarketCrier': OLD_I245_MarketCrier.impl,
+  'OLD_I249_Puppeteer': OLD_I249_Puppeteer.impl,
+  'OLD_I252_PigBreeder': OLD_I252_PigBreeder.impl,
+  'OLD_I259_AnimalDealer': OLD_I259_AnimalDealer.impl,
+  'OLD_I261_Outrider': OLD_I261_Outrider.impl,
+  'OLD_I63_MoldboardPlough': OLD_I63_MoldboardPlough.impl,
+  'OLD_I67_ThreshingBoard': OLD_I67_ThreshingBoard.impl,
+  'OLD_I69_StrawberryPatch': OLD_I69_StrawberryPatch.impl,
+  'OLD_I77_ShepherdsCrook': OLD_I77_ShepherdsCrook.impl,
+  'OLD_I78_Copse': OLD_I78_Copse.impl,
+  'OLD_I79_WoodCart': OLD_I79_WoodCart.impl,
+  'OLD_I84_ChickenCoop': OLD_I84_ChickenCoop.impl,
+  'OLD_I88_Lasso': OLD_I88_Lasso.impl,
+  'OLD_K112_Bookshelf': OLD_K112_Bookshelf.impl,
+  'OLD_K113_Flail': OLD_K113_Flail.impl,
+  'OLD_K114_DuckPond': OLD_K114_DuckPond.impl,
+  'OLD_K115_SwingPlough': OLD_K115_SwingPlough.impl,
+  'OLD_K116_Granary': OLD_K116_Granary.impl,
+  'OLD_K117_Greenhouse': OLD_K117_Greenhouse.impl,
+  'OLD_K120_HouseGoat': OLD_K120_HouseGoat.impl,
+  'OLD_K131_ClayPit': OLD_K131_ClayPit.impl,
+  'OLD_K133_MilkingStool': OLD_K133_MilkingStool.impl,
+  'OLD_K139_SleepingCorner': OLD_K139_SleepingCorner.impl,
+  'OLD_K142_StoneCart': OLD_K142_StoneCart.impl,
+  'OLD_K146_Loom': OLD_K146_Loom.impl,
+  'OLD_K267_AdoptiveParents': OLD_K267_AdoptiveParents.impl,
+  'OLD_K274_OrganicFarmer': OLD_K274_OrganicFarmer.impl,
+  'OLD_K282_HouseSteward': OLD_K282_HouseSteward.impl,
+  'OLD_K288_StorehouseKeeper': OLD_K288_StorehouseKeeper.impl,
+  'OLD_K293_Ploughman': OLD_K293_Ploughman.impl,
+  'OLD_K294_BrushwoodCollector': OLD_K294_BrushwoodCollector.impl,
+  'OLD_K296_SeedSeller': OLD_K296_SeedSeller.impl,
+  'OLD_NL005_Studio': OLD_NL005_Studio.impl,
+  'OLD_NL009_JunkRoom': OLD_NL009_JunkRoom.impl,
+  'OLD_NL012_Brook': OLD_NL012_Brook.impl,
+  'OLD_NL019_MilkJug': OLD_NL019_MilkJug.impl,
+  'OLD_NL022_Bookcase': OLD_NL022_Bookcase.impl,
+  'OLD_NL030_DutchClaypipe': OLD_NL030_DutchClaypipe.impl,
+  'OLD_NL033_HerringPot': OLD_NL033_HerringPot.impl,
+  'OLD_NL042_DrawWell': OLD_NL042_DrawWell.impl,
+  'OLD_NL043_Bottles': OLD_NL043_Bottles.impl,
+  'OLD_NL049_Lumbermill': OLD_NL049_Lumbermill.impl,
+  'OLD_NL060_Shack': OLD_NL060_Shack.impl,
+  'OLD_NL078_WaterWorker': OLD_NL078_WaterWorker.impl,
+  'OLD_NL109_Thresher': OLD_NL109_Thresher.impl,
+  'OLD_NL114_CanalBoatman': OLD_NL114_CanalBoatman.impl,
+  'OLD_NL117_Overwinterer': OLD_NL117_Overwinterer.impl,
+  'OLD_NL118_PotatoHarvester': OLD_NL118_PotatoHarvester.impl,
+  'OLD_O07_BuildingTycoon': OLD_O07_BuildingTycoon.impl,
+  'OLD_WA004_BeerTable': OLD_WA004_BeerTable.impl,
+  'OLD_WA019_LaGraceFountain': OLD_WA019_LaGraceFountain.impl,
+  'OLD_WA024_SmokingMantlepiece': OLD_WA024_SmokingMantlepiece.impl,
+  'OLD_WA043_Porter': OLD_WA043_Porter.impl,
+  'OLD_WA044_Lutenist': OLD_WA044_Lutenist.impl,
+  'OLD_WA047_PatternMaker': OLD_WA047_PatternMaker.impl,
+  'OLD_Z321_Ranch': OLD_Z321_Ranch.impl,
   'STUB_BeforeBakeGainClay': STUB_BeforeBakeGainClay.impl,
   'Major_ClayOven': Major_ClayOven.impl,
   'Major_StoneOven': Major_StoneOven.impl,

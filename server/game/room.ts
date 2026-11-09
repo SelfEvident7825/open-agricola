@@ -70,6 +70,7 @@ export type Room = {
   enableFarmersOfTheMoor?: boolean
   enableMoorBalanceRules?: boolean
   allowIncompleteFarmersOfTheMoorMinorDeal?: boolean
+  gameEdition?: 'revised' | 'classic'
   enableSnakeOpening?: boolean
   /**
    * Local hotseat: one person plays every seat from a single connection.
@@ -114,6 +115,7 @@ export type FixedDevRoomStartupOptions = {
   enableFarmersOfTheMoor?: boolean
   enableMoorBalanceRules?: boolean
   allowIncompleteFarmersOfTheMoorMinorDeal?: boolean
+  gameEdition?: 'revised' | 'classic'
   enableSnakeOpening?: boolean
   draftParents?: boolean
   draftMode?: 'simultaneous'
@@ -249,6 +251,7 @@ export const toRoomMeta = (room: Room): RoomMeta => ({
   enableFarmersOfTheMoor: room.enableFarmersOfTheMoor ?? (room.session.state.enableFarmersOfTheMoor === true),
   enableMoorBalanceRules: room.session.state.enableMoorBalanceRules === true,
   allowIncompleteFarmersOfTheMoorMinorDeal: room.allowIncompleteFarmersOfTheMoorMinorDeal ?? false,
+  gameEdition: room.gameEdition ?? room.session.state.gameEdition ?? 'revised',
   enableSnakeOpening: room.enableSnakeOpening ?? (room.session.state.enableSnakeOpening === true),
   hotseat: room.hotseat === true,
   status: getRoomStatus(room),
@@ -335,7 +338,7 @@ export const removePlayerFromRoom = (
 
 type RoomLikeForSummary = Pick<
   Room,
-  'id' | 'players' | 'seatOwners' | 'maxPlayers' | 'createdBy' | 'hotseat' | 'access' | 'status'
+  'id' | 'players' | 'seatOwners' | 'maxPlayers' | 'createdBy' | 'hotseat' | 'access' | 'status' | 'gameEdition'
 > & Partial<Pick<Room, 'teamMembers' | 'waitingTeamConnections' | 'session'>>
 
 export function summarizeRoomsForLobby(
@@ -357,6 +360,7 @@ export function summarizeRoomsForLobby(
       playerCount,
       maxPlayers: r.maxPlayers,
       createdBy: r.createdBy,
+      gameEdition: r.gameEdition,
       status: r.status === 'playing' ? 'playing' : 'waiting',
       ...(isPublicSpectatableRoom(r) && roomConnectedPlayerCount(r) > 0 ? { canSpectate: true } : {}),
       ...(r.access?.kind === 'invited' ? { access: 'invited' } : {}),
@@ -380,6 +384,7 @@ const createSessionFromSnapshot = (
       enableFarmersOfTheMoor: snapshot.meta.enableFarmersOfTheMoor ?? false,
       enableMoorBalanceRules: snapshot.meta.enableMoorBalanceRules === true,
       allowIncompleteFarmersOfTheMoorMinorDeal: snapshot.meta.allowIncompleteFarmersOfTheMoorMinorDeal ?? false,
+      gameEdition: snapshot.meta.gameEdition,
       enableSnakeOpening: snapshot.meta.enableSnakeOpening ?? false,
     })
   }
@@ -399,6 +404,7 @@ const createSessionFromSnapshot = (
       enableFarmersOfTheMoor: snapshot.meta.enableFarmersOfTheMoor ?? false,
       enableMoorBalanceRules: snapshot.meta.enableMoorBalanceRules === true,
       allowIncompleteFarmersOfTheMoorMinorDeal: snapshot.meta.allowIncompleteFarmersOfTheMoorMinorDeal ?? false,
+      gameEdition: snapshot.meta.gameEdition,
       enableSnakeOpening: snapshot.meta.enableSnakeOpening ?? false,
     })
   }
@@ -451,6 +457,7 @@ export const snapshotToRoom = (
     enableFarmersOfTheMoor: snapshot.meta.enableFarmersOfTheMoor ?? (snapshot.serialized?.state?.enableFarmersOfTheMoor === true),
     enableMoorBalanceRules: session.state.enableMoorBalanceRules === true,
     allowIncompleteFarmersOfTheMoorMinorDeal: snapshot.meta.allowIncompleteFarmersOfTheMoorMinorDeal ?? false,
+    gameEdition: snapshot.meta.gameEdition,
     enableSnakeOpening: snapshot.meta.enableSnakeOpening ?? (snapshot.serialized?.state?.enableSnakeOpening === true),
     ...(snapshotRehydrationFailed ? { snapshotRehydrationFailed: true } : {}),
   }

@@ -355,6 +355,7 @@ const useTransportSetup = (
             enableFarmersOfTheMoor: enableFarmersOfTheMoorFromQuery(window.location.search) || undefined,
             enableMoorBalanceRules: enableMoorBalanceRulesFromQuery(window.location.search) || undefined,
             allowIncompleteFarmersOfTheMoorMinorDeal: allowIncompleteFarmersOfTheMoorMinorDealFromQuery(window.location.search) || undefined,
+        gameEdition: new URLSearchParams(window.location.search).get('gameEdition') === 'classic' ? 'classic' : undefined,
             enableSnakeOpening: enableSnakeOpeningFromQuery(window.location.search) || undefined,
             ...parseDraftParamsFromQuery(window.location.search),
           })

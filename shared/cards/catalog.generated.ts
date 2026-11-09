@@ -5,7 +5,7 @@ type GeneratedCatalogCardDefinition = CardDefinition & {
   kind: 'minor' | 'occupation' | 'playerAction'
 }
 
-export const catalogCardDefinitions: readonly GeneratedCatalogCardDefinition[] = [
+const batch0: readonly GeneratedCatalogCardDefinition[] = [
   {
     "id": "A001_Shelter",
     "name": "Shelter",
@@ -1605,6 +1605,8 @@ export const catalogCardDefinitions: readonly GeneratedCatalogCardDefinition[] =
     "extraVp": true,
     "kind": "occupation"
   },
+]
+const batch1: readonly GeneratedCatalogCardDefinition[] = [
   {
     "id": "A101_CookeryOutfitter",
     "name": "Cookery Outfitter",
@@ -2974,6 +2976,8 @@ export const catalogCardDefinitions: readonly GeneratedCatalogCardDefinition[] =
     },
     "kind": "minor"
   },
+]
+const batch2: readonly GeneratedCatalogCardDefinition[] = [
   {
     "id": "B021_HayloftBarn",
     "name": "Hayloft Barn",
@@ -4627,6 +4631,8 @@ export const catalogCardDefinitions: readonly GeneratedCatalogCardDefinition[] =
     "players": "1+",
     "kind": "occupation"
   },
+]
+const batch3: readonly GeneratedCatalogCardDefinition[] = [
   {
     "id": "B121_Geologist",
     "name": "Geologist",
@@ -6079,6 +6085,8 @@ export const catalogCardDefinitions: readonly GeneratedCatalogCardDefinition[] =
     },
     "kind": "minor"
   },
+]
+const batch4: readonly GeneratedCatalogCardDefinition[] = [
   {
     "id": "C041_FarmStore",
     "name": "Farm Store",
@@ -7606,6 +7614,8 @@ export const catalogCardDefinitions: readonly GeneratedCatalogCardDefinition[] =
     "evenMoreSet": true,
     "kind": "occupation"
   },
+]
+const batch5: readonly GeneratedCatalogCardDefinition[] = [
   {
     "id": "C141_SheepProvider",
     "name": "Sheep Provider",
@@ -9258,6 +9268,8 @@ export const catalogCardDefinitions: readonly GeneratedCatalogCardDefinition[] =
     ],
     "kind": "minor"
   },
+]
+const batch6: readonly GeneratedCatalogCardDefinition[] = [
   {
     "id": "D060_LargePottery",
     "name": "Large Pottery",
@@ -10794,6 +10806,8 @@ export const catalogCardDefinitions: readonly GeneratedCatalogCardDefinition[] =
     "players": "4+",
     "kind": "occupation"
   },
+]
+const batch7: readonly GeneratedCatalogCardDefinition[] = [
   {
     "id": "D160_Midwife",
     "name": "Midwife",
@@ -12401,6 +12415,8 @@ export const catalogCardDefinitions: readonly GeneratedCatalogCardDefinition[] =
     },
     "kind": "minor"
   },
+]
+const batch8: readonly GeneratedCatalogCardDefinition[] = [
   {
     "id": "E080_RockGarden",
     "name": "Rock Garden",
@@ -13821,6 +13837,8 @@ export const catalogCardDefinitions: readonly GeneratedCatalogCardDefinition[] =
     "requiresFarmersOfTheMoor": true,
     "kind": "minor"
   },
+]
+const batch9: readonly GeneratedCatalogCardDefinition[] = [
   {
     "id": "M026_ChimneyHood",
     "name": "Chimney Hood",
@@ -15772,6 +15790,8 @@ export const catalogCardDefinitions: readonly GeneratedCatalogCardDefinition[] =
     "requiresFarmersOfTheMoor": true,
     "kind": "minor"
   },
+]
+const batch10: readonly GeneratedCatalogCardDefinition[] = [
   {
     "id": "M126_CooperativeStore",
     "name": "Cooperative Store",
@@ -15880,7 +15900,31012 @@ export const catalogCardDefinitions: readonly GeneratedCatalogCardDefinition[] =
     "requiresFarmersOfTheMoor": true,
     "kind": "minor"
   },
+  {
+    "id": "OLD_BI01_SparrenCastle",
+    "originalId": "BI01_SparrenCastle",
+    "gameEdition": "classic",
+    "name": "施帕仁堡",
+    "deck": "BI",
+    "number": 1,
+    "desc": [
+      "每当任意玩家使用木头/石头积累行动格时，从游戏供应区放置1木头/1石头到此卡上。每当你使用提供“翻修”行动的行动格前，你可以将此卡上至多5个资源放入个人供应区。游戏结束计分前，移除此卡上的所有资源。"
+    ],
+    "cost": {
+      "wood": 1,
+      "clay": 1,
+      "stone": 2
+    },
+    "vp": 2,
+    "prerequisite": "2 Occupations",
+    "occupationPrerequisites": {
+      "min": 2
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/BI01.png",
+    "locales": {
+      "zh": {
+        "name": "施帕仁堡",
+        "desc": [
+          "每当任意玩家使用木头/石头积累行动格时，从游戏供应区放置1木头/1石头到此卡上。每当你使用提供“翻修”行动的行动格前，你可以将此卡上至多5个资源放入个人供应区。游戏结束计分前，移除此卡上的所有资源。"
+        ],
+        "prerequisite": "职业×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_BI02_BielefeldCards",
+    "originalId": "BI02_BielefeldCards",
+    "gameEdition": "classic",
+    "name": "扑克牌",
+    "deck": "BI",
+    "number": 2,
+    "desc": [
+      "每次你从积累行动格获得资源时，将获得的所有资源放在此卡上。每当此卡上有4个相同的资源时，将4个该种资源移入你的个人供应区。当你使用动物积累行动格时，无论你能否将动物转换为食物/农场是否有饲养空间，必须把所有动物放置在此卡上。当此卡上有4个相同动物时，将4个动物转换为食物/移入农场，否则将它们丢弃。此卡上的动物不能参与繁殖。当4个建筑资源移入你的个人供应区时，可以发动WM043资源放贷者效果。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "职业=0",
+    "occupationPrerequisites": {
+      "max": 0
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/BI02.png",
+    "locales": {
+      "zh": {
+        "name": "扑克牌",
+        "desc": [
+          "每次你从积累行动格获得资源时，将获得的所有资源放在此卡上。每当此卡上有4个相同的资源时，将4个该种资源移入你的个人供应区。当你使用动物积累行动格时，无论你能否将动物转换为食物/农场是否有饲养空间，必须把所有动物放置在此卡上。当此卡上有4个相同动物时，将4个动物转换为食物/移入农场，否则将它们丢弃。此卡上的动物不能参与繁殖。当4个建筑资源移入你的个人供应区时，可以发动WM043资源放贷者效果。"
+        ],
+        "prerequisite": "职业=0"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_BI03_BakingPowder",
+    "originalId": "BI03_BakingPowder",
+    "gameEdition": "classic",
+    "name": "发酵粉",
+    "deck": "BI",
+    "number": 3,
+    "desc": [
+      "每当你使用播种和/或烤面包行动格时，在你的每张主要发展卡上放置1份小麦。每当你打出职业卡时，将这些小麦移入你的个人供应区。如果有主要发展卡被你视作次要发展卡，此时仍可当作主要发展卡。游戏结束计分前，移除此卡上的所有资源。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/BI03.png",
+    "locales": {
+      "zh": {
+        "name": "发酵粉",
+        "desc": [
+          "每当你使用播种和/或烤面包行动格时，在你的每张主要发展卡上放置1份小麦。每当你打出职业卡时，将这些小麦移入你的个人供应区。如果有主要发展卡被你视作次要发展卡，此时仍可当作主要发展卡。游戏结束计分前，移除此卡上的所有资源。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_BI04_Spielwiese",
+    "originalId": "BI04_Spielwiese",
+    "gameEdition": "classic",
+    "name": "游乐场",
+    "deck": "BI",
+    "number": 4,
+    "desc": [
+      "从牌库中随机抽取2张职业卡加入手牌。查看这两张牌的适用玩家数(如1+,3+,或4+)并取较小值，你获得等同于该数量的由你选择的不同种类的建筑资源。使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {
+      "food": 1
+    },
+    "vp": 1,
+    "prerequisite": "职业≤1",
+    "occupationPrerequisites": {
+      "max": 1
+    },
+    "passing": true,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/BI04.png",
+    "locales": {
+      "zh": {
+        "name": "游乐场",
+        "desc": [
+          "从牌库中随机抽取2张职业卡加入手牌。查看这两张牌的适用玩家数(如1+,3+,或4+)并取较小值，你获得等同于该数量的由你选择的不同种类的建筑资源。使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": "职业≤1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_BI05_HomeZoo",
+    "originalId": "BI05_HomeZoo",
+    "gameEdition": "classic",
+    "name": "私家动物园",
+    "deck": "BI",
+    "number": 5,
+    "desc": [
+      "此卡可容纳羊、猪、牛各一只。只有从积累行动格拿取的动物能放到此卡上。此卡上的动物不参与繁殖阶段，在最后一次收获阶段，你可以将此卡上的动物换成分数，每只1分。吉士1张带有炉子符号"
+    ],
+    "cost": {
+      "stone": 1
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/BI05.png",
+    "locales": {
+      "zh": {
+        "name": "私家动物园",
+        "desc": [
+          "此卡可容纳羊、猪、牛各一只。只有从积累行动格拿取的动物能放到此卡上。此卡上的动物不参与繁殖阶段，在最后一次收获阶段，你可以将此卡上的动物换成分数，每只1分。吉士1张带有炉子符号"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_BI06_Conspiracy",
+    "originalId": "BI06_Conspiracy",
+    "gameEdition": "classic",
+    "name": "Bi扩卡牌",
+    "deck": "BI",
+    "number": 6,
+    "desc": [
+      "在每个丰收时节的收割阶段，你打出的每2张Bi扩卡牌使你获得1食物。游戏结束时，每位打出至少1/3/5张Bi扩卡牌的玩家获得1/3/5分。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "共谋1张",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/BI06.png",
+    "locales": {
+      "zh": {
+        "name": "Bi扩卡牌",
+        "desc": [
+          "在每个丰收时节的收割阶段，你打出的每2张Bi扩卡牌使你获得1食物。游戏结束时，每位打出至少1/3/5张Bi扩卡牌的玩家获得1/3/5分。"
+        ],
+        "prerequisite": "共谋1张"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_BI07_BakingPowder",
+    "originalId": "BI07_BakingPowder",
+    "gameEdition": "classic",
+    "name": "亚麻纺织厂",
+    "deck": "BI",
+    "number": 7,
+    "desc": [
+      "打出此卡时，每位其他玩家可以选择获得2食物。有几个玩家如此做，你就可以支付几个相异的建筑资源获得等量的分数。"
+    ],
+    "cost": {},
+    "vp": 1,
+    "prerequisite": "1只羊",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/BI07.png",
+    "locales": {
+      "zh": {
+        "name": "亚麻纺织厂",
+        "desc": [
+          "打出此卡时，每位其他玩家可以选择获得2食物。有几个玩家如此做，你就可以支付几个相异的建筑资源获得等量的分数。"
+        ],
+        "prerequisite": "1只羊"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_BI08_Custard",
+    "originalId": "BI08_Custard",
+    "gameEdition": "classic",
+    "name": "吉士",
+    "deck": "BI",
+    "number": 8,
+    "desc": [
+      "打出此卡时，你获得等同于之后完整丰收时节数量的食物。每当你使用石头积累行动格后，你必须留下1石头在该行动格上。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/BI08.png",
+    "locales": {
+      "zh": {
+        "name": "吉士",
+        "desc": [
+          "打出此卡时，你获得等同于之后完整丰收时节数量的食物。每当你使用石头积累行动格后，你必须留下1石头在该行动格上。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_BI09_Alm",
+    "originalId": "BI09_Alm",
+    "gameEdition": "classic",
+    "name": "斗牛场",
+    "deck": "BI",
+    "number": 9,
+    "desc": [
+      "打出此卡时，你可以从你的农场中退还1个马厩到个人供应区，并获得1只牛。此卡可以容纳任意数量的牛。"
+    ],
+    "cost": {
+      "sheep": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/BI09.png",
+    "locales": {
+      "zh": {
+        "name": "斗牛场",
+        "desc": [
+          "打出此卡时，你可以从你的农场中退还1个马厩到个人供应区，并获得1只牛。此卡可以容纳任意数量的牛。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_BI10_The52ndLatitude",
+    "originalId": "BI10_The52ndLatitude",
+    "gameEdition": "classic",
+    "name": "北纬52度",
+    "deck": "BI",
+    "number": 10,
+    "desc": [
+      "打出此卡时，从游戏供应区拿取1个石头放在你的农场1个空格上，这块空地视为被使用。游戏结束时，每块与该格正交相邻的空田使你获得1分。"
+    ],
+    "cost": {
+      "wood": 1,
+      "stone": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/BI10.png",
+    "locales": {
+      "zh": {
+        "name": "北纬52度",
+        "desc": [
+          "打出此卡时，从游戏供应区拿取1个石头放在你的农场1个空格上，这块空地视为被使用。游戏结束时，每块与该格正交相邻的空田使你获得1分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_BI11_SchlachterChurch",
+    "originalId": "BI11_SchlachterChurch",
+    "gameEdition": "classic",
+    "name": "大教堂",
+    "deck": "BI",
+    "number": 11,
+    "desc": [
+      "每当其他玩家使用炉子 符号发展卡将动物转换成食物时，将这些动物放到此卡上。限一次：任意时刻，你可以将此卡上的所有动物各转换成1食物。"
+    ],
+    "cost": {
+      "wood": 1,
+      "clay": 1,
+      "stone": 1
+    },
+    "vp": 1,
+    "prerequisite": "2种动物",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/BI11.png",
+    "locales": {
+      "zh": {
+        "name": "大教堂",
+        "desc": [
+          "每当其他玩家使用炉子 符号发展卡将动物转换成食物时，将这些动物放到此卡上。限一次：任意时刻，你可以将此卡上的所有动物各转换成1食物。"
+        ],
+        "prerequisite": "2种动物"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_BI12_Skybridge",
+    "originalId": "BI12_Skybridge",
+    "gameEdition": "classic",
+    "name": "天空桥",
+    "deck": "BI",
+    "number": 12,
+    "desc": [
+      "打出此卡时，从个人供应区拿取石头，在每两个正交相邻的房屋之间的交界处放置至多1个。每次丰收时节的喂养阶段，每个这样的石头使你获得1份小麦。游戏结束时，每个这样的石头使你获得1分。(可以放置任意数量的石头)"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "石屋阶段",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/BI12.png",
+    "locales": {
+      "zh": {
+        "name": "天空桥",
+        "desc": [
+          "打出此卡时，从个人供应区拿取石头，在每两个正交相邻的房屋之间的交界处放置至多1个。每次丰收时节的喂养阶段，每个这样的石头使你获得1份小麦。游戏结束时，每个这样的石头使你获得1分。(可以放置任意数量的石头)"
+        ],
+        "prerequisite": "石屋阶段"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_BI13_WoodenButtons",
+    "originalId": "BI13_WoodenButtons",
+    "gameEdition": "classic",
+    "name": "木制纽扣",
+    "deck": "BI",
+    "number": 13,
+    "desc": [
+      "立即获得等同于你空房间数量(卡牌提供的额外居住空间也算)的食客，并于本回合派遣。本回合结束时退还。本回合，你被食客占据的房间不能用于执行“生娃(需要空房间)”行动。使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {
+      "sheep": 1
+    },
+    "vp": 1,
+    "prerequisite": "空房间×2",
+    "passing": true,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/BI13.png",
+    "locales": {
+      "zh": {
+        "name": "木制纽扣",
+        "desc": [
+          "立即获得等同于你空房间数量(卡牌提供的额外居住空间也算)的食客，并于本回合派遣。本回合结束时退还。本回合，你被食客占据的房间不能用于执行“生娃(需要空房间)”行动。使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": "空房间×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_BI14_LinenWeaver",
+    "originalId": "BI14_LinenWeaver",
+    "gameEdition": "classic",
+    "name": "亚麻城织布工",
+    "deck": "BI",
+    "number": 14,
+    "desc": [
+      "每回合开始时，将此卡传给下家，该回合视作他已打出的职业卡。拥有此卡的玩家打出发展卡时可以少花费1木。如果你是最先打出此卡的玩家，则改为木头、砖头、芦苇、石头均少花费1个。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/BI14.png",
+    "locales": {
+      "zh": {
+        "name": "亚麻城织布工",
+        "desc": [
+          "每回合开始时，将此卡传给下家，该回合视作他已打出的职业卡。拥有此卡的玩家打出发展卡时可以少花费1木。如果你是最先打出此卡的玩家，则改为木头、砖头、芦苇、石头均少花费1个。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_BI15_Vampire",
+    "originalId": "BI15_Vampire",
+    "gameEdition": "classic",
+    "name": "吸血鬼",
+    "deck": "BI",
+    "number": 15,
+    "desc": [
+      "此卡只能在你的上家刚使用完积累行动格，接着轮到你的轮次时打出。你立即执行相同的行动并从游戏供应区获得该格被使用前的资源。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/BI15.png",
+    "locales": {
+      "zh": {
+        "name": "吸血鬼",
+        "desc": [
+          "此卡只能在你的上家刚使用完积累行动格，接着轮到你的轮次时打出。你立即执行相同的行动并从游戏供应区获得该格被使用前的资源。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_BI16_InstituteFounder",
+    "originalId": "BI16_InstituteFounder",
+    "gameEdition": "classic",
+    "name": "研究所创始人",
+    "deck": "BI",
+    "number": 16,
+    "desc": [
+      "打出此卡时，你可以支付1份食物购买1份小麦。每次丰收时节的喂养阶段，你的第4、5位家庭成员每位只需要吃1食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/BI16.png",
+    "locales": {
+      "zh": {
+        "name": "研究所创始人",
+        "desc": [
+          "打出此卡时，你可以支付1份食物购买1份小麦。每次丰收时节的喂养阶段，你的第4、5位家庭成员每位只需要吃1食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_BI17_WhiteBrazilian",
+    "originalId": "BI17_WhiteBrazilian",
+    "gameEdition": "classic",
+    "name": "足球射手",
+    "deck": "BI",
+    "number": 17,
+    "desc": [
+      "你只能在你农场上方的一排5格都未被使用时打出此卡。在这排最左边1格和最右边1格分别放1个马厩和1只猪。你有3次机会用手指弹那只野猪。如果弹进了马厩那格(局部进入即可)，你保留马厩和野猪。否则只留下马厩。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/BI17.png",
+    "locales": {
+      "zh": {
+        "name": "足球射手",
+        "desc": [
+          "你只能在你农场上方的一排5格都未被使用时打出此卡。在这排最左边1格和最右边1格分别放1个马厩和1只猪。你有3次机会用手指弹那只野猪。如果弹进了马厩那格(局部进入即可)，你保留马厩和野猪。否则只留下马厩。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_BI18_AppleMan",
+    "originalId": "BI18_AppleMan",
+    "gameEdition": "classic",
+    "name": "苹果农夫",
+    "deck": "BI",
+    "number": 18,
+    "desc": [
+      "每个回家阶段，你可以支付1份蔬菜来执行一次“犁田”、“围栅栏”或“建造马厩”行动，而不需要派遣家庭成员。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/BI18.png",
+    "locales": {
+      "zh": {
+        "name": "苹果农夫",
+        "desc": [
+          "每个回家阶段，你可以支付1份蔬菜来执行一次“犁田”、“围栅栏”或“建造马厩”行动，而不需要派遣家庭成员。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_BI19_Deaconess",
+    "originalId": "BI19_Deaconess",
+    "gameEdition": "classic",
+    "name": "女执事",
+    "deck": "BI",
+    "number": 19,
+    "desc": [
+      "如果你只有两名家庭成员，在第1/2/3/4/5/6个丰收时节的喂养阶段，你获得1/2/3/4/5/6份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/BI19.png",
+    "locales": {
+      "zh": {
+        "name": "女执事",
+        "desc": [
+          "如果你只有两名家庭成员，在第1/2/3/4/5/6个丰收时节的喂养阶段，你获得1/2/3/4/5/6份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_BI20_Survivalist",
+    "originalId": "BI20_Survivalist",
+    "gameEdition": "classic",
+    "name": "生存主义者",
+    "deck": "BI",
+    "number": 20,
+    "desc": [
+      "每个丰收时节的喂养阶段，你可以使用此卡将至多4个相异的建筑资源各转换成2食物，若如此做，你必须将1食物放到钓鱼积累行动格上。如果你使用钓鱼积累行动格时打出此卡，不可以发动此效果。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/BI20.png",
+    "locales": {
+      "zh": {
+        "name": "生存主义者",
+        "desc": [
+          "每个丰收时节的喂养阶段，你可以使用此卡将至多4个相异的建筑资源各转换成2食物，若如此做，你必须将1食物放到钓鱼积累行动格上。如果你使用钓鱼积累行动格时打出此卡，不可以发动此效果。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_BI21_ChiefEditor",
+    "originalId": "BI21_ChiefEditor",
+    "gameEdition": "classic",
+    "name": "总编",
+    "deck": "BI",
+    "number": 21,
+    "desc": [
+      "下一次你使用钓鱼积累行动格时，额外获得2分。之后, 你每次使用钓鱼积累行动格时，额外获得1分。如果你使用钓鱼积累行动格时打出此卡，不可以立即发动此效果。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/BI21.png",
+    "locales": {
+      "zh": {
+        "name": "总编",
+        "desc": [
+          "下一次你使用钓鱼积累行动格时，额外获得2分。之后, 你每次使用钓鱼积累行动格时，额外获得1分。如果你使用钓鱼积累行动格时打出此卡，不可以立即发动此效果。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_BI22_ProtestSinger",
+    "originalId": "BI22_ProtestSinger",
+    "gameEdition": "classic",
+    "name": "抗争歌手",
+    "deck": "BI",
+    "number": 22,
+    "desc": [
+      "你的每个农场空格能容纳1只动物，该农场空格视作未使用。这些动物不能以任何方式参与繁殖，可以转换为食物，可以移入你农场中其他位置。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/BI22.png",
+    "locales": {
+      "zh": {
+        "name": "抗争歌手",
+        "desc": [
+          "你的每个农场空格能容纳1只动物，该农场空格视作未使用。这些动物不能以任何方式参与繁殖，可以转换为食物，可以移入你农场中其他位置。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_BI23_SystemsTheorist",
+    "originalId": "BI23_SystemsTheorist",
+    "gameEdition": "classic",
+    "name": "系统理论家",
+    "deck": "BI",
+    "number": 23,
+    "desc": [
+      "每当你建造至少1个马厩时，额外获得1份食物。（同时建造多个马厩只能获得1份食物）游戏结束时, 若你有2/3/4个马厩两两相邻（包括对角相邻）,额外获得1/2/3分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/BI23.png",
+    "locales": {
+      "zh": {
+        "name": "系统理论家",
+        "desc": [
+          "每当你建造至少1个马厩时，额外获得1份食物。（同时建造多个马厩只能获得1份食物）游戏结束时, 若你有2/3/4个马厩两两相邻（包括对角相邻）,额外获得1/2/3分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_BI24_MemberofaCooperative",
+    "originalId": "BI24_MemberofaCooperative",
+    "gameEdition": "classic",
+    "name": "合作社成员",
+    "deck": "BI",
+    "number": 24,
+    "desc": [
+      "每当其他玩家执行“生娃”行动时，你从游戏供应区拿取1食物放在此卡上。限1次：在3/4/5位玩家的游戏中，你可以支付此卡上的3/4/5份食物将生儿育女行动格当成求子心切行动格使用。如果其他玩家执行“生娃”行动时，你打出此卡，可立即发动此效果。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/BI24.png",
+    "locales": {
+      "zh": {
+        "name": "合作社成员",
+        "desc": [
+          "每当其他玩家执行“生娃”行动时，你从游戏供应区拿取1食物放在此卡上。限1次：在3/4/5位玩家的游戏中，你可以支付此卡上的3/4/5份食物将生儿育女行动格当成求子心切行动格使用。如果其他玩家执行“生娃”行动时，你打出此卡，可立即发动此效果。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_C01_Governor",
+    "originalId": "C01_Governor",
+    "gameEdition": "classic",
+    "name": "统治者",
+    "deck": "C",
+    "number": 1,
+    "desc": [
+      "从牌库中抽取4张职业卡，并从中选择其中2张加入手牌。如果满足条件，你可以立即免费打出其中1张。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/C01.png",
+    "locales": {
+      "zh": {
+        "name": "统治者",
+        "desc": [
+          "从牌库中抽取4张职业卡，并从中选择其中2张加入手牌。如果满足条件，你可以立即免费打出其中1张。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_C02_WeekendWorker",
+    "originalId": "C02_WeekendWorker",
+    "gameEdition": "classic",
+    "name": "周末工作者",
+    "deck": "C",
+    "number": 2,
+    "desc": [
+      "每当你执行“翻修”行动后，你可以扩建1间房屋，费用为1芦苇+1个翻修前房屋等级对应的建筑资源+2个翻修后房屋等级对应的建筑资源。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/C02.png",
+    "locales": {
+      "zh": {
+        "name": "周末工作者",
+        "desc": [
+          "每当你执行“翻修”行动后，你可以扩建1间房屋，费用为1芦苇+1个翻修前房屋等级对应的建筑资源+2个翻修后房屋等级对应的建筑资源。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_C03_JackOfAllTrades",
+    "originalId": "C03_JackOfAllTrades",
+    "gameEdition": "classic",
+    "name": "万能博士",
+    "deck": "C",
+    "number": 3,
+    "desc": [
+      "打出此卡后，你弃掉你的所有已打出的职业卡。每个回合开始时，你可以选择一张其他玩家打出的职业卡并支付给他1食物，该回合结束前你拥有该职业卡的效果。(不包含\"打出此卡\"和\"游戏结束\"的效果)之后如果你打出新的职业卡，你必须弃掉此卡。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/C03.png",
+    "locales": {
+      "zh": {
+        "name": "万能博士",
+        "desc": [
+          "打出此卡后，你弃掉你的所有已打出的职业卡。每个回合开始时，你可以选择一张其他玩家打出的职业卡并支付给他1食物，该回合结束前你拥有该职业卡的效果。(不包含\"打出此卡\"和\"游戏结束\"的效果)之后如果你打出新的职业卡，你必须弃掉此卡。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_C04_TeacherOfNations",
+    "originalId": "C04_TeacherOfNations",
+    "gameEdition": "classic",
+    "name": "国家教师",
+    "deck": "C",
+    "number": 4,
+    "desc": [
+      "所有玩家打出每张职业卡的技能培训费都可以少花费1食物。每当其他玩家如此做，你获得1食物。职业卡额外的花费不会减少。比如：K291情圣。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/C04.png",
+    "locales": {
+      "zh": {
+        "name": "国家教师",
+        "desc": [
+          "所有玩家打出每张职业卡的技能培训费都可以少花费1食物。每当其他玩家如此做，你获得1食物。职业卡额外的花费不会减少。比如：K291情圣。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_C05_Hero",
+    "originalId": "C05_Hero",
+    "gameEdition": "classic",
+    "name": "英雄",
+    "deck": "C",
+    "number": 5,
+    "desc": [
+      "打出此卡时，你立即获得3食物。限1次：你可以弃掉1只猪无需放置家庭成员执行1次“生娃(需要空房间)”行动。新生儿本回合不能行动。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/C05.png",
+    "locales": {
+      "zh": {
+        "name": "英雄",
+        "desc": [
+          "打出此卡时，你立即获得3食物。限1次：你可以弃掉1只猪无需放置家庭成员执行1次“生娃(需要空房间)”行动。新生儿本回合不能行动。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_C06_FortuneTeller",
+    "originalId": "C06_FortuneTeller",
+    "gameEdition": "classic",
+    "name": "预言家",
+    "deck": "C",
+    "number": 6,
+    "desc": [
+      "打出此卡时，你获得1个石头。你可以立即观看之后3个未翻开的回合行动卡，并以任意顺序放回而无需按季节要求。你可以随时观看下一张未翻开的回合行动卡。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/C06.png",
+    "locales": {
+      "zh": {
+        "name": "预言家",
+        "desc": [
+          "打出此卡时，你获得1个石头。你可以立即观看之后3个未翻开的回合行动卡，并以任意顺序放回而无需按季节要求。你可以随时观看下一张未翻开的回合行动卡。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_C07_Bureaucrat",
+    "originalId": "C07_Bureaucrat",
+    "gameEdition": "classic",
+    "name": "官僚",
+    "deck": "C",
+    "number": 7,
+    "desc": [
+      "打出此卡时，从个人供应区放置3份食物到此卡上。（这3食物可以随时移入个人供应区）每回合限1次：你可以支付此卡上的1份食物来使用1个仅被一位家庭成员占用的行动格。（即使此家庭成员是属于你自己）新生儿是否是1位家庭成员"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/C07.png",
+    "locales": {
+      "zh": {
+        "name": "官僚",
+        "desc": [
+          "打出此卡时，从个人供应区放置3份食物到此卡上。（这3食物可以随时移入个人供应区）每回合限1次：你可以支付此卡上的1份食物来使用1个仅被一位家庭成员占用的行动格。（即使此家庭成员是属于你自己）新生儿是否是1位家庭成员"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_C08_Bagpiper",
+    "originalId": "C08_Bagpiper",
+    "gameEdition": "classic",
+    "name": "风笛手",
+    "deck": "C",
+    "number": 8,
+    "desc": [
+      "打出此卡时，你获得2份食物。打出此卡的家庭成员立刻回家并视为未派遣，你可以在之后的轮次中继续派遣他。（如果该职业卡通过行动格打出，则该行动格视为未占据）"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/C08.png",
+    "locales": {
+      "zh": {
+        "name": "风笛手",
+        "desc": [
+          "打出此卡时，你获得2份食物。打出此卡的家庭成员立刻回家并视为未派遣，你可以在之后的轮次中继续派遣他。（如果该职业卡通过行动格打出，则该行动格视为未占据）"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_C09_OnlyChild",
+    "originalId": "C09_OnlyChild",
+    "gameEdition": "classic",
+    "name": "独生子女",
+    "deck": "C",
+    "number": 9,
+    "desc": [
+      "打出此卡时，若距离游戏结束还有3/6/9个完整回合，则你立即获得1/2/3根木头。游戏结束时，如果你恰好有3名家庭成员，则你获得3分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/C09.png",
+    "locales": {
+      "zh": {
+        "name": "独生子女",
+        "desc": [
+          "打出此卡时，若距离游戏结束还有3/6/9个完整回合，则你立即获得1/2/3根木头。游戏结束时，如果你恰好有3名家庭成员，则你获得3分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_C10_Informer",
+    "originalId": "C10_Informer",
+    "gameEdition": "classic",
+    "name": "告密者",
+    "deck": "C",
+    "number": 10,
+    "desc": [
+      "打出此卡时，翻面1张你已打出的职业卡，获得5食物/1头牛。该职业卡失效但算作1张职业卡。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/C10.png",
+    "locales": {
+      "zh": {
+        "name": "告密者",
+        "desc": [
+          "打出此卡时，翻面1张你已打出的职业卡，获得5食物/1头牛。该职业卡失效但算作1张职业卡。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_C11_Robber",
+    "originalId": "C11_Robber",
+    "gameEdition": "classic",
+    "name": "强盗",
+    "deck": "C",
+    "number": 11,
+    "desc": [
+      "每回合限1次：在其他玩家还有家庭成员未派遣时，你可以跳过你的1次家庭成员派遣获得1木头/1食物。你仍可在后续的轮次中派遣这个家庭成员。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/C11.png",
+    "locales": {
+      "zh": {
+        "name": "强盗",
+        "desc": [
+          "每回合限1次：在其他玩家还有家庭成员未派遣时，你可以跳过你的1次家庭成员派遣获得1木头/1食物。你仍可在后续的轮次中派遣这个家庭成员。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_C12_Nicholas",
+    "originalId": "C12_Nicholas",
+    "gameEdition": "classic",
+    "name": "大主教",
+    "deck": "C",
+    "number": 12,
+    "desc": [
+      "打出此卡时，获得等同于全体玩家家庭成员孩子数量的食物，且不多于6份(孩子指通过\"生娃\"行动增加的家庭成员)，此外孩子最少的玩家们都可以获得1份蔬菜。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/C12.png",
+    "locales": {
+      "zh": {
+        "name": "大主教",
+        "desc": [
+          "打出此卡时，获得等同于全体玩家家庭成员孩子数量的食物，且不多于6份(孩子指通过\"生娃\"行动增加的家庭成员)，此外孩子最少的玩家们都可以获得1份蔬菜。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_C13_GoldenHands",
+    "originalId": "C13_GoldenHands",
+    "gameEdition": "classic",
+    "name": "点金手",
+    "deck": "C",
+    "number": 13,
+    "desc": [
+      "每当你打出发展卡时，可以用1个任意建筑资源代替原本花费中的至多1个建筑资源。"
+    ],
+    "cost": {
+      "food": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/C13.png",
+    "locales": {
+      "zh": {
+        "name": "点金手",
+        "desc": [
+          "每当你打出发展卡时，可以用1个任意建筑资源代替原本花费中的至多1个建筑资源。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_C14_School",
+    "originalId": "C14_School",
+    "gameEdition": "classic",
+    "name": "校舍",
+    "deck": "C",
+    "number": 14,
+    "desc": [
+      "每次你执行打出主发或打出次发的行动时，你可以选择将其改成支付1食物并打一张职业卡打次发行不行"
+    ],
+    "cost": {
+      "wood": 1,
+      "clay": 1
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/C14.png",
+    "locales": {
+      "zh": {
+        "name": "校舍",
+        "desc": [
+          "每次你执行打出主发或打出次发的行动时，你可以选择将其改成支付1食物并打一张职业卡打次发行不行"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_C15_BeerFestival",
+    "originalId": "C15_BeerFestival",
+    "gameEdition": "classic",
+    "name": "啤酒节",
+    "deck": "C",
+    "number": 15,
+    "desc": [
+      "打出时获得一次“烤面包”行动。计分阶段，如果你拥有3/6/9份食物，你获得1/2/3分"
+    ],
+    "cost": {
+      "food": 1
+    },
+    "vp": 0,
+    "prerequisite": "家庭成员≥3",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/C15.png",
+    "locales": {
+      "zh": {
+        "name": "啤酒节",
+        "desc": [
+          "打出时获得一次“烤面包”行动。计分阶段，如果你拥有3/6/9份食物，你获得1/2/3分"
+        ],
+        "prerequisite": "家庭成员≥3"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_C16_Wagenburg",
+    "originalId": "C16_Wagenburg",
+    "gameEdition": "classic",
+    "name": "厢体货车",
+    "deck": "C",
+    "number": 16,
+    "desc": [
+      "打出此卡时，你可以为每块空地支付1根木头并在上面放1根栅栏条。你可以随时取回这些栅栏。有栅栏的这些空地视为已使用。"
+    ],
+    "cost": {
+      "stone": 1
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/C16.png",
+    "locales": {
+      "zh": {
+        "name": "厢体货车",
+        "desc": [
+          "打出此卡时，你可以为每块空地支付1根木头并在上面放1根栅栏条。你可以随时取回这些栅栏。有栅栏的这些空地视为已使用。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_C17_Chapel",
+    "originalId": "C17_Chapel",
+    "gameEdition": "classic",
+    "name": "教堂",
+    "deck": "C",
+    "number": 17,
+    "desc": [
+      "这是一个全体玩家都可以使用的额外行动格。使用此行动格的玩家可以弃掉至多2张乞讨卡，每张需支付1石头到此卡上。游戏结束时，此卡上每一石头使你获得1分。"
+    ],
+    "cost": {
+      "clay": 2
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/C17.png",
+    "locales": {
+      "zh": {
+        "name": "教堂",
+        "desc": [
+          "这是一个全体玩家都可以使用的额外行动格。使用此行动格的玩家可以弃掉至多2张乞讨卡，每张需支付1石头到此卡上。游戏结束时，此卡上每一石头使你获得1分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_C18_HopField",
+    "originalId": "C18_HopField",
+    "gameEdition": "classic",
+    "name": "啤酒花田",
+    "deck": "C",
+    "number": 18,
+    "desc": [
+      "立即支付1至4根木头，获得等量的食物，并将对应数量的栅栏条放到1块空田上(视为已播种)。游戏结束时，每根这样的栅栏使你获得1分"
+    ],
+    "cost": {
+      "reed": 1
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/C18.png",
+    "locales": {
+      "zh": {
+        "name": "啤酒花田",
+        "desc": [
+          "立即支付1至4根木头，获得等量的食物，并将对应数量的栅栏条放到1块空田上(视为已播种)。游戏结束时，每根这样的栅栏使你获得1分"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_C19_WineCellar",
+    "originalId": "C19_WineCellar",
+    "gameEdition": "classic",
+    "name": "酒窖",
+    "deck": "C",
+    "number": 19,
+    "desc": [
+      "将至多1个圈地外的马厩放倒视作酒窖，其失去马厩的功能，该格依然视为已使用。每个丰收时节的收割阶段，你获得2份食物。你仍然可以将酒窖圈在圈地中"
+    ],
+    "cost": {
+      "stone": 2
+    },
+    "vp": 1,
+    "prerequisite": "1马厩",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/C19.png",
+    "locales": {
+      "zh": {
+        "name": "酒窖",
+        "desc": [
+          "将至多1个圈地外的马厩放倒视作酒窖，其失去马厩的功能，该格依然视为已使用。每个丰收时节的收割阶段，你获得2份食物。你仍然可以将酒窖圈在圈地中"
+        ],
+        "prerequisite": "1马厩"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_C20_Golem",
+    "originalId": "C20_Golem",
+    "gameEdition": "classic",
+    "name": "炉",
+    "deck": "C",
+    "number": 20,
+    "desc": [
+      "在此卡上放置2砖，在之后两回合开始时，你退还1砖到游戏供应区，并且在本回合你的第一位家庭成员使用行动格时，可以执行两次对应的效果(如果是积累行动格则额外获得积累1次的量)"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "2 Occupations",
+    "occupationPrerequisites": {
+      "min": 2
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/C20.png",
+    "locales": {
+      "zh": {
+        "name": "炉",
+        "desc": [
+          "在此卡上放置2砖，在之后两回合开始时，你退还1砖到游戏供应区，并且在本回合你的第一位家庭成员使用行动格时，可以执行两次对应的效果(如果是积累行动格则额外获得积累1次的量)"
+        ],
+        "prerequisite": "职业×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_C21_VenusFigure",
+    "originalId": "C21_VenusFigure",
+    "gameEdition": "classic",
+    "name": "维纳斯雕像",
+    "deck": "C",
+    "number": 21,
+    "desc": [
+      "你使用生儿育女行动格时，可以额外获得一次“生娃(需要空房间)”行动生娃打出次发打出此卡，不能立即发动。"
+    ],
+    "cost": {
+      "clay": 2
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/C21.png",
+    "locales": {
+      "zh": {
+        "name": "维纳斯雕像",
+        "desc": [
+          "你使用生儿育女行动格时，可以额外获得一次“生娃(需要空房间)”行动生娃打出次发打出此卡，不能立即发动。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_C22_Bible",
+    "originalId": "C22_Bible",
+    "gameEdition": "classic",
+    "name": "圣经",
+    "deck": "C",
+    "number": 22,
+    "desc": [
+      "在丰收时节前的那一回合，你使用了犁田/粮食耕种[犁播]/小麦种子/蔬菜种子/临时工行动格的家庭成员，在这个丰收时节的喂养阶段可以少喂养1食物"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 1,
+    "prerequisite": "1 Occupations",
+    "occupationPrerequisites": {
+      "min": 1
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/C22.png",
+    "locales": {
+      "zh": {
+        "name": "圣经",
+        "desc": [
+          "在丰收时节前的那一回合，你使用了犁田/粮食耕种[犁播]/小麦种子/蔬菜种子/临时工行动格的家庭成员，在这个丰收时节的喂养阶段可以少喂养1食物"
+        ],
+        "prerequisite": "职业×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_C23_HungerWall",
+    "originalId": "C23_HungerWall",
+    "gameEdition": "classic",
+    "name": "饥饿墙",
+    "deck": "C",
+    "number": 23,
+    "desc": [
+      "每个喂养阶段，所有玩家都可以支付至多1砖来喂养1名家庭成员，支付的砖头放在此卡上。游戏结束时，此卡上每有2块砖你便获得1分。"
+    ],
+    "cost": {
+      "clay": 3
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/C23.png",
+    "locales": {
+      "zh": {
+        "name": "饥饿墙",
+        "desc": [
+          "每个喂养阶段，所有玩家都可以支付至多1砖来喂养1名家庭成员，支付的砖头放在此卡上。游戏结束时，此卡上每有2块砖你便获得1分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_C24_FiveYearPlan",
+    "originalId": "C24_FiveYearPlan",
+    "gameEdition": "classic",
+    "name": "五年计划",
+    "deck": "C",
+    "number": 24,
+    "desc": [
+      "打出此卡时，将一个指示物放在1块空田上，该田无法播种，计分时不算作田，但仍视为已使用的格子。你获得一次\"播种\"行动，并且此次播种能使新种上的作物额外多叠放2个。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "1空田+2职业",
+    "occupationPrerequisites": {
+      "min": 2
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/C24.png",
+    "locales": {
+      "zh": {
+        "name": "五年计划",
+        "desc": [
+          "打出此卡时，将一个指示物放在1块空田上，该田无法播种，计分时不算作田，但仍视为已使用的格子。你获得一次\"播种\"行动，并且此次播种能使新种上的作物额外多叠放2个。"
+        ],
+        "prerequisite": "1空田+2职业"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E11_Field",
+    "name": "走耕",
+    "deck": "E",
+    "number": 11,
+    "category": "FARM_PLANNER",
+    "desc": [
+      "立即犁1块田。使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {
+      "food": 1
+    },
+    "passing": true,
+    "originalId": "E11_Field",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E11.png",
+    "locales": {
+      "zh": {
+        "name": "走耕",
+        "desc": [
+          "立即犁1块田。使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E12_FishingRod",
+    "originalId": "E12_FishingRod",
+    "gameEdition": "classic",
+    "name": "鱼竿",
+    "deck": "E",
+    "number": 12,
+    "desc": [
+      "每当你使用钓鱼积累行动格时，额外获得1份食物。从第8回合起，改为额外获得2份食物。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E12.png",
+    "locales": {
+      "zh": {
+        "name": "鱼竿",
+        "desc": [
+          "每当你使用钓鱼积累行动格时，额外获得1份食物。从第8回合起，改为额外获得2份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E13_Axe",
+    "originalId": "E13_Axe",
+    "gameEdition": "classic",
+    "name": "斧头",
+    "deck": "E",
+    "number": 13,
+    "desc": [
+      "你建造每间木屋只需花费2根木头和2捆芦苇。"
+    ],
+    "cost": {
+      "wood": 1,
+      "stone": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E13.png",
+    "locales": {
+      "zh": {
+        "name": "斧头",
+        "desc": [
+          "你建造每间木屋只需花费2根木头和2捆芦苇。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E14_BakersOven",
+    "originalId": "E14_BakersOven",
+    "gameEdition": "classic",
+    "name": "烘焙师烤炉",
+    "deck": "E",
+    "number": 14,
+    "desc": [
+      "打出此卡时，你获得1次“烤面包”行动。每次你执行“烤面包”行动时，你可以将至多2份小麦各转换成5份食物。"
+    ],
+    "cost": {},
+    "vp": 3,
+    "prerequisite": "退还1个烤炉",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E14.png",
+    "locales": {
+      "zh": {
+        "name": "烘焙师烤炉",
+        "desc": [
+          "打出此卡时，你获得1次“烤面包”行动。每次你执行“烤面包”行动时，你可以将至多2份小麦各转换成5份食物。"
+        ],
+        "prerequisite": "退还1个烤炉"
+      }
+    },
+    "isBaking": true,
+    "ovenIdentity": true,
+    "returnCards": [
+      "Major_ClayOven",
+      "Major_StoneOven",
+      "OLD_E27_WoodredOven",
+      "OLD_WA012_CastironOven",
+      "OLD_G065_BeehiveOven",
+      "OLD_G073_ErrantOven"
+    ],
+    "exchanges": [
+      {
+        "from": {
+          "grain": 1
+        },
+        "to": {
+          "food": 5
+        },
+        "triggers": [
+          "bake-bread"
+        ],
+        "max": 2
+      }
+    ],
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E147_LandAgent",
+    "originalId": "E147_LandAgent",
+    "gameEdition": "classic",
+    "name": "地皮商",
+    "deck": "E",
+    "number": 147,
+    "desc": [
+      "打出此卡时，你获得1份蔬菜。每当你使用蔬菜种子行动格时，额外获得1份小麦。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E147.png",
+    "locales": {
+      "zh": {
+        "name": "地皮商",
+        "desc": [
+          "打出此卡时，你获得1份蔬菜。每当你使用蔬菜种子行动格时，额外获得1份小麦。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E148_Academic",
+    "originalId": "E148_Academic",
+    "gameEdition": "classic",
+    "name": "智者",
+    "deck": "E",
+    "number": 148,
+    "desc": [
+      "此卡对次要发展卡和职业卡(例：E217地方官)的需求、功能、数量和计分来说，算作2个职业，1张职业卡。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E148.png",
+    "locales": {
+      "zh": {
+        "name": "智者",
+        "desc": [
+          "此卡对次要发展卡和职业卡(例：E217地方官)的需求、功能、数量和计分来说，算作2个职业，1张职业卡。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "occupationCount": 2,
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E149_MasterBaker",
+    "originalId": "E149_MasterBaker",
+    "gameEdition": "classic",
+    "name": "高级烘焙师",
+    "deck": "E",
+    "number": 149,
+    "desc": [
+      "每当有其他玩家执行\"烤面包\"行动时，如果你有<BAKE>符号发展卡，你获得1次\"烤面包\"行动。如果你自己执行了1次\"烤面包\"行动（没有使用此卡），你额外获得1份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E149.png",
+    "locales": {
+      "zh": {
+        "name": "高级烘焙师",
+        "desc": [
+          "每当有其他玩家执行\"烤面包\"行动时，如果你有<BAKE>符号发展卡，你获得1次\"烤面包\"行动。如果你自己执行了1次\"烤面包\"行动（没有使用此卡），你额外获得1份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E15_BakingTray",
+    "originalId": "E15_BakingTray",
+    "gameEdition": "classic",
+    "name": "烤盘",
+    "deck": "E",
+    "number": 15,
+    "desc": [
+      "A5砖造烤炉和A6石造烤炉对你来说是次要发展卡。当你打出A5砖造烤炉、A6石造烤炉、E27木造烤炉时，可以减少任意1个建筑资源花费。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E15.png",
+    "locales": {
+      "zh": {
+        "name": "烤盘",
+        "desc": [
+          "A5砖造烤炉和A6石造烤炉对你来说是次要发展卡。当你打出A5砖造烤炉、A6石造烤炉、E27木造烤炉时，可以减少任意1个建筑资源花费。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E150_Baker",
+    "name": "烘焙师",
+    "deck": "E",
+    "number": 150,
+    "category": "FOOD_PROVIDER",
+    "desc": [
+      "打出此卡时，以及每个丰收时节的喂养阶段开始时，你都可以获得1次“烤面包”行动。"
+    ],
+    "cost": {},
+    "players": "1+",
+    "originalId": "E150_Baker",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E150.png",
+    "locales": {
+      "zh": {
+        "name": "烘焙师",
+        "desc": [
+          "打出此卡时，以及每个丰收时节的喂养阶段开始时，你都可以获得1次“烤面包”行动。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E151_MasterBuilder",
+    "name": "建筑大师",
+    "deck": "E",
+    "number": 151,
+    "category": "FARM_PLANNER",
+    "desc": [
+      "限1次：一旦你拥有不少于5间房屋，你可以随时再免费扩建1间房屋。"
+    ],
+    "cost": {},
+    "players": "1+",
+    "implemented": true,
+    "originalId": "E151_MasterBuilder",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "artUrl": "/card-art/classic/E151.png",
+    "locales": {
+      "zh": {
+        "name": "建筑大师",
+        "desc": [
+          "限1次：一旦你拥有不少于5间房屋，你可以随时再免费扩建1间房屋。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E152_BerryPicker",
+    "originalId": "E152_BerryPicker",
+    "gameEdition": "classic",
+    "name": "采莓工",
+    "deck": "E",
+    "number": 152,
+    "desc": [
+      "每当你从行动格上获得木头时，你额外获得1份食物。（通过卡牌获得的木头不算）"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E152.png",
+    "locales": {
+      "zh": {
+        "name": "采莓工",
+        "desc": [
+          "每当你从行动格上获得木头时，你额外获得1份食物。（通过卡牌获得的木头不算）"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E153_Mendicant",
+    "originalId": "E153_Mendicant",
+    "gameEdition": "classic",
+    "name": "乞丐",
+    "deck": "E",
+    "number": 153,
+    "desc": [
+      "游戏结束时，你可以弃掉至多2张乞讨卡。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E153.png",
+    "locales": {
+      "zh": {
+        "name": "乞丐",
+        "desc": [
+          "游戏结束时，你可以弃掉至多2张乞讨卡。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E154_MasterBrewer",
+    "name": "家庭酿酒师",
+    "deck": "E",
+    "number": 154,
+    "category": "FOOD_PROVIDER",
+    "desc": [
+      "在每个丰收时节的喂养阶段时，你可用此卡将至多1份小麦转化成3份食物。（这不算作“烤面包”行动）"
+    ],
+    "exchanges": [
+      {
+        "from": {
+          "grain": 1
+        },
+        "to": {
+          "food": 3
+        },
+        "triggers": [
+          "harvest"
+        ],
+        "max": 1
+      }
+    ],
+    "cost": {},
+    "players": "1+",
+    "extraVp": false,
+    "originalId": "E154_MasterBrewer",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E154.png",
+    "locales": {
+      "zh": {
+        "name": "家庭酿酒师",
+        "desc": [
+          "在每个丰收时节的喂养阶段时，你可用此卡将至多1份小麦转化成3份食物。（这不算作“烤面包”行动）"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E155_BreadSeller",
+    "originalId": "E155_BreadSeller",
+    "gameEdition": "classic",
+    "name": "面包贩",
+    "deck": "E",
+    "number": 155,
+    "desc": [
+      "每当任意玩家（包括你自己）执行“烤面包”行动时，每份被转化的小麦都使你额外获得1份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E155.png",
+    "locales": {
+      "zh": {
+        "name": "面包贩",
+        "desc": [
+          "每当任意玩家（包括你自己）执行“烤面包”行动时，每份被转化的小麦都使你额外获得1份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E156_BrushMaker",
+    "originalId": "E156_BrushMaker",
+    "gameEdition": "classic",
+    "name": "制刷工",
+    "deck": "E",
+    "number": 156,
+    "desc": [
+      "每当你将猪转换成食物，就把转化的猪放在此卡上。游戏结束时，如果此卡上有2/3/4+头猪，额外获得1/2/3分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E156.png",
+    "locales": {
+      "zh": {
+        "name": "制刷工",
+        "desc": [
+          "每当你将猪转换成食物，就把转化的猪放在此卡上。游戏结束时，如果此卡上有2/3/4+头猪，额外获得1/2/3分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E157_Thatcher",
+    "originalId": "E157_Thatcher",
+    "gameEdition": "classic",
+    "name": "盖顶工",
+    "deck": "E",
+    "number": 157,
+    "desc": [
+      "扩建每间房屋、翻修房屋和打出以下发展卡所需费用都减少1捆芦苇。E21半木梁房、I71度假屋、I84鸡舍、I86谷仓、I103水磨坊、K144豪宅。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E157.png",
+    "locales": {
+      "zh": {
+        "name": "盖顶工",
+        "desc": [
+          "扩建每间房屋、翻修房屋和打出以下发展卡所需费用都减少1捆芦苇。E21半木梁房、I71度假屋、I84鸡舍、I86谷仓、I103水磨坊、K144豪宅。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E158_Turner",
+    "originalId": "E158_Turner",
+    "gameEdition": "classic",
+    "name": "车工",
+    "deck": "E",
+    "number": 158,
+    "desc": [
+      "任意时刻，你可以将1个木头转化成1份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E158.png",
+    "locales": {
+      "zh": {
+        "name": "车工",
+        "desc": [
+          "任意时刻，你可以将1个木头转化成1份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "exchanges": [
+      {
+        "from": {
+          "wood": 1
+        },
+        "to": {
+          "food": 1
+        },
+        "triggers": [
+          "anytime"
+        ]
+      }
+    ],
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E159_HeadoftheFamily",
+    "originalId": "E159_HeadoftheFamily",
+    "gameEdition": "classic",
+    "name": "一家之主",
+    "deck": "E",
+    "number": 159,
+    "desc": [
+      "即使已有其他玩家占据了能够提供“扩建房屋”和“增加家庭成员”行动的行动格，你仍可使用这些行动格。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E159.png",
+    "locales": {
+      "zh": {
+        "name": "一家之主",
+        "desc": [
+          "即使已有其他玩家占据了能够提供“扩建房屋”和“增加家庭成员”行动的行动格，你仍可使用这些行动格。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E16_BuildingMaterial",
+    "originalId": "E16_BuildingMaterial",
+    "gameEdition": "classic",
+    "name": "建筑材料",
+    "deck": "E",
+    "number": 16,
+    "desc": [
+      "立即获得1木/1砖。使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "passing": true,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E16.png",
+    "locales": {
+      "zh": {
+        "name": "建筑材料",
+        "desc": [
+          "立即获得1木/1砖。使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E160_Farmer",
+    "originalId": "E160_Farmer",
+    "gameEdition": "classic",
+    "name": "农民",
+    "deck": "E",
+    "number": 160,
+    "desc": [
+      "下次你围建至少1根栅栏时，获得1只猪。在此之后，你每次围建至少1根栅栏时，获得1头牛。动物可以立即被转换成食物，即使你没有饲养空间。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E160.png",
+    "locales": {
+      "zh": {
+        "name": "农民",
+        "desc": [
+          "下次你围建至少1根栅栏时，获得1只猪。在此之后，你每次围建至少1根栅栏时，获得1头牛。动物可以立即被转换成食物，即使你没有饲养空间。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E161_Fisherman",
+    "originalId": "E161_Fisherman",
+    "gameEdition": "classic",
+    "name": "渔夫",
+    "deck": "E",
+    "number": 161,
+    "desc": [
+      "每当你使用钓鱼积累行动格时，你可以获得等于该行动格两倍数量的食物。然后你要付给E12鱼竿、E22木筏、E30独木舟 、I95鱼篓、K126渔网的玩家各1份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E161.png",
+    "locales": {
+      "zh": {
+        "name": "渔夫",
+        "desc": [
+          "每当你使用钓鱼积累行动格时，你可以获得等于该行动格两倍数量的食物。然后你要付给E12鱼竿、E22木筏、E30独木舟 、I95鱼篓、K126渔网的玩家各1份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E162_MeatSeller",
+    "originalId": "E162_MeatSeller",
+    "gameEdition": "classic",
+    "name": "售肉商",
+    "deck": "E",
+    "number": 162,
+    "desc": [
+      "如果你拥有烤炉，你可以随时将动物转换成食物。每只羊2食物，每头猪3食物，每头牛4食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E162.png",
+    "locales": {
+      "zh": {
+        "name": "售肉商",
+        "desc": [
+          "如果你拥有烤炉，你可以随时将动物转换成食物。每只羊2食物，每头猪3食物，每头牛4食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E163_FieldWarden",
+    "originalId": "E163_FieldWarden",
+    "gameEdition": "classic",
+    "name": "护田人",
+    "deck": "E",
+    "number": 163,
+    "desc": [
+      "即使已有其他玩家占据了蔬菜种子/犁田/粮食耕种[犁播]行动格，你仍可使用它们。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E163.png",
+    "locales": {
+      "zh": {
+        "name": "护田人",
+        "desc": [
+          "即使已有其他玩家占据了蔬菜种子/犁田/粮食耕种[犁播]行动格，你仍可使用它们。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E164_MasterForester",
+    "originalId": "E164_MasterForester",
+    "gameEdition": "classic",
+    "name": "林场主",
+    "deck": "E",
+    "number": 164,
+    "desc": [
+      "本卡将作为额外的树林行动格3人游戏中[2木积累行动格]。从下回合开始，每回合将积累2个木头放在此卡上。其他玩家使用此行动格前，必须先付给你2份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E164.png",
+    "locales": {
+      "zh": {
+        "name": "林场主",
+        "desc": [
+          "本卡将作为额外的树林行动格3人游戏中[2木积累行动格]。从下回合开始，每回合将积累2个木头放在此卡上。其他玩家使用此行动格前，必须先付给你2份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "playerActionCardType": "occupation",
+    "kind": "playerAction"
+  },
+  {
+    "id": "OLD_E165_YeomanFarmer",
+    "originalId": "E165_YeomanFarmer",
+    "gameEdition": "classic",
+    "name": "自由农民",
+    "deck": "E",
+    "number": 165,
+    "desc": [
+      "游戏结束时，你只因为未使用的农场空格和乞讨卡而损失分数。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E165.png",
+    "locales": {
+      "zh": {
+        "name": "自由农民",
+        "desc": [
+          "游戏结束时，你只因为未使用的农场空格和乞讨卡而损失分数。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E166_Undergardener",
+    "originalId": "E166_Undergardener",
+    "gameEdition": "classic",
+    "name": "花园工人",
+    "deck": "E",
+    "number": 166,
+    "desc": [
+      "每当你使用临时工行动格时，额外获得1份蔬菜。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E166.png",
+    "locales": {
+      "zh": {
+        "name": "花园工人",
+        "desc": [
+          "每当你使用临时工行动格时，额外获得1份蔬菜。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E167_Conjurer",
+    "name": "杂耍艺人",
+    "deck": "E",
+    "number": 167,
+    "category": "GOODS_PROVIDER",
+    "desc": [
+      "每当你使用卖艺积累行动格时，额外获得1份小麦。"
+    ],
+    "cost": {},
+    "players": "1+",
+    "originalId": "E167_Conjurer",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E167.png",
+    "locales": {
+      "zh": {
+        "name": "杂耍艺人",
+        "desc": [
+          "每当你使用卖艺积累行动格时，额外获得1份小麦。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E168_Greengrocer",
+    "name": "蔬菜商",
+    "deck": "E",
+    "number": 168,
+    "category": "CROP_PROVIDER",
+    "desc": [
+      "每当你使用小麦种子行动格时，额外获得1份蔬菜。"
+    ],
+    "cost": {},
+    "players": "1+",
+    "originalId": "E168_Greengrocer",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E168.png",
+    "locales": {
+      "zh": {
+        "name": "蔬菜商",
+        "desc": [
+          "每当你使用小麦种子行动格时，额外获得1份蔬菜。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E169_Storyteller",
+    "originalId": "E169_Storyteller",
+    "gameEdition": "classic",
+    "name": "说书人",
+    "deck": "E",
+    "number": 169,
+    "desc": [
+      "每当你使用卖艺积累行动格时，你可以留下1份食物在卖艺积累行动格，并获得1份蔬菜。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E169.png",
+    "locales": {
+      "zh": {
+        "name": "说书人",
+        "desc": [
+          "每当你使用卖艺积累行动格时，你可以留下1份食物在卖艺积累行动格，并获得1份蔬菜。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E17_Windmill",
+    "originalId": "E17_Windmill",
+    "gameEdition": "classic",
+    "name": "风车磨坊",
+    "deck": "E",
+    "number": 17,
+    "desc": [
+      "任意时刻，你可以将1份小麦转换成2份食物。(这不属于“烤面包”行动)"
+    ],
+    "cost": {
+      "wood": 3,
+      "stone": 1
+    },
+    "vp": 2,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E17.png",
+    "locales": {
+      "zh": {
+        "name": "风车磨坊",
+        "desc": [
+          "任意时刻，你可以将1份小麦转换成2份食物。(这不属于“烤面包”行动)"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "exchanges": [
+      {
+        "from": {
+          "grain": 1
+        },
+        "to": {
+          "food": 2
+        },
+        "triggers": [
+          "anytime"
+        ]
+      }
+    ],
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E170_EstateManager",
+    "originalId": "E170_EstateManager",
+    "gameEdition": "classic",
+    "name": "地产管理人",
+    "deck": "E",
+    "number": 170,
+    "desc": [
+      "游戏结束时，如果你三种动物都是数量最多（或者同时最多）的，在3/4/5+人游戏中额外获得2/3/4分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E170.png",
+    "locales": {
+      "zh": {
+        "name": "地产管理人",
+        "desc": [
+          "游戏结束时，如果你三种动物都是数量最多（或者同时最多）的，在3/4/5+人游戏中额外获得2/3/4分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E171_DockWorker",
+    "originalId": "E171_DockWorker",
+    "gameEdition": "classic",
+    "name": "码头工人",
+    "deck": "E",
+    "number": 171,
+    "desc": [
+      "任意时刻，你可以将3根木头转化为1砖/1芦苇/1石头，或者将2砖/2芦苇/2石头转化为1个其他建筑资源。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E171.png",
+    "locales": {
+      "zh": {
+        "name": "码头工人",
+        "desc": [
+          "任意时刻，你可以将3根木头转化为1砖/1芦苇/1石头，或者将2砖/2芦苇/2石头转化为1个其他建筑资源。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "exchanges": [
+      {
+        "from": {
+          "wood": 3
+        },
+        "to": {
+          "clay": 1
+        },
+        "triggers": [
+          "anytime"
+        ]
+      },
+      {
+        "from": {
+          "wood": 3
+        },
+        "to": {
+          "reed": 1
+        },
+        "triggers": [
+          "anytime"
+        ]
+      },
+      {
+        "from": {
+          "wood": 3
+        },
+        "to": {
+          "stone": 1
+        },
+        "triggers": [
+          "anytime"
+        ]
+      },
+      {
+        "from": {
+          "clay": 2
+        },
+        "to": {
+          "wood": 1
+        },
+        "triggers": [
+          "anytime"
+        ]
+      },
+      {
+        "from": {
+          "clay": 2
+        },
+        "to": {
+          "reed": 1
+        },
+        "triggers": [
+          "anytime"
+        ]
+      },
+      {
+        "from": {
+          "clay": 2
+        },
+        "to": {
+          "stone": 1
+        },
+        "triggers": [
+          "anytime"
+        ]
+      },
+      {
+        "from": {
+          "reed": 2
+        },
+        "to": {
+          "wood": 1
+        },
+        "triggers": [
+          "anytime"
+        ]
+      },
+      {
+        "from": {
+          "reed": 2
+        },
+        "to": {
+          "clay": 1
+        },
+        "triggers": [
+          "anytime"
+        ]
+      },
+      {
+        "from": {
+          "reed": 2
+        },
+        "to": {
+          "stone": 1
+        },
+        "triggers": [
+          "anytime"
+        ]
+      },
+      {
+        "from": {
+          "stone": 2
+        },
+        "to": {
+          "wood": 1
+        },
+        "triggers": [
+          "anytime"
+        ]
+      },
+      {
+        "from": {
+          "stone": 2
+        },
+        "to": {
+          "clay": 1
+        },
+        "triggers": [
+          "anytime"
+        ]
+      },
+      {
+        "from": {
+          "stone": 2
+        },
+        "to": {
+          "reed": 1
+        },
+        "triggers": [
+          "anytime"
+        ]
+      }
+    ],
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E172_Chief",
+    "originalId": "E172_Chief",
+    "gameEdition": "classic",
+    "name": "酋长",
+    "deck": "E",
+    "number": 172,
+    "desc": [
+      "打出此卡时，额外支付2份食物。游戏结束时，你的每间石屋都额外获得1分。"
+    ],
+    "cost": {
+      "food": 2
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E172.png",
+    "locales": {
+      "zh": {
+        "name": "酋长",
+        "desc": [
+          "打出此卡时，额外支付2份食物。游戏结束时，你的每间石屋都额外获得1分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E173_ChiefsDaughter",
+    "originalId": "E173_ChiefsDaughter",
+    "gameEdition": "classic",
+    "name": "酋长女儿",
+    "deck": "E",
+    "number": 173,
+    "desc": [
+      "当其他玩家打出了E172酋长，你可以立即免费打出此卡。游戏结束时，若你的房屋等级是砖屋/石屋，额外获得1/3分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E173.png",
+    "locales": {
+      "zh": {
+        "name": "酋长女儿",
+        "desc": [
+          "当其他玩家打出了E172酋长，你可以立即免费打出此卡。游戏结束时，若你的房屋等级是砖屋/石屋，额外获得1/3分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E174_Tutor",
+    "name": "家庭教师",
+    "deck": "E",
+    "number": 174,
+    "category": "POINTS_PROVIDER",
+    "desc": [
+      "游戏结束时，你在此卡之后打出的每个职业都能使你获得1分。"
+    ],
+    "cost": {},
+    "players": "3+",
+    "extraVp": true,
+    "originalId": "E174_Tutor",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E174.png",
+    "locales": {
+      "zh": {
+        "name": "家庭教师",
+        "desc": [
+          "游戏结束时，你在此卡之后打出的每个职业都能使你获得1分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E175_HedgeKeeper",
+    "name": "篱笆护理员",
+    "deck": "E",
+    "number": 175,
+    "category": "FARM_PLANNER",
+    "desc": [
+      "每当你建造了至少1根栅栏时，可以额外免费建造3根栅栏。"
+    ],
+    "cost": {},
+    "players": "3+",
+    "originalId": "E175_HedgeKeeper",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E175.png",
+    "locales": {
+      "zh": {
+        "name": "篱笆护理员",
+        "desc": [
+          "每当你建造了至少1根栅栏时，可以额外免费建造3根栅栏。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E176_Woodcutter",
+    "originalId": "E176_Woodcutter",
+    "gameEdition": "classic",
+    "name": "伐木工",
+    "deck": "E",
+    "number": 176,
+    "desc": [
+      "每当你从行动格上获得木头时，额外获得1根木头。（通过卡牌获得的木头不算）"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E176.png",
+    "locales": {
+      "zh": {
+        "name": "伐木工",
+        "desc": [
+          "每当你从行动格上获得木头时，额外获得1根木头。（通过卡牌获得的木头不算）"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E177_WoodenHutBuilder",
+    "originalId": "E177_WoodenHutBuilder",
+    "gameEdition": "classic",
+    "name": "木屋建筑工",
+    "deck": "E",
+    "number": 177,
+    "desc": [
+      "游戏结束时，你所拥有的每间木屋都额外获得1分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E177.png",
+    "locales": {
+      "zh": {
+        "name": "木屋建筑工",
+        "desc": [
+          "游戏结束时，你所拥有的每间木屋都额外获得1分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E178_HutBuilder",
+    "originalId": "E178_HutBuilder",
+    "gameEdition": "classic",
+    "name": "小屋建造工",
+    "deck": "E",
+    "number": 178,
+    "desc": [
+      "若你在第1-4回合打出此卡，第11回合开始时，你的房屋等级是木屋/砖屋，则你可以免费扩建 1间房屋。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E178.png",
+    "locales": {
+      "zh": {
+        "name": "小屋建造工",
+        "desc": [
+          "若你在第1-4回合打出此卡，第11回合开始时，你的房屋等级是木屋/砖屋，则你可以免费扩建 1间房屋。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E179_Merchant",
+    "name": "商人",
+    "deck": "E",
+    "number": 179,
+    "category": "ACTIONS_BOOSTER",
+    "desc": [
+      "每当你执行“打出主发或次发”或“打出次发”行动后，你可以支付1份食物来将该行动再执行一次。"
+    ],
+    "cost": {},
+    "players": "3+",
+    "originalId": "E179_Merchant",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E179.png",
+    "locales": {
+      "zh": {
+        "name": "商人",
+        "desc": [
+          "每当你执行“打出主发或次发”或“打出次发”行动后，你可以支付1份食物来将该行动再执行一次。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E18_BeanField",
+    "name": "豆田",
+    "deck": "E",
+    "number": 18,
+    "category": "CROP_PROVIDER",
+    "desc": [
+      "此卡视为1块田地，但此卡只能种植蔬菜。"
+    ],
+    "cost": {
+      "food": 1
+    },
+    "vp": 1,
+    "prerequisite": "2 Occupations",
+    "occupationPrerequisites": {
+      "min": 2
+    },
+    "isField": true,
+    "cardField": {
+      "allowedCrops": [
+        "vegetable"
+      ],
+      "capacity": 1
+    },
+    "originalId": "E18_BeanField",
+    "gameEdition": "classic",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E18.png",
+    "locales": {
+      "zh": {
+        "name": "豆田",
+        "desc": [
+          "此卡视为1块田地，但此卡只能种植蔬菜。"
+        ],
+        "prerequisite": "职业×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E180_HobbyFarmer",
+    "originalId": "E180_HobbyFarmer",
+    "gameEdition": "classic",
+    "name": "小园主",
+    "deck": "E",
+    "number": 180,
+    "desc": [
+      "打出此卡时，你获得1份蔬菜。并且你获得1次播种行动，但此次播种行动你只能播种这份蔬菜。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E180.png",
+    "locales": {
+      "zh": {
+        "name": "小园主",
+        "desc": [
+          "打出此卡时，你获得1份蔬菜。并且你获得1次播种行动，但此次播种行动你只能播种这份蔬菜。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E181_Cook",
+    "originalId": "E181_Cook",
+    "gameEdition": "classic",
+    "name": "厨师",
+    "deck": "E",
+    "number": 181,
+    "desc": [
+      "每个丰收时节的喂养阶段，你的第3、4、5个家庭成员各只需喂养1份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E181.png",
+    "locales": {
+      "zh": {
+        "name": "厨师",
+        "desc": [
+          "每个丰收时节的喂养阶段，你的第3、4、5个家庭成员各只需喂养1份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E182_CharcoalBurner",
+    "name": "烧炭工",
+    "deck": "E",
+    "number": 182,
+    "category": "GOODS_PROVIDER",
+    "desc": [
+      "每当任意玩家（包括你自己）打出带有 图标的发展卡时，你便获得1根木头+1份食物。"
+    ],
+    "cost": {},
+    "players": "3+",
+    "originalId": "E182_CharcoalBurner",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E182.png",
+    "locales": {
+      "zh": {
+        "name": "烧炭工",
+        "desc": [
+          "每当任意玩家（包括你自己）打出带有 图标的发展卡时，你便获得1根木头+1份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E183_Basketmaker",
+    "originalId": "E183_Basketmaker",
+    "gameEdition": "classic",
+    "name": "编筐工",
+    "deck": "E",
+    "number": 183,
+    "desc": [
+      "每个丰收时节，你可以将至多1捆芦苇转化为3份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E183.png",
+    "locales": {
+      "zh": {
+        "name": "编筐工",
+        "desc": [
+          "每个丰收时节，你可以将至多1捆芦苇转化为3份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "exchanges": [
+      {
+        "from": {
+          "reed": 1
+        },
+        "to": {
+          "food": 3
+        },
+        "triggers": [
+          "harvest"
+        ],
+        "max": 1
+      }
+    ],
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E184_Grocer",
+    "name": "杂货商",
+    "deck": "E",
+    "number": 184,
+    "category": "GOODS_PROVIDER",
+    "desc": [
+      "从上到下将<REED><GRAIN><STONE><VEGETABLE><WOOD><CLAY><REED><VEGETABLE>排列于此卡上。任意时刻，你可以支付1<FOOD>来买走最上方的物品。"
+    ],
+    "cost": {},
+    "players": "3+",
+    "originalId": "E184_Grocer",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E184.png",
+    "locales": {
+      "zh": {
+        "name": "杂货商",
+        "desc": [
+          "从上到下将<REED><GRAIN><STONE><VEGETABLE><WOOD><CLAY><REED><VEGETABLE>排列于此卡上。任意时刻，你可以支付1<FOOD>来买走最上方的物品。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
 ]
+const batch11: readonly GeneratedCatalogCardDefinition[] = [
+  {
+    "id": "OLD_E185_ClayFirer",
+    "originalId": "E185_ClayFirer",
+    "gameEdition": "classic",
+    "name": "烧砖工",
+    "deck": "E",
+    "number": 185,
+    "desc": [
+      "任意时刻，你可以把砖头按照以下比例转化成石头：2砖头 → 1石头3砖头 → 2石头"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E185.png",
+    "locales": {
+      "zh": {
+        "name": "烧砖工",
+        "desc": [
+          "任意时刻，你可以把砖头按照以下比例转化成石头：2砖头 → 1石头3砖头 → 2石头"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "exchanges": [
+      {
+        "from": {
+          "clay": 2
+        },
+        "to": {
+          "stone": 1
+        },
+        "triggers": [
+          "anytime"
+        ]
+      },
+      {
+        "from": {
+          "clay": 3
+        },
+        "to": {
+          "stone": 2
+        },
+        "triggers": [
+          "anytime"
+        ]
+      }
+    ],
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E186_ClaySeller",
+    "originalId": "E186_ClaySeller",
+    "gameEdition": "classic",
+    "name": "售土商",
+    "deck": "E",
+    "number": 186,
+    "desc": [
+      "任意时刻，你可以把砖头转化成以下物品：2砖头 → 1羊/1芦苇3砖头 → 1猪/1石头4砖头 → 1牛动物可以立即被转换成食物，即使你没有饲养空间。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E186.png",
+    "locales": {
+      "zh": {
+        "name": "售土商",
+        "desc": [
+          "任意时刻，你可以把砖头转化成以下物品：2砖头 → 1羊/1芦苇3砖头 → 1猪/1石头4砖头 → 1牛动物可以立即被转换成食物，即使你没有饲养空间。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "exchanges": [
+      {
+        "from": {
+          "clay": 2
+        },
+        "to": {
+          "sheep": 1
+        },
+        "triggers": [
+          "anytime"
+        ]
+      },
+      {
+        "from": {
+          "clay": 2
+        },
+        "to": {
+          "reed": 1
+        },
+        "triggers": [
+          "anytime"
+        ]
+      },
+      {
+        "from": {
+          "clay": 3
+        },
+        "to": {
+          "boar": 1
+        },
+        "triggers": [
+          "anytime"
+        ]
+      },
+      {
+        "from": {
+          "clay": 3
+        },
+        "to": {
+          "stone": 1
+        },
+        "triggers": [
+          "anytime"
+        ]
+      },
+      {
+        "from": {
+          "clay": 4
+        },
+        "to": {
+          "cattle": 1
+        },
+        "triggers": [
+          "anytime"
+        ]
+      }
+    ],
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E187_ClayDeliveryman",
+    "name": "运土工",
+    "deck": "E",
+    "number": 187,
+    "category": "BUILDING_RESOURCE_PROVIDER",
+    "desc": [
+      "在第6至14回合中尚未进行的回合行动格上各放置1个砖头。这些回合开始时，你获得对应的砖头。"
+    ],
+    "cost": {},
+    "players": "3+",
+    "originalId": "E187_ClayDeliveryman",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E187.png",
+    "locales": {
+      "zh": {
+        "name": "运土工",
+        "desc": [
+          "在第6至14回合中尚未进行的回合行动格上各放置1个砖头。这些回合开始时，你获得对应的砖头。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E188_ClayMixer",
+    "originalId": "E188_ClayMixer",
+    "gameEdition": "classic",
+    "name": "和泥匠",
+    "deck": "E",
+    "number": 188,
+    "desc": [
+      "每当你从行动格上只获得了砖头时，额外获得2个砖头。（通过卡牌获得的砖头不算）"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E188.png",
+    "locales": {
+      "zh": {
+        "name": "和泥匠",
+        "desc": [
+          "每当你从行动格上只获得了砖头时，额外获得2个砖头。（通过卡牌获得的砖头不算）"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E189_LordoftheManor",
+    "name": "庄园领主",
+    "deck": "E",
+    "number": 189,
+    "category": "POINTS_PROVIDER",
+    "desc": [
+      "游戏结束时，你每个获得了4分满分的计分项（包括4个被栅栏围住的马厩）都使你额外获得1分。"
+    ],
+    "cost": {},
+    "players": "3+",
+    "extraVp": true,
+    "originalId": "E189_LordoftheManor",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E189.png",
+    "locales": {
+      "zh": {
+        "name": "庄园领主",
+        "desc": [
+          "游戏结束时，你每个获得了4分满分的计分项（包括4个被栅栏围住的马厩）都使你额外获得1分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E19_GypsysCrock",
+    "name": "三足锅",
+    "deck": "E",
+    "number": 19,
+    "category": "FOOD_PROVIDER",
+    "desc": [
+      "每当你使用A1/A2火炉、A3/A4/E128壁炉、E20简易火炉、I85烹饪角将任意物品转化成食物时，每转化2个物品你就额外获得1份食物。"
+    ],
+    "cost": {
+      "clay": 2
+    },
+    "vp": 1,
+    "originalId": "E19_GypsysCrock",
+    "gameEdition": "classic",
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E19.png",
+    "locales": {
+      "zh": {
+        "name": "三足锅",
+        "desc": [
+          "每当你使用A1/A2火炉、A3/A4/E128壁炉、E20简易火炉、I85烹饪角将任意物品转化成食物时，每转化2个物品你就额外获得1份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E190_Maid",
+    "originalId": "E190_Maid",
+    "gameEdition": "classic",
+    "name": "女仆",
+    "deck": "E",
+    "number": 190,
+    "desc": [
+      "限一次：一旦你的房屋等级是砖屋/石屋，在之后每回合的行动格上各放1份食物。这些回合开始时，你获得对应的食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E190.png",
+    "locales": {
+      "zh": {
+        "name": "女仆",
+        "desc": [
+          "限一次：一旦你的房屋等级是砖屋/石屋，在之后每回合的行动格上各放1份食物。这些回合开始时，你获得对应的食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E191_Mason",
+    "name": "泥水匠",
+    "deck": "E",
+    "number": 191,
+    "category": "FARM_PLANNER",
+    "desc": [
+      "放置1个石屋在此卡上。一旦你拥有了不少于4间石屋，你便可随时免费扩建此卡上的这间石屋。"
+    ],
+    "cost": {},
+    "players": "3+",
+    "implemented": true,
+    "originalId": "E191_Mason",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "artUrl": "/card-art/classic/E191.png",
+    "locales": {
+      "zh": {
+        "name": "泥水匠",
+        "desc": [
+          "放置1个石屋在此卡上。一旦你拥有了不少于4间石屋，你便可随时免费扩建此卡上的这间石屋。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E192_Patron",
+    "name": "赞助商",
+    "deck": "E",
+    "number": 192,
+    "category": "ACTIONS_BOOSTER",
+    "desc": [
+      "每当你打出1张职业卡前，你先获得2份食物。（在支付技能培训费之前）"
+    ],
+    "cost": {},
+    "players": "3+",
+    "originalId": "E192_Patron",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E192.png",
+    "locales": {
+      "zh": {
+        "name": "赞助商",
+        "desc": [
+          "每当你打出1张职业卡前，你先获得2份食物。（在支付技能培训费之前）"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E193_Pastor",
+    "name": "牧师",
+    "deck": "E",
+    "number": 193,
+    "category": "BUILDING_RESOURCE_PROVIDER",
+    "desc": [
+      "限1次：打出此卡时，或在之后的游戏中，一旦你是场上唯一1名仅有2间房屋的玩家，你立即获得3根木头+2块砖头+1捆芦苇+1块石头。WM075移除木屋板块可立即获得资源，然后可使用此卡的资源围建WM075栅栏"
+    ],
+    "cost": {},
+    "players": "3+",
+    "originalId": "E193_Pastor",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E193.png",
+    "locales": {
+      "zh": {
+        "name": "牧师",
+        "desc": [
+          "限1次：打出此卡时，或在之后的游戏中，一旦你是场上唯一1名仅有2间房屋的玩家，你立即获得3根木头+2块砖头+1捆芦苇+1块石头。WM075移除木屋板块可立即获得资源，然后可使用此卡的资源围建WM075栅栏"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E194_PloughDriver",
+    "name": "驭犁者",
+    "deck": "E",
+    "number": 194,
+    "category": "FARM_PLANNER",
+    "desc": [
+      "一旦你的房屋等级是石屋，你可以在每回合开始时支付1份食物来犁1块田。"
+    ],
+    "cost": {},
+    "players": "3+",
+    "originalId": "E194_PloughDriver",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E194.png",
+    "locales": {
+      "zh": {
+        "name": "驭犁者",
+        "desc": [
+          "一旦你的房屋等级是石屋，你可以在每回合开始时支付1份食物来犁1块田。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E195_PloughMaker",
+    "name": "制犁工",
+    "deck": "E",
+    "number": 195,
+    "category": "FARM_PLANNER",
+    "desc": [
+      "每当你使用犁田/粮食耕种[犁播]行动格时，你可以花费1份食物额外犁1块田。"
+    ],
+    "cost": {},
+    "players": "3+",
+    "originalId": "E195_PloughMaker",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E195.png",
+    "locales": {
+      "zh": {
+        "name": "制犁工",
+        "desc": [
+          "每当你使用犁田/粮食耕种[犁播]行动格时，你可以花费1份食物额外犁1块田。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E196_MushroomCollector",
+    "name": "采菇人",
+    "deck": "E",
+    "number": 196,
+    "category": "FOOD_PROVIDER",
+    "desc": [
+      "每当你使用木头积累行动格后，你可以立即将1根木头转换成2份食物。若你如此做，将那根木头放在你所使用的积累行动格上。"
+    ],
+    "cost": {},
+    "players": "4+",
+    "waresSalesmanGains": [
+      {
+        "wood": 1,
+        "reed": 1
+      }
+    ],
+    "originalId": "E196_MushroomCollector",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E196.png",
+    "locales": {
+      "zh": {
+        "name": "采菇人",
+        "desc": [
+          "每当你使用木头积累行动格后，你可以立即将1根木头转换成2份食物。若你如此做，将那根木头放在你所使用的积累行动格上。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E197_Braggart",
+    "originalId": "E197_Braggart",
+    "gameEdition": "classic",
+    "name": "吹牛大王",
+    "deck": "E",
+    "number": 197,
+    "desc": [
+      "游戏结束时，若你场上拥有5/6/7/8/9+张发展卡，则你可获得1/3/5/7/9分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E197.png",
+    "locales": {
+      "zh": {
+        "name": "吹牛大王",
+        "desc": [
+          "游戏结束时，若你场上拥有5/6/7/8/9+张发展卡，则你可获得1/3/5/7/9分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E198_Ratcatcher",
+    "originalId": "E198_Ratcatcher",
+    "gameEdition": "classic",
+    "name": "捕鼠人",
+    "deck": "E",
+    "number": 198,
+    "desc": [
+      "此卡只能在第九回合结束前打出。在第10和第12回合，所有其他玩家必须少派遣1名家庭成员的后代。(指第3、4、5名家庭成员)"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E198.png",
+    "locales": {
+      "zh": {
+        "name": "捕鼠人",
+        "desc": [
+          "此卡只能在第九回合结束前打出。在第10和第12回合，所有其他玩家必须少派遣1名家庭成员的后代。(指第3、4、5名家庭成员)"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "maxRound": 9,
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E199_Renovator",
+    "originalId": "E199_Renovator",
+    "gameEdition": "classic",
+    "name": "装修工",
+    "deck": "E",
+    "number": 199,
+    "desc": [
+      "你翻修成砖屋/石屋的费用减少2砖头/2石头。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E199.png",
+    "locales": {
+      "zh": {
+        "name": "装修工",
+        "desc": [
+          "你翻修成砖屋/石屋的费用减少2砖头/2石头。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E20_SimpleFireplace",
+    "originalId": "E20_SimpleFireplace",
+    "gameEdition": "classic",
+    "name": "简易火炉",
+    "deck": "E",
+    "number": 20,
+    "desc": [
+      "任意时刻：",
+      "[<VEGETABLE> <ARROW> 2 <FOOD>]",
+      "[<PIG> <ARROW> 2 <FOOD>]",
+      "[<SHEEP> <ARROW> 1 <FOOD>]",
+      "[<CATTLE> <ARROW> 3 <FOOD>]",
+      "“烤面包”行动:",
+      "[<GRAIN> <ARROW> 2 <FOOD>]"
+    ],
+    "cost": {
+      "clay": 1
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E20.png",
+    "locales": {
+      "zh": {
+        "name": "简易火炉",
+        "desc": [
+          "任意时刻：",
+          "[<VEGETABLE> <ARROW> 2 <FOOD>]",
+          "[<PIG> <ARROW> 2 <FOOD>]",
+          "[<SHEEP> <ARROW> 1 <FOOD>]",
+          "[<CATTLE> <ARROW> 3 <FOOD>]",
+          "“烤面包”行动:",
+          "[<GRAIN> <ARROW> 2 <FOOD>]"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "isCookery": true,
+    "isBaking": true,
+    "fireplaceIdentity": true,
+    "exchanges": [
+      {
+        "from": {
+          "vegetable": 1
+        },
+        "to": {
+          "food": 2
+        },
+        "triggers": [
+          "anytime"
+        ]
+      },
+      {
+        "from": {
+          "boar": 1
+        },
+        "to": {
+          "food": 2
+        },
+        "triggers": [
+          "anytime"
+        ]
+      },
+      {
+        "from": {
+          "sheep": 1
+        },
+        "to": {
+          "food": 1
+        },
+        "triggers": [
+          "anytime"
+        ]
+      },
+      {
+        "from": {
+          "cattle": 1
+        },
+        "to": {
+          "food": 3
+        },
+        "triggers": [
+          "anytime"
+        ]
+      },
+      {
+        "from": {
+          "grain": 1
+        },
+        "to": {
+          "food": 2
+        },
+        "triggers": [
+          "bake-bread"
+        ]
+      }
+    ],
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E200_Conservator",
+    "name": "建筑复原师",
+    "deck": "E",
+    "number": 200,
+    "category": "FARM_PLANNER",
+    "desc": [
+      "在翻修房屋时，你可以跳过砖屋，直接将木屋翻修成石屋。"
+    ],
+    "cost": {},
+    "players": "4+",
+    "originalId": "E200_Conservator",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E200.png",
+    "locales": {
+      "zh": {
+        "name": "建筑复原师",
+        "desc": [
+          "在翻修房屋时，你可以跳过砖屋，直接将木屋翻修成石屋。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E201_CattleWhisperer",
+    "name": "驯牛人",
+    "deck": "E",
+    "number": 201,
+    "category": "LIVESTOCK_PROVIDER",
+    "desc": [
+      "将当前回合数加5和9，在这些回合的行动格上各放1头牛。这些回合开始时，你获得对应的牛。"
+    ],
+    "players": "4+",
+    "originalId": "E201_CattleWhisperer",
+    "gameEdition": "classic",
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E201.png",
+    "locales": {
+      "zh": {
+        "name": "驯牛人",
+        "desc": [
+          "将当前回合数加5和9，在这些回合的行动格上各放1头牛。这些回合开始时，你获得对应的牛。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E202_SeasonalWorker",
+    "name": "季节工",
+    "deck": "E",
+    "number": 202,
+    "category": "CROP_PROVIDER",
+    "desc": [
+      "每当你使用临时工行动格时，你额外获得1份小麦。第6回合起，改为额外获得1份小麦/1份蔬菜。"
+    ],
+    "cost": {},
+    "players": "4+",
+    "originalId": "E202_SeasonalWorker",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E202.png",
+    "locales": {
+      "zh": {
+        "name": "季节工",
+        "desc": [
+          "每当你使用临时工行动格时，你额外获得1份小麦。第6回合起，改为额外获得1份小麦/1份蔬菜。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E203_Shepherd",
+    "originalId": "E203_Shepherd",
+    "gameEdition": "classic",
+    "name": "牧羊人",
+    "deck": "E",
+    "number": 203,
+    "desc": [
+      "每个繁殖阶段，如果你有至少4只羊，你能繁殖2只羊而不是1只。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E203.png",
+    "locales": {
+      "zh": {
+        "name": "牧羊人",
+        "desc": [
+          "每个繁殖阶段，如果你有至少4只羊，你能繁殖2只羊而不是1只。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E204_MasterShepherd",
+    "originalId": "E204_MasterShepherd",
+    "gameEdition": "classic",
+    "name": "牧羊人管理员",
+    "deck": "E",
+    "number": 204,
+    "desc": [
+      "在之后3个回合行动格上各放1只羊。这些回合开始时，你获得对应的羊。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E204.png",
+    "locales": {
+      "zh": {
+        "name": "牧羊人管理员",
+        "desc": [
+          "在之后3个回合行动格上各放1只羊。这些回合开始时，你获得对应的羊。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E205_ReedCollector",
+    "originalId": "E205_ReedCollector",
+    "gameEdition": "classic",
+    "name": "打苇人",
+    "deck": "E",
+    "number": 205,
+    "desc": [
+      "打出此卡时，在之后的4个回合行动格上各放1捆芦苇。这些回合开始时，你获得对应的芦苇。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E205.png",
+    "locales": {
+      "zh": {
+        "name": "打苇人",
+        "desc": [
+          "打出此卡时，在之后的4个回合行动格上各放1捆芦苇。这些回合开始时，你获得对应的芦苇。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E206_Swineherd",
+    "originalId": "E206_Swineherd",
+    "gameEdition": "classic",
+    "name": "猪倌",
+    "deck": "E",
+    "number": 206,
+    "desc": [
+      "每当你使用猪市场积累行动格时，你额外获得1头猪。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E206.png",
+    "locales": {
+      "zh": {
+        "name": "猪倌",
+        "desc": [
+          "每当你使用猪市场积累行动格时，你额外获得1头猪。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E207_Stablehand",
+    "name": "马厩帮工",
+    "deck": "E",
+    "number": 207,
+    "category": "FARM_PLANNER",
+    "desc": [
+      "每轮次限1次：每当你建造至少1根栅栏，你便可以免费建造1个马厩。"
+    ],
+    "cost": {},
+    "players": "4+",
+    "originalId": "E207_Stablehand",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E207.png",
+    "locales": {
+      "zh": {
+        "name": "马厩帮工",
+        "desc": [
+          "每轮次限1次：每当你建造至少1根栅栏，你便可以免费建造1个马厩。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E208_Stablemaster",
+    "name": "马厩管理员",
+    "deck": "E",
+    "number": 208,
+    "category": "FARM_PLANNER",
+    "desc": [
+      "你可在至多1个未被栅栏围住的马厩里饲养3只同种类型的动物。"
+    ],
+    "cost": {},
+    "players": "4+",
+    "originalId": "E208_Stablemaster",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E208.png",
+    "locales": {
+      "zh": {
+        "name": "马厩管理员",
+        "desc": [
+          "你可在至多1个未被栅栏围住的马厩里饲养3只同种类型的动物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E209_Quarryman",
+    "originalId": "E209_Quarryman",
+    "gameEdition": "classic",
+    "name": "采石工",
+    "deck": "E",
+    "number": 209,
+    "desc": [
+      "任意时刻，你可以将1个石头转化为2份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E209.png",
+    "locales": {
+      "zh": {
+        "name": "采石工",
+        "desc": [
+          "任意时刻，你可以将1个石头转化为2份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "exchanges": [
+      {
+        "from": {
+          "stone": 1
+        },
+        "to": {
+          "food": 2
+        },
+        "triggers": [
+          "anytime"
+        ]
+      }
+    ],
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E21_HalftimberedHouse",
+    "name": "半木梁房",
+    "deck": "E",
+    "number": 21,
+    "category": "POINTS_PROVIDER",
+    "desc": [
+      "游戏结束时，你的每间石屋都额外获得1分。"
+    ],
+    "cost": {
+      "wood": 1,
+      "clay": 1,
+      "stone": 2,
+      "reed": 1
+    },
+    "extraVp": true,
+    "originalId": "E21_HalftimberedHouse",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E21.png",
+    "locales": {
+      "zh": {
+        "name": "半木梁房",
+        "desc": [
+          "游戏结束时，你的每间石屋都额外获得1分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E210_StoneCarrier",
+    "originalId": "E210_StoneCarrier",
+    "gameEdition": "classic",
+    "name": "运石工",
+    "deck": "E",
+    "number": 210,
+    "desc": [
+      "每当你从行动格上获得石头时，你额外获得1个石头。如果你同时获得了其他种类的建筑资源，你需要支付1份食物。（通过卡牌获得的石头不算）"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E210.png",
+    "locales": {
+      "zh": {
+        "name": "运石工",
+        "desc": [
+          "每当你从行动格上获得石头时，你额外获得1个石头。如果你同时获得了其他种类的建筑资源，你需要支付1份食物。（通过卡牌获得的石头不算）"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E211_Stonecutter",
+    "name": "切石工",
+    "deck": "E",
+    "number": 211,
+    "category": "BUILDING_RESOURCE_PROVIDER",
+    "desc": [
+      "打发展卡、建造房屋和翻修房屋所需的石头费用于你而言总是减少1。"
+    ],
+    "cost": {},
+    "players": "4+",
+    "originalId": "E211_Stonecutter",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E211.png",
+    "locales": {
+      "zh": {
+        "name": "切石工",
+        "desc": [
+          "打发展卡、建造房屋和翻修房屋所需的石头费用于你而言总是减少1。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E212_Dancer",
+    "originalId": "E212_Dancer",
+    "gameEdition": "classic",
+    "name": "舞者",
+    "deck": "E",
+    "number": 212,
+    "desc": [
+      "每当你使用卖艺积累行动格时，你获得至少4份食物。如果你需要在卖艺格上留下食物，则留下食物后仍获得4份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E212.png",
+    "locales": {
+      "zh": {
+        "name": "舞者",
+        "desc": [
+          "每当你使用卖艺积累行动格时，你获得至少4份食物。如果你需要在卖艺格上留下食物，则留下食物后仍获得4份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E213_Stockman",
+    "name": "牲畜饲养员",
+    "deck": "E",
+    "number": 213,
+    "category": "LIVESTOCK_PROVIDER",
+    "desc": [
+      "打出此卡后，每当你建造了第2/3/4个马厩时，你立即获得1头牛/1头猪/1只羊。动物可以立即被转换成食物，即使你没有饲养空间。"
+    ],
+    "cost": {},
+    "players": "4+",
+    "originalId": "E213_Stockman",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E213.png",
+    "locales": {
+      "zh": {
+        "name": "牲畜饲养员",
+        "desc": [
+          "打出此卡后，每当你建造了第2/3/4个马厩时，你立即获得1头牛/1头猪/1只羊。动物可以立即被转换成食物，即使你没有饲养空间。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E214_Potter",
+    "originalId": "E214_Potter",
+    "gameEdition": "classic",
+    "name": "制陶工",
+    "deck": "E",
+    "number": 214,
+    "desc": [
+      "每个丰收时节，你可以将至多1块砖头转化为2份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E214.png",
+    "locales": {
+      "zh": {
+        "name": "制陶工",
+        "desc": [
+          "每个丰收时节，你可以将至多1块砖头转化为2份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "exchanges": [
+      {
+        "from": {
+          "clay": 1
+        },
+        "to": {
+          "food": 2
+        },
+        "triggers": [
+          "harvest"
+        ],
+        "max": 1
+      }
+    ],
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E215_TenantFarmer",
+    "originalId": "E215_TenantFarmer",
+    "gameEdition": "classic",
+    "name": "动物租用人",
+    "deck": "E",
+    "number": 215,
+    "desc": [
+      "你立即获得3种动物各1只。计分阶段开始前，你必须退还3种动物各1只，否则每只不退还的动物使你-1分。动物可以立即被转换成食物，即使你没有饲养空间。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E215.png",
+    "locales": {
+      "zh": {
+        "name": "动物租用人",
+        "desc": [
+          "你立即获得3种动物各1只。计分阶段开始前，你必须退还3种动物各1只，否则每只不退还的动物使你-1分。动物可以立即被转换成食物，即使你没有饲养空间。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E216_AnimalKeeper",
+    "originalId": "E216_AnimalKeeper",
+    "gameEdition": "classic",
+    "name": "动物管理员",
+    "deck": "E",
+    "number": 216,
+    "desc": [
+      "你的每个圈地可以饲养不同种类的动物。(K145林间牧场除外)"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E216.png",
+    "locales": {
+      "zh": {
+        "name": "动物管理员",
+        "desc": [
+          "你的每个圈地可以饲养不同种类的动物。(K145林间牧场除外)"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E217_Reeve",
+    "name": "地方官",
+    "deck": "E",
+    "number": 217,
+    "category": "POINTS_PROVIDER",
+    "desc": [
+      "打出此卡时，若距离游戏结束还有1/3/6/9个完整回合，则你立即获得1/2/3/4根木头。游戏结束时，打出职业最多的玩家都额外获得3分。"
+    ],
+    "cost": {},
+    "players": "1+",
+    "extraVp": true,
+    "originalId": "E217_Reeve",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E217.png",
+    "locales": {
+      "zh": {
+        "name": "地方官",
+        "desc": [
+          "打出此卡时，若距离游戏结束还有1/3/6/9个完整回合，则你立即获得1/2/3/4根木头。游戏结束时，打出职业最多的玩家都额外获得3分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E218_Carpenter",
+    "name": "木匠",
+    "deck": "E",
+    "number": 218,
+    "category": "BUILDING_RESOURCE_PROVIDER",
+    "desc": [
+      "你扩建每间房屋只需花费2捆芦苇和3份对应你房屋类型的建材。例如：扩建1间石屋只需2捆芦苇+3个石头。"
+    ],
+    "cost": {},
+    "players": "1+",
+    "originalId": "E218_Carpenter",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E218.png",
+    "locales": {
+      "zh": {
+        "name": "木匠",
+        "desc": [
+          "你扩建每间房屋只需花费2捆芦苇和3份对应你房屋类型的建材。例如：扩建1间石屋只需2捆芦苇+3个石头。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E22_Raft",
+    "originalId": "E22_Raft",
+    "gameEdition": "classic",
+    "name": "木筏",
+    "deck": "E",
+    "number": 22,
+    "desc": [
+      "每当你使用钓鱼积累行动格时，额外获得1份食物/1捆芦苇。"
+    ],
+    "cost": {
+      "wood": 2
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E22.png",
+    "locales": {
+      "zh": {
+        "name": "木筏",
+        "desc": [
+          "每当你使用钓鱼积累行动格时，额外获得1份食物/1捆芦苇。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E23_Manger",
+    "name": "食槽",
+    "deck": "E",
+    "number": 23,
+    "category": "POINTS_PROVIDER",
+    "desc": [
+      "游戏结束时，若你所有的圈地总计覆盖了6/7/8/9+农场格子，额外获得1/2/3/4分。"
+    ],
+    "cost": {
+      "wood": 2
+    },
+    "extraVp": true,
+    "originalId": "E23_Manger",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E23.png",
+    "locales": {
+      "zh": {
+        "name": "食槽",
+        "desc": [
+          "游戏结束时，若你所有的圈地总计覆盖了6/7/8/9+农场格子，额外获得1/2/3/4分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E24_AnimalPen",
+    "originalId": "E24_AnimalPen",
+    "gameEdition": "classic",
+    "name": "畜栏",
+    "deck": "E",
+    "number": 24,
+    "desc": [
+      "打出此卡时，在之后的每个回合行动格上各放2份食物。这些回合开始时，你获得对应的食物。"
+    ],
+    "cost": {
+      "wood": 2
+    },
+    "vp": 1,
+    "prerequisite": "4 Occupations",
+    "occupationPrerequisites": {
+      "min": 4
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E24.png",
+    "locales": {
+      "zh": {
+        "name": "畜栏",
+        "desc": [
+          "打出此卡时，在之后的每个回合行动格上各放2份食物。这些回合开始时，你获得对应的食物。"
+        ],
+        "prerequisite": "职业×4"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E25_Spices",
+    "originalId": "E25_Spices",
+    "gameEdition": "classic",
+    "name": "调味料",
+    "deck": "E",
+    "number": 25,
+    "desc": [
+      "每当你使用A3/A4/E128壁炉、A1/A2火炉、E20简易火炉、I85烹饪角将蔬菜转换成食物时，每份蔬菜都额外获得1份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E25.png",
+    "locales": {
+      "zh": {
+        "name": "调味料",
+        "desc": [
+          "每当你使用A3/A4/E128壁炉、A1/A2火炉、E20简易火炉、I85烹饪角将蔬菜转换成食物时，每份蔬菜都额外获得1份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E26_Plane",
+    "originalId": "E26_Plane",
+    "gameEdition": "classic",
+    "name": "木工刨",
+    "deck": "E",
+    "number": 26,
+    "desc": [
+      "每当你使用A7家具工坊、K122大家具工坊、I258家具匠将1个木头转化成食物时，额外获得1份食物，或额外将1根木头转化成2份食物。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E26.png",
+    "locales": {
+      "zh": {
+        "name": "木工刨",
+        "desc": [
+          "每当你使用A7家具工坊、K122大家具工坊、I258家具匠将1个木头转化成食物时，额外获得1份食物，或额外将1根木头转化成2份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E27_WoodredOven",
+    "originalId": "E27_WoodredOven",
+    "gameEdition": "classic",
+    "name": "木造烤炉",
+    "deck": "E",
+    "number": 27,
+    "desc": [
+      "打出此卡时，你获得1次“烤面包”行动。每次你执行“烤面包”行动时，你可以将任意数量的小麦各转换成3份食物。"
+    ],
+    "cost": {
+      "wood": 3,
+      "stone": 1
+    },
+    "vp": 2,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E27.png",
+    "locales": {
+      "zh": {
+        "name": "木造烤炉",
+        "desc": [
+          "打出此卡时，你获得1次“烤面包”行动。每次你执行“烤面包”行动时，你可以将任意数量的小麦各转换成3份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "isBaking": true,
+    "ovenIdentity": true,
+    "exchanges": [
+      {
+        "from": {
+          "grain": 1
+        },
+        "to": {
+          "food": 3
+        },
+        "triggers": [
+          "bake-bread"
+        ]
+      }
+    ],
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E28_Clogs",
+    "originalId": "E28_Clogs",
+    "gameEdition": "classic",
+    "name": "木靴",
+    "deck": "E",
+    "number": 28,
+    "desc": [
+      "游戏结束时，如果你的房屋等级是砖屋/石屋，你便额外获得1/2分。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": true,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E28.png",
+    "locales": {
+      "zh": {
+        "name": "木靴",
+        "desc": [
+          "游戏结束时，如果你的房屋等级是砖屋/石屋，你便额外获得1/2分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E29_ShepherdsPipe",
+    "originalId": "E29_ShepherdsPipe",
+    "gameEdition": "classic",
+    "name": "兽角笛",
+    "deck": "E",
+    "number": 29,
+    "desc": [
+      "每个饲养羊的圈地可以额外饲养2只羊，每个圈地外的马厩可以饲养2只羊。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E29.png",
+    "locales": {
+      "zh": {
+        "name": "兽角笛",
+        "desc": [
+          "每个饲养羊的圈地可以额外饲养2只羊，每个圈地外的马厩可以饲养2只羊。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E30_Canoe",
+    "name": "独木舟",
+    "deck": "E",
+    "number": 30,
+    "category": "BUILDING_RESOURCE_PROVIDER",
+    "desc": [
+      "每当你使用钓鱼积累行动格时，额外获得1份食物和1捆芦苇。"
+    ],
+    "cost": {
+      "wood": 2
+    },
+    "vp": 1,
+    "prerequisite": "2 Occupations",
+    "occupationPrerequisites": {
+      "min": 2
+    },
+    "originalId": "E30_Canoe",
+    "gameEdition": "classic",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E30.png",
+    "locales": {
+      "zh": {
+        "name": "独木舟",
+        "desc": [
+          "每当你使用钓鱼积累行动格时，额外获得1份食物和1捆芦苇。"
+        ],
+        "prerequisite": "职业×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E31_CarpPond",
+    "originalId": "E31_CarpPond",
+    "gameEdition": "classic",
+    "name": "鲤鱼池",
+    "deck": "E",
+    "number": 31,
+    "desc": [
+      "打出此卡时，在之后的每个奇数回合行动格上各放1份食物。这些回合开始时，你获得对应的食物。"
+    ],
+    "cost": {},
+    "vp": 1,
+    "prerequisite": "1 Occupations+发展卡×2",
+    "occupationPrerequisites": {
+      "min": 1
+    },
+    "improvementPrerequisites": {
+      "min": 2
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E31.png",
+    "locales": {
+      "zh": {
+        "name": "鲤鱼池",
+        "desc": [
+          "打出此卡时，在之后的每个奇数回合行动格上各放1份食物。这些回合开始时，你获得对应的食物。"
+        ],
+        "prerequisite": "职业×1+发展卡×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E32_PotatoDibber",
+    "originalId": "E32_PotatoDibber",
+    "gameEdition": "classic",
+    "name": "土豆挖掘器",
+    "deck": "E",
+    "number": 32,
+    "desc": [
+      "每当你播种蔬菜时，在每块新播种的菜田上额外叠放1份蔬菜。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E32.png",
+    "locales": {
+      "zh": {
+        "name": "土豆挖掘器",
+        "desc": [
+          "每当你播种蔬菜时，在每块新播种的菜田上额外叠放1份蔬菜。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E33_Ceramics",
+    "originalId": "E33_Ceramics",
+    "gameEdition": "classic",
+    "name": "陶器",
+    "deck": "E",
+    "number": 33,
+    "desc": [
+      "打出此卡时，你获得2份食物。从现在起，A8陶艺工坊对你来说是一张免费的次要发展卡。"
+    ],
+    "cost": {
+      "clay": 1
+    },
+    "vp": 0,
+    "prerequisite": "烤炉×1",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E33.png",
+    "locales": {
+      "zh": {
+        "name": "陶器",
+        "desc": [
+          "打出此卡时，你获得2份食物。从现在起，A8陶艺工坊对你来说是一张免费的次要发展卡。"
+        ],
+        "prerequisite": "烤炉×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E338_FeedPellets",
+    "name": "饲料颗粒",
+    "deck": "E",
+    "number": 338,
+    "category": "LIVESTOCK_PROVIDER",
+    "desc": [
+      "每个丰收时节的喂养阶段，你可以支付1份蔬菜，获得至多1只你已有的动物。"
+    ],
+    "cost": {},
+    "originalId": "E338_FeedPellets",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E338.png",
+    "locales": {
+      "zh": {
+        "name": "饲料颗粒",
+        "desc": [
+          "每个丰收时节的喂养阶段，你可以支付1份蔬菜，获得至多1只你已有的动物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E34_Basket",
+    "name": "篮子",
+    "deck": "E",
+    "number": 34,
+    "category": "FOOD_PROVIDER",
+    "desc": [
+      "每当你从行动格上取得不少于2根木头时，可以留下2根木头在所使用的行动格上，额外获得3份食物。(通过卡牌获得的木头不算)"
+    ],
+    "cost": {
+      "reed": 1
+    },
+    "waresSalesmanGains": [
+      {
+        "wood": 1,
+        "reed": 1
+      }
+    ],
+    "originalId": "E34_Basket",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E34.png",
+    "locales": {
+      "zh": {
+        "name": "篮子",
+        "desc": [
+          "每当你从行动格上取得不少于2根木头时，可以留下2根木头在所使用的行动格上，额外获得3份食物。(通过卡牌获得的木头不算)"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E341_Guildmaster",
+    "originalId": "E341_Guildmaster",
+    "gameEdition": "classic",
+    "name": "公会主席",
+    "deck": "E",
+    "number": 341,
+    "desc": [
+      "打出此卡后，每当你打出I258家具匠/A7家具工坊、E214制陶工/A8陶艺工坊、E183编筐工/A9编筐工坊时，你对应获得4木、4砖、3芦苇。若打出此卡时，你已拥有上述某卡，对于每张卡，你获得对应的2个资源。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E341.png",
+    "locales": {
+      "zh": {
+        "name": "公会主席",
+        "desc": [
+          "打出此卡后，每当你打出I258家具匠/A7家具工坊、E214制陶工/A8陶艺工坊、E183编筐工/A9编筐工坊时，你对应获得4木、4砖、3芦苇。若打出此卡时，你已拥有上述某卡，对于每张卡，你获得对应的2个资源。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_E35_CornScoop",
+    "name": "谷物铲",
+    "deck": "E",
+    "number": 35,
+    "category": "CROP_PROVIDER",
+    "desc": [
+      "每当你使用小麦种子行动格时，额外获得1份小麦。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "originalId": "E35_CornScoop",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E35.png",
+    "locales": {
+      "zh": {
+        "name": "谷物铲",
+        "desc": [
+          "每当你使用小麦种子行动格时，额外获得1份小麦。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E36_ClayRoof",
+    "originalId": "E36_ClayRoof",
+    "gameEdition": "classic",
+    "name": "砖造屋顶",
+    "deck": "E",
+    "number": 36,
+    "desc": [
+      "每当你扩建/翻修时，对于每间房屋和每次翻修，你可以用至多2砖代替等量的芦苇。"
+    ],
+    "cost": {},
+    "vp": 1,
+    "prerequisite": "1 Occupations",
+    "occupationPrerequisites": {
+      "min": 1
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E36.png",
+    "locales": {
+      "zh": {
+        "name": "砖造屋顶",
+        "desc": [
+          "每当你扩建/翻修时，对于每间房屋和每次翻修，你可以用至多2砖代替等量的芦苇。"
+        ],
+        "prerequisite": "职业×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E37_ClaySupports",
+    "name": "砖造支柱",
+    "deck": "E",
+    "number": 37,
+    "category": "FARM_PLANNER",
+    "desc": [
+      "每当你扩建砖屋时，你的每间砖屋可改用2块砖头+1根木头+1捆芦苇进行建造。"
+    ],
+    "cost": {
+      "wood": 2
+    },
+    "originalId": "E37_ClaySupports",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E37.png",
+    "locales": {
+      "zh": {
+        "name": "砖造支柱",
+        "desc": [
+          "每当你扩建砖屋时，你的每间砖屋可改用2块砖头+1根木头+1捆芦苇进行建造。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E38_MadonnaStatue",
+    "originalId": "E38_MadonnaStatue",
+    "gameEdition": "classic",
+    "name": "圣母像",
+    "deck": "E",
+    "number": 38,
+    "desc": [
+      "打出此卡时，你必须弃掉2张你已打出的发展卡。"
+    ],
+    "cost": {},
+    "vp": 2,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E38.png",
+    "locales": {
+      "zh": {
+        "name": "圣母像",
+        "desc": [
+          "打出此卡时，你必须弃掉2张你已打出的发展卡。"
+        ],
+        "prerequisite": "见下文"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E39_MarketStall",
+    "name": "货摊",
+    "deck": "E",
+    "number": 39,
+    "category": "CROP_PROVIDER",
+    "desc": [
+      "立即获得1份蔬菜。使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {
+      "grain": 1
+    },
+    "passing": true,
+    "originalId": "E39_MarketStall",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E39.png",
+    "locales": {
+      "zh": {
+        "name": "货摊",
+        "desc": [
+          "立即获得1份蔬菜。使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E40_MiniPasture",
+    "name": "迷你圈地",
+    "deck": "E",
+    "number": 40,
+    "category": "FARM_PLANNER",
+    "desc": [
+      "立即免费将你的1个农场格子围成圈地。（遵守围建栅栏的一般规则，且不能分割原有圈地。）使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {
+      "food": 2
+    },
+    "passing": true,
+    "originalId": "E40_MiniPasture",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E40.png",
+    "locales": {
+      "zh": {
+        "name": "迷你圈地",
+        "desc": [
+          "立即免费将你的1个农场格子围成圈地。（遵守围建栅栏的一般规则，且不能分割原有圈地。）使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E41_Millstone",
+    "originalId": "E41_Millstone",
+    "gameEdition": "classic",
+    "name": "磨盘",
+    "deck": "E",
+    "number": 41,
+    "desc": [
+      "每次你执行“烤面包”行动时，额外获得2份食物。"
+    ],
+    "cost": {
+      "stone": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E41.png",
+    "locales": {
+      "zh": {
+        "name": "磨盘",
+        "desc": [
+          "每次你执行“烤面包”行动时，额外获得2份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E42_HelpfulNeighbours",
+    "originalId": "E42_HelpfulNeighbours",
+    "gameEdition": "classic",
+    "name": "邻里互助",
+    "deck": "E",
+    "number": 42,
+    "desc": [
+      "立即获得1芦苇/1石头。使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "passing": true,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E42.png",
+    "locales": {
+      "zh": {
+        "name": "邻里互助",
+        "desc": [
+          "立即获得1芦苇/1石头。使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E43_FruitTree",
+    "originalId": "E43_FruitTree",
+    "gameEdition": "classic",
+    "name": "果树",
+    "deck": "E",
+    "number": 43,
+    "desc": [
+      "打出此卡时，在之后的第8到第14回合行动格上各放1份食物。这些回合开始时，你获得对应的食物。"
+    ],
+    "cost": {},
+    "vp": 1,
+    "prerequisite": "3 Occupations",
+    "occupationPrerequisites": {
+      "min": 3
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E43.png",
+    "locales": {
+      "zh": {
+        "name": "果树",
+        "desc": [
+          "打出此卡时，在之后的第8到第14回合行动格上各放1份食物。这些回合开始时，你获得对应的食物。"
+        ],
+        "prerequisite": "职业×3"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E44_Outhouse",
+    "originalId": "E44_Outhouse",
+    "gameEdition": "classic",
+    "name": "无水厕所",
+    "deck": "E",
+    "number": 44,
+    "desc": [
+      "至少有1个其他玩家的职业数量≤1时，你才能打出此卡。"
+    ],
+    "cost": {
+      "wood": 1,
+      "clay": 1
+    },
+    "vp": 2,
+    "prerequisite": "见下文",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E44.png",
+    "locales": {
+      "zh": {
+        "name": "无水厕所",
+        "desc": [
+          "至少有1个其他玩家的职业数量≤1时，你才能打出此卡。"
+        ],
+        "prerequisite": "见下文"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E45_PrivateForest",
+    "name": "私有林地",
+    "deck": "E",
+    "number": 45,
+    "category": "BUILDING_RESOURCE_PROVIDER",
+    "desc": [
+      "打出此卡时，在之后的每个偶数回合行动格上各放1根木头。这些回合开始时，你获得对应的木头。"
+    ],
+    "cost": {
+      "food": 2
+    },
+    "prerequisite": "",
+    "originalId": "E45_PrivateForest",
+    "gameEdition": "classic",
+    "vp": 0,
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E45.png",
+    "locales": {
+      "zh": {
+        "name": "私有林地",
+        "desc": [
+          "打出此卡时，在之后的每个偶数回合行动格上各放1根木头。这些回合开始时，你获得对应的木头。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E46_SackCart",
+    "name": "运粮推车",
+    "deck": "E",
+    "number": 46,
+    "category": "CROP_PROVIDER",
+    "desc": [
+      "打出此卡时，在第5,8,11,14回合行动格上各放1份小麦。这些回合开始时，你获得对应的小麦。"
+    ],
+    "cost": {
+      "wood": 2
+    },
+    "prerequisite": "2 Occupations",
+    "occupationPrerequisites": {
+      "min": 2
+    },
+    "originalId": "E46_SackCart",
+    "gameEdition": "classic",
+    "vp": 0,
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E46.png",
+    "locales": {
+      "zh": {
+        "name": "运粮推车",
+        "desc": [
+          "打出此卡时，在第5,8,11,14回合行动格上各放1份小麦。这些回合开始时，你获得对应的小麦。"
+        ],
+        "prerequisite": "职业×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E47_LettucePatch",
+    "name": "莴苣田",
+    "deck": "E",
+    "number": 47,
+    "category": "CROP_PROVIDER",
+    "providesField": true,
+    "vp": 1,
+    "cost": {},
+    "prerequisite": "3 Occupations",
+    "occupationPrerequisites": {
+      "min": 3
+    },
+    "isField": true,
+    "cardField": {
+      "allowedCrops": [
+        "vegetable"
+      ],
+      "capacity": 1
+    },
+    "desc": [
+      "此卡视为1块田地，但此卡只能种植蔬菜。从此卡上收割的每份蔬菜可以立即被转化成4份食物。"
+    ],
+    "originalId": "E47_LettucePatch",
+    "gameEdition": "classic",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E47.png",
+    "locales": {
+      "zh": {
+        "name": "莴苣田",
+        "desc": [
+          "此卡视为1块田地，但此卡只能种植蔬菜。从此卡上收割的每份蔬菜可以立即被转化成4份食物。"
+        ],
+        "prerequisite": "职业×3"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E48_ReedPond",
+    "name": "芦苇塘",
+    "deck": "E",
+    "number": 48,
+    "category": "BUILDING_RESOURCE_PROVIDER",
+    "desc": [
+      "打出此卡时，在之后的3个回合行动格上各放1捆芦苇。这些回合开始时，你获得对应的芦苇。"
+    ],
+    "cost": {},
+    "prerequisite": "3 Occupations",
+    "occupationPrerequisites": {
+      "min": 3
+    },
+    "originalId": "E48_ReedPond",
+    "gameEdition": "classic",
+    "vp": 1,
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E48.png",
+    "locales": {
+      "zh": {
+        "name": "芦苇塘",
+        "desc": [
+          "打出此卡时，在之后的3个回合行动格上各放1捆芦苇。这些回合开始时，你获得对应的芦苇。"
+        ],
+        "prerequisite": "职业×3"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E49_WritingDesk",
+    "name": "写字台",
+    "deck": "E",
+    "number": 49,
+    "category": "ACTIONS_BOOSTER",
+    "desc": [
+      "每当你使用技能培训行动格打出1张职业卡时，你可以额外支付2份食物作为技能培训费再打出1张职业卡。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 1,
+    "prerequisite": "2 Occupations",
+    "occupationPrerequisites": {
+      "min": 2
+    },
+    "originalId": "E49_WritingDesk",
+    "gameEdition": "classic",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E49.png",
+    "locales": {
+      "zh": {
+        "name": "写字台",
+        "desc": [
+          "每当你使用技能培训行动格打出1张职业卡时，你可以额外支付2份食物作为技能培训费再打出1张职业卡。"
+        ],
+        "prerequisite": "职业×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E50_BuildersTrowel",
+    "originalId": "E50_BuildersTrowel",
+    "gameEdition": "classic",
+    "name": "泥铲",
+    "deck": "E",
+    "number": 50,
+    "desc": [
+      "你可以随时将木屋翻修成砖屋。(正常支付翻修费用)。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E50.png",
+    "locales": {
+      "zh": {
+        "name": "泥铲",
+        "desc": [
+          "你可以随时将木屋翻修成砖屋。(正常支付翻修费用)。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E51_Spindle",
+    "originalId": "E51_Spindle",
+    "gameEdition": "classic",
+    "name": "纺锤",
+    "deck": "E",
+    "number": 51,
+    "desc": [
+      "每个丰收时节的收割阶段，你有3/5+只羊，额外获得1/2份食物。(卡牌提供的“收割阶段”不算，如：I92肥料)"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E51.png",
+    "locales": {
+      "zh": {
+        "name": "纺锤",
+        "desc": [
+          "每个丰收时节的收割阶段，你有3/5+只羊，额外获得1/2份食物。(卡牌提供的“收割阶段”不算，如：I92肥料)"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E52_Stable",
+    "name": "小马厩",
+    "deck": "E",
+    "number": 52,
+    "category": "FARM_PLANNER",
+    "desc": [
+      "立即免费建造1个马厩。使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "passing": true,
+    "originalId": "E52_Stable",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E52.png",
+    "locales": {
+      "zh": {
+        "name": "小马厩",
+        "desc": [
+          "立即免费建造1个马厩。使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E53_ButterChurn",
+    "name": "黄油桶",
+    "deck": "E",
+    "number": 53,
+    "category": "FOOD_PROVIDER",
+    "desc": [
+      "每个丰收时节的收割阶段，你每拥有3只羊/2头牛，便可额外获得1份食物。(卡牌提供的“收割阶段”不算，如：I92肥料)"
+    ],
+    "vp": 0,
+    "cost": {
+      "wood": 2
+    },
+    "prerequisite": "",
+    "originalId": "E53_ButterChurn",
+    "gameEdition": "classic",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E53.png",
+    "locales": {
+      "zh": {
+        "name": "黄油桶",
+        "desc": [
+          "每个丰收时节的收割阶段，你每拥有3只羊/2头牛，便可额外获得1份食物。(卡牌提供的“收割阶段”不算，如：I92肥料)"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E54_Quarry",
+    "originalId": "E54_Quarry",
+    "gameEdition": "classic",
+    "name": "采石场",
+    "deck": "E",
+    "number": 54,
+    "desc": [
+      "每当你使用临时工行动格时，额外获得3个石头。"
+    ],
+    "cost": {},
+    "vp": 2,
+    "prerequisite": "4 Occupations",
+    "occupationPrerequisites": {
+      "min": 4
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E54.png",
+    "locales": {
+      "zh": {
+        "name": "采石场",
+        "desc": [
+          "每当你使用临时工行动格时，额外获得3个石头。"
+        ],
+        "prerequisite": "职业×4"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E55_StoneHouseExtension",
+    "originalId": "E55_StoneHouseExtension",
+    "gameEdition": "classic",
+    "name": "扩建石屋",
+    "deck": "E",
+    "number": 55,
+    "desc": [
+      "立即免费扩建1间石屋。使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {
+      "reed": 1,
+      "stone": 3
+    },
+    "vp": 0,
+    "prerequisite": "石屋阶段",
+    "passing": true,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E55.png",
+    "locales": {
+      "zh": {
+        "name": "扩建石屋",
+        "desc": [
+          "立即免费扩建1间石屋。使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": "石屋阶段"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E56_StoneTongs",
+    "name": "夹石钳",
+    "deck": "E",
+    "number": 56,
+    "category": "BUILDING_RESOURCE_PROVIDER",
+    "desc": [
+      "每当你使用石头积累行动格时，额外获得1个石头。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "originalId": "E56_StoneTongs",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E56.png",
+    "locales": {
+      "zh": {
+        "name": "夹石钳",
+        "desc": [
+          "每当你使用石头积累行动格时，额外获得1个石头。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E57_Dovecote",
+    "originalId": "E57_Dovecote",
+    "gameEdition": "classic",
+    "name": "鸽舍",
+    "deck": "E",
+    "number": 57,
+    "desc": [
+      "打出此卡时，在第10至14回合行动格上各放1份食物。这些回合开始时，你获得对应的食物。"
+    ],
+    "cost": {
+      "stone": 2
+    },
+    "vp": 2,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E57.png",
+    "locales": {
+      "zh": {
+        "name": "鸽舍",
+        "desc": [
+          "打出此卡时，在第10至14回合行动格上各放1份食物。这些回合开始时，你获得对应的食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E58_AnimalYard",
+    "originalId": "E58_AnimalYard",
+    "gameEdition": "classic",
+    "name": "兽笼",
+    "deck": "E",
+    "number": 58,
+    "desc": [
+      "此卡可以容纳两只任意种类的动物。（可被E59饮水槽和E29兽角笛扩充容量）"
+    ],
+    "cost": {
+      "wood": 2
+    },
+    "vp": 1,
+    "prerequisite": "1 Occupations",
+    "occupationPrerequisites": {
+      "min": 1
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E58.png",
+    "locales": {
+      "zh": {
+        "name": "兽笼",
+        "desc": [
+          "此卡可以容纳两只任意种类的动物。（可被E59饮水槽和E29兽角笛扩充容量）"
+        ],
+        "prerequisite": "职业×1"
+      }
+    },
+    "animalHolder": true,
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E59_DrinkingTrough",
+    "name": "饮水槽",
+    "deck": "E",
+    "number": 59,
+    "category": "FARM_PLANNER",
+    "desc": [
+      "每个圈地（无论是否有马厩）可以多容纳2只动物。可扩充容量：E58兽笼、I102野生保护区、G070畜栏。不可扩充容量：BI05私家动物园、E208马厩管理员、E306驯兽师、WM013西部牛仔、FR105改革家、NL064牧羊人。"
+    ],
+    "cost": {
+      "wood": 2
+    },
+    "originalId": "E59_DrinkingTrough",
+    "gameEdition": "classic",
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E59.png",
+    "locales": {
+      "zh": {
+        "name": "饮水槽",
+        "desc": [
+          "每个圈地（无论是否有马厩）可以多容纳2只动物。可扩充容量：E58兽笼、I102野生保护区、G070畜栏。不可扩充容量：BI05私家动物园、E208马厩管理员、E306驯兽师、WM013西部牛仔、FR105改革家、NL064牧羊人。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E60_CattleMarket",
+    "name": "牛市",
+    "deck": "E",
+    "number": 60,
+    "category": "LIVESTOCK_PROVIDER",
+    "desc": [
+      "立即获得1头牛。使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {
+      "sheep": 1
+    },
+    "passing": true,
+    "originalId": "E60_CattleMarket",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E60.png",
+    "locales": {
+      "zh": {
+        "name": "牛市",
+        "desc": [
+          "立即获得1头牛。使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E61_RidingPlough",
+    "originalId": "E61_RidingPlough",
+    "gameEdition": "classic",
+    "name": "车犁",
+    "deck": "E",
+    "number": 61,
+    "desc": [
+      "在此卡上放4个田地板块。限2次：每当你使用犁田/粮食耕种[犁播]行动格时，你可以使用此卡上2块田，改为犁3块田。每次使用犁田/粮食耕种[犁播]行动格时，只能使用1个犁/I68耙的效果。"
+    ],
+    "cost": {
+      "wood": 4
+    },
+    "vp": 0,
+    "prerequisite": "3 Occupations",
+    "occupationPrerequisites": {
+      "min": 3
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E61.png",
+    "locales": {
+      "zh": {
+        "name": "车犁",
+        "desc": [
+          "在此卡上放4个田地板块。限2次：每当你使用犁田/粮食耕种[犁播]行动格时，你可以使用此卡上2块田，改为犁3块田。每次使用犁田/粮食耕种[犁播]行动格时，只能使用1个犁/I68耙的效果。"
+        ],
+        "prerequisite": "职业×3"
+      }
+    },
+    "plowEffect": true,
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_E62_TurnwrestPlough",
+    "name": "转犁",
+    "deck": "E",
+    "number": 62,
+    "category": "FARM_PLANNER",
+    "desc": [
+      "在此卡上放2个田地板块。限1次：每当你使用犁田/粮食耕种[犁播]行动格时，你可以使用此卡上2块田，改为犁3块田。每次使用犁田/粮食耕种[犁播]行动格时，只能使用1个犁/I68耙的效果。"
+    ],
+    "cost": {
+      "wood": 3
+    },
+    "prerequisite": "2 Occupations",
+    "occupationPrerequisites": {
+      "min": 2
+    },
+    "originalId": "E62_TurnwrestPlough",
+    "gameEdition": "classic",
+    "vp": 0,
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/E62.png",
+    "locales": {
+      "zh": {
+        "name": "转犁",
+        "desc": [
+          "在此卡上放2个田地板块。限1次：每当你使用犁田/粮食耕种[犁播]行动格时，你可以使用此卡上2块田，改为犁3块田。每次使用犁田/粮食耕种[犁播]行动格时，只能使用1个犁/I68耙的效果。"
+        ],
+        "prerequisite": "职业×2"
+      }
+    },
+    "plowEffect": true,
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FL001_FarmCart",
+    "originalId": "FL001_FarmCart",
+    "gameEdition": "classic",
+    "name": "农用推车",
+    "deck": "FL",
+    "number": 1,
+    "desc": [
+      "每当你执行“播种”行动时，你可以在麦田/菜田上播种至多1份蔬菜/小麦(每个田至多额外播种1份)原来的麦田仍然视为麦田卡牌田"
+    ],
+    "cost": {
+      "reed": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL001.png",
+    "locales": {
+      "zh": {
+        "name": "农用推车",
+        "desc": [
+          "每当你执行“播种”行动时，你可以在麦田/菜田上播种至多1份蔬菜/小麦(每个田至多额外播种1份)原来的麦田仍然视为麦田卡牌田"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FL002_BeguineCourtyard",
+    "originalId": "FL002_BeguineCourtyard",
+    "gameEdition": "classic",
+    "name": "比利时庭院",
+    "deck": "FL",
+    "number": 2,
+    "desc": [
+      "一旦你的房子呈现出如下图的形状，你立即将供应区的所有家庭成员移入你的房子，并于本回合开始派遣(看作成年人)"
+    ],
+    "cost": {
+      "stone": 2,
+      "clay": 2
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL002.png",
+    "locales": {
+      "zh": {
+        "name": "比利时庭院",
+        "desc": [
+          "一旦你的房子呈现出如下图的形状，你立即将供应区的所有家庭成员移入你的房子，并于本回合开始派遣(看作成年人)"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FL003_BelgianShepherd",
+    "originalId": "FL003_BelgianShepherd",
+    "gameEdition": "classic",
+    "name": "比利时牧羊犬",
+    "deck": "FL",
+    "number": 3,
+    "desc": [
+      "你可以在至多1格空地上饲养2只羊，仍视作未使用。你的房屋里不能再饲养动物"
+    ],
+    "cost": {},
+    "vp": 1,
+    "prerequisite": "羊×1",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL003.png",
+    "locales": {
+      "zh": {
+        "name": "比利时牧羊犬",
+        "desc": [
+          "你可以在至多1格空地上饲养2只羊，仍视作未使用。你的房屋里不能再饲养动物"
+        ],
+        "prerequisite": "羊×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FL004_EducationalBuilding",
+    "originalId": "FL004_EducationalBuilding",
+    "gameEdition": "classic",
+    "name": "教学楼",
+    "deck": "FL",
+    "number": 4,
+    "desc": [
+      "此卡是只有你能使用的行动格。你在游戏中第一次派遣你的第3/4名家庭成员时，都可以将其派遣到此卡上，然后在之后回合行动格上依次放置1木头和1石头，先放木头，这些回合开始时，你获得对应的资源"
+    ],
+    "cost": {
+      "stone": 1
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL004.png",
+    "locales": {
+      "zh": {
+        "name": "教学楼",
+        "desc": [
+          "此卡是只有你能使用的行动格。你在游戏中第一次派遣你的第3/4名家庭成员时，都可以将其派遣到此卡上，然后在之后回合行动格上依次放置1木头和1石头，先放木头，这些回合开始时，你获得对应的资源"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FL005_Brabant",
+    "originalId": "FL005_Brabant",
+    "gameEdition": "classic",
+    "name": "人间乐园",
+    "deck": "FL",
+    "number": 5,
+    "desc": [
+      "游戏结束时，如果你有恰好2或3种动物的得分是-1分，则你获得5分"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL005.png",
+    "locales": {
+      "zh": {
+        "name": "人间乐园",
+        "desc": [
+          "游戏结束时，如果你有恰好2或3种动物的得分是-1分，则你获得5分"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FL006_EndiveField",
+    "originalId": "FL006_EndiveField",
+    "gameEdition": "classic",
+    "name": "菊苣田",
+    "deck": "FL",
+    "number": 6,
+    "desc": [
+      "打出时获得1份蔬菜，在以丰收时节为结束的回合结束时，你可以在此卡上播种蔬菜"
+    ],
+    "cost": {
+      "food": 2
+    },
+    "vp": 0,
+    "prerequisite": "2 Occupations",
+    "occupationPrerequisites": {
+      "min": 2
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL006.png",
+    "locales": {
+      "zh": {
+        "name": "菊苣田",
+        "desc": [
+          "打出时获得1份蔬菜，在以丰收时节为结束的回合结束时，你可以在此卡上播种蔬菜"
+        ],
+        "prerequisite": "职业×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FL007_DiamondTradingPost",
+    "originalId": "FL007_DiamondTradingPost",
+    "gameEdition": "classic",
+    "name": "钻石交易所",
+    "deck": "FL",
+    "number": 7,
+    "desc": [
+      "从游戏供应区拿取3个石头放在此卡上，任意时刻你可以将这3个石头移入个人供应区。每个丰收时节开始时，如果你个人供应区里的石头比此卡上的多，你可以支付1石头到此卡上并获得动物。第1/2/3次发动时分别获得2只羊/2只猪/2头牛。"
+    ],
+    "cost": {
+      "wood": 3,
+      "clay": 3
+    },
+    "vp": 1,
+    "prerequisite": "3 Occupations",
+    "occupationPrerequisites": {
+      "min": 3
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL007.png",
+    "locales": {
+      "zh": {
+        "name": "钻石交易所",
+        "desc": [
+          "从游戏供应区拿取3个石头放在此卡上，任意时刻你可以将这3个石头移入个人供应区。每个丰收时节开始时，如果你个人供应区里的石头比此卡上的多，你可以支付1石头到此卡上并获得动物。第1/2/3次发动时分别获得2只羊/2只猪/2头牛。"
+        ],
+        "prerequisite": "职业×3"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FL008_WoodenDraisine",
+    "originalId": "FL008_WoodenDraisine",
+    "gameEdition": "classic",
+    "name": "木制自行车",
+    "deck": "FL",
+    "number": 8,
+    "desc": [
+      "你可以将1个家庭成员派遣到同一版图上两个相邻的积累行动格之间，视为同时占用两格，但必须各留下1个资源在两格上黄发男孩4回合"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL008.png",
+    "locales": {
+      "zh": {
+        "name": "木制自行车",
+        "desc": [
+          "你可以将1个家庭成员派遣到同一版图上两个相邻的积累行动格之间，视为同时占用两格，但必须各留下1个资源在两格上黄发男孩4回合"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FL009_EbonyShoe",
+    "originalId": "FL009_EbonyShoe",
+    "gameEdition": "classic",
+    "name": "乌木鞋",
+    "deck": "FL",
+    "number": 9,
+    "desc": [
+      "打出时若距离游戏结束还有1/3/6/9个完整回合，则你立即获得1/2/3/4块砖头。下一位填满自己农场的玩家获得3分"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL009.png",
+    "locales": {
+      "zh": {
+        "name": "乌木鞋",
+        "desc": [
+          "打出时若距离游戏结束还有1/3/6/9个完整回合，则你立即获得1/2/3/4块砖头。下一位填满自己农场的玩家获得3分"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FL010_StuckCart",
+    "originalId": "FL010_StuckCart",
+    "gameEdition": "classic",
+    "name": "停靠的马车",
+    "deck": "FL",
+    "number": 10,
+    "desc": [
+      "立即派遣你剩下的所有家庭成员使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 1,
+    "prerequisite": "已放置家庭成员×2",
+    "passing": true,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL010.png",
+    "locales": {
+      "zh": {
+        "name": "停靠的马车",
+        "desc": [
+          "立即派遣你剩下的所有家庭成员使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": "已放置家庭成员×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FL011_Towhead",
+    "originalId": "FL011_Towhead",
+    "gameEdition": "classic",
+    "name": "黄发男孩",
+    "deck": "FL",
+    "number": 11,
+    "desc": [
+      "第5回合行动格翻开时，将生儿育女行动格调整到第6回合(通过交换两张牌的位置)，在第5回合，你可以先使用第6回合的生儿育女行动格"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "4回合或之前",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL011.png",
+    "locales": {
+      "zh": {
+        "name": "黄发男孩",
+        "desc": [
+          "第5回合行动格翻开时，将生儿育女行动格调整到第6回合(通过交换两张牌的位置)，在第5回合，你可以先使用第6回合的生儿育女行动格"
+        ],
+        "prerequisite": "4回合或之前"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FL012_Cart",
+    "originalId": "FL012_Cart",
+    "gameEdition": "classic",
+    "name": "马车",
+    "deck": "FL",
+    "number": 12,
+    "desc": [
+      "如果某个行动格上有至少6木/5砖/4芦苇/3石头，则只有你可以派遣第一名家庭成员使用该格W"
+    ],
+    "cost": {
+      "wood": 3
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL012.png",
+    "locales": {
+      "zh": {
+        "name": "马车",
+        "desc": [
+          "如果某个行动格上有至少6木/5砖/4芦苇/3石头，则只有你可以派遣第一名家庭成员使用该格W"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FL013_GiftTable",
+    "originalId": "FL013_GiftTable",
+    "gameEdition": "classic",
+    "name": "礼品桌",
+    "deck": "FL",
+    "number": 13,
+    "desc": [
+      "按右图所示将这些物品排列于此卡上，你可以在任意时刻支付1食物来买走最上方的物品。此卡上购买的羊直接进入你的供应区且可以随时转化为2份食物，参与计分但不参与繁殖撒尿女童像"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL013.png",
+    "locales": {
+      "zh": {
+        "name": "礼品桌",
+        "desc": [
+          "按右图所示将这些物品排列于此卡上，你可以在任意时刻支付1食物来买走最上方的物品。此卡上购买的羊直接进入你的供应区且可以随时转化为2份食物，参与计分但不参与繁殖撒尿女童像"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FL014_JeneverDistillery",
+    "originalId": "FL014_JeneverDistillery",
+    "gameEdition": "classic",
+    "name": "荷兰琴酒厂",
+    "deck": "FL",
+    "number": 14,
+    "desc": [
+      "打出时从你的个人供应区拿取1至4根木头放在此卡上，你可以随时取回任意数量的木头。每个丰收时节的收割阶段，你获得等同于此卡上木头数量的食物"
+    ],
+    "cost": {
+      "clay": 3,
+      "stone": 1
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL014.png",
+    "locales": {
+      "zh": {
+        "name": "荷兰琴酒厂",
+        "desc": [
+          "打出时从你的个人供应区拿取1至4根木头放在此卡上，你可以随时取回任意数量的木头。每个丰收时节的收割阶段，你获得等同于此卡上木头数量的食物"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FL015_CourtyardGarden",
+    "name": "避暑宅院",
+    "deck": "FL",
+    "number": 15,
+    "category": "POINTS_PROVIDER",
+    "desc": [
+      "在计分时，若你居住在石屋内，则你的每块与房间正交相邻的空地都使你获得2分。（你仍然会因这些空地而扣分）"
+    ],
+    "cost": {
+      "wood": 3,
+      "stone": 1
+    },
+    "prerequisite": "Still in Wooden House",
+    "extraVp": true,
+    "originalId": "FL015_CourtyardGarden",
+    "gameEdition": "classic",
+    "vp": 0,
+    "passing": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/FL015.png",
+    "locales": {
+      "zh": {
+        "name": "避暑宅院",
+        "desc": [
+          "在计分时，若你居住在石屋内，则你的每块与房间正交相邻的空地都使你获得2分。（你仍然会因这些空地而扣分）"
+        ],
+        "prerequisite": "木屋阶段"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FL016_JannekenPis",
+    "originalId": "FL016_JannekenPis",
+    "gameEdition": "classic",
+    "name": "撒尿女童像",
+    "deck": "FL",
+    "number": 16,
+    "desc": [
+      "你的井变成只有你能使用的行动格。当你使用井时，你再次触发其效果(井指以“井”字作为结尾的卡)"
+    ],
+    "cost": {
+      "stone": 1
+    },
+    "vp": 1,
+    "prerequisite": "井×1",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL016.png",
+    "locales": {
+      "zh": {
+        "name": "撒尿女童像",
+        "desc": [
+          "你的井变成只有你能使用的行动格。当你使用井时，你再次触发其效果(井指以“井”字作为结尾的卡)"
+        ],
+        "prerequisite": "井×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FL017_BobbinTable",
+    "originalId": "FL017_BobbinTable",
+    "gameEdition": "classic",
+    "name": "梭形桌",
+    "deck": "FL",
+    "number": 17,
+    "desc": [
+      "此卡是只有你能使用的额外行动格。使用此卡后，直到下个丰收时节开始前，所有行动格对你而言视为未被占用(起始玩家每回合只变动一次)爱情花园存在生娃行动"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL017.png",
+    "locales": {
+      "zh": {
+        "name": "梭形桌",
+        "desc": [
+          "此卡是只有你能使用的额外行动格。使用此卡后，直到下个丰收时节开始前，所有行动格对你而言视为未被占用(起始玩家每回合只变动一次)爱情花园存在生娃行动"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FL018_Oce",
+    "originalId": "FL018_Oce",
+    "gameEdition": "classic",
+    "name": "办公室",
+    "deck": "FL",
+    "number": 18,
+    "desc": [
+      "任意时刻：",
+      "[<CLAY> <ARROW> <STONE>]",
+      "[<GRAIN> <ARROW> <VEGETABLE>]",
+      "[<PIG> <ARROW> <CATTLE>]"
+    ],
+    "cost": {
+      "clay": 4,
+      "wood": 3,
+      "reed": 2
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL018.png",
+    "locales": {
+      "zh": {
+        "name": "办公室",
+        "desc": [
+          "任意时刻：",
+          "[<CLAY> <ARROW> <STONE>]",
+          "[<GRAIN> <ARROW> <VEGETABLE>]",
+          "[<PIG> <ARROW> <CATTLE>]"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FL019_LanternWonder",
+    "name": "灯笼奇观",
+    "deck": "FL",
+    "number": 19,
+    "category": "POINTS_PROVIDER",
+    "desc": [
+      "游戏结束时，你手中每剩1张卡牌便扣1分。无论如何，你都不能弃除手中的卡牌了。若你已通过某种方式弃除过卡牌，则不能打出此卡。"
+    ],
+    "cost": {},
+    "vp": 8,
+    "prerequisite": "职业=0",
+    "occupationPrerequisites": {
+      "max": 0
+    },
+    "extraVp": false,
+    "preventsHandDiscard": true,
+    "originalId": "FL019_LanternWonder",
+    "gameEdition": "classic",
+    "passing": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/FL019.png",
+    "locales": {
+      "zh": {
+        "name": "灯笼奇观",
+        "desc": [
+          "游戏结束时，你手中每剩1张卡牌便扣1分。无论如何，你都不能弃除手中的卡牌了。若你已通过某种方式弃除过卡牌，则不能打出此卡。"
+        ],
+        "prerequisite": "职业=0"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FL020_LoveGarden",
+    "originalId": "FL020_LoveGarden",
+    "gameEdition": "classic",
+    "name": "爱情花园",
+    "deck": "FL",
+    "number": 20,
+    "desc": [
+      "每个工作阶段结束时，如果所有提供“生娃”和“扩建房屋”行动的行动格都被占用，你立即执行1次“生娃(需要空房间)”行动"
+    ],
+    "cost": {
+      "food": 2
+    },
+    "vp": 0,
+    "prerequisite": "存在生娃行动格",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL020.png",
+    "locales": {
+      "zh": {
+        "name": "爱情花园",
+        "desc": [
+          "每个工作阶段结束时，如果所有提供“生娃”和“扩建房屋”行动的行动格都被占用，你立即执行1次“生娃(需要空房间)”行动"
+        ],
+        "prerequisite": "存在生娃行动格"
+      }
+    },
+    "kind": "minor"
+  },
+]
+const batch12: readonly GeneratedCatalogCardDefinition[] = [
+  {
+    "id": "OLD_FL021_LionsMound",
+    "originalId": "FL021_LionsMound",
+    "gameEdition": "classic",
+    "name": "山顶的狮子",
+    "deck": "FL",
+    "number": 21,
+    "desc": [
+      "在1/2/3/4/5人游戏中，此卡只能在第13/11/9/7/4回合或之后打出。每个工作阶段结束时，如果没有其他玩家占用的行动格回合数比你占用的小，则你获得1分"
+    ],
+    "cost": {
+      "clay": 5
+    },
+    "vp": 1,
+    "prerequisite": "见下文",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL021.png",
+    "locales": {
+      "zh": {
+        "name": "山顶的狮子",
+        "desc": [
+          "在1/2/3/4/5人游戏中，此卡只能在第13/11/9/7/4回合或之后打出。每个工作阶段结束时，如果没有其他玩家占用的行动格回合数比你占用的小，则你获得1分"
+        ],
+        "prerequisite": "见下文"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FL022_CornMaze",
+    "originalId": "FL022_CornMaze",
+    "gameEdition": "classic",
+    "name": "麦田迷宫",
+    "deck": "FL",
+    "number": 22,
+    "desc": [
+      "每回合开始时，如果你有2×2布置的麦田，你获得1根木头+1捆芦苇。"
+    ],
+    "cost": {
+      "food": 1
+    },
+    "vp": 0,
+    "prerequisite": "2 Grain Fields",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL022.png",
+    "locales": {
+      "zh": {
+        "name": "麦田迷宫",
+        "desc": [
+          "每回合开始时，如果你有2×2布置的麦田，你获得1根木头+1捆芦苇。"
+        ],
+        "prerequisite": "麦田×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FL023_CarrotMuseum",
+    "originalId": "FL023_CarrotMuseum",
+    "gameEdition": "classic",
+    "name": "胡萝卜博物馆",
+    "deck": "FL",
+    "number": 23,
+    "desc": [
+      "在第8,10,12回合结束时，你的每块菜田使你获得1块石头，你个人供应区中的每份蔬菜使你获得1根木头"
+    ],
+    "cost": {
+      "wood": 2,
+      "clay": 2
+    },
+    "vp": 1,
+    "prerequisite": "7回合或之前",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL023.png",
+    "locales": {
+      "zh": {
+        "name": "胡萝卜博物馆",
+        "desc": [
+          "在第8,10,12回合结束时，你的每块菜田使你获得1块石头，你个人供应区中的每份蔬菜使你获得1根木头"
+        ],
+        "prerequisite": "7回合或之前"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FL024_LoversTryst",
+    "originalId": "FL024_LoversTryst",
+    "gameEdition": "classic",
+    "name": "情人幽会",
+    "deck": "FL",
+    "number": 24,
+    "desc": [
+      "如果你在聚会场所行动格打出此卡，你可以选择不移动起始玩家标记并执行一次“生娃(需要空房间)”行动。使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "2 Occupations",
+    "occupationPrerequisites": {
+      "min": 2
+    },
+    "passing": true,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL024.png",
+    "locales": {
+      "zh": {
+        "name": "情人幽会",
+        "desc": [
+          "如果你在聚会场所行动格打出此卡，你可以选择不移动起始玩家标记并执行一次“生娃(需要空房间)”行动。使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": "职业×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FL025_Cockaigne",
+    "originalId": "FL025_Cockaigne",
+    "gameEdition": "classic",
+    "name": "安乐乡",
+    "deck": "FL",
+    "number": 25,
+    "desc": [
+      "限1次：如果你有1食物+1小麦+1蔬菜+1羊+1猪+1石头，你可以选择在本回合不放置任何家庭成员并获得7分"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "职业≤1",
+    "occupationPrerequisites": {
+      "max": 1
+    },
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL025.png",
+    "locales": {
+      "zh": {
+        "name": "安乐乡",
+        "desc": [
+          "限1次：如果你有1食物+1小麦+1蔬菜+1羊+1猪+1石头，你可以选择在本回合不放置任何家庭成员并获得7分"
+        ],
+        "prerequisite": "职业≤1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FL026_SpeculoosBakery",
+    "originalId": "FL026_SpeculoosBakery",
+    "gameEdition": "classic",
+    "name": "焦糖饼干店",
+    "deck": "FL",
+    "number": 26,
+    "desc": [
+      "每当你通过行动格执行“烤面包”行动时，你可以支付1份小麦并获得1名食客标记，食客于当回合使用后退还"
+    ],
+    "cost": {
+      "wood": 2,
+      "clay": 2
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL026.png",
+    "locales": {
+      "zh": {
+        "name": "焦糖饼干店",
+        "desc": [
+          "每当你通过行动格执行“烤面包”行动时，你可以支付1份小麦并获得1名食客标记，食客于当回合使用后退还"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FL027_TrappistBeer",
+    "originalId": "FL027_TrappistBeer",
+    "gameEdition": "classic",
+    "name": "修道院啤酒",
+    "deck": "FL",
+    "number": 27,
+    "desc": [
+      "每个丰收时节开始时，你可以支付1份小麦跳过本次丰收时节的结算"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "通过打主发行动打出",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL027.png",
+    "locales": {
+      "zh": {
+        "name": "修道院啤酒",
+        "desc": [
+          "每个丰收时节开始时，你可以支付1份小麦跳过本次丰收时节的结算"
+        ],
+        "prerequisite": "通过打主发行动打出"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FL028_HashwithFries",
+    "originalId": "FL028_HashwithFries",
+    "gameEdition": "classic",
+    "name": "肉丁土豆泥",
+    "deck": "FL",
+    "number": 28,
+    "desc": [
+      "立即将1份小麦+1份蔬菜+1头牛转化为5份食物+3分使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "麦×1+菜×1+牛×1",
+    "passing": true,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL028.png",
+    "locales": {
+      "zh": {
+        "name": "肉丁土豆泥",
+        "desc": [
+          "立即将1份小麦+1份蔬菜+1头牛转化为5份食物+3分使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": "麦×1+菜×1+牛×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FL029_BirdTrap",
+    "originalId": "FL029_BirdTrap",
+    "gameEdition": "classic",
+    "name": "捕鸟器",
+    "deck": "FL",
+    "number": 29,
+    "desc": [
+      "每个丰收时节的收割阶段，你获得1份食物，并且可以从至多1块田上额外收割至多1份作物"
+    ],
+    "cost": {
+      "wood": 2
+    },
+    "vp": 0,
+    "prerequisite": "1 Grain Fields",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL029.png",
+    "locales": {
+      "zh": {
+        "name": "捕鸟器",
+        "desc": [
+          "每个丰收时节的收割阶段，你获得1份食物，并且可以从至多1块田上额外收割至多1份作物"
+        ],
+        "prerequisite": "麦田×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FL030_WildBoarHunt",
+    "originalId": "FL030_WildBoarHunt",
+    "gameEdition": "classic",
+    "name": "野猪狩猎",
+    "deck": "FL",
+    "number": 30,
+    "desc": [
+      "在每个偶数回合的资源补充阶段，在猪市场积累行动格上额外补充1只猪。每回合中，其他玩家只能通过第1位家庭成员使用猪市场积累行动格"
+    ],
+    "cost": {},
+    "vp": 1,
+    "prerequisite": "2 Occupations",
+    "occupationPrerequisites": {
+      "min": 2
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL030.png",
+    "locales": {
+      "zh": {
+        "name": "野猪狩猎",
+        "desc": [
+          "在每个偶数回合的资源补充阶段，在猪市场积累行动格上额外补充1只猪。每回合中，其他玩家只能通过第1位家庭成员使用猪市场积累行动格"
+        ],
+        "prerequisite": "职业×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FL031_OldMaster",
+    "originalId": "FL031_OldMaster",
+    "gameEdition": "classic",
+    "name": "绘画大师",
+    "deck": "FL",
+    "number": 31,
+    "desc": [
+      "第3至7回合的工作阶段开始时，你获得1根木头。如果森林[3木]积累行动格上有至少6根木头，则改为获得1个石头。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL031.png",
+    "locales": {
+      "zh": {
+        "name": "绘画大师",
+        "desc": [
+          "第3至7回合的工作阶段开始时，你获得1根木头。如果森林[3木]积累行动格上有至少6根木头，则改为获得1个石头。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FL032_Elder",
+    "originalId": "FL032_Elder",
+    "gameEdition": "classic",
+    "name": "长者",
+    "deck": "FL",
+    "number": 32,
+    "desc": [
+      "打出此卡时，从游戏供应区拿取2份食物放在此卡上，你可以随时使用此卡上的食物。每个工作阶段结束时，你可以支付此卡上的1份食物来使用钓鱼积累行动格或执行\"烤面包\"行动无需派遣家庭成员。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL032.png",
+    "locales": {
+      "zh": {
+        "name": "长者",
+        "desc": [
+          "打出此卡时，从游戏供应区拿取2份食物放在此卡上，你可以随时使用此卡上的食物。每个工作阶段结束时，你可以支付此卡上的1份食物来使用钓鱼积累行动格或执行\"烤面包\"行动无需派遣家庭成员。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FL033_Sculptor",
+    "originalId": "FL033_Sculptor",
+    "gameEdition": "classic",
+    "name": "雕刻家",
+    "deck": "FL",
+    "number": 33,
+    "desc": [
+      "每当你从积累行动格上只获得了砖头和/或石头时，你额外获得1份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL033.png",
+    "locales": {
+      "zh": {
+        "name": "雕刻家",
+        "desc": [
+          "每当你从积累行动格上只获得了砖头和/或石头时，你额外获得1份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FL034_FranciscanMonk",
+    "originalId": "FL034_FranciscanMonk",
+    "gameEdition": "classic",
+    "name": "方济会修士",
+    "deck": "FL",
+    "number": 34,
+    "desc": [
+      "打出此卡时，获得1份小麦，并且可以弃掉1张乞讨卡。任意时刻，你可以弃掉手牌中的1张次要发展卡，然后从牌库中随机抽取1张职业卡加入手牌。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL034.png",
+    "locales": {
+      "zh": {
+        "name": "方济会修士",
+        "desc": [
+          "打出此卡时，获得1份小麦，并且可以弃掉1张乞讨卡。任意时刻，你可以弃掉手牌中的1张次要发展卡，然后从牌库中随机抽取1张职业卡加入手牌。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FL035_Freemason",
+    "name": "共济会员",
+    "deck": "FL",
+    "number": 35,
+    "category": "BUILDING_RESOURCE_PROVIDER",
+    "desc": [
+      "只要你居住在仅有2个房间的砖屋/石屋内，在每回合的工作阶段开始时，你获得2块砖头/石头。"
+    ],
+    "cost": {},
+    "players": "1+",
+    "originalId": "FL035_Freemason",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/FL035.png",
+    "locales": {
+      "zh": {
+        "name": "共济会员",
+        "desc": [
+          "只要你居住在仅有2个房间的砖屋/石屋内，在每回合的工作阶段开始时，你获得2块砖头/石头。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FL036_VegetableSeller",
+    "originalId": "FL036_VegetableSeller",
+    "gameEdition": "classic",
+    "name": "售菜商",
+    "deck": "FL",
+    "number": 36,
+    "desc": [
+      "你可以随时从游戏供应区借用1份蔬菜。任意时刻，你可以将个人供应区的1份蔬菜转化为2份食物。计分阶段前，你必须退还借用的蔬菜，每少退还1份蔬菜，领取1张乞讨卡。注：此卡若以任意方式退还或翻面，你仍需要退还借用的蔬菜。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL036.png",
+    "locales": {
+      "zh": {
+        "name": "售菜商",
+        "desc": [
+          "你可以随时从游戏供应区借用1份蔬菜。任意时刻，你可以将个人供应区的1份蔬菜转化为2份食物。计分阶段前，你必须退还借用的蔬菜，每少退还1份蔬菜，领取1张乞讨卡。注：此卡若以任意方式退还或翻面，你仍需要退还借用的蔬菜。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FL037_RoughBaker",
+    "originalId": "FL037_RoughBaker",
+    "gameEdition": "classic",
+    "name": "粗鲁的烘焙师",
+    "deck": "FL",
+    "number": 37,
+    "desc": [
+      "打出此卡时，你获得1份小麦和1次“烤面包”行动。你的砖造烤炉可以当成石造烤炉使用，你的石造烤炉可以当成砖造烤炉使用。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL037.png",
+    "locales": {
+      "zh": {
+        "name": "粗鲁的烘焙师",
+        "desc": [
+          "打出此卡时，你获得1份小麦和1次“烤面包”行动。你的砖造烤炉可以当成石造烤炉使用，你的石造烤炉可以当成砖造烤炉使用。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FL038_ShepherdwithFlock",
+    "originalId": "FL038_ShepherdwithFlock",
+    "gameEdition": "classic",
+    "name": "羊群主人",
+    "deck": "FL",
+    "number": 38,
+    "desc": [
+      "此卡是只有你能使用的行动格。使用此格时，你获得等同于你羊数量的羊，但不能超过你未使用的空格数。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL038.png",
+    "locales": {
+      "zh": {
+        "name": "羊群主人",
+        "desc": [
+          "此卡是只有你能使用的行动格。使用此格时，你获得等同于你羊数量的羊，但不能超过你未使用的空格数。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FL039_Cosmographer",
+    "originalId": "FL039_Cosmographer",
+    "gameEdition": "classic",
+    "name": "宇宙学家",
+    "deck": "FL",
+    "number": 39,
+    "desc": [
+      "打出此卡时，从游戏供应区拿取1芦苇+1石头放到你农场的两个空格上，空格仍视作未使用。你可以随时将其移入个人供应区。游戏结束时，如果芦苇与羊在同一圈地或同一格子上、石头与猪在同一圈地或同一格子上，则各使你获得2分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL039.png",
+    "locales": {
+      "zh": {
+        "name": "宇宙学家",
+        "desc": [
+          "打出此卡时，从游戏供应区拿取1芦苇+1石头放到你农场的两个空格上，空格仍视作未使用。你可以随时将其移入个人供应区。游戏结束时，如果芦苇与羊在同一圈地或同一格子上、石头与猪在同一圈地或同一格子上，则各使你获得2分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FL040_Anatomist",
+    "originalId": "FL040_Anatomist",
+    "gameEdition": "classic",
+    "name": "解剖学家",
+    "deck": "FL",
+    "number": 40,
+    "desc": [
+      "在未翻开的第7、10和13回合行动格上各放置1个食客标记。这些回合开始时，你获得这个食客，你必须在当回合的最后一个轮次派遣该食客，且只能派遣到积累行动格上。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL040.png",
+    "locales": {
+      "zh": {
+        "name": "解剖学家",
+        "desc": [
+          "在未翻开的第7、10和13回合行动格上各放置1个食客标记。这些回合开始时，你获得这个食客，你必须在当回合的最后一个轮次派遣该食客，且只能派遣到积累行动格上。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FL041_FryCook",
+    "originalId": "FL041_FryCook",
+    "gameEdition": "classic",
+    "name": "油炸厨师",
+    "deck": "FL",
+    "number": 41,
+    "desc": [
+      "每个丰收时节的喂养阶段，你的两名成年家庭成员都少支付1份食物，其他每位成年家庭成员多支付1份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL041.png",
+    "locales": {
+      "zh": {
+        "name": "油炸厨师",
+        "desc": [
+          "每个丰收时节的喂养阶段，你的两名成年家庭成员都少支付1份食物，其他每位成年家庭成员多支付1份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FL042_Rainmaker",
+    "originalId": "FL042_Rainmaker",
+    "gameEdition": "classic",
+    "name": "成功企业家",
+    "deck": "FL",
+    "number": 42,
+    "desc": [
+      "每当你打出1张发展卡时，你可以在1块已播种的田上放置至多1个对应作物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL042.png",
+    "locales": {
+      "zh": {
+        "name": "成功企业家",
+        "desc": [
+          "每当你打出1张发展卡时，你可以在1块已播种的田上放置至多1个对应作物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FL043_RubenesqueWoman",
+    "originalId": "FL043_RubenesqueWoman",
+    "gameEdition": "classic",
+    "name": "玛丽·德·美第奇",
+    "deck": "FL",
+    "number": 43,
+    "desc": [
+      "每回合，当你派遣你的第2名家庭成员去使用一个积累行动格时，你额外获得1份对应资源。每个丰收时节的喂养阶段，你必须额外支付1份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL043.png",
+    "locales": {
+      "zh": {
+        "name": "玛丽·德·美第奇",
+        "desc": [
+          "每回合，当你派遣你的第2名家庭成员去使用一个积累行动格时，你额外获得1份对应资源。每个丰收时节的喂养阶段，你必须额外支付1份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FL044_Returnee",
+    "originalId": "FL044_Returnee",
+    "gameEdition": "classic",
+    "name": "海归",
+    "deck": "FL",
+    "number": 44,
+    "desc": [
+      "每个工作阶段结束时，在你最后使用的行动格上从游戏供应区放置1份小麦。下一回合，如果你使用该行动格，你首先获得这份小麦，否则弃掉此小麦。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL044.png",
+    "locales": {
+      "zh": {
+        "name": "海归",
+        "desc": [
+          "每个工作阶段结束时，在你最后使用的行动格上从游戏供应区放置1份小麦。下一回合，如果你使用该行动格，你首先获得这份小麦，否则弃掉此小麦。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FL045_SchoolDropout",
+    "originalId": "FL045_SchoolDropout",
+    "gameEdition": "classic",
+    "name": "辍学者",
+    "deck": "FL",
+    "number": 45,
+    "desc": [
+      "每回合的工作阶段中，如果你执行了“生娃”行动，而且之后其他家庭成员没有使用1至14回合行动格，在当回合，你可以派遣你新增的家庭成员执行行动（此时可以执行1-14回合行动格）且不算作“新生儿”。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL045.png",
+    "locales": {
+      "zh": {
+        "name": "辍学者",
+        "desc": [
+          "每回合的工作阶段中，如果你执行了“生娃”行动，而且之后其他家庭成员没有使用1至14回合行动格，在当回合，你可以派遣你新增的家庭成员执行行动（此时可以执行1-14回合行动格）且不算作“新生儿”。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FL046_StableArchitect",
+    "name": "马厩建造师",
+    "deck": "FL",
+    "number": 46,
+    "category": "POINTS_PROVIDER",
+    "desc": [
+      "游戏结束时，你农场上每个未被栅栏围住的马厩都能使你获得1分。"
+    ],
+    "cost": {},
+    "players": "1+",
+    "extraVp": true,
+    "originalId": "FL046_StableArchitect",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/FL046.png",
+    "locales": {
+      "zh": {
+        "name": "马厩建造师",
+        "desc": [
+          "游戏结束时，你农场上每个未被栅栏围住的马厩都能使你获得1分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FL047_FarmLawyer",
+    "originalId": "FL047_FarmLawyer",
+    "gameEdition": "classic",
+    "name": "彼得·勃鲁盖尔",
+    "deck": "FL",
+    "number": 47,
+    "desc": [
+      "打出此卡时，选择一名食物数量比你多的玩家，你获得你们食物数量差值的食物，然后将此卡加入该玩家的手牌。从牌库中抽取一张职业牌正面朝下放在你面前表示1张已打出的职业卡。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL047.png",
+    "locales": {
+      "zh": {
+        "name": "彼得·勃鲁盖尔",
+        "desc": [
+          "打出此卡时，选择一名食物数量比你多的玩家，你获得你们食物数量差值的食物，然后将此卡加入该玩家的手牌。从牌库中抽取一张职业牌正面朝下放在你面前表示1张已打出的职业卡。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FL048_Botanist",
+    "originalId": "FL048_Botanist",
+    "gameEdition": "classic",
+    "name": "植物学家",
+    "deck": "FL",
+    "number": 48,
+    "desc": [
+      "每当其他玩家从木头积累行动格获得恰好3根木头时，你获得1份食物。（不包括卡牌获得的木头，或者留下的木头。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL048.png",
+    "locales": {
+      "zh": {
+        "name": "植物学家",
+        "desc": [
+          "每当其他玩家从木头积累行动格获得恰好3根木头时，你获得1份食物。（不包括卡牌获得的木头，或者留下的木头。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FL049_Accountant",
+    "originalId": "FL049_Accountant",
+    "gameEdition": "classic",
+    "name": "会计师",
+    "deck": "FL",
+    "number": 49,
+    "desc": [
+      "打出此卡时，在3/4/5人游戏中，立即获得2/1/0根木头。每当其他玩家打出职业卡时，从游戏供应区拿取1份食物放在此卡上。任意时刻，你可以使用此卡上的食物购买物品：羊/石头每个2食物，猪/小麦每个3食物，牛/蔬菜每个4食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL049.png",
+    "locales": {
+      "zh": {
+        "name": "会计师",
+        "desc": [
+          "打出此卡时，在3/4/5人游戏中，立即获得2/1/0根木头。每当其他玩家打出职业卡时，从游戏供应区拿取1份食物放在此卡上。任意时刻，你可以使用此卡上的食物购买物品：羊/石头每个2食物，猪/小麦每个3食物，牛/蔬菜每个4食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FL050_MeatSupplier",
+    "originalId": "FL050_MeatSupplier",
+    "gameEdition": "classic",
+    "name": "肉类供应商",
+    "deck": "FL",
+    "number": 50,
+    "desc": [
+      "每个丰收时节开始时，你可以将1只猪或1头牛转化为1分，若如此做，所有其他玩家各获得1份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL050.png",
+    "locales": {
+      "zh": {
+        "name": "肉类供应商",
+        "desc": [
+          "每个丰收时节开始时，你可以将1只猪或1头牛转化为1分，若如此做，所有其他玩家各获得1份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FL051_NorthSeaFisherman",
+    "originalId": "FL051_NorthSeaFisherman",
+    "gameEdition": "classic",
+    "name": "北海渔民",
+    "deck": "FL",
+    "number": 51,
+    "desc": [
+      "每当你使用本回合新翻开的回合行动格时，你可以获得钓鱼积累行动格上的所有食物。其他玩家使用钓鱼积累行动格时额外获得1份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL051.png",
+    "locales": {
+      "zh": {
+        "name": "北海渔民",
+        "desc": [
+          "每当你使用本回合新翻开的回合行动格时，你可以获得钓鱼积累行动格上的所有食物。其他玩家使用钓鱼积累行动格时额外获得1份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FL052_Scribbler",
+    "originalId": "FL052_Scribbler",
+    "gameEdition": "classic",
+    "name": "三流作家",
+    "deck": "FL",
+    "number": 52,
+    "desc": [
+      "每当其他玩家使用临时工行动格时，你和他各额外获得1份食物。每个工作阶段结束时，如果无人使用临时工，从游戏供应区放置1份食物到此卡上，你打职业卡可以花费此卡上的食物(包括情圣花费等)。游戏结束时，此卡上如果有4/6/8/10+份食物，你获得1/2/3/4分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL052.png",
+    "locales": {
+      "zh": {
+        "name": "三流作家",
+        "desc": [
+          "每当其他玩家使用临时工行动格时，你和他各额外获得1份食物。每个工作阶段结束时，如果无人使用临时工，从游戏供应区放置1份食物到此卡上，你打职业卡可以花费此卡上的食物(包括情圣花费等)。游戏结束时，此卡上如果有4/6/8/10+份食物，你获得1/2/3/4分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FL053_CafeSinger",
+    "originalId": "FL053_CafeSinger",
+    "gameEdition": "classic",
+    "name": "咖啡厅歌手",
+    "deck": "FL",
+    "number": 53,
+    "desc": [
+      "每当你使用卖艺积累行动格时，你可以将1只羊转化为1份蔬菜/将1头牛转化为2份蔬菜。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL053.png",
+    "locales": {
+      "zh": {
+        "name": "咖啡厅歌手",
+        "desc": [
+          "每当你使用卖艺积累行动格时，你可以将1只羊转化为1份蔬菜/将1头牛转化为2份蔬菜。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FL054_ChansonSinger",
+    "originalId": "FL054_ChansonSinger",
+    "gameEdition": "classic",
+    "name": "法国民谣歌手",
+    "deck": "FL",
+    "number": 54,
+    "desc": [
+      "每当你使用卖艺积累行动格时，你可以留下1/2/3/4份食物获得1木/1木+1砖/1木+1砖+1芦苇/1木+1砖+1芦苇+1石头"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL054.png",
+    "locales": {
+      "zh": {
+        "name": "法国民谣歌手",
+        "desc": [
+          "每当你使用卖艺积累行动格时，你可以留下1/2/3/4份食物获得1木/1木+1砖/1木+1砖+1芦苇/1木+1砖+1芦苇+1石头"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FL055_Recluse",
+    "originalId": "FL055_Recluse",
+    "gameEdition": "classic",
+    "name": "隐士",
+    "deck": "FL",
+    "number": 55,
+    "desc": [
+      "每个工作阶段结束时，如果存在某一竖列的行动格上只有你的家庭成员，则你获得1份食物。每回合最多获得1食物。(如第12和13回合行动格构成一竖列)"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL055.png",
+    "locales": {
+      "zh": {
+        "name": "隐士",
+        "desc": [
+          "每个工作阶段结束时，如果存在某一竖列的行动格上只有你的家庭成员，则你获得1份食物。每回合最多获得1食物。(如第12和13回合行动格构成一竖列)"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FL056_FlemishPatriot",
+    "originalId": "FL056_FlemishPatriot",
+    "gameEdition": "classic",
+    "name": "佛兰德爱国者",
+    "deck": "FL",
+    "number": 56,
+    "desc": [
+      "在每个偶数回合，在你派遣完第一名家庭成员使用一个行动格后，你获得1份食物，然后从游戏供应区在与此格同一竖列的未占用的行动格上各放置1份食物，下一个使用这些行动格的玩家获得这份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL056.png",
+    "locales": {
+      "zh": {
+        "name": "佛兰德爱国者",
+        "desc": [
+          "在每个偶数回合，在你派遣完第一名家庭成员使用一个行动格后，你获得1份食物，然后从游戏供应区在与此格同一竖列的未占用的行动格上各放置1份食物，下一个使用这些行动格的玩家获得这份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FL057_Chaplain",
+    "originalId": "FL057_Chaplain",
+    "gameEdition": "classic",
+    "name": "随军牧师",
+    "deck": "FL",
+    "number": 57,
+    "desc": [
+      "每当其他玩家执行“生娃”行动后，你可以立即派遣1名家庭成员。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL057.png",
+    "locales": {
+      "zh": {
+        "name": "随军牧师",
+        "desc": [
+          "每当其他玩家执行“生娃”行动后，你可以立即派遣1名家庭成员。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FL058_GoldWeigher",
+    "originalId": "FL058_GoldWeigher",
+    "gameEdition": "classic",
+    "name": "称金人",
+    "deck": "FL",
+    "number": 58,
+    "desc": [
+      "每当其他玩家打出至少价值2分的发展卡前，必须先支付你1份食物。注：价值2分指的是画在发展卡上的分数。不包括奖励分数。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL058.png",
+    "locales": {
+      "zh": {
+        "name": "称金人",
+        "desc": [
+          "每当其他玩家打出至少价值2分的发展卡前，必须先支付你1份食物。注：价值2分指的是画在发展卡上的分数。不包括奖励分数。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FL059_PillarBiter",
+    "originalId": "FL059_PillarBiter",
+    "gameEdition": "classic",
+    "name": "啃柱子的小孩",
+    "deck": "FL",
+    "number": 59,
+    "desc": [
+      "每当其他玩家围建了至少1根栅栏条时，你可以立即支付2/3根木头来围建3/4根栅栏条。是否恰好注：必须遵守“围建栅栏”的基本规则。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL059.png",
+    "locales": {
+      "zh": {
+        "name": "啃柱子的小孩",
+        "desc": [
+          "每当其他玩家围建了至少1根栅栏条时，你可以立即支付2/3根木头来围建3/4根栅栏条。是否恰好注：必须遵守“围建栅栏”的基本规则。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FL060_VirtuousHero",
+    "originalId": "FL060_VirtuousHero",
+    "gameEdition": "classic",
+    "name": "德高望重的英雄",
+    "deck": "FL",
+    "number": 60,
+    "desc": [
+      "每当其他玩家都没有你的栅栏条时，你可以给他们每人1根你供应区的栅栏条。每当其他玩家从积累行动格获得食物之外的物品时，你可以从他那拿回栅栏条，然后你获得1份食物，该玩家获得额外的1个该物品。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL060.png",
+    "locales": {
+      "zh": {
+        "name": "德高望重的英雄",
+        "desc": [
+          "每当其他玩家都没有你的栅栏条时，你可以给他们每人1根你供应区的栅栏条。每当其他玩家从积累行动格获得食物之外的物品时，你可以从他那拿回栅栏条，然后你获得1份食物，该玩家获得额外的1个该物品。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FL061_BlacklegChicken",
+    "originalId": "FL061_BlacklegChicken",
+    "gameEdition": "classic",
+    "name": "布拉克尔鸡",
+    "deck": "FL",
+    "number": 61,
+    "desc": [
+      "把花费的2份食物放在此卡上。每个丰收时节开始时，如果此卡上有至少2份食物，则1份食物。你可以在任意时刻使用此卡上的食物，游戏结束时，如果此卡上有至少4份食物，则你获得2分乞援信"
+    ],
+    "cost": {
+      "food": 2
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FL061.png",
+    "locales": {
+      "zh": {
+        "name": "布拉克尔鸡",
+        "desc": [
+          "把花费的2份食物放在此卡上。每个丰收时节开始时，如果此卡上有至少2份食物，则1份食物。你可以在任意时刻使用此卡上的食物，游戏结束时，如果此卡上有至少4份食物，则你获得2分乞援信"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR001_AbandonedWillow",
+    "originalId": "FR001_AbandonedWillow",
+    "gameEdition": "classic",
+    "name": "遗弃的柳树",
+    "deck": "FR",
+    "number": 1,
+    "desc": [
+      "立即移除一块空田并获得4木(保持田相邻)使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {
+      "reed": 1
+    },
+    "vp": 0,
+    "prerequisite": "空田×1",
+    "passing": true,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR001.png",
+    "locales": {
+      "zh": {
+        "name": "遗弃的柳树",
+        "desc": [
+          "立即移除一块空田并获得4木(保持田相邻)使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": "空田×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR002_Absinthe",
+    "originalId": "FR002_Absinthe",
+    "gameEdition": "classic",
+    "name": "苦艾酒",
+    "deck": "FR",
+    "number": 2,
+    "desc": [
+      "在接下来的5个回合行动格上各放置1份食物，这些回合开始时，你将这份食物放到任意一个行动格上，第一个使用该格的玩家获得这份食物。"
+    ],
+    "cost": {},
+    "vp": 1,
+    "prerequisite": "3 Occupations",
+    "occupationPrerequisites": {
+      "min": 3
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR002.png",
+    "locales": {
+      "zh": {
+        "name": "苦艾酒",
+        "desc": [
+          "在接下来的5个回合行动格上各放置1份食物，这些回合开始时，你将这份食物放到任意一个行动格上，第一个使用该格的玩家获得这份食物。"
+        ],
+        "prerequisite": "职业×3"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR003_AmusementPark",
+    "originalId": "FR003_AmusementPark",
+    "gameEdition": "classic",
+    "name": "游乐园",
+    "deck": "FR",
+    "number": 3,
+    "desc": [
+      "如果你有1/2/3/4+个圈地，在接下来的2/3/4/5个回合行动格上各放置1份食物，这些回合开始时，你获得这份食物"
+    ],
+    "cost": {},
+    "vp": 1,
+    "prerequisite": "圈地×1",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR003.png",
+    "locales": {
+      "zh": {
+        "name": "游乐园",
+        "desc": [
+          "如果你有1/2/3/4+个圈地，在接下来的2/3/4/5个回合行动格上各放置1份食物，这些回合开始时，你获得这份食物"
+        ],
+        "prerequisite": "圈地×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR004_AppleGarden",
+    "originalId": "FR004_AppleGarden",
+    "gameEdition": "classic",
+    "name": "苹果园",
+    "deck": "FR",
+    "number": 4,
+    "desc": [
+      "游戏结束时，如果你没有小麦或蔬菜，则你获得至多2分(仍会因为缺少此种作物而扣分)"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR004.png",
+    "locales": {
+      "zh": {
+        "name": "苹果园",
+        "desc": [
+          "游戏结束时，如果你没有小麦或蔬菜，则你获得至多2分(仍会因为缺少此种作物而扣分)"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR005_ArtistsGarden",
+    "originalId": "FR005_ArtistsGarden",
+    "gameEdition": "classic",
+    "name": "艺术花园",
+    "deck": "FR",
+    "number": 5,
+    "desc": [
+      "在每回合的回家阶段，你可以对每块田进行一次收割"
+    ],
+    "cost": {},
+    "vp": 1,
+    "prerequisite": "3 Occupations",
+    "occupationPrerequisites": {
+      "min": 3
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR005.png",
+    "locales": {
+      "zh": {
+        "name": "艺术花园",
+        "desc": [
+          "在每回合的回家阶段，你可以对每块田进行一次收割"
+        ],
+        "prerequisite": "职业×3"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR006_Badger",
+    "originalId": "FR006_Badger",
+    "gameEdition": "classic",
+    "name": "獾",
+    "deck": "FR",
+    "number": 6,
+    "desc": [
+      "立即在一个非额外行动格上放置一个标记，每回合开始时，你必须将此标记移动到一个正交相邻的行动格，任意玩家使用此行动格前获得1份食物"
+    ],
+    "cost": {
+      "reed": 1
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR006.png",
+    "locales": {
+      "zh": {
+        "name": "獾",
+        "desc": [
+          "立即在一个非额外行动格上放置一个标记，每回合开始时，你必须将此标记移动到一个正交相邻的行动格，任意玩家使用此行动格前获得1份食物"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR007_Baguette",
+    "originalId": "FR007_Baguette",
+    "gameEdition": "classic",
+    "name": "法式长面包",
+    "deck": "FR",
+    "number": 7,
+    "desc": [
+      "每个丰收时节的喂养阶段开始时，你可以支付1根木头执行一次“烤面包”行动"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR007.png",
+    "locales": {
+      "zh": {
+        "name": "法式长面包",
+        "desc": [
+          "每个丰收时节的喂养阶段开始时，你可以支付1根木头执行一次“烤面包”行动"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR008_Barbershop",
+    "originalId": "FR008_Barbershop",
+    "gameEdition": "classic",
+    "name": "理发店",
+    "deck": "FR",
+    "number": 8,
+    "desc": [
+      "打出时获得等同于之后完整丰收时节数的分数"
+    ],
+    "cost": {
+      "wood": 3,
+      "reed": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR008.png",
+    "locales": {
+      "zh": {
+        "name": "理发店",
+        "desc": [
+          "打出时获得等同于之后完整丰收时节数的分数"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR009_Bathroom",
+    "originalId": "FR009_Bathroom",
+    "gameEdition": "classic",
+    "name": "浴室",
+    "deck": "FR",
+    "number": 9,
+    "desc": [
+      "每当你把小麦或蔬菜转化为食物时，你可以将被转化的作物放到此卡上。每当你对田地板块进行播种时，可以额外拿取此卡上作物叠放到新播种的对应的田上"
+    ],
+    "cost": {
+      "reed": 1
+    },
+    "vp": 0,
+    "prerequisite": "田×1",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR009.png",
+    "locales": {
+      "zh": {
+        "name": "浴室",
+        "desc": [
+          "每当你把小麦或蔬菜转化为食物时，你可以将被转化的作物放到此卡上。每当你对田地板块进行播种时，可以额外拿取此卡上作物叠放到新播种的对应的田上"
+        ],
+        "prerequisite": "田×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR010_BreakfastOutdoors",
+    "originalId": "FR010_BreakfastOutdoors",
+    "gameEdition": "classic",
+    "name": "户外早餐",
+    "deck": "FR",
+    "number": 10,
+    "desc": [
+      "在每个丰收时节的喂养阶段，你获得1份食物"
+    ],
+    "cost": {},
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR010.png",
+    "locales": {
+      "zh": {
+        "name": "户外早餐",
+        "desc": [
+          "在每个丰收时节的喂养阶段，你获得1份食物"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR011_Brickyard",
+    "originalId": "FR011_Brickyard",
+    "gameEdition": "classic",
+    "name": "砖厂",
+    "deck": "FR",
+    "number": 11,
+    "desc": [
+      "每回合开始前，如果你的个人供应区里没有砖头，则在此卡上补充1砖，每当此卡上有至少4块砖，你获得这些砖，你不能无故弃掉砖头。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "2 Occupations",
+    "occupationPrerequisites": {
+      "min": 2
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR011.png",
+    "locales": {
+      "zh": {
+        "name": "砖厂",
+        "desc": [
+          "每回合开始前，如果你的个人供应区里没有砖头，则在此卡上补充1砖，每当此卡上有至少4块砖，你获得这些砖，你不能无故弃掉砖头。"
+        ],
+        "prerequisite": "职业×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR012_Camembert",
+    "originalId": "FR012_Camembert",
+    "gameEdition": "classic",
+    "name": "法式奶酪",
+    "deck": "FR",
+    "number": 12,
+    "desc": [
+      "在3个你选择的不同行动格上各放置1份食物，下一个使用这些行动格的玩家获得这份食物"
+    ],
+    "cost": {},
+    "vp": 1,
+    "prerequisite": "2 Occupations",
+    "occupationPrerequisites": {
+      "min": 2
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR012.png",
+    "locales": {
+      "zh": {
+        "name": "法式奶酪",
+        "desc": [
+          "在3个你选择的不同行动格上各放置1份食物，下一个使用这些行动格的玩家获得这份食物"
+        ],
+        "prerequisite": "职业×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR013_Chameleon",
+    "originalId": "FR013_Chameleon",
+    "gameEdition": "classic",
+    "name": "变色龙",
+    "deck": "FR",
+    "number": 13,
+    "desc": [
+      "打出时获得1只猪。你可以在每个饲养羊的圈地里饲养至多1只猪(总容量不变)卡牌提供的圈地玉米垛"
+    ],
+    "cost": {
+      "sheep": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR013.png",
+    "locales": {
+      "zh": {
+        "name": "变色龙",
+        "desc": [
+          "打出时获得1只猪。你可以在每个饲养羊的圈地里饲养至多1只猪(总容量不变)卡牌提供的圈地玉米垛"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR014_Chocolade",
+    "originalId": "FR014_Chocolade",
+    "gameEdition": "classic",
+    "name": "巧克力",
+    "deck": "FR",
+    "number": 14,
+    "desc": [
+      "从游戏供应区拿取4份食物放到此卡上，你在支付职业培训费时可以使用此卡上的食物"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "主发×1",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR014.png",
+    "locales": {
+      "zh": {
+        "name": "巧克力",
+        "desc": [
+          "从游戏供应区拿取4份食物放到此卡上，你在支付职业培训费时可以使用此卡上的食物"
+        ],
+        "prerequisite": "主发×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR015_CoeeBreak",
+    "originalId": "FR015_CoeeBreak",
+    "gameEdition": "classic",
+    "name": "茶歇",
+    "deck": "FR",
+    "number": 15,
+    "desc": [
+      "在此卡上放置5食物，每回合开始时，你获得1份食物。当你打出职业卡时，移除之后未获得的食物"
+    ],
+    "cost": {
+      "clay": 1
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR015.png",
+    "locales": {
+      "zh": {
+        "name": "茶歇",
+        "desc": [
+          "在此卡上放置5食物，每回合开始时，你获得1份食物。当你打出职业卡时，移除之后未获得的食物"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR016_Cornrick",
+    "originalId": "FR016_Cornrick",
+    "gameEdition": "classic",
+    "name": "玉米垛",
+    "deck": "FR",
+    "number": 16,
+    "desc": [
+      "在第7和9回合的行动格上各放置1份小麦，这些回合开始时，你获得这份小麦"
+    ],
+    "cost": {
+      "food": 1
+    },
+    "vp": 0,
+    "prerequisite": "田×1",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR016.png",
+    "locales": {
+      "zh": {
+        "name": "玉米垛",
+        "desc": [
+          "在第7和9回合的行动格上各放置1份小麦，这些回合开始时，你获得这份小麦"
+        ],
+        "prerequisite": "田×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR017_Diary",
+    "originalId": "FR017_Diary",
+    "gameEdition": "classic",
+    "name": "日记本",
+    "deck": "FR",
+    "number": 17,
+    "desc": [
+      "每当你打出1张职业卡时，你额外获得1根木头。如果打出某张职业卡时同时打出此卡，可获得此木头。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "2 Occupations",
+    "occupationPrerequisites": {
+      "min": 2
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR017.png",
+    "locales": {
+      "zh": {
+        "name": "日记本",
+        "desc": [
+          "每当你打出1张职业卡时，你额外获得1根木头。如果打出某张职业卡时同时打出此卡，可获得此木头。"
+        ],
+        "prerequisite": "职业×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR018_EncirclingWall",
+    "originalId": "FR018_EncirclingWall",
+    "gameEdition": "classic",
+    "name": "环绕围墙",
+    "deck": "FR",
+    "number": 18,
+    "desc": [
+      "打出时你可以将你农场里的一格免费围成圈地(需遵循圈地规则，算作一次“围栅栏”行动)。"
+    ],
+    "cost": {
+      "stone": 4
+    },
+    "vp": 2,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR018.png",
+    "locales": {
+      "zh": {
+        "name": "环绕围墙",
+        "desc": [
+          "打出时你可以将你农场里的一格免费围成圈地(需遵循圈地规则，算作一次“围栅栏”行动)。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR019_EveningPrayer",
+    "originalId": "FR019_EveningPrayer",
+    "gameEdition": "classic",
+    "name": "晚祷",
+    "deck": "FR",
+    "number": 19,
+    "desc": [
+      "如果你有1/2个田地板块，则立即支付1/2份食物作为技能培训费打出1/2张职业卡"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "职业=0",
+    "occupationPrerequisites": {
+      "max": 0
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR019.png",
+    "locales": {
+      "zh": {
+        "name": "晚祷",
+        "desc": [
+          "如果你有1/2个田地板块，则立即支付1/2份食物作为技能培训费打出1/2张职业卡"
+        ],
+        "prerequisite": "职业=0"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR020_FiveRings",
+    "originalId": "FR020_FiveRings",
+    "gameEdition": "classic",
+    "name": "五环",
+    "deck": "FR",
+    "number": 20,
+    "desc": [
+      "如果你打出此卡时将木头/石头放在五环上，则你打出每张发展卡的费用减少1根木头/1个石头"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR020.png",
+    "locales": {
+      "zh": {
+        "name": "五环",
+        "desc": [
+          "如果你打出此卡时将木头/石头放在五环上，则你打出每张发展卡的费用减少1根木头/1个石头"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR021_FlatHill",
+    "originalId": "FR021_FlatHill",
+    "gameEdition": "classic",
+    "name": "平坦小山",
+    "deck": "FR",
+    "number": 21,
+    "desc": [
+      "免费将你的木屋翻修成砖屋包括卡牌田。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "已播种的田×4",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR021.png",
+    "locales": {
+      "zh": {
+        "name": "平坦小山",
+        "desc": [
+          "免费将你的木屋翻修成砖屋包括卡牌田。"
+        ],
+        "prerequisite": "已播种的田×4"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR022_FullbottomedWig",
+    "originalId": "FR022_FullbottomedWig",
+    "gameEdition": "classic",
+    "name": "法式假发",
+    "deck": "FR",
+    "number": 22,
+    "desc": [
+      "你翻修时不需支付芦苇"
+    ],
+    "cost": {},
+    "vp": 1,
+    "prerequisite": "羊×3",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR022.png",
+    "locales": {
+      "zh": {
+        "name": "法式假发",
+        "desc": [
+          "你翻修时不需支付芦苇"
+        ],
+        "prerequisite": "羊×3"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR023_Goblet",
+    "originalId": "FR023_Goblet",
+    "gameEdition": "classic",
+    "name": "高脚杯",
+    "deck": "FR",
+    "number": 23,
+    "desc": [
+      "对你而言，A10水井是次要发展卡。你打出井时改为在之后5回合各放置2份食物"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR023.png",
+    "locales": {
+      "zh": {
+        "name": "高脚杯",
+        "desc": [
+          "对你而言，A10水井是次要发展卡。你打出井时改为在之后5回合各放置2份食物"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR024_GoldenRose",
+    "originalId": "FR024_GoldenRose",
+    "gameEdition": "classic",
+    "name": "金玫瑰",
+    "deck": "FR",
+    "number": 24,
+    "desc": [
+      "你支付职业培训费/打次发时可以少支付至多2份食物包括职业卡的额外花费"
+    ],
+    "cost": {},
+    "vp": 1,
+    "prerequisite": "已播种的田×1",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR024.png",
+    "locales": {
+      "zh": {
+        "name": "金玫瑰",
+        "desc": [
+          "你支付职业培训费/打次发时可以少支付至多2份食物包括职业卡的额外花费"
+        ],
+        "prerequisite": "已播种的田×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR025_GrainMillOven",
+    "originalId": "FR025_GrainMillOven",
+    "gameEdition": "classic",
+    "name": "麦磨烤炉",
+    "deck": "FR",
+    "number": 25,
+    "desc": [
+      "打出时获得1次“烤面包”行动。砖造烤炉和石造烤炉对你而言是次发，下次你打出烤炉时可以弃掉此卡来免费打出。此卡不属于烤炉。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR025.png",
+    "locales": {
+      "zh": {
+        "name": "麦磨烤炉",
+        "desc": [
+          "打出时获得1次“烤面包”行动。砖造烤炉和石造烤炉对你而言是次发，下次你打出烤炉时可以弃掉此卡来免费打出。此卡不属于烤炉。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR026_Grotto",
+    "originalId": "FR026_Grotto",
+    "gameEdition": "classic",
+    "name": "石窟",
+    "deck": "FR",
+    "number": 26,
+    "desc": [
+      "从游戏公用区放置3块砖头+2个石头在此卡上。每回合结束时，你可以支付2份食物获得此卡上的1个资源。此卡上没有资源时，此卡可以容纳一名家庭成员。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "2 Occupations",
+    "occupationPrerequisites": {
+      "min": 2
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR026.png",
+    "locales": {
+      "zh": {
+        "name": "石窟",
+        "desc": [
+          "从游戏公用区放置3块砖头+2个石头在此卡上。每回合结束时，你可以支付2份食物获得此卡上的1个资源。此卡上没有资源时，此卡可以容纳一名家庭成员。"
+        ],
+        "prerequisite": "职业×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR027_GroundPickaxePlow",
+    "originalId": "FR027_GroundPickaxePlow",
+    "gameEdition": "classic",
+    "name": "界镐犁",
+    "deck": "FR",
+    "number": 27,
+    "desc": [
+      "限1次：当你使用犁田/粮食耕种[犁播]行动格时，你可以从你的供应区拿取木头，放在1/2个与该行动格正交相邻的行动格上各1个，然后额外犁1/2块田。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR027.png",
+    "locales": {
+      "zh": {
+        "name": "界镐犁",
+        "desc": [
+          "限1次：当你使用犁田/粮食耕种[犁播]行动格时，你可以从你的供应区拿取木头，放在1/2个与该行动格正交相邻的行动格上各1个，然后额外犁1/2块田。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR028_Hammock",
+    "originalId": "FR028_Hammock",
+    "gameEdition": "classic",
+    "name": "吊床",
+    "deck": "FR",
+    "number": 28,
+    "desc": [
+      "你的至多一间房屋可以额外容纳一名家庭成员。"
+    ],
+    "cost": {
+      "wood": 2,
+      "sheep": 1
+    },
+    "vp": 1,
+    "prerequisite": "房屋×4",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR028.png",
+    "locales": {
+      "zh": {
+        "name": "吊床",
+        "desc": [
+          "你的至多一间房屋可以额外容纳一名家庭成员。"
+        ],
+        "prerequisite": "房屋×4"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR029_HayRake",
+    "originalId": "FR029_HayRake",
+    "gameEdition": "classic",
+    "name": "干草耙",
+    "deck": "FR",
+    "number": 29,
+    "desc": [
+      "每个工作阶段，你的第三位家庭成员可以使用犁田行动格，即使该格已被占用。自己的家庭成员/对手"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR029.png",
+    "locales": {
+      "zh": {
+        "name": "干草耙",
+        "desc": [
+          "每个工作阶段，你的第三位家庭成员可以使用犁田行动格，即使该格已被占用。自己的家庭成员/对手"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR030_Haystack",
+    "originalId": "FR030_Haystack",
+    "gameEdition": "classic",
+    "name": "干草堆",
+    "deck": "FR",
+    "number": 30,
+    "desc": [
+      "在接下来的3个回合行动格上各放置1份食物，这些回合开始时，你获得这份食物卡牌动物怎么算呢"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "动物×6",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR030.png",
+    "locales": {
+      "zh": {
+        "name": "干草堆",
+        "desc": [
+          "在接下来的3个回合行动格上各放置1份食物，这些回合开始时，你获得这份食物卡牌动物怎么算呢"
+        ],
+        "prerequisite": "动物×6"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR031_Heatwave",
+    "originalId": "FR031_Heatwave",
+    "gameEdition": "classic",
+    "name": "热浪",
+    "deck": "FR",
+    "number": 31,
+    "desc": [
+      "免费打出火炉或将火炉升级成壁炉使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {
+      "stone": 1
+    },
+    "vp": 0,
+    "prerequisite": "砖屋或石屋",
+    "passing": true,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR031.png",
+    "locales": {
+      "zh": {
+        "name": "热浪",
+        "desc": [
+          "免费打出火炉或将火炉升级成壁炉使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": "砖屋或石屋"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR032_Homework",
+    "originalId": "FR032_Homework",
+    "gameEdition": "classic",
+    "name": "家庭作业",
+    "deck": "FR",
+    "number": 32,
+    "desc": [
+      "立即免费打出两张职业卡。仍需要额外支付职业卡效果的花费灯塔"
+    ],
+    "cost": {
+      "food": 2,
+      "reed": 2
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR032.png",
+    "locales": {
+      "zh": {
+        "name": "家庭作业",
+        "desc": [
+          "立即免费打出两张职业卡。仍需要额外支付职业卡效果的花费灯塔"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR033_KidsCorner",
+    "originalId": "FR033_KidsCorner",
+    "gameEdition": "classic",
+    "name": "儿童天地",
+    "deck": "FR",
+    "number": 33,
+    "desc": [
+      "你的房间可以额外容纳1只任意动物。任意类型的动物"
+    ],
+    "cost": {
+      "reed": 1
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR033.png",
+    "locales": {
+      "zh": {
+        "name": "儿童天地",
+        "desc": [
+          "你的房间可以额外容纳1只任意动物。任意类型的动物"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR034_KitchenTable",
+    "originalId": "FR034_KitchenTable",
+    "gameEdition": "classic",
+    "name": "厨房餐桌",
+    "deck": "FR",
+    "number": 34,
+    "desc": [
+      "对你而言，“烤面包”行动变成“烤面包/支付1份食物到此卡”行动。任意时刻，你可以弃掉此卡上的1份食物来执行一次“烤面包”行动"
+    ],
+    "cost": {},
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR034.png",
+    "locales": {
+      "zh": {
+        "name": "厨房餐桌",
+        "desc": [
+          "对你而言，“烤面包”行动变成“烤面包/支付1份食物到此卡”行动。任意时刻，你可以弃掉此卡上的1份食物来执行一次“烤面包”行动"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR035_Lighthouse",
+    "originalId": "FR035_Lighthouse",
+    "gameEdition": "classic",
+    "name": "灯塔",
+    "deck": "FR",
+    "number": 35,
+    "desc": [
+      "此卡可容纳一名家庭成员"
+    ],
+    "cost": {
+      "stone": 2,
+      "wood": 1
+    },
+    "vp": 2,
+    "prerequisite": "石屋=2",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR035.png",
+    "locales": {
+      "zh": {
+        "name": "灯塔",
+        "desc": [
+          "此卡可容纳一名家庭成员"
+        ],
+        "prerequisite": "石屋=2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR036_March",
+    "originalId": "FR036_March",
+    "gameEdition": "classic",
+    "name": "三月",
+    "deck": "FR",
+    "number": 36,
+    "desc": [
+      "打出时你可以支付2只不同动物并犁2块田"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR036.png",
+    "locales": {
+      "zh": {
+        "name": "三月",
+        "desc": [
+          "打出时你可以支付2只不同动物并犁2块田"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR037_Necklace",
+    "originalId": "FR037_Necklace",
+    "gameEdition": "classic",
+    "name": "项链",
+    "deck": "FR",
+    "number": 37,
+    "desc": [
+      "每个工作阶段结束时，如果你占用了两个正交相邻的行动格（大小相同，则你获得1份食物"
+    ],
+    "cost": {
+      "stone": 1
+    },
+    "vp": 0,
+    "prerequisite": "1 Occupations",
+    "occupationPrerequisites": {
+      "min": 1
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR037.png",
+    "locales": {
+      "zh": {
+        "name": "项链",
+        "desc": [
+          "每个工作阶段结束时，如果你占用了两个正交相邻的行动格（大小相同，则你获得1份食物"
+        ],
+        "prerequisite": "职业×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR038_Orchard",
+    "originalId": "FR038_Orchard",
+    "gameEdition": "classic",
+    "name": "果园",
+    "deck": "FR",
+    "number": 38,
+    "desc": [
+      "计算的已播种的田的数量，在之后等同于此数的回合行动格上各放置1份食物。这些回合开始时，你获得对应食物"
+    ],
+    "cost": {},
+    "vp": 1,
+    "prerequisite": "已播种的田×1",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR038.png",
+    "locales": {
+      "zh": {
+        "name": "果园",
+        "desc": [
+          "计算的已播种的田的数量，在之后等同于此数的回合行动格上各放置1份食物。这些回合开始时，你获得对应食物"
+        ],
+        "prerequisite": "已播种的田×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR039_ParForceHunting",
+    "originalId": "FR039_ParForceHunting",
+    "gameEdition": "classic",
+    "name": "骑马狩猎",
+    "deck": "FR",
+    "number": 39,
+    "desc": [
+      "当前回合数加4和7，在对应回合行动格上各放置1只猪，这些回合开始时，你可以支付1份食物获得对应的猪。"
+    ],
+    "cost": {
+      "wood": 2
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR039.png",
+    "locales": {
+      "zh": {
+        "name": "骑马狩猎",
+        "desc": [
+          "当前回合数加4和7，在对应回合行动格上各放置1只猪，这些回合开始时，你可以支付1份食物获得对应的猪。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR040_ParkCemetary",
+    "originalId": "FR040_ParkCemetary",
+    "gameEdition": "classic",
+    "name": "公墓",
+    "deck": "FR",
+    "number": 40,
+    "desc": [
+      "从游戏供应区拿取3个石头，放到犁田行动格上，使用此格的玩家可以拿走1个石头。如果石头被拿光，你可以犁一块田"
+    ],
+    "cost": {
+      "stone": 1
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR040.png",
+    "locales": {
+      "zh": {
+        "name": "公墓",
+        "desc": [
+          "从游戏供应区拿取3个石头，放到犁田行动格上，使用此格的玩家可以拿走1个石头。如果石头被拿光，你可以犁一块田"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR041_PeasantsBoutique",
+    "originalId": "FR041_PeasantsBoutique",
+    "gameEdition": "classic",
+    "name": "工坊",
+    "deck": "FR",
+    "number": 41,
+    "desc": [
+      "石屋"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR041.png",
+    "locales": {
+      "zh": {
+        "name": "工坊",
+        "desc": [
+          "石屋"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR042_RockPyramid",
+    "originalId": "FR042_RockPyramid",
+    "gameEdition": "classic",
+    "name": "山洲",
+    "deck": "FR",
+    "number": 42,
+    "desc": [
+      "你每扩建1间石屋，你可以犁1块田，如果你在扩建石屋时实际支付了至少1个石头，则改为2块田"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR042.png",
+    "locales": {
+      "zh": {
+        "name": "山洲",
+        "desc": [
+          "你每扩建1间石屋，你可以犁1块田，如果你在扩建石屋时实际支付了至少1个石头，则改为2块田"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR043_Sofa",
+    "originalId": "FR043_Sofa",
+    "gameEdition": "classic",
+    "name": "沙发",
+    "deck": "FR",
+    "number": 43,
+    "desc": [
+      "游戏结束时，如果你有至多2/3间房子，你获得4/2分"
+    ],
+    "cost": {
+      "reed": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR043.png",
+    "locales": {
+      "zh": {
+        "name": "沙发",
+        "desc": [
+          "游戏结束时，如果你有至多2/3间房子，你获得4/2分"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR044_StarClassicationMeal",
+    "originalId": "FR044_StarClassicationMeal",
+    "gameEdition": "classic",
+    "name": "星级料理",
+    "deck": "FR",
+    "number": 44,
+    "desc": [
+      "在之后的回合行动格上各放置1份<FOOD>，这些回合开始时，你获得这份<FOOD>"
+    ],
+    "cost": {},
+    "vp": 1,
+    "prerequisite": "石屋阶段",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR044.png",
+    "locales": {
+      "zh": {
+        "name": "星级料理",
+        "desc": [
+          "在之后的回合行动格上各放置1份<FOOD>，这些回合开始时，你获得这份<FOOD>"
+        ],
+        "prerequisite": "石屋阶段"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR045_StoneHouseReconstruction",
+    "name": "重建石屋",
+    "deck": "FR",
+    "number": 45,
+    "category": "FARMYARD_-_HOUSE_BUILDING_OR_RENOVATION",
+    "desc": [
+      "你可以在任意时刻将你的砖屋翻修成石屋(正常支付)"
+    ],
+    "cost": {
+      "stone": 1
+    },
+    "vp": 1,
+    "originalId": "FR045_StoneHouseReconstruction",
+    "gameEdition": "classic",
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/FR045.png",
+    "locales": {
+      "zh": {
+        "name": "重建石屋",
+        "desc": [
+          "你可以在任意时刻将你的砖屋翻修成石屋(正常支付)"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR046_StrawThatchedHut",
+    "originalId": "FR046_StrawThatchedHut",
+    "gameEdition": "classic",
+    "name": "茅草小屋",
+    "deck": "FR",
+    "number": 46,
+    "desc": [
+      "你扩建砖屋的费用可以改为2砖+1小麦+1食物勒阿佛尔港"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "已播种的田×2",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR046.png",
+    "locales": {
+      "zh": {
+        "name": "茅草小屋",
+        "desc": [
+          "你扩建砖屋的费用可以改为2砖+1小麦+1食物勒阿佛尔港"
+        ],
+        "prerequisite": "已播种的田×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR047_SundaySchool",
+    "originalId": "FR047_SundaySchool",
+    "gameEdition": "classic",
+    "name": "周日学校",
+    "deck": "FR",
+    "number": 47,
+    "desc": [
+      "在下一回合放置1个箭头指示物，在该回合你少派遣一名家庭成员，并在回合结束时免费打两张职业卡使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {
+      "food": 2
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": true,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR047.png",
+    "locales": {
+      "zh": {
+        "name": "周日学校",
+        "desc": [
+          "在下一回合放置1个箭头指示物，在该回合你少派遣一名家庭成员，并在回合结束时免费打两张职业卡使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR048_SwimmingStudio",
+    "originalId": "FR048_SwimmingStudio",
+    "gameEdition": "classic",
+    "name": "游泳工作室",
+    "deck": "FR",
+    "number": 48,
+    "desc": [
+      "每当你执行钓鱼积累行动格时，你可以将至多1根木头转化为3份食物。如果你执行钓鱼积累行动格打出此卡，则可以发动此效果。"
+    ],
+    "cost": {
+      "reed": 1
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR048.png",
+    "locales": {
+      "zh": {
+        "name": "游泳工作室",
+        "desc": [
+          "每当你执行钓鱼积累行动格时，你可以将至多1根木头转化为3份食物。如果你执行钓鱼积累行动格打出此卡，则可以发动此效果。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR049_ThePortLeHavre",
+    "originalId": "FR049_ThePortLeHavre",
+    "gameEdition": "classic",
+    "name": "勒阿佛尔港",
+    "deck": "FR",
+    "number": 49,
+    "desc": [
+      "每当你执行“烤面包”行动时，你可以将至多2块砖头转化为等量石头"
+    ],
+    "cost": {},
+    "vp": 1,
+    "prerequisite": "烤炉×1",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR049.png",
+    "locales": {
+      "zh": {
+        "name": "勒阿佛尔港",
+        "desc": [
+          "每当你执行“烤面包”行动时，你可以将至多2块砖头转化为等量石头"
+        ],
+        "prerequisite": "烤炉×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR050_ThreshingMachinePlow",
+    "originalId": "FR050_ThreshingMachinePlow",
+    "gameEdition": "classic",
+    "name": "打谷犁",
+    "deck": "FR",
+    "number": 50,
+    "desc": [
+      "限1次：当你使用犁田行动格时，可以改为将你农场中心的3格犁成田(中心3格位置如图)"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR050.png",
+    "locales": {
+      "zh": {
+        "name": "打谷犁",
+        "desc": [
+          "限1次：当你使用犁田行动格时，可以改为将你农场中心的3格犁成田(中心3格位置如图)"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR051_Timetable",
+    "originalId": "FR051_Timetable",
+    "gameEdition": "classic",
+    "name": "时间表",
+    "deck": "FR",
+    "number": 51,
+    "desc": [
+      "从游戏供应区拿取4种建筑资源各1个放到此卡上，你打次发时可以使用此卡上的资源来支付费用"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "主发×1",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR051.png",
+    "locales": {
+      "zh": {
+        "name": "时间表",
+        "desc": [
+          "从游戏供应区拿取4种建筑资源各1个放到此卡上，你打次发时可以使用此卡上的资源来支付费用"
+        ],
+        "prerequisite": "主发×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR052_TreesfortheCitizens",
+    "originalId": "FR052_TreesfortheCitizens",
+    "gameEdition": "classic",
+    "name": "公有树林",
+    "deck": "FR",
+    "number": 52,
+    "desc": [
+      "如果你有A7家具工坊/K122大家具工坊，则打出此卡时你无需支付木头。游戏结束时，每2张费用包含木头的发展卡使你获得1分"
+    ],
+    "cost": {
+      "clay": 2,
+      "stone": 2
+    },
+    "vp": 1,
+    "prerequisite": "1 Occupations",
+    "occupationPrerequisites": {
+      "min": 1
+    },
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR052.png",
+    "locales": {
+      "zh": {
+        "name": "公有树林",
+        "desc": [
+          "如果你有A7家具工坊/K122大家具工坊，则打出此卡时你无需支付木头。游戏结束时，每2张费用包含木头的发展卡使你获得1分"
+        ],
+        "prerequisite": "职业×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR053_TriptotheLake",
+    "originalId": "FR053_TriptotheLake",
+    "gameEdition": "classic",
+    "name": "散步湖畔",
+    "deck": "FR",
+    "number": 53,
+    "desc": [
+      "每当你使用钓鱼积累行动格时，你额外获得1根木头+1份食物"
+    ],
+    "cost": {
+      "reed": 1
+    },
+    "vp": 0,
+    "prerequisite": "2 Occupations",
+    "occupationPrerequisites": {
+      "min": 2
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR053.png",
+    "locales": {
+      "zh": {
+        "name": "散步湖畔",
+        "desc": [
+          "每当你使用钓鱼积累行动格时，你额外获得1根木头+1份食物"
+        ],
+        "prerequisite": "职业×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR054_TuileriesGarden",
+    "originalId": "FR054_TuileriesGarden",
+    "gameEdition": "classic",
+    "name": "杜乐丽花园",
+    "deck": "FR",
+    "number": 54,
+    "desc": [
+      "每当你使用犁田行动格时，你可以获得1份小麦/蔬菜并将其播种"
+    ],
+    "cost": {
+      "stone": 3,
+      "wood": 1
+    },
+    "vp": 1,
+    "prerequisite": "4 Occupations",
+    "occupationPrerequisites": {
+      "min": 4
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR054.png",
+    "locales": {
+      "zh": {
+        "name": "杜乐丽花园",
+        "desc": [
+          "每当你使用犁田行动格时，你可以获得1份小麦/蔬菜并将其播种"
+        ],
+        "prerequisite": "职业×4"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR055_VegetableHarvest",
+    "originalId": "FR055_VegetableHarvest",
+    "gameEdition": "classic",
+    "name": "丰收菜园",
+    "deck": "FR",
+    "number": 55,
+    "desc": [
+      "如果你有烤炉，你可以随时将1份蔬菜转化为4份食物"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR055.png",
+    "locales": {
+      "zh": {
+        "name": "丰收菜园",
+        "desc": [
+          "如果你有烤炉，你可以随时将1份蔬菜转化为4份食物"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR056_WateringCan",
+    "originalId": "FR056_WateringCan",
+    "gameEdition": "classic",
+    "name": "洒水壶",
+    "deck": "FR",
+    "number": 56,
+    "desc": [
+      "立即在你所有已播种的田上额外放置1份对应作物麦子/蔬菜有效使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {
+      "food": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": true,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR056.png",
+    "locales": {
+      "zh": {
+        "name": "洒水壶",
+        "desc": [
+          "立即在你所有已播种的田上额外放置1份对应作物麦子/蔬菜有效使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR057_WildGame",
+    "originalId": "FR057_WildGame",
+    "gameEdition": "classic",
+    "name": "野味",
+    "deck": "FR",
+    "number": 57,
+    "desc": [
+      "获得5份食物使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {
+      "boar": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": true,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR057.png",
+    "locales": {
+      "zh": {
+        "name": "野味",
+        "desc": [
+          "获得5份食物使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR058_WinterDeadwood",
+    "originalId": "FR058_WinterDeadwood",
+    "gameEdition": "classic",
+    "name": "冬季朽木",
+    "deck": "FR",
+    "number": 58,
+    "desc": [
+      "选择一项：支付1根木头获得1分；或获得1根木头并将此卡传递给下家"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR058.png",
+    "locales": {
+      "zh": {
+        "name": "冬季朽木",
+        "desc": [
+          "选择一项：支付1根木头获得1分；或获得1根木头并将此卡传递给下家"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR059_WitchesDanceGround",
+    "originalId": "FR059_WitchesDanceGround",
+    "gameEdition": "classic",
+    "name": "女巫领域",
+    "deck": "FR",
+    "number": 59,
+    "desc": [
+      "你选择一项：将2个相邻的空格(用此卡代替)拼接在你的农场边缘作为你的新空地，并获得1分；或移除你农场中2个相邻的空格(用此卡盖住)，不再视作你农场的一部分"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "3 Occupations",
+    "occupationPrerequisites": {
+      "min": 3
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR059.png",
+    "locales": {
+      "zh": {
+        "name": "女巫领域",
+        "desc": [
+          "你选择一项：将2个相邻的空格(用此卡代替)拼接在你的农场边缘作为你的新空地，并获得1分；或移除你农场中2个相邻的空格(用此卡盖住)，不再视作你农场的一部分"
+        ],
+        "prerequisite": "职业×3"
+      }
+    },
+    "kind": "minor"
+  },
+]
+const batch13: readonly GeneratedCatalogCardDefinition[] = [
+  {
+    "id": "OLD_FR060_WoodSaw",
+    "name": "木锯",
+    "deck": "FR",
+    "number": 60,
+    "category": "FARMYARD_-_HOUSE_BUILDING_OR_RENOVATION",
+    "desc": [
+      "每当所有其他玩家的家庭成员都比你多时，你可以在任意时刻执行1次“建造房屋”行动"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "originalId": "FR060_WoodSaw",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/FR060.png",
+    "locales": {
+      "zh": {
+        "name": "木锯",
+        "desc": [
+          "每当所有其他玩家的家庭成员都比你多时，你可以在任意时刻执行1次“建造房屋”行动"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_FR061_Agrarian",
+    "originalId": "FR061_Agrarian",
+    "gameEdition": "classic",
+    "name": "土地改革者",
+    "deck": "FR",
+    "number": 61,
+    "desc": [
+      "每回合开始时，你可以支付1份食物放置到犁田行动格，使用此格的玩家获得这份食物。本回合结束时，如果本回合没人使用此格，则你可以拿回这份食物并犁1块田。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR061.png",
+    "locales": {
+      "zh": {
+        "name": "土地改革者",
+        "desc": [
+          "每回合开始时，你可以支付1份食物放置到犁田行动格，使用此格的玩家获得这份食物。本回合结束时，如果本回合没人使用此格，则你可以拿回这份食物并犁1块田。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR062_AnimalWelfarist",
+    "originalId": "FR062_AnimalWelfarist",
+    "gameEdition": "classic",
+    "name": "动物福利主义者",
+    "deck": "FR",
+    "number": 62,
+    "desc": [
+      "每个工作阶段结束时，如果你本回合在行动格上执行了“建造马厩”行动，并且在建造圈地行动格上执行了“围建栅栏”行动，则你获得羊、猪、牛每种动物各1只。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR062.png",
+    "locales": {
+      "zh": {
+        "name": "动物福利主义者",
+        "desc": [
+          "每个工作阶段结束时，如果你本回合在行动格上执行了“建造马厩”行动，并且在建造圈地行动格上执行了“围建栅栏”行动，则你获得羊、猪、牛每种动物各1只。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR063_ArtDirector",
+    "originalId": "FR063_ArtDirector",
+    "gameEdition": "classic",
+    "name": "艺术总监",
+    "deck": "FR",
+    "number": 63,
+    "desc": [
+      "每当你使用卖艺积累行动格时，你额外获得1份食物+1个任意建筑资源。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR063.png",
+    "locales": {
+      "zh": {
+        "name": "艺术总监",
+        "desc": [
+          "每当你使用卖艺积累行动格时，你额外获得1份食物+1个任意建筑资源。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR064_AwardWinner",
+    "originalId": "FR064_AwardWinner",
+    "gameEdition": "classic",
+    "name": "大奖得主",
+    "deck": "FR",
+    "number": 64,
+    "desc": [
+      "每回合限1次：每当你打出发展卡时，你可以额外支付任意1个所需支付的建筑资源，然后额外获得1分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR064.png",
+    "locales": {
+      "zh": {
+        "name": "大奖得主",
+        "desc": [
+          "每回合限1次：每当你打出发展卡时，你可以额外支付任意1个所需支付的建筑资源，然后额外获得1分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR065_Benefactor",
+    "originalId": "FR065_Benefactor",
+    "gameEdition": "classic",
+    "name": "施主",
+    "deck": "FR",
+    "number": 65,
+    "desc": [
+      "限1次：如果你有4个圈地，则你可以支付1只动物来免费扩建1间木屋。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR065.png",
+    "locales": {
+      "zh": {
+        "name": "施主",
+        "desc": [
+          "限1次：如果你有4个圈地，则你可以支付1只动物来免费扩建1间木屋。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR066_Boatswain",
+    "originalId": "FR066_Boatswain",
+    "gameEdition": "classic",
+    "name": "水手长",
+    "deck": "FR",
+    "number": 66,
+    "desc": [
+      "每当你使用钓鱼积累行动格时，你可以在你的每块空田上(包括卡牌田)各放置1份小麦(这不算作“播种”行动)。这些田视为已播种的麦田。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR066.png",
+    "locales": {
+      "zh": {
+        "name": "水手长",
+        "desc": [
+          "每当你使用钓鱼积累行动格时，你可以在你的每块空田上(包括卡牌田)各放置1份小麦(这不算作“播种”行动)。这些田视为已播种的麦田。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR067_CabbageLover",
+    "originalId": "FR067_CabbageLover",
+    "gameEdition": "classic",
+    "name": "白菜爱好者",
+    "deck": "FR",
+    "number": 67,
+    "desc": [
+      "打出此卡时，获得1份蔬菜。你每将1份蔬菜转化为食物，可以支付1块砖头到此卡上，游戏结束时，此卡上的每1个砖头使你获得1分，至多5分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR067.png",
+    "locales": {
+      "zh": {
+        "name": "白菜爱好者",
+        "desc": [
+          "打出此卡时，获得1份蔬菜。你每将1份蔬菜转化为食物，可以支付1块砖头到此卡上，游戏结束时，此卡上的每1个砖头使你获得1分，至多5分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR068_CardPlayer",
+    "originalId": "FR068_CardPlayer",
+    "gameEdition": "classic",
+    "name": "卡牌玩家",
+    "deck": "FR",
+    "number": 68,
+    "desc": [
+      "打出此卡时，从游戏供应区按右图所示拿取物品排列于此卡上。每回合结束时，将最上面的资源移到最下面。每当你获得此卡最上面/最下面的资源时，你额外获得1个/退还1个到游戏供应区。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR068.png",
+    "locales": {
+      "zh": {
+        "name": "卡牌玩家",
+        "desc": [
+          "打出此卡时，从游戏供应区按右图所示拿取物品排列于此卡上。每回合结束时，将最上面的资源移到最下面。每当你获得此卡最上面/最下面的资源时，你额外获得1个/退还1个到游戏供应区。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR069_CatLover",
+    "originalId": "FR069_CatLover",
+    "gameEdition": "classic",
+    "name": "爱猫人",
+    "deck": "FR",
+    "number": 69,
+    "desc": [
+      "如果你有至少1/2/4/7只动物(卡牌动物不算)，则你扩建的每间木屋花费可减少1/2/3/4个任意建筑资源。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR069.png",
+    "locales": {
+      "zh": {
+        "name": "爱猫人",
+        "desc": [
+          "如果你有至少1/2/4/7只动物(卡牌动物不算)，则你扩建的每间木屋花费可减少1/2/3/4个任意建筑资源。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR070_CattleDealer",
+    "originalId": "FR070_CattleDealer",
+    "gameEdition": "classic",
+    "name": "牛只贩子",
+    "deck": "FR",
+    "number": 70,
+    "desc": [
+      "每当你围建起一个占据至少3个农场空格的圈地时，你可以支付1捆芦苇获得2头牛。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR070.png",
+    "locales": {
+      "zh": {
+        "name": "牛只贩子",
+        "desc": [
+          "每当你围建起一个占据至少3个农场空格的圈地时，你可以支付1捆芦苇获得2头牛。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR071_ChildCareWorker",
+    "originalId": "FR071_ChildCareWorker",
+    "gameEdition": "classic",
+    "name": "幼儿保姆",
+    "deck": "FR",
+    "number": 71,
+    "desc": [
+      "每当其他玩家执行“生娃”行动时，你可以将至多1根木头转化为2份食物，或者将1根木头+1捆芦苇转化为5份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR071.png",
+    "locales": {
+      "zh": {
+        "name": "幼儿保姆",
+        "desc": [
+          "每当其他玩家执行“生娃”行动时，你可以将至多1根木头转化为2份食物，或者将1根木头+1捆芦苇转化为5份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR072_Cocotte",
+    "originalId": "FR072_Cocotte",
+    "gameEdition": "classic",
+    "name": "娼妓",
+    "deck": "FR",
+    "number": 72,
+    "desc": [
+      "每当你使用临时工行动格时，你可以打出1张次要发展卡，或者支付1份食物打出1张主要发展卡。（正常支付发展卡的费用）"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR072.png",
+    "locales": {
+      "zh": {
+        "name": "娼妓",
+        "desc": [
+          "每当你使用临时工行动格时，你可以打出1张次要发展卡，或者支付1份食物打出1张主要发展卡。（正常支付发展卡的费用）"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR073_ConvictNumber24601",
+    "originalId": "FR073_ConvictNumber24601",
+    "gameEdition": "classic",
+    "name": "悲惨世界·尚万强",
+    "deck": "FR",
+    "number": 73,
+    "desc": [
+      "从下回合开始，你每回合都必须少派遣1名家庭成员。游戏结束时，对于每个打出此卡后的回合(包括打出此卡的这一回合)，你都获得2分。（仍需正常喂养该名家庭成员）"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR073.png",
+    "locales": {
+      "zh": {
+        "name": "悲惨世界·尚万强",
+        "desc": [
+          "从下回合开始，你每回合都必须少派遣1名家庭成员。游戏结束时，对于每个打出此卡后的回合(包括打出此卡的这一回合)，你都获得2分。（仍需正常喂养该名家庭成员）"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR074_CountryDoctor",
+    "originalId": "FR074_CountryDoctor",
+    "gameEdition": "classic",
+    "name": "乡村医生",
+    "deck": "FR",
+    "number": 74,
+    "desc": [
+      "限1次：如果你有3块麦田，你可以将一次“生娃”行动当成“生娃(无需空房间)”行动执行。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR074.png",
+    "locales": {
+      "zh": {
+        "name": "乡村医生",
+        "desc": [
+          "限1次：如果你有3块麦田，你可以将一次“生娃”行动当成“生娃(无需空房间)”行动执行。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR075_CowboyAndMother",
+    "originalId": "FR075_CowboyAndMother",
+    "gameEdition": "classic",
+    "name": "牛仔与妈妈",
+    "deck": "FR",
+    "number": 75,
+    "desc": [
+      "从第4回合起，每回合工作阶段结束时，如果你有不多于2名家庭成员且本回合使用过不多于2个行动格，则你获得1份食物，从第8/12回合起，可以改为获得1只任意动物/犁1块田。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR075.png",
+    "locales": {
+      "zh": {
+        "name": "牛仔与妈妈",
+        "desc": [
+          "从第4回合起，每回合工作阶段结束时，如果你有不多于2名家庭成员且本回合使用过不多于2个行动格，则你获得1份食物，从第8/12回合起，可以改为获得1只任意动物/犁1块田。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR076_DebtCollector",
+    "originalId": "FR076_DebtCollector",
+    "gameEdition": "classic",
+    "name": "讨债人",
+    "deck": "FR",
+    "number": 76,
+    "desc": [
+      "打出时在当前回合数+3或之后的回合行动格中选择一个放置1个食客标记。该回合开始时，你向当回合的起始玩家支付1份食物并先于他派遣这名食客，然后从起始玩家开始，按照正常顺序派遣家庭成员。本回合结束后，退还该食客。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR076.png",
+    "locales": {
+      "zh": {
+        "name": "讨债人",
+        "desc": [
+          "打出时在当前回合数+3或之后的回合行动格中选择一个放置1个食客标记。该回合开始时，你向当回合的起始玩家支付1份食物并先于他派遣这名食客，然后从起始玩家开始，按照正常顺序派遣家庭成员。本回合结束后，退还该食客。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR077_DoveHunter",
+    "originalId": "FR077_DoveHunter",
+    "gameEdition": "classic",
+    "name": "鸽子猎人",
+    "deck": "FR",
+    "number": 77,
+    "desc": [
+      "每个丰收时节的喂养阶段，你可以将至多1只羊转化为4份食物，或将至多1头牛转化为6份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR077.png",
+    "locales": {
+      "zh": {
+        "name": "鸽子猎人",
+        "desc": [
+          "每个丰收时节的喂养阶段，你可以将至多1只羊转化为4份食物，或将至多1头牛转化为6份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR078_DrawingGenius",
+    "originalId": "FR078_DrawingGenius",
+    "gameEdition": "classic",
+    "name": "绘图天才",
+    "deck": "FR",
+    "number": 78,
+    "desc": [
+      "每当你使用当回合新翻开的那张回合行动卡之后，你可以打出1张主要或次要发展卡。（正常支付发展卡的费用）"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR078.png",
+    "locales": {
+      "zh": {
+        "name": "绘图天才",
+        "desc": [
+          "每当你使用当回合新翻开的那张回合行动卡之后，你可以打出1张主要或次要发展卡。（正常支付发展卡的费用）"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR079_DrinkerofAbsinthe",
+    "originalId": "FR079_DrinkerofAbsinthe",
+    "gameEdition": "classic",
+    "name": "苦艾酒爱好者",
+    "deck": "FR",
+    "number": 79,
+    "desc": [
+      "在第7至14回合的行动格上各放置1份食物。这些回合开始时，你获得这份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR079.png",
+    "locales": {
+      "zh": {
+        "name": "苦艾酒爱好者",
+        "desc": [
+          "在第7至14回合的行动格上各放置1份食物。这些回合开始时，你获得这份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR080_FencingMaster",
+    "originalId": "FR080_FencingMaster",
+    "gameEdition": "classic",
+    "name": "剑术大师",
+    "deck": "FR",
+    "number": 80,
+    "desc": [
+      "每当你打出1张职业卡(包括此卡)后，将你供应区的至多2根栅栏条放到此卡上。从第4张职业起，改为至多1根。每当你执行“围建栅栏”行动时，你可以免费使用此卡上的栅栏条。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR080.png",
+    "locales": {
+      "zh": {
+        "name": "剑术大师",
+        "desc": [
+          "每当你打出1张职业卡(包括此卡)后，将你供应区的至多2根栅栏条放到此卡上。从第4张职业起，改为至多1根。每当你执行“围建栅栏”行动时，你可以免费使用此卡上的栅栏条。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR081_Fiddler",
+    "originalId": "FR081_Fiddler",
+    "gameEdition": "classic",
+    "name": "提琴手",
+    "deck": "FR",
+    "number": 81,
+    "desc": [
+      "每回合结束时，如果你在该回合没有获得任何建筑资源，则你获得1根木头。如果是偶数回合，则你还额外获得1份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR081.png",
+    "locales": {
+      "zh": {
+        "name": "提琴手",
+        "desc": [
+          "每回合结束时，如果你在该回合没有获得任何建筑资源，则你获得1根木头。如果是偶数回合，则你还额外获得1份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR082_GardeningEnthusiast",
+    "originalId": "FR082_GardeningEnthusiast",
+    "gameEdition": "classic",
+    "name": "园艺爱好者",
+    "deck": "FR",
+    "number": 82,
+    "desc": [
+      "打出此卡时，立即获得1份小麦+1份蔬菜。计分阶段前，你必须退还1份小麦+1份蔬菜，每少退还1个你-1分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR082.png",
+    "locales": {
+      "zh": {
+        "name": "园艺爱好者",
+        "desc": [
+          "打出此卡时，立即获得1份小麦+1份蔬菜。计分阶段前，你必须退还1份小麦+1份蔬菜，每少退还1个你-1分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR083_GoodFriend",
+    "originalId": "FR083_GoodFriend",
+    "gameEdition": "classic",
+    "name": "好朋友",
+    "deck": "FR",
+    "number": 83,
+    "desc": [
+      "在此卡上放置3木头+2砖+2石头+1芦苇。每当其他玩家支付建筑资源打出次要发展卡时，你可以从此卡上获得至多1个他支付的1种建筑资源。(如果某张主要发展卡被视为次要发展卡打出，也是有效的)"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR083.png",
+    "locales": {
+      "zh": {
+        "name": "好朋友",
+        "desc": [
+          "在此卡上放置3木头+2砖+2石头+1芦苇。每当其他玩家支付建筑资源打出次要发展卡时，你可以从此卡上获得至多1个他支付的1种建筑资源。(如果某张主要发展卡被视为次要发展卡打出，也是有效的)"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR084_GrainSpeculator",
+    "originalId": "FR084_GrainSpeculator",
+    "gameEdition": "classic",
+    "name": "小麦投资商",
+    "deck": "FR",
+    "number": 84,
+    "desc": [
+      "将当前回合数加1，3和5，在这些回合的行动格上各放置1份小麦。这些回合开始时，你获得这份小麦。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR084.png",
+    "locales": {
+      "zh": {
+        "name": "小麦投资商",
+        "desc": [
+          "将当前回合数加1，3和5，在这些回合的行动格上各放置1份小麦。这些回合开始时，你获得这份小麦。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR085_Harvester",
+    "originalId": "FR085_Harvester",
+    "gameEdition": "classic",
+    "name": "收割庄稼者",
+    "deck": "FR",
+    "number": 85,
+    "desc": [
+      "打出此卡时，若距离游戏结束还有1/3/6/9个完整回合，则你立即获得1/2/3/4根木头。游戏结束时，在最后一个丰收时节收割了至少5份作物的玩家都额外获得3分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR085.png",
+    "locales": {
+      "zh": {
+        "name": "收割庄稼者",
+        "desc": [
+          "打出此卡时，若距离游戏结束还有1/3/6/9个完整回合，则你立即获得1/2/3/4根木头。游戏结束时，在最后一个丰收时节收割了至少5份作物的玩家都额外获得3分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR086_HeadOfTheRevolution",
+    "originalId": "FR086_HeadOfTheRevolution",
+    "gameEdition": "classic",
+    "name": "革命主谋",
+    "deck": "FR",
+    "number": 86,
+    "desc": [
+      "打出此卡时，若距离游戏结束还有1/3/6/9个完整回合，则你立即获得1/2/3/4根木头。打出此卡后，下一个填满自己农场所有空格的玩家获得3分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR086.png",
+    "locales": {
+      "zh": {
+        "name": "革命主谋",
+        "desc": [
+          "打出此卡时，若距离游戏结束还有1/3/6/9个完整回合，则你立即获得1/2/3/4根木头。打出此卡后，下一个填满自己农场所有空格的玩家获得3分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR087_ImmigrantsSon",
+    "originalId": "FR087_ImmigrantsSon",
+    "gameEdition": "classic",
+    "name": "移民者的儿子",
+    "deck": "FR",
+    "number": 87,
+    "desc": [
+      "打出此卡后，当你打出你的第5、6、7个职业时，你可以犁一块田。(打出此卡时不能触发)WM070发条人可以触发。E148智者可以犁两块。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR087.png",
+    "locales": {
+      "zh": {
+        "name": "移民者的儿子",
+        "desc": [
+          "打出此卡后，当你打出你的第5、6、7个职业时，你可以犁一块田。(打出此卡时不能触发)WM070发条人可以触发。E148智者可以犁两块。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR088_Journeyman",
+    "originalId": "FR088_Journeyman",
+    "gameEdition": "classic",
+    "name": "熟练工人",
+    "deck": "FR",
+    "number": 88,
+    "desc": [
+      "一旦你的房屋等级是石屋，每回合开始时，你可以支付1份食物购买1只任意动物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR088.png",
+    "locales": {
+      "zh": {
+        "name": "熟练工人",
+        "desc": [
+          "一旦你的房屋等级是石屋，每回合开始时，你可以支付1份食物购买1只任意动物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR089_LandscapeGardener",
+    "originalId": "FR089_LandscapeGardener",
+    "gameEdition": "classic",
+    "name": "园艺大师",
+    "deck": "FR",
+    "number": 89,
+    "desc": [
+      "打出此卡时，你获得1次“播种”行动。此卡视为2块田。(不参与计分)"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR089.png",
+    "locales": {
+      "zh": {
+        "name": "园艺大师",
+        "desc": [
+          "打出此卡时，你获得1次“播种”行动。此卡视为2块田。(不参与计分)"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR090_LemonTrader",
+    "originalId": "FR090_LemonTrader",
+    "gameEdition": "classic",
+    "name": "柠檬交易商",
+    "deck": "FR",
+    "number": 90,
+    "desc": [
+      "每回合限2次：你可以支付1份小麦/1份蔬菜获得1/2个不同的建筑资源。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR090.png",
+    "locales": {
+      "zh": {
+        "name": "柠檬交易商",
+        "desc": [
+          "每回合限2次：你可以支付1份小麦/1份蔬菜获得1/2个不同的建筑资源。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR091_ManualLabourer",
+    "originalId": "FR091_ManualLabourer",
+    "gameEdition": "classic",
+    "name": "手工劳动者",
+    "deck": "FR",
+    "number": 91,
+    "desc": [
+      "每回合结束时，如果你在该回合获得了恰好1种建筑资源，则你额外获得1个该种建筑资源。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR091.png",
+    "locales": {
+      "zh": {
+        "name": "手工劳动者",
+        "desc": [
+          "每回合结束时，如果你在该回合获得了恰好1种建筑资源，则你额外获得1个该种建筑资源。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR092_MartialArtist",
+    "originalId": "FR092_MartialArtist",
+    "gameEdition": "classic",
+    "name": "武术家",
+    "deck": "FR",
+    "number": 92,
+    "desc": [
+      "每个丰收时节开始时，你可以弃掉至多2张次发卡，每张使你获得2份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR092.png",
+    "locales": {
+      "zh": {
+        "name": "武术家",
+        "desc": [
+          "每个丰收时节开始时，你可以弃掉至多2张次发卡，每张使你获得2份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR093_Mastermind",
+    "originalId": "FR093_Mastermind",
+    "gameEdition": "classic",
+    "name": "主谋",
+    "deck": "FR",
+    "number": 93,
+    "desc": [
+      "在打出此卡之后，你每打出1张印有奖励分数标记的卡牌(得分标记不算)，游戏结束时都使你获得1分(此卡下面就有奖励分数标记)。如果退还了该卡牌，仍然算分。下面负分标记也算。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR093.png",
+    "locales": {
+      "zh": {
+        "name": "主谋",
+        "desc": [
+          "在打出此卡之后，你每打出1张印有奖励分数标记的卡牌(得分标记不算)，游戏结束时都使你获得1分(此卡下面就有奖励分数标记)。如果退还了该卡牌，仍然算分。下面负分标记也算。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR094_Miser",
+    "originalId": "FR094_Miser",
+    "gameEdition": "classic",
+    "name": "小气鬼",
+    "deck": "FR",
+    "number": 94,
+    "desc": [
+      "每当你通过行动格执行“建造房屋”行动时，如果你恰好扩建了1间木屋/砖屋/石屋，则你少花费1芦苇+1木头/1芦苇+1砖头/1芦苇+1石头。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR094.png",
+    "locales": {
+      "zh": {
+        "name": "小气鬼",
+        "desc": [
+          "每当你通过行动格执行“建造房屋”行动时，如果你恰好扩建了1间木屋/砖屋/石屋，则你少花费1芦苇+1木头/1芦苇+1砖头/1芦苇+1石头。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR095_Musketeer",
+    "originalId": "FR095_Musketeer",
+    "gameEdition": "classic",
+    "name": "火枪手",
+    "deck": "FR",
+    "number": 95,
+    "desc": [
+      "打出此卡时放置1个箭头指示物到由你选择的4个相邻行动格的交界点。每个工作阶段结束时，如果你占用了这些行动格中的2/3/4个，你获得1只羊/猪/牛。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR095.png",
+    "locales": {
+      "zh": {
+        "name": "火枪手",
+        "desc": [
+          "打出此卡时放置1个箭头指示物到由你选择的4个相邻行动格的交界点。每个工作阶段结束时，如果你占用了这些行动格中的2/3/4个，你获得1只羊/猪/牛。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR096_Oceanographer",
+    "originalId": "FR096_Oceanographer",
+    "gameEdition": "classic",
+    "name": "海洋学家",
+    "deck": "FR",
+    "number": 96,
+    "desc": [
+      "按从下到上将蔬菜、石头、小麦、砖排列于此卡上，每当你犁了恰好1块田时，你获得最上面的资源。1次犁了多块田不能触发。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR096.png",
+    "locales": {
+      "zh": {
+        "name": "海洋学家",
+        "desc": [
+          "按从下到上将蔬菜、石头、小麦、砖排列于此卡上，每当你犁了恰好1块田时，你获得最上面的资源。1次犁了多块田不能触发。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR097_ParquetSetter",
+    "originalId": "FR097_ParquetSetter",
+    "gameEdition": "classic",
+    "name": "木地板装修工",
+    "deck": "FR",
+    "number": 97,
+    "desc": [
+      "每个工作阶段结束时，如果在该回合你未使用的空格减少了1/2+格，则你获得1木头/1木头+1食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR097.png",
+    "locales": {
+      "zh": {
+        "name": "木地板装修工",
+        "desc": [
+          "每个工作阶段结束时，如果在该回合你未使用的空格减少了1/2+格，则你获得1木头/1木头+1食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR098_PasteurizationExpert",
+    "originalId": "FR098_PasteurizationExpert",
+    "gameEdition": "classic",
+    "name": "巴氏消毒法专家",
+    "deck": "FR",
+    "number": 98,
+    "desc": [
+      "从上到下按照<SHEEP>、<PIG>、<SHEEP>、<CATTLE>物品排列于此卡上，每当你在丰收时节的繁殖阶段外获得与最上面的动物同种的动物时，你获得最上面的动物。一次性获得多个动物，自己选择获得顺序。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR098.png",
+    "locales": {
+      "zh": {
+        "name": "巴氏消毒法专家",
+        "desc": [
+          "从上到下按照<SHEEP>、<PIG>、<SHEEP>、<CATTLE>物品排列于此卡上，每当你在丰收时节的繁殖阶段外获得与最上面的动物同种的动物时，你获得最上面的动物。一次性获得多个动物，自己选择获得顺序。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR099_PearPeeler",
+    "originalId": "FR099_PearPeeler",
+    "gameEdition": "classic",
+    "name": "削梨工",
+    "deck": "FR",
+    "number": 99,
+    "desc": [
+      "每当你从行动格上获得木头时，你可以留下1/2/3根木头而获得1份小麦/1份蔬菜/1份小麦+1份蔬菜。(留下的木头不能多于原来行动格上原来的木头)"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR099.png",
+    "locales": {
+      "zh": {
+        "name": "削梨工",
+        "desc": [
+          "每当你从行动格上获得木头时，你可以留下1/2/3根木头而获得1份小麦/1份蔬菜/1份小麦+1份蔬菜。(留下的木头不能多于原来行动格上原来的木头)"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR100_PipeSmoker",
+    "name": "烟斗客",
+    "deck": "FR",
+    "number": 100,
+    "category": "BUILDING_RESOURCES_-_WOOD",
+    "desc": [
+      "每个丰收时节开始时，如果你有至少1块麦田，你获得2根木头。"
+    ],
+    "cost": {},
+    "players": "1+",
+    "originalId": "FR100_PipeSmoker",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/FR100.png",
+    "locales": {
+      "zh": {
+        "name": "烟斗客",
+        "desc": [
+          "每个丰收时节开始时，如果你有至少1块麦田，你获得2根木头。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR101_Powerhouse",
+    "originalId": "FR101_Powerhouse",
+    "gameEdition": "classic",
+    "name": "精力充沛者",
+    "deck": "FR",
+    "number": 101,
+    "desc": [
+      "每个工作阶段开始时，如果你有至少3/5个石头，则你获得1/2份食物。可以通过WM41先转化石头再发动此效果。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR101.png",
+    "locales": {
+      "zh": {
+        "name": "精力充沛者",
+        "desc": [
+          "每个工作阶段开始时，如果你有至少3/5个石头，则你获得1/2份食物。可以通过WM41先转化石头再发动此效果。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR102_Prefect",
+    "originalId": "FR102_Prefect",
+    "gameEdition": "classic",
+    "name": "长官",
+    "deck": "FR",
+    "number": 102,
+    "desc": [
+      "每个丰收时节，每当任意玩家使用职业卡或发展卡把建筑资源转化为食物时，对于每张被使用的职业卡和次发卡，你获得1份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR102.png",
+    "locales": {
+      "zh": {
+        "name": "长官",
+        "desc": [
+          "每个丰收时节，每当任意玩家使用职业卡或发展卡把建筑资源转化为食物时，对于每张被使用的职业卡和次发卡，你获得1份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR103_Prosecutor",
+    "originalId": "FR103_Prosecutor",
+    "gameEdition": "classic",
+    "name": "检察官",
+    "deck": "FR",
+    "number": 103,
+    "desc": [
+      "每当你打出发展卡前，如果你打出的发展卡数量比2/3/4位其他玩家少，那么你打出发展卡时可以少支付1/2/3个任意建筑资源。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR103.png",
+    "locales": {
+      "zh": {
+        "name": "检察官",
+        "desc": [
+          "每当你打出发展卡前，如果你打出的发展卡数量比2/3/4位其他玩家少，那么你打出发展卡时可以少支付1/2/3个任意建筑资源。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR104_RacingStableManager",
+    "originalId": "FR104_RacingStableManager",
+    "gameEdition": "classic",
+    "name": "赛马场经理",
+    "deck": "FR",
+    "number": 104,
+    "desc": [
+      "每次你建造至少1个马厩时，你可以支付1份食物来立即犁1块田。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR104.png",
+    "locales": {
+      "zh": {
+        "name": "赛马场经理",
+        "desc": [
+          "每次你建造至少1个马厩时，你可以支付1份食物来立即犁1块田。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR105_Reformer",
+    "originalId": "FR105_Reformer",
+    "gameEdition": "classic",
+    "name": "改革家",
+    "deck": "FR",
+    "number": 105,
+    "desc": [
+      "你每张已打出的职业卡可以饲养1只任意动物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR105.png",
+    "locales": {
+      "zh": {
+        "name": "改革家",
+        "desc": [
+          "你每张已打出的职业卡可以饲养1只任意动物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR106_SailboatConstructor",
+    "originalId": "FR106_SailboatConstructor",
+    "gameEdition": "classic",
+    "name": "帆船制造商",
+    "deck": "FR",
+    "number": 106,
+    "desc": [
+      "在此卡上放置4组资源：3木、3砖、2石头、1小麦+1蔬菜。每个丰收时节的收割阶段，你可以购买此卡上的任意组资源，第1/2/3/4组你购买的资源花费2/3/4/5份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR106.png",
+    "locales": {
+      "zh": {
+        "name": "帆船制造商",
+        "desc": [
+          "在此卡上放置4组资源：3木、3砖、2石头、1小麦+1蔬菜。每个丰收时节的收割阶段，你可以购买此卡上的任意组资源，第1/2/3/4组你购买的资源花费2/3/4/5份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR107_SculptorsSon",
+    "originalId": "FR107_SculptorsSon",
+    "gameEdition": "classic",
+    "name": "雕刻家之子",
+    "deck": "FR",
+    "number": 107,
+    "desc": [
+      "如果你拥有A7家具工坊/K122大家具工坊、A8陶艺工坊/WM086大陶艺工坊、A9编筐工坊/FR041大编筐工坊，则每当你派遣家庭成员只从行动格上获得木头/砖头/芦苇时，你额外获得2木头/2砖头/1芦苇。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR107.png",
+    "locales": {
+      "zh": {
+        "name": "雕刻家之子",
+        "desc": [
+          "如果你拥有A7家具工坊/K122大家具工坊、A8陶艺工坊/WM086大陶艺工坊、A9编筐工坊/FR041大编筐工坊，则每当你派遣家庭成员只从行动格上获得木头/砖头/芦苇时，你额外获得2木头/2砖头/1芦苇。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR108_ShovelWorker",
+    "originalId": "FR108_ShovelWorker",
+    "gameEdition": "classic",
+    "name": "铲土工",
+    "deck": "FR",
+    "number": 108,
+    "desc": [
+      "在每个丰收时节的收割阶段，如果你有至少2/3/4/5个圈地，则你获得1/2/3/4份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR108.png",
+    "locales": {
+      "zh": {
+        "name": "铲土工",
+        "desc": [
+          "在每个丰收时节的收割阶段，如果你有至少2/3/4/5个圈地，则你获得1/2/3/4份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR109_StageStar",
+    "originalId": "FR109_StageStar",
+    "gameEdition": "classic",
+    "name": "舞台之星",
+    "deck": "FR",
+    "number": 109,
+    "desc": [
+      "如果你在第一季打出此卡，你立即获得6根木头。每当其他玩家使用卖艺积累行动格时，如果你有至少1根木头，你必须支付他1根木头。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR109.png",
+    "locales": {
+      "zh": {
+        "name": "舞台之星",
+        "desc": [
+          "如果你在第一季打出此卡，你立即获得6根木头。每当其他玩家使用卖艺积累行动格时，如果你有至少1根木头，你必须支付他1根木头。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR110_Stroller",
+    "originalId": "FR110_Stroller",
+    "gameEdition": "classic",
+    "name": "流浪者",
+    "deck": "FR",
+    "number": 110,
+    "desc": [
+      "打出此卡时，在此卡上从上至下以任意顺序放置6个由你选择的建筑资源，且必须包含各种建筑资源。每个丰收时节的收割阶段，你获得此卡最上面的资源。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR110.png",
+    "locales": {
+      "zh": {
+        "name": "流浪者",
+        "desc": [
+          "打出此卡时，在此卡上从上至下以任意顺序放置6个由你选择的建筑资源，且必须包含各种建筑资源。每个丰收时节的收割阶段，你获得此卡最上面的资源。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR111_SunFarmer",
+    "originalId": "FR111_SunFarmer",
+    "gameEdition": "classic",
+    "name": "太阳农夫",
+    "deck": "FR",
+    "number": 111,
+    "desc": [
+      "每当你使用小麦种子行动格时，你额外获得1只羊。每当你使用羊市场积累行动格时，你额外获得1份小麦。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR111.png",
+    "locales": {
+      "zh": {
+        "name": "太阳农夫",
+        "desc": [
+          "每当你使用小麦种子行动格时，你额外获得1只羊。每当你使用羊市场积累行动格时，你额外获得1份小麦。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR112_TowerBuilder",
+    "originalId": "FR112_TowerBuilder",
+    "gameEdition": "classic",
+    "name": "高塔建造师",
+    "deck": "FR",
+    "number": 112,
+    "desc": [
+      "如果你是场上唯一只有2间房屋的玩家，则当你通过行动格上的“建造房屋”行动并建造了至少1间房屋时，你可以额外免费建造1间房屋。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR112.png",
+    "locales": {
+      "zh": {
+        "name": "高塔建造师",
+        "desc": [
+          "如果你是场上唯一只有2间房屋的玩家，则当你通过行动格上的“建造房屋”行动并建造了至少1间房屋时，你可以额外免费建造1间房屋。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR113_Trailblazer",
+    "originalId": "FR113_Trailblazer",
+    "gameEdition": "classic",
+    "name": "开拓者",
+    "deck": "FR",
+    "number": 113,
+    "desc": [
+      "每回合开始时，如果你没有空的田地板块，你可以支付1份食物来犁一块田。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR113.png",
+    "locales": {
+      "zh": {
+        "name": "开拓者",
+        "desc": [
+          "每回合开始时，如果你没有空的田地板块，你可以支付1份食物来犁一块田。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR114_TurkeyBreeder",
+    "originalId": "FR114_TurkeyBreeder",
+    "gameEdition": "classic",
+    "name": "火鸡饲养员",
+    "deck": "FR",
+    "number": 114,
+    "desc": [
+      "打出此卡时，你可以免费建造至多4根栅栏+1个马厩。最后一个丰收时节结束时，你必须退还4根木头，每少退还1根木头，你必须领取1张乞讨卡。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR114.png",
+    "locales": {
+      "zh": {
+        "name": "火鸡饲养员",
+        "desc": [
+          "打出此卡时，你可以免费建造至多4根栅栏+1个马厩。最后一个丰收时节结束时，你必须退还4根木头，每少退还1根木头，你必须领取1张乞讨卡。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR115_UnicycleDriver",
+    "originalId": "FR115_UnicycleDriver",
+    "gameEdition": "classic",
+    "name": "独轮车司机",
+    "deck": "FR",
+    "number": 115,
+    "desc": [
+      "每回合开始时，你可以支付1个石头，用你供应区的1根栅栏条在两个正交相邻的行动格间修建1条“路”。每回合限1次：每个工作阶段结束时，如果你占用了1条“路”的一端而另一端未被占用，你可以移动此家庭成员去使用未被占用的该行动格（可以使用工作阶段结束被占用的行动格）。如果你同时打出了WM023森林农夫/G046池塘看守员，可以自己选择。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR115.png",
+    "locales": {
+      "zh": {
+        "name": "独轮车司机",
+        "desc": [
+          "每回合开始时，你可以支付1个石头，用你供应区的1根栅栏条在两个正交相邻的行动格间修建1条“路”。每回合限1次：每个工作阶段结束时，如果你占用了1条“路”的一端而另一端未被占用，你可以移动此家庭成员去使用未被占用的该行动格（可以使用工作阶段结束被占用的行动格）。如果你同时打出了WM023森林农夫/G046池塘看守员，可以自己选择。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR116_VillageDruid",
+    "originalId": "FR116_VillageDruid",
+    "gameEdition": "classic",
+    "name": "橡木贤者",
+    "deck": "FR",
+    "number": 116,
+    "desc": [
+      "每当你打出1张职业卡后，你获得1只羊。(不包括此卡)"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR116.png",
+    "locales": {
+      "zh": {
+        "name": "橡木贤者",
+        "desc": [
+          "每当你打出1张职业卡后，你获得1只羊。(不包括此卡)"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR117_WealthiestEuropean",
+    "originalId": "FR117_WealthiestEuropean",
+    "gameEdition": "classic",
+    "name": "法国人的皇帝·拿破仑",
+    "deck": "FR",
+    "number": 117,
+    "desc": [
+      "如果此卡是你打出的第一张职业卡，你立即获得等同于已过完整回合数的任意建筑资源。比如第3回合打出此卡，你获得2个任意建筑资源。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR117.png",
+    "locales": {
+      "zh": {
+        "name": "法国人的皇帝·拿破仑",
+        "desc": [
+          "如果此卡是你打出的第一张职业卡，你立即获得等同于已过完整回合数的任意建筑资源。比如第3回合打出此卡，你获得2个任意建筑资源。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR118_WoodGatherers",
+    "originalId": "FR118_WoodGatherers",
+    "gameEdition": "classic",
+    "name": "木头收集者",
+    "deck": "FR",
+    "number": 118,
+    "desc": [
+      "每回合结束时，如果你在该回合通过打发展卡、扩建房屋、建造马厩、围建栅栏上总计花费了至少4根木头，你获得2根木头。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR118.png",
+    "locales": {
+      "zh": {
+        "name": "木头收集者",
+        "desc": [
+          "每回合结束时，如果你在该回合通过打发展卡、扩建房屋、建造马厩、围建栅栏上总计花费了至少4根木头，你获得2根木头。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR119_Workaholic",
+    "originalId": "FR119_Workaholic",
+    "gameEdition": "classic",
+    "name": "工作狂人",
+    "deck": "FR",
+    "number": 119,
+    "desc": [
+      "打出此卡时如果你没有动物，放置5木头+4砖头+3石头在此卡上，一旦你拥有至少5/7/9只动物(卡牌动物不算)，你获得此卡上的所有木头/砖头/石头。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR119.png",
+    "locales": {
+      "zh": {
+        "name": "工作狂人",
+        "desc": [
+          "打出此卡时如果你没有动物，放置5木头+4砖头+3石头在此卡上，一旦你拥有至少5/7/9只动物(卡牌动物不算)，你获得此卡上的所有木头/砖头/石头。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_FR120_WritingManiac",
+    "originalId": "FR120_WritingManiac",
+    "gameEdition": "classic",
+    "name": "写作狂人",
+    "deck": "FR",
+    "number": 120,
+    "desc": [
+      "在第5、7、9和11回合行动格上各倒扣你的1张职业牌，这些回合开始时，你可以支付2份食物打出这张职业卡，否则收回手牌。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/FR120.png",
+    "locales": {
+      "zh": {
+        "name": "写作狂人",
+        "desc": [
+          "在第5、7、9和11回合行动格上各倒扣你的1张职业牌，这些回合开始时，你可以支付2份食物打出这张职业卡，否则收回手牌。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G001_AlternativeDesigner",
+    "originalId": "G001_AlternativeDesigner",
+    "gameEdition": "classic",
+    "name": "另类设计师",
+    "deck": "G",
+    "number": 1,
+    "desc": [
+      "每当你建造马厩或围建栅栏时，可以用至多2砖头/2石头代替2木头。每当你扩建房屋时，每间房屋资源可以用至多2砖头/2石头代替2木头。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G001.png",
+    "locales": {
+      "zh": {
+        "name": "另类设计师",
+        "desc": [
+          "每当你建造马厩或围建栅栏时，可以用至多2砖头/2石头代替2木头。每当你扩建房屋时，每间房屋资源可以用至多2砖头/2石头代替2木头。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G002_AnimalFarmer",
+    "originalId": "G002_AnimalFarmer",
+    "gameEdition": "classic",
+    "name": "完美农夫",
+    "deck": "G",
+    "number": 2,
+    "desc": [
+      "游戏结束时，你每拥有1个达到最大饲养容量的圈地，便额外获得1分。若你所有圈地都达到了最大饲养容量，则你额外再获得1分。卡牌圈地（至少要有1个圈地）"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G002.png",
+    "locales": {
+      "zh": {
+        "name": "完美农夫",
+        "desc": [
+          "游戏结束时，你每拥有1个达到最大饲养容量的圈地，便额外获得1分。若你所有圈地都达到了最大饲养容量，则你额外再获得1分。卡牌圈地（至少要有1个圈地）"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G003_AnimalHolder",
+    "originalId": "G003_AnimalHolder",
+    "gameEdition": "classic",
+    "name": "动物饲养员",
+    "deck": "G",
+    "number": 3,
+    "desc": [
+      "打出此卡时，若距离游戏结束还有1/3/6/9个完整回合，则你立即获得1/2/3/4根木头。游戏结束时，拥有动物总数最多的玩家们额外获得3分。（卡牌动物不算，公羊计算在内）"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G003.png",
+    "locales": {
+      "zh": {
+        "name": "动物饲养员",
+        "desc": [
+          "打出此卡时，若距离游戏结束还有1/3/6/9个完整回合，则你立即获得1/2/3/4根木头。游戏结束时，拥有动物总数最多的玩家们额外获得3分。（卡牌动物不算，公羊计算在内）"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G004_Apprentice",
+    "originalId": "G004_Apprentice",
+    "gameEdition": "classic",
+    "name": "学徒工",
+    "deck": "G",
+    "number": 4,
+    "desc": [
+      "每次丰收时节开始时，你每拥有一张分数至少2分的主要发展卡(包括其升级版)，可以额外获得1份食物。（若有主要发展卡被你视为次要发展卡，此时仍算作主要发展卡）升级版的主发"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G004.png",
+    "locales": {
+      "zh": {
+        "name": "学徒工",
+        "desc": [
+          "每次丰收时节开始时，你每拥有一张分数至少2分的主要发展卡(包括其升级版)，可以额外获得1份食物。（若有主要发展卡被你视为次要发展卡，此时仍算作主要发展卡）升级版的主发"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G005_Architect",
+    "originalId": "G005_Architect",
+    "gameEdition": "classic",
+    "name": "建筑设计师",
+    "deck": "G",
+    "number": 5,
+    "desc": [
+      "打出此卡后，你每建造1间房屋便获得2份食物，你每建造1个马厩便获得1份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G005.png",
+    "locales": {
+      "zh": {
+        "name": "建筑设计师",
+        "desc": [
+          "打出此卡后，你每建造1间房屋便获得2份食物，你每建造1个马厩便获得1份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G006_Artisan",
+    "originalId": "G006_Artisan",
+    "gameEdition": "classic",
+    "name": "手艺人",
+    "deck": "G",
+    "number": 6,
+    "desc": [
+      "每个丰收时节限一次：若你在丰收时节通过发展卡将建筑资源转换为食物，则你额外获得2份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G006.png",
+    "locales": {
+      "zh": {
+        "name": "手艺人",
+        "desc": [
+          "每个丰收时节限一次：若你在丰收时节通过发展卡将建筑资源转换为食物，则你额外获得2份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G007_Astronomer",
+    "originalId": "G007_Astronomer",
+    "gameEdition": "classic",
+    "name": "天文学家",
+    "deck": "G",
+    "number": 7,
+    "desc": [
+      "打出此卡时，立即获得2份食物。每回合返家阶段，若你已行动的家庭成员(包括食客)有3/4/5个占据的行动格纵向/横向相邻构成直线，则你额外获得1/3/5分。这些行动格必须大小相同。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G007.png",
+    "locales": {
+      "zh": {
+        "name": "天文学家",
+        "desc": [
+          "打出此卡时，立即获得2份食物。每回合返家阶段，若你已行动的家庭成员(包括食客)有3/4/5个占据的行动格纵向/横向相邻构成直线，则你额外获得1/3/5分。这些行动格必须大小相同。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G008_Auctioneer",
+    "originalId": "G008_Auctioneer",
+    "gameEdition": "classic",
+    "name": "拍卖商",
+    "deck": "G",
+    "number": 8,
+    "desc": [
+      "在第7、9、11、13回合行动格上各放2芦苇、3木头、3砖头、2石头。回合开始时用食物拍卖(暗标)。出价最高者得到资源，你获得食物。若你出价最高，食物交给公共区。若出价相同，按照本回合行动顺序在前者竞标成功。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G008.png",
+    "locales": {
+      "zh": {
+        "name": "拍卖商",
+        "desc": [
+          "在第7、9、11、13回合行动格上各放2芦苇、3木头、3砖头、2石头。回合开始时用食物拍卖(暗标)。出价最高者得到资源，你获得食物。若你出价最高，食物交给公共区。若出价相同，按照本回合行动顺序在前者竞标成功。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G009_BakersDaughter",
+    "originalId": "G009_BakersDaughter",
+    "gameEdition": "classic",
+    "name": "烘焙师女儿",
+    "deck": "G",
+    "number": 9,
+    "desc": [
+      "当其他玩家打出了E149高级烘焙师或E150烘焙师，你可以立即免费打出此卡。打出此卡时，立即获得一次“烤面包”行动。即使已有其他玩家占据了小麦种子/粮食生产[播烤]行动格，你仍可使用它们。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G009.png",
+    "locales": {
+      "zh": {
+        "name": "烘焙师女儿",
+        "desc": [
+          "当其他玩家打出了E149高级烘焙师或E150烘焙师，你可以立即免费打出此卡。打出此卡时，立即获得一次“烤面包”行动。即使已有其他玩家占据了小麦种子/粮食生产[播烤]行动格，你仍可使用它们。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G010_Bard",
+    "originalId": "G010_Bard",
+    "gameEdition": "classic",
+    "name": "琵琶演奏家",
+    "deck": "G",
+    "number": 10,
+    "desc": [
+      "每当其他玩家使用卖艺积累行动格时，你获得1份食物+1个木头。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G010.png",
+    "locales": {
+      "zh": {
+        "name": "琵琶演奏家",
+        "desc": [
+          "每当其他玩家使用卖艺积累行动格时，你获得1份食物+1个木头。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G011_CarrotCakeBaker",
+    "originalId": "G011_CarrotCakeBaker",
+    "gameEdition": "classic",
+    "name": "胡萝卜烘焙师",
+    "deck": "G",
+    "number": 11,
+    "desc": [
+      "你可以随时将1份蔬菜转化为2份食物。每当你将蔬菜转换为食物时，你获得一次“烤面包”行动。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G011.png",
+    "locales": {
+      "zh": {
+        "name": "胡萝卜烘焙师",
+        "desc": [
+          "你可以随时将1份蔬菜转化为2份食物。每当你将蔬菜转换为食物时，你获得一次“烤面包”行动。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G012_CarrotFarmer",
+    "originalId": "G012_CarrotFarmer",
+    "gameEdition": "classic",
+    "name": "胡萝卜种植者",
+    "deck": "G",
+    "number": 12,
+    "desc": [
+      "放置3份蔬菜在此卡上。每当你使用犁田行动格时，可以支付1份食物，获得此卡上的1份蔬菜。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G012.png",
+    "locales": {
+      "zh": {
+        "name": "胡萝卜种植者",
+        "desc": [
+          "放置3份蔬菜在此卡上。每当你使用犁田行动格时，可以支付1份食物，获得此卡上的1份蔬菜。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G013_ClayStarter",
+    "originalId": "G013_ClayStarter",
+    "gameEdition": "classic",
+    "name": "砖屋起家者",
+    "deck": "G",
+    "number": 13,
+    "desc": [
+      "打出此卡时，若你处于木屋阶段，且只有2间木屋，则你可以支付1份食物，立即将你的木屋免费翻修成砖屋。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G013.png",
+    "locales": {
+      "zh": {
+        "name": "砖屋起家者",
+        "desc": [
+          "打出此卡时，若你处于木屋阶段，且只有2间木屋，则你可以支付1份食物，立即将你的木屋免费翻修成砖屋。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G014_EarlyRiser",
+    "originalId": "G014_EarlyRiser",
+    "gameEdition": "classic",
+    "name": "早起者",
+    "deck": "G",
+    "number": 14,
+    "desc": [
+      "打出时获得1只羊。每个丰收时节，你首先执行繁殖阶段，此时可以将新出生的动物立即转换为食物（即使农场已无容纳空间），然后再进行收割作物和喂养家庭成员阶段"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G014.png",
+    "locales": {
+      "zh": {
+        "name": "早起者",
+        "desc": [
+          "打出时获得1只羊。每个丰收时节，你首先执行繁殖阶段，此时可以将新出生的动物立即转换为食物（即使农场已无容纳空间），然后再进行收割作物和喂养家庭成员阶段"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G015_FamilyCounselor",
+    "originalId": "G015_FamilyCounselor",
+    "gameEdition": "classic",
+    "name": "家庭顾问",
+    "deck": "G",
+    "number": 15,
+    "desc": [
+      "每个回合返家阶段开始前，若你所有的成年家庭成员都在同一游戏版图上，你有2/3/4+名成年家庭成员便可以获得1食物/1小麦/1蔬菜。（不包括食客和新生儿）"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G015.png",
+    "locales": {
+      "zh": {
+        "name": "家庭顾问",
+        "desc": [
+          "每个回合返家阶段开始前，若你所有的成年家庭成员都在同一游戏版图上，你有2/3/4+名成年家庭成员便可以获得1食物/1小麦/1蔬菜。（不包括食客和新生儿）"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G016_FenceHelper",
+    "originalId": "G016_FenceHelper",
+    "gameEdition": "classic",
+    "name": "栅栏帮手",
+    "deck": "G",
+    "number": 16,
+    "desc": [
+      "每当其他玩家执行“围建栅栏”行动时，你可以支付他1食物来执行一次“围建栅栏”行动。其他玩家打出K312栅栏监管员和E40迷你圈地有效。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G016.png",
+    "locales": {
+      "zh": {
+        "name": "栅栏帮手",
+        "desc": [
+          "每当其他玩家执行“围建栅栏”行动时，你可以支付他1食物来执行一次“围建栅栏”行动。其他玩家打出K312栅栏监管员和E40迷你圈地有效。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G017_FishSeller",
+    "originalId": "G017_FishSeller",
+    "gameEdition": "classic",
+    "name": "卖鱼人",
+    "deck": "G",
+    "number": 17,
+    "desc": [
+      "每当你使用钓鱼积累行动格时，你可以花费该行动格上的食物购买最多2个相同或不同的物品。1食物购买1建筑资源，2食物购买1羊/1猪/1小麦，3食物购买1牛/1蔬菜。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G017.png",
+    "locales": {
+      "zh": {
+        "name": "卖鱼人",
+        "desc": [
+          "每当你使用钓鱼积累行动格时，你可以花费该行动格上的食物购买最多2个相同或不同的物品。1食物购买1建筑资源，2食物购买1羊/1猪/1小麦，3食物购买1牛/1蔬菜。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G018_FishermansApprentice",
+    "originalId": "G018_FishermansApprentice",
+    "gameEdition": "classic",
+    "name": "渔夫学徒",
+    "deck": "G",
+    "number": 18,
+    "desc": [
+      "每当其他玩家使用钓鱼积累行动格时，你可以向他支付1份食物，并打出1张职业卡。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G018.png",
+    "locales": {
+      "zh": {
+        "name": "渔夫学徒",
+        "desc": [
+          "每当其他玩家使用钓鱼积累行动格时，你可以向他支付1份食物，并打出1张职业卡。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G019_FoodCritic",
+    "originalId": "G019_FoodCritic",
+    "gameEdition": "classic",
+    "name": "美食评论家",
+    "deck": "G",
+    "number": 19,
+    "desc": [
+      "下一次你使用钓鱼积累行动格时，从游戏供应区拿取1份食物留在此卡上。每次你烤面包或将动物、蔬菜、建筑资源转化为食物时，将被转换物放在此卡上。游戏结束时，此卡上有4/5/6/7+种不同种物品，你获得1/2/4/6分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G019.png",
+    "locales": {
+      "zh": {
+        "name": "美食评论家",
+        "desc": [
+          "下一次你使用钓鱼积累行动格时，从游戏供应区拿取1份食物留在此卡上。每次你烤面包或将动物、蔬菜、建筑资源转化为食物时，将被转换物放在此卡上。游戏结束时，此卡上有4/5/6/7+种不同种物品，你获得1/2/4/6分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G020_Freeloader",
+    "originalId": "G020_Freeloader",
+    "gameEdition": "classic",
+    "name": "特权人士",
+    "deck": "G",
+    "number": 20,
+    "desc": [
+      "每回合你的第一名家庭成员可以使用任意行动格，即使已有其他玩家占据。你的第一名家庭成员不能使用聚会场所[起始玩家]行动格，即使该行动格无人占据。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G020.png",
+    "locales": {
+      "zh": {
+        "name": "特权人士",
+        "desc": [
+          "每回合你的第一名家庭成员可以使用任意行动格，即使已有其他玩家占据。你的第一名家庭成员不能使用聚会场所[起始玩家]行动格，即使该行动格无人占据。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G021_Hermit",
+    "originalId": "G021_Hermit",
+    "gameEdition": "classic",
+    "name": "隐士",
+    "deck": "G",
+    "number": 21,
+    "desc": [
+      "游戏结束时，若你面前有且仅有这一张职业卡，你获得6分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G021.png",
+    "locales": {
+      "zh": {
+        "name": "隐士",
+        "desc": [
+          "游戏结束时，若你面前有且仅有这一张职业卡，你获得6分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G022_GlassBlower",
+    "originalId": "G022_GlassBlower",
+    "gameEdition": "classic",
+    "name": "玻璃工",
+    "deck": "G",
+    "number": 22,
+    "desc": [
+      "如果你拥有烤炉，每个丰收时节你可以将1/2块砖头转换为3/5份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G022.png",
+    "locales": {
+      "zh": {
+        "name": "玻璃工",
+        "desc": [
+          "如果你拥有烤炉，每个丰收时节你可以将1/2块砖头转换为3/5份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G023_Glutton",
+    "originalId": "G023_Glutton",
+    "gameEdition": "classic",
+    "name": "贪吃鬼",
+    "deck": "G",
+    "number": 23,
+    "desc": [
+      "丰每个收时节的家庭成员喂养阶段，你可以额外支付3份食物获得1分。你可以用此卡至多获得6分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G023.png",
+    "locales": {
+      "zh": {
+        "name": "贪吃鬼",
+        "desc": [
+          "丰每个收时节的家庭成员喂养阶段，你可以额外支付3份食物获得1分。你可以用此卡至多获得6分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G024_Grafter",
+    "originalId": "G024_Grafter",
+    "gameEdition": "classic",
+    "name": "嫁接育种商",
+    "deck": "G",
+    "number": 24,
+    "desc": [
+      "每个丰收时节的动物繁殖阶段，如果你个人供应区里的小麦/蔬菜数量大于等于2,则你额外获得1份小麦/蔬菜。农田里的作物不参与计算。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G024.png",
+    "locales": {
+      "zh": {
+        "name": "嫁接育种商",
+        "desc": [
+          "每个丰收时节的动物繁殖阶段，如果你个人供应区里的小麦/蔬菜数量大于等于2,则你额外获得1份小麦/蔬菜。农田里的作物不参与计算。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G025_Businesswoman",
+    "originalId": "G025_Businesswoman",
+    "gameEdition": "classic",
+    "name": "女商人",
+    "deck": "G",
+    "number": 25,
+    "desc": [
+      "打出此卡时，你可以立即打出至多两张发展卡。(需满足条件并正常支付费用)"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G025.png",
+    "locales": {
+      "zh": {
+        "name": "女商人",
+        "desc": [
+          "打出此卡时，你可以立即打出至多两张发展卡。(需满足条件并正常支付费用)"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G026_GrainFarmer",
+    "originalId": "G026_GrainFarmer",
+    "gameEdition": "classic",
+    "name": "谷物农夫",
+    "deck": "G",
+    "number": 26,
+    "desc": [
+      "每个丰收时节的作物收获阶段开始前，如果你的农田里（包括卡牌田）有至少1/4/7/10+份小麦，获得1/2/3/4份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G026.png",
+    "locales": {
+      "zh": {
+        "name": "谷物农夫",
+        "desc": [
+          "每个丰收时节的作物收获阶段开始前，如果你的农田里（包括卡牌田）有至少1/4/7/10+份小麦，获得1/2/3/4份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G027_GrainLover",
+    "originalId": "G027_GrainLover",
+    "gameEdition": "classic",
+    "name": "谷物情人",
+    "deck": "G",
+    "number": 27,
+    "desc": [
+      "如果你在第7回合或之前打出此卡，可以立即犁一块田，并且可以在这块田里播种1份小麦（个人供应区），这算作1次播种行动。游戏结束时，小麦数量最多的玩家额外获得2分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G027.png",
+    "locales": {
+      "zh": {
+        "name": "谷物情人",
+        "desc": [
+          "如果你在第7回合或之前打出此卡，可以立即犁一块田，并且可以在这块田里播种1份小麦（个人供应区），这算作1次播种行动。游戏结束时，小麦数量最多的玩家额外获得2分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G028_Grump",
+    "originalId": "G028_Grump",
+    "gameEdition": "classic",
+    "name": "脾气暴躁者",
+    "deck": "G",
+    "number": 28,
+    "desc": [
+      "打出此卡时，若距离游戏结束还有1/3/6/9个完整回合，则你立即获得1/2/3/4根木头。游戏结束时，家庭成员最少的玩家额外获得2分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G028.png",
+    "locales": {
+      "zh": {
+        "name": "脾气暴躁者",
+        "desc": [
+          "打出此卡时，若距离游戏结束还有1/3/6/9个完整回合，则你立即获得1/2/3/4根木头。游戏结束时，家庭成员最少的玩家额外获得2分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G029_HarborMaster",
+    "originalId": "G029_HarborMaster",
+    "gameEdition": "classic",
+    "name": "港口管理员",
+    "deck": "G",
+    "number": 29,
+    "desc": [
+      "每当你使用钓鱼积累行动格时，额外获得1捆芦苇；每当其他玩家使用钓鱼积累行动格时，你获得1捆芦苇+1份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G029.png",
+    "locales": {
+      "zh": {
+        "name": "港口管理员",
+        "desc": [
+          "每当你使用钓鱼积累行动格时，额外获得1捆芦苇；每当其他玩家使用钓鱼积累行动格时，你获得1捆芦苇+1份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G030_Headmaster",
+    "originalId": "G030_Headmaster",
+    "gameEdition": "classic",
+    "name": "校长",
+    "deck": "G",
+    "number": 30,
+    "desc": [
+      "每当其他玩家打出一张职业卡时，你从游戏供应区拿取1食物放在此卡上。当你打出职业卡时，可以使用此卡上的食物。游戏结束时，在4/5+人游戏中，此卡上每有3/4份食物，你便额外获得1分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G030.png",
+    "locales": {
+      "zh": {
+        "name": "校长",
+        "desc": [
+          "每当其他玩家打出一张职业卡时，你从游戏供应区拿取1食物放在此卡上。当你打出职业卡时，可以使用此卡上的食物。游戏结束时，在4/5+人游戏中，此卡上每有3/4份食物，你便额外获得1分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G031_Helper",
+    "originalId": "G031_Helper",
+    "gameEdition": "classic",
+    "name": "帮工",
+    "deck": "G",
+    "number": 31,
+    "desc": [
+      "即使已有其他玩家占据了能提供“翻修”/“扩建房屋”/“打出主要/次要发展卡”行动的行动格，你仍可使用它们。自己占用则不可以第2次使用。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G031.png",
+    "locales": {
+      "zh": {
+        "name": "帮工",
+        "desc": [
+          "即使已有其他玩家占据了能提供“翻修”/“扩建房屋”/“打出主要/次要发展卡”行动的行动格，你仍可使用它们。自己占用则不可以第2次使用。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G032_Hobbyist",
+    "originalId": "G032_Hobbyist",
+    "gameEdition": "classic",
+    "name": "业余爱好者",
+    "deck": "G",
+    "number": 32,
+    "desc": [
+      "每当其他玩家打出职业卡时，你可以支付1份食物到公共区，打出一张次要发展卡；或支付2份食物打出一张主要发展卡。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G032.png",
+    "locales": {
+      "zh": {
+        "name": "业余爱好者",
+        "desc": [
+          "每当其他玩家打出职业卡时，你可以支付1份食物到公共区，打出一张次要发展卡；或支付2份食物打出一张主要发展卡。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G033_HoeMaker",
+    "originalId": "G033_HoeMaker",
+    "gameEdition": "classic",
+    "name": "锄头制造商",
+    "deck": "G",
+    "number": 33,
+    "desc": [
+      "每当你围建至少1根栅栏时，可以额外支付1份食物，犁一块田。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G033.png",
+    "locales": {
+      "zh": {
+        "name": "锄头制造商",
+        "desc": [
+          "每当你围建至少1根栅栏时，可以额外支付1份食物，犁一块田。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G034_Inventor",
+    "originalId": "G034_Inventor",
+    "gameEdition": "classic",
+    "name": "发明家",
+    "deck": "G",
+    "number": 34,
+    "desc": [
+      "所有费用印有需要花费4个或以上资源的发展卡，当你打出时皆可以少付任意一个资源。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G034.png",
+    "locales": {
+      "zh": {
+        "name": "发明家",
+        "desc": [
+          "所有费用印有需要花费4个或以上资源的发展卡，当你打出时皆可以少付任意一个资源。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G035_JobSeeker",
+    "originalId": "G035_JobSeeker",
+    "gameEdition": "classic",
+    "name": "求职者",
+    "deck": "G",
+    "number": 35,
+    "desc": [
+      "此卡不算为职业。每回合开始前，若你打出的职业数量少于其他两个玩家，则你可以支付1份食物打出一张职业卡。用该方式打出的职业卡不能收回手中。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G035.png",
+    "locales": {
+      "zh": {
+        "name": "求职者",
+        "desc": [
+          "此卡不算为职业。每回合开始前，若你打出的职业数量少于其他两个玩家，则你可以支付1份食物打出一张职业卡。用该方式打出的职业卡不能收回手中。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G036_LateBloomer",
+    "originalId": "G036_LateBloomer",
+    "gameEdition": "classic",
+    "name": "中年成家者",
+    "deck": "G",
+    "number": 36,
+    "desc": [
+      "任何时候，若你的家庭成员数量少于其他所有玩家，并且你家中有居住空间，则你可以立即获得1名新的家庭成员。此家庭成员不算作“新生儿”，本回合可以被派遣。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G036.png",
+    "locales": {
+      "zh": {
+        "name": "中年成家者",
+        "desc": [
+          "任何时候，若你的家庭成员数量少于其他所有玩家，并且你家中有居住空间，则你可以立即获得1名新的家庭成员。此家庭成员不算作“新生儿”，本回合可以被派遣。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G037_LateSleeper",
+    "originalId": "G037_LateSleeper",
+    "gameEdition": "classic",
+    "name": "晚睡者",
+    "deck": "G",
+    "number": 37,
+    "desc": [
+      "每回合开始时，你声明你是否“晚睡”。若你声明“晚睡”，则你本回合获得1名食客标记，并且等所有其他玩家的家庭成员全部放置完成后，你方可放置你的家庭成员和食客标记。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G037.png",
+    "locales": {
+      "zh": {
+        "name": "晚睡者",
+        "desc": [
+          "每回合开始时，你声明你是否“晚睡”。若你声明“晚睡”，则你本回合获得1名食客标记，并且等所有其他玩家的家庭成员全部放置完成后，你方可放置你的家庭成员和食客标记。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G038_MasterBakersApprentice",
+    "originalId": "G038_MasterBakersApprentice",
+    "gameEdition": "classic",
+    "name": "烘焙师学徒",
+    "deck": "G",
+    "number": 38,
+    "desc": [
+      "打出此卡时，立即获得1次“烤面包”行动。并且在一个已有的行动格上放置一个标记物，从此该行动格增加了“和/或烤面包”行动。当其他玩家使用此行动格执行“烤面包”行动时，你获得1份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G038.png",
+    "locales": {
+      "zh": {
+        "name": "烘焙师学徒",
+        "desc": [
+          "打出此卡时，立即获得1次“烤面包”行动。并且在一个已有的行动格上放置一个标记物，从此该行动格增加了“和/或烤面包”行动。当其他玩家使用此行动格执行“烤面包”行动时，你获得1份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G039_Mathematician",
+    "originalId": "G039_Mathematician",
+    "gameEdition": "classic",
+    "name": "数学家",
+    "deck": "G",
+    "number": 39,
+    "desc": [
+      "第6回合起，资源补充阶段完成后，如果存在有两个或以上行动格中木头数量相等，则你可以选择其中一个行动格拿取1个木头。砖头同理。在5+人游戏中，石头同理。每回合只能用此方法拿取1个资源。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G039.png",
+    "locales": {
+      "zh": {
+        "name": "数学家",
+        "desc": [
+          "第6回合起，资源补充阶段完成后，如果存在有两个或以上行动格中木头数量相等，则你可以选择其中一个行动格拿取1个木头。砖头同理。在5+人游戏中，石头同理。每回合只能用此方法拿取1个资源。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+]
+const batch14: readonly GeneratedCatalogCardDefinition[] = [
+  {
+    "id": "OLD_G040_Miner",
+    "originalId": "G040_Miner",
+    "gameEdition": "classic",
+    "name": "矿工",
+    "deck": "G",
+    "number": 40,
+    "desc": [
+      "每当你使用临时工行动格后，将两个标记物放在已翻开的第2季或第4季的采石场[石头积累行动格]上。此回合的返家阶段，选择并拿取其中1个采石场上的所有石头。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G040.png",
+    "locales": {
+      "zh": {
+        "name": "矿工",
+        "desc": [
+          "每当你使用临时工行动格后，将两个标记物放在已翻开的第2季或第4季的采石场[石头积累行动格]上。此回合的返家阶段，选择并拿取其中1个采石场上的所有石头。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G041_Mooch",
+    "originalId": "G041_Mooch",
+    "gameEdition": "classic",
+    "name": "流浪汉",
+    "deck": "G",
+    "number": 41,
+    "desc": [
+      "打出此卡时，选择1名其他玩家。在下一个丰收时节结束前，你可以使用该玩家的所有发展卡来将你自己的动物、小麦、蔬菜以及建筑资源转换成食物。（该玩家可以正常使用发展卡）"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G041.png",
+    "locales": {
+      "zh": {
+        "name": "流浪汉",
+        "desc": [
+          "打出此卡时，选择1名其他玩家。在下一个丰收时节结束前，你可以使用该玩家的所有发展卡来将你自己的动物、小麦、蔬菜以及建筑资源转换成食物。（该玩家可以正常使用发展卡）"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G042_OldestOccupation",
+    "originalId": "G042_OldestOccupation",
+    "gameEdition": "classic",
+    "name": "最古老的职业",
+    "deck": "G",
+    "number": 42,
+    "desc": [
+      "从第5回合开始，其他玩家使用临时工行动格时，可以支付给你2份食物来执行一次生儿育女行动（家中有居住空间）。你也可以执行此效果且无需支付食物"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G042.png",
+    "locales": {
+      "zh": {
+        "name": "最古老的职业",
+        "desc": [
+          "从第5回合开始，其他玩家使用临时工行动格时，可以支付给你2份食物来执行一次生儿育女行动（家中有居住空间）。你也可以执行此效果且无需支付食物"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G043_Opportunist",
+    "originalId": "G043_Opportunist",
+    "gameEdition": "classic",
+    "name": "机会主义者",
+    "deck": "G",
+    "number": 43,
+    "desc": [
+      "当你派遣你的最后1名家庭成员取得行动格上的建筑资源时，如果其中某种建筑资源你本回合没有在行动格上取得过，则你可以额外获得一个（若有多种，你选择其中一种）"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G043.png",
+    "locales": {
+      "zh": {
+        "name": "机会主义者",
+        "desc": [
+          "当你派遣你的最后1名家庭成员取得行动格上的建筑资源时，如果其中某种建筑资源你本回合没有在行动格上取得过，则你可以额外获得一个（若有多种，你选择其中一种）"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G044_PearlSeeker",
+    "originalId": "G044_PearlSeeker",
+    "gameEdition": "classic",
+    "name": "采珠人",
+    "deck": "G",
+    "number": 44,
+    "desc": [
+      "每当你使用钓鱼积累行动格时，额外获得1个石头。此外，你可以使用钓鱼积累行动格上的食物购买石头，每个石头需要2份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G044.png",
+    "locales": {
+      "zh": {
+        "name": "采珠人",
+        "desc": [
+          "每当你使用钓鱼积累行动格时，额外获得1个石头。此外，你可以使用钓鱼积累行动格上的食物购买石头，每个石头需要2份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G045_Pilgrim",
+    "originalId": "G045_Pilgrim",
+    "gameEdition": "classic",
+    "name": "朝圣者",
+    "deck": "G",
+    "number": 45,
+    "desc": [
+      "打出此卡前，先获得2份食物。每个回合开始前，若你家中没有食物，则你获得1份食物；若你家中没有任何建筑资源，则你获得任意1个建筑资源。你可以任意丢弃自己的资源。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G045.png",
+    "locales": {
+      "zh": {
+        "name": "朝圣者",
+        "desc": [
+          "打出此卡前，先获得2份食物。每个回合开始前，若你家中没有食物，则你获得1份食物；若你家中没有任何建筑资源，则你获得任意1个建筑资源。你可以任意丢弃自己的资源。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G046_PondWatchman",
+    "originalId": "G046_PondWatchman",
+    "gameEdition": "classic",
+    "name": "池塘看守员",
+    "deck": "G",
+    "number": 46,
+    "desc": [
+      "在每回合的回家阶段，若你有家庭成员在钓鱼积累行动格上，你可以支付1份食物，然后移动该家庭成员去使用一个未被占用的木头积累行动格，拿取上面的木头。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G046.png",
+    "locales": {
+      "zh": {
+        "name": "池塘看守员",
+        "desc": [
+          "在每回合的回家阶段，若你有家庭成员在钓鱼积累行动格上，你可以支付1份食物，然后移动该家庭成员去使用一个未被占用的木头积累行动格，拿取上面的木头。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G047_ResourceCollector",
+    "name": "资源采集者",
+    "deck": "G",
+    "number": 47,
+    "category": "BUILDING_RESOURCE_PROVIDER",
+    "desc": [
+      "在之后4个回合的行动格上分别放置1个木头、1个砖头、1捆芦苇和1个石头（顺序由你选择）。在这些回合开始时，你获得对应的物品。"
+    ],
+    "cost": {},
+    "players": "3+",
+    "originalId": "G047_ResourceCollector",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/G047.png",
+    "locales": {
+      "zh": {
+        "name": "资源采集者",
+        "desc": [
+          "在之后4个回合的行动格上分别放置1个木头、1个砖头、1捆芦苇和1个石头（顺序由你选择）。在这些回合开始时，你获得对应的物品。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G048_Ringmaster",
+    "originalId": "G048_Ringmaster",
+    "gameEdition": "classic",
+    "name": "马戏团领班",
+    "deck": "G",
+    "number": 48,
+    "desc": [
+      "每当你使用卖艺积累行动格后，你可以立即打出1张次要发展卡；或者支付1份小麦，打出1张主要发展卡。（仍需满足条件并支付资源）"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G048.png",
+    "locales": {
+      "zh": {
+        "name": "马戏团领班",
+        "desc": [
+          "每当你使用卖艺积累行动格后，你可以立即打出1张次要发展卡；或者支付1份小麦，打出1张主要发展卡。（仍需满足条件并支付资源）"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G049_SeedMaster",
+    "originalId": "G049_SeedMaster",
+    "gameEdition": "classic",
+    "name": "播种能手",
+    "deck": "G",
+    "number": 49,
+    "desc": [
+      "你可以随时将个人供应区的1份蔬菜转化为1份小麦。你可以随时支付1份食物，将个人供应区的1份小麦转化为1份蔬菜。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G049.png",
+    "locales": {
+      "zh": {
+        "name": "播种能手",
+        "desc": [
+          "你可以随时将个人供应区的1份蔬菜转化为1份小麦。你可以随时支付1份食物，将个人供应区的1份小麦转化为1份蔬菜。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G050_Singer",
+    "originalId": "G050_Singer",
+    "gameEdition": "classic",
+    "name": "歌唱家",
+    "deck": "G",
+    "number": 50,
+    "desc": [
+      "打出此卡时，立即获得2个建筑资源。（任意选择）"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G050.png",
+    "locales": {
+      "zh": {
+        "name": "歌唱家",
+        "desc": [
+          "打出此卡时，立即获得2个建筑资源。（任意选择）"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G051_StoneDeliveryman",
+    "originalId": "G051_StoneDeliveryman",
+    "gameEdition": "classic",
+    "name": "运石工",
+    "deck": "G",
+    "number": 51,
+    "desc": [
+      "在第8,10,12和14回合的行动格上各放1个石头。这些回合开始时，你获得对应的石头。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G051.png",
+    "locales": {
+      "zh": {
+        "name": "运石工",
+        "desc": [
+          "在第8,10,12和14回合的行动格上各放1个石头。这些回合开始时，你获得对应的石头。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G052_StoneTrader",
+    "originalId": "G052_StoneTrader",
+    "gameEdition": "classic",
+    "name": "石头贸易商",
+    "deck": "G",
+    "number": 52,
+    "desc": [
+      "每当你在行动格上获得石头时，可以立即支付1份食物，打出任意一张费用印有石头的发展卡。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G052.png",
+    "locales": {
+      "zh": {
+        "name": "石头贸易商",
+        "desc": [
+          "每当你在行动格上获得石头时，可以立即支付1份食物，打出任意一张费用印有石头的发展卡。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G053_Stonepiler",
+    "originalId": "G053_Stonepiler",
+    "gameEdition": "classic",
+    "name": "石头堆砌工",
+    "deck": "G",
+    "number": 53,
+    "desc": [
+      "每当你建造马厩或围栅栏时，可以用石头代替全部或部分木头，每个石头可代替2根木头。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G053.png",
+    "locales": {
+      "zh": {
+        "name": "石头堆砌工",
+        "desc": [
+          "每当你建造马厩或围栅栏时，可以用石头代替全部或部分木头，每个石头可代替2根木头。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G054_TaxCollector",
+    "originalId": "G054_TaxCollector",
+    "gameEdition": "classic",
+    "name": "收税官",
+    "deck": "G",
+    "number": 54,
+    "desc": [
+      "当其他玩家打出主要发展卡时，你可以获得他支付的资源中的其中1个。或者，你可以支付1份食物至游戏供应区，获得他支付的资源中的其中2个。花费的"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G054.png",
+    "locales": {
+      "zh": {
+        "name": "收税官",
+        "desc": [
+          "当其他玩家打出主要发展卡时，你可以获得他支付的资源中的其中1个。或者，你可以支付1份食物至游戏供应区，获得他支付的资源中的其中2个。花费的"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G055_TrueDigger",
+    "originalId": "G055_TrueDigger",
+    "gameEdition": "classic",
+    "name": "松露采集者",
+    "deck": "G",
+    "number": 55,
+    "desc": [
+      "每当你使用木头积累行动格时，若你农场中有1/2/3+头猪，则你额外获得1/2/3份食物。卡牌上的"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G055.png",
+    "locales": {
+      "zh": {
+        "name": "松露采集者",
+        "desc": [
+          "每当你使用木头积累行动格时，若你农场中有1/2/3+头猪，则你额外获得1/2/3份食物。卡牌上的"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G056_Understudy",
+    "originalId": "G056_Understudy",
+    "gameEdition": "classic",
+    "name": "替身演员",
+    "deck": "G",
+    "number": 56,
+    "desc": [
+      "如果某行动格上有且仅有一名你的家庭成员，你可以再派遣一名家庭成员去使用此行动格。（新生儿算作家庭成员）"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G056.png",
+    "locales": {
+      "zh": {
+        "name": "替身演员",
+        "desc": [
+          "如果某行动格上有且仅有一名你的家庭成员，你可以再派遣一名家庭成员去使用此行动格。（新生儿算作家庭成员）"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G057_Vegetarian",
+    "originalId": "G057_Vegetarian",
+    "gameEdition": "classic",
+    "name": "素食主义者",
+    "deck": "G",
+    "number": 57,
+    "desc": [
+      "打出此卡后，你再也不能将动物转换成食物。当你转换小麦或蔬菜成为食物时（包括直接食用），可以额外获得1份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G057.png",
+    "locales": {
+      "zh": {
+        "name": "素食主义者",
+        "desc": [
+          "打出此卡后，你再也不能将动物转换成食物。当你转换小麦或蔬菜成为食物时（包括直接食用），可以额外获得1份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G058_VillageFarmer",
+    "originalId": "G058_VillageFarmer",
+    "gameEdition": "classic",
+    "name": "乡村农夫",
+    "deck": "G",
+    "number": 58,
+    "desc": [
+      "打出此卡时，若距离游戏结束还有1/3/6/9个完整回合，则你立即获得1/2/3/4根木头。游戏结束时，拥有田地板块最多的玩家都获得3分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G058.png",
+    "locales": {
+      "zh": {
+        "name": "乡村农夫",
+        "desc": [
+          "打出此卡时，若距离游戏结束还有1/3/6/9个完整回合，则你立即获得1/2/3/4根木头。游戏结束时，拥有田地板块最多的玩家都获得3分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G059_Wheedler",
+    "originalId": "G059_Wheedler",
+    "gameEdition": "classic",
+    "name": "吹牛的骗子",
+    "deck": "G",
+    "number": 59,
+    "desc": [
+      "每当你从行动格上获得食物时，可以额外获得1份食物。（通过卡牌获得的食物不算）"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G059.png",
+    "locales": {
+      "zh": {
+        "name": "吹牛的骗子",
+        "desc": [
+          "每当你从行动格上获得食物时，可以额外获得1份食物。（通过卡牌获得的食物不算）"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G060_Wintercrafter",
+    "originalId": "G060_Wintercrafter",
+    "gameEdition": "classic",
+    "name": "织毛衣的人",
+    "deck": "G",
+    "number": 60,
+    "desc": [
+      "每个丰收时节，在之间喂养家庭成员之前，你可以打出1张次要发展卡，或支付2份食物打出1张主要发展卡。（仍需满足条件并支付资源）"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G060.png",
+    "locales": {
+      "zh": {
+        "name": "织毛衣的人",
+        "desc": [
+          "每个丰收时节，在之间喂养家庭成员之前，你可以打出1张次要发展卡，或支付2份食物打出1张主要发展卡。（仍需满足条件并支付资源）"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_G061_Almanac",
+    "originalId": "G061_Almanac",
+    "gameEdition": "classic",
+    "name": "历书",
+    "deck": "G",
+    "number": 61,
+    "desc": [
+      "立即执行1次收割阶段和繁殖阶段使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {
+      "wood": 1,
+      "stone": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": true,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G061.png",
+    "locales": {
+      "zh": {
+        "name": "历书",
+        "desc": [
+          "立即执行1次收割阶段和繁殖阶段使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G062_AnimalFarm",
+    "originalId": "G062_AnimalFarm",
+    "gameEdition": "classic",
+    "name": "动物农场",
+    "deck": "G",
+    "number": 62,
+    "desc": [
+      "每回合限1次：那你可以支付1只任意动物获得1个食客，你可以在本回合中派遣该食客，回合结束退还至游戏供应区。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "2种动物",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G062.png",
+    "locales": {
+      "zh": {
+        "name": "动物农场",
+        "desc": [
+          "每回合限1次：那你可以支付1只任意动物获得1个食客，你可以在本回合中派遣该食客，回合结束退还至游戏供应区。"
+        ],
+        "prerequisite": "2种动物"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G063_BakingField",
+    "originalId": "G063_BakingField",
+    "gameEdition": "classic",
+    "name": "烘焙田",
+    "deck": "G",
+    "number": 63,
+    "desc": [
+      "你可以在此卡上播种小麦，此卡上收割的小麦必须立刻通过“烤面包”行动转化成食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "2 Occupations和烤面包发展卡",
+    "occupationPrerequisites": {
+      "min": 2
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G063.png",
+    "locales": {
+      "zh": {
+        "name": "烘焙田",
+        "desc": [
+          "你可以在此卡上播种小麦，此卡上收割的小麦必须立刻通过“烤面包”行动转化成食物。"
+        ],
+        "prerequisite": "职业×2和烤面包发展卡"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G064_BarteringHut",
+    "name": "交易小屋",
+    "deck": "G",
+    "number": 64,
+    "category": "PASSING_-_ANIMAL",
+    "desc": [
+      "打出时你可以购买至多2只任意动物。羊/猪/牛分别花费2/3/4个建筑资源使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "passing": true,
+    "originalId": "G064_BarteringHut",
+    "gameEdition": "classic",
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/G064.png",
+    "locales": {
+      "zh": {
+        "name": "交易小屋",
+        "desc": [
+          "打出时你可以购买至多2只任意动物。羊/猪/牛分别花费2/3/4个建筑资源使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G065_BeehiveOven",
+    "originalId": "G065_BeehiveOven",
+    "gameEdition": "classic",
+    "name": "蜂窝烤炉",
+    "deck": "G",
+    "number": 65,
+    "desc": [
+      "打出时你获得一次“烤面包”行动。你执行“烤面包”行动时可以使用此卡将至多1份小麦转换成4份食物，当你在“烤面包”行动中不使用此卡时，你额外获得1份食物"
+    ],
+    "cost": {
+      "stone": 2
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G065.png",
+    "locales": {
+      "zh": {
+        "name": "蜂窝烤炉",
+        "desc": [
+          "打出时你获得一次“烤面包”行动。你执行“烤面包”行动时可以使用此卡将至多1份小麦转换成4份食物，当你在“烤面包”行动中不使用此卡时，你额外获得1份食物"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G066_Birthstone",
+    "originalId": "G066_Birthstone",
+    "gameEdition": "classic",
+    "name": "诞生石",
+    "deck": "G",
+    "number": 66,
+    "desc": [
+      "每次你执行“生娃”行动时，你可以支付1石头获得1分。如果你在打出此卡的回合执行过“生娃”行动，你也可以支付1石头获得1分"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G066.png",
+    "locales": {
+      "zh": {
+        "name": "诞生石",
+        "desc": [
+          "每次你执行“生娃”行动时，你可以支付1石头获得1分。如果你在打出此卡的回合执行过“生娃”行动，你也可以支付1石头获得1分"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G067_BountifulHarvest",
+    "originalId": "G067_BountifulHarvest",
+    "gameEdition": "classic",
+    "name": "丰收",
+    "deck": "G",
+    "number": 67,
+    "desc": [
+      "在每个丰收时节，如果你收割了至少2个资源且繁殖了至少1只动物，从游戏供应区拿取1份食物放在此卡上，任何时候你可以使用此卡上的食物。游戏结束时，此卡上的每份食物使你获得1分"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "2 Occupations",
+    "occupationPrerequisites": {
+      "min": 2
+    },
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G067.png",
+    "locales": {
+      "zh": {
+        "name": "丰收",
+        "desc": [
+          "在每个丰收时节，如果你收割了至少2个资源且繁殖了至少1只动物，从游戏供应区拿取1份食物放在此卡上，任何时候你可以使用此卡上的食物。游戏结束时，此卡上的每份食物使你获得1分"
+        ],
+        "prerequisite": "职业×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G068_Chronicle",
+    "originalId": "G068_Chronicle",
+    "gameEdition": "classic",
+    "name": "编年史",
+    "deck": "G",
+    "number": 68,
+    "desc": [
+      "在每个未打出的主要发展卡上各放置1份食物，当这些主要发展卡被打出时，你获得上面对应的食物。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "1 Occupations",
+    "occupationPrerequisites": {
+      "min": 1
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G068.png",
+    "locales": {
+      "zh": {
+        "name": "编年史",
+        "desc": [
+          "在每个未打出的主要发展卡上各放置1份食物，当这些主要发展卡被打出时，你获得上面对应的食物。"
+        ],
+        "prerequisite": "职业×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G069_ClearCutting",
+    "originalId": "G069_ClearCutting",
+    "gameEdition": "classic",
+    "name": "皆伐",
+    "deck": "G",
+    "number": 69,
+    "desc": [
+      "你每犁一块田就获得1根木头。卡牌田不算。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "1 Occupations",
+    "occupationPrerequisites": {
+      "min": 1
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G069.png",
+    "locales": {
+      "zh": {
+        "name": "皆伐",
+        "desc": [
+          "你每犁一块田就获得1根木头。卡牌田不算。"
+        ],
+        "prerequisite": "职业×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G070_Corral",
+    "originalId": "G070_Corral",
+    "gameEdition": "classic",
+    "name": "畜栏",
+    "deck": "G",
+    "number": 70,
+    "desc": [
+      "你的每个与房屋正交相邻的空田可以容纳2只同种动物。游戏结束时，每个如此饲养有动物的空田额外获得1分。"
+    ],
+    "cost": {
+      "wood": 3
+    },
+    "vp": 0,
+    "prerequisite": "1 Occupations",
+    "occupationPrerequisites": {
+      "min": 1
+    },
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G070.png",
+    "locales": {
+      "zh": {
+        "name": "畜栏",
+        "desc": [
+          "你的每个与房屋正交相邻的空田可以容纳2只同种动物。游戏结束时，每个如此饲养有动物的空田额外获得1分。"
+        ],
+        "prerequisite": "职业×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G071_CowBell",
+    "originalId": "G071_CowBell",
+    "gameEdition": "classic",
+    "name": "牛铃",
+    "deck": "G",
+    "number": 71,
+    "desc": [
+      "你可以在你未使用的每个空格上饲养至多2只牛，如此饲养的牛不能超过4只。(空地仍视作未使用)"
+    ],
+    "cost": {
+      "clay": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G071.png",
+    "locales": {
+      "zh": {
+        "name": "牛铃",
+        "desc": [
+          "你可以在你未使用的每个空格上饲养至多2只牛，如此饲养的牛不能超过4只。(空地仍视作未使用)"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G072_Dunghill",
+    "originalId": "G072_Dunghill",
+    "gameEdition": "classic",
+    "name": "粪肥",
+    "deck": "G",
+    "number": 72,
+    "desc": [
+      "在作物收割阶段，如果你有2/3种动物，则你可以在1/2块已播种的田地上添加一份对应资源"
+    ],
+    "cost": {
+      "sheep": 1
+    },
+    "vp": 1,
+    "prerequisite": "2 Occupations",
+    "occupationPrerequisites": {
+      "min": 2
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G072.png",
+    "locales": {
+      "zh": {
+        "name": "粪肥",
+        "desc": [
+          "在作物收割阶段，如果你有2/3种动物，则你可以在1/2块已播种的田地上添加一份对应资源"
+        ],
+        "prerequisite": "职业×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G073_ErrantOven",
+    "originalId": "G073_ErrantOven",
+    "gameEdition": "classic",
+    "name": "移动烤炉",
+    "deck": "G",
+    "number": 73,
+    "desc": [
+      "立即获得1次“烤面包”行动。使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "passing": true,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G073.png",
+    "locales": {
+      "zh": {
+        "name": "移动烤炉",
+        "desc": [
+          "立即获得1次“烤面包”行动。使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G074_ExtraEort",
+    "originalId": "G074_ExtraEort",
+    "gameEdition": "classic",
+    "name": "额外努力",
+    "deck": "G",
+    "number": 74,
+    "desc": [
+      "打出时你可以打出一张主要发展卡(正常支付)使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {
+      "food": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": true,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G074.png",
+    "locales": {
+      "zh": {
+        "name": "额外努力",
+        "desc": [
+          "打出时你可以打出一张主要发展卡(正常支付)使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G075_FarmersMarket",
+    "name": "农夫市场",
+    "deck": "G",
+    "number": 75,
+    "category": "PASSING_-_CROP",
+    "desc": [
+      "打出时你获得1个蔬菜使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {
+      "food": 2
+    },
+    "passing": true,
+    "originalId": "G075_FarmersMarket",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/G075.png",
+    "locales": {
+      "zh": {
+        "name": "农夫市场",
+        "desc": [
+          "打出时你获得1个蔬菜使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G076_GardeningTools",
+    "originalId": "G076_GardeningTools",
+    "gameEdition": "classic",
+    "name": "花园工具",
+    "deck": "G",
+    "number": 76,
+    "desc": [
+      "每当其他玩家执行“播种”行动时，你可以支付1份食物到游戏供应区并执行一次“播种”行动"
+    ],
+    "cost": {
+      "wood": 2
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G076.png",
+    "locales": {
+      "zh": {
+        "name": "花园工具",
+        "desc": [
+          "每当其他玩家执行“播种”行动时，你可以支付1份食物到游戏供应区并执行一次“播种”行动"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G077_Gimlet",
+    "originalId": "G077_Gimlet",
+    "gameEdition": "classic",
+    "name": "手钻",
+    "deck": "G",
+    "number": 77,
+    "desc": [
+      "你建造的每间木屋/砖屋/石屋费用减少1木/砖/石头。每个轮次中，你建造的每个马厩费用减少1木，总花费至多减少2木"
+    ],
+    "cost": {
+      "wood": 1,
+      "clay": 1
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G077.png",
+    "locales": {
+      "zh": {
+        "name": "手钻",
+        "desc": [
+          "你建造的每间木屋/砖屋/石屋费用减少1木/砖/石头。每个轮次中，你建造的每个马厩费用减少1木，总花费至多减少2木"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G078_GrainMarket",
+    "originalId": "G078_GrainMarket",
+    "gameEdition": "classic",
+    "name": "小麦市场",
+    "deck": "G",
+    "number": 78,
+    "desc": [
+      "每次你收割了至少1个小麦后，你可以将1个小麦换成1个蔬菜打出条件麦田包括卡牌田"
+    ],
+    "cost": {},
+    "vp": 1,
+    "prerequisite": "3 Grain Fields",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G078.png",
+    "locales": {
+      "zh": {
+        "name": "小麦市场",
+        "desc": [
+          "每次你收割了至少1个小麦后，你可以将1个小麦换成1个蔬菜打出条件麦田包括卡牌田"
+        ],
+        "prerequisite": "麦田×3"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G079_Hammer",
+    "originalId": "G079_Hammer",
+    "gameEdition": "classic",
+    "name": "锤子",
+    "deck": "G",
+    "number": 79,
+    "desc": [
+      "打出时你必须向其他每个至少建造了1个栅栏的玩家支付1木头，然后获得一次“围栅栏”行动使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": true,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G079.png",
+    "locales": {
+      "zh": {
+        "name": "锤子",
+        "desc": [
+          "打出时你必须向其他每个至少建造了1个栅栏的玩家支付1木头，然后获得一次“围栅栏”行动使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G080_HarvestFeast",
+    "originalId": "G080_HarvestFeast",
+    "gameEdition": "classic",
+    "name": "秋收盛宴",
+    "deck": "G",
+    "number": 80,
+    "desc": [
+      "打出时，所有人家都可以将各自田地里的任意数量作物移入各自的个人供应区(不算作收割阶段)"
+    ],
+    "cost": {},
+    "vp": 2,
+    "prerequisite": "3 Occupations",
+    "occupationPrerequisites": {
+      "min": 3
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G080.png",
+    "locales": {
+      "zh": {
+        "name": "秋收盛宴",
+        "desc": [
+          "打出时，所有人家都可以将各自田地里的任意数量作物移入各自的个人供应区(不算作收割阶段)"
+        ],
+        "prerequisite": "职业×3"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G081_Hayloft",
+    "originalId": "G081_Hayloft",
+    "gameEdition": "classic",
+    "name": "草棚",
+    "deck": "G",
+    "number": 81,
+    "desc": [
+      "游戏结束时，如果你有3/4个马厩，则你获得1/2分"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G081.png",
+    "locales": {
+      "zh": {
+        "name": "草棚",
+        "desc": [
+          "游戏结束时，如果你有3/4个马厩，则你获得1/2分"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G082_HiredHelpers",
+    "originalId": "G082_HiredHelpers",
+    "gameEdition": "classic",
+    "name": "雇佣助手",
+    "deck": "G",
+    "number": 82,
+    "desc": [
+      "每回合中，你可以选择获得1名食客并在回合结束时退还，若如此做，下一回合你必须少放置1名家庭成员。"
+    ],
+    "cost": {
+      "food": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G082.png",
+    "locales": {
+      "zh": {
+        "name": "雇佣助手",
+        "desc": [
+          "每回合中，你可以选择获得1名食客并在回合结束时退还，若如此做，下一回合你必须少放置1名家庭成员。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G083_HolidayPresent",
+    "originalId": "G083_HolidayPresent",
+    "gameEdition": "classic",
+    "name": "节日礼物",
+    "deck": "G",
+    "number": 83,
+    "desc": [
+      "选择立即弃掉1张乞讨卡，或立即获得1只动物。使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "passing": true,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G083.png",
+    "locales": {
+      "zh": {
+        "name": "节日礼物",
+        "desc": [
+          "选择立即弃掉1张乞讨卡，或立即获得1只动物。使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G084_HorseBarn",
+    "originalId": "G084_HorseBarn",
+    "gameEdition": "classic",
+    "name": "马棚",
+    "deck": "G",
+    "number": 84,
+    "desc": [
+      "当你播种时，与一个马厩相邻的田地里可以多堆放一份农作物，与两个或更多的马厩相邻的田地可以多堆放两份农作物。(无论此马厩是否被围起来，以及是否还有原来的的功能)"
+    ],
+    "cost": {},
+    "vp": 1,
+    "prerequisite": "1 Occupations",
+    "occupationPrerequisites": {
+      "min": 1
+    },
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G084.png",
+    "locales": {
+      "zh": {
+        "name": "马棚",
+        "desc": [
+          "当你播种时，与一个马厩相邻的田地里可以多堆放一份农作物，与两个或更多的马厩相邻的田地可以多堆放两份农作物。(无论此马厩是否被围起来，以及是否还有原来的的功能)"
+        ],
+        "prerequisite": "职业×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G085_IrrigationCanal",
+    "originalId": "G085_IrrigationCanal",
+    "gameEdition": "classic",
+    "name": "灌溉渠",
+    "deck": "G",
+    "number": 85,
+    "desc": [
+      "当你犁田时，若新犁的田地旁边邻接着一块已播种的田，你可以从已播种的那块田上拿下一份作物播种到新犁的田上。新播种的田比起正常播种要少堆放一份作物肉馅饼"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G085.png",
+    "locales": {
+      "zh": {
+        "name": "灌溉渠",
+        "desc": [
+          "当你犁田时，若新犁的田地旁边邻接着一块已播种的田，你可以从已播种的那块田上拿下一份作物播种到新犁的田上。新播种的田比起正常播种要少堆放一份作物肉馅饼"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G086_ItinerantLaborers",
+    "originalId": "G086_ItinerantLaborers",
+    "gameEdition": "classic",
+    "name": "流动雇工",
+    "deck": "G",
+    "number": 86,
+    "desc": [
+      "打出时获得一次“播种”行动使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {
+      "food": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": true,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G086.png",
+    "locales": {
+      "zh": {
+        "name": "流动雇工",
+        "desc": [
+          "打出时获得一次“播种”行动使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G087_MagicBeans",
+    "originalId": "G087_MagicBeans",
+    "gameEdition": "classic",
+    "name": "魔法豌豆",
+    "deck": "G",
+    "number": 87,
+    "desc": [
+      "立即获得2份蔬菜使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {
+      "cattle": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": true,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G087.png",
+    "locales": {
+      "zh": {
+        "name": "魔法豌豆",
+        "desc": [
+          "立即获得2份蔬菜使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G088_MeatPie",
+    "originalId": "G088_MeatPie",
+    "gameEdition": "classic",
+    "name": "肉馅饼",
+    "deck": "G",
+    "number": 88,
+    "desc": [
+      "打出时你获得一次\"烤面包\"行动。每次你执行完\"烤面包\"行动后，你可以支付1份小麦+1只任意动物获得3分"
+    ],
+    "cost": {},
+    "vp": 1,
+    "prerequisite": "1 Occupations",
+    "occupationPrerequisites": {
+      "min": 1
+    },
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G088.png",
+    "locales": {
+      "zh": {
+        "name": "肉馅饼",
+        "desc": [
+          "打出时你获得一次\"烤面包\"行动。每次你执行完\"烤面包\"行动后，你可以支付1份小麦+1只任意动物获得3分"
+        ],
+        "prerequisite": "职业×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G089_MigrantWorkers",
+    "originalId": "G089_MigrantWorkers",
+    "gameEdition": "classic",
+    "name": "流动工人",
+    "deck": "G",
+    "number": 89,
+    "desc": [
+      "每次你使用临时工行动格后，你可以支付1份食物来犁一块田"
+    ],
+    "cost": {
+      "wood": 2
+    },
+    "vp": 0,
+    "prerequisite": "1 Occupations",
+    "occupationPrerequisites": {
+      "min": 1
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G089.png",
+    "locales": {
+      "zh": {
+        "name": "流动工人",
+        "desc": [
+          "每次你使用临时工行动格后，你可以支付1份食物来犁一块田"
+        ],
+        "prerequisite": "职业×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G090_Paddocks",
+    "originalId": "G090_Paddocks",
+    "gameEdition": "classic",
+    "name": "草地围栏",
+    "deck": "G",
+    "number": 90,
+    "desc": [
+      "立即在已有的圈地内部免费建造4根栅栏使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "1 Occupations+圈地×1",
+    "occupationPrerequisites": {
+      "min": 1
+    },
+    "passing": true,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G090.png",
+    "locales": {
+      "zh": {
+        "name": "草地围栏",
+        "desc": [
+          "立即在已有的圈地内部免费建造4根栅栏使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": "职业×1+圈地×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G091_PeltRoof",
+    "originalId": "G091_PeltRoof",
+    "gameEdition": "classic",
+    "name": "毛皮屋顶",
+    "deck": "G",
+    "number": 91,
+    "desc": [
+      "你每将2羊/1猪/1牛转换成食物时，从游戏供应区拿取1芦苇放在此卡上，你在扩建/翻修房屋时可以使用此卡上的芦苇"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "2 Occupations",
+    "occupationPrerequisites": {
+      "min": 2
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G091.png",
+    "locales": {
+      "zh": {
+        "name": "毛皮屋顶",
+        "desc": [
+          "你每将2羊/1猪/1牛转换成食物时，从游戏供应区拿取1芦苇放在此卡上，你在扩建/翻修房屋时可以使用此卡上的芦苇"
+        ],
+        "prerequisite": "职业×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G092_PineForest",
+    "originalId": "G092_PineForest",
+    "gameEdition": "classic",
+    "name": "松树林",
+    "deck": "G",
+    "number": 92,
+    "desc": [
+      "每回合开始时，如果你没有木头，在此卡上补充1木头。当此卡上有5根木头时，将这些木头移入你的个人供应区。(你不能丢弃你的木头)"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G092.png",
+    "locales": {
+      "zh": {
+        "name": "松树林",
+        "desc": [
+          "每回合开始时，如果你没有木头，在此卡上补充1木头。当此卡上有5根木头时，将这些木头移入你的个人供应区。(你不能丢弃你的木头)"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G093_PlentifulFields",
+    "originalId": "G093_PlentifulFields",
+    "gameEdition": "classic",
+    "name": "富产之地",
+    "deck": "G",
+    "number": 93,
+    "desc": [
+      "打出时你每有一个田地版块就获得1份食物使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "passing": true,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G093.png",
+    "locales": {
+      "zh": {
+        "name": "富产之地",
+        "desc": [
+          "打出时你每有一个田地版块就获得1份食物使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G094_PottersWheel",
+    "originalId": "G094_PottersWheel",
+    "gameEdition": "classic",
+    "name": "陶艺轮车",
+    "deck": "G",
+    "number": 94,
+    "desc": [
+      "打出1张职业(支付此卡玩家1份食物)。这张牌是一个所有玩家共用的额外行动格。使用此卡的玩家..."
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G094.png",
+    "locales": {
+      "zh": {
+        "name": "陶艺轮车",
+        "desc": [
+          "打出1张职业(支付此卡玩家1份食物)。这张牌是一个所有玩家共用的额外行动格。使用此卡的玩家..."
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G095_PrivateMarket",
+    "originalId": "G095_PrivateMarket",
+    "gameEdition": "classic",
+    "name": "私立市场",
+    "deck": "G",
+    "number": 95,
+    "desc": [
+      "每回合限1次：你可以支付2份食物购买任意一个建筑资源"
+    ],
+    "cost": {
+      "wood": 1,
+      "clay": 1
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G095.png",
+    "locales": {
+      "zh": {
+        "name": "私立市场",
+        "desc": [
+          "每回合限1次：你可以支付2份食物购买任意一个建筑资源"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G096_PrivateSchool",
+    "originalId": "G096_PrivateSchool",
+    "gameEdition": "classic",
+    "name": "私立学校",
+    "deck": "G",
+    "number": 96,
+    "desc": [
+      "打出1张职业(支付此卡玩家1份食物)这张牌是一个所有玩家共用的额外行动格。使用此卡的玩家必须支付你1份食物来打出一张职业卡"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G096.png",
+    "locales": {
+      "zh": {
+        "name": "私立学校",
+        "desc": [
+          "打出1张职业(支付此卡玩家1份食物)这张牌是一个所有玩家共用的额外行动格。使用此卡的玩家必须支付你1份食物来打出一张职业卡"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G097_Pulley",
+    "originalId": "G097_Pulley",
+    "gameEdition": "classic",
+    "name": "滑轮",
+    "deck": "G",
+    "number": 97,
+    "desc": [
+      "每当你使用临时工行动格时，你可以建造至多1个房间(正常支付费用)"
+    ],
+    "cost": {
+      "wood": 2
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G097.png",
+    "locales": {
+      "zh": {
+        "name": "滑轮",
+        "desc": [
+          "每当你使用临时工行动格时，你可以建造至多1个房间(正常支付费用)"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G098_PumpkinPie",
+    "originalId": "G098_PumpkinPie",
+    "gameEdition": "classic",
+    "name": "南瓜馅饼",
+    "deck": "G",
+    "number": 98,
+    "desc": [
+      "打出时你获得一次“烤面包”行动。每次你执行完“烤面包”行动后，你可以支付1份小麦+1份蔬菜来获得3分"
+    ],
+    "cost": {},
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G098.png",
+    "locales": {
+      "zh": {
+        "name": "南瓜馅饼",
+        "desc": [
+          "打出时你获得一次“烤面包”行动。每次你执行完“烤面包”行动后，你可以支付1份小麦+1份蔬菜来获得3分"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G099_ReedBeds",
+    "originalId": "G099_ReedBeds",
+    "gameEdition": "classic",
+    "name": "芦苇河床",
+    "deck": "G",
+    "number": 99,
+    "desc": [
+      "每次你使用犁田行动格时，你额外获得1捆芦苇"
+    ],
+    "cost": {
+      "wood": 2
+    },
+    "vp": 1,
+    "prerequisite": "1 Occupations",
+    "occupationPrerequisites": {
+      "min": 1
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G099.png",
+    "locales": {
+      "zh": {
+        "name": "芦苇河床",
+        "desc": [
+          "每次你使用犁田行动格时，你额外获得1捆芦苇"
+        ],
+        "prerequisite": "职业×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G100_ReedSale",
+    "originalId": "G100_ReedSale",
+    "gameEdition": "classic",
+    "name": "芦苇甩卖",
+    "deck": "G",
+    "number": 100,
+    "desc": [
+      "打出时你获得3份食物使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {
+      "reed": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": true,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G100.png",
+    "locales": {
+      "zh": {
+        "name": "芦苇甩卖",
+        "desc": [
+          "打出时你获得3份食物使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G101_Remodeling",
+    "originalId": "G101_Remodeling",
+    "gameEdition": "classic",
+    "name": "木屋改建",
+    "deck": "G",
+    "number": 101,
+    "desc": [
+      "打出时你必须将农场中的一个马厩退还到个人供应区，然后免费扩建1间木屋使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {
+      "reed": 1,
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "马厩×1",
+    "passing": true,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G101.png",
+    "locales": {
+      "zh": {
+        "name": "木屋改建",
+        "desc": [
+          "打出时你必须将农场中的一个马厩退还到个人供应区，然后免费扩建1间木屋使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": "马厩×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G102_SausageGrinder",
+    "originalId": "G102_SausageGrinder",
+    "gameEdition": "classic",
+    "name": "香肠研磨机",
+    "deck": "G",
+    "number": 102,
+    "desc": [
+      "每当你把动物转换成食物时，每只被转换的动物都使你额外获得1份食物对于哪些次发适用"
+    ],
+    "cost": {
+      "stone": 2
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G102.png",
+    "locales": {
+      "zh": {
+        "name": "香肠研磨机",
+        "desc": [
+          "每当你把动物转换成食物时，每只被转换的动物都使你额外获得1份食物对于哪些次发适用"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G103_Scythe",
+    "originalId": "G103_Scythe",
+    "gameEdition": "classic",
+    "name": "长柄镰刀",
+    "deck": "G",
+    "number": 103,
+    "desc": [
+      "你可以在已播种的田上播种同种资源，将新的资源叠放在原有每一列资源的上面。"
+    ],
+    "cost": {
+      "wood": 1,
+      "stone": 1
+    },
+    "vp": 1,
+    "prerequisite": "1 Occupations",
+    "occupationPrerequisites": {
+      "min": 1
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G103.png",
+    "locales": {
+      "zh": {
+        "name": "长柄镰刀",
+        "desc": [
+          "你可以在已播种的田上播种同种资源，将新的资源叠放在原有每一列资源的上面。"
+        ],
+        "prerequisite": "职业×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G104_SeasonalPlants",
+    "originalId": "G104_SeasonalPlants",
+    "gameEdition": "classic",
+    "name": "季节性作物",
+    "deck": "G",
+    "number": 104,
+    "desc": [
+      "每当你在偶数回合执行“播种”行动时，在你刚播种的田上额外放置一份对应的资源"
+    ],
+    "cost": {
+      "wood": 1,
+      "stone": 1
+    },
+    "vp": 1,
+    "prerequisite": "1 Occupations",
+    "occupationPrerequisites": {
+      "min": 1
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G104.png",
+    "locales": {
+      "zh": {
+        "name": "季节性作物",
+        "desc": [
+          "每当你在偶数回合执行“播种”行动时，在你刚播种的田上额外放置一份对应的资源"
+        ],
+        "prerequisite": "职业×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G105_SeedSpreader",
+    "originalId": "G105_SeedSpreader",
+    "gameEdition": "classic",
+    "name": "种子撒布机",
+    "deck": "G",
+    "number": 105,
+    "desc": [
+      "每当你使用犁田行动格后，你可以播种1份小麦或1份蔬菜"
+    ],
+    "cost": {
+      "wood": 1,
+      "clay": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G105.png",
+    "locales": {
+      "zh": {
+        "name": "种子撒布机",
+        "desc": [
+          "每当你使用犁田行动格后，你可以播种1份小麦或1份蔬菜"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G106_SharedWall",
+    "originalId": "G106_SharedWall",
+    "gameEdition": "classic",
+    "name": "共享墙壁",
+    "deck": "G",
+    "number": 106,
+    "desc": [
+      "你的房屋成为圈地的天然边界，你不能将你的房屋扩建到以此法围起的圈地中。你仍然可以建造15根栅栏"
+    ],
+    "cost": {
+      "stone": 1
+    },
+    "vp": 1,
+    "prerequisite": "2 Occupations",
+    "occupationPrerequisites": {
+      "min": 2
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G106.png",
+    "locales": {
+      "zh": {
+        "name": "共享墙壁",
+        "desc": [
+          "你的房屋成为圈地的天然边界，你不能将你的房屋扩建到以此法围起的圈地中。你仍然可以建造15根栅栏"
+        ],
+        "prerequisite": "职业×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G107_SheepMarket",
+    "originalId": "G107_SheepMarket",
+    "gameEdition": "classic",
+    "name": "羊市场",
+    "deck": "G",
+    "number": 107,
+    "desc": [
+      "每个丰收时节开始时，你可以把至多1个小麦或1个蔬菜换成1只羊，或者把至多1只羊换成1个小麦或1个蔬菜"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "1 Occupations",
+    "occupationPrerequisites": {
+      "min": 1
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G107.png",
+    "locales": {
+      "zh": {
+        "name": "羊市场",
+        "desc": [
+          "每个丰收时节开始时，你可以把至多1个小麦或1个蔬菜换成1只羊，或者把至多1只羊换成1个小麦或1个蔬菜"
+        ],
+        "prerequisite": "职业×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G108_Sheepdog",
+    "originalId": "G108_Sheepdog",
+    "gameEdition": "classic",
+    "name": "牧羊犬",
+    "deck": "G",
+    "number": 108,
+    "desc": [
+      "你可以在每个农场的空格上饲养至多2只羊(空格仍视作未使用)，你的家里只能饲养羊。每个喂养阶段，你需要为牧羊犬额外支付1份食物，否则领取1张乞讨卡"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G108.png",
+    "locales": {
+      "zh": {
+        "name": "牧羊犬",
+        "desc": [
+          "你可以在每个农场的空格上饲养至多2只羊(空格仍视作未使用)，你的家里只能饲养羊。每个喂养阶段，你需要为牧羊犬额外支付1份食物，否则领取1张乞讨卡"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G109_SheepskinRug",
+    "originalId": "G109_SheepskinRug",
+    "gameEdition": "classic",
+    "name": "羊皮地毯",
+    "deck": "G",
+    "number": 109,
+    "desc": [
+      "游戏结束时，如果你有火炉，则你获得2分"
+    ],
+    "cost": {
+      "sheep": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G109.png",
+    "locales": {
+      "zh": {
+        "name": "羊皮地毯",
+        "desc": [
+          "游戏结束时，如果你有火炉，则你获得2分"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G110_Shovel",
+    "originalId": "G110_Shovel",
+    "gameEdition": "classic",
+    "name": "铁锹",
+    "deck": "G",
+    "number": 110,
+    "desc": [
+      "每当你使用临时工行动格后，你可以执行一次“播种”行动"
+    ],
+    "cost": {
+      "wood": 1,
+      "clay": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G110.png",
+    "locales": {
+      "zh": {
+        "name": "铁锹",
+        "desc": [
+          "每当你使用临时工行动格后，你可以执行一次“播种”行动"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G111_Sickle",
+    "originalId": "G111_Sickle",
+    "gameEdition": "classic",
+    "name": "镰刀",
+    "deck": "G",
+    "number": 111,
+    "desc": [
+      "游戏结束时，如果你至少有5个田地版块、8个小麦和4个蔬菜(包括田上的作物)，则你获得3分"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G111.png",
+    "locales": {
+      "zh": {
+        "name": "镰刀",
+        "desc": [
+          "游戏结束时，如果你至少有5个田地版块、8个小麦和4个蔬菜(包括田上的作物)，则你获得3分"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G112_StoneCrane",
+    "originalId": "G112_StoneCrane",
+    "gameEdition": "classic",
+    "name": "石头吊车",
+    "deck": "G",
+    "number": 112,
+    "desc": [
+      "其他玩家每扩建1间房间/翻修时，你可以扩建1间房间/翻修，而且对于每间房和每次翻修你可以减少一个任意资源花费"
+    ],
+    "cost": {
+      "clay": 2,
+      "stone": 2
+    },
+    "vp": 1,
+    "prerequisite": "2 Occupations",
+    "occupationPrerequisites": {
+      "min": 2
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G112.png",
+    "locales": {
+      "zh": {
+        "name": "石头吊车",
+        "desc": [
+          "其他玩家每扩建1间房间/翻修时，你可以扩建1间房间/翻修，而且对于每间房和每次翻修你可以减少一个任意资源花费"
+        ],
+        "prerequisite": "职业×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G113_StoneKitchen",
+    "originalId": "G113_StoneKitchen",
+    "gameEdition": "classic",
+    "name": "石制厨房",
+    "deck": "G",
+    "number": 113,
+    "desc": [
+      "任意时刻：“烤面包”行动"
+    ],
+    "cost": {
+      "stone": 3
+    },
+    "vp": 2,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G113.png",
+    "locales": {
+      "zh": {
+        "name": "石制厨房",
+        "desc": [
+          "任意时刻：“烤面包”行动"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G114_StonecuttersHall",
+    "originalId": "G114_StonecuttersHall",
+    "gameEdition": "classic",
+    "name": "石器工坊",
+    "deck": "G",
+    "number": 114,
+    "desc": [
+      "每个丰收时节，你可以使用此卡将至多1个石头转化为3份食物。游戏结束时，若你有2/4/5个石头，则你获得1/2/3分"
+    ],
+    "cost": {},
+    "vp": 2,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G114.png",
+    "locales": {
+      "zh": {
+        "name": "石器工坊",
+        "desc": [
+          "每个丰收时节，你可以使用此卡将至多1个石头转化为3份食物。游戏结束时，若你有2/4/5个石头，则你获得1/2/3分"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G115_FishFarm",
+    "originalId": "G115_FishFarm",
+    "gameEdition": "classic",
+    "name": "养鱼场",
+    "deck": "G",
+    "number": 115,
+    "desc": [
+      "每当其他玩家使用钓鱼积累行动格时，你可以从每块已播种的地上收割一个作物(这不算作收割阶段)"
+    ],
+    "cost": {
+      "clay": 2
+    },
+    "vp": 1,
+    "prerequisite": "1 Occupations+已播种的田×1",
+    "occupationPrerequisites": {
+      "min": 1
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G115.png",
+    "locales": {
+      "zh": {
+        "name": "养鱼场",
+        "desc": [
+          "每当其他玩家使用钓鱼积累行动格时，你可以从每块已播种的地上收割一个作物(这不算作收割阶段)"
+        ],
+        "prerequisite": "职业×1+已播种的田×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G116_TreeHouse",
+    "originalId": "G116_TreeHouse",
+    "gameEdition": "classic",
+    "name": "树屋",
+    "deck": "G",
+    "number": 116,
+    "desc": [
+      "当你不住木屋，你的其中一个房间能额外容纳一名家庭成员。"
+    ],
+    "cost": {
+      "wood": 2,
+      "reed": 1
+    },
+    "vp": 0,
+    "prerequisite": "3 Occupations",
+    "occupationPrerequisites": {
+      "min": 3
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G116.png",
+    "locales": {
+      "zh": {
+        "name": "树屋",
+        "desc": [
+          "当你不住木屋，你的其中一个房间能额外容纳一名家庭成员。"
+        ],
+        "prerequisite": "职业×3"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G117_VegetableScoop",
+    "originalId": "G117_VegetableScoop",
+    "gameEdition": "classic",
+    "name": "蔬菜勺",
+    "deck": "G",
+    "number": 117,
+    "desc": [
+      "每当你使用蔬菜种子行动格时，你额外获得1个蔬菜"
+    ],
+    "cost": {
+      "wood": 2
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G117.png",
+    "locales": {
+      "zh": {
+        "name": "蔬菜勺",
+        "desc": [
+          "每当你使用蔬菜种子行动格时，你额外获得1个蔬菜"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G118_WinterGarden",
+    "originalId": "G118_WinterGarden",
+    "gameEdition": "classic",
+    "name": "冬季花园",
+    "deck": "G",
+    "number": 118,
+    "desc": [
+      "你可以在至多一个房间上播种并收割作物。当你家中有动物时，需要将房间上的作物全部弃掉。在第6、8、10、12回合结束时，你可以收割一次房间上的作物。"
+    ],
+    "cost": {
+      "reed": 1
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G118.png",
+    "locales": {
+      "zh": {
+        "name": "冬季花园",
+        "desc": [
+          "你可以在至多一个房间上播种并收割作物。当你家中有动物时，需要将房间上的作物全部弃掉。在第6、8、10、12回合结束时，你可以收割一次房间上的作物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_G119_WoodenBridge",
+    "originalId": "G119_WoodenBridge",
+    "gameEdition": "classic",
+    "name": "木桥",
+    "deck": "G",
+    "number": 119,
+    "desc": [
+      "每当你使用芦苇滩积累行动格时，你额外获得1份食物。每当你使用临时工行动格时，你额外获得1芦苇"
+    ],
+    "cost": {
+      "wood": 3
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/G119.png",
+    "locales": {
+      "zh": {
+        "name": "木桥",
+        "desc": [
+          "每当你使用芦苇滩积累行动格时，你额外获得1份食物。每当你使用临时工行动格时，你额外获得1芦苇"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_I100_Tavern",
+    "originalId": "I100_Tavern",
+    "gameEdition": "classic",
+    "name": "酒馆",
+    "deck": "I",
+    "number": 100,
+    "desc": [
+      "+（+ ）此卡是所有玩家都能使用的额外行动格。其他玩家使用时获得3份食物，你使用时获得3份食物/2分。"
+    ],
+    "cost": {
+      "wood": 2,
+      "stone": 2
+    },
+    "vp": 2,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I100.png",
+    "locales": {
+      "zh": {
+        "name": "酒馆",
+        "desc": [
+          "+（+ ）此卡是所有玩家都能使用的额外行动格。其他玩家使用时获得3份食物，你使用时获得3份食物/2分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_I101_AnimalFeed",
+    "originalId": "I101_AnimalFeed",
+    "gameEdition": "classic",
+    "name": "畜食槽",
+    "deck": "I",
+    "number": 101,
+    "desc": [
+      "计分阶段前，你每拥有1种动物就额外获得1只该种动物。(I101畜食槽可在E215动物租用人之前发动）（需要饲养空间，不能转化为食物)此卡牌打出条件\"已播种田×4\"包括卡牌田。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "已播种田×4",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I101.png",
+    "locales": {
+      "zh": {
+        "name": "畜食槽",
+        "desc": [
+          "计分阶段前，你每拥有1种动物就额外获得1只该种动物。(I101畜食槽可在E215动物租用人之前发动）（需要饲养空间，不能转化为食物)此卡牌打出条件\"已播种田×4\"包括卡牌田。"
+        ],
+        "prerequisite": "已播种田×4"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_I102_WildlifeReserve",
+    "name": "野生保护区",
+    "deck": "I",
+    "number": 102,
+    "category": "FARM_PLANNER",
+    "desc": [
+      "你可以在此卡上饲养至多1只羊+1只猪+1只牛。(可被E29兽角笛和E59饮水槽扩充容量)"
+    ],
+    "cost": {
+      "wood": 2
+    },
+    "animalHolder": true,
+    "vp": 1,
+    "prerequisite": "2 Occupations",
+    "occupationPrerequisites": {
+      "min": 2
+    },
+    "originalId": "I102_WildlifeReserve",
+    "gameEdition": "classic",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/I102.png",
+    "locales": {
+      "zh": {
+        "name": "野生保护区",
+        "desc": [
+          "你可以在此卡上饲养至多1只羊+1只猪+1只牛。(可被E29兽角笛和E59饮水槽扩充容量)"
+        ],
+        "prerequisite": "职业×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_I103_WaterMill",
+    "originalId": "I103_WaterMill",
+    "gameEdition": "classic",
+    "name": "水磨坊",
+    "deck": "I",
+    "number": 103,
+    "desc": [
+      "每个丰收时节的收割阶段后，所有玩家都可以使用此卡将至多1份小麦转化为3份食物。（这不是“烤面包”行动）其他玩家如此做之后必须支付给你1份食物。可触发I103水磨坊效果：I92肥料、FR005艺术花园、G061历书、G118冬季花园、NL047早熟麦。不可触发I103水磨坊效果：NL104小麦收割工、G080秋收盛宴、G115养鱼场、WM014轮耕农。"
+    ],
+    "cost": {
+      "stone": 2,
+      "clay": 2,
+      "wood": 1,
+      "reed": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I103.png",
+    "locales": {
+      "zh": {
+        "name": "水磨坊",
+        "desc": [
+          "每个丰收时节的收割阶段后，所有玩家都可以使用此卡将至多1份小麦转化为3份食物。（这不是“烤面包”行动）其他玩家如此做之后必须支付给你1份食物。可触发I103水磨坊效果：I92肥料、FR005艺术花园、G061历书、G118冬季花园、NL047早熟麦。不可触发I103水磨坊效果：NL104小麦收割工、G080秋收盛宴、G115养鱼场、WM014轮耕农。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_I104_WeeklyMarket",
+    "originalId": "I104_WeeklyMarket",
+    "gameEdition": "classic",
+    "name": "周末市场",
+    "deck": "I",
+    "number": 104,
+    "desc": [
+      "立即获得2份蔬菜。使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {
+      "grain": 3
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": true,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I104.png",
+    "locales": {
+      "zh": {
+        "name": "周末市场",
+        "desc": [
+          "立即获得2份蔬菜。使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_I219_Fieldsman",
+    "originalId": "I219_Fieldsman",
+    "gameEdition": "classic",
+    "name": "田地主人",
+    "deck": "I",
+    "number": 219,
+    "desc": [
+      "每当你播种恰好1块田地时，额外放置2个物品在其上。每当你播种恰好2块田地时，额外放置1个物品在其上。注：对任意播种物品和田地有效。例：K278护林人、I78木头地、K105一亩田、Ö21葡萄园、WM104芦苇地"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I219.png",
+    "locales": {
+      "zh": {
+        "name": "田地主人",
+        "desc": [
+          "每当你播种恰好1块田地时，额外放置2个物品在其上。每当你播种恰好2块田地时，额外放置1个物品在其上。注：对任意播种物品和田地有效。例：K278护林人、I78木头地、K105一亩田、Ö21葡萄园、WM104芦苇地"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_I220_WellBuilder",
+    "originalId": "I220_WellBuilder",
+    "gameEdition": "classic",
+    "name": "打井人",
+    "deck": "I",
+    "number": 220,
+    "desc": [
+      "对你来说，A10水井是张次要发展卡，并且只花费1木头+1石头。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I220.png",
+    "locales": {
+      "zh": {
+        "name": "打井人",
+        "desc": [
+          "对你来说，A10水井是张次要发展卡，并且只花费1木头+1石头。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_I221_VillageElder",
+    "originalId": "I221_VillageElder",
+    "gameEdition": "classic",
+    "name": "村长",
+    "deck": "I",
+    "number": 221,
+    "desc": [
+      "打出此卡时，若距离游戏结束还有1/3/6/9个完整回合，则你立即获得1/2/3/4根木头。游戏结束时，打出发展卡最多的玩家都额外获得3分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I221.png",
+    "locales": {
+      "zh": {
+        "name": "村长",
+        "desc": [
+          "打出此卡时，若距离游戏结束还有1/3/6/9个完整回合，则你立即获得1/2/3/4根木头。游戏结束时，打出发展卡最多的玩家都额外获得3分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_I222_SocialClimber",
+    "originalId": "I222_SocialClimber",
+    "gameEdition": "classic",
+    "name": "上流生活",
+    "deck": "I",
+    "number": 222,
+    "desc": [
+      "每当你翻修后，如果你是本局游戏中第1/2/3位翻修至砖屋/石屋的玩家，则你都能获得3/2/1个石头。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I222.png",
+    "locales": {
+      "zh": {
+        "name": "上流生活",
+        "desc": [
+          "每当你翻修后，如果你是本局游戏中第1/2/3位翻修至砖屋/石屋的玩家，则你都能获得3/2/1个石头。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_I223_HarvestHelper",
+    "originalId": "I223_HarvestHelper",
+    "gameEdition": "classic",
+    "name": "秋收帮工",
+    "deck": "I",
+    "number": 223,
+    "desc": [
+      "每个丰收时节的喂养阶段开始时，你可以从其他玩家的至多1块田上拿走至多1份小麦，该名玩家从游戏供应区获得2份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I223.png",
+    "locales": {
+      "zh": {
+        "name": "秋收帮工",
+        "desc": [
+          "每个丰收时节的喂养阶段开始时，你可以从其他玩家的至多1块田上拿走至多1份小麦，该名玩家从游戏供应区获得2份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_I224_FieldWorker",
+    "originalId": "I224_FieldWorker",
+    "gameEdition": "classic",
+    "name": "种田工",
+    "deck": "I",
+    "number": 224,
+    "desc": [
+      "在3/4+人游戏中，每当其他玩家播种了至少1块田时，你获得1份小麦/食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I224.png",
+    "locales": {
+      "zh": {
+        "name": "种田工",
+        "desc": [
+          "在3/4+人游戏中，每当其他玩家播种了至少1块田时，你获得1份小麦/食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_I225_FieldWatchman",
+    "name": "农田巡逻",
+    "deck": "I",
+    "number": 225,
+    "category": "FARM_PLANNER",
+    "desc": [
+      "每当你使用小麦种子行动格时，你可以额外犁1块田。"
+    ],
+    "cost": {},
+    "players": "1+",
+    "originalId": "I225_FieldWatchman",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/I225.png",
+    "locales": {
+      "zh": {
+        "name": "农田巡逻",
+        "desc": [
+          "每当你使用小麦种子行动格时，你可以额外犁1块田。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_I226_Gardener",
+    "originalId": "I226_Gardener",
+    "gameEdition": "classic",
+    "name": "园丁",
+    "deck": "I",
+    "number": 226,
+    "desc": [
+      "每当你收割蔬菜时，改为从游戏供应区获得蔬菜，你的蔬菜留在田地上。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I226.png",
+    "locales": {
+      "zh": {
+        "name": "园丁",
+        "desc": [
+          "每当你收割蔬菜时，改为从游戏供应区获得蔬菜，你的蔬菜留在田地上。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_I227_ChurchWarden",
+    "originalId": "I227_ChurchWarden",
+    "gameEdition": "classic",
+    "name": "教会管理员",
+    "deck": "I",
+    "number": 227,
+    "desc": [
+      "打出此卡时，若距离游戏结束还有1/3/6/9个完整回合，则你立即获得1/2/3/4根木头。在第14回合派遣了至少5名不同家庭成员(包括食客)的玩家都额外获得3分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I227.png",
+    "locales": {
+      "zh": {
+        "name": "教会管理员",
+        "desc": [
+          "打出此卡时，若距离游戏结束还有1/3/6/9个完整回合，则你立即获得1/2/3/4根木头。在第14回合派遣了至少5名不同家庭成员(包括食客)的玩家都额外获得3分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_I228_Businessman",
+    "originalId": "I228_Businessman",
+    "gameEdition": "classic",
+    "name": "生意人",
+    "deck": "I",
+    "number": 228,
+    "desc": [
+      "每当你使用聚会场所行动格并打出1张次要发展卡后，你可以额外打出1张主要或次要发展卡。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I228.png",
+    "locales": {
+      "zh": {
+        "name": "生意人",
+        "desc": [
+          "每当你使用聚会场所行动格并打出1张次要发展卡后，你可以额外打出1张主要或次要发展卡。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_I229_Sycophant",
+    "originalId": "I229_Sycophant",
+    "gameEdition": "classic",
+    "name": "谄言者",
+    "deck": "I",
+    "number": 229,
+    "desc": [
+      "每当其他玩家使用小麦种子行动格前，必须先支付给你1份食物，同时你从游戏供应区获得1份食物。每当你使用小麦种子行动格时，你额外获得1份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I229.png",
+    "locales": {
+      "zh": {
+        "name": "谄言者",
+        "desc": [
+          "每当其他玩家使用小麦种子行动格前，必须先支付给你1份食物，同时你从游戏供应区获得1份食物。每当你使用小麦种子行动格时，你额外获得1份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_I230_ClayDigger",
+    "originalId": "I230_ClayDigger",
+    "gameEdition": "classic",
+    "name": "挖土工",
+    "deck": "I",
+    "number": 230,
+    "desc": [
+      "本卡将作为额外的窑洞行动格3人游戏中[1砖积累行动格]。打出此卡时，立即在此卡上补充3砖。从下回合开始，每回合将积累1个砖头放在此卡上。其他玩家使用此行动格前，必须先付给你3份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I230.png",
+    "locales": {
+      "zh": {
+        "name": "挖土工",
+        "desc": [
+          "本卡将作为额外的窑洞行动格3人游戏中[1砖积累行动格]。打出此卡时，立即在此卡上补充3砖。从下回合开始，每回合将积累1个砖头放在此卡上。其他玩家使用此行动格前，必须先付给你3份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_I231_Manservant",
+    "name": "男仆",
+    "deck": "I",
+    "number": 231,
+    "category": "FOOD_PROVIDER",
+    "desc": [
+      "一旦你的房屋等级是石屋，在之后每回合的行动格上各放3份食物。这些回合开始时，你获得对应的食物。"
+    ],
+    "cost": {},
+    "players": "1+",
+    "originalId": "I231_Manservant",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/I231.png",
+    "locales": {
+      "zh": {
+        "name": "男仆",
+        "desc": [
+          "一旦你的房屋等级是石屋，在之后每回合的行动格上各放3份食物。这些回合开始时，你获得对应的食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_I232_Midwife",
+    "originalId": "I232_Midwife",
+    "gameEdition": "classic",
+    "name": "助产士",
+    "deck": "I",
+    "number": 232,
+    "desc": [
+      "每当其他玩家执行“生娃”行动后，如果他的家庭成员比你多1/2+个，则你获得1/2份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I232.png",
+    "locales": {
+      "zh": {
+        "name": "助产士",
+        "desc": [
+          "每当其他玩家执行“生娃”行动后，如果他的家庭成员比你多1/2+个，则你获得1/2份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_I233_FarmSteward",
+    "originalId": "I233_FarmSteward",
+    "gameEdition": "classic",
+    "name": "农场干事",
+    "deck": "I",
+    "number": 233,
+    "desc": [
+      "限一次：一旦你的房屋等级是砖屋/石屋，你的下一次“生娃”行动可以当做“生娃(无需空房间)”行动执行。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I233.png",
+    "locales": {
+      "zh": {
+        "name": "农场干事",
+        "desc": [
+          "限一次：一旦你的房屋等级是砖屋/石屋，你的下一次“生娃”行动可以当做“生娃(无需空房间)”行动执行。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+]
+const batch15: readonly GeneratedCatalogCardDefinition[] = [
+  {
+    "id": "OLD_I234_WoodBuyer",
+    "originalId": "I234_WoodBuyer",
+    "gameEdition": "classic",
+    "name": "购木商",
+    "deck": "I",
+    "number": 234,
+    "desc": [
+      "每当其他玩家从行动格上获得木头时，你可以支付给他1份食物获得他的1根木头。（通过卡牌获得的木头不算）"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I234.png",
+    "locales": {
+      "zh": {
+        "name": "购木商",
+        "desc": [
+          "每当其他玩家从行动格上获得木头时，你可以支付给他1份食物获得他的1根木头。（通过卡牌获得的木头不算）"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_I235_WoodCollector",
+    "name": "拾木工",
+    "deck": "I",
+    "number": 235,
+    "category": "BUILDING_RESOURCE_PROVIDER",
+    "desc": [
+      "在之后5个回合的行动格上各放1根木头。这些回合开始时，你获得对应的木头。"
+    ],
+    "players": "1+",
+    "originalId": "I235_WoodCollector",
+    "gameEdition": "classic",
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/I235.png",
+    "locales": {
+      "zh": {
+        "name": "拾木工",
+        "desc": [
+          "在之后5个回合的行动格上各放1根木头。这些回合开始时，你获得对应的木头。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_I236_HideFarmer",
+    "name": "贫农",
+    "deck": "I",
+    "number": 236,
+    "category": "POINTS_PROVIDER",
+    "desc": [
+      "游戏结束时，你可为你农场中任意数量的未使用的空格分别支付1份食物，你不会因为这些空格而损失分数。"
+    ],
+    "cost": {},
+    "players": "1+",
+    "originalId": "I236_HideFarmer",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": true,
+    "implemented": true,
+    "artUrl": "/card-art/classic/I236.png",
+    "locales": {
+      "zh": {
+        "name": "贫农",
+        "desc": [
+          "游戏结束时，你可为你农场中任意数量的未使用的空格分别支付1份食物，你不会因为这些空格而损失分数。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_I237_Juggler",
+    "originalId": "I237_Juggler",
+    "gameEdition": "classic",
+    "name": "杂技演员",
+    "deck": "I",
+    "number": 237,
+    "desc": [
+      "每当你使用卖艺积累行动格时，你可以获得等于该行动格两倍数量的食物。然后你要付给E167杂耍艺人、E169说书人、E212舞者、I249木偶艺人、I257街头乐手、K269空中飞人、K311魔术师、K342马戏驯兽师的玩家各1份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I237.png",
+    "locales": {
+      "zh": {
+        "name": "杂技演员",
+        "desc": [
+          "每当你使用卖艺积累行动格时，你可以获得等于该行动格两倍数量的食物。然后你要付给E167杂耍艺人、E169说书人、E212舞者、I249木偶艺人、I257街头乐手、K269空中飞人、K311魔术师、K342马戏驯兽师的玩家各1份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_I238_Chamberlain",
+    "originalId": "I238_Chamberlain",
+    "gameEdition": "classic",
+    "name": "内侍",
+    "deck": "I",
+    "number": 238,
+    "desc": [
+      "在第11回合开始时（如果在11回合后打出，则改为打出时），翻开剩下的回合行动格。只有你能使用这些行动格，其他玩家必须等到对应回合才能使用。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I238.png",
+    "locales": {
+      "zh": {
+        "name": "内侍",
+        "desc": [
+          "在第11回合开始时（如果在11回合后打出，则改为打出时），翻开剩下的回合行动格。只有你能使用这些行动格，其他玩家必须等到对应回合才能使用。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_I239_CornProteer",
+    "originalId": "I239_CornProteer",
+    "gameEdition": "classic",
+    "name": "小麦奸商",
+    "deck": "I",
+    "number": 239,
+    "desc": [
+      "你可以随时将1份小麦转化为3份食物，但任何1名其他玩家都可以通过支付你2份食物购买你的这份小麦来阻止你这么做。当有多位买家出现时，由你选择卖给谁。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I239.png",
+    "locales": {
+      "zh": {
+        "name": "小麦奸商",
+        "desc": [
+          "你可以随时将1份小麦转化为3份食物，但任何1名其他玩家都可以通过支付你2份食物购买你的这份小麦来阻止你这么做。当有多位买家出现时，由你选择卖给谁。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_I240_Cowherd",
+    "name": "牧牛人",
+    "deck": "I",
+    "number": 240,
+    "category": "LIVESTOCK_PROVIDER",
+    "desc": [
+      "每当你使用牛市场积累行动格时，额外获得1头牛。"
+    ],
+    "cost": {},
+    "players": "1+",
+    "originalId": "I240_Cowherd",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/I240.png",
+    "locales": {
+      "zh": {
+        "name": "牧牛人",
+        "desc": [
+          "每当你使用牛市场积累行动格时，额外获得1头牛。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_I241_ClayPlasterer",
+    "originalId": "I241_ClayPlasterer",
+    "gameEdition": "classic",
+    "name": "墙土修补工",
+    "deck": "I",
+    "number": 241,
+    "desc": [
+      "你将木屋翻修成砖屋的总费用改为1块砖头+1捆芦苇。你扩建每间砖屋所需的费用改为3块砖头+2捆芦苇。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I241.png",
+    "locales": {
+      "zh": {
+        "name": "墙土修补工",
+        "desc": [
+          "你将木屋翻修成砖屋的总费用改为1块砖头+1捆芦苇。你扩建每间砖屋所需的费用改为3块砖头+2捆芦苇。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_I242_ClayHutBuilder",
+    "name": "砖屋建筑工",
+    "deck": "I",
+    "number": 242,
+    "category": "BUILDING_RESOURCE_PROVIDER",
+    "desc": [
+      "限一次：一旦你的房屋等级是砖屋/石屋，在之后5个回合的行动格上各放2块砖头。这些回合开始时，你获得对应的砖头。"
+    ],
+    "cost": {},
+    "players": "1+",
+    "originalId": "I242_ClayHutBuilder",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/I242.png",
+    "locales": {
+      "zh": {
+        "name": "砖屋建筑工",
+        "desc": [
+          "限一次：一旦你的房屋等级是砖屋/石屋，在之后5个回合的行动格上各放2块砖头。这些回合开始时，你获得对应的砖头。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_I243_Bricklayer",
+    "originalId": "I243_Bricklayer",
+    "gameEdition": "classic",
+    "name": "砌砖工",
+    "deck": "I",
+    "number": 243,
+    "desc": [
+      "发展卡和翻修房屋所需的砖头费用都减少1，扩建每间房屋所需的砖头费用都减少2。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I243.png",
+    "locales": {
+      "zh": {
+        "name": "砌砖工",
+        "desc": [
+          "发展卡和翻修房屋所需的砖头费用都减少1，扩建每间房屋所需的砖头费用都减少2。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_I244_Layabout",
+    "originalId": "I244_Layabout",
+    "gameEdition": "classic",
+    "name": "懒汉",
+    "deck": "I",
+    "number": 244,
+    "desc": [
+      "打出此卡，你就不能参加下一个丰收时节。（你虽不用喂养家庭成员，但也不能收割作物或繁殖动物）"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I244.png",
+    "locales": {
+      "zh": {
+        "name": "懒汉",
+        "desc": [
+          "打出此卡，你就不能参加下一个丰收时节。（你虽不用喂养家庭成员，但也不能收割作物或繁殖动物）"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_I245_MarketCrier",
+    "name": "叫卖贩",
+    "deck": "I",
+    "number": 245,
+    "category": "CROP_PROVIDER",
+    "desc": [
+      "每当你使用小麦种子行动格时，你可以选择额外获得1份小麦+1份蔬菜。若如此做，则其他玩家各获得1份小麦。"
+    ],
+    "cost": {},
+    "players": "1+",
+    "originalId": "I245_MarketCrier",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/I245.png",
+    "locales": {
+      "zh": {
+        "name": "叫卖贩",
+        "desc": [
+          "每当你使用小麦种子行动格时，你可以选择额外获得1份小麦+1份蔬菜。若如此做，则其他玩家各获得1份小麦。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_I246_MilkingHand",
+    "originalId": "I246_MilkingHand",
+    "gameEdition": "classic",
+    "name": "挤奶工",
+    "deck": "I",
+    "number": 246,
+    "desc": [
+      "每个丰收时节的收割阶段，若你有1/3/5+头牛，则你获得1/2/3份食物。游戏结束时，你每拥有2头牛便能额外获得1分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I246.png",
+    "locales": {
+      "zh": {
+        "name": "挤奶工",
+        "desc": [
+          "每个丰收时节的收割阶段，若你有1/3/5+头牛，则你获得1/2/3份食物。游戏结束时，你每拥有2头牛便能额外获得1分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_I247_Butcher",
+    "originalId": "I247_Butcher",
+    "gameEdition": "classic",
+    "name": "屠夫",
+    "deck": "I",
+    "number": 247,
+    "desc": [
+      "任意时刻，你可以将1只羊/猪/牛转换成1/2/3份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I247.png",
+    "locales": {
+      "zh": {
+        "name": "屠夫",
+        "desc": [
+          "任意时刻，你可以将1只羊/猪/牛转换成1/2/3份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_I248_NetFisherman",
+    "originalId": "I248_NetFisherman",
+    "gameEdition": "classic",
+    "name": "网鱼人",
+    "deck": "I",
+    "number": 248,
+    "desc": [
+      "每回合返家阶段，如果本回合你有家庭成员使用了获得芦苇的行动格，则你可以获得钓鱼积累行动格上的所有食物。（通过卡牌获得的芦苇不算）"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I248.png",
+    "locales": {
+      "zh": {
+        "name": "网鱼人",
+        "desc": [
+          "每回合返家阶段，如果本回合你有家庭成员使用了获得芦苇的行动格，则你可以获得钓鱼积累行动格上的所有食物。（通过卡牌获得的芦苇不算）"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_I249_Puppeteer",
+    "name": "木偶艺人",
+    "deck": "I",
+    "number": 249,
+    "category": "ACTIONS_BOOSTER",
+    "desc": [
+      "每当其他玩家使用卖艺积累行动格时，你可以支付1份食物来打出一张职业卡。"
+    ],
+    "cost": {},
+    "players": "3+",
+    "evenMoreSet": true,
+    "originalId": "I249_Puppeteer",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/I249.png",
+    "locales": {
+      "zh": {
+        "name": "木偶艺人",
+        "desc": [
+          "每当其他玩家使用卖艺积累行动格时，你可以支付1份食物来打出一张职业卡。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_I250_SheepWhisperer",
+    "originalId": "I250_SheepWhisperer",
+    "gameEdition": "classic",
+    "name": "驯羊人",
+    "deck": "I",
+    "number": 250,
+    "desc": [
+      "将当前回合数加4,7,9,11，在这些回合的行动格上各放1只羊。这些回合开始时，你获得对应的羊。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I250.png",
+    "locales": {
+      "zh": {
+        "name": "驯羊人",
+        "desc": [
+          "将当前回合数加4,7,9,11，在这些回合的行动格上各放1只羊。这些回合开始时，你获得对应的羊。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_I251_ReedBuyer",
+    "originalId": "I251_ReedBuyer",
+    "gameEdition": "classic",
+    "name": "购苇商",
+    "deck": "I",
+    "number": 251,
+    "desc": [
+      "每回合第一次有玩家从行动格上获得至少1捆芦苇时，你可以支付该玩家1份食物，该玩家必须给你1捆芦苇并从游戏供应区获得1份食物。（通过卡牌获得的芦苇不算）"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I251.png",
+    "locales": {
+      "zh": {
+        "name": "购苇商",
+        "desc": [
+          "每回合第一次有玩家从行动格上获得至少1捆芦苇时，你可以支付该玩家1份食物，该玩家必须给你1捆芦苇并从游戏供应区获得1份食物。（通过卡牌获得的芦苇不算）"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_I252_PigBreeder",
+    "name": "野猪哺育师",
+    "deck": "I",
+    "number": 252,
+    "category": "LIVESTOCK_PROVIDER",
+    "desc": [
+      "打出时立即获得1头猪。在第12回合结束时，你的猪将会进行一次繁殖。"
+    ],
+    "cost": {},
+    "players": "3+",
+    "originalId": "I252_PigBreeder",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/I252.png",
+    "locales": {
+      "zh": {
+        "name": "野猪哺育师",
+        "desc": [
+          "打出时立即获得1头猪。在第12回合结束时，你的猪将会进行一次繁殖。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_I253_PigCatcher",
+    "originalId": "I253_PigCatcher",
+    "gameEdition": "classic",
+    "name": "捕猪人",
+    "deck": "I",
+    "number": 253,
+    "desc": [
+      "每当你从一个行动格上获得至少2根木头后，你可以支付2根木头来换1头猪。将所支付的木头放在对应的行动格上。（通过卡牌获得的木头不算）"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I253.png",
+    "locales": {
+      "zh": {
+        "name": "捕猪人",
+        "desc": [
+          "每当你从一个行动格上获得至少2根木头后，你可以支付2根木头来换1头猪。将所支付的木头放在对应的行动格上。（通过卡牌获得的木头不算）"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_I254_Groom",
+    "originalId": "I254_Groom",
+    "gameEdition": "classic",
+    "name": "马夫",
+    "deck": "I",
+    "number": 254,
+    "desc": [
+      "一旦你的房屋等级是石屋，你可以在每回合开始时花费1根木头来建造1个马厩。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I254.png",
+    "locales": {
+      "zh": {
+        "name": "马夫",
+        "desc": [
+          "一旦你的房屋等级是石屋，你可以在每回合开始时花费1根木头来建造1个马厩。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_I255_StoneBuyer",
+    "originalId": "I255_StoneBuyer",
+    "gameEdition": "classic",
+    "name": "购石商",
+    "deck": "I",
+    "number": 255,
+    "desc": [
+      "每回合第一次有玩家从行动格上获得至少1个石头时，你可以支付该玩家1份食物，该玩家必须给你1个石头并从游戏供应区获得1份食物。（通过卡牌获得的石头不算）"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I255.png",
+    "locales": {
+      "zh": {
+        "name": "购石商",
+        "desc": [
+          "每回合第一次有玩家从行动格上获得至少1个石头时，你可以支付该玩家1份食物，该玩家必须给你1个石头并从游戏供应区获得1份食物。（通过卡牌获得的石头不算）"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_I256_StoneCarver",
+    "originalId": "I256_StoneCarver",
+    "gameEdition": "classic",
+    "name": "石雕工",
+    "deck": "I",
+    "number": 256,
+    "desc": [
+      "每个丰收时节，你可以将至多1个石头换成3份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I256.png",
+    "locales": {
+      "zh": {
+        "name": "石雕工",
+        "desc": [
+          "每个丰收时节，你可以将至多1个石头换成3份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_I257_StreetMusician",
+    "originalId": "I257_StreetMusician",
+    "gameEdition": "classic",
+    "name": "街头乐手",
+    "deck": "I",
+    "number": 257,
+    "desc": [
+      "每当其他玩家使用卖艺积累行动格时，你获得1份小麦"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I257.png",
+    "locales": {
+      "zh": {
+        "name": "街头乐手",
+        "desc": [
+          "每当其他玩家使用卖艺积累行动格时，你获得1份小麦"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_I258_Cabinetmaker",
+    "originalId": "I258_Cabinetmaker",
+    "gameEdition": "classic",
+    "name": "家具匠",
+    "deck": "I",
+    "number": 258,
+    "desc": [
+      "每个丰收时节，你可以将至多1根木头转化为2份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I258.png",
+    "locales": {
+      "zh": {
+        "name": "家具匠",
+        "desc": [
+          "每个丰收时节，你可以将至多1根木头转化为2份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_I259_AnimalDealer",
+    "name": "动物交易员",
+    "deck": "I",
+    "number": 259,
+    "category": "LIVESTOCK_PROVIDER",
+    "desc": [
+      "每当你使用羊市场/猪市场/牛市场积累行动格时，你可以支付1份食物来额外购买1只对应动物。"
+    ],
+    "cost": {},
+    "players": "3+",
+    "originalId": "I259_AnimalDealer",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/I259.png",
+    "locales": {
+      "zh": {
+        "name": "动物交易员",
+        "desc": [
+          "每当你使用羊市场/猪市场/牛市场积累行动格时，你可以支付1份食物来额外购买1只对应动物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_I260_Taster",
+    "originalId": "I260_Taster",
+    "gameEdition": "classic",
+    "name": "试味员",
+    "deck": "I",
+    "number": 260,
+    "desc": [
+      "每回合开始时，如果你不是起始玩家，你可以支付起始玩家1份食物并先于他派遣一名家庭成员。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I260.png",
+    "locales": {
+      "zh": {
+        "name": "试味员",
+        "desc": [
+          "每回合开始时，如果你不是起始玩家，你可以支付起始玩家1份食物并先于他派遣一名家庭成员。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_I261_Outrider",
+    "name": "先驱者",
+    "deck": "I",
+    "number": 261,
+    "category": "CROP_PROVIDER",
+    "desc": [
+      "每当你使用当回合新翻开的那张回合行动卡前，你先获得1份小麦。"
+    ],
+    "cost": {},
+    "players": "3+",
+    "originalId": "I261_Outrider",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/I261.png",
+    "locales": {
+      "zh": {
+        "name": "先驱者",
+        "desc": [
+          "每当你使用当回合新翻开的那张回合行动卡前，你先获得1份小麦。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_I262_WaterCarrier",
+    "originalId": "I262_WaterCarrier",
+    "gameEdition": "classic",
+    "name": "运水工",
+    "deck": "I",
+    "number": 262,
+    "desc": [
+      "一旦任意玩家打出了主发A10水井，在之后回合的行动格上各放置1份食物。这些回合开始时，你获得对应的食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I262.png",
+    "locales": {
+      "zh": {
+        "name": "运水工",
+        "desc": [
+          "一旦任意玩家打出了主发A10水井，在之后回合的行动格上各放置1份食物。这些回合开始时，你获得对应的食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_I263_FenceBuilder",
+    "originalId": "I263_FenceBuilder",
+    "gameEdition": "classic",
+    "name": "栅栏建造工",
+    "deck": "I",
+    "number": 263,
+    "desc": [
+      "打出此卡时，将1根你供应区的栅栏条放到任意1个已翻开的行动格上。之后每次你使用该行动格时，你获得一次额外的“围栅栏”行动。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I263.png",
+    "locales": {
+      "zh": {
+        "name": "栅栏建造工",
+        "desc": [
+          "打出此卡时，将1根你供应区的栅栏条放到任意1个已翻开的行动格上。之后每次你使用该行动格时，你获得一次额外的“围栅栏”行动。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_I264_Fencer",
+    "originalId": "I264_Fencer",
+    "gameEdition": "classic",
+    "name": "筑篱工",
+    "deck": "I",
+    "number": 264,
+    "desc": [
+      "每当其他玩家建造1-4/5+根栅栏时，你额外获得1/2根木头。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I264.png",
+    "locales": {
+      "zh": {
+        "name": "筑篱工",
+        "desc": [
+          "每当其他玩家建造1-4/5+根栅栏时，你额外获得1/2根木头。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_I265_FenceDeliveryman",
+    "originalId": "I265_FenceDeliveryman",
+    "gameEdition": "classic",
+    "name": "运篱工",
+    "deck": "I",
+    "number": 265,
+    "desc": [
+      "将当前回合数加6和10，在这些回合的行动格上各放置你的4根栅栏(若你的栅栏不足8根，则优先放在靠前的回合)。这些回合开始时，你可以支付2份食物来用这些栅栏条来围栅栏。(可以不用完)"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I265.png",
+    "locales": {
+      "zh": {
+        "name": "运篱工",
+        "desc": [
+          "将当前回合数加6和10，在这些回合的行动格上各放置你的4根栅栏(若你的栅栏不足8根，则优先放在靠前的回合)。这些回合开始时，你可以支付2份食物来用这些栅栏条来围栅栏。(可以不用完)"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_I337_ClayDeposit",
+    "originalId": "I337_ClayDeposit",
+    "gameEdition": "classic",
+    "name": "黏土矿床",
+    "deck": "I",
+    "number": 337,
+    "desc": [
+      "（+ ）此卡是所有玩家都能使用的额外行动格。其他玩家使用时必须先支付给你1份食物，然后获得5个砖头。你使用时获得5个砖头/2分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "3 Occupations",
+    "occupationPrerequisites": {
+      "min": 3
+    },
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I337.png",
+    "locales": {
+      "zh": {
+        "name": "黏土矿床",
+        "desc": [
+          "（+ ）此卡是所有玩家都能使用的额外行动格。其他玩家使用时必须先支付给你1份食物，然后获得5个砖头。你使用时获得5个砖头/2分。"
+        ],
+        "prerequisite": "职业×3"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_I340_Rancher",
+    "originalId": "I340_Rancher",
+    "gameEdition": "classic",
+    "name": "农场工人",
+    "deck": "I",
+    "number": 340,
+    "desc": [
+      "每回合开始时，如果你农场中已使用的农场格子数量比所有人都多(一样多不算)，你获得1根木头。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I340.png",
+    "locales": {
+      "zh": {
+        "name": "农场工人",
+        "desc": [
+          "每回合开始时，如果你农场中已使用的农场格子数量比所有人都多(一样多不算)，你获得1根木头。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_I63_MoldboardPlough",
+    "name": "铧式犁",
+    "deck": "I",
+    "number": 63,
+    "category": "FARM_PLANNER",
+    "desc": [
+      "在此卡上放2个田地板块。限2次：每当你使用犁田行动格时，你可以使用此卡上1块田，改为犁2块田。每次使用犁田/粮食耕种[犁播]行动格时，只能使用1个犁/I68耙的效果。"
+    ],
+    "cost": {
+      "wood": 2
+    },
+    "prerequisite": "1 Occupations",
+    "occupationPrerequisites": {
+      "min": 1
+    },
+    "originalId": "I63_MoldboardPlough",
+    "gameEdition": "classic",
+    "vp": 0,
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/I63.png",
+    "locales": {
+      "zh": {
+        "name": "铧式犁",
+        "desc": [
+          "在此卡上放2个田地板块。限2次：每当你使用犁田行动格时，你可以使用此卡上1块田，改为犁2块田。每次使用犁田/粮食耕种[犁播]行动格时，只能使用1个犁/I68耙的效果。"
+        ],
+        "prerequisite": "职业×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_I64_Alms",
+    "originalId": "I64_Alms",
+    "gameEdition": "classic",
+    "name": "救济品",
+    "deck": "I",
+    "number": 64,
+    "desc": [
+      "立即获得与已过完整回合数相等的食物。使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "职业=0",
+    "occupationPrerequisites": {
+      "max": 0
+    },
+    "passing": true,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I64.png",
+    "locales": {
+      "zh": {
+        "name": "救济品",
+        "desc": [
+          "立即获得与已过完整回合数相等的食物。使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": "职业=0"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_I65_BakersKitchen",
+    "originalId": "I65_BakersKitchen",
+    "gameEdition": "classic",
+    "name": "烘焙厨房",
+    "deck": "I",
+    "number": 65,
+    "desc": [
+      "打出此卡时，你获得1次“烤面包”行动。每次你执行“烤面包”行动时，你可以将至多2份小麦各转换成5份食物。"
+    ],
+    "cost": {
+      "stone": 1
+    },
+    "vp": 4,
+    "prerequisite": "退还1个烤炉",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I65.png",
+    "locales": {
+      "zh": {
+        "name": "烘焙厨房",
+        "desc": [
+          "打出此卡时，你获得1次“烤面包”行动。每次你执行“烤面包”行动时，你可以将至多2份小麦各转换成5份食物。"
+        ],
+        "prerequisite": "退还1个烤炉"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_I66_VillageWell",
+    "originalId": "I66_VillageWell",
+    "gameEdition": "classic",
+    "name": "村中水井",
+    "deck": "I",
+    "number": 66,
+    "desc": [
+      "打出此卡时，在之后的3个回合行动格上各放1份食物。这些回合开始时，你获得对应的食物。井：A10水井、I66村中水井、WM062后院水井、WA019绵羊井、WA020人工水井、NL042提水井。（本卡牌可算作1张次发/1张主发，但只算作1张发展卡。例：FR014巧克力、G004学徒工）草莓园"
+    ],
+    "cost": {
+      "stone": 2,
+      "wood": 1
+    },
+    "vp": 5,
+    "prerequisite": "退还1个井",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I66.png",
+    "locales": {
+      "zh": {
+        "name": "村中水井",
+        "desc": [
+          "打出此卡时，在之后的3个回合行动格上各放1份食物。这些回合开始时，你获得对应的食物。井：A10水井、I66村中水井、WM062后院水井、WA019绵羊井、WA020人工水井、NL042提水井。（本卡牌可算作1张次发/1张主发，但只算作1张发展卡。例：FR014巧克力、G004学徒工）草莓园"
+        ],
+        "prerequisite": "退还1个井"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_I67_ThreshingBoard",
+    "name": "打谷板",
+    "deck": "I",
+    "number": 67,
+    "category": "ACTIONS_BOOSTER",
+    "desc": [
+      "每当你使用犁田/粮食耕种[犁播]行动格时，可以获得1次“烤面包”行动。"
+    ],
+    "cost": {
+      "wood": 2
+    },
+    "vp": 1,
+    "prerequisite": "2 Occupations",
+    "occupationPrerequisites": {
+      "min": 2
+    },
+    "originalId": "I67_ThreshingBoard",
+    "gameEdition": "classic",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/I67.png",
+    "locales": {
+      "zh": {
+        "name": "打谷板",
+        "desc": [
+          "每当你使用犁田/粮食耕种[犁播]行动格时，可以获得1次“烤面包”行动。"
+        ],
+        "prerequisite": "职业×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_I68_Harrow",
+    "originalId": "I68_Harrow",
+    "gameEdition": "classic",
+    "name": "耙",
+    "deck": "I",
+    "number": 68,
+    "desc": [
+      "限1次：每当你使用犁田/粮食耕种[犁播]行动格时，可改为犁2块田。其他玩家可以支付给你2份食物使用此卡1次。每次使用犁田/粮食耕种[犁播]行动格时，只能使用1个犁/I68耙的效果。"
+    ],
+    "cost": {
+      "wood": 2
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I68.png",
+    "locales": {
+      "zh": {
+        "name": "耙",
+        "desc": [
+          "限1次：每当你使用犁田/粮食耕种[犁播]行动格时，可改为犁2块田。其他玩家可以支付给你2份食物使用此卡1次。每次使用犁田/粮食耕种[犁播]行动格时，只能使用1个犁/I68耙的效果。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_I69_StrawberryPatch",
+    "name": "草莓园",
+    "deck": "I",
+    "number": 69,
+    "category": "FOOD_PROVIDER",
+    "desc": [
+      "打出此卡时，在之后的3个回合行动格上各放1份食物。这些回合开始时，你获得对应的食物。此卡牌打出条件“菜田×2”包括卡牌田。"
+    ],
+    "cost": {},
+    "vp": 2,
+    "prerequisite": "菜田×2",
+    "originalId": "I69_StrawberryPatch",
+    "gameEdition": "classic",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/I69.png",
+    "locales": {
+      "zh": {
+        "name": "草莓园",
+        "desc": [
+          "打出此卡时，在之后的3个回合行动格上各放1份食物。这些回合开始时，你获得对应的食物。此卡牌打出条件“菜田×2”包括卡牌田。"
+        ],
+        "prerequisite": "菜田×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_I70_Punner",
+    "originalId": "I70_Punner",
+    "gameEdition": "classic",
+    "name": "夯具",
+    "deck": "I",
+    "number": 70,
+    "desc": [
+      "每当其他玩家使用犁或I68耙时，你可以犁1块田。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I70.png",
+    "locales": {
+      "zh": {
+        "name": "夯具",
+        "desc": [
+          "每当其他玩家使用犁或I68耙时，你可以犁1块田。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_I71_HolidayHouse",
+    "originalId": "I71_HolidayHouse",
+    "gameEdition": "classic",
+    "name": "度假屋",
+    "deck": "I",
+    "number": 71,
+    "desc": [
+      "此卡只能在第13回合/之前打出。在第14回合，你不能派遣任何家庭成员(包括食客)。（准备好连续两次进行丰收时节，即第5次和第6次丰收）"
+    ],
+    "cost": {},
+    "vp": 8,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I71.png",
+    "locales": {
+      "zh": {
+        "name": "度假屋",
+        "desc": [
+          "此卡只能在第13回合/之前打出。在第14回合，你不能派遣任何家庭成员(包括食客)。（准备好连续两次进行丰收时节，即第5次和第6次丰收）"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_I72_GoosePond",
+    "originalId": "I72_GoosePond",
+    "gameEdition": "classic",
+    "name": "鹅塘",
+    "deck": "I",
+    "number": 72,
+    "desc": [
+      "打出此卡后，在之后的4个回合行动格上各放1份食物。这些回合开始时，你获得对应的食物。"
+    ],
+    "cost": {},
+    "vp": 1,
+    "prerequisite": "3 Occupations",
+    "occupationPrerequisites": {
+      "min": 3
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I72.png",
+    "locales": {
+      "zh": {
+        "name": "鹅塘",
+        "desc": [
+          "打出此卡后，在之后的4个回合行动格上各放1份食物。这些回合开始时，你获得对应的食物。"
+        ],
+        "prerequisite": "职业×3"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_I73_Guest",
+    "originalId": "I73_Guest",
+    "gameEdition": "classic",
+    "name": "客人",
+    "deck": "I",
+    "number": 73,
+    "desc": [
+      "立即获得1名食客。该食客可以在下回合派遣，回合结束时退还。使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {
+      "food": 2
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": true,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I73.png",
+    "locales": {
+      "zh": {
+        "name": "客人",
+        "desc": [
+          "立即获得1名食客。该食客可以在下回合派遣，回合结束时退还。使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_I74_GrainCart",
+    "originalId": "I74_GrainCart",
+    "gameEdition": "classic",
+    "name": "小麦推车",
+    "deck": "I",
+    "number": 74,
+    "desc": [
+      "每当你使用小麦种子行动格时，额外获得2份小麦。"
+    ],
+    "cost": {
+      "wood": 2
+    },
+    "vp": 0,
+    "prerequisite": "2 Occupations",
+    "occupationPrerequisites": {
+      "min": 2
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I74.png",
+    "locales": {
+      "zh": {
+        "name": "小麦推车",
+        "desc": [
+          "每当你使用小麦种子行动格时，额外获得2份小麦。"
+        ],
+        "prerequisite": "职业×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_I75_HandMill",
+    "originalId": "I75_HandMill",
+    "gameEdition": "classic",
+    "name": "手磨机",
+    "deck": "I",
+    "number": 75,
+    "desc": [
+      "每个丰收时节的喂养阶段，你可以将至多2份小麦各转化为2份食物。（这不算作“烤面包”行动）"
+    ],
+    "cost": {
+      "stone": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I75.png",
+    "locales": {
+      "zh": {
+        "name": "手磨机",
+        "desc": [
+          "每个丰收时节的喂养阶段，你可以将至多2份小麦各转化为2份食物。（这不算作“烤面包”行动）"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_I76_Rake",
+    "originalId": "I76_Rake",
+    "gameEdition": "classic",
+    "name": "钉耙",
+    "deck": "I",
+    "number": 76,
+    "desc": [
+      "游戏结束时，如果你有至少5个田地板块，则你获得2分。如果你有I68耙、I70夯具、K124轭具或犁，则需要至少6个田地板块。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I76.png",
+    "locales": {
+      "zh": {
+        "name": "钉耙",
+        "desc": [
+          "游戏结束时，如果你有至少5个田地板块，则你获得2分。如果你有I68耙、I70夯具、K124轭具或犁，则需要至少6个田地板块。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_I77_ShepherdsCrook",
+    "name": "牧羊杖",
+    "deck": "I",
+    "number": 77,
+    "category": "LIVESTOCK_PROVIDER",
+    "desc": [
+      "每当你用栅栏围出1个占据不小于4个农场格子的圈地时，你立即获得2只羊。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "originalId": "I77_ShepherdsCrook",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/I77.png",
+    "locales": {
+      "zh": {
+        "name": "牧羊杖",
+        "desc": [
+          "每当你用栅栏围出1个占据不小于4个农场格子的圈地时，你立即获得2只羊。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_I78_Copse",
+    "name": "木头地",
+    "deck": "I",
+    "number": 78,
+    "category": "BUILDING_RESOURCE_PROVIDER",
+    "desc": [
+      "你可以在此卡上播种2列木头。木头的播种和收割遵循小麦的一般规则。播种后视为2个已播种田地。(卡牌田)此卡上未收割的木头不算作你的资源，不参与计算任何职业卡和发展卡分数。"
+    ],
+    "vp": 1,
+    "cost": {
+      "wood": 2
+    },
+    "prerequisite": "1 Occupations",
+    "occupationPrerequisites": {
+      "min": 1
+    },
+    "isField": true,
+    "cardField": {
+      "allowedCrops": [
+        "wood"
+      ],
+      "capacity": 2
+    },
+    "originalId": "I78_Copse",
+    "gameEdition": "classic",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/I78.png",
+    "locales": {
+      "zh": {
+        "name": "木头地",
+        "desc": [
+          "你可以在此卡上播种2列木头。木头的播种和收割遵循小麦的一般规则。播种后视为2个已播种田地。(卡牌田)此卡上未收割的木头不算作你的资源，不参与计算任何职业卡和发展卡分数。"
+        ],
+        "prerequisite": "职业×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_I79_WoodCart",
+    "name": "木头推车",
+    "deck": "I",
+    "number": 79,
+    "category": "BUILDING_RESOURCE_PROVIDER",
+    "desc": [
+      "每当你从行动格上获得木头时，额外获得2根木头。（5人局版图“芦+石+木”和通过卡牌获得的木头不算）"
+    ],
+    "cost": {
+      "wood": 3
+    },
+    "prerequisite": "3 Occupations",
+    "occupationPrerequisites": {
+      "min": 3
+    },
+    "originalId": "I79_WoodCart",
+    "gameEdition": "classic",
+    "vp": 0,
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/I79.png",
+    "locales": {
+      "zh": {
+        "name": "木头推车",
+        "desc": [
+          "每当你从行动格上获得木头时，额外获得2根木头。（5人局版图“芦+石+木”和通过卡牌获得的木头不算）"
+        ],
+        "prerequisite": "职业×3"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_I80_Spinney",
+    "originalId": "I80_Spinney",
+    "gameEdition": "classic",
+    "name": "灌木丛",
+    "deck": "I",
+    "number": 80,
+    "desc": [
+      "每当其他玩家使用森林[3木]行动格时，他必须给你1根木头。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 1,
+    "prerequisite": "3 Occupations",
+    "occupationPrerequisites": {
+      "min": 3
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I80.png",
+    "locales": {
+      "zh": {
+        "name": "灌木丛",
+        "desc": [
+          "每当其他玩家使用森林[3木]行动格时，他必须给你1根木头。"
+        ],
+        "prerequisite": "职业×3"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_I81_WoodenHutExtension",
+    "originalId": "I81_WoodenHutExtension",
+    "gameEdition": "classic",
+    "name": "扩建木屋",
+    "deck": "I",
+    "number": 81,
+    "desc": [
+      "立即免费扩建1间木屋。使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": true,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I81.png",
+    "locales": {
+      "zh": {
+        "name": "扩建木屋",
+        "desc": [
+          "立即免费扩建1间木屋。使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_I82_WoodenCrane",
+    "originalId": "I82_WoodenCrane",
+    "gameEdition": "classic",
+    "name": "木吊车",
+    "deck": "I",
+    "number": 82,
+    "desc": [
+      "每当你使用石头积累行动格时，可以支付0/1份食物额外获得1/2个石头。"
+    ],
+    "cost": {
+      "wood": 3
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I82.png",
+    "locales": {
+      "zh": {
+        "name": "木吊车",
+        "desc": [
+          "每当你使用石头积累行动格时，可以支付0/1份食物额外获得1/2个石头。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_I83_WoodenPath",
+    "originalId": "I83_WoodenPath",
+    "gameEdition": "classic",
+    "name": "木板路",
+    "deck": "I",
+    "number": 83,
+    "desc": [
+      "游戏结束时，拥有最有价值道路的玩家获得2分。(I94石板路>I89砖头路>I83木板路)"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I83.png",
+    "locales": {
+      "zh": {
+        "name": "木板路",
+        "desc": [
+          "游戏结束时，拥有最有价值道路的玩家获得2分。(I94石板路>I89砖头路>I83木板路)"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_I84_ChickenCoop",
+    "name": "鸡舍",
+    "deck": "I",
+    "number": 84,
+    "category": "FOOD_PROVIDER",
+    "desc": [
+      "打出此卡时，在之后的8个回合行动格上各放1份食物。这些回合开始时，你获得对应的食物。"
+    ],
+    "vp": 1,
+    "altCosts": [
+      {
+        "clay": 2,
+        "reed": 1
+      },
+      {
+        "wood": 2,
+        "reed": 1
+      }
+    ],
+    "originalId": "I84_ChickenCoop",
+    "gameEdition": "classic",
+    "cost": {},
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/I84.png",
+    "locales": {
+      "zh": {
+        "name": "鸡舍",
+        "desc": [
+          "打出此卡时，在之后的8个回合行动格上各放1份食物。这些回合开始时，你获得对应的食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_I85_CookingCorner",
+    "originalId": "I85_CookingCorner",
+    "gameEdition": "classic",
+    "name": "烹饪角",
+    "deck": "I",
+    "number": 85,
+    "desc": [
+      "任意时刻：“烤面包”行动"
+    ],
+    "cost": {},
+    "vp": 3,
+    "prerequisite": "退还壁炉",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I85.png",
+    "locales": {
+      "zh": {
+        "name": "烹饪角",
+        "desc": [
+          "任意时刻：“烤面包”行动"
+        ],
+        "prerequisite": "退还壁炉"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_I86_CornStorehouse",
+    "originalId": "I86_CornStorehouse",
+    "gameEdition": "classic",
+    "name": "谷仓",
+    "deck": "I",
+    "number": 86,
+    "desc": [
+      "每个丰收时节的收割阶段后，你可以在你的空田上播种小麦，如此播种时每列小麦少放置1份小麦。可触发I86谷仓效果：I92肥料、FR005艺术花园、G061历书、G118冬季花园、NL047早熟麦。不可触发I86谷仓效果：G115养鱼场、G080秋收盛宴、WM014轮耕农、NL104小麦收割工。"
+    ],
+    "cost": {},
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I86.png",
+    "locales": {
+      "zh": {
+        "name": "谷仓",
+        "desc": [
+          "每个丰收时节的收割阶段后，你可以在你的空田上播种小麦，如此播种时每列小麦少放置1份小麦。可触发I86谷仓效果：I92肥料、FR005艺术花园、G061历书、G118冬季花园、NL047早熟麦。不可触发I86谷仓效果：G115养鱼场、G080秋收盛宴、WM014轮耕农、NL104小麦收割工。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_I87_Flagon",
+    "originalId": "I87_Flagon",
+    "gameEdition": "classic",
+    "name": "大酒壶",
+    "deck": "I",
+    "number": 87,
+    "desc": [
+      "打出此卡时，场上每打出了1个井，你立即获得4份食物，其他每位玩家各获得1份食物。之后的游戏中，任意玩家每打出1个井，你立即获得4份食物，其他每位玩家各获得1份食物。井：A10水井、I66村中水井、WM062后院水井、WA019绵羊井、WA020人工水井、NL042提水井。"
+    ],
+    "cost": {
+      "clay": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I87.png",
+    "locales": {
+      "zh": {
+        "name": "大酒壶",
+        "desc": [
+          "打出此卡时，场上每打出了1个井，你立即获得4份食物，其他每位玩家各获得1份食物。之后的游戏中，任意玩家每打出1个井，你立即获得4份食物，其他每位玩家各获得1份食物。井：A10水井、I66村中水井、WM062后院水井、WA019绵羊井、WA020人工水井、NL042提水井。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_I88_Lasso",
+    "name": "套索",
+    "deck": "I",
+    "number": 88,
+    "category": "ACTIONS_BOOSTER",
+    "desc": [
+      "轮到你行动时，你可以连续派遣2名家庭成员，只要这2名家庭成员中至少有1人使用了羊市场/猪市场/牛市场积累行动格。"
+    ],
+    "cost": {
+      "reed": 1
+    },
+    "originalId": "I88_Lasso",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/I88.png",
+    "locales": {
+      "zh": {
+        "name": "套索",
+        "desc": [
+          "轮到你行动时，你可以连续派遣2名家庭成员，只要这2名家庭成员中至少有1人使用了羊市场/猪市场/牛市场积累行动格。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_I89_ClayPath",
+    "originalId": "I89_ClayPath",
+    "gameEdition": "classic",
+    "name": "砖头路",
+    "deck": "I",
+    "number": 89,
+    "desc": [
+      "游戏结束时，拥有最有价值道路的玩家获得2分。(I94石板路>I89砖头路>I83木板路)"
+    ],
+    "cost": {
+      "clay": 3
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I89.png",
+    "locales": {
+      "zh": {
+        "name": "砖头路",
+        "desc": [
+          "游戏结束时，拥有最有价值道路的玩家获得2分。(I94石板路>I89砖头路>I83木板路)"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_I90_PlanterBox",
+    "originalId": "I90_PlanterBox",
+    "gameEdition": "classic",
+    "name": "播种筒",
+    "deck": "I",
+    "number": 90,
+    "desc": [
+      "每当你播种时，如果播种的田地板块与你的房屋板块正交相邻，每列小麦必须额外放置2份小麦，每列蔬菜必须额外放置1份蔬菜。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "2 Occupations",
+    "occupationPrerequisites": {
+      "min": 2
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I90.png",
+    "locales": {
+      "zh": {
+        "name": "播种筒",
+        "desc": [
+          "每当你播种时，如果播种的田地板块与你的房屋板块正交相邻，每列小麦必须额外放置2份小麦，每列蔬菜必须额外放置1份蔬菜。"
+        ],
+        "prerequisite": "职业×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_I91_Ladder",
+    "originalId": "I91_Ladder",
+    "gameEdition": "classic",
+    "name": "梯子",
+    "deck": "I",
+    "number": 91,
+    "desc": [
+      "扩建每间房屋、翻修房屋和打出以下发展卡所需费用都减少1捆芦苇。E21半木梁房、I71度假屋、I84鸡舍、I86谷仓、I103水磨坊、K144豪宅。"
+    ],
+    "cost": {
+      "wood": 2
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I91.png",
+    "locales": {
+      "zh": {
+        "name": "梯子",
+        "desc": [
+          "扩建每间房屋、翻修房屋和打出以下发展卡所需费用都减少1捆芦苇。E21半木梁房、I71度假屋、I84鸡舍、I86谷仓、I103水磨坊、K144豪宅。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_I92_Manure",
+    "originalId": "I92_Manure",
+    "gameEdition": "classic",
+    "name": "肥料",
+    "deck": "I",
+    "number": 92,
+    "desc": [
+      "每个不以丰收时节为结束的回合结束时，你可以执行1次丰收时节的收割行动。此“收割行动”可触发以下卡牌：I86谷仓、I103水磨坊(只能自用)、I226园丁。此卡牌打出条件“动物×2”不包括卡牌动物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "动物×2",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I92.png",
+    "locales": {
+      "zh": {
+        "name": "肥料",
+        "desc": [
+          "每个不以丰收时节为结束的回合结束时，你可以执行1次丰收时节的收割行动。此“收割行动”可触发以下卡牌：I86谷仓、I103水磨坊(只能自用)、I226园丁。此卡牌打出条件“动物×2”不包括卡牌动物。"
+        ],
+        "prerequisite": "动物×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_I93_MilkingShed",
+    "originalId": "I93_MilkingShed",
+    "gameEdition": "classic",
+    "name": "挤奶棚",
+    "deck": "I",
+    "number": 93,
+    "desc": [
+      "每个丰收时节的收割阶段开始时，计算所有玩家农场中的羊和牛的总数，每有5只羊/3头牛，你额外获得1份食物。(卡牌提供的“收割阶段”不算，如：I92肥料)"
+    ],
+    "cost": {
+      "clay": 2,
+      "stone": 3
+    },
+    "vp": 2,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I93.png",
+    "locales": {
+      "zh": {
+        "name": "挤奶棚",
+        "desc": [
+          "每个丰收时节的收割阶段开始时，计算所有玩家农场中的羊和牛的总数，每有5只羊/3头牛，你额外获得1份食物。(卡牌提供的“收割阶段”不算，如：I92肥料)"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_I94_PavedRoad",
+    "originalId": "I94_PavedRoad",
+    "gameEdition": "classic",
+    "name": "石板路",
+    "deck": "I",
+    "number": 94,
+    "desc": [
+      "游戏结束时，拥有最有价值道路的玩家获得2分。(I94石板路>I89砖头路>I83木板路)"
+    ],
+    "cost": {
+      "stone": 5
+    },
+    "vp": 2,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I94.png",
+    "locales": {
+      "zh": {
+        "name": "石板路",
+        "desc": [
+          "游戏结束时，拥有最有价值道路的玩家获得2分。(I94石板路>I89砖头路>I83木板路)"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_I95_FishTrap",
+    "originalId": "I95_FishTrap",
+    "gameEdition": "classic",
+    "name": "鱼篓",
+    "deck": "I",
+    "number": 95,
+    "desc": [
+      "每当你使用钓鱼积累行动格或从行动格上获得芦苇时，额外获得1份食物。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I95.png",
+    "locales": {
+      "zh": {
+        "name": "鱼篓",
+        "desc": [
+          "每当你使用钓鱼积累行动格或从行动格上获得芦苇时，额外获得1份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_I96_ReedExchange",
+    "originalId": "I96_ReedExchange",
+    "gameEdition": "classic",
+    "name": "芦苇交易",
+    "deck": "I",
+    "number": 96,
+    "desc": [
+      "立即获得2捆芦苇。使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "passing": true,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I96.png",
+    "locales": {
+      "zh": {
+        "name": "芦苇交易",
+        "desc": [
+          "立即获得2捆芦苇。使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_I97_Slaughterhouse",
+    "originalId": "I97_Slaughterhouse",
+    "gameEdition": "classic",
+    "name": "屠宰场",
+    "deck": "I",
+    "number": 97,
+    "desc": [
+      "每次其他玩家将至少1只动物转化为食物时，你获得1份食物。每个丰收时节的喂养阶段，你最后进行结算。K299屠宰工和I97屠宰场的拥有者按照正常(下1回合)顺序结算。"
+    ],
+    "cost": {
+      "stone": 2,
+      "clay": 2
+    },
+    "vp": 2,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I97.png",
+    "locales": {
+      "zh": {
+        "name": "屠宰场",
+        "desc": [
+          "每次其他玩家将至少1只动物转化为食物时，你获得1份食物。每个丰收时节的喂养阶段，你最后进行结算。K299屠宰工和I97屠宰场的拥有者按照正常(下1回合)顺序结算。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_I98_SchnapsDistillery",
+    "originalId": "I98_SchnapsDistillery",
+    "gameEdition": "classic",
+    "name": "烈酒蒸馏器",
+    "deck": "I",
+    "number": 98,
+    "desc": [
+      "每个喂养阶段，你可使用此卡将至多1份蔬菜转化为4份食物。游戏结束时，你的第5和第6份蔬菜各值1分。"
+    ],
+    "cost": {
+      "stone": 2,
+      "vegetable": 1
+    },
+    "vp": 2,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I98.png",
+    "locales": {
+      "zh": {
+        "name": "烈酒蒸馏器",
+        "desc": [
+          "每个喂养阶段，你可使用此卡将至多1份蔬菜转化为4份食物。游戏结束时，你的第5和第6份蔬菜各值1分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_I99_StrawthatchedRoof",
+    "originalId": "I99_StrawthatchedRoof",
+    "gameEdition": "classic",
+    "name": "麦造屋顶",
+    "deck": "I",
+    "number": 99,
+    "desc": [
+      "从现在起，你建造房屋和翻修房屋时都不再需要芦苇了。此卡牌打出条件“麦田×3”包括卡牌田。"
+    ],
+    "cost": {},
+    "vp": 1,
+    "prerequisite": "3 Grain Fields",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/I99.png",
+    "locales": {
+      "zh": {
+        "name": "麦造屋顶",
+        "desc": [
+          "从现在起，你建造房屋和翻修房屋时都不再需要芦苇了。此卡牌打出条件“麦田×3”包括卡牌田。"
+        ],
+        "prerequisite": "麦田×3"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_K105_Acreage",
+    "originalId": "K105_Acreage",
+    "gameEdition": "classic",
+    "name": "一亩田",
+    "deck": "K",
+    "number": 105,
+    "desc": [
+      "每次播种时，你可以在此卡上播种至多2列小麦。(视作“2块麦田”)"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "1 Occupations",
+    "occupationPrerequisites": {
+      "min": 1
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K105.png",
+    "locales": {
+      "zh": {
+        "name": "一亩田",
+        "desc": [
+          "每次播种时，你可以在此卡上播种至多2列小麦。(视作“2块麦田”)"
+        ],
+        "prerequisite": "职业×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_K106_Bakehouse",
+    "originalId": "K106_Bakehouse",
+    "gameEdition": "classic",
+    "name": "烘焙坊",
+    "deck": "K",
+    "number": 106,
+    "desc": [
+      "打出此卡时，你获得1次“烤面包”行动。每次你执行“烤面包”行动时，你可以将至多2份小麦各转换成5份食物。"
+    ],
+    "cost": {
+      "stone": 3
+    },
+    "vp": 5,
+    "prerequisite": "退还1个烤炉",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K106.png",
+    "locales": {
+      "zh": {
+        "name": "烘焙坊",
+        "desc": [
+          "打出此卡时，你获得1次“烤面包”行动。每次你执行“烤面包”行动时，你可以将至多2份小麦各转换成5份食物。"
+        ],
+        "prerequisite": "退还1个烤炉"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_K107_Lumber",
+    "originalId": "K107_Lumber",
+    "gameEdition": "classic",
+    "name": "木料",
+    "deck": "K",
+    "number": 107,
+    "desc": [
+      "立即获得3根木头。使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {
+      "stone": 1
+    },
+    "vp": 0,
+    "prerequisite": "1 Occupations",
+    "occupationPrerequisites": {
+      "min": 1
+    },
+    "passing": true,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K107.png",
+    "locales": {
+      "zh": {
+        "name": "木料",
+        "desc": [
+          "立即获得3根木头。使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": "职业×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_K108_Beehive",
+    "originalId": "K108_Beehive",
+    "gameEdition": "classic",
+    "name": "蜂巢",
+    "deck": "K",
+    "number": 108,
+    "desc": [
+      "打出此卡时，在之后的偶数回合行动格上各放1份食物。这些回合开始时，你获得对应的食物。"
+    ],
+    "cost": {},
+    "vp": 1,
+    "prerequisite": "3 Occupations+发展卡×2",
+    "occupationPrerequisites": {
+      "min": 3
+    },
+    "improvementPrerequisites": {
+      "min": 2
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K108.png",
+    "locales": {
+      "zh": {
+        "name": "蜂巢",
+        "desc": [
+          "打出此卡时，在之后的偶数回合行动格上各放1份食物。这些回合开始时，你获得对应的食物。"
+        ],
+        "prerequisite": "职业×3+发展卡×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_K109_SpitRoast",
+    "originalId": "K109_SpitRoast",
+    "gameEdition": "classic",
+    "name": "烧烤叉",
+    "deck": "K",
+    "number": 109,
+    "desc": [
+      "每个丰收时节的喂养阶段，如果你将至少1只动物转化为食物，则你额外获得1份食物。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K109.png",
+    "locales": {
+      "zh": {
+        "name": "烧烤叉",
+        "desc": [
+          "每个丰收时节的喂养阶段，如果你将至少1只动物转化为食物，则你额外获得1份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_K110_Brewery",
+    "originalId": "K110_Brewery",
+    "gameEdition": "classic",
+    "name": "酿酒厂",
+    "deck": "K",
+    "number": 110,
+    "desc": [
+      "每个丰收时节的喂养阶段，你可以使用此卡将至多1份小麦转化为3份食物。游戏结束时，你的第9份小麦额外获得1分。（田地里的小麦算作在内）"
+    ],
+    "cost": {
+      "stone": 2,
+      "grain": 2
+    },
+    "vp": 2,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K110.png",
+    "locales": {
+      "zh": {
+        "name": "酿酒厂",
+        "desc": [
+          "每个丰收时节的喂养阶段，你可以使用此卡将至多1份小麦转化为3份食物。游戏结束时，你的第9份小麦额外获得1分。（田地里的小麦算作在内）"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_K111_BreadPaddle",
+    "originalId": "K111_BreadPaddle",
+    "gameEdition": "classic",
+    "name": "面包托铲",
+    "deck": "K",
+    "number": 111,
+    "desc": [
+      "每当你打出1张职业卡后，额外获得1次“烤面包”行动。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K111.png",
+    "locales": {
+      "zh": {
+        "name": "面包托铲",
+        "desc": [
+          "每当你打出1张职业卡后，额外获得1次“烤面包”行动。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_K112_Bookshelf",
+    "name": "书架",
+    "deck": "K",
+    "number": 112,
+    "category": "FOOD_PROVIDER",
+    "desc": [
+      "每当你打出1张职业卡前，首先获得3份食物。（在支付技能培训费之前）"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 1,
+    "prerequisite": "3 Occupations",
+    "occupationPrerequisites": {
+      "min": 3
+    },
+    "originalId": "K112_Bookshelf",
+    "gameEdition": "classic",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/K112.png",
+    "locales": {
+      "zh": {
+        "name": "书架",
+        "desc": [
+          "每当你打出1张职业卡前，首先获得3份食物。（在支付技能培训费之前）"
+        ],
+        "prerequisite": "职业×3"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_K113_Flail",
+    "name": "连枷",
+    "deck": "K",
+    "number": 113,
+    "category": "ACTIONS_BOOSTER",
+    "desc": [
+      "每当你使用犁田/粮食耕种[犁播]行动格时，额外获得1次“烤面包”行动。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "1 Occupations",
+    "occupationPrerequisites": {
+      "min": 1
+    },
+    "originalId": "K113_Flail",
+    "gameEdition": "classic",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/K113.png",
+    "locales": {
+      "zh": {
+        "name": "连枷",
+        "desc": [
+          "每当你使用犁田/粮食耕种[犁播]行动格时，额外获得1次“烤面包”行动。"
+        ],
+        "prerequisite": "职业×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_K114_DuckPond",
+    "name": "鸭塘",
+    "deck": "K",
+    "number": 114,
+    "category": "FOOD_PROVIDER",
+    "desc": [
+      "打出此卡时，在之后的3个回合行动格上各放1份食物。这些回合开始时，你获得对应的食物。"
+    ],
+    "cost": {},
+    "vp": 1,
+    "prerequisite": "2 Occupations",
+    "occupationPrerequisites": {
+      "min": 2
+    },
+    "originalId": "K114_DuckPond",
+    "gameEdition": "classic",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/K114.png",
+    "locales": {
+      "zh": {
+        "name": "鸭塘",
+        "desc": [
+          "打出此卡时，在之后的3个回合行动格上各放1份食物。这些回合开始时，你获得对应的食物。"
+        ],
+        "prerequisite": "职业×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_K115_SwingPlough",
+    "name": "摆杆步犁",
+    "deck": "K",
+    "number": 115,
+    "category": "FARM_PLANNER",
+    "desc": [
+      "在此卡上放4个田地板块。限2次：每当你使用犁田行动格时，你可以使用此卡上2块田，改为犁3块田。每次使用犁田/粮食耕种[犁播]行动格时，只能使用1个犁/I68耙的效果。"
+    ],
+    "cost": {
+      "wood": 3
+    },
+    "prerequisite": "3 Occupations",
+    "occupationPrerequisites": {
+      "min": 3
+    },
+    "originalId": "K115_SwingPlough",
+    "gameEdition": "classic",
+    "vp": 0,
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/K115.png",
+    "locales": {
+      "zh": {
+        "name": "摆杆步犁",
+        "desc": [
+          "在此卡上放4个田地板块。限2次：每当你使用犁田行动格时，你可以使用此卡上2块田，改为犁3块田。每次使用犁田/粮食耕种[犁播]行动格时，只能使用1个犁/I68耙的效果。"
+        ],
+        "prerequisite": "职业×3"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_K116_Granary",
+    "name": "粮仓",
+    "deck": "K",
+    "number": 116,
+    "category": "CROP_PROVIDER",
+    "desc": [
+      "打出此卡时，在第8,10,12回合行动格上各放1份小麦。这些回合开始时，你获得对应的小麦。"
+    ],
+    "vp": 0,
+    "altCosts": [
+      {
+        "wood": 3
+      },
+      {
+        "clay": 3
+      }
+    ],
+    "originalId": "K116_Granary",
+    "gameEdition": "classic",
+    "cost": {},
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/K116.png",
+    "locales": {
+      "zh": {
+        "name": "粮仓",
+        "desc": [
+          "打出此卡时，在第8,10,12回合行动格上各放1份小麦。这些回合开始时，你获得对应的小麦。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_K117_Greenhouse",
+    "name": "小型温室",
+    "deck": "K",
+    "number": 117,
+    "category": "CROP_PROVIDER",
+    "desc": [
+      "打出此卡时，将当前回合数加4和7，在对应回合行动格上各放1份蔬菜。这些回合开始时，你可支付1份食物，获得对应的蔬菜。"
+    ],
+    "cost": {
+      "wood": 2
+    },
+    "vp": 1,
+    "prerequisite": "1 Occupations",
+    "occupationPrerequisites": {
+      "min": 1
+    },
+    "originalId": "K117_Greenhouse",
+    "gameEdition": "classic",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/K117.png",
+    "locales": {
+      "zh": {
+        "name": "小型温室",
+        "desc": [
+          "打出此卡时，将当前回合数加4和7，在对应回合行动格上各放1份蔬菜。这些回合开始时，你可支付1份食物，获得对应的蔬菜。"
+        ],
+        "prerequisite": "职业×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_K118_LiquidManure",
+    "originalId": "K118_LiquidManure",
+    "gameEdition": "classic",
+    "name": "水肥",
+    "deck": "K",
+    "number": 118,
+    "desc": [
+      "每当你执行\"播种\"行动时，在此次播种的田地上每列物品可以额外放置1份对应的物品。注：对任意播种资源和卡牌田有效。例：K278护林人、I78木头地、K105一亩田、Ö21葡萄园、WM104芦苇地此卡牌打出条件\"动物×4\"不包括卡牌动物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "动物×4",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K118.png",
+    "locales": {
+      "zh": {
+        "name": "水肥",
+        "desc": [
+          "每当你执行\"播种\"行动时，在此次播种的田地上每列物品可以额外放置1份对应的物品。注：对任意播种资源和卡牌田有效。例：K278护林人、I78木头地、K105一亩田、Ö21葡萄园、WM104芦苇地此卡牌打出条件\"动物×4\"不包括卡牌动物。"
+        ],
+        "prerequisite": "动物×4"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_K119_CrookedPlough",
+    "originalId": "K119_CrookedPlough",
+    "gameEdition": "classic",
+    "name": "钩状犁",
+    "deck": "K",
+    "number": 119,
+    "desc": [
+      "在此卡上放2个田地板块。限1次：每当你使用犁田行动格时，你可以使用此卡上2块田，改为犁3块田。每次使用犁田/粮食耕种[犁播]行动格时，只能使用1个犁/I68耙的效果。"
+    ],
+    "cost": {
+      "wood": 3
+    },
+    "vp": 0,
+    "prerequisite": "1 Occupations",
+    "occupationPrerequisites": {
+      "min": 1
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K119.png",
+    "locales": {
+      "zh": {
+        "name": "钩状犁",
+        "desc": [
+          "在此卡上放2个田地板块。限1次：每当你使用犁田行动格时，你可以使用此卡上2块田，改为犁3块田。每次使用犁田/粮食耕种[犁播]行动格时，只能使用1个犁/I68耙的效果。"
+        ],
+        "prerequisite": "职业×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_K120_HouseGoat",
+    "name": "家用山羊",
+    "deck": "K",
+    "number": 120,
+    "category": "FARM_PLANNER",
+    "desc": [
+      "每个丰收时节的喂养阶段，你额外获得1份食物。无论如何，你的房子不能再容纳动物了。即使有卡牌允许你这样做，例：K306驯兽师。"
+    ],
+    "cost": {},
+    "vp": 1,
+    "blocksHouseAnimalZones": true,
+    "originalId": "K120_HouseGoat",
+    "gameEdition": "classic",
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/K120.png",
+    "locales": {
+      "zh": {
+        "name": "家用山羊",
+        "desc": [
+          "每个丰收时节的喂养阶段，你额外获得1份食物。无论如何，你的房子不能再容纳动物了。即使有卡牌允许你这样做，例：K306驯兽师。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_K121_Sawhorse",
+    "originalId": "K121_Sawhorse",
+    "gameEdition": "classic",
+    "name": "锯木架",
+    "deck": "K",
+    "number": 121,
+    "desc": [
+      "你的下1个马厩和第3、6、9、12、15根栅栏可以免费建造。（需满足围建栅栏的一般规则）"
+    ],
+    "cost": {
+      "wood": 2
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K121.png",
+    "locales": {
+      "zh": {
+        "name": "锯木架",
+        "desc": [
+          "你的下1个马厩和第3、6、9、12、15根栅栏可以免费建造。（需满足围建栅栏的一般规则）"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_K122_Sawmill",
+    "originalId": "K122_Sawmill",
+    "gameEdition": "classic",
+    "name": "大家具工坊",
+    "deck": "K",
+    "number": 122,
+    "desc": [
+      "每个丰收时节，你可以将至多1根木头转化为3份食物。游戏结束时，如果你有2/4/5+根木头，额外获得1/2/3分。(多余的木头不能再用于A7家具工坊的计分)（本卡牌可算作1张次发/1张主发，但只算作1张发展卡。"
+    ],
+    "cost": {},
+    "vp": 3,
+    "prerequisite": "退还A7家具工坊",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K122.png",
+    "locales": {
+      "zh": {
+        "name": "大家具工坊",
+        "desc": [
+          "每个丰收时节，你可以将至多1根木头转化为3份食物。游戏结束时，如果你有2/4/5+根木头，额外获得1/2/3分。(多余的木头不能再用于A7家具工坊的计分)（本卡牌可算作1张次发/1张主发，但只算作1张发展卡。"
+        ],
+        "prerequisite": "退还A7家具工坊"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_K123_WoodenStrongbox",
+    "originalId": "K123_WoodenStrongbox",
+    "gameEdition": "classic",
+    "name": "木制保险箱",
+    "deck": "K",
+    "number": 123,
+    "desc": [
+      "游戏结束时，如果你有5/6+个房间板块，额外获得2/4分。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K123.png",
+    "locales": {
+      "zh": {
+        "name": "木制保险箱",
+        "desc": [
+          "游戏结束时，如果你有5/6+个房间板块，额外获得2/4分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_K124_Yoke",
+    "originalId": "K124_Yoke",
+    "gameEdition": "classic",
+    "name": "轭具",
+    "deck": "K",
+    "number": 124,
+    "desc": [
+      "打出此卡时，场上每有1个犁或I68耙，你就能立即犁1块田。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "牛×1",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K124.png",
+    "locales": {
+      "zh": {
+        "name": "轭具",
+        "desc": [
+          "打出此卡时，场上每有1个犁或I68耙，你就能立即犁1块田。"
+        ],
+        "prerequisite": "牛×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_K125_Broom",
+    "originalId": "K125_Broom",
+    "gameEdition": "classic",
+    "name": "扫帚",
+    "deck": "K",
+    "number": 125,
+    "desc": [
+      "打出此卡时，立即弃掉你手中所有未打出的次要发展卡，从牌库中重新抽7张。然后你可以立即打出1张次要发展卡。(需满足条件并正常支付费用)"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K125.png",
+    "locales": {
+      "zh": {
+        "name": "扫帚",
+        "desc": [
+          "打出此卡时，立即弃掉你手中所有未打出的次要发展卡，从牌库中重新抽7张。然后你可以立即打出1张次要发展卡。(需满足条件并正常支付费用)"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_K126_LandingNet",
+    "originalId": "K126_LandingNet",
+    "gameEdition": "classic",
+    "name": "手网",
+    "deck": "K",
+    "number": 126,
+    "desc": [
+      "每当你从行动格上获得芦苇时，额外获得2份食物。如果你从行动格上同时获得了其他建筑资源，则改为获得1份食物。"
+    ],
+    "cost": {
+      "reed": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K126.png",
+    "locales": {
+      "zh": {
+        "name": "手网",
+        "desc": [
+          "每当你从行动格上获得芦苇时，额外获得2份食物。如果你从行动格上同时获得了其他建筑资源，则改为获得1份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_K127_Clapper",
+    "originalId": "K127_Clapper",
+    "gameEdition": "classic",
+    "name": "响板",
+    "deck": "K",
+    "number": 127,
+    "desc": [
+      "每当你使用写有“生娃”行动的行动格时(或打出此卡时有家庭成员在其上)，在你的每个麦田上额外叠放1份小麦。（1）如果你使用五人局“技能培训/生娃“行动格执行“技能培训”行动，也可发动此效果。（从第5回合起）（2）对任意卡牌麦田有效。（3）对下列卡牌资源田有效：K278护林人、I78木头地、WM014芦苇地、NL048郁金香花田、Ö21葡萄园。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K127.png",
+    "locales": {
+      "zh": {
+        "name": "响板",
+        "desc": [
+          "每当你使用写有“生娃”行动的行动格时(或打出此卡时有家庭成员在其上)，在你的每个麦田上额外叠放1份小麦。（1）如果你使用五人局“技能培训/生娃“行动格执行“技能培训”行动，也可发动此效果。（从第5回合起）（2）对任意卡牌麦田有效。（3）对下列卡牌资源田有效：K278护林人、I78木头地、WM014芦苇地、NL048郁金香花田、Ö21葡萄园。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_K128_CookingHearth",
+    "originalId": "K128_CookingHearth",
+    "gameEdition": "classic",
+    "name": "壁炉",
+    "deck": "K",
+    "number": 128,
+    "desc": [
+      "任意时刻：“烤面包”行动：火炉：A1/A2火炉、E20简易火炉"
+    ],
+    "cost": {},
+    "vp": 1,
+    "prerequisite": "退还火炉",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K128.png",
+    "locales": {
+      "zh": {
+        "name": "壁炉",
+        "desc": [
+          "任意时刻：“烤面包”行动：火炉：A1/A2火炉、E20简易火炉"
+        ],
+        "prerequisite": "退还火炉"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_K129_CornSheaf",
+    "originalId": "K129_CornSheaf",
+    "gameEdition": "classic",
+    "name": "一捆小麦",
+    "deck": "K",
+    "number": 129,
+    "desc": [
+      "立即获得1份小麦。使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "passing": true,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K129.png",
+    "locales": {
+      "zh": {
+        "name": "一捆小麦",
+        "desc": [
+          "立即获得1份小麦。使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_K130_HerbGarden",
+    "originalId": "K130_HerbGarden",
+    "gameEdition": "classic",
+    "name": "药草园",
+    "deck": "K",
+    "number": 130,
+    "desc": [
+      "打出此卡时，在之后的5个回合行动格上各放1份食物。这些回合开始时，你获得对应的食物。此卡牌打出条件“菜田×1”包括卡牌田。"
+    ],
+    "cost": {},
+    "vp": 1,
+    "prerequisite": "菜田×1",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K130.png",
+    "locales": {
+      "zh": {
+        "name": "药草园",
+        "desc": [
+          "打出此卡时，在之后的5个回合行动格上各放1份食物。这些回合开始时，你获得对应的食物。此卡牌打出条件“菜田×1”包括卡牌田。"
+        ],
+        "prerequisite": "菜田×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_K131_ClayPit",
+    "name": "黏土坑",
+    "deck": "K",
+    "number": 131,
+    "category": "BUILDING_RESOURCE_PROVIDER",
+    "desc": [
+      "每当你使用临时工行动格时，额外获得3个砖头。"
+    ],
+    "vp": 1,
+    "cost": {},
+    "prerequisite": "3 Occupations",
+    "occupationPrerequisites": {
+      "min": 3
+    },
+    "originalId": "K131_ClayPit",
+    "gameEdition": "classic",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/K131.png",
+    "locales": {
+      "zh": {
+        "name": "黏土坑",
+        "desc": [
+          "每当你使用临时工行动格时，额外获得3个砖头。"
+        ],
+        "prerequisite": "职业×3"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_K132_ClayHutExtension",
+    "originalId": "K132_ClayHutExtension",
+    "gameEdition": "classic",
+    "name": "扩建砖屋",
+    "deck": "K",
+    "number": 132,
+    "desc": [
+      "立即免费扩建1间砖屋。使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {
+      "reed": 1,
+      "clay": 4
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": true,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K132.png",
+    "locales": {
+      "zh": {
+        "name": "扩建砖屋",
+        "desc": [
+          "立即免费扩建1间砖屋。使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_K133_MilkingStool",
+    "name": "挤奶凳",
+    "deck": "K",
+    "number": 133,
+    "category": "POINTS_PROVIDER",
+    "desc": [
+      "每个丰收时节的收割阶段，若你有不少于1/3/5头牛，则你获得1/2/3份食物。游戏结束时，你每拥有2头牛便能额外获得1分。（卡牌提供的收割阶段不算）"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "prerequisite": "2 Occupations",
+    "occupationPrerequisites": {
+      "min": 2
+    },
+    "extraVp": true,
+    "originalId": "K133_MilkingStool",
+    "gameEdition": "classic",
+    "vp": 0,
+    "passing": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/K133.png",
+    "locales": {
+      "zh": {
+        "name": "挤奶凳",
+        "desc": [
+          "每个丰收时节的收割阶段，若你有不少于1/3/5头牛，则你获得1/2/3份食物。游戏结束时，你每拥有2头牛便能额外获得1分。（卡牌提供的收割阶段不算）"
+        ],
+        "prerequisite": "职业×2"
+      }
+    },
+    "kind": "minor"
+  },
+]
+const batch16: readonly GeneratedCatalogCardDefinition[] = [
+  {
+    "id": "OLD_K134_OxTeam",
+    "originalId": "K134_OxTeam",
+    "gameEdition": "classic",
+    "name": "公牛挽具",
+    "deck": "K",
+    "number": 134,
+    "desc": [
+      "打出此卡时，计算剩余的完整回合数。你可以立即犁相等数量的田地板块，且至多3块。"
+    ],
+    "cost": {
+      "wood": 3
+    },
+    "vp": 1,
+    "prerequisite": "牛×2",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K134.png",
+    "locales": {
+      "zh": {
+        "name": "公牛挽具",
+        "desc": [
+          "打出此卡时，计算剩余的完整回合数。你可以立即犁相等数量的田地板块，且至多3块。"
+        ],
+        "prerequisite": "牛×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_K135_Horse",
+    "originalId": "K135_Horse",
+    "gameEdition": "classic",
+    "name": "马",
+    "deck": "K",
+    "number": 135,
+    "desc": [
+      "游戏结束时，如果你缺少某1种动物，你可以获得2分。(仍然会因为没有该种动物扣分)（缺少多种动物，也只获得2分）"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K135.png",
+    "locales": {
+      "zh": {
+        "name": "马",
+        "desc": [
+          "游戏结束时，如果你缺少某1种动物，你可以获得2分。(仍然会因为没有该种动物扣分)（缺少多种动物，也只获得2分）"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_K136_BrushwoodRoof",
+    "originalId": "K136_BrushwoodRoof",
+    "gameEdition": "classic",
+    "name": "木造屋顶",
+    "deck": "K",
+    "number": 136,
+    "desc": [
+      "每当你扩建/翻修时，对于每间房屋和每次翻修，你可以用至多2木代替等量的芦苇。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "2 Occupations",
+    "occupationPrerequisites": {
+      "min": 2
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K136.png",
+    "locales": {
+      "zh": {
+        "name": "木造屋顶",
+        "desc": [
+          "每当你扩建/翻修时，对于每间房屋和每次翻修，你可以用至多2木代替等量的芦苇。"
+        ],
+        "prerequisite": "职业×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_K137_TurnipField",
+    "originalId": "K137_TurnipField",
+    "gameEdition": "classic",
+    "name": "萝卜地",
+    "deck": "K",
+    "number": 137,
+    "desc": [
+      "打出此卡时，你获得1次“播种”行动。此卡视为1块田地，但此卡只能种植蔬菜。"
+    ],
+    "cost": {},
+    "vp": 1,
+    "prerequisite": "3 Occupations",
+    "occupationPrerequisites": {
+      "min": 3
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K137.png",
+    "locales": {
+      "zh": {
+        "name": "萝卜地",
+        "desc": [
+          "打出此卡时，你获得1次“播种”行动。此卡视为1块田地，但此卡只能种植蔬菜。"
+        ],
+        "prerequisite": "职业×3"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_K138_ReedHut",
+    "originalId": "K138_ReedHut",
+    "gameEdition": "classic",
+    "name": "芦苇小屋",
+    "deck": "K",
+    "number": 138,
+    "desc": [
+      "打出此卡时，如果你的个人供应区还有家庭成员，立即将1名个人供应区的家庭成员放在此卡上。可从本回合开始派遣此家庭成员。此家庭成员不算作你的家庭成员，需要喂养，可以通过其他家庭成员的“生娃”行动将其移入你个人农场的其他空间中。"
+    ],
+    "cost": {
+      "wood": 1,
+      "reed": 4
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K138.png",
+    "locales": {
+      "zh": {
+        "name": "芦苇小屋",
+        "desc": [
+          "打出此卡时，如果你的个人供应区还有家庭成员，立即将1名个人供应区的家庭成员放在此卡上。可从本回合开始派遣此家庭成员。此家庭成员不算作你的家庭成员，需要喂养，可以通过其他家庭成员的“生娃”行动将其移入你个人农场的其他空间中。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_K139_SleepingCorner",
+    "name": "卧室",
+    "deck": "K",
+    "number": 139,
+    "category": "ACTIONS_BOOSTER",
+    "desc": [
+      "即使已有其他1名玩家占据了写有“生娃”行动的行动格，你仍可使用此行动格。（1）你可占据五人局“技能培训/生娃“行动格，只执行”技能培训“行动（从第5回合起）。（2）被多名其他玩家占据，你不可以使用；被自己家庭成员占据，你不可以使用。（3）此卡牌打出条件“麦田×2”包括卡牌田。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 1,
+    "prerequisite": "2 Grain Fields",
+    "originalId": "K139_SleepingCorner",
+    "gameEdition": "classic",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/K139.png",
+    "locales": {
+      "zh": {
+        "name": "卧室",
+        "desc": [
+          "即使已有其他1名玩家占据了写有“生娃”行动的行动格，你仍可使用此行动格。（1）你可占据五人局“技能培训/生娃“行动格，只执行”技能培训“行动（从第5回合起）。（2）被多名其他玩家占据，你不可以使用；被自己家庭成员占据，你不可以使用。（3）此卡牌打出条件“麦田×2”包括卡牌田。"
+        ],
+        "prerequisite": "麦田×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_K140_SwanLake",
+    "originalId": "K140_SwanLake",
+    "gameEdition": "classic",
+    "name": "天鹅湖",
+    "deck": "K",
+    "number": 140,
+    "desc": [
+      "打出此卡时，在之后的5个回合行动格上各放1份食物。这些回合开始时，你获得对应的食物。"
+    ],
+    "cost": {},
+    "vp": 2,
+    "prerequisite": "4 Occupations",
+    "occupationPrerequisites": {
+      "min": 4
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K140.png",
+    "locales": {
+      "zh": {
+        "name": "天鹅湖",
+        "desc": [
+          "打出此卡时，在之后的5个回合行动格上各放1份食物。这些回合开始时，你获得对应的食物。"
+        ],
+        "prerequisite": "职业×4"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_K141_BoarBreeding",
+    "originalId": "K141_BoarBreeding",
+    "gameEdition": "classic",
+    "name": "野猪",
+    "deck": "K",
+    "number": 141,
+    "desc": [
+      "立即获得1头猪。使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {
+      "food": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": true,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K141.png",
+    "locales": {
+      "zh": {
+        "name": "野猪",
+        "desc": [
+          "立即获得1头猪。使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_K142_StoneCart",
+    "name": "石头推车",
+    "deck": "K",
+    "number": 142,
+    "category": "BUILDING_RESOURCE_PROVIDER",
+    "desc": [
+      "打出此卡时，在之后的偶数回合行动格上各放1个石头。这些回合开始时，你获得对应的石头。"
+    ],
+    "cost": {
+      "wood": 2
+    },
+    "prerequisite": "2 Occupations",
+    "occupationPrerequisites": {
+      "min": 2
+    },
+    "originalId": "K142_StoneCart",
+    "gameEdition": "classic",
+    "vp": 0,
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/K142.png",
+    "locales": {
+      "zh": {
+        "name": "石头推车",
+        "desc": [
+          "打出此卡时，在之后的偶数回合行动格上各放1个石头。这些回合开始时，你获得对应的石头。"
+        ],
+        "prerequisite": "职业×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_K143_StoneExchange",
+    "originalId": "K143_StoneExchange",
+    "gameEdition": "classic",
+    "name": "石头交易",
+    "deck": "K",
+    "number": 143,
+    "desc": [
+      "立即获得2个石头。使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "passing": true,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K143.png",
+    "locales": {
+      "zh": {
+        "name": "石头交易",
+        "desc": [
+          "立即获得2个石头。使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_K144_Mansion",
+    "originalId": "K144_Mansion",
+    "gameEdition": "classic",
+    "name": "豪宅",
+    "deck": "K",
+    "number": 144,
+    "desc": [
+      "游戏结束时，你的每间石屋都额外获得2分。"
+    ],
+    "cost": {
+      "wood": 3,
+      "clay": 3,
+      "stone": 3,
+      "reed": 2
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K144.png",
+    "locales": {
+      "zh": {
+        "name": "豪宅",
+        "desc": [
+          "游戏结束时，你的每间石屋都额外获得2分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_K145_ForestPasture",
+    "originalId": "K145_ForestPasture",
+    "gameEdition": "classic",
+    "name": "林间牧场",
+    "deck": "K",
+    "number": 145,
+    "desc": [
+      "此卡可以容纳任意数量的猪。"
+    ],
+    "cost": {},
+    "vp": 1,
+    "prerequisite": "3 Occupations",
+    "occupationPrerequisites": {
+      "min": 3
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K145.png",
+    "locales": {
+      "zh": {
+        "name": "林间牧场",
+        "desc": [
+          "此卡可以容纳任意数量的猪。"
+        ],
+        "prerequisite": "职业×3"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_K146_Loom",
+    "name": "织布机",
+    "deck": "K",
+    "number": 146,
+    "category": "POINTS_PROVIDER",
+    "desc": [
+      "每个丰收时节的收割阶段，若你有不少于1/4/7只羊，则你获得1/2/3份食物。游戏结束时，你每拥有3只羊便能额外获得1分。（卡牌提供的收割阶段不算）"
+    ],
+    "cost": {
+      "wood": 2
+    },
+    "prerequisite": "2 Occupations",
+    "occupationPrerequisites": {
+      "min": 2
+    },
+    "vp": 1,
+    "extraVp": false,
+    "originalId": "K146_Loom",
+    "gameEdition": "classic",
+    "passing": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/K146.png",
+    "locales": {
+      "zh": {
+        "name": "织布机",
+        "desc": [
+          "每个丰收时节的收割阶段，若你有不少于1/4/7只羊，则你获得1/2/3份食物。游戏结束时，你每拥有3只羊便能额外获得1分。（卡牌提供的收割阶段不算）"
+        ],
+        "prerequisite": "职业×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_K266_Serf",
+    "originalId": "K266_Serf",
+    "gameEdition": "classic",
+    "name": "农奴",
+    "deck": "K",
+    "number": 266,
+    "desc": [
+      "每当你使用粮食耕种[播烤]行动格前，你可以获得1份小麦，或者把1份小麦换成1份蔬菜。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K266.png",
+    "locales": {
+      "zh": {
+        "name": "农奴",
+        "desc": [
+          "每当你使用粮食耕种[播烤]行动格前，你可以获得1份小麦，或者把1份小麦换成1份蔬菜。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_K267_AdoptiveParents",
+    "name": "养父母",
+    "deck": "K",
+    "number": 267,
+    "category": "ACTIONS_BOOSTER",
+    "desc": [
+      "每当你执行“生娃”行动后，你可以支付1份食物将新增的家庭成员放到家中，并在后续轮次派遣他。若如此做，此家庭成员将不算作“新生儿”。（本回合先“生娃”后打出此卡，可发动此卡效果）"
+    ],
+    "cost": {},
+    "players": "1+",
+    "originalId": "K267_AdoptiveParents",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/K267.png",
+    "locales": {
+      "zh": {
+        "name": "养父母",
+        "desc": [
+          "每当你执行“生娃”行动后，你可以支付1份食物将新增的家庭成员放到家中，并在后续轮次派遣他。若如此做，此家庭成员将不算作“新生儿”。（本回合先“生娃”后打出此卡，可发动此卡效果）"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_K268_Pieceworker",
+    "originalId": "K268_Pieceworker",
+    "gameEdition": "classic",
+    "name": "计件工",
+    "deck": "K",
+    "number": 268,
+    "desc": [
+      "每当你从行动格上获得木/砖/芦苇/石头/小麦时，对于每种资源，你可以支付1份食物来额外获得1个对应资源。当你从行动格上获得蔬菜时，可以支付2份食物来额外获得1份蔬菜。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K268.png",
+    "locales": {
+      "zh": {
+        "name": "计件工",
+        "desc": [
+          "每当你从行动格上获得木/砖/芦苇/石头/小麦时，对于每种资源，你可以支付1份食物来额外获得1个对应资源。当你从行动格上获得蔬菜时，可以支付2份食物来额外获得1份蔬菜。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_K269_Acrobat",
+    "originalId": "K269_Acrobat",
+    "gameEdition": "classic",
+    "name": "空中飞人",
+    "deck": "K",
+    "number": 269,
+    "desc": [
+      "打出此卡后，每当你使用卖艺积累行动格后，在本回合工作阶段结束时，你可以将此家庭成员移动到未被占用（或者你通过其他卡牌效果能够使用）的小麦种子/犁田/粮食耕种[犁播]行动格并使用该格。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K269.png",
+    "locales": {
+      "zh": {
+        "name": "空中飞人",
+        "desc": [
+          "打出此卡后，每当你使用卖艺积累行动格后，在本回合工作阶段结束时，你可以将此家庭成员移动到未被占用（或者你通过其他卡牌效果能够使用）的小麦种子/犁田/粮食耕种[犁播]行动格并使用该格。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_K270_WetNurse",
+    "originalId": "K270_WetNurse",
+    "gameEdition": "classic",
+    "name": "奶妈",
+    "deck": "K",
+    "number": 270,
+    "desc": [
+      "每当你扩建至少1间房间，对于每间新扩建的房间，你可以支付1份食物执行一次“生娃(需要空房间)”行动。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K270.png",
+    "locales": {
+      "zh": {
+        "name": "奶妈",
+        "desc": [
+          "每当你扩建至少1间房间，对于每间新扩建的房间，你可以支付1份食物执行一次“生娃(需要空房间)”行动。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_K271_Educator",
+    "originalId": "K271_Educator",
+    "gameEdition": "classic",
+    "name": "教育家",
+    "deck": "K",
+    "number": 271,
+    "desc": [
+      "每当其他玩家打出一张职业卡时，你可以支付3份食物来打出一张职业卡。从你的第4张职业卡开始，改为2食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K271.png",
+    "locales": {
+      "zh": {
+        "name": "教育家",
+        "desc": [
+          "每当其他玩家打出一张职业卡时，你可以支付3份食物来打出一张职业卡。从你的第4张职业卡开始，改为2食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_K272_FrameBuilder",
+    "originalId": "K272_FrameBuilder",
+    "gameEdition": "classic",
+    "name": "架梁工",
+    "deck": "K",
+    "number": 272,
+    "desc": [
+      "每当你翻修房屋时，你可以用1根木头来代替恰好1块砖头或1块石头。每当你扩建房屋时，对于每间房屋，你可以用1根木头来代替恰好2块砖头或2块石头。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K272.png",
+    "locales": {
+      "zh": {
+        "name": "架梁工",
+        "desc": [
+          "每当你翻修房屋时，你可以用1根木头来代替恰好1块砖头或1块石头。每当你扩建房屋时，对于每间房屋，你可以用1根木头来代替恰好2块砖头或2块石头。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_K273_BasinMaker",
+    "originalId": "K273_BasinMaker",
+    "gameEdition": "classic",
+    "name": "制盆工",
+    "deck": "K",
+    "number": 273,
+    "desc": [
+      "每当你把猪转化为食物时，对于每只猪，你可以将你的2根木头放在此卡上。游戏结束时，除了第1、4、7、10根木头，此卡上的每根木头都使你额外获得1分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K273.png",
+    "locales": {
+      "zh": {
+        "name": "制盆工",
+        "desc": [
+          "每当你把猪转化为食物时，对于每只猪，你可以将你的2根木头放在此卡上。游戏结束时，除了第1、4、7、10根木头，此卡上的每根木头都使你额外获得1分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_K274_OrganicFarmer",
+    "name": "有机农",
+    "deck": "K",
+    "number": 274,
+    "category": "POINTS_PROVIDER",
+    "desc": [
+      "游戏结束时，你的每个饲养了至少1只动物，且未使用的容量还足以容纳至少3只动物的圈地都使你额外获得1分。(适用于K145林间牧场、E58兽笼、I102野生保护区)"
+    ],
+    "cost": {},
+    "players": "1+",
+    "extraVp": true,
+    "originalId": "K274_OrganicFarmer",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/K274.png",
+    "locales": {
+      "zh": {
+        "name": "有机农",
+        "desc": [
+          "游戏结束时，你的每个饲养了至少1只动物，且未使用的容量还足以容纳至少3只动物的圈地都使你额外获得1分。(适用于K145林间牧场、E58兽笼、I102野生保护区)"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_K275_PerpetualStudent",
+    "originalId": "K275_PerpetualStudent",
+    "gameEdition": "classic",
+    "name": "懒惰的学生",
+    "deck": "K",
+    "number": 275,
+    "desc": [
+      "每当你打出1张职业卡前，你可以获得3份食物，然后让一名其他玩家从你的手牌中随机选择一张职业牌，你必须打出此卡并支付相应的费用(如情圣)，你每缺少1份食物就获得1张乞讨卡。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K275.png",
+    "locales": {
+      "zh": {
+        "name": "懒惰的学生",
+        "desc": [
+          "每当你打出1张职业卡前，你可以获得3份食物，然后让一名其他玩家从你的手牌中随机选择一张职业牌，你必须打出此卡并支付相应的费用(如情圣)，你每缺少1份食物就获得1张乞讨卡。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_K276_Constable",
+    "originalId": "K276_Constable",
+    "gameEdition": "classic",
+    "name": "警官",
+    "deck": "K",
+    "number": 276,
+    "desc": [
+      "打出此卡时，若距离游戏结束还有1/3/6/9个完整回合，则你立即获得1/2/3/4根木头。游戏结束时，没有负分项目的玩家都额外获得5分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K276.png",
+    "locales": {
+      "zh": {
+        "name": "警官",
+        "desc": [
+          "打出此卡时，若距离游戏结束还有1/3/6/9个完整回合，则你立即获得1/2/3/4根木头。游戏结束时，没有负分项目的玩家都额外获得5分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_K277_Manufacturer",
+    "originalId": "K277_Manufacturer",
+    "gameEdition": "classic",
+    "name": "制造商",
+    "deck": "K",
+    "number": 277,
+    "desc": [
+      "一旦你的房屋等级是砖屋/石屋，A7家具工坊、A8陶艺工坊、A9编筐工坊对你来说都是次要发展卡，而且所需花费减少两个任意资源。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K277.png",
+    "locales": {
+      "zh": {
+        "name": "制造商",
+        "desc": [
+          "一旦你的房屋等级是砖屋/石屋，A7家具工坊、A8陶艺工坊、A9编筐工坊对你来说都是次要发展卡，而且所需花费减少两个任意资源。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_K278_Forester",
+    "originalId": "K278_Forester",
+    "gameEdition": "classic",
+    "name": "护林人",
+    "deck": "K",
+    "number": 278,
+    "desc": [
+      "你可以在此卡上播种3列木头。木头的播种和收割遵循小麦的一般规则。（不能被K286小农种植额外木头。此卡上未收割的木头不算作你的资源，不计算任何职业和发展卡分数。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K278.png",
+    "locales": {
+      "zh": {
+        "name": "护林人",
+        "desc": [
+          "你可以在此卡上播种3列木头。木头的播种和收割遵循小麦的一般规则。（不能被K286小农种植额外木头。此卡上未收割的木头不算作你的资源，不计算任何职业和发展卡分数。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_K279_Scholar",
+    "originalId": "K279_Scholar",
+    "gameEdition": "classic",
+    "name": "博学士",
+    "deck": "K",
+    "number": 279,
+    "desc": [
+      "一旦你的房屋等级是石屋，你可在每回合开始时支付1份食物作为技能培训费打出1张职业卡，或打出1张发展卡（需要满足条件照常支付费用）。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K279.png",
+    "locales": {
+      "zh": {
+        "name": "博学士",
+        "desc": [
+          "一旦你的房屋等级是石屋，你可在每回合开始时支付1份食物作为技能培训费打出1张职业卡，或打出1张发展卡（需要满足条件照常支付费用）。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_K280_Tanner",
+    "originalId": "K280_Tanner",
+    "gameEdition": "classic",
+    "name": "剥皮工",
+    "deck": "K",
+    "number": 280,
+    "desc": [
+      "每当你将猪或牛转换成食物后，可以将被转化的动物放到此卡上。游戏结束时，如果此卡上有至少2/4/6只猪或2/3/4头牛，你都获得1/2/3分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K280.png",
+    "locales": {
+      "zh": {
+        "name": "剥皮工",
+        "desc": [
+          "每当你将猪或牛转换成食物后，可以将被转化的动物放到此卡上。游戏结束时，如果此卡上有至少2/4/6只猪或2/3/4头牛，你都获得1/2/3分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_K281_TravelingSalesman",
+    "originalId": "K281_TravelingSalesman",
+    "gameEdition": "classic",
+    "name": "流动商贩",
+    "deck": "K",
+    "number": 281,
+    "desc": [
+      "每轮次限1次：每当你执行“打次发”行动时，你可以改为打出1张主要发展卡。每当你执行“打主发或次发”行动时，可以改为打出2张次要发展卡。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K281.png",
+    "locales": {
+      "zh": {
+        "name": "流动商贩",
+        "desc": [
+          "每轮次限1次：每当你执行“打次发”行动时，你可以改为打出1张主要发展卡。每当你执行“打主发或次发”行动时，可以改为打出2张次要发展卡。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_K282_HouseSteward",
+    "name": "房屋管理员",
+    "deck": "K",
+    "number": 282,
+    "category": "POINTS_PROVIDER",
+    "desc": [
+      "打出此卡时，若距离游戏结束还有1/3/6/9个完整回合，则你立即获得1/2/3/4根木头。游戏结束时，房屋板块数量最多的每位玩家都获得3分。"
+    ],
+    "cost": {},
+    "players": "1+",
+    "extraVp": true,
+    "originalId": "K282_HouseSteward",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/K282.png",
+    "locales": {
+      "zh": {
+        "name": "房屋管理员",
+        "desc": [
+          "打出此卡时，若距离游戏结束还有1/3/6/9个完整回合，则你立即获得1/2/3/4根木头。游戏结束时，房屋板块数量最多的每位玩家都获得3分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_K283_WoodDeliveryman",
+    "originalId": "K283_WoodDeliveryman",
+    "gameEdition": "classic",
+    "name": "运木工",
+    "deck": "K",
+    "number": 283,
+    "desc": [
+      "在第8至14回合中尚未开启的回合行动格上各放置1根木头。这些回合开始时，你获得对应的木头。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K283.png",
+    "locales": {
+      "zh": {
+        "name": "运木工",
+        "desc": [
+          "在第8至14回合中尚未开启的回合行动格上各放置1根木头。这些回合开始时，你获得对应的木头。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_K284_WoodDistributor",
+    "originalId": "K284_WoodDistributor",
+    "gameEdition": "classic",
+    "name": "木头分配员",
+    "deck": "K",
+    "number": 284,
+    "desc": [
+      "打出此卡时，你立即获得2根木头。每个工作阶段开始时，你可以把森林[3木]积累行动格上的所有木头（其他物品不能分发）尽量平均分配到土矿[1砖]、芦苇滩和钓鱼积累行动格上。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K284.png",
+    "locales": {
+      "zh": {
+        "name": "木头分配员",
+        "desc": [
+          "打出此卡时，你立即获得2根木头。每个工作阶段开始时，你可以把森林[3木]积累行动格上的所有木头（其他物品不能分发）尽量平均分配到土矿[1砖]、芦苇滩和钓鱼积累行动格上。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_K285_Tinsmith",
+    "originalId": "K285_Tinsmith",
+    "gameEdition": "classic",
+    "name": "锡匠",
+    "deck": "K",
+    "number": 285,
+    "desc": [
+      "任意时刻，你可以将1块砖转化为1份食物。如果有人打出了A10水井/I66村中水井，则你可以将2块砖转化为3份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K285.png",
+    "locales": {
+      "zh": {
+        "name": "锡匠",
+        "desc": [
+          "任意时刻，你可以将1块砖转化为1份食物。如果有人打出了A10水井/I66村中水井，则你可以将2块砖转化为3份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_K286_Smallholder",
+    "originalId": "K286_Smallholder",
+    "gameEdition": "classic",
+    "name": "小农",
+    "deck": "K",
+    "number": 286,
+    "desc": [
+      "你原本能容纳恰好2只动物的圈地变成能容纳3只动物。如果你有至多2块田地，则你执行\"播种\"行动时，可以在每个新播种的田上额外放置1份对应小麦/蔬菜。（卡牌麦田、菜田也算）"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K286.png",
+    "locales": {
+      "zh": {
+        "name": "小农",
+        "desc": [
+          "你原本能容纳恰好2只动物的圈地变成能容纳3只动物。如果你有至多2块田地，则你执行\"播种\"行动时，可以在每个新播种的田上额外放置1份对应小麦/蔬菜。（卡牌麦田、菜田也算）"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_K287_StorehouseClerk",
+    "originalId": "K287_StorehouseClerk",
+    "gameEdition": "classic",
+    "name": "仓库簿记",
+    "deck": "K",
+    "number": 287,
+    "desc": [
+      "每回合开始时，如果你有不少于5石头/6芦苇/7砖头/8木头，则你获得1石头/1芦苇/1砖头/1木头。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K287.png",
+    "locales": {
+      "zh": {
+        "name": "仓库簿记",
+        "desc": [
+          "每回合开始时，如果你有不少于5石头/6芦苇/7砖头/8木头，则你获得1石头/1芦苇/1砖头/1木头。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_K288_StorehouseKeeper",
+    "name": "仓库管理员",
+    "deck": "K",
+    "number": 288,
+    "category": "GOODS_PROVIDER",
+    "desc": [
+      "每当你使用从行动格上同时获得芦苇和石头时，你额外获得1块砖头或1份小麦。"
+    ],
+    "cost": {},
+    "players": "1+",
+    "originalId": "K288_StorehouseKeeper",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/K288.png",
+    "locales": {
+      "zh": {
+        "name": "仓库管理员",
+        "desc": [
+          "每当你使用从行动格上同时获得芦苇和石头时，你额外获得1块砖头或1份小麦。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_K289_Countryman",
+    "originalId": "K289_Countryman",
+    "gameEdition": "classic",
+    "name": "乡下人",
+    "deck": "K",
+    "number": 289,
+    "desc": [
+      "每回合所有玩家派遣完家庭成员后，你可以将1个你在小麦种子或蔬菜种子行动格上的家庭成员移动到一个未被占用的（）可以提供\"播种\"行动的行动格并使用该格。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K289.png",
+    "locales": {
+      "zh": {
+        "name": "乡下人",
+        "desc": [
+          "每回合所有玩家派遣完家庭成员后，你可以将1个你在小麦种子或蔬菜种子行动格上的家庭成员移动到一个未被占用的（）可以提供\"播种\"行动的行动格并使用该格。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_K290_ClayWorker",
+    "originalId": "K290_ClayWorker",
+    "gameEdition": "classic",
+    "name": "黏土工",
+    "deck": "K",
+    "number": 290,
+    "desc": [
+      "当你在行动格上获得木头或砖头时，你额外获得1块砖头。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K290.png",
+    "locales": {
+      "zh": {
+        "name": "黏土工",
+        "desc": [
+          "当你在行动格上获得木头或砖头时，你额外获得1块砖头。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_K291_Lover",
+    "originalId": "K291_Lover",
+    "gameEdition": "classic",
+    "name": "情圣",
+    "deck": "K",
+    "number": 291,
+    "desc": [
+      "打出此卡时，必须立即支付4份食物来执行一次“生娃（无需空房间）”行动。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K291.png",
+    "locales": {
+      "zh": {
+        "name": "情圣",
+        "desc": [
+          "打出此卡时，必须立即支付4份食物来执行一次“生娃（无需空房间）”行动。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_K292_MarketWoman",
+    "originalId": "K292_MarketWoman",
+    "gameEdition": "classic",
+    "name": "女商贩",
+    "deck": "K",
+    "number": 292,
+    "desc": [
+      "每当你使用行动格或次要发展卡获得蔬菜时，你额外获得2份小麦。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K292.png",
+    "locales": {
+      "zh": {
+        "name": "女商贩",
+        "desc": [
+          "每当你使用行动格或次要发展卡获得蔬菜时，你额外获得2份小麦。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_K293_Ploughman",
+    "name": "犁田工",
+    "deck": "K",
+    "number": 293,
+    "category": "FARM_PLANNER",
+    "desc": [
+      "将当前回合数加4,7和10，在这些回合的行动格上各放置1块田地板块。在这些回合开始时，你可以支付1份食物来犁对应的田田地板块。"
+    ],
+    "cost": {},
+    "players": "3+",
+    "originalId": "K293_Ploughman",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/K293.png",
+    "locales": {
+      "zh": {
+        "name": "犁田工",
+        "desc": [
+          "将当前回合数加4,7和10，在这些回合的行动格上各放置1块田地板块。在这些回合开始时，你可以支付1份食物来犁对应的田田地板块。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_K294_BrushwoodCollector",
+    "name": "拾柴者",
+    "deck": "K",
+    "number": 294,
+    "category": "BUILDING_RESOURCE_PROVIDER",
+    "desc": [
+      "在每次翻修/扩建每间房屋时，你可以用1根木头来代替所需的1捆/2捆芦苇。"
+    ],
+    "cost": {},
+    "players": "3+",
+    "originalId": "K294_BrushwoodCollector",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/K294.png",
+    "locales": {
+      "zh": {
+        "name": "拾柴者",
+        "desc": [
+          "在每次翻修/扩建每间房屋时，你可以用1根木头来代替所需的1捆/2捆芦苇。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_K295_CattleBreeder",
+    "originalId": "K295_CattleBreeder",
+    "gameEdition": "classic",
+    "name": "野牛哺育师",
+    "deck": "K",
+    "number": 295,
+    "desc": [
+      "打出时立即获得1头牛。在第12回合结束时，你的牛将会进行一次繁殖。（需有饲养空间）"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K295.png",
+    "locales": {
+      "zh": {
+        "name": "野牛哺育师",
+        "desc": [
+          "打出时立即获得1头牛。在第12回合结束时，你的牛将会进行一次繁殖。（需有饲养空间）"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_K296_SeedSeller",
+    "name": "种子贩售商",
+    "deck": "K",
+    "number": 296,
+    "category": "CROP_PROVIDER",
+    "desc": [
+      "打出时立即获得1份小麦。每当你使用小麦种子行动格时，你额外获得1份小麦。"
+    ],
+    "cost": {},
+    "players": "3+",
+    "originalId": "K296_SeedSeller",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/K296.png",
+    "locales": {
+      "zh": {
+        "name": "种子贩售商",
+        "desc": [
+          "打出时立即获得1份小麦。每当你使用小麦种子行动格时，你额外获得1份小麦。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_K297_SheepFarmer",
+    "originalId": "K297_SheepFarmer",
+    "gameEdition": "classic",
+    "name": "养羊专业户",
+    "deck": "K",
+    "number": 297,
+    "desc": [
+      "每当你从行动格上获得羊时，你额外获得1只羊。（通过卡牌获得的羊不算）除繁殖阶段外，你可以随时把3只羊换成1只猪+1头牛，即使没有多余饲养空间。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K297.png",
+    "locales": {
+      "zh": {
+        "name": "养羊专业户",
+        "desc": [
+          "每当你从行动格上获得羊时，你额外获得1只羊。（通过卡牌获得的羊不算）除繁殖阶段外，你可以随时把3只羊换成1只猪+1头牛，即使没有多余饲养空间。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_K298_ShepherdBoy",
+    "originalId": "K298_ShepherdBoy",
+    "gameEdition": "classic",
+    "name": "放羊的男孩",
+    "deck": "K",
+    "number": 298,
+    "desc": [
+      "一旦你的房屋等级是石屋，在之后回合的行动格上各放置1只羊。这些回合开始时，你获得对应的羊。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K298.png",
+    "locales": {
+      "zh": {
+        "name": "放羊的男孩",
+        "desc": [
+          "一旦你的房屋等级是石屋，在之后回合的行动格上各放置1只羊。这些回合开始时，你获得对应的羊。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_K299_Slaughterman",
+    "originalId": "K299_Slaughterman",
+    "gameEdition": "classic",
+    "name": "屠宰工",
+    "deck": "K",
+    "number": 299,
+    "desc": [
+      "每次其他玩家将至少1只动物转化为食物时，你获得1份食物。每个丰收时节的喂养阶段，你最后进行结算。K299屠宰工和I97屠宰场的拥有者按照正常(下1回合)顺序结算。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K299.png",
+    "locales": {
+      "zh": {
+        "name": "屠宰工",
+        "desc": [
+          "每次其他玩家将至少1只动物转化为食物时，你获得1份食物。每个丰收时节的喂养阶段，你最后进行结算。K299屠宰工和I97屠宰场的拥有者按照正常(下1回合)顺序结算。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_K300_SchnapsDistiller",
+    "originalId": "K300_SchnapsDistiller",
+    "gameEdition": "classic",
+    "name": "烈酒蒸馏师",
+    "deck": "K",
+    "number": 300,
+    "desc": [
+      "每个丰收时节的喂养阶段，你可以将至多1份蔬菜转化为5份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K300.png",
+    "locales": {
+      "zh": {
+        "name": "烈酒蒸馏师",
+        "desc": [
+          "每个丰收时节的喂养阶段，你可以将至多1份蔬菜转化为5份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_K301_WoodCarver",
+    "originalId": "K301_WoodCarver",
+    "gameEdition": "classic",
+    "name": "木雕工",
+    "deck": "K",
+    "number": 301,
+    "desc": [
+      "每回合限1次：你在打次发/扩建木屋/建造马厩/围栅栏时可以少花费1根木头。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K301.png",
+    "locales": {
+      "zh": {
+        "name": "木雕工",
+        "desc": [
+          "每回合限1次：你在打次发/扩建木屋/建造马厩/围栅栏时可以少花费1根木头。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_K302_PigWhisperer",
+    "originalId": "K302_PigWhisperer",
+    "gameEdition": "classic",
+    "name": "驯猪人",
+    "deck": "K",
+    "number": 302,
+    "desc": [
+      "将当前回合数加4、7和10，在这些回合的行动格上各放置1只猪。这些回合开始时，你获得对应的猪。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K302.png",
+    "locales": {
+      "zh": {
+        "name": "驯猪人",
+        "desc": [
+          "将当前回合数加4、7和10，在这些回合的行动格上各放置1只猪。这些回合开始时，你获得对应的猪。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_K303_StoneBreaker",
+    "originalId": "K303_StoneBreaker",
+    "gameEdition": "classic",
+    "name": "碎石工",
+    "deck": "K",
+    "number": 303,
+    "desc": [
+      "任意时刻，你可以将你的砖屋翻修成石屋。（正常支付费用）"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K303.png",
+    "locales": {
+      "zh": {
+        "name": "碎石工",
+        "desc": [
+          "任意时刻，你可以将你的砖屋翻修成石屋。（正常支付费用）"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_K304_Veterinarian",
+    "originalId": "K304_Veterinarian",
+    "gameEdition": "classic",
+    "name": "兽医",
+    "deck": "K",
+    "number": 304,
+    "desc": [
+      "打出时在一个袋子里放进4只羊+3只猪+2头牛，每回合开始时，随机抽取两只动物。如果抽出的两只动物相同，则你留下1只，放回1只。如果动物不同，则全部放回。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K304.png",
+    "locales": {
+      "zh": {
+        "name": "兽医",
+        "desc": [
+          "打出时在一个袋子里放进4只羊+3只猪+2头牛，每回合开始时，随机抽取两只动物。如果抽出的两只动物相同，则你留下1只，放回1只。如果动物不同，则全部放回。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_K305_AnimalHandler",
+    "originalId": "K305_AnimalHandler",
+    "gameEdition": "classic",
+    "name": "动物驯养员",
+    "deck": "K",
+    "number": 305,
+    "desc": [
+      "在第7、10、14回合的行动格上依次放置1只羊、1只猪和1头牛。这些回合开始时，你可以支付1份食物购买对应的动物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K305.png",
+    "locales": {
+      "zh": {
+        "name": "动物驯养员",
+        "desc": [
+          "在第7、10、14回合的行动格上依次放置1只羊、1只猪和1头牛。这些回合开始时，你可以支付1份食物购买对应的动物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_K306_AnimalTamer",
+    "originalId": "K306_AnimalTamer",
+    "gameEdition": "classic",
+    "name": "驯兽师",
+    "deck": "K",
+    "number": 306,
+    "desc": [
+      "你的房屋里不再总计限养1只动物了，而改为能在你的每间房屋里各饲养1只任意种类的动物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K306.png",
+    "locales": {
+      "zh": {
+        "name": "驯兽师",
+        "desc": [
+          "你的房屋里不再总计限养1只动物了，而改为能在你的每间房屋里各饲养1只任意种类的动物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_K307_AnimalBreeder",
+    "originalId": "K307_AnimalBreeder",
+    "gameEdition": "classic",
+    "name": "哺育师",
+    "deck": "K",
+    "number": 307,
+    "desc": [
+      "每当你在未使用的空格上围起至少1格圈地时，你可以支付1/2/3份食物购买2只羊/2只猪/2头牛。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K307.png",
+    "locales": {
+      "zh": {
+        "name": "哺育师",
+        "desc": [
+          "每当你在未使用的空格上围起至少1格圈地时，你可以支付1/2/3份食物购买2只羊/2只猪/2头牛。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_K308_Foreman",
+    "originalId": "K308_Foreman",
+    "gameEdition": "classic",
+    "name": "工头",
+    "deck": "K",
+    "number": 308,
+    "desc": [
+      "每回合开始时，你可以从游戏供应区拿取1份食物放置任意一个行动格上。（不能放在未翻开行动格上）"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K308.png",
+    "locales": {
+      "zh": {
+        "name": "工头",
+        "desc": [
+          "每回合开始时，你可以从游戏供应区拿取1份食物放置任意一个行动格上。（不能放在未翻开行动格上）"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_K309_Weaver",
+    "originalId": "K309_Weaver",
+    "gameEdition": "classic",
+    "name": "纺织工",
+    "deck": "K",
+    "number": 309,
+    "desc": [
+      "每个工作阶段开始时，如果你有至少2只羊，则你获得1份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K309.png",
+    "locales": {
+      "zh": {
+        "name": "纺织工",
+        "desc": [
+          "每个工作阶段开始时，如果你有至少2只羊，则你获得1份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_K310_ResourceSeller",
+    "originalId": "K310_ResourceSeller",
+    "gameEdition": "classic",
+    "name": "资源销售商",
+    "deck": "K",
+    "number": 310,
+    "desc": [
+      "按右图所示将这些物品排列于此卡上，每当你获得与最上面的资源同种的资源时，你取走最上面的资源。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K310.png",
+    "locales": {
+      "zh": {
+        "name": "资源销售商",
+        "desc": [
+          "按右图所示将这些物品排列于此卡上，每当你获得与最上面的资源同种的资源时，你取走最上面的资源。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_K311_Magician",
+    "originalId": "K311_Magician",
+    "gameEdition": "classic",
+    "name": "魔术师",
+    "deck": "K",
+    "number": 311,
+    "desc": [
+      "每当你的最后一名家庭成员使用卖艺积累行动格时，额外获得1份小麦+1份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K311.png",
+    "locales": {
+      "zh": {
+        "name": "魔术师",
+        "desc": [
+          "每当你的最后一名家庭成员使用卖艺积累行动格时，额外获得1份小麦+1份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_K312_FenceOverseer",
+    "originalId": "K312_FenceOverseer",
+    "gameEdition": "classic",
+    "name": "栅栏监管员",
+    "deck": "K",
+    "number": 312,
+    "desc": [
+      "每回合限一次：你可以支付1份食物免费将刚建成的马厩所在的格子围成1格圈地。(必须遵循圈地规则)"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K312.png",
+    "locales": {
+      "zh": {
+        "name": "栅栏监管员",
+        "desc": [
+          "每回合限一次：你可以支付1份食物免费将刚建成的马厩所在的格子围成1格圈地。(必须遵循圈地规则)"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_K339_Pelts",
+    "originalId": "K339_Pelts",
+    "gameEdition": "classic",
+    "name": "毛皮",
+    "deck": "K",
+    "number": 339,
+    "desc": [
+      "每当你将动物转化成食物时，对于每只被转化的动物，你可支付1份食物（从个人供应区拿取）放置到你的1个房间板块上。每个房间板块至多放置1份这样的食物，食物不可再次被使用。游戏结束时，每有1个这样的食物你便额外获得1分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "3 Occupations",
+    "occupationPrerequisites": {
+      "min": 3
+    },
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K339.png",
+    "locales": {
+      "zh": {
+        "name": "毛皮",
+        "desc": [
+          "每当你将动物转化成食物时，对于每只被转化的动物，你可支付1份食物（从个人供应区拿取）放置到你的1个房间板块上。每个房间板块至多放置1份这样的食物，食物不可再次被使用。游戏结束时，每有1个这样的食物你便额外获得1分。"
+        ],
+        "prerequisite": "职业×3"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_K342_AnimalTrainer",
+    "originalId": "K342_AnimalTrainer",
+    "gameEdition": "classic",
+    "name": "马戏驯兽师",
+    "deck": "K",
+    "number": 342,
+    "desc": [
+      "每当你使用卖艺积累行动格时，你可以使用上面的食物购买动物，羊/猪/牛分别花费2/2/3份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/K342.png",
+    "locales": {
+      "zh": {
+        "name": "马戏驯兽师",
+        "desc": [
+          "每当你使用卖艺积累行动格时，你可以使用上面的食物购买动物，羊/猪/牛分别花费2/2/3份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL001_DutchWindmill",
+    "originalId": "NL001_DutchWindmill",
+    "gameEdition": "classic",
+    "name": "荷兰风车",
+    "deck": "NL",
+    "number": 1,
+    "desc": [
+      "每当你在以丰收时节为结束的回合里执行了“烤面包”行动，你额外获得2份食物"
+    ],
+    "cost": {
+      "wood": 2,
+      "stone": 2
+    },
+    "vp": 2,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL001.png",
+    "locales": {
+      "zh": {
+        "name": "荷兰风车",
+        "desc": [
+          "每当你在以丰收时节为结束的回合里执行了“烤面包”行动，你额外获得2份食物"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL002_Parlor",
+    "originalId": "NL002_Parlor",
+    "gameEdition": "classic",
+    "name": "起居室",
+    "deck": "NL",
+    "number": 2,
+    "desc": [
+      "立即免费将一间房屋换成石屋(你无需再翻修此屋子，其他屋子不变，不改变你所住房子的等级)"
+    ],
+    "cost": {
+      "food": 1
+    },
+    "vp": 0,
+    "prerequisite": "2 Occupations",
+    "occupationPrerequisites": {
+      "min": 2
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL002.png",
+    "locales": {
+      "zh": {
+        "name": "起居室",
+        "desc": [
+          "立即免费将一间房屋换成石屋(你无需再翻修此屋子，其他屋子不变，不改变你所住房子的等级)"
+        ],
+        "prerequisite": "职业×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL003_YearofDisaster",
+    "originalId": "NL003_YearofDisaster",
+    "gameEdition": "classic",
+    "name": "灾荒之年",
+    "deck": "NL",
+    "number": 3,
+    "desc": [
+      "在下次和下下次丰收时节之间的回合结束时，每位其他玩家必须支付1食物到游戏供应区或者扣1分"
+    ],
+    "cost": {},
+    "vp": 1,
+    "prerequisite": "2 Occupations",
+    "occupationPrerequisites": {
+      "min": 2
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL003.png",
+    "locales": {
+      "zh": {
+        "name": "灾荒之年",
+        "desc": [
+          "在下次和下下次丰收时节之间的回合结束时，每位其他玩家必须支付1食物到游戏供应区或者扣1分"
+        ],
+        "prerequisite": "职业×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL004_CheeseMarket",
+    "originalId": "NL004_CheeseMarket",
+    "gameEdition": "classic",
+    "name": "起司市场",
+    "deck": "NL",
+    "number": 4,
+    "desc": [
+      "在每个不以丰收时节为结束的回合开始时，羊为1分，牛为2分，以此计分总积分最高的玩家获得1份小麦。如果你和其他人平手，只有你获得小麦，其他玩家平手或所有人积分都为0，则没人得小麦卡牌羊 公羊 是否计算"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL004.png",
+    "locales": {
+      "zh": {
+        "name": "起司市场",
+        "desc": [
+          "在每个不以丰收时节为结束的回合开始时，羊为1分，牛为2分，以此计分总积分最高的玩家获得1份小麦。如果你和其他人平手，只有你获得小麦，其他玩家平手或所有人积分都为0，则没人得小麦卡牌羊 公羊 是否计算"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL005_Studio",
+    "name": "工作室",
+    "deck": "NL",
+    "number": 5,
+    "category": "FOOD_PROVIDER",
+    "desc": [
+      "每个喂养阶段，你可以使用此卡将至多1个资源转化成食物。每个木头/砖头能转换成2食物，每个石头能转换成3食物"
+    ],
+    "vp": 1,
+    "cost": {
+      "clay": 1,
+      "reed": 1
+    },
+    "waresSalesmanGains": [
+      {
+        "wood": 1,
+        "reed": 1
+      },
+      {
+        "clay": 1,
+        "reed": 1
+      },
+      {
+        "stone": 1,
+        "reed": 1
+      }
+    ],
+    "originalId": "NL005_Studio",
+    "gameEdition": "classic",
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/NL005.png",
+    "locales": {
+      "zh": {
+        "name": "工作室",
+        "desc": [
+          "每个喂养阶段，你可以使用此卡将至多1个资源转化成食物。每个木头/砖头能转换成2食物，每个石头能转换成3食物"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL006_Backyard",
+    "originalId": "NL006_Backyard",
+    "gameEdition": "classic",
+    "name": "后院",
+    "deck": "NL",
+    "number": 6,
+    "desc": [
+      "如果你的农场有2×2的空地且其中一个与房屋正交相邻，则这块空地可以容纳一名家庭成员。一旦其中一格被占用，你需要将该家庭成员移入空房间或个人供应区"
+    ],
+    "cost": {
+      "reed": 1
+    },
+    "vp": 1,
+    "prerequisite": "2 Occupations",
+    "occupationPrerequisites": {
+      "min": 2
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL006.png",
+    "locales": {
+      "zh": {
+        "name": "后院",
+        "desc": [
+          "如果你的农场有2×2的空地且其中一个与房屋正交相邻，则这块空地可以容纳一名家庭成员。一旦其中一格被占用，你需要将该家庭成员移入空房间或个人供应区"
+        ],
+        "prerequisite": "职业×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL007_Stage",
+    "originalId": "NL007_Stage",
+    "gameEdition": "classic",
+    "name": "舞台",
+    "deck": "NL",
+    "number": 7,
+    "desc": [
+      "每个工作阶段结束时，如果三个游戏版图都有你的家庭成员，则你额外获得1份食物。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL007.png",
+    "locales": {
+      "zh": {
+        "name": "舞台",
+        "desc": [
+          "每个工作阶段结束时，如果三个游戏版图都有你的家庭成员，则你额外获得1份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL008_WaterHouse",
+    "originalId": "NL008_WaterHouse",
+    "gameEdition": "classic",
+    "name": "水上小屋",
+    "deck": "NL",
+    "number": 8,
+    "desc": [
+      "每回合资源补充阶段，在钓鱼积累行动格上额外补充1份食物，其他玩家使用钓鱼积累行动格后必须支付你2份食物痰盂"
+    ],
+    "cost": {
+      "clay": 1,
+      "stone": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL008.png",
+    "locales": {
+      "zh": {
+        "name": "水上小屋",
+        "desc": [
+          "每回合资源补充阶段，在钓鱼积累行动格上额外补充1份食物，其他玩家使用钓鱼积累行动格后必须支付你2份食物痰盂"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL009_JunkRoom",
+    "name": "杂物房",
+    "deck": "NL",
+    "number": 9,
+    "category": "FOOD_PROVIDER",
+    "desc": [
+      "每当你打出1张发展卡（包括此卡）后，你获得1份食物你有小溪家庭成员"
+    ],
+    "cost": {
+      "wood": 1,
+      "clay": 1
+    },
+    "originalId": "NL009_JunkRoom",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/NL009.png",
+    "locales": {
+      "zh": {
+        "name": "杂物房",
+        "desc": [
+          "每当你打出1张发展卡（包括此卡）后，你获得1份食物你有小溪家庭成员"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL010_LoveLetter",
+    "originalId": "NL010_LoveLetter",
+    "gameEdition": "classic",
+    "name": "情书",
+    "deck": "NL",
+    "number": 10,
+    "desc": [
+      "如果你在当前回合数加1/2/3的回合中使用生儿育女行动格，你得到2/3/5份食物(标记打出时的回合)蚱蜢"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 1,
+    "prerequisite": "发展卡×2",
+    "improvementPrerequisites": {
+      "min": 2
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL010.png",
+    "locales": {
+      "zh": {
+        "name": "情书",
+        "desc": [
+          "如果你在当前回合数加1/2/3的回合中使用生儿育女行动格，你得到2/3/5份食物(标记打出时的回合)蚱蜢"
+        ],
+        "prerequisite": "发展卡×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL011_Spittoon",
+    "originalId": "NL011_Spittoon",
+    "gameEdition": "classic",
+    "name": "痰盂",
+    "deck": "NL",
+    "number": 11,
+    "desc": [
+      "此卡只能在不以丰收时节为结束的回合打出。你可以从左边或右边的玩家处拿走2份食物，然后将此卡传给他。以丰收时节结束的回合：479111314壕沟家庭"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL011.png",
+    "locales": {
+      "zh": {
+        "name": "痰盂",
+        "desc": [
+          "此卡只能在不以丰收时节为结束的回合打出。你可以从左边或右边的玩家处拿走2份食物，然后将此卡传给他。以丰收时节结束的回合：479111314壕沟家庭"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL012_Brook",
+    "name": "小溪",
+    "deck": "NL",
+    "number": 12,
+    "category": "FOOD_PROVIDER",
+    "desc": [
+      "每当你使用钓鱼积累行动格上方的森林[3木]、土矿[1砖]和芦苇滩积累行动格时，你都额外获得1份食物"
+    ],
+    "cost": {},
+    "prerequisite": "你有家庭成员在钓鱼",
+    "originalId": "NL012_Brook",
+    "gameEdition": "classic",
+    "vp": 0,
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/NL012.png",
+    "locales": {
+      "zh": {
+        "name": "小溪",
+        "desc": [
+          "每当你使用钓鱼积累行动格上方的森林[3木]、土矿[1砖]和芦苇滩积累行动格时，你都额外获得1份食物"
+        ],
+        "prerequisite": "你有家庭成员在钓鱼"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL013_GrasshopperBundles",
+    "originalId": "NL013_GrasshopperBundles",
+    "gameEdition": "classic",
+    "name": "蚱蜢",
+    "deck": "NL",
+    "number": 13,
+    "desc": [
+      "繁殖阶段时，如果你可以繁殖羊/猪/牛，且你刚好有0-3/4-7/8+份田地里的小麦，则你额外获得1只新生的羊/猪/牛。"
+    ],
+    "cost": {
+      "wood": 4,
+      "reed": 1
+    },
+    "vp": 0,
+    "prerequisite": "圈地×2",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL013.png",
+    "locales": {
+      "zh": {
+        "name": "蚱蜢",
+        "desc": [
+          "繁殖阶段时，如果你可以繁殖羊/猪/牛，且你刚好有0-3/4-7/8+份田地里的小麦，则你额外获得1只新生的羊/猪/牛。"
+        ],
+        "prerequisite": "圈地×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL014_Ditch",
+    "originalId": "NL014_Ditch",
+    "gameEdition": "classic",
+    "name": "壕沟",
+    "deck": "NL",
+    "number": 14,
+    "desc": [
+      "每当你犁一块田，你可以把蔬菜播种在两块直角相邻的田的交界处。"
+    ],
+    "cost": {
+      "food": 2
+    },
+    "vp": 0,
+    "prerequisite": "家庭成员×3",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL014.png",
+    "locales": {
+      "zh": {
+        "name": "壕沟",
+        "desc": [
+          "每当你犁一块田，你可以把蔬菜播种在两块直角相邻的田的交界处。"
+        ],
+        "prerequisite": "家庭成员×3"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL015_RowBoat",
+    "originalId": "NL015_RowBoat",
+    "gameEdition": "classic",
+    "name": "划艇",
+    "deck": "NL",
+    "number": 15,
+    "desc": [
+      "每当其他玩家使用钓鱼积累行动格时，你可以将你一位已派遣的家庭成员移动到钓鱼积累行动格并获得1食物(这不算使用钓鱼)"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 1,
+    "prerequisite": "1 Occupations",
+    "occupationPrerequisites": {
+      "min": 1
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL015.png",
+    "locales": {
+      "zh": {
+        "name": "划艇",
+        "desc": [
+          "每当其他玩家使用钓鱼积累行动格时，你可以将你一位已派遣的家庭成员移动到钓鱼积累行动格并获得1食物(这不算使用钓鱼)"
+        ],
+        "prerequisite": "职业×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL016_Caravan",
+    "originalId": "NL016_Caravan",
+    "gameEdition": "classic",
+    "name": "房车",
+    "deck": "NL",
+    "number": 16,
+    "desc": [
+      "此卡可以为1名家庭成员提供居住空间"
+    ],
+    "cost": {
+      "wood": 3
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL016.png",
+    "locales": {
+      "zh": {
+        "name": "房车",
+        "desc": [
+          "此卡可以为1名家庭成员提供居住空间"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL017_MonasticVows",
+    "originalId": "NL017_MonasticVows",
+    "gameEdition": "classic",
+    "name": "修士誓言",
+    "deck": "NL",
+    "number": 17,
+    "desc": [
+      "每个工作阶段结束时，你可以获得1张乞讨卡+3食物+1名食客，你立即放置该食客然后将其退还。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL017.png",
+    "locales": {
+      "zh": {
+        "name": "修士誓言",
+        "desc": [
+          "每个工作阶段结束时，你可以获得1张乞讨卡+3食物+1名食客，你立即放置该食客然后将其退还。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL018_FrontGarden",
+    "originalId": "NL018_FrontGarden",
+    "gameEdition": "classic",
+    "name": "前庭花园",
+    "deck": "NL",
+    "number": 18,
+    "desc": [
+      "游戏结束时，每个与房屋正交相邻或对角相邻的空地都使你获得1分(但仍会因为空地扣分)"
+    ],
+    "cost": {
+      "stone": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL018.png",
+    "locales": {
+      "zh": {
+        "name": "前庭花园",
+        "desc": [
+          "游戏结束时，每个与房屋正交相邻或对角相邻的空地都使你获得1分(但仍会因为空地扣分)"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL019_MilkJug",
+    "name": "牛奶罐",
+    "deck": "NL",
+    "number": 19,
+    "category": "FOOD_PROVIDER",
+    "desc": [
+      "每当任意玩家（包括你）使用牛市场积累行动格时，你获得3份食物，而其他每位玩家各获得1份食物"
+    ],
+    "cost": {
+      "clay": 1
+    },
+    "originalId": "NL019_MilkJug",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/NL019.png",
+    "locales": {
+      "zh": {
+        "name": "牛奶罐",
+        "desc": [
+          "每当任意玩家（包括你）使用牛市场积累行动格时，你获得3份食物，而其他每位玩家各获得1份食物"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL020_BeachChair",
+    "originalId": "NL020_BeachChair",
+    "gameEdition": "classic",
+    "name": "海滩椅",
+    "deck": "NL",
+    "number": 20,
+    "desc": [
+      "每当其他玩家使用钓鱼积累行动格时，他们可以支付你1食物来获得1分"
+    ],
+    "cost": {
+      "reed": 1
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL020.png",
+    "locales": {
+      "zh": {
+        "name": "海滩椅",
+        "desc": [
+          "每当其他玩家使用钓鱼积累行动格时，他们可以支付你1食物来获得1分"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL021_LargeGreenhouse",
+    "originalId": "NL021_LargeGreenhouse",
+    "gameEdition": "classic",
+    "name": "大型温室",
+    "deck": "NL",
+    "number": 21,
+    "desc": [
+      "将当前回合数加5,7,9，在这些回合的行动格上各放1份蔬菜，这些回合开始时，你获得这份蔬菜"
+    ],
+    "cost": {
+      "wood": 2
+    },
+    "vp": 0,
+    "prerequisite": "2 Occupations",
+    "occupationPrerequisites": {
+      "min": 2
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL021.png",
+    "locales": {
+      "zh": {
+        "name": "大型温室",
+        "desc": [
+          "将当前回合数加5,7,9，在这些回合的行动格上各放1份蔬菜，这些回合开始时，你获得这份蔬菜"
+        ],
+        "prerequisite": "职业×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL022_Bookcase",
+    "name": "书柜",
+    "deck": "NL",
+    "number": 22,
+    "category": "CROP_PROVIDER",
+    "desc": [
+      "每当你打出1个职业后，你额外获得1份蔬菜如果通过职业打出此卡，可以获得此蔬菜。"
+    ],
+    "cost": {
+      "wood": 2
+    },
+    "prerequisite": "1 Occupations",
+    "occupationPrerequisites": {
+      "min": 1
+    },
+    "originalId": "NL022_Bookcase",
+    "gameEdition": "classic",
+    "vp": 0,
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/NL022.png",
+    "locales": {
+      "zh": {
+        "name": "书柜",
+        "desc": [
+          "每当你打出1个职业后，你额外获得1份蔬菜如果通过职业打出此卡，可以获得此蔬菜。"
+        ],
+        "prerequisite": "职业×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL023_StoneBank",
+    "originalId": "NL023_StoneBank",
+    "gameEdition": "classic",
+    "name": "石头银行",
+    "deck": "NL",
+    "number": 23,
+    "desc": [
+      "每当你使用石头积累行动格时，你可以只拿1石头，并将这个石头放在此卡上。你打出发展卡时所需的石头数量减掉此卡上的石头数量"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "1 Occupations",
+    "occupationPrerequisites": {
+      "min": 1
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL023.png",
+    "locales": {
+      "zh": {
+        "name": "石头银行",
+        "desc": [
+          "每当你使用石头积累行动格时，你可以只拿1石头，并将这个石头放在此卡上。你打出发展卡时所需的石头数量减掉此卡上的石头数量"
+        ],
+        "prerequisite": "职业×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL024_ParkBench",
+    "originalId": "NL024_ParkBench",
+    "gameEdition": "classic",
+    "name": "公园长椅",
+    "deck": "NL",
+    "number": 24,
+    "desc": [
+      "你下家(左手边玩家)选择一块1你的未使用空格，从游戏供应区拿取1木放在该格上，之后该格视为已使用且不能被用作其他用途"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 1,
+    "prerequisite": "未使用空格×8",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL024.png",
+    "locales": {
+      "zh": {
+        "name": "公园长椅",
+        "desc": [
+          "你下家(左手边玩家)选择一块1你的未使用空格，从游戏供应区拿取1木放在该格上，之后该格视为已使用且不能被用作其他用途"
+        ],
+        "prerequisite": "未使用空格×8"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL025_Reqplayinround4orbefore",
+    "originalId": "NL025_Reqplayinround4orbefore",
+    "gameEdition": "classic",
+    "name": "最低薪资",
+    "deck": "NL",
+    "number": 25,
+    "desc": [
+      "每回合限1次：当你没有食物时，你得到1份食物"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "第四回合或之前",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL025.png",
+    "locales": {
+      "zh": {
+        "name": "最低薪资",
+        "desc": [
+          "每回合限1次：当你没有食物时，你得到1份食物"
+        ],
+        "prerequisite": "第四回合或之前"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL026_GardenWood",
+    "originalId": "NL026_GardenWood",
+    "gameEdition": "classic",
+    "name": "庭院木头",
+    "deck": "NL",
+    "number": 26,
+    "desc": [
+      "每有一个与你房屋正交相邻的空地，你便获得1木头使用后请将此卡交给下家，此卡将加入他的手牌。丘陵宅院第2回合或"
+    ],
+    "cost": {
+      "food": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": true,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL026.png",
+    "locales": {
+      "zh": {
+        "name": "庭院木头",
+        "desc": [
+          "每有一个与你房屋正交相邻的空地，你便获得1木头使用后请将此卡交给下家，此卡将加入他的手牌。丘陵宅院第2回合或"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL027_GrainSheaves",
+    "originalId": "NL027_GrainSheaves",
+    "gameEdition": "classic",
+    "name": "麦捆",
+    "deck": "NL",
+    "number": 27,
+    "desc": [
+      "每当你打出一张次发卡后(不包括此卡)，你获得1份小麦"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 2,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL027.png",
+    "locales": {
+      "zh": {
+        "name": "麦捆",
+        "desc": [
+          "每当你打出一张次发卡后(不包括此卡)，你获得1份小麦"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL028_CutWillows",
+    "originalId": "NL028_CutWillows",
+    "gameEdition": "classic",
+    "name": "修剪柳树",
+    "deck": "NL",
+    "number": 28,
+    "desc": [
+      "从游戏供应区拿2木到此卡上，每次你从积累行动格获得木头时，从游戏供应区此卡上增加1木。当你在一次行动（非卡牌效果支付）中需要花费至少1木时，可以用此卡上的1木支付"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL028.png",
+    "locales": {
+      "zh": {
+        "name": "修剪柳树",
+        "desc": [
+          "从游戏供应区拿2木到此卡上，每次你从积累行动格获得木头时，从游戏供应区此卡上增加1木。当你在一次行动（非卡牌效果支付）中需要花费至少1木时，可以用此卡上的1木支付"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL029_DwellingMound",
+    "originalId": "NL029_DwellingMound",
+    "gameEdition": "classic",
+    "name": "丘陵宅院",
+    "deck": "NL",
+    "number": 29,
+    "desc": [
+      "从现在起，无论使用何种方式，你每犁1块田之前，都必须先额外支付1份食物"
+    ],
+    "cost": {},
+    "vp": 4,
+    "prerequisite": "第2回合或之前",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL029.png",
+    "locales": {
+      "zh": {
+        "name": "丘陵宅院",
+        "desc": [
+          "从现在起，无论使用何种方式，你每犁1块田之前，都必须先额外支付1份食物"
+        ],
+        "prerequisite": "第2回合或之前"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL030_DutchClaypipe",
+    "name": "陶制烟斗",
+    "deck": "NL",
+    "number": 30,
+    "category": "FOOD_PROVIDER",
+    "desc": [
+      "在每回合的回家阶段，若你在当回合工作阶段获得了不少于7份建筑资源，则你获得2份食物"
+    ],
+    "cost": {
+      "clay": 1
+    },
+    "originalId": "NL030_DutchClaypipe",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/NL030.png",
+    "locales": {
+      "zh": {
+        "name": "陶制烟斗",
+        "desc": [
+          "在每回合的回家阶段，若你在当回合工作阶段获得了不少于7份建筑资源，则你获得2份食物"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL031_VegetableGarden",
+    "originalId": "NL031_VegetableGarden",
+    "gameEdition": "classic",
+    "name": "蔬菜园",
+    "deck": "NL",
+    "number": 31,
+    "desc": [
+      "打出此卡时，将2个蔬菜叠放在此卡上，收割完后你可以在此卡上种蔬菜(此卡不视为农田)"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "3 Occupations",
+    "occupationPrerequisites": {
+      "min": 3
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL031.png",
+    "locales": {
+      "zh": {
+        "name": "蔬菜园",
+        "desc": [
+          "打出此卡时，将2个蔬菜叠放在此卡上，收割完后你可以在此卡上种蔬菜(此卡不视为农田)"
+        ],
+        "prerequisite": "职业×3"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL032_WoodenShoes",
+    "originalId": "NL032_WoodenShoes",
+    "gameEdition": "classic",
+    "name": "木鞋",
+    "deck": "NL",
+    "number": 32,
+    "desc": [
+      "每当你使用第1至第4回合的行动格时，你可以先翻开下一回合的行动卡，且本回合只有你能使用。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL032.png",
+    "locales": {
+      "zh": {
+        "name": "木鞋",
+        "desc": [
+          "每当你使用第1至第4回合的行动格时，你可以先翻开下一回合的行动卡，且本回合只有你能使用。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL033_HerringPot",
+    "name": "烹鱼锅",
+    "deck": "NL",
+    "number": 33,
+    "category": "FOOD_PROVIDER",
+    "desc": [
+      "每当你使用钓鱼积累行动格时，在之后3个回合的行动格上各放1份食物，在这些回合开始时，你获得这份食物"
+    ],
+    "cost": {
+      "clay": 1
+    },
+    "originalId": "NL033_HerringPot",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/NL033.png",
+    "locales": {
+      "zh": {
+        "name": "烹鱼锅",
+        "desc": [
+          "每当你使用钓鱼积累行动格时，在之后3个回合的行动格上各放1份食物，在这些回合开始时，你获得这份食物"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL034_GoldenEarring",
+    "originalId": "NL034_GoldenEarring",
+    "gameEdition": "classic",
+    "name": "金色耳环",
+    "deck": "NL",
+    "number": 34,
+    "desc": [
+      "每一回合中，你可以将你的第2位家庭成员放置在此卡上，并从游戏供应区拿取1小麦放在此卡上。游戏结束时，若此卡上有2份小麦，则你获得7分。拱门罂粟花田未使用空"
+    ],
+    "cost": {
+      "grain": 1
+    },
+    "vp": 0,
+    "prerequisite": "第7回合或之前",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL034.png",
+    "locales": {
+      "zh": {
+        "name": "金色耳环",
+        "desc": [
+          "每一回合中，你可以将你的第2位家庭成员放置在此卡上，并从游戏供应区拿取1小麦放在此卡上。游戏结束时，若此卡上有2份小麦，则你获得7分。拱门罂粟花田未使用空"
+        ],
+        "prerequisite": "第7回合或之前"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL035_WoodenGable",
+    "originalId": "NL035_WoodenGable",
+    "gameEdition": "classic",
+    "name": "木造三角墙",
+    "deck": "NL",
+    "number": 35,
+    "desc": [
+      "游戏结束时，如果你的每间房屋都刚好住位家庭成员，则你获得3分"
+    ],
+    "cost": {
+      "wood": 2
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL035.png",
+    "locales": {
+      "zh": {
+        "name": "木造三角墙",
+        "desc": [
+          "游戏结束时，如果你的每间房屋都刚好住位家庭成员，则你获得3分"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL036_SingleSidedPlow",
+    "originalId": "NL036_SingleSidedPlow",
+    "gameEdition": "classic",
+    "name": "单面犁",
+    "deck": "NL",
+    "number": 36,
+    "desc": [
+      "放置1块田在此卡上，每当你使用犁田行动格时，你可以用此卡上的田地来额外犁1块田，若如此做，你可以立即在这个田上播种蔬菜"
+    ],
+    "cost": {
+      "wood": 2
+    },
+    "vp": 0,
+    "prerequisite": "2 Occupations",
+    "occupationPrerequisites": {
+      "min": 2
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL036.png",
+    "locales": {
+      "zh": {
+        "name": "单面犁",
+        "desc": [
+          "放置1块田在此卡上，每当你使用犁田行动格时，你可以用此卡上的田地来额外犁1块田，若如此做，你可以立即在这个田上播种蔬菜"
+        ],
+        "prerequisite": "职业×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL037_PoppyField",
+    "originalId": "NL037_PoppyField",
+    "gameEdition": "classic",
+    "name": "罂粟花田",
+    "deck": "NL",
+    "number": 37,
+    "desc": [
+      "你立即获得1份小麦+1份蔬菜。下家在你农场中用箭头标记一个未使用空格，在其他区域未使用前，你不能使用此格使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {},
+    "vp": 1,
+    "prerequisite": "未使用空格×1",
+    "passing": true,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL037.png",
+    "locales": {
+      "zh": {
+        "name": "罂粟花田",
+        "desc": [
+          "你立即获得1份小麦+1份蔬菜。下家在你农场中用箭头标记一个未使用空格，在其他区域未使用前，你不能使用此格使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": "未使用空格×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL038_Undergrowth",
+    "originalId": "NL038_Undergrowth",
+    "gameEdition": "classic",
+    "name": "灌木丛",
+    "deck": "NL",
+    "number": 38,
+    "desc": [
+      "立即获得2根木头使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "passing": true,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL038.png",
+    "locales": {
+      "zh": {
+        "name": "灌木丛",
+        "desc": [
+          "立即获得2根木头使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+]
+const batch17: readonly GeneratedCatalogCardDefinition[] = [
+  {
+    "id": "OLD_NL039_Stockpile",
+    "originalId": "NL039_Stockpile",
+    "gameEdition": "classic",
+    "name": "空投飞机",
+    "deck": "NL",
+    "number": 39,
+    "desc": [
+      "每当翻开新的回合行动卡时，如果你恰好有0-1/2-3/4-5/6+份食物，你获得1木/砖/芦苇/石头(你可以在任意时刻丢弃食物)"
+    ],
+    "cost": {
+      "wood": 5
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL039.png",
+    "locales": {
+      "zh": {
+        "name": "空投飞机",
+        "desc": [
+          "每当翻开新的回合行动卡时，如果你恰好有0-1/2-3/4-5/6+份食物，你获得1木/砖/芦苇/石头(你可以在任意时刻丢弃食物)"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL040_OxCart",
+    "originalId": "NL040_OxCart",
+    "gameEdition": "classic",
+    "name": "牛车",
+    "deck": "NL",
+    "number": 40,
+    "desc": [
+      "在你第一次拥有牛时，你可以立即犁等同于之后丰收时节数量的田"
+    ],
+    "cost": {
+      "wood": 2
+    },
+    "vp": 0,
+    "prerequisite": "11回合或之后",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL040.png",
+    "locales": {
+      "zh": {
+        "name": "牛车",
+        "desc": [
+          "在你第一次拥有牛时，你可以立即犁等同于之后丰收时节数量的田"
+        ],
+        "prerequisite": "11回合或之后"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL041_Canal",
+    "originalId": "NL041_Canal",
+    "gameEdition": "classic",
+    "name": "运河",
+    "deck": "NL",
+    "number": 41,
+    "desc": [
+      "每当你使用钓鱼积累行动格时，你可以获得至多2个你个人供应区没有的不同建筑资源"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "2 Occupations",
+    "occupationPrerequisites": {
+      "min": 2
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL041.png",
+    "locales": {
+      "zh": {
+        "name": "运河",
+        "desc": [
+          "每当你使用钓鱼积累行动格时，你可以获得至多2个你个人供应区没有的不同建筑资源"
+        ],
+        "prerequisite": "职业×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL042_DrawWell",
+    "name": "提水井",
+    "deck": "NL",
+    "number": 42,
+    "category": "FOOD",
+    "desc": [
+      "在之后的偶数回合行动格上各放置1食物，这些回合开始时，你获得对应的食物。这是1个井。"
+    ],
+    "vp": 2,
+    "cost": {
+      "wood": 1,
+      "stone": 2
+    },
+    "originalId": "NL042_DrawWell",
+    "gameEdition": "classic",
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/NL042.png",
+    "locales": {
+      "zh": {
+        "name": "提水井",
+        "desc": [
+          "在之后的偶数回合行动格上各放置1食物，这些回合开始时，你获得对应的食物。这是1个井。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL043_Bottles",
+    "name": "玻璃瓶",
+    "deck": "NL",
+    "number": 43,
+    "category": "POINTS_PROVIDER",
+    "desc": [
+      "在打出此卡时，你每拥有1名家庭成员就需要支付1块砖头和1份食物"
+    ],
+    "cost": {},
+    "vp": 4,
+    "originalId": "NL043_Bottles",
+    "gameEdition": "classic",
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/NL043.png",
+    "locales": {
+      "zh": {
+        "name": "玻璃瓶",
+        "desc": [
+          "在打出此卡时，你每拥有1名家庭成员就需要支付1块砖头和1份食物"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL044_PancakePan",
+    "originalId": "NL044_PancakePan",
+    "gameEdition": "classic",
+    "name": "煎饼锅",
+    "deck": "NL",
+    "number": 44,
+    "desc": [
+      "如果你有 发展卡，你可以随时将1份小麦转换成2份食物"
+    ],
+    "cost": {
+      "clay": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL044.png",
+    "locales": {
+      "zh": {
+        "name": "煎饼锅",
+        "desc": [
+          "如果你有 发展卡，你可以随时将1份小麦转换成2份食物"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL045_DutchMountains",
+    "originalId": "NL045_DutchMountains",
+    "gameEdition": "classic",
+    "name": "荷兰山",
+    "deck": "NL",
+    "number": 45,
+    "desc": [
+      "立即获得1石头使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "passing": true,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL045.png",
+    "locales": {
+      "zh": {
+        "name": "荷兰山",
+        "desc": [
+          "立即获得1石头使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL046_Poorhouse",
+    "originalId": "NL046_Poorhouse",
+    "gameEdition": "classic",
+    "name": "救济院",
+    "deck": "NL",
+    "number": 46,
+    "desc": [
+      "每回合开始时，你从食物最少的玩家中选择一位，这位玩家获得1食物"
+    ],
+    "cost": {
+      "wood": 1,
+      "clay": 1
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL046.png",
+    "locales": {
+      "zh": {
+        "name": "救济院",
+        "desc": [
+          "每回合开始时，你从食物最少的玩家中选择一位，这位玩家获得1食物"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL047_EarlyGrain",
+    "originalId": "NL047_EarlyGrain",
+    "gameEdition": "classic",
+    "name": "早熟麦",
+    "deck": "NL",
+    "number": 47,
+    "desc": [
+      "立刻从你的每个麦田上各收割1份小麦。算不算收割呢使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "passing": true,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL047.png",
+    "locales": {
+      "zh": {
+        "name": "早熟麦",
+        "desc": [
+          "立刻从你的每个麦田上各收割1份小麦。算不算收割呢使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL048_Req1emptyfield",
+    "originalId": "NL048_Req1emptyfield",
+    "gameEdition": "classic",
+    "name": "郁金香花田",
+    "deck": "NL",
+    "number": 48,
+    "desc": [
+      "从游戏供应区拿取4食物叠放在你的一块空田上，每个收割阶段你从上面拿下1份到你的个人供应区，食物拿完前你无法用这块田播种使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "空田×1",
+    "passing": true,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL048.png",
+    "locales": {
+      "zh": {
+        "name": "郁金香花田",
+        "desc": [
+          "从游戏供应区拿取4食物叠放在你的一块空田上，每个收割阶段你从上面拿下1份到你的个人供应区，食物拿完前你无法用这块田播种使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": "空田×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL049_Lumbermill",
+    "name": "锯木厂",
+    "deck": "NL",
+    "number": 49,
+    "category": "BUILDING_RESOURCE_PROVIDER",
+    "desc": [
+      "每张发展卡所需的木头花费于你而言都减少1"
+    ],
+    "cost": {
+      "stone": 2
+    },
+    "vp": 2,
+    "prerequisite": "",
+    "originalId": "NL049_Lumbermill",
+    "gameEdition": "classic",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/NL049.png",
+    "locales": {
+      "zh": {
+        "name": "锯木厂",
+        "desc": [
+          "每张发展卡所需的木头花费于你而言都减少1"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL050_NightWatch",
+    "originalId": "NL050_NightWatch",
+    "gameEdition": "classic",
+    "name": "夜巡",
+    "deck": "NL",
+    "number": 50,
+    "desc": [
+      "此卡是一个额外行动格。每回合在此卡上补充1份小麦。使用此行动格的玩家需要支付2食物到游戏供应区，并获得此卡上的所有小麦，并且可以将其中任意数量的小麦换成等量的分数"
+    ],
+    "cost": {},
+    "vp": 2,
+    "prerequisite": "职业≤1",
+    "occupationPrerequisites": {
+      "max": 1
+    },
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL050.png",
+    "locales": {
+      "zh": {
+        "name": "夜巡",
+        "desc": [
+          "此卡是一个额外行动格。每回合在此卡上补充1份小麦。使用此行动格的玩家需要支付2食物到游戏供应区，并获得此卡上的所有小麦，并且可以将其中任意数量的小麦换成等量的分数"
+        ],
+        "prerequisite": "职业≤1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL051_CarriageTrip",
+    "originalId": "NL051_CarriageTrip",
+    "gameEdition": "classic",
+    "name": "马车之旅",
+    "deck": "NL",
+    "number": 51,
+    "desc": [
+      "立即派遣一位你的家庭成员。使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "工作阶段 家中有人",
+    "passing": true,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL051.png",
+    "locales": {
+      "zh": {
+        "name": "马车之旅",
+        "desc": [
+          "立即派遣一位你的家庭成员。使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": "工作阶段 家中有人"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL052_EastIndiaCompany",
+    "originalId": "NL052_EastIndiaCompany",
+    "gameEdition": "classic",
+    "name": "东印度公司",
+    "deck": "NL",
+    "number": 52,
+    "desc": [
+      "在此卡上放置1份小麦、蔬菜、羊、猪、牛、木、砖、芦苇和石头。接下来每回合翻开新的回合行动格前，你可以从此卡上随机拿取1份物品。"
+    ],
+    "cost": {
+      "clay": 2,
+      "stone": 1,
+      "reed": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL052.png",
+    "locales": {
+      "zh": {
+        "name": "东印度公司",
+        "desc": [
+          "在此卡上放置1份小麦、蔬菜、羊、猪、牛、木、砖、芦苇和石头。接下来每回合翻开新的回合行动格前，你可以从此卡上随机拿取1份物品。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL053_HouseBoat",
+    "originalId": "NL053_HouseBoat",
+    "gameEdition": "classic",
+    "name": "船屋",
+    "deck": "NL",
+    "number": 53,
+    "desc": [
+      "放置2个食客标记在此卡上。每个回家阶段，你可以使用其中1名食客去使用钓鱼积累行动格，然后返还该食客未使不可能的盒子用栅栏"
+    ],
+    "cost": {
+      "wood": 2
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL053.png",
+    "locales": {
+      "zh": {
+        "name": "船屋",
+        "desc": [
+          "放置2个食客标记在此卡上。每个回家阶段，你可以使用其中1名食客去使用钓鱼积累行动格，然后返还该食客未使不可能的盒子用栅栏"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL054_HorseDrawnBoat",
+    "originalId": "NL054_HorseDrawnBoat",
+    "gameEdition": "classic",
+    "name": "马拉船",
+    "deck": "NL",
+    "number": 54,
+    "desc": [
+      "在之后每个回合的行动格上交替放置1份食物和1只羊，先放食物。在这些回合开始时，你获得相应的物品"
+    ],
+    "cost": {
+      "wood": 2
+    },
+    "vp": 1,
+    "prerequisite": "3职业",
+    "occupationPrerequisites": {
+      "min": 3
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL054.png",
+    "locales": {
+      "zh": {
+        "name": "马拉船",
+        "desc": [
+          "在之后每个回合的行动格上交替放置1份食物和1只羊，先放食物。在这些回合开始时，你获得相应的物品"
+        ],
+        "prerequisite": "3职业"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL055_GoldenHelmet",
+    "originalId": "NL055_GoldenHelmet",
+    "gameEdition": "classic",
+    "name": "金制头盔",
+    "deck": "NL",
+    "number": 55,
+    "desc": [
+      "每个以丰收时节为结束的回合限1次：你可以在放置1个家庭成员的行动完成后，从游戏供应区拿取1食物放在任意行动格上，下一个使用该行动格的玩家获得该食物白柏树家庭成"
+    ],
+    "cost": {
+      "clay": 2
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL055.png",
+    "locales": {
+      "zh": {
+        "name": "金制头盔",
+        "desc": [
+          "每个以丰收时节为结束的回合限1次：你可以在放置1个家庭成员的行动完成后，从游戏供应区拿取1食物放在任意行动格上，下一个使用该行动格的玩家获得该食物白柏树家庭成"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL056_ImpossibleCrate",
+    "originalId": "NL056_ImpossibleCrate",
+    "gameEdition": "classic",
+    "name": "不可能的盒子",
+    "deck": "NL",
+    "number": 56,
+    "desc": [
+      "当前回合数加3，在该回合行动格上放置12根栅栏条，该回合开始时，你可以拿回栅栏条并执行一次“围建栅栏”行动。(正常支付)"
+    ],
+    "cost": {
+      "wood": 2
+    },
+    "vp": 2,
+    "prerequisite": "未使用栅栏≥12",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL056.png",
+    "locales": {
+      "zh": {
+        "name": "不可能的盒子",
+        "desc": [
+          "当前回合数加3，在该回合行动格上放置12根栅栏条，该回合开始时，你可以拿回栅栏条并执行一次“围建栅栏”行动。(正常支付)"
+        ],
+        "prerequisite": "未使用栅栏≥12"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL057_JoyHouse",
+    "originalId": "NL057_JoyHouse",
+    "gameEdition": "classic",
+    "name": "欢乐屋",
+    "deck": "NL",
+    "number": 57,
+    "desc": [
+      "工作阶段结束后，你可以支付1份食物将你的一位家庭成员放在此卡上(此卡上最多1人)。此后当你派遣此卡上的家庭成员时，你可以支付1份食物来使用垂直相邻的两个行动格，先执行上方的行动格(此卡上的家庭成员依然占用你的房间)"
+    ],
+    "cost": {
+      "wood": 1,
+      "stone": 1,
+      "grain": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL057.png",
+    "locales": {
+      "zh": {
+        "name": "欢乐屋",
+        "desc": [
+          "工作阶段结束后，你可以支付1份食物将你的一位家庭成员放在此卡上(此卡上最多1人)。此后当你派遣此卡上的家庭成员时，你可以支付1份食物来使用垂直相邻的两个行动格，先执行上方的行动格(此卡上的家庭成员依然占用你的房间)"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL058_Cypress",
+    "originalId": "NL058_Cypress",
+    "gameEdition": "classic",
+    "name": "白柏树",
+    "deck": "NL",
+    "number": 58,
+    "desc": [
+      "将打出此卡的家庭成员移出游戏。此卡只能通过行动格打出，且不能用食客打出"
+    ],
+    "cost": {
+      "reed": 1
+    },
+    "vp": 5,
+    "prerequisite": "家庭成员×3",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL058.png",
+    "locales": {
+      "zh": {
+        "name": "白柏树",
+        "desc": [
+          "将打出此卡的家庭成员移出游戏。此卡只能通过行动格打出，且不能用食客打出"
+        ],
+        "prerequisite": "家庭成员×3"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL059_BeanBasket",
+    "originalId": "NL059_BeanBasket",
+    "gameEdition": "classic",
+    "name": "豆篮",
+    "deck": "NL",
+    "number": 59,
+    "desc": [
+      "打出此卡时，从游戏供应区拿取2份蔬菜放置在此卡上。每当你犁一块田，你可以从此卡上获得1份蔬菜，每当你使用小麦种子行动格时，此卡上补充1份蔬菜"
+    ],
+    "cost": {
+      "reed": 1,
+      "vegetable": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL059.png",
+    "locales": {
+      "zh": {
+        "name": "豆篮",
+        "desc": [
+          "打出此卡时，从游戏供应区拿取2份蔬菜放置在此卡上。每当你犁一块田，你可以从此卡上获得1份蔬菜，每当你使用小麦种子行动格时，此卡上补充1份蔬菜"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL060_Shack",
+    "name": "简陋木屋",
+    "deck": "NL",
+    "number": 60,
+    "category": "FOOD_PROVIDER",
+    "desc": [
+      "每回合开始时，若你仍居住在木屋内，则你获得1份食物"
+    ],
+    "cost": {
+      "wood": 1,
+      "stone": 1
+    },
+    "originalId": "NL060_Shack",
+    "gameEdition": "classic",
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/NL060.png",
+    "locales": {
+      "zh": {
+        "name": "简陋木屋",
+        "desc": [
+          "每回合开始时，若你仍居住在木屋内，则你获得1份食物"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_NL061_Employer",
+    "originalId": "NL061_Employer",
+    "gameEdition": "classic",
+    "name": "雇主",
+    "deck": "NL",
+    "number": 61,
+    "desc": [
+      "将当前回合数加4, 7和10，在这些回合的行动格上各放置1个食客标记。这些回合开始时，你获得该食客标记，并于当回合使用一次，该回合结束后返还至游戏供应区。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL061.png",
+    "locales": {
+      "zh": {
+        "name": "雇主",
+        "desc": [
+          "将当前回合数加4, 7和10，在这些回合的行动格上各放置1个食客标记。这些回合开始时，你获得该食客标记，并于当回合使用一次，该回合结束后返还至游戏供应区。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL062_ConArtist",
+    "originalId": "NL062_ConArtist",
+    "gameEdition": "classic",
+    "name": "商业艺术家",
+    "deck": "NL",
+    "number": 62,
+    "desc": [
+      "其他玩家使用卖艺积累行动格时，必须支付给你1份食物，同时你从游戏供应区获得1份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL062.png",
+    "locales": {
+      "zh": {
+        "name": "商业艺术家",
+        "desc": [
+          "其他玩家使用卖艺积累行动格时，必须支付给你1份食物，同时你从游戏供应区获得1份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL063_Excavator",
+    "originalId": "NL063_Excavator",
+    "gameEdition": "classic",
+    "name": "挖掘工",
+    "deck": "NL",
+    "number": 63,
+    "desc": [
+      "每当你使用临时工行动格时，你额外获得1根木头+1块砖头。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL063.png",
+    "locales": {
+      "zh": {
+        "name": "挖掘工",
+        "desc": [
+          "每当你使用临时工行动格时，你额外获得1根木头+1块砖头。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL064_SheepHerder",
+    "originalId": "NL064_SheepHerder",
+    "gameEdition": "classic",
+    "name": "牧羊人",
+    "deck": "NL",
+    "number": 64,
+    "desc": [
+      "打出此卡时，你可以免费建造1个马厩。你可以在至多1格空地上饲养2只羊，该格仍视作未使用。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL064.png",
+    "locales": {
+      "zh": {
+        "name": "牧羊人",
+        "desc": [
+          "打出此卡时，你可以免费建造1个马厩。你可以在至多1格空地上饲养2只羊，该格仍视作未使用。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL065_Brewer",
+    "originalId": "NL065_Brewer",
+    "gameEdition": "classic",
+    "name": "酿酒师",
+    "deck": "NL",
+    "number": 65,
+    "desc": [
+      "在每个丰收时节为结束的回合结束时，你可用此卡将至多1份小麦转化成3份食物或1分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL065.png",
+    "locales": {
+      "zh": {
+        "name": "酿酒师",
+        "desc": [
+          "在每个丰收时节为结束的回合结束时，你可用此卡将至多1份小麦转化成3份食物或1分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL066_OysterEater",
+    "originalId": "NL066_OysterEater",
+    "gameEdition": "classic",
+    "name": "食用牡蛎者",
+    "deck": "NL",
+    "number": 66,
+    "desc": [
+      "每当任何玩家(包括你)使用钓鱼积累行动格时，你获得1分，并强制跳过你当回合的下一次家庭成员派遣。（你仍可在后续轮次中派遣你的家庭成员）钓鱼打出职业"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL066.png",
+    "locales": {
+      "zh": {
+        "name": "食用牡蛎者",
+        "desc": [
+          "每当任何玩家(包括你)使用钓鱼积累行动格时，你获得1分，并强制跳过你当回合的下一次家庭成员派遣。（你仍可在后续轮次中派遣你的家庭成员）钓鱼打出职业"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL067_Schoolmaster",
+    "originalId": "NL067_Schoolmaster",
+    "gameEdition": "classic",
+    "name": "学校管理员",
+    "deck": "NL",
+    "number": 67,
+    "desc": [
+      "其他玩家执行“生娃”行动时，如果他们有2-5/6+份食物，则必须先支付你1/2食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL067.png",
+    "locales": {
+      "zh": {
+        "name": "学校管理员",
+        "desc": [
+          "其他玩家执行“生娃”行动时，如果他们有2-5/6+份食物，则必须先支付你1/2食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL068_Autodidact",
+    "originalId": "NL068_Autodidact",
+    "gameEdition": "classic",
+    "name": "自学自修者",
+    "deck": "NL",
+    "number": 68,
+    "desc": [
+      "在每回合翻开新的回合行动卡之前，你可以支付2食物作为技能培训费打出1张职业卡。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL068.png",
+    "locales": {
+      "zh": {
+        "name": "自学自修者",
+        "desc": [
+          "在每回合翻开新的回合行动卡之前，你可以支付2食物作为技能培训费打出1张职业卡。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL069_MinkBreeder",
+    "originalId": "NL069_MinkBreeder",
+    "gameEdition": "classic",
+    "name": "水貂饲养员",
+    "deck": "NL",
+    "number": 69,
+    "desc": [
+      "第5回合起，每回合第一位将第二名家庭成员派遣到与其第一名家庭成员相同游戏版图的其他玩家，在行动前必须先支付你1食物(如果这个人是你则无需支付)"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL069.png",
+    "locales": {
+      "zh": {
+        "name": "水貂饲养员",
+        "desc": [
+          "第5回合起，每回合第一位将第二名家庭成员派遣到与其第一名家庭成员相同游戏版图的其他玩家，在行动前必须先支付你1食物(如果这个人是你则无需支付)"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL070_LeftLiberal",
+    "originalId": "NL070_LeftLiberal",
+    "gameEdition": "classic",
+    "name": "左派自由主义者",
+    "deck": "NL",
+    "number": 70,
+    "desc": [
+      "当你使用游戏公共区域版图最左边的6个行动格时，你额外得到1根木头。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL070.png",
+    "locales": {
+      "zh": {
+        "name": "左派自由主义者",
+        "desc": [
+          "当你使用游戏公共区域版图最左边的6个行动格时，你额外得到1根木头。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL071_Maidservant",
+    "originalId": "NL071_Maidservant",
+    "gameEdition": "classic",
+    "name": "女佣",
+    "deck": "NL",
+    "number": 71,
+    "desc": [
+      "当你执行钓鱼积累行动格或与其正交相邻的行动格(临时工、芦苇滩、第4回合行动格)时，对于占据的这四格中每有1名工人(任意玩家，包括食客)，你都额外获得1份食物。(扣除你刚放置的家庭成员)"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL071.png",
+    "locales": {
+      "zh": {
+        "name": "女佣",
+        "desc": [
+          "当你执行钓鱼积累行动格或与其正交相邻的行动格(临时工、芦苇滩、第4回合行动格)时，对于占据的这四格中每有1名工人(任意玩家，包括食客)，你都额外获得1份食物。(扣除你刚放置的家庭成员)"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL072_SalvationArmyOcer",
+    "originalId": "NL072_SalvationArmyOcer",
+    "gameEdition": "classic",
+    "name": "救世军军官",
+    "deck": "NL",
+    "number": 72,
+    "desc": [
+      "每回合新翻开回合行动卡之前，如果有其他玩家没有食物，你可以从个人供应区给该玩家1份食物并选择从游戏供应区获得1小麦/木头/砖头/芦苇或羊。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL072.png",
+    "locales": {
+      "zh": {
+        "name": "救世军军官",
+        "desc": [
+          "每回合新翻开回合行动卡之前，如果有其他玩家没有食物，你可以从个人供应区给该玩家1份食物并选择从游戏供应区获得1小麦/木头/砖头/芦苇或羊。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL073_Companion",
+    "originalId": "NL073_Companion",
+    "gameEdition": "classic",
+    "name": "同伴",
+    "deck": "NL",
+    "number": 73,
+    "desc": [
+      "打出此卡的本回合，所有行动格对你而言均视为未占用(即使被你自己占据)。之后回合中，所有被其他玩家最后1位家庭成员使用的行动格对你而言均视为未占用。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL073.png",
+    "locales": {
+      "zh": {
+        "name": "同伴",
+        "desc": [
+          "打出此卡的本回合，所有行动格对你而言均视为未占用(即使被你自己占据)。之后回合中，所有被其他玩家最后1位家庭成员使用的行动格对你而言均视为未占用。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL074_FieldMessenger",
+    "originalId": "NL074_FieldMessenger",
+    "gameEdition": "classic",
+    "name": "农田使者",
+    "deck": "NL",
+    "number": 74,
+    "desc": [
+      "随机选择你农场里的1个空格，规则允许下，你可以免费将此格围成圈地/在此建造1个马厩/犁1块田。（执行“围建栅栏”/“犁田”行动）"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL074.png",
+    "locales": {
+      "zh": {
+        "name": "农田使者",
+        "desc": [
+          "随机选择你农场里的1个空格，规则允许下，你可以免费将此格围成圈地/在此建造1个马厩/犁1块田。（执行“围建栅栏”/“犁田”行动）"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL075_GovernorGeneral",
+    "originalId": "NL075_GovernorGeneral",
+    "gameEdition": "classic",
+    "name": "荷兰总督",
+    "deck": "NL",
+    "number": 75,
+    "desc": [
+      "游戏结束时，你的每间石屋都额外获得1.5分(向下取整)，你的所有扣分项(包括乞讨卡)都加倍。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL075.png",
+    "locales": {
+      "zh": {
+        "name": "荷兰总督",
+        "desc": [
+          "游戏结束时，你的每间石屋都额外获得1.5分(向下取整)，你的所有扣分项(包括乞讨卡)都加倍。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL076_CheeseCarrier",
+    "originalId": "NL076_CheeseCarrier",
+    "gameEdition": "classic",
+    "name": "奶酪运输员",
+    "deck": "NL",
+    "number": 76,
+    "desc": [
+      "每个丰收时节的喂养阶段，每有一位其他玩家有至少1只羊/1只牛，你获得0.5/1份食物，向上取整。(你自己的动物不计算在内)"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL076.png",
+    "locales": {
+      "zh": {
+        "name": "奶酪运输员",
+        "desc": [
+          "每个丰收时节的喂养阶段，每有一位其他玩家有至少1只羊/1只牛，你获得0.5/1份食物，向上取整。(你自己的动物不计算在内)"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL077_KitchenMaid",
+    "originalId": "NL077_KitchenMaid",
+    "gameEdition": "classic",
+    "name": "厨房女仆",
+    "deck": "NL",
+    "number": 77,
+    "desc": [
+      "一旦你打出壁炉(或打出此卡时你拥有壁炉)，在之后的偶数回合的行动格上交替摆放1食物和1小麦，从食物开始。这些回合开始时，你获得对应的物品。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL077.png",
+    "locales": {
+      "zh": {
+        "name": "厨房女仆",
+        "desc": [
+          "一旦你打出壁炉(或打出此卡时你拥有壁炉)，在之后的偶数回合的行动格上交替摆放1食物和1小麦，从食物开始。这些回合开始时，你获得对应的物品。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL078_WaterWorker",
+    "name": "水上工人",
+    "deck": "NL",
+    "number": 78,
+    "category": "BUILDING_RESOURCE_PROVIDER",
+    "desc": [
+      "当你使用钓鱼积累行动格或与其正交相邻的行动格(临时工、芦苇滩、第4回合行动格)时，你额外获得1捆芦苇。"
+    ],
+    "cost": {},
+    "players": "3+",
+    "originalId": "NL078_WaterWorker",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/NL078.png",
+    "locales": {
+      "zh": {
+        "name": "水上工人",
+        "desc": [
+          "当你使用钓鱼积累行动格或与其正交相邻的行动格(临时工、芦苇滩、第4回合行动格)时，你额外获得1捆芦苇。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL079_FarmersDaughter",
+    "originalId": "NL079_FarmersDaughter",
+    "gameEdition": "classic",
+    "name": "农夫的女儿",
+    "deck": "NL",
+    "number": 79,
+    "desc": [
+      "一旦你的房屋等级不是木屋，在之后的偶数回合的行动格上分别放置1份小麦，这些回合开始时，你获得对应的小麦。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL079.png",
+    "locales": {
+      "zh": {
+        "name": "农夫的女儿",
+        "desc": [
+          "一旦你的房屋等级不是木屋，在之后的偶数回合的行动格上分别放置1份小麦，这些回合开始时，你获得对应的小麦。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL080_WitchofHaarlem",
+    "originalId": "NL080_WitchofHaarlem",
+    "gameEdition": "classic",
+    "name": "哈勒姆女巫",
+    "deck": "NL",
+    "number": 80,
+    "desc": [
+      "当你从积累行动格获得木头/砖头/芦苇/羊/猪/牛时，可以将其中恰好1个物品转换成砖头/芦苇/石头/猪/牛/小麦(对应的)。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL080.png",
+    "locales": {
+      "zh": {
+        "name": "哈勒姆女巫",
+        "desc": [
+          "当你从积累行动格获得木头/砖头/芦苇/羊/猪/牛时，可以将其中恰好1个物品转换成砖头/芦苇/石头/猪/牛/小麦(对应的)。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL081_FreedomFighter",
+    "originalId": "NL081_FreedomFighter",
+    "gameEdition": "classic",
+    "name": "自由斗士",
+    "deck": "NL",
+    "number": 81,
+    "desc": [
+      "打出此卡时，你需要额外支付2份食物。直到下一次丰收时节开始前，你可以使用被其他玩家占据的行动格。(被你自己占据则不可以使用)"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL081.png",
+    "locales": {
+      "zh": {
+        "name": "自由斗士",
+        "desc": [
+          "打出此卡时，你需要额外支付2份食物。直到下一次丰收时节开始前，你可以使用被其他玩家占据的行动格。(被你自己占据则不可以使用)"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL082_Knight",
+    "originalId": "NL082_Knight",
+    "gameEdition": "classic",
+    "name": "骑士",
+    "deck": "NL",
+    "number": 82,
+    "desc": [
+      "在最后1次丰收时节开始时，你获得等同于你石屋数量乘以牛数量的食物。如果此食物超过你所需喂养的数量，则每超过1份食物，你获得1分，上限是5分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL082.png",
+    "locales": {
+      "zh": {
+        "name": "骑士",
+        "desc": [
+          "在最后1次丰收时节开始时，你获得等同于你石屋数量乘以牛数量的食物。如果此食物超过你所需喂养的数量，则每超过1份食物，你获得1分，上限是5分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL083_BasketmakersSon",
+    "originalId": "NL083_BasketmakersSon",
+    "gameEdition": "classic",
+    "name": "造篮者之子",
+    "deck": "NL",
+    "number": 83,
+    "desc": [
+      "每个丰收时节，如果你使用A9编筐工坊/FR041大编筐工坊转换了至少1捆芦苇为食物，且拥有不少于3位家庭成员(食客不计算在内)，则你获得2份小麦。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL083.png",
+    "locales": {
+      "zh": {
+        "name": "造篮者之子",
+        "desc": [
+          "每个丰收时节，如果你使用A9编筐工坊/FR041大编筐工坊转换了至少1捆芦苇为食物，且拥有不少于3位家庭成员(食客不计算在内)，则你获得2份小麦。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL084_GrandPensionary",
+    "originalId": "NL084_GrandPensionary",
+    "gameEdition": "classic",
+    "name": "大议长",
+    "deck": "NL",
+    "number": 84,
+    "desc": [
+      "每回合开始前，你可以标记3个行动格，本回合其他玩家最多只能使用其中2格。第3个行动格必须对你空置，即使你没有家庭成员使用它。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL084.png",
+    "locales": {
+      "zh": {
+        "name": "大议长",
+        "desc": [
+          "每回合开始前，你可以标记3个行动格，本回合其他玩家最多只能使用其中2格。第3个行动格必须对你空置，即使你没有家庭成员使用它。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL085_Gauger",
+    "originalId": "NL085_Gauger",
+    "gameEdition": "classic",
+    "name": "测量官",
+    "deck": "NL",
+    "number": 85,
+    "desc": [
+      "任意时刻，所有玩家可以使用此卡将1份小麦转换为2份食物。当其他玩家使用此卡转换1份或更多小麦时，你从游戏供应区获得1份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL085.png",
+    "locales": {
+      "zh": {
+        "name": "测量官",
+        "desc": [
+          "任意时刻，所有玩家可以使用此卡将1份小麦转换为2份食物。当其他玩家使用此卡转换1份或更多小麦时，你从游戏供应区获得1份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL086_Investor",
+    "originalId": "NL086_Investor",
+    "gameEdition": "classic",
+    "name": "投资商",
+    "deck": "NL",
+    "number": 86,
+    "desc": [
+      "打出此卡时，你可以购买至多2张主要发展卡，每张只需支付1食物，然后弃置你所有未打出的手牌。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL086.png",
+    "locales": {
+      "zh": {
+        "name": "投资商",
+        "desc": [
+          "打出此卡时，你可以购买至多2张主要发展卡，每张只需支付1食物，然后弃置你所有未打出的手牌。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL087_DistantPrincess",
+    "originalId": "NL087_DistantPrincess",
+    "gameEdition": "classic",
+    "name": "远方的公主",
+    "deck": "NL",
+    "number": 87,
+    "desc": [
+      "打出此卡时，若距离游戏结束还有6/9个完整回合，则你立即获得3/4根木头。游戏结束时，最后一位得到第5位家庭成员的玩家获得2分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL087.png",
+    "locales": {
+      "zh": {
+        "name": "远方的公主",
+        "desc": [
+          "打出此卡时，若距离游戏结束还有6/9个完整回合，则你立即获得3/4根木头。游戏结束时，最后一位得到第5位家庭成员的玩家获得2分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL088_ClothMaker",
+    "originalId": "NL088_ClothMaker",
+    "gameEdition": "classic",
+    "name": "裁缝",
+    "deck": "NL",
+    "number": 88,
+    "desc": [
+      "其他玩家使用羊市场积累行动格时，你从游戏供应区获得1只羊。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL088.png",
+    "locales": {
+      "zh": {
+        "name": "裁缝",
+        "desc": [
+          "其他玩家使用羊市场积累行动格时，你从游戏供应区获得1只羊。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL089_General",
+    "originalId": "NL089_General",
+    "gameEdition": "classic",
+    "name": "将军",
+    "deck": "NL",
+    "number": 89,
+    "desc": [
+      "游戏结束时，如果你的农场有2×3格连接形状的六块空地，你获得9分。(空地仍然扣分)"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL089.png",
+    "locales": {
+      "zh": {
+        "name": "将军",
+        "desc": [
+          "游戏结束时，如果你的农场有2×3格连接形状的六块空地，你获得9分。(空地仍然扣分)"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL090_WomanWeighingPearls",
+    "originalId": "NL090_WomanWeighingPearls",
+    "gameEdition": "classic",
+    "name": "称珍珠的女人",
+    "deck": "NL",
+    "number": 90,
+    "desc": [
+      "每当其他玩家使用钓鱼积累行动格时，你可以支付给他1食物获得1分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL090.png",
+    "locales": {
+      "zh": {
+        "name": "称珍珠的女人",
+        "desc": [
+          "每当其他玩家使用钓鱼积累行动格时，你可以支付给他1食物获得1分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL091_Harlequin",
+    "originalId": "NL091_Harlequin",
+    "gameEdition": "classic",
+    "name": "丑角艺术家",
+    "deck": "NL",
+    "number": 91,
+    "desc": [
+      "当任意玩家使用卖艺积累行动格时，如果是本回合的第1/2/3/4顺位玩家，你获得1份蔬菜/1只羊/1个石头/1分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL091.png",
+    "locales": {
+      "zh": {
+        "name": "丑角艺术家",
+        "desc": [
+          "当任意玩家使用卖艺积累行动格时，如果是本回合的第1/2/3/4顺位玩家，你获得1份蔬菜/1只羊/1个石头/1分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL092_FlyingHousewife",
+    "originalId": "NL092_FlyingHousewife",
+    "gameEdition": "classic",
+    "name": "田径女冠军",
+    "deck": "NL",
+    "number": 92,
+    "desc": [
+      "当你用第二名家庭成员使用第2季的生儿育女行动格后，你可以马上将其派遣到其他行动格(新生儿仍会占用行动格)"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL092.png",
+    "locales": {
+      "zh": {
+        "name": "田径女冠军",
+        "desc": [
+          "当你用第二名家庭成员使用第2季的生儿育女行动格后，你可以马上将其派遣到其他行动格(新生儿仍会占用行动格)"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL093_Lawyer",
+    "originalId": "NL093_Lawyer",
+    "gameEdition": "classic",
+    "name": "律师",
+    "deck": "NL",
+    "number": 93,
+    "desc": [
+      "打出此卡时，你获得任意2个不同的建筑资源。从第13回合起，你可以使用第13回合的行动格，即使它已经被其他玩家占据。(被自己占据则不可以)"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL093.png",
+    "locales": {
+      "zh": {
+        "name": "律师",
+        "desc": [
+          "打出此卡时，你获得任意2个不同的建筑资源。从第13回合起，你可以使用第13回合的行动格，即使它已经被其他玩家占据。(被自己占据则不可以)"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL094_HomoLudens",
+    "originalId": "NL094_HomoLudens",
+    "gameEdition": "classic",
+    "name": "游戏的人",
+    "deck": "NL",
+    "number": 94,
+    "desc": [
+      "在4人游戏中，拿出5人的游戏卡，反之亦然。每回合开始时，随机选择1张作为本回合你的专属行动格，回合结束返还。如果是积累行动格则放置积累1回合的资源。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL094.png",
+    "locales": {
+      "zh": {
+        "name": "游戏的人",
+        "desc": [
+          "在4人游戏中，拿出5人的游戏卡，反之亦然。每回合开始时，随机选择1张作为本回合你的专属行动格，回合结束返还。如果是积累行动格则放置积累1回合的资源。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL095_Navvy",
+    "originalId": "NL095_Navvy",
+    "gameEdition": "classic",
+    "name": "田间苦工",
+    "deck": "NL",
+    "number": 95,
+    "desc": [
+      "打出此卡时，你可以用1份食物购买1份小麦。每回合限1次：在你执行“播种”行动后，你可以犁1块田。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL095.png",
+    "locales": {
+      "zh": {
+        "name": "田间苦工",
+        "desc": [
+          "打出此卡时，你可以用1份食物购买1份小麦。每回合限1次：在你执行“播种”行动后，你可以犁1块田。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL096_WashWoman",
+    "originalId": "NL096_WashWoman",
+    "gameEdition": "classic",
+    "name": "洗衣妇",
+    "deck": "NL",
+    "number": 96,
+    "desc": [
+      "当你使用钓鱼积累行动格时，如果上面恰好是3食物，则你获得1份小麦+1个任意建筑资源。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL096.png",
+    "locales": {
+      "zh": {
+        "name": "洗衣妇",
+        "desc": [
+          "当你使用钓鱼积累行动格时，如果上面恰好是3食物，则你获得1份小麦+1个任意建筑资源。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL097_CheeseSeller",
+    "originalId": "NL097_CheeseSeller",
+    "gameEdition": "classic",
+    "name": "奶酪销售员",
+    "deck": "NL",
+    "number": 97,
+    "desc": [
+      "打出此卡时，你可以支付1食物购买1只羊和/或支付1食物购买1只牛。每回合结束时，如果你的羊数量+两倍牛的数量不小于当前的回合数，你得到1食物。(若当回合后有丰收时节，可以在繁殖阶段后结算)"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL097.png",
+    "locales": {
+      "zh": {
+        "name": "奶酪销售员",
+        "desc": [
+          "打出此卡时，你可以支付1食物购买1只羊和/或支付1食物购买1只牛。每回合结束时，如果你的羊数量+两倍牛的数量不小于当前的回合数，你得到1食物。(若当回合后有丰收时节，可以在繁殖阶段后结算)"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL098_IceSkateSharpener",
+    "originalId": "NL098_IceSkateSharpener",
+    "gameEdition": "classic",
+    "name": "速滑冠军",
+    "deck": "NL",
+    "number": 98,
+    "desc": [
+      "每次丰收时节结束时，你可以支付1木+1食物来使用任意1个行动格而无需派遣家庭成员。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL098.png",
+    "locales": {
+      "zh": {
+        "name": "速滑冠军",
+        "desc": [
+          "每次丰收时节结束时，你可以支付1木+1食物来使用任意1个行动格而无需派遣家庭成员。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL099_ProlicWriter",
+    "originalId": "NL099_ProlicWriter",
+    "gameEdition": "classic",
+    "name": "多产作家",
+    "deck": "NL",
+    "number": 99,
+    "desc": [
+      "打出此卡前，你获得2食物。每回合返家阶段，你必须从本回合打出过卡牌(职业卡、主发卡、次发卡)的玩家中选择1位(可以是自己)，获得1食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL099.png",
+    "locales": {
+      "zh": {
+        "name": "多产作家",
+        "desc": [
+          "打出此卡前，你获得2食物。每回合返家阶段，你必须从本回合打出过卡牌(职业卡、主发卡、次发卡)的玩家中选择1位(可以是自己)，获得1食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL100_GlassesMaker",
+    "originalId": "NL100_GlassesMaker",
+    "gameEdition": "classic",
+    "name": "眼镜制造商",
+    "deck": "NL",
+    "number": 100,
+    "desc": [
+      "打出此卡时，你获得1芦苇+1食物。你可以在提供扩建房屋行动的行动格和提供房屋翻修行动的行动格上执行另一个行动。注：只能执行扩屋/翻修行动，不能执行行动格上的其他行动。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL100.png",
+    "locales": {
+      "zh": {
+        "name": "眼镜制造商",
+        "desc": [
+          "打出此卡时，你获得1芦苇+1食物。你可以在提供扩建房屋行动的行动格和提供房屋翻修行动的行动格上执行另一个行动。注：只能执行扩屋/翻修行动，不能执行行动格上的其他行动。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL101_Discoverer",
+    "originalId": "NL101_Discoverer",
+    "gameEdition": "classic",
+    "name": "发现者",
+    "deck": "NL",
+    "number": 101,
+    "desc": [
+      "将打出此卡的家庭成员放置于当前回合数加3的回合行动格上。(取回前不视为家庭成员)该回合开始前，你取回该家庭成员即使没有空房间，并获得2份食物+1份蔬菜+1分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL101.png",
+    "locales": {
+      "zh": {
+        "name": "发现者",
+        "desc": [
+          "将打出此卡的家庭成员放置于当前回合数加3的回合行动格上。(取回前不视为家庭成员)该回合开始前，你取回该家庭成员即使没有空房间，并获得2份食物+1份蔬菜+1分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL102_CrownPrince",
+    "originalId": "NL102_CrownPrince",
+    "gameEdition": "classic",
+    "name": "王储",
+    "deck": "NL",
+    "number": 102,
+    "desc": [
+      "第14回合，在起始玩家行动前，你可以用你的1位家庭成员以任意顺序使用第11、12、13、14回合的行动格，将此家庭成员放在你使用的最后一个行动格上，你的回合结束。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL102.png",
+    "locales": {
+      "zh": {
+        "name": "王储",
+        "desc": [
+          "第14回合，在起始玩家行动前，你可以用你的1位家庭成员以任意顺序使用第11、12、13、14回合的行动格，将此家庭成员放在你使用的最后一个行动格上，你的回合结束。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL103_DancerandSpy",
+    "originalId": "NL103_DancerandSpy",
+    "gameEdition": "classic",
+    "name": "特工舞者",
+    "deck": "NL",
+    "number": 103,
+    "desc": [
+      "当你使用卖艺积累行动格后，你可以将仅有1名占据某行动格的家庭成员移至卖艺行动格，此家庭成员不执行卖艺效果。之后，你可以立即派遣下一名家庭成员使用该行动格。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL103.png",
+    "locales": {
+      "zh": {
+        "name": "特工舞者",
+        "desc": [
+          "当你使用卖艺积累行动格后，你可以将仅有1名占据某行动格的家庭成员移至卖艺行动格，此家庭成员不执行卖艺效果。之后，你可以立即派遣下一名家庭成员使用该行动格。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL104_GrainReaper",
+    "originalId": "NL104_GrainReaper",
+    "gameEdition": "classic",
+    "name": "小麦收割工",
+    "deck": "NL",
+    "number": 104,
+    "desc": [
+      "在你使用犁田/粮食耕种[犁播]行动格前，你可以收割一次作物。（这不算作丰收时节的收割行动）"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL104.png",
+    "locales": {
+      "zh": {
+        "name": "小麦收割工",
+        "desc": [
+          "在你使用犁田/粮食耕种[犁播]行动格前，你可以收割一次作物。（这不算作丰收时节的收割行动）"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL105_TreeCutter",
+    "originalId": "NL105_TreeCutter",
+    "gameEdition": "classic",
+    "name": "砍树工",
+    "deck": "NL",
+    "number": 105,
+    "desc": [
+      "打出此卡时，你获得1个木头。每当你使用能提供不少于3个同种物品的非木头积累行动格时，你额外获得1根木头。(食物也视为1种物品)"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL105.png",
+    "locales": {
+      "zh": {
+        "name": "砍树工",
+        "desc": [
+          "打出此卡时，你获得1个木头。每当你使用能提供不少于3个同种物品的非木头积累行动格时，你额外获得1根木头。(食物也视为1种物品)"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL106_LoveMessenger",
+    "originalId": "NL106_LoveMessenger",
+    "gameEdition": "classic",
+    "name": "爱情使者",
+    "deck": "NL",
+    "number": 106,
+    "desc": [
+      "下一回合及第13、14回合，在你的第一名家庭成员行动前，其他玩家不能使用提供“生娃”行动的行动格。（其他玩家可以使用第2位或之后的家庭成员执行行动）"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL106.png",
+    "locales": {
+      "zh": {
+        "name": "爱情使者",
+        "desc": [
+          "下一回合及第13、14回合，在你的第一名家庭成员行动前，其他玩家不能使用提供“生娃”行动的行动格。（其他玩家可以使用第2位或之后的家庭成员执行行动）"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL107_Matchmaker",
+    "originalId": "NL107_Matchmaker",
+    "gameEdition": "classic",
+    "name": "媒婆",
+    "deck": "NL",
+    "number": 107,
+    "desc": [
+      "打出此卡时，你获得1木+1个任意建筑资源+1羊+1猪+1食物+1小麦+1蔬菜+2分。在本回合的回家阶段，将你的1位家庭成员移出游戏。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL107.png",
+    "locales": {
+      "zh": {
+        "name": "媒婆",
+        "desc": [
+          "打出此卡时，你获得1木+1个任意建筑资源+1羊+1猪+1食物+1小麦+1蔬菜+2分。在本回合的回家阶段，将你的1位家庭成员移出游戏。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL108_Rationalist",
+    "originalId": "NL108_Rationalist",
+    "gameEdition": "classic",
+    "name": "理性主义者",
+    "deck": "NL",
+    "number": 108,
+    "desc": [
+      "每当你打出1张需要实际花费石头的发展卡时，你可以支付1食物，然后把其中任意数量花费的石头用等量的砖头代替。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL108.png",
+    "locales": {
+      "zh": {
+        "name": "理性主义者",
+        "desc": [
+          "每当你打出1张需要实际花费石头的发展卡时，你可以支付1食物，然后把其中任意数量花费的石头用等量的砖头代替。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL109_Thresher",
+    "name": "打谷者",
+    "deck": "NL",
+    "number": 109,
+    "category": "CROP_PROVIDER",
+    "desc": [
+      "每当你使用粮食生产[播烤]/犁田/粮食耕种[犁播]行动格前，你可以支付1份食物来购买1份小麦。"
+    ],
+    "cost": {},
+    "players": "1+",
+    "originalId": "NL109_Thresher",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/NL109.png",
+    "locales": {
+      "zh": {
+        "name": "打谷者",
+        "desc": [
+          "每当你使用粮食生产[播烤]/犁田/粮食耕种[犁播]行动格前，你可以支付1份食物来购买1份小麦。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL110_TreeCollector",
+    "originalId": "NL110_TreeCollector",
+    "gameEdition": "classic",
+    "name": "树枝收集者",
+    "deck": "NL",
+    "number": 110,
+    "desc": [
+      "每当其他玩家从木头积累行动格得到1-3根木头时，你从游戏供应区额外获得1根木头。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL110.png",
+    "locales": {
+      "zh": {
+        "name": "树枝收集者",
+        "desc": [
+          "每当其他玩家从木头积累行动格得到1-3根木头时，你从游戏供应区额外获得1根木头。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL111_AssistantTiller",
+    "originalId": "NL111_AssistantTiller",
+    "gameEdition": "classic",
+    "name": "耕种帮手",
+    "deck": "NL",
+    "number": 111,
+    "desc": [
+      "每当你使用临时工行动格时，你能额外犁一块田。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL111.png",
+    "locales": {
+      "zh": {
+        "name": "耕种帮手",
+        "desc": [
+          "每当你使用临时工行动格时，你能额外犁一块田。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL112_GrainHarvester",
+    "originalId": "NL112_GrainHarvester",
+    "gameEdition": "classic",
+    "name": "割麦工",
+    "deck": "NL",
+    "number": 112,
+    "desc": [
+      "打出此卡时，你获得1份小麦。在每个丰收时节的收割阶段，你可以从你的每块麦田上多收割1份小麦。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL112.png",
+    "locales": {
+      "zh": {
+        "name": "割麦工",
+        "desc": [
+          "打出此卡时，你获得1份小麦。在每个丰收时节的收割阶段，你可以从你的每块麦田上多收割1份小麦。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL113_Suragette",
+    "originalId": "NL113_Suragette",
+    "gameEdition": "classic",
+    "name": "女权者",
+    "deck": "NL",
+    "number": 113,
+    "desc": [
+      "每回合第一次轮到你行动时，你可以支付2食物来连续派遣两名家庭成员，这两名家庭成员必须派遣到不同的游戏版图上。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL113.png",
+    "locales": {
+      "zh": {
+        "name": "女权者",
+        "desc": [
+          "每回合第一次轮到你行动时，你可以支付2食物来连续派遣两名家庭成员，这两名家庭成员必须派遣到不同的游戏版图上。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL114_CanalBoatman",
+    "name": "运河船夫",
+    "deck": "NL",
+    "number": 114,
+    "category": "GOODS_PROVIDER",
+    "desc": [
+      "每当你使用钓鱼或芦苇滩积累行动格时，你可以支付1份食物来立即放置你的另1名家庭成员到此卡上。若你如此做，则你获得3块石头，或1份小麦+1份蔬菜。"
+    ],
+    "cost": {},
+    "players": "4+",
+    "originalId": "NL114_CanalBoatman",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/NL114.png",
+    "locales": {
+      "zh": {
+        "name": "运河船夫",
+        "desc": [
+          "每当你使用钓鱼或芦苇滩积累行动格时，你可以支付1份食物来立即放置你的另1名家庭成员到此卡上。若你如此做，则你获得3块石头，或1份小麦+1份蔬菜。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL115_ClayBaker",
+    "originalId": "NL115_ClayBaker",
+    "gameEdition": "classic",
+    "name": "黏土烘焙师",
+    "deck": "NL",
+    "number": 115,
+    "desc": [
+      "打出此卡时，你获得2个砖头。任意时刻，你可以将1砖转换成1食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL115.png",
+    "locales": {
+      "zh": {
+        "name": "黏土烘焙师",
+        "desc": [
+          "打出此卡时，你获得2个砖头。任意时刻，你可以将1砖转换成1食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL116_PotatoEater",
+    "originalId": "NL116_PotatoEater",
+    "gameEdition": "classic",
+    "name": "吃土豆的人",
+    "deck": "NL",
+    "number": 116,
+    "desc": [
+      "每次丰收时节的喂养阶段，你在本次喂养阶段用蔬菜转换得来的每份食物都可以喂饱1名家庭成员。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL116.png",
+    "locales": {
+      "zh": {
+        "name": "吃土豆的人",
+        "desc": [
+          "每次丰收时节的喂养阶段，你在本次喂养阶段用蔬菜转换得来的每份食物都可以喂饱1名家庭成员。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL117_Overwinterer",
+    "name": "冬季看守",
+    "deck": "NL",
+    "number": 117,
+    "category": "CROP_PROVIDER",
+    "desc": [
+      "打出此卡时，你获得1份小麦。在每个丰收时节结束时，你可以支付2份食物来购买至多1份蔬菜。"
+    ],
+    "cost": {},
+    "players": "1+",
+    "originalId": "NL117_Overwinterer",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/NL117.png",
+    "locales": {
+      "zh": {
+        "name": "冬季看守",
+        "desc": [
+          "打出此卡时，你获得1份小麦。在每个丰收时节结束时，你可以支付2份食物来购买至多1份蔬菜。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL118_PotatoHarvester",
+    "name": "土豆收割工",
+    "deck": "NL",
+    "number": 118,
+    "category": "FOOD_PROVIDER",
+    "desc": [
+      "打出此卡时，你获得3份食物。在每个丰收时节的收割阶段，你每从田地里收割1份蔬菜，便额外获得1份食物。"
+    ],
+    "cost": {},
+    "players": "1+",
+    "implemented": true,
+    "originalId": "NL118_PotatoHarvester",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "artUrl": "/card-art/classic/NL118.png",
+    "locales": {
+      "zh": {
+        "name": "土豆收割工",
+        "desc": [
+          "打出此卡时，你获得3份食物。在每个丰收时节的收割阶段，你每从田地里收割1份蔬菜，便额外获得1份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL119_Collector",
+    "originalId": "NL119_Collector",
+    "gameEdition": "classic",
+    "name": "收集者",
+    "deck": "NL",
+    "number": 119,
+    "desc": [
+      "此卡是仅你可用的行动格：当你第1/2/3/4次使用此行动格时，拿取1张乞讨卡并获得由你任选的6/7/8/9个不同种的物品。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL119.png",
+    "locales": {
+      "zh": {
+        "name": "收集者",
+        "desc": [
+          "此卡是仅你可用的行动格：当你第1/2/3/4次使用此行动格时，拿取1张乞讨卡并获得由你任选的6/7/8/9个不同种的物品。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_NL120_ChoirBoy",
+    "originalId": "NL120_ChoirBoy",
+    "gameEdition": "classic",
+    "name": "唱诗班男孩",
+    "deck": "NL",
+    "number": 120,
+    "desc": [
+      "你只能在第11回合或之前且个人供应区不超过3份资源时打出此卡。游戏结束时，你每位家庭成员额外获得1分。(资源：建筑资源、小麦和蔬菜)"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/NL120.png",
+    "locales": {
+      "zh": {
+        "name": "唱诗班男孩",
+        "desc": [
+          "你只能在第11回合或之前且个人供应区不超过3份资源时打出此卡。游戏结束时，你每位家庭成员额外获得1分。(资源：建筑资源、小麦和蔬菜)"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_O01_BigBacker",
+    "originalId": "O01_BigBacker",
+    "gameEdition": "classic",
+    "name": "金主",
+    "deck": "O",
+    "number": 1,
+    "desc": [
+      "每当其他玩家一次性获得至少2只同种动物时，你可以支付给他食物获得其中1只。羊/猪/牛分别需要2/3/4份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/O01.png",
+    "locales": {
+      "zh": {
+        "name": "金主",
+        "desc": [
+          "每当其他玩家一次性获得至少2只同种动物时，你可以支付给他食物获得其中1只。羊/猪/牛分别需要2/3/4份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_O02_ActionArtist",
+    "originalId": "O02_ActionArtist",
+    "gameEdition": "classic",
+    "name": "行为艺术家",
+    "deck": "O",
+    "number": 2,
+    "desc": [
+      "每当你使用卖艺积累行动格时，你可以支付1只任意动物获得4份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/O02.png",
+    "locales": {
+      "zh": {
+        "name": "行为艺术家",
+        "desc": [
+          "每当你使用卖艺积累行动格时，你可以支付1只任意动物获得4份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_O03_Therapist",
+    "originalId": "O03_Therapist",
+    "gameEdition": "classic",
+    "name": "心理医生",
+    "deck": "O",
+    "number": 3,
+    "desc": [
+      "打出此卡时，你可以额外支付2份食物并立即打出一张职业卡。每当其他玩家打出职业卡时，你可以支付给他1食物让该玩家必须换一张职业卡打出(除非他没有别的卡能打出)。注：如果其他玩家打出另一张职业卡，你不能再让他改打"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/O03.png",
+    "locales": {
+      "zh": {
+        "name": "心理医生",
+        "desc": [
+          "打出此卡时，你可以额外支付2份食物并立即打出一张职业卡。每当其他玩家打出职业卡时，你可以支付给他1食物让该玩家必须换一张职业卡打出(除非他没有别的卡能打出)。注：如果其他玩家打出另一张职业卡，你不能再让他改打"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_O04_SkiInstructor",
+    "originalId": "O04_SkiInstructor",
+    "gameEdition": "classic",
+    "name": "滑雪教练",
+    "deck": "O",
+    "number": 4,
+    "desc": [
+      "其他玩家执行“生娃”行动时，必须支付给你1食物/领取1张乞讨卡。下一次你执行“生娃”行动后，此卡失效，但仍视为一张职业卡。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/O04.png",
+    "locales": {
+      "zh": {
+        "name": "滑雪教练",
+        "desc": [
+          "其他玩家执行“生娃”行动时，必须支付给你1食物/领取1张乞讨卡。下一次你执行“生娃”行动后，此卡失效，但仍视为一张职业卡。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_O05_LovableVagebond",
+    "originalId": "O05_LovableVagebond",
+    "gameEdition": "classic",
+    "name": "迷人的流浪汉",
+    "deck": "O",
+    "number": 5,
+    "desc": [
+      "每个丰收时节的喂养阶段，如果你因为没有食物而要领取至少1张乞讨卡时，你少领取1张乞讨卡。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/O05.png",
+    "locales": {
+      "zh": {
+        "name": "迷人的流浪汉",
+        "desc": [
+          "每个丰收时节的喂养阶段，如果你因为没有食物而要领取至少1张乞讨卡时，你少领取1张乞讨卡。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_O06_OpinionLeader",
+    "originalId": "O06_OpinionLeader",
+    "gameEdition": "classic",
+    "name": "意见领袖",
+    "deck": "O",
+    "number": 6,
+    "desc": [
+      "每回合开始时，你可以标记一个非积累行动格，该回合中所有玩家都能使用此行动格，即使此行动格被其他玩家占用。每回合结束时，清除此标记。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/O06.png",
+    "locales": {
+      "zh": {
+        "name": "意见领袖",
+        "desc": [
+          "每回合开始时，你可以标记一个非积累行动格，该回合中所有玩家都能使用此行动格，即使此行动格被其他玩家占用。每回合结束时，清除此标记。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_O07_BuildingTycoon",
+    "name": "建筑大亨",
+    "deck": "O",
+    "number": 7,
+    "category": "FARM_PLANNER",
+    "desc": [
+      "每当其他玩家扩建至少1间房屋后，你可以支付给他1份食物来扩建恰好1间房屋。（照常支付建造费用）"
+    ],
+    "cost": {},
+    "players": "3+",
+    "originalId": "O07_BuildingTycoon",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/O07.png",
+    "locales": {
+      "zh": {
+        "name": "建筑大亨",
+        "desc": [
+          "每当其他玩家扩建至少1间房屋后，你可以支付给他1份食物来扩建恰好1间房屋。（照常支付建造费用）"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_O08_Environmentalist",
+    "originalId": "O08_Environmentalist",
+    "gameEdition": "classic",
+    "name": "环保主义者",
+    "deck": "O",
+    "number": 8,
+    "desc": [
+      "每当你打出发展卡时，你可以用1根木头代替花费中的任意1个建筑资源。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/O08.png",
+    "locales": {
+      "zh": {
+        "name": "环保主义者",
+        "desc": [
+          "每当你打出发展卡时，你可以用1根木头代替花费中的任意1个建筑资源。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_O09_FamilySingers",
+    "originalId": "O09_FamilySingers",
+    "gameEdition": "classic",
+    "name": "家庭合唱团",
+    "deck": "O",
+    "number": 9,
+    "desc": [
+      "在每个行动阶段，你能将任意数量的家庭成员放到此卡上代替放置其他行动格上，每个到此卡上的家庭成员获得1分。（此卡不是一个行动格）"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/O09.png",
+    "locales": {
+      "zh": {
+        "name": "家庭合唱团",
+        "desc": [
+          "在每个行动阶段，你能将任意数量的家庭成员放到此卡上代替放置其他行动格上，每个到此卡上的家庭成员获得1分。（此卡不是一个行动格）"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_O10_Waltzer",
+    "originalId": "O10_Waltzer",
+    "gameEdition": "classic",
+    "name": "交际舞者",
+    "deck": "O",
+    "number": 10,
+    "desc": [
+      "你可以一次派遣两名家庭成员到同一版图的两个正交相邻的行动格上(不能是对角相邻)，执行顺序由你决定。打出此卡后，可以立即发动此效果。每个家庭成员的行动算作1个轮次。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/O10.png",
+    "locales": {
+      "zh": {
+        "name": "交际舞者",
+        "desc": [
+          "你可以一次派遣两名家庭成员到同一版图的两个正交相邻的行动格上(不能是对角相邻)，执行顺序由你决定。打出此卡后，可以立即发动此效果。每个家庭成员的行动算作1个轮次。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_O11_Magnate",
+    "originalId": "O11_Magnate",
+    "gameEdition": "classic",
+    "name": "权贵",
+    "deck": "O",
+    "number": 11,
+    "desc": [
+      "打出此卡时，你获得2石头。游戏结束时，拥有最多建筑资源的玩家都获得3分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/O11.png",
+    "locales": {
+      "zh": {
+        "name": "权贵",
+        "desc": [
+          "打出此卡时，你获得2石头。游戏结束时，拥有最多建筑资源的玩家都获得3分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_O12_ChildProdigy",
+    "originalId": "O12_ChildProdigy",
+    "gameEdition": "classic",
+    "name": "钢琴神童",
+    "deck": "O",
+    "number": 12,
+    "desc": [
+      "每当你执行“生娃”行动时，你可以支付1/2根木头获得1/2分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/O12.png",
+    "locales": {
+      "zh": {
+        "name": "钢琴神童",
+        "desc": [
+          "每当你执行“生娃”行动时，你可以支付1/2根木头获得1/2分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_O13_CoffeeHouse",
+    "originalId": "O13_CoffeeHouse",
+    "gameEdition": "classic",
+    "name": "咖啡屋",
+    "deck": "O",
+    "number": 13,
+    "desc": [
+      "+ !（+ ）此卡是1个额外行动格。使用此行动格的玩家和你各获得1份食物(你使用时获得2份食物)，同时此格的家庭成员在下一回合可以先于起始玩家的第一个家庭成员进行派遣。先于I260试味员行动，I260试味员仍然需要支付给起始玩家1食物。"
+    ],
+    "cost": {
+      "reed": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/O13.png",
+    "locales": {
+      "zh": {
+        "name": "咖啡屋",
+        "desc": [
+          "+ !（+ ）此卡是1个额外行动格。使用此行动格的玩家和你各获得1份食物(你使用时获得2份食物)，同时此格的家庭成员在下一回合可以先于起始玩家的第一个家庭成员进行派遣。先于I260试味员行动，I260试味员仍然需要支付给起始玩家1食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_O14_Spielefest",
+    "originalId": "O14_Spielefest",
+    "gameEdition": "classic",
+    "name": "狂欢节",
+    "deck": "O",
+    "number": 14,
+    "desc": [
+      "（+ ）此卡是所有玩家都可使用的额外行动格。使用此格的玩家支付你1份食物获得2分，你使用则直接获得2分寄宿工人空房"
+    ],
+    "cost": {
+      "wood": 2,
+      "food": 3
+    },
+    "vp": 2,
+    "prerequisite": "3职业",
+    "occupationPrerequisites": {
+      "min": 3
+    },
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/O14.png",
+    "locales": {
+      "zh": {
+        "name": "狂欢节",
+        "desc": [
+          "（+ ）此卡是所有玩家都可使用的额外行动格。使用此格的玩家支付你1份食物获得2分，你使用则直接获得2分寄宿工人空房"
+        ],
+        "prerequisite": "3职业"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_O15_FarmersBall",
+    "originalId": "O15_FarmersBall",
+    "gameEdition": "classic",
+    "name": "乡村舞会",
+    "deck": "O",
+    "number": 15,
+    "desc": [
+      "打出此卡时，所有玩家都可以选择支付5份食物并获得3分"
+    ],
+    "cost": {},
+    "vp": 1,
+    "prerequisite": "3职业",
+    "occupationPrerequisites": {
+      "min": 3
+    },
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/O15.png",
+    "locales": {
+      "zh": {
+        "name": "乡村舞会",
+        "desc": [
+          "打出此卡时，所有玩家都可以选择支付5份食物并获得3分"
+        ],
+        "prerequisite": "3职业"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_O16_Neutrality",
+    "originalId": "O16_Neutrality",
+    "gameEdition": "classic",
+    "name": "中立主义",
+    "deck": "O",
+    "number": 16,
+    "desc": [
+      "在打出此卡的下一回合，你只能在所有其他玩家派遣完所有家庭成员后才能开始派遣家庭成员。你每有一个家庭成员受此卡影响，你便获得1分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "2职业",
+    "occupationPrerequisites": {
+      "min": 2
+    },
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/O16.png",
+    "locales": {
+      "zh": {
+        "name": "中立主义",
+        "desc": [
+          "在打出此卡的下一回合，你只能在所有其他玩家派遣完所有家庭成员后才能开始派遣家庭成员。你每有一个家庭成员受此卡影响，你便获得1分。"
+        ],
+        "prerequisite": "2职业"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_O17_GuestWorker",
+    "originalId": "O17_GuestWorker",
+    "gameEdition": "classic",
+    "name": "间×1",
+    "deck": "O",
+    "number": 17,
+    "desc": [
+      "你获得一个食客标记。下回合开始，你可以如同你的家庭成员一样派遣这名食客，该食客可以使用本回合新翻开的回合行动格，即使该格已被占用。该食客占用你1间房间，每次喂养阶段需喂养2份食物。空房间的意思：临时住宅、农干临时住宅"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/O17.png",
+    "locales": {
+      "zh": {
+        "name": "间×1",
+        "desc": [
+          "你获得一个食客标记。下回合开始，你可以如同你的家庭成员一样派遣这名食客，该食客可以使用本回合新翻开的回合行动格，即使该格已被占用。该食客占用你1间房间，每次喂养阶段需喂养2份食物。空房间的意思：临时住宅、农干临时住宅"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_O18_SchnitzelMallet",
+    "originalId": "O18_SchnitzelMallet",
+    "gameEdition": "classic",
+    "name": "肉槌",
+    "deck": "O",
+    "number": 18,
+    "desc": [
+      "每当你使用 发展卡将1头牛转换成食物时，你获得额外的1份食物+1分"
+    ],
+    "cost": {
+      "stone": 1
+    },
+    "vp": 0,
+    "prerequisite": "2职业",
+    "occupationPrerequisites": {
+      "min": 2
+    },
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/O18.png",
+    "locales": {
+      "zh": {
+        "name": "肉槌",
+        "desc": [
+          "每当你使用 发展卡将1头牛转换成食物时，你获得额外的1份食物+1分"
+        ],
+        "prerequisite": "2职业"
+      }
+    },
+    "kind": "minor"
+  },
+]
+const batch18: readonly GeneratedCatalogCardDefinition[] = [
+  {
+    "id": "OLD_O19_CompulsoryEducation",
+    "originalId": "O19_CompulsoryEducation",
+    "gameEdition": "classic",
+    "name": "义务教育",
+    "deck": "O",
+    "number": 19,
+    "desc": [
+      "每当你执行“生娃”行动时，你可以支付1份食物并打出1张职业卡。若你同时打出1张次要发展卡，首先执行打出职业卡的效果。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "1职业",
+    "occupationPrerequisites": {
+      "min": 1
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/O19.png",
+    "locales": {
+      "zh": {
+        "name": "义务教育",
+        "desc": [
+          "每当你执行“生娃”行动时，你可以支付1份食物并打出1张职业卡。若你同时打出1张次要发展卡，首先执行打出职业卡的效果。"
+        ],
+        "prerequisite": "1职业"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_O20_EmergencyHousing",
+    "originalId": "O20_EmergencyHousing",
+    "gameEdition": "classic",
+    "name": "临时住宅",
+    "deck": "O",
+    "number": 20,
+    "desc": [
+      "你的一个你已建造的马厩失去其原有功能，并可以容纳1名家庭成员。计分时该马厩仍然视作马厩。"
+    ],
+    "cost": {
+      "wood": 1,
+      "reed": 1
+    },
+    "vp": 0,
+    "prerequisite": "1马厩",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/O20.png",
+    "locales": {
+      "zh": {
+        "name": "临时住宅",
+        "desc": [
+          "你的一个你已建造的马厩失去其原有功能，并可以容纳1名家庭成员。计分时该马厩仍然视作马厩。"
+        ],
+        "prerequisite": "1马厩"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_O21_Vineyard",
+    "originalId": "O21_Vineyard",
+    "gameEdition": "classic",
+    "name": "葡萄园",
+    "deck": "O",
+    "number": 21,
+    "desc": [
+      "当你执行\"播种\"行动时，你可以将至多3份食物，如同小麦般播种到此卡上。每次收割作物时，将此卡上的食物如同小麦般收割。（视作3块\"已播种田\"）"
+    ],
+    "cost": {
+      "reed": 1
+    },
+    "vp": 0,
+    "prerequisite": "4职业",
+    "occupationPrerequisites": {
+      "min": 4
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/O21.png",
+    "locales": {
+      "zh": {
+        "name": "葡萄园",
+        "desc": [
+          "当你执行\"播种\"行动时，你可以将至多3份食物，如同小麦般播种到此卡上。每次收割作物时，将此卡上的食物如同小麦般收割。（视作3块\"已播种田\"）"
+        ],
+        "prerequisite": "4职业"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_O22_UnusualArchitecture",
+    "originalId": "O22_UnusualArchitecture",
+    "gameEdition": "classic",
+    "name": "特色建筑",
+    "deck": "O",
+    "number": 22,
+    "desc": [
+      "你每扩建1间房屋，你获得2份食物。"
+    ],
+    "cost": {
+      "clay": 2
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/O22.png",
+    "locales": {
+      "zh": {
+        "name": "特色建筑",
+        "desc": [
+          "你每扩建1间房屋，你获得2份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_O23_Lederhosen",
+    "originalId": "O23_Lederhosen",
+    "gameEdition": "classic",
+    "name": "皮短裤",
+    "deck": "O",
+    "number": 23,
+    "desc": [
+      "你每将1只羊转换成食物，便从游戏供应区拿取1份食物放在此卡上。游戏结束时，若此卡上的食物不少于你家庭成员数量(食客不计算在内)的1/2倍，则你获得2/3分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "3职业",
+    "occupationPrerequisites": {
+      "min": 3
+    },
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/O23.png",
+    "locales": {
+      "zh": {
+        "name": "皮短裤",
+        "desc": [
+          "你每将1只羊转换成食物，便从游戏供应区拿取1份食物放在此卡上。游戏结束时，若此卡上的食物不少于你家庭成员数量(食客不计算在内)的1/2倍，则你获得2/3分。"
+        ],
+        "prerequisite": "3职业"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_O24_StyrianOak",
+    "originalId": "O24_StyrianOak",
+    "gameEdition": "classic",
+    "name": "老橡树",
+    "deck": "O",
+    "number": 24,
+    "desc": [
+      "从游戏供应区放置5份食物到此卡上。每回合开始时，你可以将此卡上的1食物退还至游戏供应区。游戏中限1次：任意时刻，你可以支付与此卡上等量的食物(0至5)，并获得6根木头。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "1职业",
+    "occupationPrerequisites": {
+      "min": 1
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/O24.png",
+    "locales": {
+      "zh": {
+        "name": "老橡树",
+        "desc": [
+          "从游戏供应区放置5份食物到此卡上。每回合开始时，你可以将此卡上的1食物退还至游戏供应区。游戏中限1次：任意时刻，你可以支付与此卡上等量的食物(0至5)，并获得6根木头。"
+        ],
+        "prerequisite": "1职业"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_PI01_Alchemist",
+    "originalId": "PI01_Alchemist",
+    "gameEdition": "classic",
+    "name": "Museum Caretaker",
+    "deck": "PI",
+    "number": 1,
+    "desc": [
+      "At the start of each work phase, if you have at least 1 <WOOD>, 1 <CLAY>, 1 <REED>, 1 <STONE>, 1 <GRAIN>, and 1 <VEGETABLE> in your supply, you get 1 bonus <SCORE>."
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/PI01.png",
+    "locales": {
+      "zh": {
+        "name": "Museum Caretaker",
+        "desc": [
+          "At the start of each work phase, if you have at least 1 <WOOD>, 1 <CLAY>, 1 <REED>, 1 <STONE>, 1 <GRAIN>, and 1 <VEGETABLE> in your supply, you get 1 bonus <SCORE>."
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_PI02_Altruist",
+    "originalId": "PI02_Altruist",
+    "gameEdition": "classic",
+    "name": "Altruist",
+    "deck": "PI",
+    "number": 2,
+    "desc": [
+      "每局游戏限2次：你可以在“翻修”行动中花费1芦苇+每间屋子1木将你的石屋翻修回木屋。若你如此做，你翻修的每间房屋获得3分并同时获得3砖。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/PI02.png",
+    "locales": {
+      "zh": {
+        "name": "Altruist",
+        "desc": [
+          "每局游戏限2次：你可以在“翻修”行动中花费1芦苇+每间屋子1木将你的石屋翻修回木屋。若你如此做，你翻修的每间房屋获得3分并同时获得3砖。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_PI03_Backpacker",
+    "originalId": "PI03_Backpacker",
+    "gameEdition": "classic",
+    "name": "Acquirer",
+    "deck": "PI",
+    "number": 3,
+    "desc": [
+      "At the start of each round, you can pay <FOOD> equal to the number of people you have to buy 1 good of your choice from the general supply."
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/PI03.png",
+    "locales": {
+      "zh": {
+        "name": "Acquirer",
+        "desc": [
+          "At the start of each round, you can pay <FOOD> equal to the number of people you have to buy 1 good of your choice from the general supply."
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_PI04_ChiselMaker",
+    "originalId": "PI04_ChiselMaker",
+    "gameEdition": "classic",
+    "name": "Wolf",
+    "deck": "PI",
+    "number": 4,
+    "desc": [
+      "Pile (from bottom to top) 1 <CLAY>, 1 <WOOD>, and 1 <GRAIN> on this card. Each time you get a good matching the top item, you can move that item to your supply and get 1 <PIG>."
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/PI04.png",
+    "locales": {
+      "zh": {
+        "name": "Wolf",
+        "desc": [
+          "Pile (from bottom to top) 1 <CLAY>, 1 <WOOD>, and 1 <GRAIN> on this card. Each time you get a good matching the top item, you can move that item to your supply and get 1 <PIG>."
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_PI05_Contortionist",
+    "originalId": "PI05_Contortionist",
+    "gameEdition": "classic",
+    "name": "Spice Trader",
+    "deck": "PI",
+    "number": 5,
+    "desc": [
+      "If you play this card in round 4 or before, place 3 <VEGETABLE> on the space for round 11. At the start of that round, you get the <VEGETABLE>."
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/PI05.png",
+    "locales": {
+      "zh": {
+        "name": "Spice Trader",
+        "desc": [
+          "If you play this card in round 4 or before, place 3 <VEGETABLE> on the space for round 11. At the start of that round, you get the <VEGETABLE>."
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_PI06_Footman",
+    "originalId": "PI06_Footman",
+    "gameEdition": "classic",
+    "name": "Pioneer",
+    "deck": "PI",
+    "number": 6,
+    "desc": [
+      "When you play this card and each time before you use the most recent action space card, you get 1 building resource of your choice and 1 <FOOD>."
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/PI06.png",
+    "locales": {
+      "zh": {
+        "name": "Pioneer",
+        "desc": [
+          "When you play this card and each time before you use the most recent action space card, you get 1 building resource of your choice and 1 <FOOD>."
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_PI07_MarriageCounselor",
+    "originalId": "PI07_MarriageCounselor",
+    "gameEdition": "classic",
+    "name": "Marriage Counselor",
+    "deck": "PI",
+    "number": 7,
+    "desc": [
+      "每回合开始时，如果有玩家的家庭成员比你多2名或以上，或所有其他玩家的家庭成员都比你多，你可以支付1<FOOD>并在本回合使用1名食客。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/PI07.png",
+    "locales": {
+      "zh": {
+        "name": "Marriage Counselor",
+        "desc": [
+          "每回合开始时，如果有玩家的家庭成员比你多2名或以上，或所有其他玩家的家庭成员都比你多，你可以支付1<FOOD>并在本回合使用1名食客。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_PI08_MasterCarpenter",
+    "originalId": "PI08_MasterCarpenter",
+    "gameEdition": "classic",
+    "name": "Land Surveyor",
+    "deck": "PI",
+    "number": 8,
+    "desc": [
+      "In the field phase of each harvest, if you have at least 2/4/6/7 fields, you get 1/2/3/4 <FOOD>."
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/PI08.png",
+    "locales": {
+      "zh": {
+        "name": "Land Surveyor",
+        "desc": [
+          "In the field phase of each harvest, if you have at least 2/4/6/7 fields, you get 1/2/3/4 <FOOD>."
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_PI09_PestExterminator",
+    "originalId": "PI09_PestExterminator",
+    "gameEdition": "classic",
+    "name": "Blackberry Farmer",
+    "deck": "PI",
+    "number": 9,
+    "desc": [
+      "Each time you build fences, place 1 <FOOD> on each remaining round space, up to the number of fences just built. At the start of these rounds, you get the <FOOD>."
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/PI09.png",
+    "locales": {
+      "zh": {
+        "name": "Blackberry Farmer",
+        "desc": [
+          "Each time you build fences, place 1 <FOOD> on each remaining round space, up to the number of fences just built. At the start of these rounds, you get the <FOOD>."
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_PI10_Professor",
+    "originalId": "PI10_Professor",
+    "gameEdition": "classic",
+    "name": "Professor",
+    "deck": "PI",
+    "number": 10,
+    "desc": [
+      "打出此卡后，你必须将手中未打出的职业牌弃掉，并从牌库中随机抽7张，并可以支付2<FOOD>打出一张职业卡。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/PI10.png",
+    "locales": {
+      "zh": {
+        "name": "Professor",
+        "desc": [
+          "打出此卡后，你必须将手中未打出的职业牌弃掉，并从牌库中随机抽7张，并可以支付2<FOOD>打出一张职业卡。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_PI11_SunriseHerder",
+    "originalId": "PI11_SunriseHerder",
+    "gameEdition": "classic",
+    "name": "Sunrise Herder",
+    "deck": "PI",
+    "number": 11,
+    "desc": [
+      "每回合限1次：你可以你可以跳过你的第一个轮次，支付0/0/1<FOOD>获得1羊/猪/牛。你可以在后续的轮次继续派遣他。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/PI11.png",
+    "locales": {
+      "zh": {
+        "name": "Sunrise Herder",
+        "desc": [
+          "每回合限1次：你可以你可以跳过你的第一个轮次，支付0/0/1<FOOD>获得1羊/猪/牛。你可以在后续的轮次继续派遣他。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_PI12_WoundedVeteran",
+    "originalId": "PI12_WoundedVeteran",
+    "gameEdition": "classic",
+    "name": "Recluse",
+    "deck": "PI",
+    "number": 12,
+    "desc": [
+      "As long as you have no minor improvements in front of you, you get 1 <FOOD> at the start of each round and 1 <WOOD> at the start of each harvest."
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/PI12.png",
+    "locales": {
+      "zh": {
+        "name": "Recluse",
+        "desc": [
+          "As long as you have no minor improvements in front of you, you get 1 <FOOD> at the start of each round and 1 <WOOD> at the start of each harvest."
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_PI13_AngryDuck",
+    "originalId": "PI13_AngryDuck",
+    "gameEdition": "classic",
+    "name": "愤怒鸭",
+    "deck": "PI",
+    "number": 13,
+    "desc": [
+      "打出此卡后，每当你获得你放置在未翻开回合行动格上的食物时，可以将其中任意数量的食物放在此卡上。游戏结束时，如果此卡上有1/2/3/5/8+份食物，则你获得1/2/3/4/5分。(你不能使用此卡上的食物)"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/PI13.png",
+    "locales": {
+      "zh": {
+        "name": "愤怒鸭",
+        "desc": [
+          "打出此卡后，每当你获得你放置在未翻开回合行动格上的食物时，可以将其中任意数量的食物放在此卡上。游戏结束时，如果此卡上有1/2/3/5/8+份食物，则你获得1/2/3/4/5分。(你不能使用此卡上的食物)"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_PI14_FertilityShrine",
+    "originalId": "PI14_FertilityShrine",
+    "gameEdition": "classic",
+    "name": "生育神殿",
+    "deck": "PI",
+    "number": 14,
+    "desc": [
+      "每个丰收时节的动物繁殖阶段，如果你繁殖了2种及以上种类的新生动物，你可以将繁殖出的2\r\n  只新生动物从你的农场中退还到游戏供应区并执行一次“生娃（无需空房间）”行动。（你必须有饲养空间容纳新生动物）"
+    ],
+    "cost": {
+      "stone": 2
+    },
+    "vp": -1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/PI14.png",
+    "locales": {
+      "zh": {
+        "name": "生育神殿",
+        "desc": [
+          "每个丰收时节的动物繁殖阶段，如果你繁殖了2种及以上种类的新生动物，你可以将繁殖出的2\r\n  只新生动物从你的农场中退还到游戏供应区并执行一次“生娃（无需空房间）”行动。（你必须有饲养空间容纳新生动物）"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_PI15_FishingPier",
+    "originalId": "PI15_FishingPier",
+    "gameEdition": "classic",
+    "name": "Animal Bedding",
+    "deck": "PI",
+    "number": 15,
+    "desc": [
+      "You can keep 1 additional animal (of the same type) in each of your unfenced stables, and 2 additional animals (of the same type) in each pasture with stable."
+    ],
+    "cost": {},
+    "vp": 1,
+    "prerequisite": "1 Grain Field",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/PI15.png",
+    "locales": {
+      "zh": {
+        "name": "Animal Bedding",
+        "desc": [
+          "You can keep 1 additional animal (of the same type) in each of your unfenced stables, and 2 additional animals (of the same type) in each pasture with stable."
+        ],
+        "prerequisite": "1 Grain Field"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_PI16_GardenersBothy",
+    "originalId": "PI16_GardenersBothy",
+    "gameEdition": "classic",
+    "name": "园丁茅屋",
+    "deck": "PI",
+    "number": 16,
+    "desc": [
+      "每当你使用犁田行动格后，你可以将该人立即移动到此卡上并获得1份小麦。每当你使用粮食耕种[犁播]行动格后，你可以将该人立即移动到此卡上并获得1份蔬菜。"
+    ],
+    "cost": {
+      "wood": 2,
+      "reed": 1
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/PI16.png",
+    "locales": {
+      "zh": {
+        "name": "园丁茅屋",
+        "desc": [
+          "每当你使用犁田行动格后，你可以将该人立即移动到此卡上并获得1份小麦。每当你使用粮食耕种[犁播]行动格后，你可以将该人立即移动到此卡上并获得1份蔬菜。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_PI17_Geode",
+    "originalId": "PI17_Geode",
+    "gameEdition": "classic",
+    "name": "Wood Saw",
+    "deck": "PI",
+    "number": 17,
+    "desc": [
+      "Each time all other players have more people than you, you can take a __Build Rooms__ action without placing a person."
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/PI17.png",
+    "locales": {
+      "zh": {
+        "name": "Wood Saw",
+        "desc": [
+          "Each time all other players have more people than you, you can take a __Build Rooms__ action without placing a person."
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_PI18_LandscapeDesign",
+    "originalId": "PI18_LandscapeDesign",
+    "gameEdition": "classic",
+    "name": "Landscape Design",
+    "deck": "PI",
+    "number": 18,
+    "desc": [
+      "你的田地板块不必相邻。但在1个轮次内放置的田地板块必须相邻。游戏结束时，如果你有3/4/5块不与其他田相邻的田地版块，则你额外获得1/2/3分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/PI18.png",
+    "locales": {
+      "zh": {
+        "name": "Landscape Design",
+        "desc": [
+          "你的田地板块不必相邻。但在1个轮次内放置的田地板块必须相邻。游戏结束时，如果你有3/4/5块不与其他田相邻的田地版块，则你额外获得1/2/3分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_PI19_MarketSquare",
+    "originalId": "PI19_MarketSquare",
+    "gameEdition": "classic",
+    "name": "Briar Hedge",
+    "deck": "PI",
+    "number": 19,
+    "desc": [
+      "You do not need to pay wood for fences that you build on the edge of your farmyard board."
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "1 Animal of Each Type",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/PI19.png",
+    "locales": {
+      "zh": {
+        "name": "Briar Hedge",
+        "desc": [
+          "You do not need to pay wood for fences that you build on the edge of your farmyard board."
+        ],
+        "prerequisite": "1 Animal of Each Type"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_PI20_MeetingPost",
+    "originalId": "PI20_MeetingPost",
+    "gameEdition": "classic",
+    "name": "Skimmer Plow",
+    "deck": "PI",
+    "number": 20,
+    "desc": [
+      "Each time you use the __Farmland__ or __Cultivation__  action space, you can plow 2 fields instead of 1. Each time you sow, you must place 1 fewer good on each field you sow."
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "2 Occupations",
+    "occupationPrerequisites": {
+      "min": 2
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/PI20.png",
+    "locales": {
+      "zh": {
+        "name": "Skimmer Plow",
+        "desc": [
+          "Each time you use the __Farmland__ or __Cultivation__  action space, you can plow 2 fields instead of 1. Each time you sow, you must place 1 fewer good on each field you sow."
+        ],
+        "prerequisite": "2 Occupations"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_PI21_Pitchfork",
+    "originalId": "PI21_Pitchfork",
+    "gameEdition": "classic",
+    "name": "干草叉",
+    "deck": "PI",
+    "number": 21,
+    "desc": [
+      "每当你扩建或翻修房屋时，可以使用积累行动格上的芦苇进行支付。"
+    ],
+    "cost": {
+      "wood": 1,
+      "stone": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/PI21.png",
+    "locales": {
+      "zh": {
+        "name": "干草叉",
+        "desc": [
+          "每当你扩建或翻修房屋时，可以使用积累行动格上的芦苇进行支付。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_PI22_Retirement",
+    "originalId": "PI22_Retirement",
+    "gameEdition": "classic",
+    "name": "退休",
+    "deck": "PI",
+    "number": 22,
+    "desc": [
+      "打出此卡时，你所有已打出的职业卡失效并面朝下(未来回合行动格上的逻辑照常结算)，但仍算作职业卡。之后只要你没有打出新的职业卡，每回合开始时你获得1份食物"
+    ],
+    "cost": {},
+    "vp": 1,
+    "prerequisite": "1 Occupations",
+    "occupationPrerequisites": {
+      "min": 1
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/PI22.png",
+    "locales": {
+      "zh": {
+        "name": "退休",
+        "desc": [
+          "打出此卡时，你所有已打出的职业卡失效并面朝下(未来回合行动格上的逻辑照常结算)，但仍算作职业卡。之后只要你没有打出新的职业卡，每回合开始时你获得1份食物"
+        ],
+        "prerequisite": "1 Occupations"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_PI23_ShelterintheField",
+    "originalId": "PI23_ShelterintheField",
+    "gameEdition": "classic",
+    "name": "Iron Hoe",
+    "deck": "PI",
+    "number": 23,
+    "desc": [
+      "At the end of each work phase, if you occupy both the __Grain Seeds__ and __Vegetable Seeds__ action spaces, you can plow 1 field."
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/PI23.png",
+    "locales": {
+      "zh": {
+        "name": "Iron Hoe",
+        "desc": [
+          "At the end of each work phase, if you occupy both the __Grain Seeds__ and __Vegetable Seeds__ action spaces, you can plow 1 field."
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_PI24_Spars",
+    "originalId": "PI24_Spars",
+    "gameEdition": "classic",
+    "name": "Sheep Rug",
+    "deck": "PI",
+    "number": 24,
+    "desc": [
+      "You can use any __Wish for Children__ action space, even if it is occupied by another player's person."
+    ],
+    "cost": {
+      "sheep": 1
+    },
+    "vp": 1,
+    "prerequisite": "4 Sheep",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/PI24.png",
+    "locales": {
+      "zh": {
+        "name": "Sheep Rug",
+        "desc": [
+          "You can use any __Wish for Children__ action space, even if it is occupied by another player's person."
+        ],
+        "prerequisite": "4 Sheep"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_PI26_NaturalPhilosopher",
+    "originalId": "PI26_NaturalPhilosopher",
+    "gameEdition": "classic",
+    "name": "Natural Philosopher",
+    "deck": "PI",
+    "number": 26,
+    "desc": [
+      "每回合开始时，如果你农场中未使用的空格数等于之后的完整回合数，你可以抽一张职业卡或次发卡并可以将其打出（职业卡需1食物，次发卡需支付资源）"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/PI26.png",
+    "locales": {
+      "zh": {
+        "name": "Natural Philosopher",
+        "desc": [
+          "每回合开始时，如果你农场中未使用的空格数等于之后的完整回合数，你可以抽一张职业卡或次发卡并可以将其打出（职业卡需1食物，次发卡需支付资源）"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WA001_ClutchDrive",
+    "originalId": "WA001_ClutchDrive",
+    "gameEdition": "classic",
+    "name": "离合器",
+    "deck": "WA",
+    "number": 1,
+    "desc": [
+      "每当你使用回合行动格的数量等于你个人供应区的木头数量后，你额外获得1根木头。"
+    ],
+    "cost": {
+      "reed": 1
+    },
+    "vp": 0,
+    "prerequisite": "1 Occupations",
+    "occupationPrerequisites": {
+      "min": 1
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA001.png",
+    "locales": {
+      "zh": {
+        "name": "离合器",
+        "desc": [
+          "每当你使用回合行动格的数量等于你个人供应区的木头数量后，你额外获得1根木头。"
+        ],
+        "prerequisite": "职业×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WA002_Ardennes",
+    "originalId": "WA002_Ardennes",
+    "gameEdition": "classic",
+    "name": "密林",
+    "deck": "WA",
+    "number": 2,
+    "desc": [
+      "在之后的偶数回合行动格上各放置1根木头，这些回合开始时，你获得这根木头"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "砖头×6",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA002.png",
+    "locales": {
+      "zh": {
+        "name": "密林",
+        "desc": [
+          "在之后的偶数回合行动格上各放置1根木头，这些回合开始时，你获得这根木头"
+        ],
+        "prerequisite": "砖头×6"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WA003_BeggingLetter",
+    "originalId": "WA003_BeggingLetter",
+    "gameEdition": "classic",
+    "name": "乞援信",
+    "deck": "WA",
+    "number": 3,
+    "desc": [
+      "每个其他玩家必须给你1张次发卡，你从中选择1张加入手牌，将之后的手牌与此卡一起洗混随机发给其他玩家各1张，然后你获得1次“打次发”行动"
+    ],
+    "cost": {},
+    "vp": 1,
+    "prerequisite": "食物=0",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA003.png",
+    "locales": {
+      "zh": {
+        "name": "乞援信",
+        "desc": [
+          "每个其他玩家必须给你1张次发卡，你从中选择1张加入手牌，将之后的手牌与此卡一起洗混随机发给其他玩家各1张，然后你获得1次“打次发”行动"
+        ],
+        "prerequisite": "食物=0"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WA004_BeerTable",
+    "name": "啤酒桌",
+    "deck": "WA",
+    "number": 4,
+    "category": "POINTS_PROVIDER",
+    "desc": [
+      "每个丰收时节的收割阶段结束时，你可以支付1份小麦来获得2分。若你如此做，其他玩家分别获得1份食物漫画店8或9"
+    ],
+    "cost": {
+      "wood": 2
+    },
+    "prerequisite": "补给区无小麦",
+    "extraVp": true,
+    "originalId": "WA004_BeerTable",
+    "gameEdition": "classic",
+    "vp": 0,
+    "passing": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/WA004.png",
+    "locales": {
+      "zh": {
+        "name": "啤酒桌",
+        "desc": [
+          "每个丰收时节的收割阶段结束时，你可以支付1份小麦来获得2分。若你如此做，其他玩家分别获得1份食物漫画店8或9"
+        ],
+        "prerequisite": "补给区无小麦"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WA005_BeerMuseum",
+    "originalId": "WA005_BeerMuseum",
+    "gameEdition": "classic",
+    "name": "啤酒博物馆",
+    "deck": "WA",
+    "number": 5,
+    "desc": [
+      "每个丰收时节的喂养阶段，你可以使用此卡将此卡将至多1份小麦转化为6份食物，你将在下个丰收时节的收割阶段获得这些食物。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "小麦×2",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA005.png",
+    "locales": {
+      "zh": {
+        "name": "啤酒博物馆",
+        "desc": [
+          "每个丰收时节的喂养阶段，你可以使用此卡将此卡将至多1份小麦转化为6份食物，你将在下个丰收时节的收割阶段获得这些食物。"
+        ],
+        "prerequisite": "小麦×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WA006_BeerParlor",
+    "originalId": "WA006_BeerParlor",
+    "gameEdition": "classic",
+    "name": "啤酒店",
+    "deck": "WA",
+    "number": 6,
+    "desc": [
+      "打出此卡时，你获得1份小麦。每个回合的回家阶段之前，如果当回合你的所有家庭成员都放在同一个游戏版图上，则你可以将至多1份小麦转化为3份食物"
+    ],
+    "cost": {
+      "reed": 1
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA006.png",
+    "locales": {
+      "zh": {
+        "name": "啤酒店",
+        "desc": [
+          "打出此卡时，你获得1份小麦。每个回合的回家阶段之前，如果当回合你的所有家庭成员都放在同一个游戏版图上，则你可以将至多1份小麦转化为3份食物"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WA007_ComicShop",
+    "originalId": "WA007_ComicShop",
+    "gameEdition": "classic",
+    "name": "漫画店",
+    "deck": "WA",
+    "number": 7,
+    "desc": [
+      "此卡是所有玩家可用的额外行动格。只有家中无人时能使用此格，且直到回合结束家中不能有人。使用此格的玩家在之后2个回合中，每个轮次能派遣至多2名家庭成员。"
+    ],
+    "cost": {
+      "wood": 1,
+      "clay": 1
+    },
+    "vp": 3,
+    "prerequisite": "8或9回合",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA007.png",
+    "locales": {
+      "zh": {
+        "name": "漫画店",
+        "desc": [
+          "此卡是所有玩家可用的额外行动格。只有家中无人时能使用此格，且直到回合结束家中不能有人。使用此格的玩家在之后2个回合中，每个轮次能派遣至多2名家庭成员。"
+        ],
+        "prerequisite": "8或9回合"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WA008_SteamEngine",
+    "originalId": "WA008_SteamEngine",
+    "gameEdition": "classic",
+    "name": "蒸汽机",
+    "deck": "WA",
+    "number": 8,
+    "desc": [
+      "若你在每回合工作阶段使用的行动格是积累行动格，则你可在行动后立即执行1次“烤面包”行动和平岛田地"
+    ],
+    "cost": {
+      "wood": 2
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA008.png",
+    "locales": {
+      "zh": {
+        "name": "蒸汽机",
+        "desc": [
+          "若你在每回合工作阶段使用的行动格是积累行动格，则你可在行动后立即执行1次“烤面包”行动和平岛田地"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WA009_BowlerHat",
+    "originalId": "WA009_BowlerHat",
+    "gameEdition": "classic",
+    "name": "渔网",
+    "deck": "WA",
+    "number": 9,
+    "desc": [
+      "每当其他玩家使用钓鱼积累行动格前，他们必须先支付你1份食物。之后，在该回合的回家阶段，补充2份食物到钓鱼积累行动格上"
+    ],
+    "cost": {
+      "reed": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA009.png",
+    "locales": {
+      "zh": {
+        "name": "渔网",
+        "desc": [
+          "每当其他玩家使用钓鱼积累行动格前，他们必须先支付你1份食物。之后，在该回合的回家阶段，补充2份食物到钓鱼积累行动格上"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WA010_FrankiPile",
+    "originalId": "WA010_FrankiPile",
+    "gameEdition": "classic",
+    "name": "弗兰基桩",
+    "deck": "WA",
+    "number": 10,
+    "desc": [
+      "从游戏供应区拿取石头放在任意数量的农场空格上各1个，这些空格仍视为未使用。你只能通过在这些格子扩建房屋来使用他们，如此做时，对于每间房屋你少花费1个任意建筑资源而且你获得上面的石头"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "2 Occupations",
+    "occupationPrerequisites": {
+      "min": 2
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA010.png",
+    "locales": {
+      "zh": {
+        "name": "弗兰基桩",
+        "desc": [
+          "从游戏供应区拿取石头放在任意数量的农场空格上各1个，这些空格仍视为未使用。你只能通过在这些格子扩建房屋来使用他们，如此做时，对于每间房屋你少花费1个任意建筑资源而且你获得上面的石头"
+        ],
+        "prerequisite": "职业×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WA011_IslandsofPeace",
+    "originalId": "WA011_IslandsofPeace",
+    "gameEdition": "classic",
+    "name": "和平岛",
+    "deck": "WA",
+    "number": 11,
+    "desc": [
+      "从游戏供应区拿取食物放到农场里每组2×2空地的公共点上，一旦你使用了周围的4格空地，你获得中间的这份食物"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "田地版块×2",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA011.png",
+    "locales": {
+      "zh": {
+        "name": "和平岛",
+        "desc": [
+          "从游戏供应区拿取食物放到农场里每组2×2空地的公共点上，一旦你使用了周围的4格空地，你获得中间的这份食物"
+        ],
+        "prerequisite": "田地版块×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WA012_CastironOven",
+    "originalId": "WA012_CastironOven",
+    "gameEdition": "classic",
+    "name": "铸铁烤炉",
+    "deck": "WA",
+    "number": 12,
+    "desc": [
+      "每当你执行“烤面包”行动或在打出1张职业卡后，你可以使用此卡将至多1份小麦转化为4份食物"
+    ],
+    "cost": {
+      "clay": 3
+    },
+    "vp": 2,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA012.png",
+    "locales": {
+      "zh": {
+        "name": "铸铁烤炉",
+        "desc": [
+          "每当你执行“烤面包”行动或在打出1张职业卡后，你可以使用此卡将至多1份小麦转化为4份食物"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WA013_IdealLandscape",
+    "originalId": "WA013_IdealLandscape",
+    "gameEdition": "classic",
+    "name": "理想景观",
+    "deck": "WA",
+    "number": 13,
+    "desc": [
+      "游戏结束时，如果你有恰好4个圈地(总共6格)、5块田和4间房屋板块，则你获得4分"
+    ],
+    "cost": {},
+    "vp": -1,
+    "prerequisite": "空格×8",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA013.png",
+    "locales": {
+      "zh": {
+        "name": "理想景观",
+        "desc": [
+          "游戏结束时，如果你有恰好4个圈地(总共6格)、5块田和4间房屋板块，则你获得4分"
+        ],
+        "prerequisite": "空格×8"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WA014_CatTongue",
+    "originalId": "WA014_CatTongue",
+    "gameEdition": "classic",
+    "name": "猫舌饼干",
+    "deck": "WA",
+    "number": 14,
+    "desc": [
+      "每当你执行“生娃”行动时，你获得1个食客标记，而且你可以在工作阶段立即派遣他使用钓鱼积累行动格。生娃打出此卡会怎么样呢。"
+    ],
+    "cost": {
+      "food": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA014.png",
+    "locales": {
+      "zh": {
+        "name": "猫舌饼干",
+        "desc": [
+          "每当你执行“生娃”行动时，你获得1个食客标记，而且你可以在工作阶段立即派遣他使用钓鱼积累行动格。生娃打出此卡会怎么样呢。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WA015_NoSonofMan",
+    "originalId": "WA015_NoSonofMan",
+    "gameEdition": "classic",
+    "name": "无人之子",
+    "deck": "WA",
+    "number": 15,
+    "desc": [
+      "你获得1根木头并且可以立即派遣一名家庭成员使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "1 Occupations",
+    "occupationPrerequisites": {
+      "min": 1
+    },
+    "passing": true,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA015.png",
+    "locales": {
+      "zh": {
+        "name": "无人之子",
+        "desc": [
+          "你获得1根木头并且可以立即派遣一名家庭成员使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": "职业×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WA016_NoPotato",
+    "originalId": "WA016_NoPotato",
+    "gameEdition": "classic",
+    "name": "无土豆",
+    "deck": "WA",
+    "number": 16,
+    "desc": [
+      "立即获得等同于之后丰收时节数的分数。你将蔬菜转化为食物时减少1份食物。乞讨卡也算在此卡条件中"
+    ],
+    "cost": {},
+    "vp": 1,
+    "prerequisite": "已打出的牌×5",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA016.png",
+    "locales": {
+      "zh": {
+        "name": "无土豆",
+        "desc": [
+          "立即获得等同于之后丰收时节数的分数。你将蔬菜转化为食物时减少1份食物。乞讨卡也算在此卡条件中"
+        ],
+        "prerequisite": "已打出的牌×5"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WA017_GreyMatter",
+    "originalId": "WA017_GreyMatter",
+    "gameEdition": "classic",
+    "name": "智谋",
+    "deck": "WA",
+    "number": 17,
+    "desc": [
+      "打出时，对于每张你打出了但尚未使用其功能的发展卡，你都获得1根木头使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": true,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA017.png",
+    "locales": {
+      "zh": {
+        "name": "智谋",
+        "desc": [
+          "打出时，对于每张你打出了但尚未使用其功能的发展卡，你都获得1根木头使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WA018_CloisterRuins",
+    "originalId": "WA018_CloisterRuins",
+    "gameEdition": "classic",
+    "name": "修道院废墟",
+    "deck": "WA",
+    "number": 18,
+    "desc": [
+      "在之后的回合行动格上各放置1份食物，这些回合开始时，你获得这份食物泥磨机其他玩家有水"
+    ],
+    "cost": {
+      "food": 5
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA018.png",
+    "locales": {
+      "zh": {
+        "name": "修道院废墟",
+        "desc": [
+          "在之后的回合行动格上各放置1份食物，这些回合开始时，你获得这份食物泥磨机其他玩家有水"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WA019_LaGraceFountain",
+    "name": "绵羊井",
+    "deck": "WA",
+    "number": 19,
+    "category": "FOOD_PROVIDER",
+    "desc": [
+      "在之后的n个回合行动格上各放置1份食物，n=你的羊的数量。这些回合开始时，你获得对应的食物。"
+    ],
+    "cost": {
+      "stone": 2
+    },
+    "vp": 2,
+    "originalId": "WA019_LaGraceFountain",
+    "gameEdition": "classic",
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/WA019.png",
+    "locales": {
+      "zh": {
+        "name": "绵羊井",
+        "desc": [
+          "在之后的n个回合行动格上各放置1份食物，n=你的羊的数量。这些回合开始时，你获得对应的食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WA020_MarketFountain",
+    "originalId": "WA020_MarketFountain",
+    "gameEdition": "classic",
+    "name": "人工水井",
+    "deck": "WA",
+    "number": 20,
+    "desc": [
+      "下一回合开始时，在接下来的6个回合行动格上各放置1份食物，这些回合开始时，你获得这份食物，此卡算作1张水井朝圣之地发展卡总计至"
+    ],
+    "cost": {
+      "stone": 3
+    },
+    "vp": 3,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA020.png",
+    "locales": {
+      "zh": {
+        "name": "人工水井",
+        "desc": [
+          "下一回合开始时，在接下来的6个回合行动格上各放置1份食物，这些回合开始时，你获得这份食物，此卡算作1张水井朝圣之地发展卡总计至"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WA021_MarlyMachine",
+    "originalId": "WA021_MarlyMachine",
+    "gameEdition": "classic",
+    "name": "泥磨机",
+    "deck": "WA",
+    "number": 21,
+    "desc": [
+      "回合开始时，如果有至少1名玩家获得水井的食物，则你获得1份食物壁炉台砖屋或石"
+    ],
+    "cost": {
+      "food": 1,
+      "wood": 1
+    },
+    "vp": 2,
+    "prerequisite": "其他玩家有水井",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA021.png",
+    "locales": {
+      "zh": {
+        "name": "泥磨机",
+        "desc": [
+          "回合开始时，如果有至少1名玩家获得水井的食物，则你获得1份食物壁炉台砖屋或石"
+        ],
+        "prerequisite": "其他玩家有水井"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WA022_MaterneJam",
+    "originalId": "WA022_MaterneJam",
+    "gameEdition": "classic",
+    "name": "神奇果酱",
+    "deck": "WA",
+    "number": 22,
+    "desc": [
+      "每个丰收时节开始时，你可以展示并弃掉至多1张次发卡并获得1个此卡费用中的建筑资源萨克斯风"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "1 Occupations",
+    "occupationPrerequisites": {
+      "min": 1
+    },
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA022.png",
+    "locales": {
+      "zh": {
+        "name": "神奇果酱",
+        "desc": [
+          "每个丰收时节开始时，你可以展示并弃掉至多1张次发卡并获得1个此卡费用中的建筑资源萨克斯风"
+        ],
+        "prerequisite": "职业×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WA023_PilgrimageSite",
+    "originalId": "WA023_PilgrimageSite",
+    "gameEdition": "classic",
+    "name": "朝圣之地",
+    "deck": "WA",
+    "number": 23,
+    "desc": [
+      "此卡是所有玩家都可以使用的额外行动格。使用此卡的玩家需要支付你1份小麦获得1石头+1蔬菜+1分(你使用需支付到游戏供应区)"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "发展卡总计至少3分",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA023.png",
+    "locales": {
+      "zh": {
+        "name": "朝圣之地",
+        "desc": [
+          "此卡是所有玩家都可以使用的额外行动格。使用此卡的玩家需要支付你1份小麦获得1石头+1蔬菜+1分(你使用需支付到游戏供应区)"
+        ],
+        "prerequisite": "发展卡总计至少3分"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WA024_SmokingMantlepiece",
+    "name": "壁炉台",
+    "deck": "WA",
+    "number": 24,
+    "category": "POINTS_PROVIDER",
+    "desc": [
+      "打出此卡时，距离游戏结束每之后1个完整回合，你就获得1分，你无法再翻修你的房屋"
+    ],
+    "cost": {
+      "stone": 1
+    },
+    "vp": 1,
+    "prerequisite": "砖屋或石屋",
+    "extraVp": true,
+    "blocksRenovation": true,
+    "originalId": "WA024_SmokingMantlepiece",
+    "gameEdition": "classic",
+    "passing": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/WA024.png",
+    "locales": {
+      "zh": {
+        "name": "壁炉台",
+        "desc": [
+          "打出此卡时，距离游戏结束每之后1个完整回合，你就获得1分，你无法再翻修你的房屋"
+        ],
+        "prerequisite": "砖屋或石屋"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WA025_phase",
+    "originalId": "WA025_phase",
+    "gameEdition": "classic",
+    "name": "萨克斯风",
+    "deck": "WA",
+    "number": 25,
+    "desc": [
+      "你必须在工作阶段用你的第2名或之后的家庭成员打出此卡。你立即派遣之后所有的家庭成员到不同的行动格上，这些行动格必须在同一版图且不能与第一名家庭成员在同一版图使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "见下文",
+    "passing": true,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA025.png",
+    "locales": {
+      "zh": {
+        "name": "萨克斯风",
+        "desc": [
+          "你必须在工作阶段用你的第2名或之后的家庭成员打出此卡。你立即派遣之后所有的家庭成员到不同的行动格上，这些行动格必须在同一版图且不能与第一名家庭成员在同一版图使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": "见下文"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WA026_HoveringStone",
+    "originalId": "WA026_HoveringStone",
+    "gameEdition": "classic",
+    "name": "悬浮的石头",
+    "deck": "WA",
+    "number": 26,
+    "desc": [
+      "统计你供应区的石头数量，每当你使用回合数等于该数的回合行动格后，你额外获得1个石头使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": true,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA026.png",
+    "locales": {
+      "zh": {
+        "name": "悬浮的石头",
+        "desc": [
+          "统计你供应区的石头数量，每当你使用回合数等于该数的回合行动格后，你额外获得1个石头使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WA027_6thSenseAcademy",
+    "originalId": "WA027_6thSenseAcademy",
+    "gameEdition": "classic",
+    "name": "第六感学院",
+    "deck": "WA",
+    "number": 27,
+    "desc": [
+      "每个轮次限一次，在小麦/蔬菜/木/砖/芦苇/石头中，如果你恰好没有其中1种，则你获得1个该种资源。对于任意一种物品，如果该物品只剩1个，你不能将其转化为食物"
+    ],
+    "cost": {
+      "food": 2
+    },
+    "vp": 0,
+    "prerequisite": "1 Occupations",
+    "occupationPrerequisites": {
+      "min": 1
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA027.png",
+    "locales": {
+      "zh": {
+        "name": "第六感学院",
+        "desc": [
+          "每个轮次限一次，在小麦/蔬菜/木/砖/芦苇/石头中，如果你恰好没有其中1种，则你获得1个该种资源。对于任意一种物品，如果该物品只剩1个，你不能将其转化为食物"
+        ],
+        "prerequisite": "职业×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WA028_FoieGras",
+    "originalId": "WA028_FoieGras",
+    "gameEdition": "classic",
+    "name": "鹅肝",
+    "deck": "WA",
+    "number": 28,
+    "desc": [
+      "每当其他玩家使用芦苇滩/钓鱼积累行动格时，如果另一格已经被你占用，则你获得2份食物"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA028.png",
+    "locales": {
+      "zh": {
+        "name": "鹅肝",
+        "desc": [
+          "每当其他玩家使用芦苇滩/钓鱼积累行动格时，如果另一格已经被你占用，则你获得2份食物"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WA029_Archway",
+    "originalId": "WA029_Archway",
+    "gameEdition": "classic",
+    "name": "拱门",
+    "deck": "WA",
+    "number": 29,
+    "desc": [
+      "此卡视为全体玩家可用的行动格。使用该行动格的玩家立即获得1份食物，并可在当回合回家阶段开始前，派遣此卡上的家庭成员去使用1个空的行动格"
+    ],
+    "cost": {
+      "clay": 2
+    },
+    "vp": 4,
+    "prerequisite": "职业=0",
+    "occupationPrerequisites": {
+      "max": 0
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA029.png",
+    "locales": {
+      "zh": {
+        "name": "拱门",
+        "desc": [
+          "此卡视为全体玩家可用的行动格。使用该行动格的玩家立即获得1份食物，并可在当回合回家阶段开始前，派遣此卡上的家庭成员去使用1个空的行动格"
+        ],
+        "prerequisite": "职业=0"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WA030_RiverPort",
+    "originalId": "WA030_RiverPort",
+    "gameEdition": "classic",
+    "name": "河运港口",
+    "deck": "WA",
+    "number": 30,
+    "desc": [
+      "每回合工作阶段开始时，查看场上拥有单一资源最多的积累行动格，你可以支付1份食物购买至多1份此种资源(一样多则你选择1种资源)"
+    ],
+    "cost": {
+      "food": 1
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA030.png",
+    "locales": {
+      "zh": {
+        "name": "河运港口",
+        "desc": [
+          "每回合工作阶段开始时，查看场上拥有单一资源最多的积累行动格，你可以支付1份食物购买至多1份此种资源(一样多则你选择1种资源)"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WA031_WellInspector",
+    "originalId": "WA031_WellInspector",
+    "gameEdition": "classic",
+    "name": "水井巡查员",
+    "deck": "WA",
+    "number": 31,
+    "desc": [
+      "第4回合起，如果主发卡——A10水井没被打出，每回合开始时你获得1份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA031.png",
+    "locales": {
+      "zh": {
+        "name": "水井巡查员",
+        "desc": [
+          "第4回合起，如果主发卡——A10水井没被打出，每回合开始时你获得1份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WA032_JourneymanThatcher",
+    "originalId": "WA032_JourneymanThatcher",
+    "gameEdition": "classic",
+    "name": "茅屋旅人",
+    "deck": "WA",
+    "number": 32,
+    "desc": [
+      "打出此卡时，立即扩建1间房屋，并且少支付1捆芦苇。使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": true,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA032.png",
+    "locales": {
+      "zh": {
+        "name": "茅屋旅人",
+        "desc": [
+          "打出此卡时，立即扩建1间房屋，并且少支付1捆芦苇。使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WA033_Docker",
+    "originalId": "WA033_Docker",
+    "gameEdition": "classic",
+    "name": "码头工人",
+    "deck": "WA",
+    "number": 33,
+    "desc": [
+      "每回合工作阶段开始时，你可以获得1个任意建筑资源，如果你选择获得芦苇或石头/木头或砖头，则你跳过第1/2次家庭成员的派遣(之后的轮次继续派遣)。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA033.png",
+    "locales": {
+      "zh": {
+        "name": "码头工人",
+        "desc": [
+          "每回合工作阶段开始时，你可以获得1个任意建筑资源，如果你选择获得芦苇或石头/木头或砖头，则你跳过第1/2次家庭成员的派遣(之后的轮次继续派遣)。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WA034_ObedientBrother",
+    "originalId": "WA034_ObedientBrother",
+    "gameEdition": "classic",
+    "name": "基情兄弟",
+    "deck": "WA",
+    "number": 34,
+    "desc": [
+      "如果你有恰好4名家庭成员，你可以同时派遣你的第3和第4名家庭成员，而且可以派遣到同一行动格上。注：食客不算作家庭成员。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA034.png",
+    "locales": {
+      "zh": {
+        "name": "基情兄弟",
+        "desc": [
+          "如果你有恰好4名家庭成员，你可以同时派遣你的第3和第4名家庭成员，而且可以派遣到同一行动格上。注：食客不算作家庭成员。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WA035_FrescoPainter",
+    "originalId": "WA035_FrescoPainter",
+    "gameEdition": "classic",
+    "name": "壁画画家",
+    "deck": "WA",
+    "number": 35,
+    "desc": [
+      "每当你扩建/翻修时，对于每间扩建的房屋/每次翻修，你可以用至多2/1个石头代替等量的芦苇。对于每个如此被代替的芦苇，你获得2份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA035.png",
+    "locales": {
+      "zh": {
+        "name": "壁画画家",
+        "desc": [
+          "每当你扩建/翻修时，对于每间扩建的房屋/每次翻修，你可以用至多2/1个石头代替等量的芦苇。对于每个如此被代替的芦苇，你获得2份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WA036_Doula",
+    "originalId": "WA036_Doula",
+    "gameEdition": "classic",
+    "name": "助产士",
+    "deck": "WA",
+    "number": 36,
+    "desc": [
+      "如果你没有执行过“生娃”行动，每当其他玩家执行“生娃”行动时，你获得1份小麦。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA036.png",
+    "locales": {
+      "zh": {
+        "name": "助产士",
+        "desc": [
+          "如果你没有执行过“生娃”行动，每当其他玩家执行“生娃”行动时，你获得1份小麦。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WA037_FoundingFather",
+    "originalId": "WA037_FoundingFather",
+    "gameEdition": "classic",
+    "name": "开国元勋",
+    "deck": "WA",
+    "number": 37,
+    "desc": [
+      "每当其他玩家使用卖艺积累行动格时，你可以将至多1个供应区的马厩放到此卡上，每当你打出1张发展卡时，你可以免费建造此卡上的至多1个马厩。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA037.png",
+    "locales": {
+      "zh": {
+        "name": "开国元勋",
+        "desc": [
+          "每当其他玩家使用卖艺积累行动格时，你可以将至多1个供应区的马厩放到此卡上，每当你打出1张发展卡时，你可以免费建造此卡上的至多1个马厩。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WA038_NeedleworkTeacher",
+    "originalId": "WA038_NeedleworkTeacher",
+    "gameEdition": "classic",
+    "name": "针线活教师",
+    "deck": "WA",
+    "number": 38,
+    "desc": [
+      "每当任意玩家使用聚会场所行动格时，如果你还有两名家庭成员待派遣(包括食客)，你获得2份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA038.png",
+    "locales": {
+      "zh": {
+        "name": "针线活教师",
+        "desc": [
+          "每当任意玩家使用聚会场所行动格时，如果你还有两名家庭成员待派遣(包括食客)，你获得2份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WA039_MilitaryLeader",
+    "originalId": "WA039_MilitaryLeader",
+    "gameEdition": "classic",
+    "name": "军事首领",
+    "deck": "WA",
+    "number": 39,
+    "desc": [
+      "此卡只能在12回合或之前打出。打出此卡后，第13和14回合你不能派遣任何家庭成员，你不参与这两个回合后的丰收时节，并获得13分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA039.png",
+    "locales": {
+      "zh": {
+        "name": "军事首领",
+        "desc": [
+          "此卡只能在12回合或之前打出。打出此卡后，第13和14回合你不能派遣任何家庭成员，你不参与这两个回合后的丰收时节，并获得13分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WA040_SmallscaleFarmer",
+    "originalId": "WA040_SmallscaleFarmer",
+    "gameEdition": "classic",
+    "name": "小户农家",
+    "deck": "WA",
+    "number": 40,
+    "desc": [
+      "每回合开始时，如果你只有2间房屋，你获得1根木头。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA040.png",
+    "locales": {
+      "zh": {
+        "name": "小户农家",
+        "desc": [
+          "每回合开始时，如果你只有2间房屋，你获得1根木头。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WA041_HobbyMathematician",
+    "originalId": "WA041_HobbyMathematician",
+    "gameEdition": "classic",
+    "name": "业余数学家",
+    "deck": "WA",
+    "number": 41,
+    "desc": [
+      "在3/4/5人游戏中，每回合工作阶段开始时，如果所有木头积累行动格上总计有至少7/8/9根木头，则你额外获得1根木头。如果所有砖头积累行动格总计有6/7/8块砖头，则你额外获得1块砖头。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA041.png",
+    "locales": {
+      "zh": {
+        "name": "业余数学家",
+        "desc": [
+          "在3/4/5人游戏中，每回合工作阶段开始时，如果所有木头积累行动格上总计有至少7/8/9根木头，则你额外获得1根木头。如果所有砖头积累行动格总计有6/7/8块砖头，则你额外获得1块砖头。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WA042_SceneryPainter",
+    "originalId": "WA042_SceneryPainter",
+    "gameEdition": "classic",
+    "name": "风景画家",
+    "deck": "WA",
+    "number": 42,
+    "desc": [
+      "每个奇数回合开始时，如果你农场中央的3个农场格子都未被使用，你额外获得1份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA042.png",
+    "locales": {
+      "zh": {
+        "name": "风景画家",
+        "desc": [
+          "每个奇数回合开始时，如果你农场中央的3个农场格子都未被使用，你额外获得1份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WA043_Porter",
+    "name": "搬运工",
+    "deck": "WA",
+    "number": 43,
+    "category": "BUILDING_RESOURCE_PROVIDER",
+    "desc": [
+      "每当你从行动格上拿取不少于4份同种建筑资源时，你额外获得1个该建筑资源+1份食物。"
+    ],
+    "cost": {},
+    "players": "1+",
+    "implemented": true,
+    "originalId": "WA043_Porter",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "artUrl": "/card-art/classic/WA043.png",
+    "locales": {
+      "zh": {
+        "name": "搬运工",
+        "desc": [
+          "每当你从行动格上拿取不少于4份同种建筑资源时，你额外获得1个该建筑资源+1份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WA044_Lutenist",
+    "name": "琵琶演奏家",
+    "deck": "WA",
+    "number": 44,
+    "category": "CROP_PROVIDER",
+    "desc": [
+      "每当其他玩家使用卖艺积累行动格时，你获得1份食物，并且可以花费2食物购买1份蔬菜。"
+    ],
+    "cost": {},
+    "players": "1+",
+    "originalId": "WA044_Lutenist",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/WA044.png",
+    "locales": {
+      "zh": {
+        "name": "琵琶演奏家",
+        "desc": [
+          "每当其他玩家使用卖艺积累行动格时，你获得1份食物，并且可以花费2食物购买1份蔬菜。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WA045_Songwriter",
+    "originalId": "WA045_Songwriter",
+    "gameEdition": "classic",
+    "name": "唱作人",
+    "deck": "WA",
+    "number": 45,
+    "desc": [
+      "在此卡上放置1份小麦+3份食物。之后，其他玩家第1/2/3次使用卖艺积累行动格时，你分别从此卡上获得1食物/1小麦/2食物。第4次之后，你从游戏供应区获得1蔬菜。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA045.png",
+    "locales": {
+      "zh": {
+        "name": "唱作人",
+        "desc": [
+          "在此卡上放置1份小麦+3份食物。之后，其他玩家第1/2/3次使用卖艺积累行动格时，你分别从此卡上获得1食物/1小麦/2食物。第4次之后，你从游戏供应区获得1蔬菜。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WA046_MasterDetective",
+    "originalId": "WA046_MasterDetective",
+    "gameEdition": "classic",
+    "name": "大侦探波罗",
+    "deck": "WA",
+    "number": 46,
+    "desc": [
+      "翻开当前回合+3回合的行动格，如果是积累行动格则补充1次资源。如果可能，你立即移动打出此卡的家庭成员去使用该格，在当前回合回家阶段，重新盖上此行动格。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA046.png",
+    "locales": {
+      "zh": {
+        "name": "大侦探波罗",
+        "desc": [
+          "翻开当前回合+3回合的行动格，如果是积累行动格则补充1次资源。如果可能，你立即移动打出此卡的家庭成员去使用该格，在当前回合回家阶段，重新盖上此行动格。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WA047_PatternMaker",
+    "name": "模型制造商",
+    "deck": "WA",
+    "number": 47,
+    "category": "POINTS_PROVIDER",
+    "desc": [
+      "每当其他玩家翻修房屋时，你可以花费2根木头来获得1份小麦+1份食物+1分。"
+    ],
+    "cost": {},
+    "players": "1+",
+    "extraVp": true,
+    "waresSalesmanGains": [
+      {
+        "wood": 1,
+        "reed": 1
+      }
+    ],
+    "originalId": "WA047_PatternMaker",
+    "gameEdition": "classic",
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/WA047.png",
+    "locales": {
+      "zh": {
+        "name": "模型制造商",
+        "desc": [
+          "每当其他玩家翻修房屋时，你可以花费2根木头来获得1份小麦+1份食物+1分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WA048_FounderoftheOrder",
+    "originalId": "WA048_FounderoftheOrder",
+    "gameEdition": "classic",
+    "name": "宗教创始人",
+    "deck": "WA",
+    "number": 48,
+    "desc": [
+      "每个工作阶段结束时，如果你当回合使用了第一个和最新翻出的回合行动格，你获得1份小麦+2份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA048.png",
+    "locales": {
+      "zh": {
+        "name": "宗教创始人",
+        "desc": [
+          "每个工作阶段结束时，如果你当回合使用了第一个和最新翻出的回合行动格，你获得1份小麦+2份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WA049_Caregiver",
+    "originalId": "WA049_Caregiver",
+    "gameEdition": "classic",
+    "name": "看护人",
+    "deck": "WA",
+    "number": 49,
+    "desc": [
+      "在第12至14回合，你可以额外获得一名食客，但你不能用你的前两名家庭成员去使用第12至14回合的行动格。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA049.png",
+    "locales": {
+      "zh": {
+        "name": "看护人",
+        "desc": [
+          "在第12至14回合，你可以额外获得一名食客，但你不能用你的前两名家庭成员去使用第12至14回合的行动格。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WA050_Priest",
+    "originalId": "WA050_Priest",
+    "gameEdition": "classic",
+    "name": "神父",
+    "deck": "WA",
+    "number": 50,
+    "desc": [
+      "打出此卡时，若你住在仅有2个房间的砖屋内，则你立即获得4砖头+3芦苇+2石头。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA050.png",
+    "locales": {
+      "zh": {
+        "name": "神父",
+        "desc": [
+          "打出此卡时，若你住在仅有2个房间的砖屋内，则你立即获得4砖头+3芦苇+2石头。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WA051_TravelAgent",
+    "originalId": "WA051_TravelAgent",
+    "gameEdition": "classic",
+    "name": "旅行社代理人",
+    "deck": "WA",
+    "number": 51,
+    "desc": [
+      "在此卡上放置1小麦+1木+1砖+1芦苇+1羊，每当任意玩家使用聚会场所（起始玩家）行动格前，你获得此卡上的1个物品。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA051.png",
+    "locales": {
+      "zh": {
+        "name": "旅行社代理人",
+        "desc": [
+          "在此卡上放置1小麦+1木+1砖+1芦苇+1羊，每当任意玩家使用聚会场所（起始玩家）行动格前，你获得此卡上的1个物品。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WA052_SeedScatterer",
+    "originalId": "WA052_SeedScatterer",
+    "gameEdition": "classic",
+    "name": "撒谷工",
+    "deck": "WA",
+    "number": 52,
+    "desc": [
+      "此卡视为一块田。每个丰收时节的收割阶段，如果你至多收割了1份小麦，你可以立即播种该小麦。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA052.png",
+    "locales": {
+      "zh": {
+        "name": "撒谷工",
+        "desc": [
+          "此卡视为一块田。每个丰收时节的收割阶段，如果你至多收割了1份小麦，你可以立即播种该小麦。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WA053_SodaProducer",
+    "originalId": "WA053_SodaProducer",
+    "gameEdition": "classic",
+    "name": "苏打水生产商",
+    "deck": "WA",
+    "number": 53,
+    "desc": [
+      "每当你使用钓鱼/芦苇滩积累行动格时，从游戏供应区拿取1个石头放到此卡上，此卡上的石头只能用于支付\"井\"的花费。井：A10水井、I66村中水井、WM062后院水井、WA019绵羊井、WA020集市水井、NL042提水井"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA053.png",
+    "locales": {
+      "zh": {
+        "name": "苏打水生产商",
+        "desc": [
+          "每当你使用钓鱼/芦苇滩积累行动格时，从游戏供应区拿取1个石头放到此卡上，此卡上的石头只能用于支付\"井\"的花费。井：A10水井、I66村中水井、WM062后院水井、WA019绵羊井、WA020集市水井、NL042提水井"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WA054_GoodsFraudster",
+    "originalId": "WA054_GoodsFraudster",
+    "gameEdition": "classic",
+    "name": "货物诈骗犯",
+    "deck": "WA",
+    "number": 54,
+    "desc": [
+      "从游戏供应区拿取2木+2砖+1芦苇+1石头放在此卡上。你只能通过扩建/翻修/卡牌的花费（打出卡牌/卡牌消耗资源）来使用此卡上的资源。下个丰收时节结束时，此卡上每有1个资源你就领1张乞讨卡。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA054.png",
+    "locales": {
+      "zh": {
+        "name": "货物诈骗犯",
+        "desc": [
+          "从游戏供应区拿取2木+2砖+1芦苇+1石头放在此卡上。你只能通过扩建/翻修/卡牌的花费（打出卡牌/卡牌消耗资源）来使用此卡上的资源。下个丰收时节结束时，此卡上每有1个资源你就领1张乞讨卡。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WA055_StreetChansonnier",
+    "originalId": "WA055_StreetChansonnier",
+    "gameEdition": "classic",
+    "name": "街头歌手",
+    "deck": "WA",
+    "number": 55,
+    "desc": [
+      "每当你使用卖艺积累行动格后，你可以立即将另一名家庭成员（已派遣的么）放到卖艺积累行动格上并获得2份小麦+1份蔬菜。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA055.png",
+    "locales": {
+      "zh": {
+        "name": "街头歌手",
+        "desc": [
+          "每当你使用卖艺积累行动格后，你可以立即将另一名家庭成员（已派遣的么）放到卖艺积累行动格上并获得2份小麦+1份蔬菜。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WA056_Surrealist",
+    "originalId": "WA056_Surrealist",
+    "gameEdition": "classic",
+    "name": "超现实主义者",
+    "deck": "WA",
+    "number": 56,
+    "desc": [
+      "每当你执行1个“打出主要发展卡”行动时，你可以支付总计不少于9点的资源代替原本的资源来打出1张位于主发面板底部的主发卡。食物、芦苇价值1点，木头价值2点，砖头价值3点，石头价值4点。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA056.png",
+    "locales": {
+      "zh": {
+        "name": "超现实主义者",
+        "desc": [
+          "每当你执行1个“打出主要发展卡”行动时，你可以支付总计不少于9点的资源代替原本的资源来打出1张位于主发面板底部的主发卡。食物、芦苇价值1点，木头价值2点，砖头价值3点，石头价值4点。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WA057_Tinkerer",
+    "originalId": "WA057_Tinkerer",
+    "gameEdition": "classic",
+    "name": "多面手",
+    "deck": "WA",
+    "number": 57,
+    "desc": [
+      "此卡是只有你能使用的行动格。你只能派遣每个工作阶段的第一名家庭成员使用此卡，使用此卡时你获得1木+1砖+1芦苇+1石头。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA057.png",
+    "locales": {
+      "zh": {
+        "name": "多面手",
+        "desc": [
+          "此卡是只有你能使用的行动格。你只能派遣每个工作阶段的第一名家庭成员使用此卡，使用此卡时你获得1木+1砖+1芦苇+1石头。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WA058_BigBangTheorist",
+    "originalId": "WA058_BigBangTheorist",
+    "gameEdition": "classic",
+    "name": "宇宙大爆炸理论家",
+    "deck": "WA",
+    "number": 58,
+    "desc": [
+      "在第1/2/3/4/5个丰收时节开始时，每有1名其他玩家有0-10/0-8/0-6/0-3/0格未使用的空格，你便获得1食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA058.png",
+    "locales": {
+      "zh": {
+        "name": "宇宙大爆炸理论家",
+        "desc": [
+          "在第1/2/3/4/5个丰收时节开始时，每有1名其他玩家有0-10/0-8/0-6/0-3/0格未使用的空格，你便获得1食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WA059_GermanbyChoice",
+    "originalId": "WA059_GermanbyChoice",
+    "gameEdition": "classic",
+    "name": "德国选择党",
+    "deck": "WA",
+    "number": 59,
+    "desc": [
+      "游戏结束时，如果你的所有圈地和所有田地都构成矩形形状，你额外获得3分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA059.png",
+    "locales": {
+      "zh": {
+        "name": "德国选择党",
+        "desc": [
+          "游戏结束时，如果你的所有圈地和所有田地都构成矩形形状，你额外获得3分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WA060_MotherofTwo",
+    "originalId": "WA060_MotherofTwo",
+    "gameEdition": "classic",
+    "name": "二胎母亲",
+    "deck": "WA",
+    "number": 60,
+    "desc": [
+      "每个工作阶段，如果你有恰好4名家庭成员，则你可以将第二名家庭成员派遣到两个相邻的未被占用的1至7回合行动格之间，视为同时占用两格并以任意顺序执行。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WA060.png",
+    "locales": {
+      "zh": {
+        "name": "二胎母亲",
+        "desc": [
+          "每个工作阶段，如果你有恰好4名家庭成员，则你可以将第二名家庭成员派遣到两个相邻的未被占用的1至7回合行动格之间，视为同时占用两格并以任意顺序执行。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM001_Amazon",
+    "originalId": "WM001_Amazon",
+    "gameEdition": "classic",
+    "name": "女战士",
+    "deck": "WM",
+    "number": 1,
+    "desc": [
+      "每当你在第7/9/11/13回合使用钓鱼积累行动格时，你额外获得任意1只动物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM001.png",
+    "locales": {
+      "zh": {
+        "name": "女战士",
+        "desc": [
+          "每当你在第7/9/11/13回合使用钓鱼积累行动格时，你额外获得任意1只动物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM002_AnimalBuyer",
+    "originalId": "WM002_AnimalBuyer",
+    "gameEdition": "classic",
+    "name": "动物商人",
+    "deck": "WM",
+    "number": 2,
+    "desc": [
+      "每个丰收时节的收割阶段结束时，你可以1次购买至多2只任意动物。每只羊/猪/牛需要2/3/4份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM002.png",
+    "locales": {
+      "zh": {
+        "name": "动物商人",
+        "desc": [
+          "每个丰收时节的收割阶段结束时，你可以1次购买至多2只任意动物。每只羊/猪/牛需要2/3/4份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM003_ApplePicker",
+    "originalId": "WM003_ApplePicker",
+    "gameEdition": "classic",
+    "name": "苹果小贩",
+    "deck": "WM",
+    "number": 3,
+    "desc": [
+      "每当你使用小麦种子/蔬菜种子行动格时，你额外获得1根木头+1份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM003.png",
+    "locales": {
+      "zh": {
+        "name": "苹果小贩",
+        "desc": [
+          "每当你使用小麦种子/蔬菜种子行动格时，你额外获得1根木头+1份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM004_BargainingBakerr",
+    "originalId": "WM004_BargainingBakerr",
+    "gameEdition": "classic",
+    "name": "业余面包师",
+    "deck": "WM",
+    "number": 4,
+    "desc": [
+      "每当你打出有 符号的发展卡前，你获得1份小麦。所有烤炉的花费对你来说减少一个任意建筑资源。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM004.png",
+    "locales": {
+      "zh": {
+        "name": "业余面包师",
+        "desc": [
+          "每当你打出有 符号的发展卡前，你获得1份小麦。所有烤炉的花费对你来说减少一个任意建筑资源。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM005_BeeKeeper",
+    "originalId": "WM005_BeeKeeper",
+    "gameEdition": "classic",
+    "name": "养蜂人",
+    "deck": "WM",
+    "number": 5,
+    "desc": [
+      "打出此卡时，立即免费建造一个马厩并将其放倒。该马厩失去原先的功能，但仍然像马厩一样计分。每个丰收时节的喂养阶段，你获得1份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM005.png",
+    "locales": {
+      "zh": {
+        "name": "养蜂人",
+        "desc": [
+          "打出此卡时，立即免费建造一个马厩并将其放倒。该马厩失去原先的功能，但仍然像马厩一样计分。每个丰收时节的喂养阶段，你获得1份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM006_Borrower",
+    "originalId": "WM006_Borrower",
+    "gameEdition": "classic",
+    "name": "借贷者",
+    "deck": "WM",
+    "number": 6,
+    "desc": [
+      "打出此卡时，你得到7份食物和2张乞讨卡。任意时刻，你可以支付3份食物弃掉因为此卡或没有食物喂养家庭成员而领取的乞讨卡。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM006.png",
+    "locales": {
+      "zh": {
+        "name": "借贷者",
+        "desc": [
+          "打出此卡时，你得到7份食物和2张乞讨卡。任意时刻，你可以支付3份食物弃掉因为此卡或没有食物喂养家庭成员而领取的乞讨卡。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM007_BranchCollector",
+    "originalId": "WM007_BranchCollector",
+    "gameEdition": "classic",
+    "name": "拾木者",
+    "deck": "WM",
+    "number": 7,
+    "desc": [
+      "每当你扩建房屋/翻修/打发展卡之前，如果你即将支付砖头或石头，则对于每间房屋/每次翻修/每张发展卡你获得1根木头。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM007.png",
+    "locales": {
+      "zh": {
+        "name": "拾木者",
+        "desc": [
+          "每当你扩建房屋/翻修/打发展卡之前，如果你即将支付砖头或石头，则对于每间房屋/每次翻修/每张发展卡你获得1根木头。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM008_BreadCarrier",
+    "originalId": "WM008_BreadCarrier",
+    "gameEdition": "classic",
+    "name": "面包运输工",
+    "deck": "WM",
+    "number": 8,
+    "desc": [
+      "限1次：一旦任意玩家打出了烤炉，在之后的回合行动格上各放置1份食物。这些回合开始时，你获得对应的食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM008.png",
+    "locales": {
+      "zh": {
+        "name": "面包运输工",
+        "desc": [
+          "限1次：一旦任意玩家打出了烤炉，在之后的回合行动格上各放置1份食物。这些回合开始时，你获得对应的食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM009_Chemist",
+    "originalId": "WM009_Chemist",
+    "gameEdition": "classic",
+    "name": "化学家",
+    "deck": "WM",
+    "number": 9,
+    "desc": [
+      "每当你从建筑资源积累行动格获得木头时，你可以支付1块砖到另一个建筑资源积累行动格上并获得2份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM009.png",
+    "locales": {
+      "zh": {
+        "name": "化学家",
+        "desc": [
+          "每当你从建筑资源积累行动格获得木头时，你可以支付1块砖到另一个建筑资源积累行动格上并获得2份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+]
+const batch19: readonly GeneratedCatalogCardDefinition[] = [
+  {
+    "id": "OLD_WM010_CloisterDweller",
+    "originalId": "WM010_CloisterDweller",
+    "gameEdition": "classic",
+    "name": "修道院士",
+    "deck": "WM",
+    "number": 10,
+    "desc": [
+      "游戏结束时，你农场中每个满足以下条件的一竖列(3格)使你获得1分：3格都是房屋/3格都是田地/3格属于同一圈地。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM010.png",
+    "locales": {
+      "zh": {
+        "name": "修道院士",
+        "desc": [
+          "游戏结束时，你农场中每个满足以下条件的一竖列(3格)使你获得1分：3格都是房屋/3格都是田地/3格属于同一圈地。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM011_Contractor",
+    "originalId": "WM011_Contractor",
+    "gameEdition": "classic",
+    "name": "包工头",
+    "deck": "WM",
+    "number": 11,
+    "desc": [
+      "每当你扩建房间/翻修/打主发/打次发时，你可以用1份食物代替1个建筑资源进行支付。扩建时最多代替2个资源，翻修/打主发/打次发时最多代替1个资源。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM011.png",
+    "locales": {
+      "zh": {
+        "name": "包工头",
+        "desc": [
+          "每当你扩建房间/翻修/打主发/打次发时，你可以用1份食物代替1个建筑资源进行支付。扩建时最多代替2个资源，翻修/打主发/打次发时最多代替1个资源。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM012_CovetousFarmer",
+    "originalId": "WM012_CovetousFarmer",
+    "gameEdition": "classic",
+    "name": "贪婪的农夫",
+    "deck": "WM",
+    "number": 12,
+    "desc": [
+      "每回合限1次：在你的轮次，你可以获得1个你没有而其他玩家都有的建筑资源。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM012.png",
+    "locales": {
+      "zh": {
+        "name": "贪婪的农夫",
+        "desc": [
+          "每回合限1次：在你的轮次，你可以获得1个你没有而其他玩家都有的建筑资源。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM013_Cowboy",
+    "originalId": "WM013_Cowboy",
+    "gameEdition": "classic",
+    "name": "西部牛仔",
+    "deck": "WM",
+    "number": 13,
+    "desc": [
+      "你可以使用被任意玩家占据的羊市场/猪市场/牛市场积累行动格，并获得1只羊/猪/牛。你可以在至多1格空地上饲养至多2只同种动物。(空地仍视作未使用)"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM013.png",
+    "locales": {
+      "zh": {
+        "name": "西部牛仔",
+        "desc": [
+          "你可以使用被任意玩家占据的羊市场/猪市场/牛市场积累行动格，并获得1只羊/猪/牛。你可以在至多1格空地上饲养至多2只同种动物。(空地仍视作未使用)"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM014_CropRotator",
+    "originalId": "WM014_CropRotator",
+    "gameEdition": "classic",
+    "name": "轮耕农",
+    "deck": "WM",
+    "number": 14,
+    "desc": [
+      "每当你从你的田地上收割下最后一个小麦/蔬菜时，你可以立即在该田上播种蔬菜/小麦。打出此卡时，你可以对你的所有农田进行一次收割。（若收割后的空田无法播种其他种类作物，则不能触发此卡效果）"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM014.png",
+    "locales": {
+      "zh": {
+        "name": "轮耕农",
+        "desc": [
+          "每当你从你的田地上收割下最后一个小麦/蔬菜时，你可以立即在该田上播种蔬菜/小麦。打出此卡时，你可以对你的所有农田进行一次收割。（若收割后的空田无法播种其他种类作物，则不能触发此卡效果）"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM015_DebrisDealer",
+    "originalId": "WM015_DebrisDealer",
+    "gameEdition": "classic",
+    "name": "废品收购商",
+    "deck": "WM",
+    "number": 15,
+    "desc": [
+      "每当你将你的砖屋翻修后，你获得2块砖头。一旦你的房屋等级是砖屋/石屋，每当其他玩家从木屋/砖屋翻修时，你获得2根木头/2块砖头。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM015.png",
+    "locales": {
+      "zh": {
+        "name": "废品收购商",
+        "desc": [
+          "每当你将你的砖屋翻修后，你获得2块砖头。一旦你的房屋等级是砖屋/石屋，每当其他玩家从木屋/砖屋翻修时，你获得2根木头/2块砖头。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM016_Diplomat",
+    "originalId": "WM016_Diplomat",
+    "gameEdition": "classic",
+    "name": "外交官",
+    "deck": "WM",
+    "number": 16,
+    "desc": [
+      "限1次：在第14回合，你可以使用一个被其他玩家占用的行动格。如果此卡在第7回合或之前打出，则改为限2次。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM016.png",
+    "locales": {
+      "zh": {
+        "name": "外交官",
+        "desc": [
+          "限1次：在第14回合，你可以使用一个被其他玩家占用的行动格。如果此卡在第7回合或之前打出，则改为限2次。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM017_Engineer",
+    "originalId": "WM017_Engineer",
+    "gameEdition": "classic",
+    "name": "工程师",
+    "deck": "WM",
+    "number": 17,
+    "desc": [
+      "每当你打出1张发展卡前，你获得1份食物。如果这张印在该发展卡上的费用包含至少1石头，则改为2份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM017.png",
+    "locales": {
+      "zh": {
+        "name": "工程师",
+        "desc": [
+          "每当你打出1张发展卡前，你获得1份食物。如果这张印在该发展卡上的费用包含至少1石头，则改为2份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM018_ExpertBuilder",
+    "originalId": "WM018_ExpertBuilder",
+    "gameEdition": "classic",
+    "name": "顶级建筑师",
+    "deck": "WM",
+    "number": 18,
+    "desc": [
+      "每当任意玩家扩建至少1间房屋时，该玩家必须将实际支付的其中1个建筑资源放到此卡上。你可以使用此卡上的资源进行扩建/翻修。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM018.png",
+    "locales": {
+      "zh": {
+        "name": "顶级建筑师",
+        "desc": [
+          "每当任意玩家扩建至少1间房屋时，该玩家必须将实际支付的其中1个建筑资源放到此卡上。你可以使用此卡上的资源进行扩建/翻修。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM019_FamilyPlanner",
+    "originalId": "WM019_FamilyPlanner",
+    "gameEdition": "classic",
+    "name": "家庭计划者",
+    "deck": "WM",
+    "number": 19,
+    "desc": [
+      "将当前回合数加4,7,10，在这些回合的行动格上各放置1个你供应区的家庭成员。这些回合开始时，你收回对应的家庭成员而且可以执行一次“生娃(需要空房间)”行动。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM019.png",
+    "locales": {
+      "zh": {
+        "name": "家庭计划者",
+        "desc": [
+          "将当前回合数加4,7,10，在这些回合的行动格上各放置1个你供应区的家庭成员。这些回合开始时，你收回对应的家庭成员而且可以执行一次“生娃(需要空房间)”行动。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM020_FarmSchoolGraduate",
+    "originalId": "WM020_FarmSchoolGraduate",
+    "gameEdition": "classic",
+    "name": "农校毕业生",
+    "deck": "WM",
+    "number": 20,
+    "desc": [
+      "此卡只能作为第一张职业卡打出。打出此卡后，你不能再使用技能培训行动格来打出职业卡。每个丰收时节开始时，你可以支付2份食物作为技能培训费来打出一张职业卡。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM020.png",
+    "locales": {
+      "zh": {
+        "name": "农校毕业生",
+        "desc": [
+          "此卡只能作为第一张职业卡打出。打出此卡后，你不能再使用技能培训行动格来打出职业卡。每个丰收时节开始时，你可以支付2份食物作为技能培训费来打出一张职业卡。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM021_FenceDealer",
+    "originalId": "WM021_FenceDealer",
+    "gameEdition": "classic",
+    "name": "栅栏商",
+    "deck": "WM",
+    "number": 21,
+    "desc": [
+      "你只能围建12根栅栏。每次你围建栅栏时，你每支付1根木头就可以围建2根栅栏。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM021.png",
+    "locales": {
+      "zh": {
+        "name": "栅栏商",
+        "desc": [
+          "你只能围建12根栅栏。每次你围建栅栏时，你每支付1根木头就可以围建2根栅栏。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM022_FoodConnoisseur",
+    "originalId": "WM022_FoodConnoisseur",
+    "gameEdition": "classic",
+    "name": "业余吃货",
+    "deck": "WM",
+    "number": 22,
+    "desc": [
+      "按右图所示将这些物品排列于此卡上，每当你使用临时工/钓鱼积累行动格/卖艺积累行动格时，你取走最上面的物品。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM022.png",
+    "locales": {
+      "zh": {
+        "name": "业余吃货",
+        "desc": [
+          "按右图所示将这些物品排列于此卡上，每当你使用临时工/钓鱼积累行动格/卖艺积累行动格时，你取走最上面的物品。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM023_ForestFarmer",
+    "originalId": "WM023_ForestFarmer",
+    "gameEdition": "classic",
+    "name": "森林农夫",
+    "deck": "WM",
+    "number": 23,
+    "desc": [
+      "在此卡上放置3个箭头指示物。每回合限1次：在工作阶段结束和家庭成员返家阶段之间，你可以支付1根木头，并退还1个箭头指示物，然后将你1名在犁田/粮食耕种[犁播]行动格上的家庭成员移动到任意一个未被占用的行动格并使用该格。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM023.png",
+    "locales": {
+      "zh": {
+        "name": "森林农夫",
+        "desc": [
+          "在此卡上放置3个箭头指示物。每回合限1次：在工作阶段结束和家庭成员返家阶段之间，你可以支付1根木头，并退还1个箭头指示物，然后将你1名在犁田/粮食耕种[犁播]行动格上的家庭成员移动到任意一个未被占用的行动格并使用该格。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM024_GemHunter",
+    "originalId": "WM024_GemHunter",
+    "gameEdition": "classic",
+    "name": "宝石猎人",
+    "deck": "WM",
+    "number": 24,
+    "desc": [
+      "每当你从积累行动格上获得砖头时，你额外获得1个石头。如果在第9回合或之前，且该积累行动格有至少3个砖头，则你必须留下1个砖头来额外获得1个石头。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM024.png",
+    "locales": {
+      "zh": {
+        "name": "宝石猎人",
+        "desc": [
+          "每当你从积累行动格上获得砖头时，你额外获得1个石头。如果在第9回合或之前，且该积累行动格有至少3个砖头，则你必须留下1个砖头来额外获得1个石头。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM025_Godfather",
+    "originalId": "WM025_Godfather",
+    "gameEdition": "classic",
+    "name": "教父",
+    "deck": "WM",
+    "number": 25,
+    "desc": [
+      "每当你使用与已被占用的生儿育女/求子心切行动格正交相邻的行动格前，你获得1份小麦。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM025.png",
+    "locales": {
+      "zh": {
+        "name": "教父",
+        "desc": [
+          "每当你使用与已被占用的生儿育女/求子心切行动格正交相邻的行动格前，你获得1份小麦。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM026_HedgeMaster",
+    "originalId": "WM026_HedgeMaster",
+    "gameEdition": "classic",
+    "name": "篱笆大师",
+    "deck": "WM",
+    "number": 26,
+    "desc": [
+      "每当你建造至少1根栅栏时，你获得1分。打出此卡时，你获得1次“围建栅栏”行动。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM026.png",
+    "locales": {
+      "zh": {
+        "name": "篱笆大师",
+        "desc": [
+          "每当你建造至少1根栅栏时，你获得1分。打出此卡时，你获得1次“围建栅栏”行动。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM027_Heiress",
+    "originalId": "WM027_Heiress",
+    "gameEdition": "classic",
+    "name": "房屋继承人",
+    "deck": "WM",
+    "number": 27,
+    "desc": [
+      "在第6/10/13回合开始时，如果你的房屋等级是木屋/砖屋/石屋，则你可以支付对应费用扩建1间屋子，其中砖屋少花费1砖头，石屋少花费2石头。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM027.png",
+    "locales": {
+      "zh": {
+        "name": "房屋继承人",
+        "desc": [
+          "在第6/10/13回合开始时，如果你的房屋等级是木屋/砖屋/石屋，则你可以支付对应费用扩建1间屋子，其中砖屋少花费1砖头，石屋少花费2石头。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM028_Herdsman",
+    "originalId": "WM028_Herdsman",
+    "gameEdition": "classic",
+    "name": "放牧人",
+    "deck": "WM",
+    "number": 28,
+    "desc": [
+      "每当你使用临时工行动格时，你额外获得1只羊。第6回合起，改为额外获得1只羊/1只猪。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM028.png",
+    "locales": {
+      "zh": {
+        "name": "放牧人",
+        "desc": [
+          "每当你使用临时工行动格时，你额外获得1只羊。第6回合起，改为额外获得1只羊/1只猪。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM029_HillFarmer",
+    "originalId": "WM029_HillFarmer",
+    "gameEdition": "classic",
+    "name": "丘陵农夫",
+    "deck": "WM",
+    "number": 29,
+    "desc": [
+      "每当你围建至少1根栅栏或犁至少1块田时，如果你有恰好2/3间房，则你获得2/1份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM029.png",
+    "locales": {
+      "zh": {
+        "name": "丘陵农夫",
+        "desc": [
+          "每当你围建至少1根栅栏或犁至少1块田时，如果你有恰好2/3间房，则你获得2/1份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM030_Hoarder",
+    "originalId": "WM030_Hoarder",
+    "gameEdition": "classic",
+    "name": "囤货商",
+    "deck": "WM",
+    "number": 30,
+    "desc": [
+      "每个丰收时节，你可以在此卡上放置至多1个建筑资源。游戏结束时，如果此卡上有至少1/2/3/4种建筑资源，则你获得1/2/3/5分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM030.png",
+    "locales": {
+      "zh": {
+        "name": "囤货商",
+        "desc": [
+          "每个丰收时节，你可以在此卡上放置至多1个建筑资源。游戏结束时，如果此卡上有至少1/2/3/4种建筑资源，则你获得1/2/3/5分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM031_HumbleFarmboy",
+    "originalId": "WM031_HumbleFarmboy",
+    "gameEdition": "classic",
+    "name": "害羞的农孩",
+    "deck": "WM",
+    "number": 31,
+    "desc": [
+      "打出此卡时，若距离游戏结束还有1/3/6/9个完整回合，则你立即获得1/2/3/4根木头。游戏结束时，打出卡牌最少的玩家都额外获得3分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM031.png",
+    "locales": {
+      "zh": {
+        "name": "害羞的农孩",
+        "desc": [
+          "打出此卡时，若距离游戏结束还有1/3/6/9个完整回合，则你立即获得1/2/3/4根木头。游戏结束时，打出卡牌最少的玩家都额外获得3分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM032_Hunter",
+    "originalId": "WM032_Hunter",
+    "gameEdition": "classic",
+    "name": "猎人",
+    "deck": "WM",
+    "number": 32,
+    "desc": [
+      "每当你在丰收时节的繁殖阶段外获得动物时，你能将其中的任意数量转化为食物，每只羊/猪/牛转化为2/3/4份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM032.png",
+    "locales": {
+      "zh": {
+        "name": "猎人",
+        "desc": [
+          "每当你在丰收时节的繁殖阶段外获得动物时，你能将其中的任意数量转化为食物，每只羊/猪/牛转化为2/3/4份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM033_LadyinWaiting",
+    "originalId": "WM033_LadyinWaiting",
+    "gameEdition": "classic",
+    "name": "侍女",
+    "deck": "WM",
+    "number": 33,
+    "desc": [
+      "如果你在第一季打出此卡，将你个人供应区里的1名家庭成员放在第12回合的行动格上。第12回合开始时，你可以支付2份食物获得该家庭成员(无需空房间)，并可以在当回合开始派遣。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM033.png",
+    "locales": {
+      "zh": {
+        "name": "侍女",
+        "desc": [
+          "如果你在第一季打出此卡，将你个人供应区里的1名家庭成员放在第12回合的行动格上。第12回合开始时，你可以支付2份食物获得该家庭成员(无需空房间)，并可以在当回合开始派遣。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM034_LivestockKeeper",
+    "originalId": "WM034_LivestockKeeper",
+    "gameEdition": "classic",
+    "name": "养殖专业户",
+    "deck": "WM",
+    "number": 34,
+    "desc": [
+      "打出此卡时，获得1只猪。如果你已有猪，你获得1头牛。每个丰收时节的繁殖阶段，你可以支付1份食物使至多1种动物额外繁殖1只。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM034.png",
+    "locales": {
+      "zh": {
+        "name": "养殖专业户",
+        "desc": [
+          "打出此卡时，获得1只猪。如果你已有猪，你获得1头牛。每个丰收时节的繁殖阶段，你可以支付1份食物使至多1种动物额外繁殖1只。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM035_Mailman",
+    "originalId": "WM035_Mailman",
+    "gameEdition": "classic",
+    "name": "邮差",
+    "deck": "WM",
+    "number": 35,
+    "desc": [
+      "分别将2木、2砖、1芦苇、1石头放在任意4个已翻开的不同行动格上(无论是否被占据)。下一次使用此行动格的玩家可以支付给你1份食物，拿走对应的资源。(你不用支付食物)"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM035.png",
+    "locales": {
+      "zh": {
+        "name": "邮差",
+        "desc": [
+          "分别将2木、2砖、1芦苇、1石头放在任意4个已翻开的不同行动格上(无论是否被占据)。下一次使用此行动格的玩家可以支付给你1份食物，拿走对应的资源。(你不用支付食物)"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM036_MasterCook",
+    "originalId": "WM036_MasterCook",
+    "gameEdition": "classic",
+    "name": "星级大厨",
+    "deck": "WM",
+    "number": 36,
+    "desc": [
+      "每回合你可以将你的第1名家庭成员放到此卡上并获得2份食物和1名当回合使用的食客。(此食客继承该成员的限制条件)(若你发动此卡效果，将不能使用任何卡牌效果连续派遣你的第1、2名家庭成员)"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM036.png",
+    "locales": {
+      "zh": {
+        "name": "星级大厨",
+        "desc": [
+          "每回合你可以将你的第1名家庭成员放到此卡上并获得2份食物和1名当回合使用的食客。(此食客继承该成员的限制条件)(若你发动此卡效果，将不能使用任何卡牌效果连续派遣你的第1、2名家庭成员)"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM037_MasterStableman",
+    "originalId": "WM037_MasterStableman",
+    "gameEdition": "classic",
+    "name": "马厩大师",
+    "deck": "WM",
+    "number": 37,
+    "desc": [
+      "每当你从动物积累行动格上获得至少2只动物前，你可以建造至多2个马厩，每个马厩花费1根木头。（通过卡牌获得的动物不算）"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM037.png",
+    "locales": {
+      "zh": {
+        "name": "马厩大师",
+        "desc": [
+          "每当你从动物积累行动格上获得至少2只动物前，你可以建造至多2个马厩，每个马厩花费1根木头。（通过卡牌获得的动物不算）"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM038_Minimalist",
+    "originalId": "WM038_Minimalist",
+    "gameEdition": "classic",
+    "name": "极简主义者",
+    "deck": "WM",
+    "number": 38,
+    "desc": [
+      "游戏结束时，如果你面前恰好有0/1/2/3张发展卡，则你额外获得9/6/4/2分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM038.png",
+    "locales": {
+      "zh": {
+        "name": "极简主义者",
+        "desc": [
+          "游戏结束时，如果你面前恰好有0/1/2/3张发展卡，则你额外获得9/6/4/2分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM039_Pawnbroker",
+    "originalId": "WM039_Pawnbroker",
+    "gameEdition": "classic",
+    "name": "典当商",
+    "deck": "WM",
+    "number": 39,
+    "desc": [
+      "任意时刻，你可以将你面前发展卡的1分转化为3份食物，之后你不能移除或退还该发展卡"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM039.png",
+    "locales": {
+      "zh": {
+        "name": "典当商",
+        "desc": [
+          "任意时刻，你可以将你面前发展卡的1分转化为3份食物，之后你不能移除或退还该发展卡"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM040_Permaculturist",
+    "originalId": "WM040_Permaculturist",
+    "gameEdition": "classic",
+    "name": "垦荒者",
+    "deck": "WM",
+    "number": 40,
+    "desc": [
+      "你可以在未使用的农场空格上播种小麦，且不需要与现有农田相邻。已播种小麦的空格视作已使用。你可以随时移除空格上的小麦，计分前你必须移除空格上的小麦。注：I90播种筒和Z324稻草人不能额外播种这些空格的小麦。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM040.png",
+    "locales": {
+      "zh": {
+        "name": "垦荒者",
+        "desc": [
+          "你可以在未使用的农场空格上播种小麦，且不需要与现有农田相邻。已播种小麦的空格视作已使用。你可以随时移除空格上的小麦，计分前你必须移除空格上的小麦。注：I90播种筒和Z324稻草人不能额外播种这些空格的小麦。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM041_Politician",
+    "originalId": "WM041_Politician",
+    "gameEdition": "classic",
+    "name": "政客",
+    "deck": "WM",
+    "number": 41,
+    "desc": [
+      "打出此卡时，你获得1个石头。每回合限2次：任意时刻，你可以将1捆芦苇换成1个石头，或把1个石头换成1捆芦苇。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM041.png",
+    "locales": {
+      "zh": {
+        "name": "政客",
+        "desc": [
+          "打出此卡时，你获得1个石头。每回合限2次：任意时刻，你可以将1捆芦苇换成1个石头，或把1个石头换成1捆芦苇。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM042_Remodeler",
+    "originalId": "WM042_Remodeler",
+    "gameEdition": "classic",
+    "name": "改建师",
+    "deck": "WM",
+    "number": 42,
+    "desc": [
+      "当你翻修你的木屋前，你可以将1个已建造的马厩退回到个人供应区，然后免费扩建1间木屋。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM042.png",
+    "locales": {
+      "zh": {
+        "name": "改建师",
+        "desc": [
+          "当你翻修你的木屋前，你可以将1个已建造的马厩退回到个人供应区，然后免费扩建1间木屋。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM043_ResourceLender",
+    "originalId": "WM043_ResourceLender",
+    "gameEdition": "classic",
+    "name": "资源放贷者",
+    "deck": "WM",
+    "number": 43,
+    "desc": [
+      "每当你获得行动格上的建筑资源时，你可将其中1种建筑资源数量+1，然后将获得的所有建筑资源每回合1个以任意顺序依次放在之后未翻开的行动格上。这些回合开始时，你获得这份建筑资源。注：I251购苇商、I234购木商和I255购石商获得的资源可以发动此效果。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM043.png",
+    "locales": {
+      "zh": {
+        "name": "资源放贷者",
+        "desc": [
+          "每当你获得行动格上的建筑资源时，你可将其中1种建筑资源数量+1，然后将获得的所有建筑资源每回合1个以任意顺序依次放在之后未翻开的行动格上。这些回合开始时，你获得这份建筑资源。注：I251购苇商、I234购木商和I255购石商获得的资源可以发动此效果。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM044_SiloGirl",
+    "originalId": "WM044_SiloGirl",
+    "gameEdition": "classic",
+    "name": "筒仓女孩",
+    "deck": "WM",
+    "number": 44,
+    "desc": [
+      "一旦你的房屋等级是石屋，在余下的偶数/奇数回合行动格上各放置1份小麦/1份蔬菜。这些回合开始时，你获得这份作物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM044.png",
+    "locales": {
+      "zh": {
+        "name": "筒仓女孩",
+        "desc": [
+          "一旦你的房屋等级是石屋，在余下的偶数/奇数回合行动格上各放置1份小麦/1份蔬菜。这些回合开始时，你获得这份作物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM045_StableDeliveryman",
+    "originalId": "WM045_StableDeliveryman",
+    "gameEdition": "classic",
+    "name": "马厩运输工",
+    "deck": "WM",
+    "number": 45,
+    "desc": [
+      "将当前回合数加3，5，7和9，在这些回合的行动格上各放置至多1个你个人供应区的马厩。这些回合开始时，可以支付1根木头建造这个马厩。(否则收回个人供应区)"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM045.png",
+    "locales": {
+      "zh": {
+        "name": "马厩运输工",
+        "desc": [
+          "将当前回合数加3，5，7和9，在这些回合的行动格上各放置至多1个你个人供应区的马厩。这些回合开始时，可以支付1根木头建造这个马厩。(否则收回个人供应区)"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM046_StoneCurator",
+    "originalId": "WM046_StoneCurator",
+    "gameEdition": "classic",
+    "name": "石头馆长",
+    "deck": "WM",
+    "number": 46,
+    "desc": [
+      "每当你使用石头积累行动格时，你额外获得1份食物。游戏结束时，你每有2间石屋/2张费用包含石头的发展卡，你都额外获得1分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM046.png",
+    "locales": {
+      "zh": {
+        "name": "石头馆长",
+        "desc": [
+          "每当你使用石头积累行动格时，你额外获得1份食物。游戏结束时，你每有2间石屋/2张费用包含石头的发展卡，你都额外获得1分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM047_StorehouseMinder",
+    "originalId": "WM047_StorehouseMinder",
+    "gameEdition": "classic",
+    "name": "仓库看守员",
+    "deck": "WM",
+    "number": 47,
+    "desc": [
+      "打出此卡时，可选择将1-4个不同种的建筑资源(木头、砖头、芦苇、石头)从个人供应区放到此卡上。每个丰收时节开始时，选择至多2种此卡上已有的建筑资源，从游戏供应区各获得1个放到此卡上。每回合开始时，你可以将此卡上的1种资源全部移入个人供应区。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM047.png",
+    "locales": {
+      "zh": {
+        "name": "仓库看守员",
+        "desc": [
+          "打出此卡时，可选择将1-4个不同种的建筑资源(木头、砖头、芦苇、石头)从个人供应区放到此卡上。每个丰收时节开始时，选择至多2种此卡上已有的建筑资源，从游戏供应区各获得1个放到此卡上。每回合开始时，你可以将此卡上的1种资源全部移入个人供应区。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM048_SundayWorker",
+    "originalId": "WM048_SundayWorker",
+    "gameEdition": "classic",
+    "name": "周末工人",
+    "deck": "WM",
+    "number": 48,
+    "desc": [
+      "第7/14回合，每回合限1次：每当你使用一个行动格后，你可以支付1份食物来立即额外执行1次该行动格。如果是积累行动格，则获得2倍数量的积累资源。注：如果在第7/14回合通过行动格打出此卡后，可以立即发动此卡效果：支付1份食物立即额外执行1次该行动格。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM048.png",
+    "locales": {
+      "zh": {
+        "name": "周末工人",
+        "desc": [
+          "第7/14回合，每回合限1次：每当你使用一个行动格后，你可以支付1份食物来立即额外执行1次该行动格。如果是积累行动格，则获得2倍数量的积累资源。注：如果在第7/14回合通过行动格打出此卡后，可以立即发动此卡效果：支付1份食物立即额外执行1次该行动格。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM049_SunriseAdmirer",
+    "originalId": "WM049_SunriseAdmirer",
+    "gameEdition": "classic",
+    "name": "日出爱慕者",
+    "deck": "WM",
+    "number": 49,
+    "desc": [
+      "在接下来的3个回合开始时，你可以支付2份食物，在你农场最东边的3格中选择1格未使用的空格犁1块田(东边指初始房子的对面)。若你不如此做，你必须弃掉此卡。注：仍然需要遵循一般的田地板块放置规则。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM049.png",
+    "locales": {
+      "zh": {
+        "name": "日出爱慕者",
+        "desc": [
+          "在接下来的3个回合开始时，你可以支付2份食物，在你农场最东边的3格中选择1格未使用的空格犁1块田(东边指初始房子的对面)。若你不如此做，你必须弃掉此卡。注：仍然需要遵循一般的田地板块放置规则。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM050_TapestryWeaver",
+    "originalId": "WM050_TapestryWeaver",
+    "gameEdition": "classic",
+    "name": "挂毯编织工",
+    "deck": "WM",
+    "number": 50,
+    "desc": [
+      "在每个丰收时节的收割阶段开始时，如果你有至少3只羊，则从游戏供应区拿取1份食物放到你的1间屋子上，每间屋子只能放1份这样的食物。游戏结束时，每份这样的食物额外获得1分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM050.png",
+    "locales": {
+      "zh": {
+        "name": "挂毯编织工",
+        "desc": [
+          "在每个丰收时节的收割阶段开始时，如果你有至少3只羊，则从游戏供应区拿取1份食物放到你的1间屋子上，每间屋子只能放1份这样的食物。游戏结束时，每份这样的食物额外获得1分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM051_TavernKeeper",
+    "originalId": "WM051_TavernKeeper",
+    "gameEdition": "classic",
+    "name": "客栈老板",
+    "deck": "WM",
+    "number": 51,
+    "desc": [
+      "每个丰收时节开始时，如果你有至少1间空房间，则你获得1份小麦+1份食物。游戏结束时，你的每间空房间额外获得1分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM051.png",
+    "locales": {
+      "zh": {
+        "name": "客栈老板",
+        "desc": [
+          "每个丰收时节开始时，如果你有至少1间空房间，则你获得1份小麦+1份食物。游戏结束时，你的每间空房间额外获得1分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM052_TileMaker",
+    "originalId": "WM052_TileMaker",
+    "gameEdition": "classic",
+    "name": "砖瓦制造工",
+    "deck": "WM",
+    "number": 52,
+    "desc": [
+      "打出此卡时，若距离游戏结束还有1/3/6/9个完整回合，则你立即获得1/2/3/4块砖头。游戏结束时，砖屋数量最多的每位玩家都额外获得2分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM052.png",
+    "locales": {
+      "zh": {
+        "name": "砖瓦制造工",
+        "desc": [
+          "打出此卡时，若距离游戏结束还有1/3/6/9个完整回合，则你立即获得1/2/3/4块砖头。游戏结束时，砖屋数量最多的每位玩家都额外获得2分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM053_VillageFool",
+    "originalId": "WM053_VillageFool",
+    "gameEdition": "classic",
+    "name": "乡巴佬",
+    "deck": "WM",
+    "number": 53,
+    "desc": [
+      "每回合开始时，你可以将1张手牌倒扣在此牌下，之后你不能再使用这张卡牌牌。游戏结束时，此牌下的每张牌除了第3、5、7、9张，都额外获得1分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM053.png",
+    "locales": {
+      "zh": {
+        "name": "乡巴佬",
+        "desc": [
+          "每回合开始时，你可以将1张手牌倒扣在此牌下，之后你不能再使用这张卡牌牌。游戏结束时，此牌下的每张牌除了第3、5、7、9张，都额外获得1分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM054_WheelbarrowPusher",
+    "originalId": "WM054_WheelbarrowPusher",
+    "gameEdition": "classic",
+    "name": "推车搬运工",
+    "deck": "WM",
+    "number": 54,
+    "desc": [
+      "每当你从积累行动格上获得恰好1个建筑资源时，你额外获得1个任意建筑资源/1份食物。在4+人游戏中，改为1个任意建筑资源+1份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM054.png",
+    "locales": {
+      "zh": {
+        "name": "推车搬运工",
+        "desc": [
+          "每当你从积累行动格上获得恰好1个建筑资源时，你额外获得1个任意建筑资源/1份食物。在4+人游戏中，改为1个任意建筑资源+1份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM055_WoodWorker",
+    "originalId": "WM055_WoodWorker",
+    "gameEdition": "classic",
+    "name": "木材工人",
+    "deck": "WM",
+    "number": 55,
+    "desc": [
+      "每当你使用一个行动格后，你可以支付1份食物到此格上然后获得1根木头。下一个使用此行动格的玩家获得这份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM055.png",
+    "locales": {
+      "zh": {
+        "name": "木材工人",
+        "desc": [
+          "每当你使用一个行动格后，你可以支付1份食物到此格上然后获得1根木头。下一个使用此行动格的玩家获得这份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_WM056_Almshouse",
+    "originalId": "WM056_Almshouse",
+    "gameEdition": "classic",
+    "name": "救济院",
+    "deck": "WM",
+    "number": 56,
+    "desc": [
+      "每个丰收时节的喂养阶段后，你可以弃掉1张任意丰收时节因喂养家庭成员食物不足而领取的乞讨卡。"
+    ],
+    "cost": {
+      "reed": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM056.png",
+    "locales": {
+      "zh": {
+        "name": "救济院",
+        "desc": [
+          "每个丰收时节的喂养阶段后，你可以弃掉1张任意丰收时节因喂养家庭成员食物不足而领取的乞讨卡。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM057_AnimalNursery",
+    "originalId": "WM057_AnimalNursery",
+    "gameEdition": "classic",
+    "name": "动物哺育室",
+    "deck": "WM",
+    "number": 57,
+    "desc": [
+      "你可以将繁殖出来的动物立即饲养在此卡上。此卡上的动物参与繁殖、计分和动物计数，不能移走或用作其他用途。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM057.png",
+    "locales": {
+      "zh": {
+        "name": "动物哺育室",
+        "desc": [
+          "你可以将繁殖出来的动物立即饲养在此卡上。此卡上的动物参与繁殖、计分和动物计数，不能移走或用作其他用途。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM058_AppleTree",
+    "originalId": "WM058_AppleTree",
+    "gameEdition": "classic",
+    "name": "苹果树",
+    "deck": "WM",
+    "number": 58,
+    "desc": [
+      "从游戏供应区拿取1根木头放到1块空田上，该田视为已播种。每个丰收时节的收割阶段时，你获得1份食物。此卡牌打出条件“空田×1”必须是田地板块。此田可视为1块已播种田。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 1,
+    "prerequisite": "空田×1",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM058.png",
+    "locales": {
+      "zh": {
+        "name": "苹果树",
+        "desc": [
+          "从游戏供应区拿取1根木头放到1块空田上，该田视为已播种。每个丰收时节的收割阶段时，你获得1份食物。此卡牌打出条件“空田×1”必须是田地板块。此田可视为1块已播种田。"
+        ],
+        "prerequisite": "空田×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM059_Apprenticeship",
+    "originalId": "WM059_Apprenticeship",
+    "gameEdition": "classic",
+    "name": "实习签约",
+    "deck": "WM",
+    "number": 59,
+    "desc": [
+      "如果你的职业数量比其他玩家都少，则你可以立即打出一张职业卡。使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {
+      "food": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": true,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM059.png",
+    "locales": {
+      "zh": {
+        "name": "实习签约",
+        "desc": [
+          "如果你的职业数量比其他玩家都少，则你可以立即打出一张职业卡。使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM060_Attic",
+    "originalId": "WM060_Attic",
+    "gameEdition": "classic",
+    "name": "阁楼",
+    "deck": "WM",
+    "number": 60,
+    "desc": [
+      "每当你扩建房屋时，对于每间新扩建的房屋板块，你可以支付个人供应区的1个木头到其上。游戏结束时，每有1个这样的木头，你便额外获得1分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM060.png",
+    "locales": {
+      "zh": {
+        "name": "阁楼",
+        "desc": [
+          "每当你扩建房屋时，对于每间新扩建的房屋板块，你可以支付个人供应区的1个木头到其上。游戏结束时，每有1个这样的木头，你便额外获得1分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM061_BackDoor",
+    "originalId": "WM061_BackDoor",
+    "gameEdition": "classic",
+    "name": "后门",
+    "deck": "WM",
+    "number": 61,
+    "desc": [
+      "立即派遣另一名家庭成员使用生儿育女(并打出1张次发卡)行动格，即使该格已被占用。使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {
+      "reed": 1
+    },
+    "vp": 1,
+    "prerequisite": "第2季生儿育女已翻出",
+    "passing": true,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM061.png",
+    "locales": {
+      "zh": {
+        "name": "后门",
+        "desc": [
+          "立即派遣另一名家庭成员使用生儿育女(并打出1张次发卡)行动格，即使该格已被占用。使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": "第2季生儿育女已翻出"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM062_BackyardWell",
+    "originalId": "WM062_BackyardWell",
+    "gameEdition": "classic",
+    "name": "后院水井",
+    "deck": "WM",
+    "number": 62,
+    "desc": [
+      "限1次：你可以随时从游戏供应区拿取1个石头，放在1个与房屋板块正交相邻的空格上，视作已使用。立即在之后3个回合行动格上各放1份食物。这些回合开始时，你获得对应的食物。注：若此卡升级成I66村中水井，则弃掉此卡，并移除农场上的石头，此空格视作未占用。放置的食物并不会丢弃。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM062.png",
+    "locales": {
+      "zh": {
+        "name": "后院水井",
+        "desc": [
+          "限1次：你可以随时从游戏供应区拿取1个石头，放在1个与房屋板块正交相邻的空格上，视作已使用。立即在之后3个回合行动格上各放1份食物。这些回合开始时，你获得对应的食物。注：若此卡升级成I66村中水井，则弃掉此卡，并移除农场上的石头，此空格视作未占用。放置的食物并不会丢弃。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM063_Birdcage",
+    "originalId": "WM063_Birdcage",
+    "gameEdition": "classic",
+    "name": "鸟笼",
+    "deck": "WM",
+    "number": 63,
+    "desc": [
+      "每个丰收时节结束时，你可支付1份食物获得1分。无论如何，你的房子不能再容纳动物了。即使有卡牌允许你这样做，例：K306驯兽师。"
+    ],
+    "cost": {
+      "wood": 2
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM063.png",
+    "locales": {
+      "zh": {
+        "name": "鸟笼",
+        "desc": [
+          "每个丰收时节结束时，你可支付1份食物获得1分。无论如何，你的房子不能再容纳动物了。即使有卡牌允许你这样做，例：K306驯兽师。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM064_Bonre",
+    "originalId": "WM064_Bonre",
+    "gameEdition": "classic",
+    "name": "篝火",
+    "deck": "WM",
+    "number": 64,
+    "desc": [
+      "从游戏供应区拿取1个木头放到你农场中的1格空地上。任意时刻，你可以退还此木头，在此回合内你可以将任意数量的动物转化为食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM064.png",
+    "locales": {
+      "zh": {
+        "name": "篝火",
+        "desc": [
+          "从游戏供应区拿取1个木头放到你农场中的1格空地上。任意时刻，你可以退还此木头，在此回合内你可以将任意数量的动物转化为食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM065_BoundaryStones",
+    "originalId": "WM065_BoundaryStones",
+    "gameEdition": "classic",
+    "name": "界碑",
+    "deck": "WM",
+    "number": 65,
+    "desc": [
+      "游戏结束时，如果你有2/3/4/5+个田地板块恰好只与1块田地板块正交相邻，则你额外获得1/2/3/5分。"
+    ],
+    "cost": {
+      "stone": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM065.png",
+    "locales": {
+      "zh": {
+        "name": "界碑",
+        "desc": [
+          "游戏结束时，如果你有2/3/4/5+个田地板块恰好只与1块田地板块正交相邻，则你额外获得1/2/3/5分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM066_Brazier",
+    "originalId": "WM066_Brazier",
+    "gameEdition": "classic",
+    "name": "火盆",
+    "deck": "WM",
+    "number": 66,
+    "desc": [
+      "每个丰收时节的喂养阶段，你可以使用此卡将以下至多1个物品转化为食物：备用计划备用计划马厩×1"
+    ],
+    "cost": {
+      "wood": 1,
+      "clay": 1
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM066.png",
+    "locales": {
+      "zh": {
+        "name": "火盆",
+        "desc": [
+          "每个丰收时节的喂养阶段，你可以使用此卡将以下至多1个物品转化为食物：备用计划备用计划马厩×1"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM067_BuriedTreasure",
+    "originalId": "WM067_BuriedTreasure",
+    "gameEdition": "classic",
+    "name": "地下宝藏",
+    "deck": "WM",
+    "number": 67,
+    "desc": [
+      "每当你使用犁田/粮食耕种[犁播]行动格时，额外获得1个石头。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "2 Occupations",
+    "occupationPrerequisites": {
+      "min": 2
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM067.png",
+    "locales": {
+      "zh": {
+        "name": "地下宝藏",
+        "desc": [
+          "每当你使用犁田/粮食耕种[犁播]行动格时，额外获得1个石头。"
+        ],
+        "prerequisite": "职业×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM068_CashCrop",
+    "originalId": "WM068_CashCrop",
+    "gameEdition": "classic",
+    "name": "经济作物",
+    "deck": "WM",
+    "number": 68,
+    "desc": [
+      "此卡视作1个田。你可以在此卡上播种任意作物，从此卡上收割的每份作物必须被立即转化为1分。注:（1）因其他卡牌效果弃置此卡时，不影响之前已获得的分数。例：E38圣母像。（2）此卡上的作物因其他卡牌效果移除、取走或丢弃（非收割）不能转化为分数。例：I223秋收帮工。"
+    ],
+    "cost": {
+      "wood": 4,
+      "reed": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM068.png",
+    "locales": {
+      "zh": {
+        "name": "经济作物",
+        "desc": [
+          "此卡视作1个田。你可以在此卡上播种任意作物，从此卡上收割的每份作物必须被立即转化为1分。注:（1）因其他卡牌效果弃置此卡时，不影响之前已获得的分数。例：E38圣母像。（2）此卡上的作物因其他卡牌效果移除、取走或丢弃（非收割）不能转化为分数。例：I223秋收帮工。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM069_ChangingPlans",
+    "originalId": "WM069_ChangingPlans",
+    "gameEdition": "classic",
+    "name": "备用计划",
+    "deck": "WM",
+    "number": 69,
+    "desc": [
+      "立即退还至多2个马厩(从农场退还至个人供应区)，每退还1个马厩，你可以立即退还至多2个农场里的马厩，每退还1个马厩，你可以犁1块田。犁一块田使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "马厩×1",
+    "passing": true,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM069.png",
+    "locales": {
+      "zh": {
+        "name": "备用计划",
+        "desc": [
+          "立即退还至多2个马厩(从农场退还至个人供应区)，每退还1个马厩，你可以立即退还至多2个农场里的马厩，每退还1个马厩，你可以犁1块田。犁一块田使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": "马厩×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM070_ClockworkMan",
+    "originalId": "WM070_ClockworkMan",
+    "gameEdition": "classic",
+    "name": "发条人",
+    "deck": "WM",
+    "number": 70,
+    "desc": [
+      "此卡对次要发展卡和职业卡(例：E217地方官、E174家庭教师)的需求、功能、数量和计分来说，算作1个职业+1张次发卡。1. 打出此卡后，不影响后续打职业卡的花费。2. 此卡不触发以下卡牌（写有“职业卡”）：K112书架、WM094灯油、NL022书柜、K271教育家、FR080剑术大师等。3. 此卡可触发以下卡牌（写有“职业”）：FR087移民者的儿子等。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM070.png",
+    "locales": {
+      "zh": {
+        "name": "发条人",
+        "desc": [
+          "此卡对次要发展卡和职业卡(例：E217地方官、E174家庭教师)的需求、功能、数量和计分来说，算作1个职业+1张次发卡。1. 打出此卡后，不影响后续打职业卡的花费。2. 此卡不触发以下卡牌（写有“职业卡”）：K112书架、WM094灯油、NL022书柜、K271教育家、FR080剑术大师等。3. 此卡可触发以下卡牌（写有“职业”）：FR087移民者的儿子等。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM071_Cookies",
+    "originalId": "WM071_Cookies",
+    "gameEdition": "classic",
+    "name": "曲奇饼",
+    "deck": "WM",
+    "number": 71,
+    "desc": [
+      "每当你执行“烤面包”行动时，对于每份被转化的小麦，你可支付1份食物（从个人供应区拿取）到你的1个房屋板块上，每个房屋板块最多只能有1份这样的食物，食物不可再次被使用。游戏结束时，每有1个这样的食物你便额外获得1分。"
+    ],
+    "cost": {},
+    "vp": 1,
+    "prerequisite": "1 Occupations",
+    "occupationPrerequisites": {
+      "min": 1
+    },
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM071.png",
+    "locales": {
+      "zh": {
+        "name": "曲奇饼",
+        "desc": [
+          "每当你执行“烤面包”行动时，对于每份被转化的小麦，你可支付1份食物（从个人供应区拿取）到你的1个房屋板块上，每个房屋板块最多只能有1份这样的食物，食物不可再次被使用。游戏结束时，每有1个这样的食物你便额外获得1分。"
+        ],
+        "prerequisite": "职业×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM072_Crib",
+    "originalId": "WM072_Crib",
+    "gameEdition": "classic",
+    "name": "摇篮床",
+    "deck": "WM",
+    "number": 72,
+    "desc": [
+      "每个回合的工作阶段结束时，如果你在本回合执行了“生娃”行动，则你可以额外获得2份食物 或 支付2份食物立即获得1分。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM072.png",
+    "locales": {
+      "zh": {
+        "name": "摇篮床",
+        "desc": [
+          "每个回合的工作阶段结束时，如果你在本回合执行了“生娃”行动，则你可以额外获得2份食物 或 支付2份食物立即获得1分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM073_DiamondMine",
+    "originalId": "WM073_DiamondMine",
+    "gameEdition": "classic",
+    "name": "钻石矿车",
+    "deck": "WM",
+    "number": 73,
+    "desc": [
+      "打出此卡时，在之后的2个回合行动格上各放1个石头。这些回合开始时，你获得对应的石头。"
+    ],
+    "cost": {},
+    "vp": 1,
+    "prerequisite": "3 Occupations",
+    "occupationPrerequisites": {
+      "min": 3
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM073.png",
+    "locales": {
+      "zh": {
+        "name": "钻石矿车",
+        "desc": [
+          "打出此卡时，在之后的2个回合行动格上各放1个石头。这些回合开始时，你获得对应的石头。"
+        ],
+        "prerequisite": "职业×3"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM074_Donkey",
+    "originalId": "WM074_Donkey",
+    "gameEdition": "classic",
+    "name": "毛驴",
+    "deck": "WM",
+    "number": 74,
+    "desc": [
+      "你的一个圈地不能再容纳动物。每当你使用犁田/粮食耕种[犁播]行动格时，你可以额外犁1块田。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "圈地×1",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM074.png",
+    "locales": {
+      "zh": {
+        "name": "毛驴",
+        "desc": [
+          "你的一个圈地不能再容纳动物。每当你使用犁田/粮食耕种[犁播]行动格时，你可以额外犁1块田。"
+        ],
+        "prerequisite": "圈地×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM075_Downsizing",
+    "originalId": "WM075_Downsizing",
+    "gameEdition": "classic",
+    "name": "房屋拆迁",
+    "deck": "WM",
+    "number": 75,
+    "desc": [
+      "限1次：当你围建至少1根栅栏条时，你可以退还1间木屋来免费多围建7根栅栏条。注:（1）该木屋板块附带/交接处的物品也被移除。例：K339毛皮、BI12天空桥、WM071曲奇饼。（2）计算房屋板块数量时，应计算移除后。例：WM029丘陵农夫。"
+    ],
+    "cost": {},
+    "vp": 2,
+    "prerequisite": "1 Occupations",
+    "occupationPrerequisites": {
+      "min": 1
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM075.png",
+    "locales": {
+      "zh": {
+        "name": "房屋拆迁",
+        "desc": [
+          "限1次：当你围建至少1根栅栏条时，你可以退还1间木屋来免费多围建7根栅栏条。注:（1）该木屋板块附带/交接处的物品也被移除。例：K339毛皮、BI12天空桥、WM071曲奇饼。（2）计算房屋板块数量时，应计算移除后。例：WM029丘陵农夫。"
+        ],
+        "prerequisite": "职业×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM076_DrainedPond",
+    "originalId": "WM076_DrainedPond",
+    "gameEdition": "classic",
+    "name": "引水渠",
+    "deck": "WM",
+    "number": 76,
+    "desc": [
+      "打出此卡时，将当前回合数加4，在该回合的行动格上放置1个田地板块。在此回合开始时，你可以支付1份食物来犁对应的田地板块。"
+    ],
+    "cost": {
+      "reed": 1
+    },
+    "vp": 1,
+    "prerequisite": "2 Occupations",
+    "occupationPrerequisites": {
+      "min": 2
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM076.png",
+    "locales": {
+      "zh": {
+        "name": "引水渠",
+        "desc": [
+          "打出此卡时，将当前回合数加4，在该回合的行动格上放置1个田地板块。在此回合开始时，你可以支付1份食物来犁对应的田地板块。"
+        ],
+        "prerequisite": "职业×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM077_EdibleRoots",
+    "originalId": "WM077_EdibleRoots",
+    "gameEdition": "classic",
+    "name": "根茎植物",
+    "deck": "WM",
+    "number": 77,
+    "desc": [
+      "每当你从1块田上收割下最后1个物品并放入你的供应区时，你获得1份食物。注：（1）此卡牌打出条件“田×3”包括卡牌田。（2）对于每张已播种多列物品的卡牌田，本卡只将其算作“田×1”。（3）对于每张已播种多列物品的卡牌田，每次最多获得1份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "田×3",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM077.png",
+    "locales": {
+      "zh": {
+        "name": "根茎植物",
+        "desc": [
+          "每当你从1块田上收割下最后1个物品并放入你的供应区时，你获得1份食物。注：（1）此卡牌打出条件“田×3”包括卡牌田。（2）对于每张已播种多列物品的卡牌田，本卡只将其算作“田×1”。（3）对于每张已播种多列物品的卡牌田，每次最多获得1份食物。"
+        ],
+        "prerequisite": "田×3"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM078_FarmSchool",
+    "originalId": "WM078_FarmSchool",
+    "gameEdition": "classic",
+    "name": "农业学校",
+    "deck": "WM",
+    "number": 78,
+    "desc": [
+      "每个丰收时节的收割阶段，如果你至少收割了2个物品，则你可以支付2份食物来打出1张职业卡。注：（1）卡牌提供的“收割阶段”不算。（2）卡牌田/田地板块上收割的每份物品都可计算在内。"
+    ],
+    "cost": {
+      "wood": 1,
+      "reed": 1
+    },
+    "vp": 1,
+    "prerequisite": "2 Occupations",
+    "occupationPrerequisites": {
+      "min": 2
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM078.png",
+    "locales": {
+      "zh": {
+        "name": "农业学校",
+        "desc": [
+          "每个丰收时节的收割阶段，如果你至少收割了2个物品，则你可以支付2份食物来打出1张职业卡。注：（1）卡牌提供的“收割阶段”不算。（2）卡牌田/田地板块上收割的每份物品都可计算在内。"
+        ],
+        "prerequisite": "职业×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM079_FestivalHall",
+    "originalId": "WM079_FestivalHall",
+    "gameEdition": "classic",
+    "name": "节日大厅",
+    "deck": "WM",
+    "number": 79,
+    "desc": [
+      "每个丰收时节的收割阶段后，你可以将至多1份小麦转化为2份食物+任意1个建筑资源。注：（1）“麦田x2”包括卡牌田。（2）卡牌提供的收割阶段不算。"
+    ],
+    "cost": {
+      "wood": 1,
+      "clay": 1
+    },
+    "vp": 1,
+    "prerequisite": "2 Grain Fields",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM079.png",
+    "locales": {
+      "zh": {
+        "name": "节日大厅",
+        "desc": [
+          "每个丰收时节的收割阶段后，你可以将至多1份小麦转化为2份食物+任意1个建筑资源。注：（1）“麦田x2”包括卡牌田。（2）卡牌提供的收割阶段不算。"
+        ],
+        "prerequisite": "麦田×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM080_FishHook",
+    "originalId": "WM080_FishHook",
+    "gameEdition": "classic",
+    "name": "鱼钩",
+    "deck": "WM",
+    "number": 80,
+    "desc": [
+      "每当你使用与钓鱼积累行动格正交相邻的行动格时，你可以立即从钓鱼积累行动格上取走1份食物。注：一般情况下是指芦苇积累行动格、临时工、第4回合行动格。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 1,
+    "prerequisite": "2 Occupations",
+    "occupationPrerequisites": {
+      "min": 2
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM080.png",
+    "locales": {
+      "zh": {
+        "name": "鱼钩",
+        "desc": [
+          "每当你使用与钓鱼积累行动格正交相邻的行动格时，你可以立即从钓鱼积累行动格上取走1份食物。注：一般情况下是指芦苇积累行动格、临时工、第4回合行动格。"
+        ],
+        "prerequisite": "职业×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM081_FishPond",
+    "originalId": "WM081_FishPond",
+    "gameEdition": "classic",
+    "name": "鱼塘",
+    "deck": "WM",
+    "number": 81,
+    "desc": [
+      "将1个砖头（从游戏供应区拿取）放到你农场中的1个空格上，该格视为已使用。每当你使用钓鱼积累行动格时，你可以将此钓鱼行动格上食物中任意数量的食物放置到此卡上。游戏结束时，如果此卡上有至少0/1/4/6/8份食物，则你额外获得-1/1/2/3/4分。注：（1）若此卡因其他卡牌效果弃置/翻面/失去效果，则移除此砖并移除此卡上食物。（2）只能放置钓鱼积累行动格上原有食物。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "空格×1",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM081.png",
+    "locales": {
+      "zh": {
+        "name": "鱼塘",
+        "desc": [
+          "将1个砖头（从游戏供应区拿取）放到你农场中的1个空格上，该格视为已使用。每当你使用钓鱼积累行动格时，你可以将此钓鱼行动格上食物中任意数量的食物放置到此卡上。游戏结束时，如果此卡上有至少0/1/4/6/8份食物，则你额外获得-1/1/2/3/4分。注：（1）若此卡因其他卡牌效果弃置/翻面/失去效果，则移除此砖并移除此卡上食物。（2）只能放置钓鱼积累行动格上原有食物。"
+        ],
+        "prerequisite": "空格×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM082_FlowerPots",
+    "originalId": "WM082_FlowerPots",
+    "gameEdition": "classic",
+    "name": "花盆",
+    "deck": "WM",
+    "number": 82,
+    "desc": [
+      "若你在第6回合/之前打出此卡，则在第8回合行动格上放置1份蔬菜。在第8回合开始时，你获得对应的蔬菜。"
+    ],
+    "cost": {
+      "clay": 1
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM082.png",
+    "locales": {
+      "zh": {
+        "name": "花盆",
+        "desc": [
+          "若你在第6回合/之前打出此卡，则在第8回合行动格上放置1份蔬菜。在第8回合开始时，你获得对应的蔬菜。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM083_FreeRangeChickens",
+    "originalId": "WM083_FreeRangeChickens",
+    "gameEdition": "classic",
+    "name": "散养鸡",
+    "deck": "WM",
+    "number": 83,
+    "desc": [
+      "每回合开始时，如果你有至少1个麦田，拿取1份食物（从游戏供应区）到此卡上。此卡上的食物你可以随时使用。游戏结束时，如果此卡上有3/6+份食物，则你获得1/2分。注：“麦田×1”包括卡牌田。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "1 Grain Fields",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM083.png",
+    "locales": {
+      "zh": {
+        "name": "散养鸡",
+        "desc": [
+          "每回合开始时，如果你有至少1个麦田，拿取1份食物（从游戏供应区）到此卡上。此卡上的食物你可以随时使用。游戏结束时，如果此卡上有3/6+份食物，则你获得1/2分。注：“麦田×1”包括卡牌田。"
+        ],
+        "prerequisite": "麦田×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM084_FriendlyPastures",
+    "originalId": "WM084_FriendlyPastures",
+    "gameEdition": "classic",
+    "name": "友谊牧场",
+    "deck": "WM",
+    "number": 84,
+    "desc": [
+      "你每个有马厩的圈地能饲养不同种类的动物。(不改变原有饲养空间)"
+    ],
+    "cost": {
+      "wood": 2
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM084.png",
+    "locales": {
+      "zh": {
+        "name": "友谊牧场",
+        "desc": [
+          "你每个有马厩的圈地能饲养不同种类的动物。(不改变原有饲养空间)"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM085_Fruitcake",
+    "originalId": "WM085_Fruitcake",
+    "gameEdition": "classic",
+    "name": "水果蛋糕",
+    "deck": "WM",
+    "number": 85,
+    "desc": [
+      "下一次丰收时节的喂养阶段，你的每个家庭成员(包括新生儿)少喂养1份食物。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "2 Occupations",
+    "occupationPrerequisites": {
+      "min": 2
+    },
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM085.png",
+    "locales": {
+      "zh": {
+        "name": "水果蛋糕",
+        "desc": [
+          "下一次丰收时节的喂养阶段，你的每个家庭成员(包括新生儿)少喂养1份食物。"
+        ],
+        "prerequisite": "职业×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM086_GlassblowersShop",
+    "originalId": "WM086_GlassblowersShop",
+    "gameEdition": "classic",
+    "name": "大陶艺工坊",
+    "deck": "WM",
+    "number": 86,
+    "desc": [
+      "每个丰收时节，你可以将至多1块砖头转化为3份食物。游戏结束时，如果你有2/4/5+块砖头，额外获得1/2/3分。(多余的砖头不能再用于A8陶艺工坊的计分)（本卡牌可算作1张次发/1张主发，但只算作1张发展卡。）"
+    ],
+    "cost": {
+      "clay": 1,
+      "stone": 1
+    },
+    "vp": 3,
+    "prerequisite": "退还A8陶艺工坊",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM086.png",
+    "locales": {
+      "zh": {
+        "name": "大陶艺工坊",
+        "desc": [
+          "每个丰收时节，你可以将至多1块砖头转化为3份食物。游戏结束时，如果你有2/4/5+块砖头，额外获得1/2/3分。(多余的砖头不能再用于A8陶艺工坊的计分)（本卡牌可算作1张次发/1张主发，但只算作1张发展卡。）"
+        ],
+        "prerequisite": "退还A8陶艺工坊"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM087_GoldMedal",
+    "originalId": "WM087_GoldMedal",
+    "gameEdition": "classic",
+    "name": "金牌",
+    "deck": "WM",
+    "number": 87,
+    "desc": [
+      "打出此卡时，你从下列中选择1项：小麦/蔬菜/羊/猪/牛/田地/圈地/圈地内马厩。游戏结束时，该项分数最高的玩家们都额外获得2分。(不计算卡牌奖励分)"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "第7回合或之前",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM087.png",
+    "locales": {
+      "zh": {
+        "name": "金牌",
+        "desc": [
+          "打出此卡时，你从下列中选择1项：小麦/蔬菜/羊/猪/牛/田地/圈地/圈地内马厩。游戏结束时，该项分数最高的玩家们都额外获得2分。(不计算卡牌奖励分)"
+        ],
+        "prerequisite": "第7回合或之前"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM088_GrainElevator",
+    "originalId": "WM088_GrainElevator",
+    "gameEdition": "classic",
+    "name": "升降谷仓",
+    "deck": "WM",
+    "number": 88,
+    "desc": [
+      "每回合开始时，如果此卡上的小麦数量不等于玩家人数，则拿取1份小麦（从游戏供应区）到此卡上。每当你/其他玩家使用小麦种子行动格时，你获得/弃掉此卡上的所有小麦。"
+    ],
+    "cost": {
+      "stone": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM088.png",
+    "locales": {
+      "zh": {
+        "name": "升降谷仓",
+        "desc": [
+          "每回合开始时，如果此卡上的小麦数量不等于玩家人数，则拿取1份小麦（从游戏供应区）到此卡上。每当你/其他玩家使用小麦种子行动格时，你获得/弃掉此卡上的所有小麦。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM089_HomeGarden",
+    "originalId": "WM089_HomeGarden",
+    "gameEdition": "classic",
+    "name": "家庭花园",
+    "deck": "WM",
+    "number": 89,
+    "desc": [
+      "每当你翻修时(或打出此卡时当回合执行了“翻修”行动)，在接下来的3个回合行动格上各放置1份食物。这些回合开始时，你获得对应的食物。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM089.png",
+    "locales": {
+      "zh": {
+        "name": "家庭花园",
+        "desc": [
+          "每当你翻修时(或打出此卡时当回合执行了“翻修”行动)，在接下来的3个回合行动格上各放置1份食物。这些回合开始时，你获得对应的食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM090_Honeymoon",
+    "originalId": "WM090_Honeymoon",
+    "gameEdition": "classic",
+    "name": "蜜月旅行",
+    "deck": "WM",
+    "number": 90,
+    "desc": [
+      "在第14回合，你必须少派遣2名家庭成员。注：第14回合，你必须能够派遣至少2名家庭成员。"
+    ],
+    "cost": {
+      "food": 2
+    },
+    "vp": 5,
+    "prerequisite": "第13回合或之前",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM090.png",
+    "locales": {
+      "zh": {
+        "name": "蜜月旅行",
+        "desc": [
+          "在第14回合，你必须少派遣2名家庭成员。注：第14回合，你必须能够派遣至少2名家庭成员。"
+        ],
+        "prerequisite": "第13回合或之前"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM091_IronPlow",
+    "originalId": "WM091_IronPlow",
+    "gameEdition": "classic",
+    "name": "铁犁",
+    "deck": "WM",
+    "number": 91,
+    "desc": [
+      "在此卡上放1个田地板块。限1次：每当你使用犁田行动格时，你可以使用此卡上1块田，改为犁2块田，然后执行1次“播种”行动。每次使用犁田/粮食耕种[犁播]行动格时，只能使用1个犁/I68耙的效果。"
+    ],
+    "cost": {
+      "wood": 1,
+      "stone": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM091.png",
+    "locales": {
+      "zh": {
+        "name": "铁犁",
+        "desc": [
+          "在此卡上放1个田地板块。限1次：每当你使用犁田行动格时，你可以使用此卡上1块田，改为犁2块田，然后执行1次“播种”行动。每次使用犁田/粮食耕种[犁播]行动格时，只能使用1个犁/I68耙的效果。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM092_Keys",
+    "originalId": "WM092_Keys",
+    "gameEdition": "classic",
+    "name": "钥匙",
+    "deck": "WM",
+    "number": 92,
+    "desc": [
+      "你可以使用农场扩建行动格，即使该格已被其他玩家占据。注：（1）被自己家庭成员占据则不可以使用。（2）不适用于5人版图“扩建1间房屋”行动格。"
+    ],
+    "cost": {
+      "stone": 1
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM092.png",
+    "locales": {
+      "zh": {
+        "name": "钥匙",
+        "desc": [
+          "你可以使用农场扩建行动格，即使该格已被其他玩家占据。注：（1）被自己家庭成员占据则不可以使用。（2）不适用于5人版图“扩建1间房屋”行动格。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM093_Kindling",
+    "originalId": "WM093_Kindling",
+    "gameEdition": "classic",
+    "name": "引火柴",
+    "deck": "WM",
+    "number": 93,
+    "desc": [
+      "A1/A2火炉和A3/A4壁炉对你来说是次要发展卡，且花费减少1个砖头。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM093.png",
+    "locales": {
+      "zh": {
+        "name": "引火柴",
+        "desc": [
+          "A1/A2火炉和A3/A4壁炉对你来说是次要发展卡，且花费减少1个砖头。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM094_LampOil",
+    "originalId": "WM094_LampOil",
+    "gameEdition": "classic",
+    "name": "灯油",
+    "deck": "WM",
+    "number": 94,
+    "desc": [
+      "每次你打出1张职业卡前，你额外获得1份食物。注：本卡牌打出条件“动物×2”可为同种或不同种动物, 卡牌动物不算。"
+    ],
+    "cost": {
+      "wood": 2,
+      "clay": 2
+    },
+    "vp": 2,
+    "prerequisite": "动物×2",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM094.png",
+    "locales": {
+      "zh": {
+        "name": "灯油",
+        "desc": [
+          "每次你打出1张职业卡前，你额外获得1份食物。注：本卡牌打出条件“动物×2”可为同种或不同种动物, 卡牌动物不算。"
+        ],
+        "prerequisite": "动物×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM095_MountainCave",
+    "originalId": "WM095_MountainCave",
+    "gameEdition": "classic",
+    "name": "山洞",
+    "deck": "WM",
+    "number": 95,
+    "desc": [
+      "每次丰收时节，你可以将至多1个木头转换为1个石头。"
+    ],
+    "cost": {
+      "food": 1
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM095.png",
+    "locales": {
+      "zh": {
+        "name": "山洞",
+        "desc": [
+          "每次丰收时节，你可以将至多1个木头转换为1个石头。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM096_OakCask",
+    "originalId": "WM096_OakCask",
+    "gameEdition": "classic",
+    "name": "橡木桶",
+    "deck": "WM",
+    "number": 96,
+    "desc": [
+      "打出此卡时，拿取1份食物（从游戏供应区）到此卡上。每个丰收时节的收割阶段，如果此卡上有食物，则额外补充1份食物。你可以随时使用此卡上的食物。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM096.png",
+    "locales": {
+      "zh": {
+        "name": "橡木桶",
+        "desc": [
+          "打出此卡时，拿取1份食物（从游戏供应区）到此卡上。每个丰收时节的收割阶段，如果此卡上有食物，则额外补充1份食物。你可以随时使用此卡上的食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM097_OpenGate",
+    "originalId": "WM097_OpenGate",
+    "gameEdition": "classic",
+    "name": "散养区",
+    "deck": "WM",
+    "number": 97,
+    "desc": [
+      "每个丰收时节的喂养阶段前，你可以支付至多1只羊并额外获得1分。"
+    ],
+    "cost": {
+      "stone": 1
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM097.png",
+    "locales": {
+      "zh": {
+        "name": "散养区",
+        "desc": [
+          "每个丰收时节的喂养阶段前，你可以支付至多1只羊并额外获得1分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM098_PettingZoo",
+    "originalId": "WM098_PettingZoo",
+    "gameEdition": "classic",
+    "name": "迷你动物园",
+    "deck": "WM",
+    "number": 98,
+    "desc": [
+      "游戏结束时，如果你拥有3种动物，(不包括卡牌动物)若你有至少2羊，额外获得1分；若你有至少2猪，额外获得1分。（可以分别/同时获得）"
+    ],
+    "cost": {
+      "wood": 2
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM098.png",
+    "locales": {
+      "zh": {
+        "name": "迷你动物园",
+        "desc": [
+          "游戏结束时，如果你拥有3种动物，(不包括卡牌动物)若你有至少2羊，额外获得1分；若你有至少2猪，额外获得1分。（可以分别/同时获得）"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM099_PigWallow",
+    "originalId": "WM099_PigWallow",
+    "gameEdition": "classic",
+    "name": "退耕还牧",
+    "deck": "WM",
+    "number": 99,
+    "desc": [
+      "立即退还已犁的1个空田板块，并免费围建农场1个空地。（需满足围建栅栏的一般规则）使用后请将此卡交给下家，此卡将加入他的手牌。注: 此田地板块附加物品随之移除，例: NL014壕沟。"
+    ],
+    "cost": {
+      "wood": 1,
+      "stone": 1
+    },
+    "vp": 1,
+    "prerequisite": "空田×1",
+    "passing": true,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM099.png",
+    "locales": {
+      "zh": {
+        "name": "退耕还牧",
+        "desc": [
+          "立即退还已犁的1个空田板块，并免费围建农场1个空地。（需满足围建栅栏的一般规则）使用后请将此卡交给下家，此卡将加入他的手牌。注: 此田地板块附加物品随之移除，例: NL014壕沟。"
+        ],
+        "prerequisite": "空田×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM100_PlumPatch",
+    "originalId": "WM100_PlumPatch",
+    "gameEdition": "classic",
+    "name": "葡萄干",
+    "deck": "WM",
+    "number": 100,
+    "desc": [
+      "计算你已播种的田地数量，在接下来的（等同于此数量）回合行动格上各放置1份食物。这些回合开始时，你获得对应的食物。注:（1）此卡牌打出条件包括卡牌田。（2）在本次计算时，每张已播种的卡牌田算作1块已播种的田。"
+    ],
+    "cost": {},
+    "vp": 1,
+    "prerequisite": "1 Grain Fields+菜田×1",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM100.png",
+    "locales": {
+      "zh": {
+        "name": "葡萄干",
+        "desc": [
+          "计算你已播种的田地数量，在接下来的（等同于此数量）回合行动格上各放置1份食物。这些回合开始时，你获得对应的食物。注:（1）此卡牌打出条件包括卡牌田。（2）在本次计算时，每张已播种的卡牌田算作1块已播种的田。"
+        ],
+        "prerequisite": "麦田×1+菜田×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM101_PrizewinningSheep",
+    "originalId": "WM101_PrizewinningSheep",
+    "gameEdition": "classic",
+    "name": "羊毛奖励",
+    "deck": "WM",
+    "number": 101,
+    "desc": [
+      "立即获得1个任意建筑资源 。使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "羊×1",
+    "passing": true,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM101.png",
+    "locales": {
+      "zh": {
+        "name": "羊毛奖励",
+        "desc": [
+          "立即获得1个任意建筑资源 。使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": "羊×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM102_Ram",
+    "originalId": "WM102_Ram",
+    "gameEdition": "classic",
+    "name": "公羊",
+    "deck": "WM",
+    "number": 102,
+    "desc": [
+      "公羊参与羊计数、计分和繁殖。在第6/8/10/12回合结束时，你的羊会额外进行1次繁殖。每次家庭成员喂养阶段，必须喂养公羊1份食物或者获得一份乞讨卡。"
+    ],
+    "cost": {
+      "sheep": 1
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM102.png",
+    "locales": {
+      "zh": {
+        "name": "公羊",
+        "desc": [
+          "公羊参与羊计数、计分和繁殖。在第6/8/10/12回合结束时，你的羊会额外进行1次繁殖。每次家庭成员喂养阶段，必须喂养公羊1份食物或者获得一份乞讨卡。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM103_Raspberries",
+    "originalId": "WM103_Raspberries",
+    "gameEdition": "classic",
+    "name": "树莓",
+    "deck": "WM",
+    "number": 103,
+    "desc": [
+      "从游戏供应区拿取食物，在你至多3个农场空格上各放置1份食物。当对应农场空格被占用时，你获得对应的食物。注：放置食物的农场空格仍视为未占用。"
+    ],
+    "cost": {
+      "clay": 1
+    },
+    "vp": 1,
+    "prerequisite": "2 Occupations",
+    "occupationPrerequisites": {
+      "min": 2
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM103.png",
+    "locales": {
+      "zh": {
+        "name": "树莓",
+        "desc": [
+          "从游戏供应区拿取食物，在你至多3个农场空格上各放置1份食物。当对应农场空格被占用时，你获得对应的食物。注：放置食物的农场空格仍视为未占用。"
+        ],
+        "prerequisite": "职业×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM104_ReedNursery",
+    "originalId": "WM104_ReedNursery",
+    "gameEdition": "classic",
+    "name": "芦苇地",
+    "deck": "WM",
+    "number": 104,
+    "desc": [
+      "你可以在田地板块上如同小麦一样种植芦苇。游戏结束时，你可以将你个人供应区和田里的芦苇转化为分数，1/4/6/8+捆芦苇可转化为1/2/3/4分。"
+    ],
+    "cost": {
+      "reed": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM104.png",
+    "locales": {
+      "zh": {
+        "name": "芦苇地",
+        "desc": [
+          "你可以在田地板块上如同小麦一样种植芦苇。游戏结束时，你可以将你个人供应区和田里的芦苇转化为分数，1/4/6/8+捆芦苇可转化为1/2/3/4分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM105_RotherhamPlow",
+    "originalId": "WM105_RotherhamPlow",
+    "gameEdition": "classic",
+    "name": "罗氏犁",
+    "deck": "WM",
+    "number": 105,
+    "desc": [
+      "每当你使用犁田行动格时，你可以额外犁一块田，但这两块田必须既不直角相邻也不对角相邻。仍需要满足所有田地板块相邻。每次使用犁田/粮食耕种[犁播]行动格时，只能使用1个犁/I68耙的效果。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "1 Occupations",
+    "occupationPrerequisites": {
+      "min": 1
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM105.png",
+    "locales": {
+      "zh": {
+        "name": "罗氏犁",
+        "desc": [
+          "每当你使用犁田行动格时，你可以额外犁一块田，但这两块田必须既不直角相邻也不对角相邻。仍需要满足所有田地板块相邻。每次使用犁田/粮食耕种[犁播]行动格时，只能使用1个犁/I68耙的效果。"
+        ],
+        "prerequisite": "职业×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM106_Ruins",
+    "originalId": "WM106_Ruins",
+    "gameEdition": "classic",
+    "name": "废墟",
+    "deck": "WM",
+    "number": 106,
+    "desc": [
+      "打出时在此卡放置4个<STONE>，每个丰收时节的收割阶段，你从上获得1个<STONE>。"
+    ],
+    "cost": {
+      "stone": 4
+    },
+    "vp": 3,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM106.png",
+    "locales": {
+      "zh": {
+        "name": "废墟",
+        "desc": [
+          "打出时在此卡放置4个<STONE>，每个丰收时节的收割阶段，你从上获得1个<STONE>。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM107_SlapdashRenovation",
+    "originalId": "WM107_SlapdashRenovation",
+    "gameEdition": "classic",
+    "name": "仓促翻修",
+    "deck": "WM",
+    "number": 107,
+    "desc": [
+      "每当你使用了提供“翻修”行动的行动格后，在该轮次结束时，你将该家庭成员遣返回家，并在之后的轮次中再派遣他卡牌提供的翻修行动/行动格不算。"
+    ],
+    "cost": {
+      "clay": 1,
+      "stone": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM107.png",
+    "locales": {
+      "zh": {
+        "name": "仓促翻修",
+        "desc": [
+          "每当你使用了提供“翻修”行动的行动格后，在该轮次结束时，你将该家庭成员遣返回家，并在之后的轮次中再派遣他卡牌提供的翻修行动/行动格不算。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM108_Steamer",
+    "originalId": "WM108_Steamer",
+    "gameEdition": "classic",
+    "name": "蒸锅",
+    "deck": "WM",
+    "number": 108,
+    "desc": [
+      "任意时刻",
+      "[<GRAIN> <VEGETABLE> <ARROW> 5 <FOOD>]",
+      "[<GRAIN> <SHEEP> <ARROW> 4 <FOOD>]",
+      "[<GRAIN> <PIG> <ARROW> 5 <FOOD>]",
+      "[<GRAIN> <CATTLE> <ARROW> 6 <FOOD>]"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM108.png",
+    "locales": {
+      "zh": {
+        "name": "蒸锅",
+        "desc": [
+          "任意时刻",
+          "[<GRAIN> <VEGETABLE> <ARROW> 5 <FOOD>]",
+          "[<GRAIN> <SHEEP> <ARROW> 4 <FOOD>]",
+          "[<GRAIN> <PIG> <ARROW> 5 <FOOD>]",
+          "[<GRAIN> <CATTLE> <ARROW> 6 <FOOD>]"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM109_SteelPlow",
+    "originalId": "WM109_SteelPlow",
+    "gameEdition": "classic",
+    "name": "金钢犁",
+    "deck": "WM",
+    "number": 109,
+    "desc": [
+      "限1次：在你使用犁田/粮食耕种[犁播]行动格时，可以改为犁至多4块田每次使用犁田/粮食耕种[犁播]行动格时，只能使用1个犁/I68耙的效果。"
+    ],
+    "cost": {
+      "stone": 3
+    },
+    "vp": 2,
+    "prerequisite": "3 Occupations",
+    "occupationPrerequisites": {
+      "min": 3
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM109.png",
+    "locales": {
+      "zh": {
+        "name": "金钢犁",
+        "desc": [
+          "限1次：在你使用犁田/粮食耕种[犁播]行动格时，可以改为犁至多4块田每次使用犁田/粮食耕种[犁播]行动格时，只能使用1个犁/I68耙的效果。"
+        ],
+        "prerequisite": "职业×3"
+      }
+    },
+    "kind": "minor"
+  },
+]
+const batch20: readonly GeneratedCatalogCardDefinition[] = [
+  {
+    "id": "OLD_WM110_StorageShed",
+    "originalId": "WM110_StorageShed",
+    "gameEdition": "classic",
+    "name": "工具间",
+    "deck": "WM",
+    "number": 110,
+    "desc": [
+      "将你已建造的1个马厩放到此卡上，你不能再建造此马厩。每当你打出次要发展卡前，你可以获得1个任意建筑资源"
+    ],
+    "cost": {},
+    "vp": 1,
+    "prerequisite": "马厩×1",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM110.png",
+    "locales": {
+      "zh": {
+        "name": "工具间",
+        "desc": [
+          "将你已建造的1个马厩放到此卡上，你不能再建造此马厩。每当你打出次要发展卡前，你可以获得1个任意建筑资源"
+        ],
+        "prerequisite": "马厩×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM111_UndisturbedPond",
+    "originalId": "WM111_UndisturbedPond",
+    "gameEdition": "classic",
+    "name": "原状池塘",
+    "deck": "WM",
+    "number": 111,
+    "desc": [
+      "计算已过的完整回合数，在接下来的这个数目的行动格上各放置1份食物，这些回合开始时，你获得这份食物"
+    ],
+    "cost": {},
+    "vp": 1,
+    "prerequisite": "职业=0",
+    "occupationPrerequisites": {
+      "max": 0
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM111.png",
+    "locales": {
+      "zh": {
+        "name": "原状池塘",
+        "desc": [
+          "计算已过的完整回合数，在接下来的这个数目的行动格上各放置1份食物，这些回合开始时，你获得这份食物"
+        ],
+        "prerequisite": "职业=0"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM112_VillageSchool",
+    "originalId": "WM112_VillageSchool",
+    "gameEdition": "classic",
+    "name": "乡村学校",
+    "deck": "WM",
+    "number": 112,
+    "desc": [
+      "每轮次限1次：每当你需要支付费用时，你可以弃掉你1张手牌来少支付1个建筑资源"
+    ],
+    "cost": {
+      "wood": 2
+    },
+    "vp": 0,
+    "prerequisite": "1 Occupations",
+    "occupationPrerequisites": {
+      "min": 1
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM112.png",
+    "locales": {
+      "zh": {
+        "name": "乡村学校",
+        "desc": [
+          "每轮次限1次：每当你需要支付费用时，你可以弃掉你1张手牌来少支付1个建筑资源"
+        ],
+        "prerequisite": "职业×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM113_WildBreeding",
+    "originalId": "WM113_WildBreeding",
+    "gameEdition": "classic",
+    "name": "野外繁殖",
+    "deck": "WM",
+    "number": 113,
+    "desc": [
+      "在每个有至少2只动物的动物积累行动格上额外放置1只该动物，如果你有饲养空间，你可以拿走至多1只新放置的动物使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {
+      "reed": 1
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": true,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM113.png",
+    "locales": {
+      "zh": {
+        "name": "野外繁殖",
+        "desc": [
+          "在每个有至少2只动物的动物积累行动格上额外放置1只该动物，如果你有饲养空间，你可以拿走至多1只新放置的动物使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM114_WineCloset",
+    "originalId": "WM114_WineCloset",
+    "gameEdition": "classic",
+    "name": "酒窖",
+    "deck": "WM",
+    "number": 114,
+    "desc": [
+      "打出时获得1份蔬菜。每回合限1次：你可以将1份蔬菜放到未来的行动格上，如果至少是5个回合后，则额外放一个蔬菜到此格上，在这回合开始时，你必须将上面的蔬菜各转换为2份食物/1分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM114.png",
+    "locales": {
+      "zh": {
+        "name": "酒窖",
+        "desc": [
+          "打出时获得1份蔬菜。每回合限1次：你可以将1份蔬菜放到未来的行动格上，如果至少是5个回合后，则额外放一个蔬菜到此格上，在这回合开始时，你必须将上面的蔬菜各转换为2份食物/1分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_WM115_WormBait",
+    "originalId": "WM115_WormBait",
+    "gameEdition": "classic",
+    "name": "鱼饵",
+    "deck": "WM",
+    "number": 115,
+    "desc": [
+      "每当你使用犁田行动格时，从游戏供应区拿取2份食物放到此卡上，每当你使用钓鱼积累行动格时，你获得此卡上的所有食物。每个丰收时节开始时，你需要退还此卡上的1份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/WM115.png",
+    "locales": {
+      "zh": {
+        "name": "鱼饵",
+        "desc": [
+          "每当你使用犁田行动格时，从游戏供应区拿取2份食物放到此卡上，每当你使用钓鱼积累行动格时，你获得此卡上的所有食物。每个丰收时节开始时，你需要退还此卡上的1份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_Z313_StumpJumpPlough",
+    "originalId": "Z313_StumpJumpPlough",
+    "gameEdition": "classic",
+    "name": "碟犁",
+    "deck": "Z",
+    "number": 313,
+    "desc": [
+      "如果你不住在木屋，则每次你通过家庭成员执行行动获得木头时，你可以支付1份食物来犁一块田胸像"
+    ],
+    "cost": {
+      "wood": 2
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/Z313.png",
+    "locales": {
+      "zh": {
+        "name": "碟犁",
+        "desc": [
+          "如果你不住在木屋，则每次你通过家庭成员执行行动获得木头时，你可以支付1份食物来犁一块田胸像"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_Z314_Keg",
+    "originalId": "Z314_Keg",
+    "gameEdition": "classic",
+    "name": "木桶",
+    "deck": "Z",
+    "number": 314,
+    "desc": [
+      "当前回合所有玩家的所有家庭成员被派遣完毕后，你获得1个食客标记，你可以派遣该食客，并在回合结束时退还该食客使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": true,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/Z314.png",
+    "locales": {
+      "zh": {
+        "name": "木桶",
+        "desc": [
+          "当前回合所有玩家的所有家庭成员被派遣完毕后，你获得1个食客标记，你可以派遣该食客，并在回合结束时退还该食客使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_Z315_BrewersCopper",
+    "originalId": "Z315_BrewersCopper",
+    "gameEdition": "classic",
+    "name": "酿酒师铜器",
+    "deck": "Z",
+    "number": 315,
+    "desc": [
+      "在每个喂养阶段，你可以使用此卡将至多1份小麦转换成2份食物。游戏结束时，如果你有至少7份小麦，你获得1分"
+    ],
+    "cost": {
+      "grain": 1,
+      "stone": 1
+    },
+    "vp": 1,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/Z315.png",
+    "locales": {
+      "zh": {
+        "name": "酿酒师铜器",
+        "desc": [
+          "在每个喂养阶段，你可以使用此卡将至多1份小麦转换成2份食物。游戏结束时，如果你有至少7份小麦，你获得1分"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_Z316_Bust",
+    "originalId": "Z316_Bust",
+    "gameEdition": "classic",
+    "name": "胸像",
+    "deck": "Z",
+    "number": 316,
+    "desc": [
+      "你必须在至少有一位其他玩家尚未打出他的第二张职业卡前打出此卡(3人游戏中改为第三张，2人游戏中改为第四张)"
+    ],
+    "cost": {
+      "stone": 1
+    },
+    "vp": 2,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/Z316.png",
+    "locales": {
+      "zh": {
+        "name": "胸像",
+        "desc": [
+          "你必须在至少有一位其他玩家尚未打出他的第二张职业卡前打出此卡(3人游戏中改为第三张，2人游戏中改为第四张)"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_Z317_FamilyPortrait",
+    "originalId": "Z317_FamilyPortrait",
+    "gameEdition": "classic",
+    "name": "全家福",
+    "deck": "Z",
+    "number": 317,
+    "desc": [
+      "你可以为你的每名家庭成员支付2份食物，然后你获得4分使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": true,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/Z317.png",
+    "locales": {
+      "zh": {
+        "name": "全家福",
+        "desc": [
+          "你可以为你的每名家庭成员支付2份食物，然后你获得4分使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_Z318_Barbecue",
+    "originalId": "Z318_Barbecue",
+    "gameEdition": "classic",
+    "name": "烧烤派对",
+    "deck": "Z",
+    "number": 318,
+    "desc": [
+      "打出时，你每拥有一位家庭成员，你就可以将1只动物转换成食物：羊/猪/牛每只转换成3/4/5份食物使用后请将此卡交给下家，此卡将加入他的手牌。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "passing": true,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/Z318.png",
+    "locales": {
+      "zh": {
+        "name": "烧烤派对",
+        "desc": [
+          "打出时，你每拥有一位家庭成员，你就可以将1只动物转换成食物：羊/猪/牛每只转换成3/4/5份食物使用后请将此卡交给下家，此卡将加入他的手牌。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_Z319_PumpkinSeedOil",
+    "originalId": "Z319_PumpkinSeedOil",
+    "gameEdition": "classic",
+    "name": "南瓜籽油",
+    "deck": "Z",
+    "number": 319,
+    "desc": [
+      "游戏中限3次，每回合限1次：你可以支付1份蔬菜到此卡上并获得3份食物，此卡上的蔬菜参与计分"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "菜田×1",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/Z319.png",
+    "locales": {
+      "zh": {
+        "name": "南瓜籽油",
+        "desc": [
+          "游戏中限3次，每回合限1次：你可以支付1份蔬菜到此卡上并获得3份食物，此卡上的蔬菜参与计分"
+        ],
+        "prerequisite": "菜田×1"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_Z320_Maypole",
+    "originalId": "Z320_Maypole",
+    "gameEdition": "classic",
+    "name": "五朔节花柱",
+    "deck": "Z",
+    "number": 320,
+    "desc": [
+      "此卡只能在第四回合结束前打出。在你的一个空格上立直一根你供应区的栅栏。直到游戏结束，如果你自己没有弄倒过这根栅栏，则你获得2分(该格视为已使用)"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "2 Occupations",
+    "occupationPrerequisites": {
+      "min": 2
+    },
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/Z320.png",
+    "locales": {
+      "zh": {
+        "name": "五朔节花柱",
+        "desc": [
+          "此卡只能在第四回合结束前打出。在你的一个空格上立直一根你供应区的栅栏。直到游戏结束，如果你自己没有弄倒过这根栅栏，则你获得2分(该格视为已使用)"
+        ],
+        "prerequisite": "职业×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_Z321_Ranch",
+    "name": "大农庄",
+    "deck": "Z",
+    "number": 321,
+    "category": "POINTS_PROVIDER",
+    "desc": [
+      "打出此卡时，距离游戏结束每剩1个完整回合，你便可获得1分+2份食物稻草人"
+    ],
+    "cost": {},
+    "prerequisite": "农场无空格",
+    "extraVp": true,
+    "originalId": "Z321_Ranch",
+    "gameEdition": "classic",
+    "vp": 0,
+    "passing": false,
+    "implemented": true,
+    "artUrl": "/card-art/classic/Z321.png",
+    "locales": {
+      "zh": {
+        "name": "大农庄",
+        "desc": [
+          "打出此卡时，距离游戏结束每剩1个完整回合，你便可获得1分+2份食物稻草人"
+        ],
+        "prerequisite": "农场无空格"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_Z322_DozingBull",
+    "originalId": "Z322_DozingBull",
+    "gameEdition": "classic",
+    "name": "斗牛",
+    "deck": "Z",
+    "number": 322,
+    "desc": [
+      "如果你有至少1只牛，则在任意时刻，你可以重新布置你的栅栏"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/Z322.png",
+    "locales": {
+      "zh": {
+        "name": "斗牛",
+        "desc": [
+          "如果你有至少1只牛，则在任意时刻，你可以重新布置你的栅栏"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_Z323_GiantPumpkin",
+    "originalId": "Z323_GiantPumpkin",
+    "gameEdition": "classic",
+    "name": "巨无霸南瓜",
+    "deck": "Z",
+    "number": 323,
+    "desc": [
+      "将1份蔬菜支付到此卡上。任意时刻，你可以将该蔬菜转化为食物。游戏结束时，如果此卡上有蔬菜，则你获得2分(该蔬菜参与计分)"
+    ],
+    "cost": {
+      "wood": 1
+    },
+    "vp": 0,
+    "prerequisite": "",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/Z323.png",
+    "locales": {
+      "zh": {
+        "name": "巨无霸南瓜",
+        "desc": [
+          "将1份蔬菜支付到此卡上。任意时刻，你可以将该蔬菜转化为食物。游戏结束时，如果此卡上有蔬菜，则你获得2分(该蔬菜参与计分)"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_Z324_Scarecrow",
+    "originalId": "Z324_Scarecrow",
+    "gameEdition": "classic",
+    "name": "稻草人",
+    "deck": "Z",
+    "number": 324,
+    "desc": [
+      "每当你播种时，你可以支付1根木头，然后在至多一块空田上播种2列小麦。"
+    ],
+    "cost": {
+      "sheep": 1
+    },
+    "vp": 1,
+    "prerequisite": "空田×2",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/Z324.png",
+    "locales": {
+      "zh": {
+        "name": "稻草人",
+        "desc": [
+          "每当你播种时，你可以支付1根木头，然后在至多一块空田上播种2列小麦。"
+        ],
+        "prerequisite": "空田×2"
+      }
+    },
+    "kind": "minor"
+  },
+  {
+    "id": "OLD_Z325_VillageBeauty",
+    "originalId": "Z325_VillageBeauty",
+    "gameEdition": "classic",
+    "name": "小镇姑娘",
+    "deck": "Z",
+    "number": 325,
+    "desc": [
+      "任意时刻，你可以支付3食物来执行一次“生娃(需要空房间)”行动。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/Z325.png",
+    "locales": {
+      "zh": {
+        "name": "小镇姑娘",
+        "desc": [
+          "任意时刻，你可以支付3食物来执行一次“生娃(需要空房间)”行动。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_Z326_Gentleman",
+    "originalId": "Z326_Gentleman",
+    "gameEdition": "classic",
+    "name": "绅士",
+    "deck": "Z",
+    "number": 326,
+    "desc": [
+      "每回合的工作阶段，如果该回合最后1个行动的家庭成员属于你，在该成员执行完行动后你获得1份食物。如果你是用该成员打出此卡的，则改为2份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/Z326.png",
+    "locales": {
+      "zh": {
+        "name": "绅士",
+        "desc": [
+          "每回合的工作阶段，如果该回合最后1个行动的家庭成员属于你，在该成员执行完行动后你获得1份食物。如果你是用该成员打出此卡的，则改为2份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_Z327_Herald",
+    "originalId": "Z327_Herald",
+    "gameEdition": "classic",
+    "name": "报信员",
+    "deck": "Z",
+    "number": 327,
+    "desc": [
+      "打出此卡时，你立即获得2根木头。任意时刻，你可以查看并重新排列未翻开的回合行动格，但必须符合季节要求。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/Z327.png",
+    "locales": {
+      "zh": {
+        "name": "报信员",
+        "desc": [
+          "打出此卡时，你立即获得2根木头。任意时刻，你可以查看并重新排列未翻开的回合行动格，但必须符合季节要求。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_Z328_Cooper",
+    "originalId": "Z328_Cooper",
+    "gameEdition": "classic",
+    "name": "制桶工",
+    "deck": "Z",
+    "number": 328,
+    "desc": [
+      "每当任意玩家(包括你)从积累行动格上1次取得至少3份食物时，你额外获得1份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "4+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/Z328.png",
+    "locales": {
+      "zh": {
+        "name": "制桶工",
+        "desc": [
+          "每当任意玩家(包括你)从积累行动格上1次取得至少3份食物时，你额外获得1份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_Z329_MailCoachDriver",
+    "originalId": "Z329_MailCoachDriver",
+    "gameEdition": "classic",
+    "name": "驿站车夫",
+    "deck": "Z",
+    "number": 329,
+    "desc": [
+      "所有其他玩家在使用行动格后，在该回合结束时才获得对应行动格上的建筑资源、作物和动物(如果是通过卡牌获得资源，则不受此卡牌影响)。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/Z329.png",
+    "locales": {
+      "zh": {
+        "name": "驿站车夫",
+        "desc": [
+          "所有其他玩家在使用行动格后，在该回合结束时才获得对应行动格上的建筑资源、作物和动物(如果是通过卡牌获得资源，则不受此卡牌影响)。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_Z330_Taxidermist",
+    "originalId": "Z330_Taxidermist",
+    "gameEdition": "classic",
+    "name": "标本制作师",
+    "deck": "Z",
+    "number": 330,
+    "desc": [
+      "每当你将动物转换成食物后，你可以将被转换的动物放到此卡上。此卡上最多可以放1羊、1猪和1牛。这些动物不参与繁殖阶段，但参与计分阶段。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/Z330.png",
+    "locales": {
+      "zh": {
+        "name": "标本制作师",
+        "desc": [
+          "每当你将动物转换成食物后，你可以将被转换的动物放到此卡上。此卡上最多可以放1羊、1猪和1牛。这些动物不参与繁殖阶段，但参与计分阶段。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_Z331_Sower",
+    "originalId": "Z331_Sower",
+    "gameEdition": "classic",
+    "name": "播种工",
+    "deck": "Z",
+    "number": 331,
+    "desc": [
+      "每当你在非丰收时节的收割作物阶段获得蔬菜时，你可以立即将其播种。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/Z331.png",
+    "locales": {
+      "zh": {
+        "name": "播种工",
+        "desc": [
+          "每当你在非丰收时节的收割作物阶段获得蔬菜时，你可以立即将其播种。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_Z332_SeedTrader",
+    "originalId": "Z332_SeedTrader",
+    "gameEdition": "classic",
+    "name": "种子交易商",
+    "deck": "Z",
+    "number": 332,
+    "desc": [
+      "在此卡上放置2份小麦+2份蔬菜。你可以随时从此卡上购买它们：每份小麦需要2份食物；每份蔬菜需要3份食物。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/Z332.png",
+    "locales": {
+      "zh": {
+        "name": "种子交易商",
+        "desc": [
+          "在此卡上放置2份小麦+2份蔬菜。你可以随时从此卡上购买它们：每份小麦需要2份食物；每份蔬菜需要3份食物。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_Z333_GameDesigner",
+    "originalId": "Z333_GameDesigner",
+    "gameEdition": "classic",
+    "name": "游戏设计师",
+    "deck": "Z",
+    "number": 333,
+    "desc": [
+      "任意时刻，你可以将1木+1砖+1芦苇+1石头转换成2食物+1分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/Z333.png",
+    "locales": {
+      "zh": {
+        "name": "游戏设计师",
+        "desc": [
+          "任意时刻，你可以将1木+1砖+1芦苇+1石头转换成2食物+1分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_Z334_DanceInstructor",
+    "originalId": "Z334_DanceInstructor",
+    "gameEdition": "classic",
+    "name": "舞蹈教师",
+    "deck": "Z",
+    "number": 334,
+    "desc": [
+      "打出此卡前，你先获得4份食物。打出此卡后，将此卡收回手牌。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "3+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/Z334.png",
+    "locales": {
+      "zh": {
+        "name": "舞蹈教师",
+        "desc": [
+          "打出此卡前，你先获得4份食物。打出此卡后，将此卡收回手牌。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_Z335_CubeCutter",
+    "originalId": "Z335_CubeCutter",
+    "gameEdition": "classic",
+    "name": "骰子雕刻工",
+    "deck": "Z",
+    "number": 335,
+    "desc": [
+      "在每个丰收时节的收割阶段，你可使用此卡将恰好1木头+1食物换成1分。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": true,
+    "implemented": false,
+    "artUrl": "/card-art/classic/Z335.png",
+    "locales": {
+      "zh": {
+        "name": "骰子雕刻工",
+        "desc": [
+          "在每个丰收时节的收割阶段，你可使用此卡将恰好1木头+1食物换成1分。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+  {
+    "id": "OLD_Z336_MotherofTwins",
+    "originalId": "Z336_MotherofTwins",
+    "gameEdition": "classic",
+    "name": "双胞胎之母",
+    "deck": "Z",
+    "number": 336,
+    "desc": [
+      "每当你执行“生娃”行动时，你可以支付3份食物执行一次“生娃(无需空房间)”行动。"
+    ],
+    "cost": {},
+    "vp": 0,
+    "prerequisite": "",
+    "players": "1+",
+    "passing": false,
+    "extraVp": false,
+    "implemented": false,
+    "artUrl": "/card-art/classic/Z336.png",
+    "locales": {
+      "zh": {
+        "name": "双胞胎之母",
+        "desc": [
+          "每当你执行“生娃”行动时，你可以支付3份食物执行一次“生娃(无需空房间)”行动。"
+        ],
+        "prerequisite": ""
+      }
+    },
+    "kind": "occupation"
+  },
+]
+export const catalogCardDefinitions: readonly GeneratedCatalogCardDefinition[] = [...batch0, ...batch1, ...batch2, ...batch3, ...batch4, ...batch5, ...batch6, ...batch7, ...batch8, ...batch9, ...batch10, ...batch11, ...batch12, ...batch13, ...batch14, ...batch15, ...batch16, ...batch17, ...batch18, ...batch19, ...batch20]
 
 const isMinorLike = (card: GeneratedCatalogCardDefinition) =>
   card.kind === 'minor' ||

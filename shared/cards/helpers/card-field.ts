@@ -1,3 +1,4 @@
+import { classicDeckIds } from '../../contract/game-edition'
 import type { CardImpl } from '../registry'
 import type { CardListenerRegistration } from '../card-listeners'
 import type { ExtraSowableField, ExtraSowableCrop } from '../card-effects'
@@ -50,6 +51,12 @@ const DECK_ORDINAL: Record<string, number> = { A: 1, B: 2, C: 3, D: 4, E: 5 }
 const cardFieldDefs = new Map<string, CardFieldDef>()
 
 const parseCardBaseCol = (cardId: string): number => {
+  const old = cardId.match(/^OLD_([A-Z]+)(\d+)_/)
+  if (old) {
+    const index = (classicDeckIds as readonly string[]).indexOf(old[1]!)
+    if (index < 0) throw new Error('Unknown classic field deck')
+    return 100000 + index * 100000 + Number(old[2]) * 100
+  }
   const match = cardId.match(/^([A-E])(\d+)_/)
   if (!match) throw new Error(`[card-field] cardId "${cardId}" not in <Deck><Number>_ format`)
   const ord = DECK_ORDINAL[match[1]]
