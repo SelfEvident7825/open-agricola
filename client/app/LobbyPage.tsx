@@ -53,6 +53,7 @@ export function LobbyPage() {
   const isTeamMode = selectMode === 'team' || selectMode === 'multihand'
   const beginTeamGame = (mode: 'team' | 'multihand') => {
     roomCreation.clearError()
+    setGameEdition('revised')
     setSelectMode(mode); setSelectedMaxPlayers(4)
     const common = { seatsPerTeam: 2, seating: 'separated', scoring: 'category-min' } as const
     setTeamConfiguration(mode === 'team' ? { ...common, mode, teammateVisibility: 'shared' } : { ...common, mode })
@@ -395,7 +396,7 @@ export function LobbyPage() {
                   )}
                 </fieldset>
               )}
-              <fieldset className="room-access-options">
+              {!isTeamMode && <fieldset className="room-access-options">
                 <legend>{t('platform.edition')}</legend>
                 <label><input type="radio" name="edition" checked={gameEdition === 'revised'} onChange={() => setGameEdition('revised')} />{t('platform.revisedEdition')}</label>
                 <label><input type="radio" name="edition" checked={gameEdition === 'classic'} onChange={() => {
@@ -403,7 +404,7 @@ export function LobbyPage() {
                   setEnableParentCards(false); setEnableThroughTheSeasons(false); setEnableFarmersOfTheMoor(false); setEnableSnakeOpening(false)
                 }} />{t('platform.classicEdition')}</label>
                 {gameEdition === 'classic' && <p>{t('platform.classicPreviewNote')}</p>}
-              </fieldset>
+              </fieldset>}
               <div className="player-select-label">{t('platform.draftModeLabel')}</div>
               <div className="player-select-options">
                 <button

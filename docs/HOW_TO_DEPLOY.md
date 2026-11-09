@@ -895,21 +895,14 @@ To disable visualization reversibly, stop `prometheus grafana node-exporter acco
 
 Configuration follows the official [Grafana auth proxy documentation](https://grafana.com/docs/grafana/latest/setup-grafana/configure-access/configure-authentication/auth-proxy/) and [Prometheus discovery/configuration documentation](https://prometheus.io/docs/prometheus/latest/configuration/configuration/).
 
-## Rebuilt classic preview (2026-11-09)
+## Classic Agricola preview
 
-The classic preview is reconstructed from application base `72bfc8f7`, the original agricolaoldnice archive, and the two-card BGA patch. It is not a byte-identical recovery of the unavailable previous archive. It supports four players and keeps classic dealing separate from revised dealing. There are 1,024 classic hand-card faces; 270 have native implementations and 754 are reference-only. All 126 source E-deck cards and all 91 source I-deck cards now have native effects. The I update adds 71 implementations and reviews the 20 existing I ports. Method matching and integration tests are not a per-card rules certification.
+The game-creation form offers a four-player classic edition for ordinary multiplayer and hotseat games. Revised games remain the default. Classic games exclude team/multihand modes, expansions and custom cards. Dealing uses implemented classic cards only, separately from the revised pool. All 126 source E-deck cards and all 91 source I-deck cards have native implementations. The imported collection contains 1,024 card faces, 270 native implementations and 754 reference-only cards; reference-only cards are never dealt.
 
-The delivered source contains sibling `open-agricola` and `open-agricola-i18n` directories. Set `AGRICOLA_I18N_DIR=../open-agricola-i18n` before build/test/start. The pinned language commit is local and has not been pushed upstream. For a deployment, first publish the language repository to your own fork, update `i18n.ref.repository` to that fork and keep the matching revision and manifest digest. Then publish both application frontend and backend through the existing deployment process. Database migration 033 persists the selected edition. No remote changes or deployment are performed by modifying this source.
+Database migration `037-classic-edition.sql` adds the room edition with a `revised` default for retained rooms. The edition is preserved in room metadata, state recovery and rematches. It does not reset existing sessions or replace their hands. Follow the retained-game compatibility procedure above before deployment.
 
-The light source archive omits classic PNGs. In Windows PowerShell from `open-agricola`, recover them from the existing BGA checkout with:
+Translations live in the separate `open-agricola-i18n` repository. Publish and validate the language commit first, then set `i18n.ref` to its reachable repository, commit and manifest hash before application CI. A fork can host that commit until its language PR is merged. For local review with sibling checkouts, set `AGRICOLA_I18N_DIR=../open-agricola-i18n`; this local override does not make an unpublished commit accessible to CI.
 
-```powershell
-powershell -ExecutionPolicy Bypass -File .\scripts\restore-classic-art.ps1 -Source "D:\agricolaoldnice"
-$env:AGRICOLA_I18N_DIR = "../open-agricola-i18n"
-npx.cmd --yes pnpm@10.33.0 install --frozen-lockfile
-npx.cmd --yes pnpm@10.33.0 run build
-```
-
-The full archive includes all 1,024 PNGs. For the full application, use the existing `restart-local.sh` workflow in WSL2 with Docker running; a successful frontend build alone does not start the database, object storage, or authoritative server. Base-game artwork still follows the project's existing asset-host configuration. Both delivery archives exclude dependencies, build outputs, environment secrets and Git history.
+`docs/classic/validation.json` records the actual local verification scope. GitHub CI, database integration and browser acceptance remain separate release evidence. The application branch contains the original classic card artwork and source provenance. Editing, committing or opening a PR does not deploy the site; frontend and backend deployment follow the existing release process after review.
 
 Manual card ports must remove the generated-import marker on their first line before rerunning `scripts/import-classic-cards.ts`; otherwise the importer owns that file. The importer preserves files without that marker.
