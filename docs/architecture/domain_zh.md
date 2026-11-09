@@ -74,3 +74,5 @@ shared/domain/
 
 `work.ended` 在 `onBeforeReturnHome` 完成后、归家位置快照及临时人员归还前关闭工作阶段资格。工作末尾和回家前的用格仍符合资格，即使显示的 `roundPhase` 已是 `returning-home`；之后的归家用格不符合。该事实不改变阶段 hook 顺序。覆盖：`server/__tests__/action-space-use-history-session.test.ts`。
 
+
+混养圈地以 `animalCounts` 保存各类数量，`animalType: null`；单一动物仍用紧凑字段。显式 `allowedAnimalType: null` 允许混养。`reservedCapacity` 把区域的一部分容量预留给指定动物，权威端规范化、安置和前端草稿共用 `contract/animal-zone-capacity.ts`。PlayerBoard 将含卡牌效果的圈地容量传给围栏验证，区域未改变时保留原有分配。存档规范化、动物支付和围栏重建都保留各类动物数量。

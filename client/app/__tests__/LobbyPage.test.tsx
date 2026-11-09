@@ -546,6 +546,17 @@ describe('LobbyPage player count selection', () => {
       enableSnakeOpening: 'true',
     })
   })
+  it('creates a four-player classic hotseat and excludes incompatible expansions', async () => {
+    render(<LobbyPage />)
+    fireEvent.click(screen.getByRole('button', { name: 'Local Hotseat' }))
+    fireEvent.click(screen.getByRole('radio', { name: 'platform.classicEdition' }))
+    expect(screen.queryByRole('button', { name: '2 Players' })).toBeNull()
+    expect(screen.getByRole('button', { name: '4 Players' })).toBeDefined()
+    expect(screen.getByRole('checkbox', { name: /Enable Parent Cards/ })).toBeDisabled()
+    fireEvent.click(screen.getByRole('button', { name: 'Start Hotseat Game' }))
+    expect(setPage).toHaveBeenLastCalledWith('game', { transport: 'ws', hotseat: '1', maxPlayers: '4', gameEdition: 'classic' })
+  })
+
 })
 
 

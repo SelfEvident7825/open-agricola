@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { minorImprovementCards, occupationCards } from '../../shared/cards/catalog'
+import { minorImprovementCards, occupationCards, classicMinors, classicOccupations } from '../../shared/cards/catalog'
 import { createMajorImprovementSupply, standardMajorImprovementIds } from '../../shared/cards/major/supply'
 import { createMoorSpecialActionCards } from '../../shared/moor/special-action-cards'
 import { moorStartCardIds } from '../../shared/moor/start-cards'
@@ -13,7 +13,7 @@ const playerCounts = [1, 2, 3, 4, 5, 6]
 const unique = (ids: readonly string[]) => [...new Set(ids)].sort()
 
 const publishedIdentities: Record<EncyclopediaSourceKind, string[]> = {
-  card: unique([...minorImprovementCards, ...occupationCards].map((card) => card.id)),
+  card: unique([...minorImprovementCards, ...occupationCards, ...classicMinors, ...classicOccupations].map((card) => card.id)),
   major: unique([
     ...standardMajorImprovementIds,
     ...playerCounts.flatMap((count) => [false, true].flatMap((enableFarmersOfTheMoor) =>
@@ -67,4 +67,11 @@ describe('card encyclopedia catalog membership (D1)', () => {
     expect(contaminated.map((entry) => entry.key)).toEqual(entries.map((entry) => entry.key))
     expect(entries.filter((entry) => /CUSTOM_|STUB_/.test(entry.sourceId))).toEqual([])
   })
+  it('marks classic reference-only cards and keeps their original printed number', () => {
+    const classic = entries.filter(entry => entry.group === 'classic')
+    expect(classic).toHaveLength(1024)
+    expect(classic.filter(entry => entry.availableInGame)).toHaveLength(110)
+    expect(classic.find(entry => entry.sourceId === 'OLD_E30_Canoe')?.displayNumber).toBe('E30')
+  })
+
 })

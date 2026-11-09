@@ -16,7 +16,7 @@ import { sourceFingerprint } from './verify'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
-const NON_MAJOR_CARD_ID_RE = /^(?:[A-E]|M)\d+_[A-Z]\w*$/
+const NON_MAJOR_CARD_ID_RE = /^(?:(?:[A-E]|M)\d+|OLD_[A-Z]+\d+)_[A-Z]\w*$/
 
 export type CardImplBoundaryViolation = {
   file: string
@@ -222,7 +222,7 @@ function unwrapExpression(node: ts.Expression): ts.Expression {
 }
 
 function isAllowedPropertyName(name: string): boolean {
-  if (name === 'reaches' || name === 'allowedPurchases') return true
+  if (name === 'reaches' || name === 'allowedPurchases' || name === 'returnCards') return true
   const lower = name.toLowerCase()
   return lower.includes('prerequisite') && lower.includes('candidate')
 }
@@ -400,7 +400,22 @@ function isAllowedNamedPrintedTargetReference(
   referencedCardId: string,
   reaches: Set<string>,
 ): boolean {
-  return reaches.has(referencedCardId) && isInsidePublicPlayedMembershipCheck(node)
+  if (!reaches.has(referencedCardId)) return false
+  if (isInsidePublicPlayedMembershipCheck(node)) return true
+  // A printed target may also be compared with a public action/event identity.
+  // Only literal identity lists and scalar equality qualify; private state
+  // indexing remains forbidden, including inside an includes() argument.
+  const parent = node.parent
+  if (ts.isBinaryExpression(parent) && [ts.SyntaxKind.EqualsEqualsEqualsToken, ts.SyntaxKind.ExclamationEqualsEqualsToken].includes(parent.operatorToken.kind)) {
+    const other = parent.left === node ? parent.right : parent.left
+    const expression = unwrapExpression(other)
+    return ts.isPropertyAccessExpression(expression) && ['cardId', 'choice', 'exchangeSource'].includes(expression.name.text)
+  }
+  const array = ts.isArrayLiteralExpression(parent) ? parent : undefined
+  if (!array || !array.elements.every(element => ts.isStringLiteral(element) || ts.isNoSubstitutionTemplateLiteral(element))) return false
+  const access = array.parent
+  return ts.isPropertyAccessExpression(access) && access.name.text === 'includes'
+    && ts.isCallExpression(access.parent) && access.parent.expression === access
 }
 
 export function checkCardImplBoundaries(
@@ -444,6 +459,7 @@ export function checkCardImplBoundaries(
       if (
         (ts.isStringLiteral(node) || ts.isNoSubstitutionTemplateLiteral(node)) &&
         isForbiddenReference(cardId, node.text) &&
+        !(cardId.startsWith('OLD_') && node.text === cardId.slice(4) && ts.isPropertyAssignment(node.parent) && node.parent.name.getText(sourceFile).replace(/["']/g, '') === 'originalId') &&
         !isInsideAllowedProperty(node) &&
         !isInsideConstAliasDeclaration(node, aliases) &&
         !isAllowedNamedPrintedTargetReference(node, node.text, reaches)

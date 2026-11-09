@@ -35,6 +35,8 @@ export type CardPrerequisites = {
 }
 
 export type CardDefinition = {
+  gameEdition?: 'revised' | 'classic'
+  originalId?: string
   id: string
   name: string
   deck: string
@@ -61,6 +63,9 @@ export type CardDefinition = {
   extraVp?: boolean
   providesField?: boolean
   providesOccupation?: boolean
+  /** Number of occupations this card counts as; it remains a single physical card. */
+  plowEffect?: boolean
+  occupationCount?: number
   /**
    * The reference `$this->field = true`: marks the card itself as a field. C80 Rocky
    * Terrain triggers off `Improvement` / `Occupation` events whose played

@@ -150,3 +150,19 @@ describe('useAnimalReorgDraftPresentation', () => {
     expect(result.current.submitDraft.animalReorgZones).toBeUndefined()
   })
 })
+
+it('allows mixed pasture drafts while keeping sheep-reserved capacity unavailable to other species', () => {
+  const snapshot = state(player({ resources: { ...emptyResources, sheep: 2, boar: 3 } }))
+  const interaction = animalReorgInteraction()
+  if (interaction.stateId !== 'wait' || interaction.request.kind !== 'animal-reorg') throw new Error('fixture')
+  interaction.request.zones = [{ id: 'mixed-pasture', zoneType: 'pasture', capacity: 4, reservedCapacity: { sheep: 2 }, allowedAnimalType: null, animalType: null, animalCount: 0 }]
+  const { result } = renderHook(() => useAnimalReorgDraftPresentation({ state: snapshot, pendingAnimalReorg: { playerIndex: 0, spaceId: 'animal-reorg' } }))
+  act(() => result.current.syncFromInteraction(interaction, snapshot))
+  for (let i = 0; i < 3; i++) act(() => result.current.controls.adjustAnimal('mixed-pasture', 'boar', 1))
+  expect(result.current.reorgTotals.boar).toBe(2)
+  for (let i = 0; i < 2; i++) act(() => result.current.controls.adjustAnimal('mixed-pasture', 'sheep', 1))
+  expect(result.current.submitDraft.animalReorgZones?.[0]).toMatchObject({ animalType: null, animalCount: 4, animalCounts: { sheep: 2, boar: 2 } })
+  act(() => result.current.controls.adjustAnimal('mixed-pasture', 'sheep', -1))
+  act(() => result.current.controls.adjustAnimal('mixed-pasture', 'boar', 1))
+  expect(result.current.reorgTotals).toMatchObject({ sheep: 1, boar: 2 })
+})

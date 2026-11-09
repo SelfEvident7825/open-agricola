@@ -152,6 +152,7 @@ export const PlayerCard = ({
         isCookery: meta.isCookery,
         isBaking: meta.isBaking,
         artUrl: meta.artUrl,
+        originalId: meta.originalId,
       }
     } else if (cardType === 'minor') {
       return {
@@ -167,6 +168,7 @@ export const PlayerCard = ({
         returnCards: meta.returnCards,
         alsoCountsAs: meta.alsoCountsAs,
         artUrl: meta.artUrl,
+        originalId: meta.originalId,
       }
     } else {
       return {
@@ -178,15 +180,16 @@ export const PlayerCard = ({
         isCookery: meta.isCookery,
         isBaking: meta.isBaking,
         artUrl: meta.artUrl,
+        originalId: meta.originalId,
       }
     }
   }, [cardId, cardMeta, cardType, locale])
 
-  const numbering = getCardNumbering(cardId)
+  const numbering = getCardNumbering(cardData?.originalId ?? cardId)
   const moorMajor = cardType === 'major' ? getMoorMajorDisplay(cardId) : undefined
-  const deck = getDeckFromId(cardId)
+  const deck = getDeckFromId(cardData?.originalId ?? cardId)
   const runtimeArt = artUrl === undefined ? getCustomCardArtUrl(cardId) : artUrl
-  const staticArt = cardData?.artUrl?.startsWith('/card-art/community/')
+  const staticArt = (cardData?.artUrl?.startsWith('/card-art/community/') || cardData?.artUrl?.startsWith('/card-art/classic/'))
     ? cardData.artUrl
     : undefined
 

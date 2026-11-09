@@ -144,3 +144,5 @@ ADR 0026 明确规定的普通宠物位置是安置数据的例外。Core 恢复
 
 测试：`server/__tests__/session-recovery-data.test.ts`、`server/__tests__/room-animal-holders-session.test.ts`。
 
+
+游戏版本在创建时确定，并保存在对局状态、房间元数据、恢复与重开流程中。旧农试运行目前只接受四人且不叠加其他扩展。

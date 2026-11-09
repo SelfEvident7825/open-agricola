@@ -142,3 +142,5 @@ The explicit ordinary-pet rule in ADR 0026 is the assignment exception. After re
 
 Tests: `server/__tests__/session-recovery-data.test.ts`, `server/__tests__/room-animal-holders-session.test.ts`.
 
+
+The optional game edition is fixed at creation and preserved in state, room metadata, recovery and rematches. The classic preview admits only four players without additional expansions.

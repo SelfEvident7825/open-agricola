@@ -87,6 +87,7 @@ export const applyAnimalReorgToPlayer = (params: {
   const pastureZones = animalReorg.zones.filter((zone) => zone.zoneType === 'pasture')
   player.pastures = player.pastures.map((pasture) => {
     const assigned = pastureZones.find((zone) => zone.id === pasture.id)
+    if (assigned?.animalCounts && assigned.allowedAnimalType === null) return { ...pasture, animalType: assigned.animalType, animalCount: assigned.animalCount, animalCounts: { ...assigned.animalCounts } }
     if (!assigned || !assigned.animalType) {
       return { ...pasture, animalType: null, animalCount: 0 }
     }
@@ -124,6 +125,7 @@ export const buildPastureDisplayMap = (
     map.set(pasture.id, {
       animalType: pasture.animalType,
       animalCount: pasture.animalCount,
+      ...(pasture.animalCounts ? { animalCounts: pasture.animalCounts } : {}),
     })
   })
   animalReorg?.zones
@@ -132,6 +134,7 @@ export const buildPastureDisplayMap = (
       map.set(zone.id, {
         animalType: zone.animalType,
         animalCount: zone.animalCount,
+        ...(zone.animalCounts ? { animalCounts: zone.animalCounts } : {}),
       })
     })
   return map

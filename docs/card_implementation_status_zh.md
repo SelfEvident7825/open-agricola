@@ -127,3 +127,5 @@
 | `D176_Woodshacker` | work phase 中 owner 本回合第 1/2 次使用 wood accumulation 额外给 1/2 clay，按本轮实际使用次数计数（同一空间重复使用也计次），随回家重置。 |
 | `D178_SubstituteTeacher` | 注册 owner-only action space，三个可见 Lessons 格都实际 occupied 后可用，奖励为 1 building resource 或 grain+vegetable。 |
 | `D179_Bullcatcher` | 注册 owner-only action space，round slot 3 与 round slot 6 对应行动格都 occupied 且 owner 仍有可用工人时可用，使用后获得 1 cattle + 2 food。 |
+
+旧农试运行：1024 张手牌卡面，199 张原生迁移，825 张仅供查阅。源项目 E 包 126 张均已接入原生效果。清单与来源见 `docs/classic/migration-manifest.json`，原始 PHP 方法见 `reference/classic/source-cards.json`。集成覆盖不等于所有卡牌均通过规则验收。

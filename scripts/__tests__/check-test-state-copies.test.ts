@@ -10,6 +10,8 @@ afterEach(() => {
 })
 
 const exemptFiles = [
+  'shared/cards/__tests__/classic-e-rules.test.ts',
+  'server/__tests__/classic-edition-session.test.ts',
   'shared/session/__tests__/state-clone.test.ts',
   'shared/session/__tests__/state-normalize-stats.test.ts',
   'shared/session/__tests__/fence-segments-normalize.test.ts',

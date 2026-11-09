@@ -15,6 +15,8 @@ import { fileURLToPath } from 'node:url'
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 export type CardMeta = {
+  gameEdition?: 'revised' | 'classic'
+  originalId?: string
   id: string
   name: string
   deck: string
@@ -42,6 +44,8 @@ export type CardMeta = {
   isBaking?: boolean
   passing?: boolean
   returnCards?: string[]
+  occupationCount?: number
+  plowEffect?: boolean
   occupationPrerequisites?: unknown
   improvementPrerequisites?: unknown
   implemented?: boolean
@@ -89,10 +93,10 @@ export type CardManifestEntry = {
 export type CardsManifest = Record<string, CardManifestEntry>
 
 const META_FIELDS = new Set([
-  'id', 'name', 'deck', 'number', 'playerActionCardType', 'category', 'desc', 'rules',
+  'gameEdition', 'originalId', 'id', 'name', 'deck', 'number', 'playerActionCardType', 'category', 'desc', 'rules',
   'cost', 'altCosts', 'exchanges', 'players', 'prerequisite', 'vp',
   'maxRound', 'isCookery', 'isBaking', 'passing', 'returnCards',
-  'occupationPrerequisites', 'improvementPrerequisites', 'implemented',
+  'occupationCount', 'plowEffect', 'occupationPrerequisites', 'improvementPrerequisites', 'implemented',
   'evenMoreSet', 'extraVp', 'providesField', 'providesOccupation', 'isField',
   'fireplaceIdentity', 'cookingHearthIdentity', 'ovenIdentity', 'firewoodBuildTrigger', 'joineryIdentity', 'potteryIdentity',
   'preventsHandDiscard', 'animalHolder', 'blocksHouseAnimalZones', 'blocksRenovation',
@@ -489,7 +493,7 @@ export function parseCardFile(filePath: string, options: ParseCardFileOptions = 
 
 export function buildCardsManifest(cardsRoot: string): CardsManifest {
   const manifest: CardsManifest = {}
-  const decks = ['A', 'B', 'C', 'D', 'E', 'M', 'major', 'community']
+  const decks = ['A', 'B', 'C', 'D', 'E', 'M', 'major', 'community', 'classic']
   const repoRoot = path.resolve(cardsRoot, '..', '..')
   const scanDir = (deckDir: string, parseOptions?: ParseCardFileOptions) => {
     if (!fs.existsSync(deckDir)) return

@@ -15,8 +15,10 @@ import { returnMajorImprovementToSupply } from '../major/supply'
 export const returnCardToBoard = (
   player: PlayerState,
   cardId: string,
-  state?: Pick<GameState, 'availableMajorImprovements' | 'majorImprovementSupply'>,
+  state?: Pick<GameState, 'availableMajorImprovements' | 'majorImprovementSupply'> & Partial<Pick<GameState, 'futureMeeples' | 'pendingFutureMeeples'>>,
 ): void => {
+  if (state?.futureMeeples) state.futureMeeples = state.futureMeeples.filter(entry => entry.playerId !== player.id || entry.cardId !== cardId)
+  if (state?.pendingFutureMeeples) state.pendingFutureMeeples = state.pendingFutureMeeples.filter(entry => entry.playerId !== player.id || entry.cardId !== cardId)
   const improvementIndex = player.improvements.indexOf(cardId)
   if (improvementIndex > -1) {
     player.improvements.splice(improvementIndex, 1)

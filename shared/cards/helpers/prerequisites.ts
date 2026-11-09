@@ -1,6 +1,6 @@
 import type { GameState, PlayerState } from '../../contract/types'
 import type { CardDefinition } from '../../contract/cards'
-import { getRegisteredMinorImprovement } from '../registry-display'
+import { getRegisteredMinorImprovement, getRegisteredOccupation } from '../registry-display'
 import { getMajorCard } from '../major'
 import { collectCardsAs } from './card-type'
 import { countUnusedFarmyardSpaces } from '../../domain/farm'
@@ -14,7 +14,7 @@ type CardPrerequisiteSource = Pick<
 >
 
 export const countOccupations = (player: PlayerState) =>
-  player.occupationPlayed.length + (player.extraOccupationsFromCards?.length ?? 0)
+  player.occupationPlayed.reduce((sum,id) => sum + (getRegisteredOccupation(id)?.occupationCount ?? 1),0) + (player.extraOccupationsFromCards?.length ?? 0)
 
 const countAllImprovements = (player: PlayerState) =>
   player.improvements.length + player.minorPlayed.length

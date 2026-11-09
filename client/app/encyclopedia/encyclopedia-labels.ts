@@ -19,6 +19,7 @@ const GROUP_LABEL_KEYS: Readonly<Record<EncyclopediaGroup, string>> = {
   D: 'ui.encyclopedia.groups.deck',
   E: 'ui.encyclopedia.groups.deck',
   M: 'ui.encyclopedia.groups.deck',
+  classic: 'platform.classicEdition',
   majorStandard: 'ui.encyclopedia.groups.majorStandard',
   major56: 'ui.encyclopedia.groups.major56',
   majorMoor: 'ui.encyclopedia.groups.majorMoor',

@@ -25,6 +25,7 @@ import {
 } from '../../domain/animal-zones'
 import {
   createAnimalCounts,
+  compactAnimalCounts,
   readAnimalHolderCounts,
   singleAnimalType,
   sumAnimalCounts,
@@ -159,7 +160,6 @@ const applyReorganizeMutate = (
 ): void => {
   const idx = state.players.indexOf(player)
   const computed = playerBoard(state, idx).animals.zones()
-  const cap = (id: string) => computed.find((z) => z.id === id)?.capacity ?? 0
   const animalKeys = animalKeysForState(state)
   const resourceTotalsBefore = createAnimalCounts(state.enableFarmersOfTheMoor === true)
   for (const animal of animalKeys) resourceTotalsBefore[animal] = player.resources[animal] ?? 0
@@ -178,10 +178,11 @@ const applyReorganizeMutate = (
   const pastureZones = zones.filter((z) => z.zoneType === 'pasture')
   commitFarmOperation(player, { kind: 'pastures', positions: [], pastures: player.pastures.map((p) => {
     const a = pastureZones.find((z) => z.id === p.id)
-    const animalType = normalizeAnimalType(a?.animalType)
-    if (!a || !animalType) return { ...p, animalType: null, animalCount: 0 }
-    const count = Math.max(0, Math.min(cap(p.id), a.animalCount))
-    return { ...p, animalType: count > 0 ? animalType : null, animalCount: count }
+    const zone = computed.find(z => z.id === p.id)!
+    const counts = normalizeAnimalCountsForZone(state, player, { ...zone, animalType: null }, a)
+    const animalType = singleAnimalType(counts)
+    const { animalCounts: _oldCounts, ...rest } = p
+    return { ...rest, animalType, animalCount: sumAnimalCounts(counts), ...(animalType === null && sumAnimalCounts(counts) > 0 ? { animalCounts: compactAnimalCounts(counts) } : {}) }
   }) })
 
   player.houseAnimals = Object.fromEntries(zones

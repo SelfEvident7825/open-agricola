@@ -583,6 +583,28 @@ describe('check-card-impl-boundaries', () => {
     expect(checkCardImplBoundaries([file]).violations).toEqual([])
   })
 
+  it('allows declared printed identities in event comparisons and literal target lists', () => {
+    const root = mkdtempSync(path.join(tmpdir(), 'card-impl-boundaries-'))
+    const file = writeFixture(root, 'shared/cards/M/M063_PastoralLetter.ts', [
+      'export const M063_PastoralLetter_impl = {',
+      "  reaches: ['M068_Church'],",
+      "  listeners: [{ handler: context => context.choice === 'M068_Church' || ['M068_Church'].includes(context.cardId) }],",
+      '}',
+    ].join('\n'))
+    expect(checkCardImplBoundaries([file]).violations).toEqual([])
+  })
+
+  it('still rejects undeclared identity lists and private indexing in identity tests', () => {
+    const root = mkdtempSync(path.join(tmpdir(), 'card-impl-boundaries-'))
+    const file = writeFixture(root, 'shared/cards/M/M063_PastoralLetter.ts', [
+      'export const M063_PastoralLetter_impl = {',
+      "  reaches: ['M068_Church'],",
+      "  listeners: [{ handler: context => ['M069_Fixture'].includes(context.cardId) || ['M068_Church'].includes(context.player.cardStates['M068_Church']) }],",
+      '}',
+    ].join('\n'))
+    expect(checkCardImplBoundaries([file]).violations.map(v => v.referencedCardId)).toEqual(['M069_Fixture', 'M068_Church'])
+  })
+
   it('reports private state reads even when the target is declared in reaches', () => {
     const root = mkdtempSync(path.join(tmpdir(), 'card-impl-boundaries-'))
     const file = writeFixture(root, 'shared/cards/M/M063_PastoralLetter.ts', [
