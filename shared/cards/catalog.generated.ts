@@ -33600,7 +33600,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "deck": "PI",
     "number": 8,
     "desc": [
-      "In the field phase of each harvest, if you have at least 2/4/6/7 fields, you get 1/2/3/4 <FOOD>."
+      "In the field phase of each harvest, if you have at least 2/4/6/7 <FIELD>, you get 1/2/3/4 <FOOD>."
     ],
     "cost": {},
     "vp": 0,
@@ -33620,7 +33620,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "deck": "PI",
     "number": 9,
     "desc": [
-      "Each time you build fences, place 1 <FOOD> on each remaining round space, up to the number of fences just built. At the start of these rounds, you get the <FOOD>."
+      "Each time you build <FENCE>, place 1 <FOOD> on each remaining round space, up to the number of <FENCE> just built. At the start of these rounds, you get the <FOOD>."
     ],
     "cost": {},
     "vp": 0,
@@ -33740,7 +33740,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "deck": "PI",
     "number": 15,
     "desc": [
-      "You can keep 1 additional animal (of the same type) in each of your unfenced stables, and 2 additional animals (of the same type) in each pasture with stable."
+      "You can keep 1 additional animal (of the same type) in each of your unfenced <STABLE>, and 2 additional animals (of the same type) in each pasture with <STABLE>."
     ],
     "cost": {},
     "vp": 1,
@@ -33821,7 +33821,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "deck": "PI",
     "number": 19,
     "desc": [
-      "You do not need to pay wood for fences that you build on the edge of your farmyard board."
+      "You do not need to pay <WOOD> for <FENCE> that you build on the edge of your farmyard board."
     ],
     "cost": {},
     "vp": 0,
@@ -33840,7 +33840,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "deck": "PI",
     "number": 20,
     "desc": [
-      "Each time you use the __Farmland__ or __Cultivation__  action space, you can plow 2 fields instead of 1. Each time you sow, you must place 1 fewer good on each field you sow."
+      "Each time you use the __Farmland__ or __Cultivation__  action space, you can plow 2 <FIELD> instead of 1. Each time you sow, you must place 1 fewer good on each <FIELD> you sow."
     ],
     "cost": {
       "wood": 1
@@ -33908,7 +33908,7 @@ const batch18: readonly GeneratedCatalogCardDefinition[] = [
     "deck": "PI",
     "number": 23,
     "desc": [
-      "At the end of each work phase, if you occupy both the __Grain Seeds__ and __Vegetable Seeds__ action spaces, you can plow 1 field."
+      "At the end of each work phase, if you occupy both the __Grain Seeds__ and __Vegetable Seeds__ action spaces, you can plow 1 <FIELD>."
     ],
     "cost": {
       "wood": 1

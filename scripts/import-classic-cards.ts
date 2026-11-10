@@ -3,6 +3,7 @@ import path from 'node:path'
 import ts from 'typescript'
 import { parseCardFile } from './build-cards-manifest'
 import { relocateCardImports } from './relocate-card-imports'
+import { normalizeClassicDescription } from './classic-card-text'
 
 type Legacy = {
   id: string
@@ -111,7 +112,7 @@ for (const old of source) {
     name: printed(old.meta.name),
     deck: String(old.meta.deck),
     number: Number(old.meta.number),
-    desc: ((old.meta.desc ?? []) as unknown[]).map(printed),
+    desc: ((old.meta.desc ?? []) as unknown[]).map(value => normalizeClassicDescription(printed(value))),
     cost: cost(old.meta.cost),
     vp: Number(old.meta.vp ?? 0),
     prerequisite,

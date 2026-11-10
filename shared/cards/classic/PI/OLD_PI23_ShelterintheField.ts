@@ -9,7 +9,7 @@ export const OLD_PI23_ShelterintheField = defineMinorCard({
     deck: 'PI',
     number: 23,
     desc: [
-      'At the end of each work phase, if you occupy both the __Grain Seeds__ and __Vegetable Seeds__ action spaces, you can plow 1 field.',
+      'At the end of each work phase, if you occupy both the __Grain Seeds__ and __Vegetable Seeds__ action spaces, you can plow 1 <FIELD>.',
     ],
     cost: {
       wood: 1,

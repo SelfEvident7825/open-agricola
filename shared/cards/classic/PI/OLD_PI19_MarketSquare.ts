@@ -9,7 +9,7 @@ export const OLD_PI19_MarketSquare = defineMinorCard({
     deck: 'PI',
     number: 19,
     desc: [
-      'You do not need to pay wood for fences that you build on the edge of your farmyard board.',
+      'You do not need to pay <WOOD> for <FENCE> that you build on the edge of your farmyard board.',
     ],
     cost: {},
     vp: 0,
