@@ -20,9 +20,10 @@ const cardImpl = {
         if (!unitCost) return
         const costs = Object.fromEntries(Object.entries(unitCost).map(([resource, amount]) => [resource, -(amount ?? 0)]))
         return {
-          costs, costAttribution: [
+          costs,
+          costAttribution: [
             { sourceCard: CARD_ID, costs },
-          ]
+          ],
         }
       },
     },
@@ -57,15 +58,14 @@ const cardImpl = {
         if (!Array.isArray(edges)) return
         const before = context.player.fenceSegments.filter(segment => segment.type !== 'palisade').length
         const free = Math.floor(Math.min(15, before + edges.length) / 3) - Math.floor(Math.min(15, before) / 3)
-        return free > 0 ? {
-          costs: { wood: -free },
+        if (free <= 0) return
+        const costs = { wood: -free }
+        return {
+          costs,
           costAttribution: [
-            {
-              sourceCard: CARD_ID,
-              costs: { wood: -free },
-            },
+            { sourceCard: CARD_ID, costs },
           ],
-        } : undefined
+        }
       },
     },
   ],

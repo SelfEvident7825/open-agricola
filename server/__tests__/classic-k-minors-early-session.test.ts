@@ -1,7 +1,7 @@
 import { afterEach, describe, expect, it } from 'vitest'
 import { getActiveCardRegistry } from '../../shared/cards/active-registry'
 import { deriveVirtualTileCol, getLogicalFields } from '../../shared/cards/helpers/card-field'
-import { getCardStack } from '../../shared/cards/helpers/card-state'
+import { getCardStack, readCardResourceStats } from '../../shared/cards/helpers/card-state'
 import { markAllWorkersUsed } from '../../shared/domain/player'
 import type { GameState, Resource } from '../../shared/contract/types'
 import { GameSession, type SessionResponse } from '../game/authoritative-session'
@@ -468,10 +468,12 @@ describe('classic K117 and K121 delayed and exact payment', () => {
     expect(response.state.players[0]!.resources.wood).toBe(0)
     expect(response.state.players[0]!.stableTiles).toHaveLength(2)
     expect(response.state.players[0]!.cardStates[id(121)]?.extraData?.stableBuilt).toBe(true)
+    expect(readCardResourceStats(response.state.players[0]!, id(121))?.saved).toEqual({ wood: 2 })
     assertCardEvent(response, 121)
     const undone = ok(session.undoAction())
     expect(undone.state.players[0]!.resources.wood).toBe(2)
     expect(undone.state.players[0]!.cardStates[id(121)]?.extraData?.stableBuilt).toBeUndefined()
+    expect(readCardResourceStats(undone.state.players[0]!, id(121))?.saved.wood ?? 0).toBe(0)
   })
   it('K121 can build the free stable penniless and does not consume it for an invalid placement', () => {
     const session = setup([121], undefined, true)
@@ -494,10 +496,13 @@ describe('classic K117 and K121 delayed and exact payment', () => {
     expect(response.state.players[0]!.resources.wood).toBe(0)
     expect(response.state.players[0]!.fenceSegments).toHaveLength(6)
     expect(response.state.players[0]!.pastures).toHaveLength(1)
+    expect(readCardResourceStats(response.state.players[0]!, id(121))?.saved).toEqual({ wood: 2 })
     expect(response.state.events.some(event => event.type === 'farm.fenceBuilt')).toBe(true)
     expect(response.state.log.length).toBeGreaterThan(0)
     expect(response.scores).toHaveLength(4)
-    expect(ok(session.undoAction()).state.players[0]!.resources.wood).toBe(4)
+    const undone = ok(session.undoAction())
+    expect(undone.state.players[0]!.resources.wood).toBe(4)
+    expect(readCardResourceStats(undone.state.players[0]!, id(121))?.saved.wood ?? 0).toBe(0)
   })
 })
 
