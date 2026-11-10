@@ -897,7 +897,7 @@ Configuration follows the official [Grafana auth proxy documentation](https://gr
 
 ## Classic Agricola preview
 
-The game-creation form offers a four-player classic edition for ordinary multiplayer and hotseat games. Revised games remain the default. Classic games exclude team/multihand modes, expansions and custom cards. Dealing uses implemented classic cards only, separately from the revised pool. All 126 source E-deck cards and all 91 source I-deck cards have native implementations. The imported collection contains 1,024 card faces, 270 native implementations and 754 reference-only cards; reference-only cards are never dealt.
+The game-creation form offers a four-player classic edition for ordinary multiplayer and hotseat games. Revised games remain the default. Classic games exclude team/multihand modes, expansions and custom cards. Dealing uses implemented classic cards only, separately from the revised pool. All 126 source E-deck cards, 91 source I-deck cards and 91 source K-deck cards have native implementations. The imported collection contains 1,024 card faces, 342 native implementations and 682 reference-only cards; reference-only cards are never dealt.
 
 Database migration `037-classic-edition.sql` adds the room edition with a `revised` default for retained rooms. The edition is preserved in room metadata, state recovery and rematches. It does not reset existing sessions or replace their hands. Follow the retained-game compatibility procedure above before deployment.
 
