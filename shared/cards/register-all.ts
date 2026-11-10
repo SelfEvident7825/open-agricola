@@ -1212,25 +1212,97 @@ import { OLD_I96_ReedExchange } from './classic/I/OLD_I96_ReedExchange'
 import { OLD_I97_Slaughterhouse } from './classic/I/OLD_I97_Slaughterhouse'
 import { OLD_I98_SchnapsDistillery } from './classic/I/OLD_I98_SchnapsDistillery'
 import { OLD_I99_StrawthatchedRoof } from './classic/I/OLD_I99_StrawthatchedRoof'
+import { OLD_K105_Acreage } from './classic/K/OLD_K105_Acreage'
+import { OLD_K106_Bakehouse } from './classic/K/OLD_K106_Bakehouse'
+import { OLD_K107_Lumber } from './classic/K/OLD_K107_Lumber'
+import { OLD_K108_Beehive } from './classic/K/OLD_K108_Beehive'
+import { OLD_K109_SpitRoast } from './classic/K/OLD_K109_SpitRoast'
+import { OLD_K110_Brewery } from './classic/K/OLD_K110_Brewery'
+import { OLD_K111_BreadPaddle } from './classic/K/OLD_K111_BreadPaddle'
 import { OLD_K112_Bookshelf } from './classic/K/OLD_K112_Bookshelf'
 import { OLD_K113_Flail } from './classic/K/OLD_K113_Flail'
 import { OLD_K114_DuckPond } from './classic/K/OLD_K114_DuckPond'
 import { OLD_K115_SwingPlough } from './classic/K/OLD_K115_SwingPlough'
 import { OLD_K116_Granary } from './classic/K/OLD_K116_Granary'
 import { OLD_K117_Greenhouse } from './classic/K/OLD_K117_Greenhouse'
+import { OLD_K118_LiquidManure } from './classic/K/OLD_K118_LiquidManure'
+import { OLD_K119_CrookedPlough } from './classic/K/OLD_K119_CrookedPlough'
 import { OLD_K120_HouseGoat } from './classic/K/OLD_K120_HouseGoat'
+import { OLD_K121_Sawhorse } from './classic/K/OLD_K121_Sawhorse'
+import { OLD_K122_Sawmill } from './classic/K/OLD_K122_Sawmill'
+import { OLD_K123_WoodenStrongbox } from './classic/K/OLD_K123_WoodenStrongbox'
+import { OLD_K124_Yoke } from './classic/K/OLD_K124_Yoke'
+import { OLD_K125_Broom } from './classic/K/OLD_K125_Broom'
+import { OLD_K126_LandingNet } from './classic/K/OLD_K126_LandingNet'
+import { OLD_K127_Clapper } from './classic/K/OLD_K127_Clapper'
+import { OLD_K128_CookingHearth } from './classic/K/OLD_K128_CookingHearth'
+import { OLD_K129_CornSheaf } from './classic/K/OLD_K129_CornSheaf'
+import { OLD_K130_HerbGarden } from './classic/K/OLD_K130_HerbGarden'
 import { OLD_K131_ClayPit } from './classic/K/OLD_K131_ClayPit'
+import { OLD_K132_ClayHutExtension } from './classic/K/OLD_K132_ClayHutExtension'
 import { OLD_K133_MilkingStool } from './classic/K/OLD_K133_MilkingStool'
+import { OLD_K134_OxTeam } from './classic/K/OLD_K134_OxTeam'
+import { OLD_K135_Horse } from './classic/K/OLD_K135_Horse'
+import { OLD_K136_BrushwoodRoof } from './classic/K/OLD_K136_BrushwoodRoof'
+import { OLD_K137_TurnipField } from './classic/K/OLD_K137_TurnipField'
+import { OLD_K138_ReedHut } from './classic/K/OLD_K138_ReedHut'
 import { OLD_K139_SleepingCorner } from './classic/K/OLD_K139_SleepingCorner'
+import { OLD_K140_SwanLake } from './classic/K/OLD_K140_SwanLake'
+import { OLD_K141_BoarBreeding } from './classic/K/OLD_K141_BoarBreeding'
 import { OLD_K142_StoneCart } from './classic/K/OLD_K142_StoneCart'
+import { OLD_K143_StoneExchange } from './classic/K/OLD_K143_StoneExchange'
+import { OLD_K144_Mansion } from './classic/K/OLD_K144_Mansion'
+import { OLD_K145_ForestPasture } from './classic/K/OLD_K145_ForestPasture'
 import { OLD_K146_Loom } from './classic/K/OLD_K146_Loom'
+import { OLD_K266_Serf } from './classic/K/OLD_K266_Serf'
 import { OLD_K267_AdoptiveParents } from './classic/K/OLD_K267_AdoptiveParents'
+import { OLD_K268_Pieceworker } from './classic/K/OLD_K268_Pieceworker'
+import { OLD_K269_Acrobat } from './classic/K/OLD_K269_Acrobat'
+import { OLD_K270_WetNurse } from './classic/K/OLD_K270_WetNurse'
+import { OLD_K271_Educator } from './classic/K/OLD_K271_Educator'
+import { OLD_K272_FrameBuilder } from './classic/K/OLD_K272_FrameBuilder'
+import { OLD_K273_BasinMaker } from './classic/K/OLD_K273_BasinMaker'
 import { OLD_K274_OrganicFarmer } from './classic/K/OLD_K274_OrganicFarmer'
+import { OLD_K275_PerpetualStudent } from './classic/K/OLD_K275_PerpetualStudent'
+import { OLD_K276_Constable } from './classic/K/OLD_K276_Constable'
+import { OLD_K277_Manufacturer } from './classic/K/OLD_K277_Manufacturer'
+import { OLD_K278_Forester } from './classic/K/OLD_K278_Forester'
+import { OLD_K279_Scholar } from './classic/K/OLD_K279_Scholar'
+import { OLD_K280_Tanner } from './classic/K/OLD_K280_Tanner'
+import { OLD_K281_TravelingSalesman } from './classic/K/OLD_K281_TravelingSalesman'
 import { OLD_K282_HouseSteward } from './classic/K/OLD_K282_HouseSteward'
+import { OLD_K283_WoodDeliveryman } from './classic/K/OLD_K283_WoodDeliveryman'
+import { OLD_K284_WoodDistributor } from './classic/K/OLD_K284_WoodDistributor'
+import { OLD_K285_Tinsmith } from './classic/K/OLD_K285_Tinsmith'
+import { OLD_K286_Smallholder } from './classic/K/OLD_K286_Smallholder'
+import { OLD_K287_StorehouseClerk } from './classic/K/OLD_K287_StorehouseClerk'
 import { OLD_K288_StorehouseKeeper } from './classic/K/OLD_K288_StorehouseKeeper'
+import { OLD_K289_Countryman } from './classic/K/OLD_K289_Countryman'
+import { OLD_K290_ClayWorker } from './classic/K/OLD_K290_ClayWorker'
+import { OLD_K291_Lover } from './classic/K/OLD_K291_Lover'
+import { OLD_K292_MarketWoman } from './classic/K/OLD_K292_MarketWoman'
 import { OLD_K293_Ploughman } from './classic/K/OLD_K293_Ploughman'
 import { OLD_K294_BrushwoodCollector } from './classic/K/OLD_K294_BrushwoodCollector'
+import { OLD_K295_CattleBreeder } from './classic/K/OLD_K295_CattleBreeder'
 import { OLD_K296_SeedSeller } from './classic/K/OLD_K296_SeedSeller'
+import { OLD_K297_SheepFarmer } from './classic/K/OLD_K297_SheepFarmer'
+import { OLD_K298_ShepherdBoy } from './classic/K/OLD_K298_ShepherdBoy'
+import { OLD_K299_Slaughterman } from './classic/K/OLD_K299_Slaughterman'
+import { OLD_K300_SchnapsDistiller } from './classic/K/OLD_K300_SchnapsDistiller'
+import { OLD_K301_WoodCarver } from './classic/K/OLD_K301_WoodCarver'
+import { OLD_K302_PigWhisperer } from './classic/K/OLD_K302_PigWhisperer'
+import { OLD_K303_StoneBreaker } from './classic/K/OLD_K303_StoneBreaker'
+import { OLD_K304_Veterinarian } from './classic/K/OLD_K304_Veterinarian'
+import { OLD_K305_AnimalHandler } from './classic/K/OLD_K305_AnimalHandler'
+import { OLD_K306_AnimalTamer } from './classic/K/OLD_K306_AnimalTamer'
+import { OLD_K307_AnimalBreeder } from './classic/K/OLD_K307_AnimalBreeder'
+import { OLD_K308_Foreman } from './classic/K/OLD_K308_Foreman'
+import { OLD_K309_Weaver } from './classic/K/OLD_K309_Weaver'
+import { OLD_K310_ResourceSeller } from './classic/K/OLD_K310_ResourceSeller'
+import { OLD_K311_Magician } from './classic/K/OLD_K311_Magician'
+import { OLD_K312_FenceOverseer } from './classic/K/OLD_K312_FenceOverseer'
+import { OLD_K339_Pelts } from './classic/K/OLD_K339_Pelts'
+import { OLD_K342_AnimalTrainer } from './classic/K/OLD_K342_AnimalTrainer'
 import { OLD_NL005_Studio } from './classic/NL/OLD_NL005_Studio'
 import { OLD_NL009_JunkRoom } from './classic/NL/OLD_NL009_JunkRoom'
 import { OLD_NL012_Brook } from './classic/NL/OLD_NL012_Brook'
@@ -2486,25 +2558,97 @@ export const ALL_CARD_IMPLS: Readonly<Record<string, CardImpl>> = {
   'OLD_I97_Slaughterhouse': OLD_I97_Slaughterhouse.impl,
   'OLD_I98_SchnapsDistillery': OLD_I98_SchnapsDistillery.impl,
   'OLD_I99_StrawthatchedRoof': OLD_I99_StrawthatchedRoof.impl,
+  'OLD_K105_Acreage': OLD_K105_Acreage.impl,
+  'OLD_K106_Bakehouse': OLD_K106_Bakehouse.impl,
+  'OLD_K107_Lumber': OLD_K107_Lumber.impl,
+  'OLD_K108_Beehive': OLD_K108_Beehive.impl,
+  'OLD_K109_SpitRoast': OLD_K109_SpitRoast.impl,
+  'OLD_K110_Brewery': OLD_K110_Brewery.impl,
+  'OLD_K111_BreadPaddle': OLD_K111_BreadPaddle.impl,
   'OLD_K112_Bookshelf': OLD_K112_Bookshelf.impl,
   'OLD_K113_Flail': OLD_K113_Flail.impl,
   'OLD_K114_DuckPond': OLD_K114_DuckPond.impl,
   'OLD_K115_SwingPlough': OLD_K115_SwingPlough.impl,
   'OLD_K116_Granary': OLD_K116_Granary.impl,
   'OLD_K117_Greenhouse': OLD_K117_Greenhouse.impl,
+  'OLD_K118_LiquidManure': OLD_K118_LiquidManure.impl,
+  'OLD_K119_CrookedPlough': OLD_K119_CrookedPlough.impl,
   'OLD_K120_HouseGoat': OLD_K120_HouseGoat.impl,
+  'OLD_K121_Sawhorse': OLD_K121_Sawhorse.impl,
+  'OLD_K122_Sawmill': OLD_K122_Sawmill.impl,
+  'OLD_K123_WoodenStrongbox': OLD_K123_WoodenStrongbox.impl,
+  'OLD_K124_Yoke': OLD_K124_Yoke.impl,
+  'OLD_K125_Broom': OLD_K125_Broom.impl,
+  'OLD_K126_LandingNet': OLD_K126_LandingNet.impl,
+  'OLD_K127_Clapper': OLD_K127_Clapper.impl,
+  'OLD_K128_CookingHearth': OLD_K128_CookingHearth.impl,
+  'OLD_K129_CornSheaf': OLD_K129_CornSheaf.impl,
+  'OLD_K130_HerbGarden': OLD_K130_HerbGarden.impl,
   'OLD_K131_ClayPit': OLD_K131_ClayPit.impl,
+  'OLD_K132_ClayHutExtension': OLD_K132_ClayHutExtension.impl,
   'OLD_K133_MilkingStool': OLD_K133_MilkingStool.impl,
+  'OLD_K134_OxTeam': OLD_K134_OxTeam.impl,
+  'OLD_K135_Horse': OLD_K135_Horse.impl,
+  'OLD_K136_BrushwoodRoof': OLD_K136_BrushwoodRoof.impl,
+  'OLD_K137_TurnipField': OLD_K137_TurnipField.impl,
+  'OLD_K138_ReedHut': OLD_K138_ReedHut.impl,
   'OLD_K139_SleepingCorner': OLD_K139_SleepingCorner.impl,
+  'OLD_K140_SwanLake': OLD_K140_SwanLake.impl,
+  'OLD_K141_BoarBreeding': OLD_K141_BoarBreeding.impl,
   'OLD_K142_StoneCart': OLD_K142_StoneCart.impl,
+  'OLD_K143_StoneExchange': OLD_K143_StoneExchange.impl,
+  'OLD_K144_Mansion': OLD_K144_Mansion.impl,
+  'OLD_K145_ForestPasture': OLD_K145_ForestPasture.impl,
   'OLD_K146_Loom': OLD_K146_Loom.impl,
+  'OLD_K266_Serf': OLD_K266_Serf.impl,
   'OLD_K267_AdoptiveParents': OLD_K267_AdoptiveParents.impl,
+  'OLD_K268_Pieceworker': OLD_K268_Pieceworker.impl,
+  'OLD_K269_Acrobat': OLD_K269_Acrobat.impl,
+  'OLD_K270_WetNurse': OLD_K270_WetNurse.impl,
+  'OLD_K271_Educator': OLD_K271_Educator.impl,
+  'OLD_K272_FrameBuilder': OLD_K272_FrameBuilder.impl,
+  'OLD_K273_BasinMaker': OLD_K273_BasinMaker.impl,
   'OLD_K274_OrganicFarmer': OLD_K274_OrganicFarmer.impl,
+  'OLD_K275_PerpetualStudent': OLD_K275_PerpetualStudent.impl,
+  'OLD_K276_Constable': OLD_K276_Constable.impl,
+  'OLD_K277_Manufacturer': OLD_K277_Manufacturer.impl,
+  'OLD_K278_Forester': OLD_K278_Forester.impl,
+  'OLD_K279_Scholar': OLD_K279_Scholar.impl,
+  'OLD_K280_Tanner': OLD_K280_Tanner.impl,
+  'OLD_K281_TravelingSalesman': OLD_K281_TravelingSalesman.impl,
   'OLD_K282_HouseSteward': OLD_K282_HouseSteward.impl,
+  'OLD_K283_WoodDeliveryman': OLD_K283_WoodDeliveryman.impl,
+  'OLD_K284_WoodDistributor': OLD_K284_WoodDistributor.impl,
+  'OLD_K285_Tinsmith': OLD_K285_Tinsmith.impl,
+  'OLD_K286_Smallholder': OLD_K286_Smallholder.impl,
+  'OLD_K287_StorehouseClerk': OLD_K287_StorehouseClerk.impl,
   'OLD_K288_StorehouseKeeper': OLD_K288_StorehouseKeeper.impl,
+  'OLD_K289_Countryman': OLD_K289_Countryman.impl,
+  'OLD_K290_ClayWorker': OLD_K290_ClayWorker.impl,
+  'OLD_K291_Lover': OLD_K291_Lover.impl,
+  'OLD_K292_MarketWoman': OLD_K292_MarketWoman.impl,
   'OLD_K293_Ploughman': OLD_K293_Ploughman.impl,
   'OLD_K294_BrushwoodCollector': OLD_K294_BrushwoodCollector.impl,
+  'OLD_K295_CattleBreeder': OLD_K295_CattleBreeder.impl,
   'OLD_K296_SeedSeller': OLD_K296_SeedSeller.impl,
+  'OLD_K297_SheepFarmer': OLD_K297_SheepFarmer.impl,
+  'OLD_K298_ShepherdBoy': OLD_K298_ShepherdBoy.impl,
+  'OLD_K299_Slaughterman': OLD_K299_Slaughterman.impl,
+  'OLD_K300_SchnapsDistiller': OLD_K300_SchnapsDistiller.impl,
+  'OLD_K301_WoodCarver': OLD_K301_WoodCarver.impl,
+  'OLD_K302_PigWhisperer': OLD_K302_PigWhisperer.impl,
+  'OLD_K303_StoneBreaker': OLD_K303_StoneBreaker.impl,
+  'OLD_K304_Veterinarian': OLD_K304_Veterinarian.impl,
+  'OLD_K305_AnimalHandler': OLD_K305_AnimalHandler.impl,
+  'OLD_K306_AnimalTamer': OLD_K306_AnimalTamer.impl,
+  'OLD_K307_AnimalBreeder': OLD_K307_AnimalBreeder.impl,
+  'OLD_K308_Foreman': OLD_K308_Foreman.impl,
+  'OLD_K309_Weaver': OLD_K309_Weaver.impl,
+  'OLD_K310_ResourceSeller': OLD_K310_ResourceSeller.impl,
+  'OLD_K311_Magician': OLD_K311_Magician.impl,
+  'OLD_K312_FenceOverseer': OLD_K312_FenceOverseer.impl,
+  'OLD_K339_Pelts': OLD_K339_Pelts.impl,
+  'OLD_K342_AnimalTrainer': OLD_K342_AnimalTrainer.impl,
   'OLD_NL005_Studio': OLD_NL005_Studio.impl,
   'OLD_NL009_JunkRoom': OLD_NL009_JunkRoom.impl,
   'OLD_NL012_Brook': OLD_NL012_Brook.impl,

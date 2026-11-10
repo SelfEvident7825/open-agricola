@@ -71,11 +71,13 @@ describe('card encyclopedia catalog membership (D1)', () => {
   it('marks classic reference-only cards and keeps their original printed number', () => {
     const classic = entries.filter(entry => entry.group === 'classic')
     expect(classic).toHaveLength(1024)
-    expect(classic.filter(entry => entry.availableInGame)).toHaveLength(270)
-    const classicEI = classic.filter(entry => /^OLD_[EI]\d/.test(entry.sourceId))
-    expect(classicEI).toHaveLength(217)
-    expect(classicEI.every(entry => entry.availableInGame)).toBe(true)
-    expect(classic.filter(entry => entry.availableInGame === false)).toHaveLength(754)
+    expect(classic.filter(entry => entry.availableInGame)).toHaveLength(342)
+    for (const [deck, expected] of [['E', 126], ['I', 91], ['K', 91]] as const) {
+      const cards = classic.filter(entry => new RegExp(`^OLD_${deck}\\d`).test(entry.sourceId))
+      expect(cards, `${deck} source deck`).toHaveLength(expected)
+      expect(cards.every(entry => entry.availableInGame), `${deck} native availability`).toBe(true)
+    }
+    expect(classic.filter(entry => entry.availableInGame === false)).toHaveLength(682)
     expect(classic.find(entry => entry.sourceId === 'OLD_E30_Canoe')?.displayNumber).toBe('E30')
   })
 })

@@ -1,17 +1,25 @@
 {
-  "date": "2026-11-09",
-  "build": "classic-e-i-review-fixes",
-  "applicationBase": "d4fbac1b912df3b85418df6bf07e17dc197d0443",
-  "deliveryOrigin": "Classic/E and I source deliveries integrated onto current upstream history.",
+  "date": "2026-11-10",
+  "build": "classic-e-i-k",
+  "applicationBase": "f4a112409241c973c501723a6c6ac8b8537b8c85",
+  "deliveryOrigin": "Complete E/I archive rebased onto upstream main; K deck implemented with reviewed shared runtime fixes.",
   "languagePin": {
     "repository": "SelfEvident7825/open-agricola-i18n",
-    "revision": "3055aeca9e67f0c8f3ed7077e79047cd0c23006e",
-    "manifestSha256": "19e057a4f5c18a39af0283dc6d08367d6fb2ce24f0790ff49c97ff65b8bc2320"
+    "revision": "b80e8da8926d57ee71cdbc6bc02d442dc7c476d6",
+    "manifestSha256": "37dfd9a591cf2cfccc120e965a078104a6dcd158e49e6116bac9c2d2964c234c"
+  },
+  "languageVerification": {
+    "localTests": 10,
+    "localFiles": 3,
+    "githubRun": "https://github.com/SelfEvident7825/open-agricola-i18n/actions/runs/42809635993",
+    "status": "PASS",
+    "upstreamPullRequest": "https://github.com/titanxxh/open-agricola-i18n/pull/21",
+    "upstreamStatus": "Awaiting maintainer workflow approval"
   },
   "classic": {
     "handCards": 1024,
-    "nativeEffects": 270,
-    "referenceOnly": 754,
+    "nativeEffects": 342,
+    "referenceOnly": 682,
     "E": {
       "total": 126,
       "nativeEffects": 126,
@@ -20,90 +28,105 @@
     "I": {
       "total": 91,
       "nativeEffects": 91,
+      "referenceOnly": 0
+    },
+    "K": {
+      "total": 91,
+      "minors": 43,
+      "occupations": 48,
+      "nativeEffects": 91,
       "referenceOnly": 0,
-      "newlyImplemented": 71,
-      "previouslyImplemented": 20
+      "newlyImplemented": 72,
+      "previouslyImplementedAndReviewed": 19
     }
   },
   "checks": [
     {
-      "scope": "Classic E/I sessions, revised mechanism regressions, draft/recovery, lobby and repaired runtime invariants",
-      "status": "PASS",
-      "files": 93,
-      "passed": 1464,
-      "failed": 0,
-      "skipped": 1
-    },
-    {
-      "scope": "Encyclopedia components, full catalog and symmetric bilingual search",
-      "status": "PASS",
-      "files": 18,
-      "passed": 158
-    },
-    {
-      "scope": "PlayerCard and public asset URL/manifest contracts",
-      "status": "PASS",
-      "files": 3,
-      "passed": 81
-    },
-    {
-      "scope": "Classic E/I rules and nested card generation",
-      "status": "PASS",
-      "files": 4,
-      "passed": 173
-    },
-    {
-      "scope": "Static and inline import relocation, nested generator and manifest fixtures",
-      "status": "PASS",
-      "passed": 15
-    },
-    {
-      "scope": "Source boundaries and card generation fixtures",
-      "status": "PASS",
-      "passed": 16
-    },
-    {
-      "scope": "TypeScript project and architecture type checks",
+      "scope": "All K card behavior: 206 four-player Session cases and 31 direct rules cases",
+      "files": 8,
+      "passed": 237,
       "status": "PASS"
     },
     {
-      "scope": "Changed card, helper, generator, component and rule files ESLint",
-      "status": "PASS",
-      "errors": 0,
-      "notes": "Existing room-router Hook naming warnings remain."
+      "scope": "All K plus classic opening, K-only deal/draft and unfinished-draft recovery",
+      "files": 9,
+      "passed": 262,
+      "status": "PASS"
     },
     {
-      "scope": "Generated card synchronization and test project coverage",
-      "status": "PASS",
-      "discoveredTestFiles": 2127
+      "scope": "E/I/K cards, E/I review regressions and classic setup",
+      "files": 18,
+      "passed": 662,
+      "status": "PASS"
     },
     {
-      "scope": "Classic source relocation audit and disposable importer rerun",
-      "status": "PASS",
+      "scope": "Payment solver and occupation food-shortfall behavior",
+      "files": 27,
+      "passed": 302,
+      "status": "PASS"
+    },
+    {
+      "scope": "Occupation context forwarding: lessons, gate, Freshman, Confidant and receipts",
+      "files": 8,
+      "passed": 50,
+      "status": "PASS"
+    },
+    {
+      "scope": "Catalog, import preservation and card source generation",
+      "files": 7,
+      "passed": 36,
+      "status": "PASS"
+    },
+    {
+      "scope": "Disposable importer preserves manual sources byte-for-byte",
       "cards": 1024,
-      "manualPortsPreserved": 217
+      "manualPortsPreserved": 308,
+      "status": "PASS"
     },
     {
-      "scope": "Asset migration SHA-256 equality and asset build byte validation",
+      "scope": "Changed TypeScript ESLint",
+      "files": 145,
+      "errors": 0,
+      "warnings": 0,
+      "status": "PASS"
+    },
+    {
+      "scope": "Generated registration, implementation boundaries, dependency graph and bilingual keys",
       "status": "PASS",
-      "migratedImages": 1024,
-      "validatedAssetFiles": 2156
+      "runtimeCycles": 0,
+      "missingTranslationKeys": 0
+    },
+    {
+      "scope": "Architecture and verification-tool TypeScript checks, document budgets and static architecture tests",
+      "status": "PASS"
+    },
+    {
+      "scope": "Production project and complete test TypeScript projects",
+      "status": "PASS",
+      "commands": [
+        "tsc -b --pretty false",
+        "tsc -p tsconfig.tests.json --noEmit --pretty false"
+      ]
+    },
+    {
+      "scope": "Production frontend build",
+      "status": "BLOCKED",
+      "reason": "Pinned deployed asset manifest lacks the 1,024 classic card images; first missing path is assets/classic/BI/BI01.png."
     }
   ],
   "limitations": [
-    "One existing unrelated E027_PiggyBank renovation test is skipped.",
-    "Test scopes above overlap and must not be added together. These are local checks, not a full repository or all-card-combination certification.",
-    "Database integration was not run locally: Docker/PostgreSQL are unavailable.",
-    "The canonical browser harness stopped before execution because the local tsx CLI could not open its IPC pipe. No new Playwright result is claimed.",
-    "The application asset manifest includes the proposed classic images, while public-assets.ref intentionally remains the currently deployed upstream revision. Remote asset validation blocks until the companion asset PR is merged, deployed and the application pin is updated.",
-    "GitHub CI is authoritative for the current PR head; the prior head had failing runtime and encyclopedia checks addressed by this revision. Check the live PR for current results before merging or deploying.",
-    "The language pin targets the published companion fork revision until the language PR is accepted upstream."
+    "Test scopes overlap and must not be added together. These local checks do not certify every card combination or a full played match.",
+    "No new browser gameplay result is claimed. Four-player rule tests run the authoritative GameSession.",
+    "No production deployment or upstream application merge was performed.",
+    "GitHub application verification must be checked on the delivered head; local passing tests do not replace remote results."
   ],
-  "reviewedPullRequest": "https://github.com/titanxxh/open-agricola/pull/1623",
   "assetDependency": {
     "pullRequest": "https://github.com/titanxxh/open-agricola-assets/pull/1",
     "proposedRevision": "7bfa83f676eedb201f1a8b2a50bd52c939bf2226",
     "currentlyDeployedPin": "dcd4ecbdb5cbf13520d833e0e7f5f872e5f9ec9c",
-    "status": "Pending upstream merge and canonical Pages deployment; update public-assets.ref only after successful deployment and live verification."
+    "deployedFiles": 1132,
+    "requiredFiles": 2156,
+    "missingClassicFiles": 1024,
+    "status": "Pending upstream merge and canonical Pages deployment. Keep the deployed pin until deployment and live asset verification succeed."
   }
 }

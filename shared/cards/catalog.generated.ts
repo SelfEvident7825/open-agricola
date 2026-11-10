@@ -18479,9 +18479,7 @@ const batch10: readonly GeneratedCatalogCardDefinition[] = [
     "desc": [
       "打出此卡时，额外支付2份食物。游戏结束时，你的每间石屋都额外获得1分。"
     ],
-    "cost": {
-      "food": 2
-    },
+    "cost": {},
     "vp": 0,
     "prerequisite": "",
     "players": "1+",
@@ -33441,7 +33439,15 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     },
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
+    "isField": true,
+    "cardField": {
+      "allowedCrops": [
+        "grain"
+      ],
+      "capacity": 2,
+      "separateFields": true
+    },
     "artUrl": "/assets/classic/K/K105.png",
     "locales": {
       "zh": {
@@ -33471,7 +33477,31 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "退还1个烤炉",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
+    "returnCards": [
+      "Major_ClayOven",
+      "Major_StoneOven",
+      "OLD_E27_WoodredOven",
+      "OLD_WA012_CastironOven",
+      "OLD_G065_BeehiveOven",
+      "OLD_G073_ErrantOven"
+    ],
+    "isBaking": true,
+    "ovenIdentity": true,
+    "exchanges": [
+      {
+        "from": {
+          "grain": 1
+        },
+        "to": {
+          "food": 5
+        },
+        "triggers": [
+          "bake-bread"
+        ],
+        "max": 2
+      }
+    ],
     "artUrl": "/assets/classic/K/K106.png",
     "locales": {
       "zh": {
@@ -33504,7 +33534,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     },
     "passing": true,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K107.png",
     "locales": {
       "zh": {
@@ -33538,7 +33568,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     },
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K108.png",
     "locales": {
       "zh": {
@@ -33568,7 +33598,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K109.png",
     "locales": {
       "zh": {
@@ -33599,7 +33629,21 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": false,
     "extraVp": true,
-    "implemented": false,
+    "implemented": true,
+    "exchanges": [
+      {
+        "from": {
+          "grain": 1
+        },
+        "to": {
+          "food": 3
+        },
+        "triggers": [
+          "harvest"
+        ],
+        "max": 1
+      }
+    ],
     "artUrl": "/assets/classic/K/K110.png",
     "locales": {
       "zh": {
@@ -33629,7 +33673,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K111.png",
     "locales": {
       "zh": {
@@ -33764,6 +33808,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "passing": false,
     "extraVp": false,
     "implemented": true,
+    "plowEffect": true,
     "artUrl": "/assets/classic/K/K115.png",
     "locales": {
       "zh": {
@@ -33862,7 +33907,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "动物×4",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K118.png",
     "locales": {
       "zh": {
@@ -33895,7 +33940,8 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     },
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
+    "plowEffect": true,
     "artUrl": "/assets/classic/K/K119.png",
     "locales": {
       "zh": {
@@ -33955,7 +34001,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K121.png",
     "locales": {
       "zh": {
@@ -33983,7 +34029,28 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "退还A7家具工坊",
     "passing": false,
     "extraVp": true,
-    "implemented": false,
+    "implemented": true,
+    "returnCards": [
+      "Major_Joinery"
+    ],
+    "alsoCountsAs": [
+      "major"
+    ],
+    "joineryIdentity": true,
+    "exchanges": [
+      {
+        "from": {
+          "wood": 1
+        },
+        "to": {
+          "food": 3
+        },
+        "triggers": [
+          "harvest"
+        ],
+        "max": 1
+      }
+    ],
     "artUrl": "/assets/classic/K/K122.png",
     "locales": {
       "zh": {
@@ -34013,7 +34080,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": false,
     "extraVp": true,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K123.png",
     "locales": {
       "zh": {
@@ -34043,7 +34110,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "牛×1",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K124.png",
     "locales": {
       "zh": {
@@ -34073,7 +34140,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K125.png",
     "locales": {
       "zh": {
@@ -34103,7 +34170,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K126.png",
     "locales": {
       "zh": {
@@ -34133,7 +34200,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K127.png",
     "locales": {
       "zh": {
@@ -34147,6 +34214,71 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "kind": "minor"
   },
   {
+    "returnCards": [
+      "Major_Fireplace1",
+      "Major_Fireplace2",
+      "OLD_E20_SimpleFireplace"
+    ],
+    "isCookery": true,
+    "isBaking": true,
+    "cookingHearthIdentity": true,
+    "exchanges": [
+      {
+        "from": {
+          "vegetable": 1
+        },
+        "to": {
+          "food": 3
+        },
+        "triggers": [
+          "anytime"
+        ]
+      },
+      {
+        "from": {
+          "sheep": 1
+        },
+        "to": {
+          "food": 2
+        },
+        "triggers": [
+          "anytime"
+        ]
+      },
+      {
+        "from": {
+          "boar": 1
+        },
+        "to": {
+          "food": 3
+        },
+        "triggers": [
+          "anytime"
+        ]
+      },
+      {
+        "from": {
+          "cattle": 1
+        },
+        "to": {
+          "food": 4
+        },
+        "triggers": [
+          "anytime"
+        ]
+      },
+      {
+        "from": {
+          "grain": 1
+        },
+        "to": {
+          "food": 3
+        },
+        "triggers": [
+          "bake-bread"
+        ]
+      }
+    ],
     "id": "OLD_K128_CookingHearth",
     "originalId": "K128_CookingHearth",
     "gameEdition": "classic",
@@ -34161,7 +34293,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "退还火炉",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K128.png",
     "locales": {
       "zh": {
@@ -34189,7 +34321,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": true,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K129.png",
     "locales": {
       "zh": {
@@ -34217,7 +34349,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "菜田×1",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K130.png",
     "locales": {
       "zh": {
@@ -34280,7 +34412,7 @@ const batch15: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": true,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K132.png",
     "locales": {
       "zh": {
@@ -34346,7 +34478,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "牛×2",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K134.png",
     "locales": {
       "zh": {
@@ -34374,7 +34506,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": false,
     "extraVp": true,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K135.png",
     "locales": {
       "zh": {
@@ -34405,7 +34537,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     },
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K136.png",
     "locales": {
       "zh": {
@@ -34419,6 +34551,13 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "kind": "minor"
   },
   {
+    "isField": true,
+    "cardField": {
+      "allowedCrops": [
+        "vegetable"
+      ],
+      "capacity": 1
+    },
     "id": "OLD_K137_TurnipField",
     "originalId": "K137_TurnipField",
     "gameEdition": "classic",
@@ -34436,7 +34575,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     },
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K137.png",
     "locales": {
       "zh": {
@@ -34467,7 +34606,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K138.png",
     "locales": {
       "zh": {
@@ -34529,7 +34668,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     },
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K140.png",
     "locales": {
       "zh": {
@@ -34559,7 +34698,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": true,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K141.png",
     "locales": {
       "zh": {
@@ -34607,6 +34746,14 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "kind": "minor"
   },
   {
+    "altCosts": [
+      {
+        "wood": 2
+      },
+      {
+        "clay": 2
+      }
+    ],
     "id": "OLD_K143_StoneExchange",
     "originalId": "K143_StoneExchange",
     "gameEdition": "classic",
@@ -34621,7 +34768,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": true,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K143.png",
     "locales": {
       "zh": {
@@ -34654,7 +34801,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "prerequisite": "",
     "passing": false,
     "extraVp": true,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K144.png",
     "locales": {
       "zh": {
@@ -34685,7 +34832,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     },
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K145.png",
     "locales": {
       "zh": {
@@ -34748,7 +34895,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "players": "1+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K266.png",
     "locales": {
       "zh": {
@@ -34807,7 +34954,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "players": "1+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K268.png",
     "locales": {
       "zh": {
@@ -34836,7 +34983,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "players": "1+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K269.png",
     "locales": {
       "zh": {
@@ -34865,7 +35012,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "players": "1+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K270.png",
     "locales": {
       "zh": {
@@ -34894,7 +35041,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "players": "1+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K271.png",
     "locales": {
       "zh": {
@@ -34923,7 +35070,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "players": "1+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K272.png",
     "locales": {
       "zh": {
@@ -34952,7 +35099,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "players": "1+",
     "passing": false,
     "extraVp": true,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K273.png",
     "locales": {
       "zh": {
@@ -35011,7 +35158,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "players": "1+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K275.png",
     "locales": {
       "zh": {
@@ -35040,7 +35187,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "players": "1+",
     "passing": false,
     "extraVp": true,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K276.png",
     "locales": {
       "zh": {
@@ -35069,7 +35216,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "players": "1+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K277.png",
     "locales": {
       "zh": {
@@ -35092,13 +35239,20 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "desc": [
       "你可以在此卡上播种3列木头。木头的播种和收割遵循小麦的一般规则。（不能被K286小农种植额外木头。此卡上未收割的木头不算作你的资源，不计算任何职业和发展卡分数。"
     ],
+    "isField": true,
+    "cardField": {
+      "allowedCrops": [
+        "wood"
+      ],
+      "capacity": 3
+    },
     "cost": {},
     "vp": 0,
     "prerequisite": "",
     "players": "1+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K278.png",
     "locales": {
       "zh": {
@@ -35127,7 +35281,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "players": "1+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K279.png",
     "locales": {
       "zh": {
@@ -35156,7 +35310,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "players": "1+",
     "passing": false,
     "extraVp": true,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K280.png",
     "locales": {
       "zh": {
@@ -35185,7 +35339,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "players": "1+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K281.png",
     "locales": {
       "zh": {
@@ -35244,7 +35398,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "players": "1+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K283.png",
     "locales": {
       "zh": {
@@ -35273,7 +35427,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "players": "1+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K284.png",
     "locales": {
       "zh": {
@@ -35302,7 +35456,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "players": "1+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K285.png",
     "locales": {
       "zh": {
@@ -35331,7 +35485,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "players": "1+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K286.png",
     "locales": {
       "zh": {
@@ -35360,7 +35514,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "players": "1+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K287.png",
     "locales": {
       "zh": {
@@ -35419,7 +35573,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "players": "4+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K289.png",
     "locales": {
       "zh": {
@@ -35448,7 +35602,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "players": "1+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K290.png",
     "locales": {
       "zh": {
@@ -35477,7 +35631,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "players": "1+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K291.png",
     "locales": {
       "zh": {
@@ -35506,7 +35660,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "players": "1+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K292.png",
     "locales": {
       "zh": {
@@ -35595,7 +35749,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "players": "3+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K295.png",
     "locales": {
       "zh": {
@@ -35649,12 +35803,26 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
       "每当你从行动格上获得羊时，你额外获得1只羊。（通过卡牌获得的羊不算）除繁殖阶段外，你可以随时把3只羊换成1只猪+1头牛，即使没有多余饲养空间。"
     ],
     "cost": {},
+    "exchanges": [
+      {
+        "from": {
+          "sheep": 3
+        },
+        "to": {
+          "boar": 1,
+          "cattle": 1
+        },
+        "triggers": [
+          "anytime"
+        ]
+      }
+    ],
     "vp": 0,
     "prerequisite": "",
     "players": "4+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K297.png",
     "locales": {
       "zh": {
@@ -35683,7 +35851,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "players": "3+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K298.png",
     "locales": {
       "zh": {
@@ -35712,7 +35880,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "players": "3+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K299.png",
     "locales": {
       "zh": {
@@ -35736,12 +35904,26 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
       "每个丰收时节的喂养阶段，你可以将至多1份蔬菜转化为5份食物。"
     ],
     "cost": {},
+    "exchanges": [
+      {
+        "from": {
+          "vegetable": 1
+        },
+        "to": {
+          "food": 5
+        },
+        "triggers": [
+          "harvest"
+        ],
+        "max": 1
+      }
+    ],
     "vp": 0,
     "prerequisite": "",
     "players": "3+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K300.png",
     "locales": {
       "zh": {
@@ -35770,7 +35952,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "players": "3+",
     "passing": false,
     "extraVp": true,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K301.png",
     "locales": {
       "zh": {
@@ -35799,7 +35981,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "players": "3+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K302.png",
     "locales": {
       "zh": {
@@ -35828,7 +36010,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "players": "3+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K303.png",
     "locales": {
       "zh": {
@@ -35857,7 +36039,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "players": "3+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K304.png",
     "locales": {
       "zh": {
@@ -35886,7 +36068,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "players": "3+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K305.png",
     "locales": {
       "zh": {
@@ -35915,7 +36097,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "players": "3+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K306.png",
     "locales": {
       "zh": {
@@ -35944,7 +36126,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "players": "4+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K307.png",
     "locales": {
       "zh": {
@@ -35973,7 +36155,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "players": "3+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K308.png",
     "locales": {
       "zh": {
@@ -36002,7 +36184,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "players": "3+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K309.png",
     "locales": {
       "zh": {
@@ -36031,7 +36213,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "players": "3+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K310.png",
     "locales": {
       "zh": {
@@ -36060,7 +36242,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "players": "3+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K311.png",
     "locales": {
       "zh": {
@@ -36089,7 +36271,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "players": "1+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K312.png",
     "locales": {
       "zh": {
@@ -36120,7 +36302,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     },
     "passing": false,
     "extraVp": true,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K339.png",
     "locales": {
       "zh": {
@@ -36149,7 +36331,7 @@ const batch16: readonly GeneratedCatalogCardDefinition[] = [
     "players": "1+",
     "passing": false,
     "extraVp": false,
-    "implemented": false,
+    "implemented": true,
     "artUrl": "/assets/classic/K/K342.png",
     "locales": {
       "zh": {

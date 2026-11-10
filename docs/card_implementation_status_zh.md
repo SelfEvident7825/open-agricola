@@ -129,4 +129,4 @@
 | `D178_SubstituteTeacher` | 注册 owner-only action space，三个可见 Lessons 格都实际 occupied 后可用，奖励为 1 building resource 或 grain+vegetable。 |
 | `D179_Bullcatcher` | 注册 owner-only action space，round slot 3 与 round slot 6 对应行动格都 occupied 且 owner 仍有可用工人时可用，使用后获得 1 cattle + 2 food。 |
 
-旧农试运行：1024 张手牌卡面，270 张原生迁移，754 张仅供查阅。源项目 E 包 126 张、I 包 91 张均已接入原生效果。清单与来源见 `docs/classic/migration-manifest.json`，原始 PHP 方法见 `reference/classic/source-cards.json`。集成覆盖不等于所有卡牌均通过规则验收。
+旧农试运行：1024 张手牌卡面，342 张原生迁移，682 张仅供查阅。源项目 E 包 126 张、I 包 91 张、K 包 91 张均已接入原生效果。清单与来源见 `docs/classic/migration-manifest.json`，原始 PHP 方法见 `reference/classic/source-cards.json`。集成覆盖不等于所有卡牌均通过规则验收。

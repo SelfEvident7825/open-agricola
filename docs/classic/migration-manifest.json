@@ -901,7 +901,8 @@
     "kind": "minor",
     "source": "K/K105_Acreage.php",
     "sourceSha256": "d43979da362b2d77e34605af330cca6a8ef2cd36995a0605c5eaacad5cf63027",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K106_Bakehouse",
@@ -909,7 +910,8 @@
     "kind": "minor",
     "source": "K/K106_Bakehouse.php",
     "sourceSha256": "ff6c22b8cdc7dde8a70c88fb857f39e0a7311507e61cfc1aaa3522dbe06cadaf",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K107_Lumber",
@@ -917,7 +919,8 @@
     "kind": "minor",
     "source": "K/K107_Lumber.php",
     "sourceSha256": "74c52757cf9f09b84f867755dd50a8455b965c9e61bfb6f068f2474674b0789f",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K108_Beehive",
@@ -925,7 +928,8 @@
     "kind": "minor",
     "source": "K/K108_Beehive.php",
     "sourceSha256": "480ea5e60bb352e9b590e1575497f9230011b82eb5c1741de2944739c45b5d97",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K109_SpitRoast",
@@ -933,7 +937,8 @@
     "kind": "minor",
     "source": "K/K109_SpitRoast.php",
     "sourceSha256": "63f234707aaaee0be3727654c625bc47cdd849cc21b05a3fe4f18927339f2d95",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K110_Brewery",
@@ -941,7 +946,8 @@
     "kind": "minor",
     "source": "K/K110_Brewery.php",
     "sourceSha256": "386084c0ea135f3fb24f0cbf6370b64fc994a56f63ff581978a3a93d7b8871e9",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K111_BreadPaddle",
@@ -949,7 +955,8 @@
     "kind": "minor",
     "source": "K/K111_BreadPaddle.php",
     "sourceSha256": "7c5a6c64280f6cc72d9c9ae34c8944aa4d4070b8f32f2f80365a451d39b76ba6",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K112_Bookshelf",
@@ -958,7 +965,8 @@
     "source": "K/K112_Bookshelf.php",
     "sourceSha256": "e5eb2b7d51169ac100ed62684e2cd6a4ba501031a3af69d5967c984ce94a4f9a",
     "status": "native-port",
-    "reusedFrom": "D049_Bookshelf"
+    "reusedFrom": "D049_Bookshelf",
+    "manual": true
   },
   {
     "id": "OLD_K113_Flail",
@@ -967,7 +975,8 @@
     "source": "K/K113_Flail.php",
     "sourceSha256": "cc9d9ca59a93c36896384322c9af0de551377e4990af54a81c43ab3083880930",
     "status": "native-port",
-    "reusedFrom": "A024_ThreshingBoard"
+    "reusedFrom": "A024_ThreshingBoard",
+    "manual": true
   },
   {
     "id": "OLD_K114_DuckPond",
@@ -976,7 +985,8 @@
     "source": "K/K114_DuckPond.php",
     "sourceSha256": "af789886c1a4a24e9af3fc64e63b4c9895c788dd445df3489f633eb06f5959f0",
     "status": "native-port",
-    "reusedFrom": "A044_PondHut"
+    "reusedFrom": "A044_PondHut",
+    "manual": true
   },
   {
     "id": "OLD_K115_SwingPlough",
@@ -985,7 +995,8 @@
     "source": "K/K115_SwingPlough.php",
     "sourceSha256": "b3a078e69a1c3a5e35f7144190bcb23d7c7680e6c4d3199c012df9615d58651a",
     "status": "native-port",
-    "reusedFrom": "C019_SwingPlow"
+    "reusedFrom": "C019_SwingPlow",
+    "manual": true
   },
   {
     "id": "OLD_K116_Granary",
@@ -994,7 +1005,8 @@
     "source": "K/K116_Granary.php",
     "sourceSha256": "06d7792d95d856ee0b48ab4a94272c52cabb46c7ac313b8573ca42e3ebe0aa32",
     "status": "native-port",
-    "reusedFrom": "C065_Granary"
+    "reusedFrom": "C065_Granary",
+    "manual": true
   },
   {
     "id": "OLD_K117_Greenhouse",
@@ -1003,7 +1015,8 @@
     "source": "K/K117_Greenhouse.php",
     "sourceSha256": "e1de95cb58676449acfe1cc560229b976af896f7edb2e2a851eb3663213fefab",
     "status": "native-port",
-    "reusedFrom": "D069_SmallGreenhouse"
+    "reusedFrom": "D069_SmallGreenhouse",
+    "manual": true
   },
   {
     "id": "OLD_K118_LiquidManure",
@@ -1011,7 +1024,8 @@
     "kind": "minor",
     "source": "K/K118_LiquidManure.php",
     "sourceSha256": "2b600825a99af52ddc8d0723c7c781d78e6033c5a8f6be2b11f588204840e846",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K119_CrookedPlough",
@@ -1019,7 +1033,8 @@
     "kind": "minor",
     "source": "K/K119_CrookedPlough.php",
     "sourceSha256": "e7d84a53752951d9479becdce1f016e3a28433bf44e9607ac3ee3e7682fee97b",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K120_HouseGoat",
@@ -1028,7 +1043,8 @@
     "source": "K/K120_HouseGoat.php",
     "sourceSha256": "2fefac04158c8fcabea45ca43165e30dcd05f4a71147125f52267174f97a8eb0",
     "status": "native-port",
-    "reusedFrom": "D012_MilkingPlace"
+    "reusedFrom": "D012_MilkingPlace",
+    "manual": true
   },
   {
     "id": "OLD_K121_Sawhorse",
@@ -1036,7 +1052,8 @@
     "kind": "minor",
     "source": "K/K121_Sawhorse.php",
     "sourceSha256": "3f5486edb0b59fb91424119c72a2ef449c424e753954bf974b1334faad55ec0f",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K122_Sawmill",
@@ -1044,7 +1061,8 @@
     "kind": "minor",
     "source": "K/K122_Sawmill.php",
     "sourceSha256": "a58e75de090431668b81d53a1492b25212fbe8020b5cb45b6d16f2c9b13ea5db",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K123_WoodenStrongbox",
@@ -1052,7 +1070,8 @@
     "kind": "minor",
     "source": "K/K123_WoodenStrongbox.php",
     "sourceSha256": "00cb667db47581127ddd6693d464ec5dfca0e2c2154905f8fcdb310f3205b029",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K124_Yoke",
@@ -1060,7 +1079,8 @@
     "kind": "minor",
     "source": "K/K124_Yoke.php",
     "sourceSha256": "67e81d6b44e9536ca798fa3b2b57218920a8b580f3b0fd2f7b3f20be121ec6d5",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K125_Broom",
@@ -1068,7 +1088,8 @@
     "kind": "minor",
     "source": "K/K125_Broom.php",
     "sourceSha256": "fc4e6e9f894c99c91d6ddae26b756e998c286fc668047d02c70133006443c789",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K126_LandingNet",
@@ -1076,7 +1097,8 @@
     "kind": "minor",
     "source": "K/K126_LandingNet.php",
     "sourceSha256": "c80a6ac03005854342e9aa2055a5b9ecf138ee36e5cf059266c88522162cc9d1",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K127_Clapper",
@@ -1084,7 +1106,8 @@
     "kind": "minor",
     "source": "K/K127_Clapper.php",
     "sourceSha256": "333dfd156c3790af38377ac3c8db680a7fade6e7a795a9cdb8a999fbca8a6896",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K128_CookingHearth",
@@ -1092,7 +1115,8 @@
     "kind": "minor",
     "source": "K/K128_CookingHearth.php",
     "sourceSha256": "39db98ea398870a5cfb362d7614c2359813ff86b7638525226a8a8228bf4dc99",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K129_CornSheaf",
@@ -1100,7 +1124,8 @@
     "kind": "minor",
     "source": "K/K129_CornSheaf.php",
     "sourceSha256": "b11e2aff2c7b8c787b9e953f92e60c9c1e31073b5a5fab9e4d77a42a84b0b657",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K130_HerbGarden",
@@ -1108,7 +1133,8 @@
     "kind": "minor",
     "source": "K/K130_HerbGarden.php",
     "sourceSha256": "dcd4adb07162fe75f5c283877fe792e47e9cffaacbcdbb47b2d32f0f5dd1c07f",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K131_ClayPit",
@@ -1117,7 +1143,8 @@
     "source": "K/K131_ClayPit.php",
     "sourceSha256": "18dacfeca1a3b96b6c6018cc53afd5347b6eb7bf8f2f9ed46262adb0bf9c8351",
     "status": "native-port",
-    "reusedFrom": "B077_LoamPit"
+    "reusedFrom": "B077_LoamPit",
+    "manual": true
   },
   {
     "id": "OLD_K132_ClayHutExtension",
@@ -1125,7 +1152,8 @@
     "kind": "minor",
     "source": "K/K132_ClayHutExtension.php",
     "sourceSha256": "f24d076945f408c1bf1dcb9bf23d115408fed864e282926e90f9ca9b87518bc5",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K133_MilkingStool",
@@ -1134,7 +1162,8 @@
     "source": "K/K133_MilkingStool.php",
     "sourceSha256": "99f7cffe8dd9f4d486c7ac5913756945a7ac26d7f966e5764b3d0efe957357ba",
     "status": "native-port",
-    "reusedFrom": "D038_MilkingStool"
+    "reusedFrom": "D038_MilkingStool",
+    "manual": true
   },
   {
     "id": "OLD_K134_OxTeam",
@@ -1142,7 +1171,8 @@
     "kind": "minor",
     "source": "K/K134_OxTeam.php",
     "sourceSha256": "8531bc15fc18c9945289ba037b622978d7fbb4f8b5b0eeb2130b8234d59d92b6",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K135_Horse",
@@ -1150,7 +1180,8 @@
     "kind": "minor",
     "source": "K/K135_Horse.php",
     "sourceSha256": "ce78a2e4bc86a7259d05eaf79c071401ce54326e21f7fa7ea99f5ca44d35500a",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K136_BrushwoodRoof",
@@ -1158,7 +1189,8 @@
     "kind": "minor",
     "source": "K/K136_BrushwoodRoof.php",
     "sourceSha256": "f35624cc9d71aed2e33f8a8429482c315381fdc234e5336fa3b0fe30a2611682",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K137_TurnipField",
@@ -1166,7 +1198,8 @@
     "kind": "minor",
     "source": "K/K137_TurnipField.php",
     "sourceSha256": "c6fbbda7a0bc5fb285c8b94dbdc9c8573d0dc1409ed1b4f400fa47f9228a54c6",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K138_ReedHut",
@@ -1174,7 +1207,8 @@
     "kind": "minor",
     "source": "K/K138_ReedHut.php",
     "sourceSha256": "61e9f43cec46570f245631d0aee3ea9f503ec3472ea86378bf7e2f5c392a1637",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K139_SleepingCorner",
@@ -1183,7 +1217,8 @@
     "source": "K/K139_SleepingCorner.php",
     "sourceSha256": "16cc22b19ee0c81d818a50ea6de0d894d95c88f71e180042484212e82f51fc34",
     "status": "native-port",
-    "reusedFrom": "A026_SleepingCorner"
+    "reusedFrom": "A026_SleepingCorner",
+    "manual": true
   },
   {
     "id": "OLD_K140_SwanLake",
@@ -1191,7 +1226,8 @@
     "kind": "minor",
     "source": "K/K140_SwanLake.php",
     "sourceSha256": "b8b1697b33e11627b0ab0f9feb5e094d3e0f04eb32413d0e972945183f3381d6",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K141_BoarBreeding",
@@ -1199,7 +1235,8 @@
     "kind": "minor",
     "source": "K/K141_BoarBreeding.php",
     "sourceSha256": "8228c257bad8bef31c23d3b1c18f7ff6945727d33b4a2e7ad8375100e808cec4",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K142_StoneCart",
@@ -1208,7 +1245,8 @@
     "source": "K/K142_StoneCart.php",
     "sourceSha256": "0054973e675d188b753420aec14080342230ed7eca58fa3f8337aba50abdf109",
     "status": "native-port",
-    "reusedFrom": "C079_StoneCart"
+    "reusedFrom": "C079_StoneCart",
+    "manual": true
   },
   {
     "id": "OLD_K143_StoneExchange",
@@ -1216,7 +1254,8 @@
     "kind": "minor",
     "source": "K/K143_StoneExchange.php",
     "sourceSha256": "fcdde9cfe9f6b11a034a417c4f65deda6bb8e5d4341021265b5331f24bc30e79",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K144_Mansion",
@@ -1224,7 +1263,8 @@
     "kind": "minor",
     "source": "K/K144_Mansion.php",
     "sourceSha256": "1d2d300254d5e269c9f54645a44f97cb327c0f55ea081bd5e1a0be25df0142b8",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K145_ForestPasture",
@@ -1232,7 +1272,8 @@
     "kind": "minor",
     "source": "K/K145_ForestPasture.php",
     "sourceSha256": "c22b38a786b2db4dee5e03af5a33abb7c81193060013dcb142d4d36fc21b7c65",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K146_Loom",
@@ -1241,7 +1282,8 @@
     "source": "K/K146_Loom.php",
     "sourceSha256": "67f4ec65e25de086e8d12d714c0d1e13abd5dfe440b05fdbb00c97c95d28ee06",
     "status": "native-port",
-    "reusedFrom": "B039_Loom"
+    "reusedFrom": "B039_Loom",
+    "manual": true
   },
   {
     "id": "OLD_K339_Pelts",
@@ -1249,7 +1291,8 @@
     "kind": "minor",
     "source": "K/K339_Pelts.php",
     "sourceSha256": "2e3885d9e517024a0c21c94364c123226e88f0b78b85b5e830a4c11476b9e166",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_WM056_Almshouse",
@@ -5275,7 +5318,8 @@
     "kind": "occupation",
     "source": "K/K266_Serf.php",
     "sourceSha256": "b7f0a8cdd2ef08ac239bbb12ad216ba603c95638a244169ac1fef8055d5f62e8",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K267_AdoptiveParents",
@@ -5284,7 +5328,8 @@
     "source": "K/K267_AdoptiveParents.php",
     "sourceSha256": "be27817352f526aad900d58ba4f6ca58c6641666cbc517ce3c103924c578ac14",
     "status": "native-port",
-    "reusedFrom": "A092_AdoptiveParents"
+    "reusedFrom": "A092_AdoptiveParents",
+    "manual": true
   },
   {
     "id": "OLD_K268_Pieceworker",
@@ -5292,7 +5337,8 @@
     "kind": "occupation",
     "source": "K/K268_Pieceworker.php",
     "sourceSha256": "0aac2c8b835561a634c0605edb9bd182990acdcff2ca3ea389385a095a19360c",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K269_Acrobat",
@@ -5300,7 +5346,8 @@
     "kind": "occupation",
     "source": "K/K269_Acrobat.php",
     "sourceSha256": "a4dbccdbd39a76357c8b42704edcd10262a9b1d97fa63b6c134a7112689d91af",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K270_WetNurse",
@@ -5308,7 +5355,8 @@
     "kind": "occupation",
     "source": "K/K270_WetNurse.php",
     "sourceSha256": "64d5107fa43f3e4b60eedce338c15816f086bca4d489149a403927158d62812f",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K271_Educator",
@@ -5316,7 +5364,8 @@
     "kind": "occupation",
     "source": "K/K271_Educator.php",
     "sourceSha256": "0d6debcb0a4c83d59b7c4d056a53c72c43b47cc57afcf40e34efe78236b34e8b",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K272_FrameBuilder",
@@ -5324,7 +5373,8 @@
     "kind": "occupation",
     "source": "K/K272_FrameBuilder.php",
     "sourceSha256": "81b76c7593f8328f445ac89b1e166bab156e8dc265085cb12c0651243ecc3e9b",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K273_BasinMaker",
@@ -5332,7 +5382,8 @@
     "kind": "occupation",
     "source": "K/K273_BasinMaker.php",
     "sourceSha256": "c7f044e3a4ab1ede07567d80750d7d778ebdc40817993f76dc85b3c4548e3915",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K274_OrganicFarmer",
@@ -5341,7 +5392,8 @@
     "source": "K/K274_OrganicFarmer.php",
     "sourceSha256": "b4916d4cf59b05c55edcfc56bf20140cfe054c439bbdcaea0d68c884ed45ab97",
     "status": "native-port",
-    "reusedFrom": "B098_OrganicFarmer"
+    "reusedFrom": "B098_OrganicFarmer",
+    "manual": true
   },
   {
     "id": "OLD_K275_PerpetualStudent",
@@ -5349,7 +5401,8 @@
     "kind": "occupation",
     "source": "K/K275_PerpetualStudent.php",
     "sourceSha256": "338d186ff0fb745330e112a47bd78d505918a1fad3d3d32c0d590bc9c481a8c3",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K276_Constable",
@@ -5357,7 +5410,8 @@
     "kind": "occupation",
     "source": "K/K276_Constable.php",
     "sourceSha256": "e9159bf3b8b8c96005d5c1aabafd092665550247005d1b2225bc2c1373241343",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K277_Manufacturer",
@@ -5365,7 +5419,8 @@
     "kind": "occupation",
     "source": "K/K277_Manufacturer.php",
     "sourceSha256": "4504050849c8be27dc639d8e46d46ac2289d951ac6a095b06e832ed79f9094ee",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K278_Forester",
@@ -5373,7 +5428,8 @@
     "kind": "occupation",
     "source": "K/K278_Forester.php",
     "sourceSha256": "d054c8f7bfb5049c61796f76262d55e0e247e129f2ae8e28e6abdb535ac42e7c",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K279_Scholar",
@@ -5381,7 +5437,8 @@
     "kind": "occupation",
     "source": "K/K279_Scholar.php",
     "sourceSha256": "411f8e969ae6eb17abfc618ec139f6d4ac0b0092f8cbee1fafe8af634fc65118",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K280_Tanner",
@@ -5389,7 +5446,8 @@
     "kind": "occupation",
     "source": "K/K280_Tanner.php",
     "sourceSha256": "a68157c3e851ed579209a3bb3c5300f8f5b1b5facd7198ae6abe9dd9f8dd3cea",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K281_TravelingSalesman",
@@ -5397,7 +5455,8 @@
     "kind": "occupation",
     "source": "K/K281_TravelingSalesman.php",
     "sourceSha256": "eb1f0479e2569acfc0ac08500018aa4adc7c43a4d7f74c1217dd45ae6e594c0c",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K282_HouseSteward",
@@ -5406,7 +5465,8 @@
     "source": "K/K282_HouseSteward.php",
     "sourceSha256": "6f29a3f1641a99deb1648f343d922d530370e3fdb5df7ffc18963436ed55dbee",
     "status": "native-port",
-    "reusedFrom": "B136_HouseSteward"
+    "reusedFrom": "B136_HouseSteward",
+    "manual": true
   },
   {
     "id": "OLD_K283_WoodDeliveryman",
@@ -5414,7 +5474,8 @@
     "kind": "occupation",
     "source": "K/K283_WoodDeliveryman.php",
     "sourceSha256": "63aee51017beb46dfff6ab8ff99e17f566eea41507bd6818a857f22d4e2a3320",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K284_WoodDistributor",
@@ -5422,7 +5483,8 @@
     "kind": "occupation",
     "source": "K/K284_WoodDistributor.php",
     "sourceSha256": "fdb4a80194d47f53119f16f91397dd254b9dfd9e7b711b41918b1f3115b4cc82",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K285_Tinsmith",
@@ -5430,7 +5492,8 @@
     "kind": "occupation",
     "source": "K/K285_Tinsmith.php",
     "sourceSha256": "86db7deb85e03a56fab3a8d634aeb625b43056ff66fcaeb2d130dbe630349754",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K286_Smallholder",
@@ -5438,7 +5501,8 @@
     "kind": "occupation",
     "source": "K/K286_Smallholder.php",
     "sourceSha256": "f218ef58540610bcb5e5875469f785efd2786cacefb32984a65a2f4bc870187e",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K287_StorehouseClerk",
@@ -5446,7 +5510,8 @@
     "kind": "occupation",
     "source": "K/K287_StorehouseClerk.php",
     "sourceSha256": "2a4a23ff8cef9f1d3ebfd513d21758b6f3affd8c6f1dbeeaba02fbe8a1626d19",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K288_StorehouseKeeper",
@@ -5455,7 +5520,8 @@
     "source": "K/K288_StorehouseKeeper.php",
     "sourceSha256": "230bb81e947a5b508e803ad2eb81dc72cefa55ab0f40c25d89518b6aa1294d95",
     "status": "native-port",
-    "reusedFrom": "B156_StorehouseKeeper"
+    "reusedFrom": "B156_StorehouseKeeper",
+    "manual": true
   },
   {
     "id": "OLD_K289_Countryman",
@@ -5463,7 +5529,8 @@
     "kind": "occupation",
     "source": "K/K289_Countryman.php",
     "sourceSha256": "50b2387cea65371dbe5b3a1266fec042dcd950a6f8ace1a3730a90fba434c0ee",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K290_ClayWorker",
@@ -5471,7 +5538,8 @@
     "kind": "occupation",
     "source": "K/K290_ClayWorker.php",
     "sourceSha256": "7a7ab32f82a906c551b54462c67a44a0864ced3c89c31e639b6f453e95234af1",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K291_Lover",
@@ -5479,7 +5547,8 @@
     "kind": "occupation",
     "source": "K/K291_Lover.php",
     "sourceSha256": "622578df596752bfab4e3baed3bc6b3cf01271d7c1b507acedaf85c4905c0f67",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K292_MarketWoman",
@@ -5487,7 +5556,8 @@
     "kind": "occupation",
     "source": "K/K292_MarketWoman.php",
     "sourceSha256": "fe037f1b2b96c579281a73f8b089de44b4dfdbd7eb39eda288b4fd43d4e4c7ac",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K293_Ploughman",
@@ -5496,7 +5566,8 @@
     "source": "K/K293_Ploughman.php",
     "sourceSha256": "9376e268bb62d347ec4455f8d94da2997b5467787cd3e64e9f6d256652417558",
     "status": "native-port",
-    "reusedFrom": "D091_Plowman"
+    "reusedFrom": "D091_Plowman",
+    "manual": true
   },
   {
     "id": "OLD_K294_BrushwoodCollector",
@@ -5505,7 +5576,8 @@
     "source": "K/K294_BrushwoodCollector.php",
     "sourceSha256": "c6cda10b7602ae74c6f0cced557092ff5f6c80e488ecedd49bb4fc5eb6be2595",
     "status": "native-port",
-    "reusedFrom": "B145_BrushwoodCollector"
+    "reusedFrom": "B145_BrushwoodCollector",
+    "manual": true
   },
   {
     "id": "OLD_K295_CattleBreeder",
@@ -5513,7 +5585,8 @@
     "kind": "occupation",
     "source": "K/K295_CattleBreeder.php",
     "sourceSha256": "acf0dc2876994dc286b48739b065e8457e4338e767735a327894fb455090c985",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K296_SeedSeller",
@@ -5522,7 +5595,8 @@
     "source": "K/K296_SeedSeller.php",
     "sourceSha256": "40ec4cfe2f95d3f1d96526d25d9a39bb47a8415acfd65bd680231b17b024fa91",
     "status": "native-port",
-    "reusedFrom": "D141_SeedSeller"
+    "reusedFrom": "D141_SeedSeller",
+    "manual": true
   },
   {
     "id": "OLD_K297_SheepFarmer",
@@ -5530,7 +5604,8 @@
     "kind": "occupation",
     "source": "K/K297_SheepFarmer.php",
     "sourceSha256": "559ced897406fc884f915c00655f1ca71bf59ec66d082ace1f4314f45dd2ccff",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K298_ShepherdBoy",
@@ -5538,7 +5613,8 @@
     "kind": "occupation",
     "source": "K/K298_ShepherdBoy.php",
     "sourceSha256": "99ba88dc46c0cfeaedf986a9e40dbe8b020aaba2968e7b8501e0d4f901c5f0dd",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K299_Slaughterman",
@@ -5546,7 +5622,8 @@
     "kind": "occupation",
     "source": "K/K299_Slaughterman.php",
     "sourceSha256": "7fdfe6229efaf30842d8d92d9096607243006fc39552dca8294af88ac034c11d",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K300_SchnapsDistiller",
@@ -5554,7 +5631,8 @@
     "kind": "occupation",
     "source": "K/K300_SchnapsDistiller.php",
     "sourceSha256": "da4e04a10ea3aecc7ef63ec7a3b764820c563aa7b3948215da5179a787116231",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K301_WoodCarver",
@@ -5562,7 +5640,8 @@
     "kind": "occupation",
     "source": "K/K301_WoodCarver.php",
     "sourceSha256": "23750fbc2d3e0e36477f85b38da6b517c69b834cf77817abd9d3bf20269c4246",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K302_PigWhisperer",
@@ -5570,7 +5649,8 @@
     "kind": "occupation",
     "source": "K/K302_PigWhisperer.php",
     "sourceSha256": "e22f64f8fc5a474f3124abd5aa4bb4fb35b5a9ef6cdd342e006ee9c00d782681",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K303_StoneBreaker",
@@ -5578,7 +5658,8 @@
     "kind": "occupation",
     "source": "K/K303_StoneBreaker.php",
     "sourceSha256": "eefa3a946d3a0591edd42b731b941bf0c0322ae6984abb604fcc57767f6a0969",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K304_Veterinarian",
@@ -5586,7 +5667,8 @@
     "kind": "occupation",
     "source": "K/K304_Veterinarian.php",
     "sourceSha256": "fea2ce12a74a6c193246dba5cc2b18d1a921c99f1f4964c8ee4cd74dacf8b0f4",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K305_AnimalHandler",
@@ -5594,7 +5676,8 @@
     "kind": "occupation",
     "source": "K/K305_AnimalHandler.php",
     "sourceSha256": "99f6573a69a316b93c1e2c84121628910f20da7333a30cc44f5d4a352d166202",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K306_AnimalTamer",
@@ -5602,7 +5685,8 @@
     "kind": "occupation",
     "source": "K/K306_AnimalTamer.php",
     "sourceSha256": "5d33132251a1fdcc6d8045ee5306ffc4e8503e2b82fdce5159700d3ba7c2cff1",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K307_AnimalBreeder",
@@ -5610,7 +5694,8 @@
     "kind": "occupation",
     "source": "K/K307_AnimalBreeder.php",
     "sourceSha256": "7b5362e2ac2c4f716fa45e32d86a77238911e8d36340b381614a2ed4016ffac5",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K308_Foreman",
@@ -5618,7 +5703,8 @@
     "kind": "occupation",
     "source": "K/K308_Foreman.php",
     "sourceSha256": "90ce0f84ef87795eedb110e1eac7b3e52e58b53c98e3ded0158fd21f71c32c61",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K309_Weaver",
@@ -5626,7 +5712,8 @@
     "kind": "occupation",
     "source": "K/K309_Weaver.php",
     "sourceSha256": "fbd6ed0354b57f18de96997919417fa92d57a541614829c5671b59c76d95184d",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K310_ResourceSeller",
@@ -5634,7 +5721,8 @@
     "kind": "occupation",
     "source": "K/K310_ResourceSeller.php",
     "sourceSha256": "81d988fa5af7db05128d8527a8e2c7609fc61d14d21442aafc6b54027e681399",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K311_Magician",
@@ -5642,7 +5730,8 @@
     "kind": "occupation",
     "source": "K/K311_Magician.php",
     "sourceSha256": "f7ad7b0749970113ad394bb3088de69fea9b5b86de9e1a2ead7c93e5f5437885",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_K312_FenceOverseer",
@@ -5650,7 +5739,8 @@
     "kind": "occupation",
     "source": "K/K312_FenceOverseer.php",
     "sourceSha256": "e09b4e19395e77f8959787e49f380193bc4b8c847978fdab42ef2d8c4a8e7461",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_I340_Rancher",
@@ -5676,7 +5766,8 @@
     "kind": "occupation",
     "source": "K/K342_AnimalTrainer.php",
     "sourceSha256": "ead81b2387cf7cc2ee2a6e114b1f8d83a3f04445f088dd2bbca4fc73dbf11e13",
-    "status": "reference-only"
+    "status": "native-port",
+    "manual": true
   },
   {
     "id": "OLD_WM001_Amazon",

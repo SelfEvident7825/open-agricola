@@ -2,11 +2,13 @@ import { snapshotToRoom, toRoomMeta } from '../game/room'
 import { afterEach, describe, expect, it } from 'vitest'
 import { createInitialState, normalizeState } from '../../shared/session/state-bootstrap'
 import { getCardDefinition, classicMinors, classicOccupations } from '../../shared/cards/catalog'
-import { createWorkSession } from './_helpers/session-fixtures'
+import { createOpeningSession, createWorkSession } from './_helpers/session-fixtures'
 import { GameSession } from '../game/authoritative-session'
 import { parseGameSetupRequest, buildInitialStateOptions } from '../game/game-setup-options'
 import { deriveVirtualTileCol } from '../../shared/cards/helpers/card-field'
 import { draftSeatProgress } from '../../shared/projections/draft-progress'
+import { firstDraftPick } from '../../shared/draft/__tests__/draft-fixtures'
+import { rehydrateState, serializeSessionSnapshot } from '../../shared/session/serialization'
 
 const CARD = 'OLD_E30_Canoe'
 const options = { playerCount: 4, gameEdition: 'classic' as const, ordinaryCardDeckSeed: 42 }
@@ -30,6 +32,59 @@ const canoe = (played = true) => {
 }
 
 describe('classic edition recovery', () => {
+  it('deals the complete K deck without missing cards or borrowing from E/I', () => {
+    const state = createInitialState(42, { ...options, deckIds: ['K'] })
+    const minor = [...state.players.flatMap(p => p.minorHand), ...state.ordinaryCardDecks!.minor]
+    const occupation = [...state.players.flatMap(p => p.occupationHand), ...state.ordinaryCardDecks!.occupation]
+    expect(minor).toHaveLength(43)
+    expect(occupation).toHaveLength(48)
+    const ids = [...minor, ...occupation]
+    expect(new Set(ids).size).toBe(91)
+    expect(ids.every(id => id.startsWith('OLD_K') && getCardDefinition(id)?.implemented)).toBe(true)
+    for (const player of state.players) {
+      expect(player.minorHand).toHaveLength(7)
+      expect(player.occupationHand).toHaveLength(7)
+    }
+  })
+
+  it('completes a four-player K-only draft after restoring an unfinished selection', () => {
+    const source = createOpeningSession({
+      seed: 103,
+      options: { ...options, deckIds: ['K'], draftMode: 'simultaneous', draftPoolSize: 10 },
+      expected: { phase: 'draft', roundPhase: 'work', interaction: { stateId: 'idle' } },
+    })
+    sessions.push(source)
+    const draft = source.state.draft!
+    const first = draft.seatOrder[0]!
+    expect(source.submitDraftPick(first, firstDraftPick(draft, first)).ok).toBe(true)
+    const snapshot = serializeSessionSnapshot(source.state, source)
+    const restored = new GameSession(rehydrateState(snapshot))
+    sessions.push(restored)
+    expect(restored.state.gameEdition).toBe('classic')
+    for (let step = 0; restored.state.draft && step < 80; step++) {
+      const current = restored.state.draft
+      const actor = current.seatOrder.find(id => draftSeatProgress(current, id).kind === 'selecting')
+      if (!actor) throw new Error('K-only draft has no selectable packet')
+      expect(restored.submitDraftPick(actor, firstDraftPick(current, actor)).ok).toBe(true)
+    }
+    expect(restored.state.phase).toBe('playing')
+    expect(restored.state.draft).toBeNull()
+    const cards = restored.state.players.flatMap(p => [...p.minorHand, ...p.occupationHand])
+    expect(cards).toHaveLength(56)
+    expect(new Set(cards).size).toBe(56)
+    expect(cards.every(id => id.startsWith('OLD_K'))).toBe(true)
+    for (const player of restored.state.players) {
+      expect(player.minorHand).toHaveLength(7)
+      expect(player.occupationHand).toHaveLength(7)
+    }
+    let response = restored.getState()
+    if (response.interaction.stateId === 'wait' && response.interaction.request.kind === 'confirm-player-switch') {
+      response = restored.resolveChoice(response.interaction.playerIndex, 'confirm')
+    }
+    expect(response.interaction.stateId).toBe('idle')
+    expect(restored.takeAction(response.state.currentPlayerIndex, 'forest').ok).toBe(true)
+  })
+
   it('deals unique implemented classic hands to four players and isolates the remaining supply', () => {
     const state = createInitialState(42, options)
     const ids = state.players.flatMap((p) => [...p.minorHand, ...p.occupationHand])

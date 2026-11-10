@@ -88,7 +88,7 @@ type ActionDefinition = {
 | `reap` | 普通收获与私人田间阶段收获，见 [阶段 hook](hooks_zh.md#阶段-hook)。 |
 | `breed` | 亲本资格成立后，`CardEffect.computeBreedOffspringCount()` 按已打出卡牌顺序从默认 1 只幼崽开始查询。运行时上下文包含已计入寄宿动物繁殖归属与卡牌修正的 `breedableCount`。有限结果向下取整且不低于零；`undefined` 保持当前数量。可用性和执行共用此查询；资源、安置下限、摘要与事件均使用所得数量。重排在保留所需非幼畜后逐只统计幼畜，同时扣减幼畜数和安置下限，沿用既有安置存档结构与事件身份。覆盖：`shared/actions/effects/__tests__/breed.test.ts`、`server/__tests__/harvest-breed-placement-session.test.ts`。 |
 
-- 职业可用性、选择提交和直接 / 免费打出共用同一个前置门禁。改良费用预览与支付以授予的 `sourceCard` 或实体行动格 ID 作为 `actionCardId`。
+- 职业可用性、选择提交和直接 / 免费打出共用同一个前置门禁。职业候选策略检查始终接收同一行动上下文，包括待放置工人身份。改良费用预览与支付以授予的 `sourceCard` 或实体行动格 ID 作为 `actionCardId`。
 - 选择类后续行动在 `actionContext` 中携带语义来源（例如 `extraCropPlacement`）；后续卡牌读取该标记，不读来源卡 ID。
 - 资源获得类 listener 订阅实际入账的行动（`gain`、`collect`、`receive`、`reap`、`exchange`），不订阅把入账交给 `receive` 的来源动作；同一次移动不能两次到达同一个 listener。关心卡牌自身 counter 或栈的 listener 可以订阅来源动作。
 
