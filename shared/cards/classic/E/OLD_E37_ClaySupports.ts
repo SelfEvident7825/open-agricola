@@ -6,7 +6,7 @@ const CARD_ID = 'OLD_E37_ClaySupports'
  * Reference: `onPlayerComputeCostsConstruct` pushes
  * an alternative trade `{clay:2, wood:1, reed:1}` when `args.type === 'roomClay'`.
  * Our equivalent: a static TradeModifier on the `construct` cost type with a
- * `houseTypeClay` condition — the construct path builds `ComplexCost`
+ * `roomMaterialClay` condition — the construct path builds `ComplexCost`
  * via `buildConstructCost` and routes through `computeAllBuyableCombinations`
  * with `costType:'construct'`. `applyCostModifiers` reads
  * `player.activeModifiers` (populated from this field via
@@ -59,7 +59,8 @@ export const OLD_E37_ClaySupports = defineMinorCard({
           clay: 3,
           reed: 1,
         },
-        conditions: { houseTypeClay: 1 },
+        conditions: { roomMaterialClay: 1 },
+        unitPrice: { clay: 2, wood: 1, reed: 1 },
       } as TradeModifier,
     ],
   } satisfies CardImpl,

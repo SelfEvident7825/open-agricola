@@ -449,9 +449,17 @@ export const reorganizeAction: ActionDefinition = {
       const previousResources = summary.resources
       summary.resources = { ...previousResources }
       for (const animal of animalKeysForState(ctx.state)) {
-        if ((after[animal] ?? 0) < (placement.minimums[animal] ?? Infinity)) {
+        const newborns = previousResources[animal] ?? 0
+        const minimum = placement.minimums[animal] ?? Infinity
+        // Preserve the required non-newborn animals, then count retained offspring individually.
+        const nonNewbornMinimum = Math.max(0, minimum - newborns)
+        const retained = Math.min(newborns, Math.max(0, (after[animal] ?? 0) - nonNewbornMinimum))
+        if (retained === 0) {
           delete summary.resources[animal]
           delete placement.minimums[animal]
+        } else {
+          summary.resources[animal] = retained
+          placement.minimums[animal] = nonNewbornMinimum + retained
         }
       }
       const recentEvents = [...ctx.state.events].reverse()

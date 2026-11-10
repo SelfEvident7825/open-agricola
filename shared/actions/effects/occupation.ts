@@ -42,16 +42,11 @@ const compactContext = (
 ): Record<string, unknown> | undefined =>
   Object.keys(context).length > 0 ? context : undefined
 
-const buildOccupationCostProvider =
-  (player: PlayerState, occupationId: string, costOverride?: Partial<PlayerState['resources']>) =>
-  () => {
-    const cost = { ...(getOccupationCost(player, occupationId) ?? {}) }
-    for (const [key, amount] of Object.entries(costOverride ?? {})) {
-      const resource = key as keyof Resource
-      cost[resource] = (cost[resource] ?? 0) + (amount ?? 0)
-    }
-    return cost
-  }
+const buildOccupationCostProvider = (
+  player: PlayerState,
+  occupationId: string,
+  costOverride?: Partial<PlayerState['resources']>,
+) => () => costOverride ?? getOccupationCost(player, occupationId) ?? {}
 
 const canAffordOccupationPreviewCost = (
   state: GameState,
@@ -285,6 +280,8 @@ const playableOccupationCandidates = (
   space: ActionSpace,
   actionCardId?: string,
   actionHooks?: ActionHookRegistry,
+  foodShortfallToBegging = false,
+  actionContext?: Record<string, unknown>,
 ) =>
   player.occupationHand
     .map((id) => getOccupation(id))
@@ -293,18 +290,18 @@ const playableOccupationCandidates = (
         !!occupation,
     )
     .filter((occupation) =>
-      isOccupationPlayable(
-        state,
-        player,
-        occupation.id,
-        cost,
-        actionCardId,
-        actionHooks,
-      ),
+      foodShortfallToBegging
+        ? meetsCardPrerequisites(player, occupation, state.round, state)
+        : isOccupationPlayable(state, player, occupation.id, cost, actionCardId, actionHooks),
     )
     .flatMap(occupation => {
-      const policy = getOccupationChoicePolicy(state, player, space, occupation.id, cost, actionCardId, actionHooks)
-      return policy.doable ? [{ occupation, policy }] : []
+      const policy = getOccupationChoicePolicy(state, player, space, occupation.id, cost, actionCardId, actionHooks, actionContext)
+      if (!policy.doable) return []
+      if (foodShortfallToBegging) {
+        const payment = resolveOccupationActionPaymentCost(state, player, occupation.id, cost, actionCardId, actionHooks)
+        if (!computeOccupationPaymentOptions(state, player, occupation.id, payment.cost, actionCardId, policy.reserveResources, true).length) return []
+      }
+      return [{ occupation, policy }]
     })
 
 const describeOccupationCandidates = (
@@ -314,10 +311,11 @@ const describeOccupationCandidates = (
   actionCardId: string | undefined,
   actionHooks: ActionHookRegistry | undefined,
   candidates: ReturnType<typeof playableOccupationCandidates>,
+  foodShortfallToBegging = false,
 ): ActionChoiceOption[] =>
   candidates.map(({ occupation, policy }): ActionChoiceOption => {
     const identity = cardIdentityChoice(occupation.id, 'occupation')
-    const effectPreview = describeOccupationActionPayment(state, player, occupation.id, cost, actionCardId, policy.reserveResources, actionHooks)
+    const effectPreview = describeOccupationActionPayment(state, player, occupation.id, cost, actionCardId, policy.reserveResources, actionHooks, foodShortfallToBegging)
     return { ...identity, effectPreview, descriptionPreview: { kind: 'action', labelKey: identity.labelKey, effectPreview } }
   })
 
@@ -328,9 +326,12 @@ const buildPlayableOccupationOptions = (
   space: ActionSpace,
   actionCardId?: string,
   actionHooks?: ActionHookRegistry,
+  foodShortfallToBegging = false,
+  actionContext?: Record<string, unknown>,
 ): ActionChoiceOption[] => describeOccupationCandidates(
   state, player, cost, actionCardId, actionHooks,
-  playableOccupationCandidates(state, player, cost, space, actionCardId, actionHooks),
+  playableOccupationCandidates(state, player, cost, space, actionCardId, actionHooks, foodShortfallToBegging, actionContext),
+  foodShortfallToBegging,
 )
 
 const getOccupationChoicePolicy = (
@@ -341,6 +342,7 @@ const getOccupationChoicePolicy = (
   baseCost: Partial<PlayerState['resources']>,
   actionCardId?: string,
   actionHooks?: ActionHookRegistry,
+  actionContext?: Record<string, unknown>,
 ): OccupationChoicePolicy => {
   let doable = true
   let reserveResources: Partial<Resource> | undefined
@@ -355,6 +357,7 @@ const getOccupationChoicePolicy = (
     choice: occupationId,
     sourceCard: actionCardId,
     actionCardId,
+    actionContext,
     extraData: { occupationBaseCost: baseCost },
   })
   for (const result of results) {
@@ -375,11 +378,12 @@ export const hasPlayableOccupationChoice = (
   spaceId: string,
   params?: Record<string, unknown>,
   actionHooks?: ActionHookRegistry,
+  actionContext?: Record<string, unknown>,
 ) => {
   const cost = getOccupationActionBaseCost(player, spaceId, params)
   if (!cost) return false
   const allowedCards = (params as { allowedCards?: string[] } | undefined)?.allowedCards
-  return buildPlayableOccupationOptions(state, player, cost, { id: spaceId } as ActionSpace, spaceId, actionHooks)
+  return buildPlayableOccupationOptions(state, player, cost, { id: spaceId } as ActionSpace, spaceId, actionHooks, params?.foodShortfallToBegging === true, actionContext)
     .some((option) => !allowedCards || allowedCards.includes(option.value))
 }
 
@@ -419,6 +423,7 @@ const computeOccupationPaymentOptions = (
   cost: ComplexCost,
   actionCardId?: string,
   reserveResources?: Partial<Resource>,
+  foodShortfallToBegging = false,
 ): PaymentSolution[] => {
   const playerIndex = state.players.indexOf(player)
   const paymentState =
@@ -430,6 +435,7 @@ const computeOccupationPaymentOptions = (
     sourceCard: occupationId,
     spaceId: actionCardId,
     reserveResources,
+    foodShortfallToBegging,
   })
 }
 
@@ -446,7 +452,7 @@ const resolveOccupationActionPaymentCost = (
     player,
     'occupation',
     occupationId,
-    buildOccupationCostProvider(player, occupationId, baseCost),
+    () => baseCost,
     actionCardId,
     actionHooks,
   )
@@ -466,8 +472,20 @@ const describeOccupationActionPayment = (
   actionCardId?: string,
   reserveResources?: Partial<Resource>,
   actionHooks?: ActionHookRegistry,
+  foodShortfallToBegging = false,
 ): ChoiceEffectPreview | undefined => {
   const { cost, candidateMetadataByFeeIndex } = resolveOccupationActionPaymentCost(state, player, occupationId, baseCost, actionCardId, actionHooks)
+  if (foodShortfallToBegging) {
+    const previews = PaymentSolver.describeOptions(state, state.players.indexOf(player), cost, {
+      actionId: 'pay', costType: 'occupation', sourceCard: occupationId, spaceId: actionCardId,
+      reserveResources, candidateMetadataByFeeIndex, foodShortfallToBegging,
+    })
+    if (previews.length === 0) return undefined
+    if (previews.length === 1) return previews[0]!.effectPreview
+    return { kind: 'rule', description: { kind: 'group', operator: 'xor', separator: ' / ', parts: previews.map(preview => ({
+      kind: 'action', showLabel: false, labelKey: 'actions.pay.name', effectPreview: preview.effectPreview,
+    })) } }
+  }
   const previews = computeOccupationPaymentOptions(state, player, occupationId, cost, actionCardId, reserveResources)
     .map(solution => describePaymentEffectPreview(solution, false, {
       paymentResourceProviders: cost.paymentResourceProviders,
@@ -505,6 +523,7 @@ const buildOccupationPayChild = (
   occupationId: string,
   actionContext: Record<string, unknown> | undefined,
   reserveResources: Partial<Resource> | undefined,
+  foodShortfallToBegging = false,
 ): InternalActionChild => buildInternalPayChild({
   cost: payment.cost,
   candidateMetadataByFeeIndex: payment.candidateMetadataByFeeIndex,
@@ -512,6 +531,7 @@ const buildOccupationPayChild = (
   optionPrefix: `pay:occupation:${occupationId}`,
   sourceCard: occupationId,
   reserveResources,
+  foodShortfallToBegging,
   actionContext: {
     costType: 'occupation',
     ...(actionContext ?? {}),
@@ -523,9 +543,10 @@ const buildOccupationInternalChildren = (
   occupationId: string,
   actionContext: Record<string, unknown> | undefined,
   reserveResources: Partial<Resource> | undefined,
+  foodShortfallToBegging = false,
 ): InternalActionChildren => ({
   beforeHostListeners: [
-    buildOccupationPayChild(payment, occupationId, actionContext, reserveResources),
+    buildOccupationPayChild(payment, occupationId, actionContext, reserveResources, foodShortfallToBegging),
   ],
   afterHostCommitListeners: [
     {
@@ -542,26 +563,26 @@ export const playOccupationAction: ActionDefinition = {
   id: 'occupation',
   nameKey: 'actions.lessons.name',
   descriptionKey: 'actions.lessons.description',
-  previewEffect: ({ state, player, space, params, previewMode, actionHooks }) => {
+  previewEffect: ({ state, player, space, params, previewMode, actionHooks, actionContext }) => {
     if (previewMode === 'base') return !PaymentSolver.readExactCost(params)
       ? { kind: 'occupationFees', food: occupationFeeSchedule(space.id) }
       : { kind: 'payment', resourcesPaid: getOccupationActionBaseCost(player, space.id, params) ?? {} }
     const cost = getOccupationActionBaseCost(player, space.id, params)
     if (!cost) return undefined
     const allowedCards = (params as { allowedCards?: string[] } | undefined)?.allowedCards
-    const candidates = playableOccupationCandidates(state, player, cost, space, space.id, actionHooks)
+    const candidates = playableOccupationCandidates(state, player, cost, space, space.id, actionHooks, params?.foodShortfallToBegging === true, actionContext)
       .filter(candidate => !allowedCards || allowedCards.includes(candidate.occupation.id))
     if (candidates.length === 0) return undefined
     if (candidates.length > MAX_DETAILED_CARD_CHOICES) return { kind: 'cardSelection', types: ['occupation'], allowedCards }
-    const options = describeOccupationCandidates(state, player, cost, space.id, actionHooks, candidates)
+    const options = describeOccupationCandidates(state, player, cost, space.id, actionHooks, candidates, params?.foodShortfallToBegging === true)
     if (options.every(option => JSON.stringify(option.effectPreview) === JSON.stringify(options[0]!.effectPreview))) return options[0]!.effectPreview
     return { kind: 'rule', description: { kind: 'group', operator: 'xor', separator: ' / ', parts: options.flatMap(option => option.descriptionPreview ? [option.descriptionPreview] : []) } }
   },
   roundAvailable: 1,
   gainPerRound: {},
   canBeExecutedByPlayer: (state, player, context) =>
-    hasPlayableOccupationChoice(state, player, context?.space?.id ?? 'lessons', context?.params, context?.actionHooks),
-  execute: ({ state, player, space, params, actionHooks }) => {
+    hasPlayableOccupationChoice(state, player, context?.space?.id ?? 'lessons', context?.params, context?.actionHooks, context?.actionContext),
+  execute: ({ state, player, space, params, actionHooks, actionContext }) => {
     const typed = params as { allowedCards?: string[] } | undefined
     const cost = getOccupationActionBaseCost(player, space.id, params)
     if (!cost) return { type: 'fail', errorKey: 'log.occupationFail' }
@@ -570,7 +591,7 @@ export const playOccupationAction: ActionDefinition = {
       player,
       cost,
       space,
-      space.id, actionHooks
+      space.id, actionHooks, params?.foodShortfallToBegging === true, actionContext
     )
     if (typed?.allowedCards) {
       playableOptions = playableOptions.filter(opt => typed.allowedCards!.includes(opt.value))
@@ -602,7 +623,7 @@ export const playOccupationAction: ActionDefinition = {
       space,
       choice,
       baseCost,
-      space.id, actionHooks
+      space.id, actionHooks, actionContext
     )
     if (!choicePolicy.doable) {
       return { type: 'fail', errorKey: 'log.occupationFail' }
@@ -627,6 +648,7 @@ export const playOccupationAction: ActionDefinition = {
         choice,
         childContext,
         choicePolicy.reserveResources,
+        params?.foodShortfallToBegging === true,
       ),
     }
   },

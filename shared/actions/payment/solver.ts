@@ -94,6 +94,7 @@ const receiptForSolution = (
   return {
     solution,
     resourcesPaid: solution.resourcesPaid,
+    ...(solution.foodShortfall ? { foodShortfall: solution.foodShortfall } : {}),
     ...(solution.bonusUsed ? { bonusUsed: solution.bonusUsed } : {}),
     ...(solution.bonusChoiceIndex ? { bonusChoiceIndex: solution.bonusChoiceIndex } : {}),
     ...(ctx.includeReturnedCard && solution.cardUsed ? { returnedCardId: solution.cardUsed } : {}),
@@ -109,7 +110,7 @@ const receiptForSolution = (
 }
 
 const normalizeLifecycleCost = (cost: Cost, ctx: PaymentCtx): Cost =>
-  !isComplexCost(cost) && ctx.costType !== 'none'
+  !isComplexCost(cost) && (ctx.costType !== 'none' || ctx.foodShortfallToBegging === true)
     ? { fee: cost }
     : cost
 
@@ -141,6 +142,9 @@ const computeOptions = (
 ): Option[] => {
   const player = state.players[idx]
   if (!player) return []
+  if (!isComplexCost(cost) && ctx.foodShortfallToBegging) {
+    return computeOptions(state, idx, { fee: cost }, ctx)
+  }
   if (!isComplexCost(cost)) {
     const simpleCost = cost as Parameters<typeof canPayResources>[1]
     if (!canPayResources(player, simpleCost) || !canPaySupplyTokens(state, player, simpleCost)) return []
@@ -149,7 +153,9 @@ const computeOptions = (
   const costTypeArg = ctx.costType === 'none' ? undefined : ctx.costType
   return filterPaymentSolutionsByReserve(
     player,
-    computeAllBuyableCombinations(player, cost, ctx.playedCards, costTypeArg, state),
+    computeAllBuyableCombinations(player, cost, ctx.playedCards, costTypeArg, state, {
+      foodShortfallToBegging: ctx.foodShortfallToBegging, reserveResources: ctx.reserveResources,
+    }),
     ctx.reserveResources,
     cost.resourceReserve,
   )
@@ -163,6 +169,7 @@ const canAfford = (
 ): boolean => {
   const player = state.players[idx]
   if (!player) return false
+  if (ctx.foodShortfallToBegging) return computeOptions(state, idx, cost, ctx).length > 0
   if (!isComplexCost(cost)) {
     const simpleCost = cost as Parameters<typeof canPayResources>[1]
     return canPayResources(player, simpleCost) && canPaySupplyTokens(state, player, simpleCost)
@@ -228,6 +235,7 @@ const resolvePayment = (
     payResources(player, selection.solution.resourcesPaid, state)
     paySupplyTokens(player, selection.solution.resourcesPaid)
   }
+  if (selection.solution.foodShortfall) player.resources.begging = (player.resources.begging ?? 0) + selection.solution.foodShortfall
   return { type: 'paid', receipt: receiptForSolution(selection.solution, effectiveCost, ctx) }
 }
 

@@ -21,9 +21,11 @@ export const drawOrdinaryCardsAction: ActionDefinition = {
   roundAvailable: 1,
   gainPerRound: {},
   canBeExecutedByPlayer: (state, _player, context) => {
-    const cardType = readCardType(context?.actionContext)
-    const count = readCount(context?.actionContext)
-    return cardType !== null && count !== null && state.ordinaryCardDecks[cardType].length > 0
+    const params = { ...(context?.actionContext ?? {}), ...(context?.params ?? {}) }
+    const cardType = readCardType(params)
+    const count = readCount(params)
+    return cardType !== null && count !== null &&
+      (params.replaceHand === true || state.ordinaryCardDecks[cardType].length > 0)
   },
   execute: ({
     state,
@@ -39,15 +41,21 @@ export const drawOrdinaryCardsAction: ActionDefinition = {
     const count = readCount(mergedParams)
     if (cardType === null || count === null) return { type: 'fail', errorKey: 'log.actionUnavailable' }
 
+    const hand = handFor(player, cardType)
+    const discarded = mergedParams.replaceHand === true ? hand.splice(0) : []
     const deck = state.ordinaryCardDecks[cardType]
     const drawn = deck.splice(0, Math.min(count, deck.length))
-    if (drawn.length === 0) return { type: 'ok' }
-    reportProtectedObservation?.({
-      kind: 'hidden-information',
-      recipientPlayerIds: [player.id],
-    })
+    if (drawn.length === 0 && discarded.length === 0) return { type: 'ok' }
+    if (drawn.length > 0) {
+      // Hidden deck identities have now been revealed. The provisional command
+      // guard and the player-facing undo boundary protect different lifecycles.
+      state.pendingUndoBoundary = true
+      reportProtectedObservation?.({
+        kind: 'hidden-information',
+        recipientPlayerIds: [player.id],
+      })
+    }
 
-    const hand = handFor(player, cardType)
     hand.push(...drawn)
     if (sourceCard) {
       emitPrivateEvent?.(cardEffectHandChangedEvent(
@@ -58,6 +66,6 @@ export const drawOrdinaryCardsAction: ActionDefinition = {
         typeof mergedParams.sourceActionId === 'string' ? mergedParams.sourceActionId : undefined,
       ))
     }
-    return { type: 'ok', extraData: { drawnCards: drawn, cardType } }
+    return { type: 'ok', extraData: { drawnCards: drawn, discardedCards: discarded, cardType } }
   },
 }

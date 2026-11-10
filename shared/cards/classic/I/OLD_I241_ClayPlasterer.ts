@@ -15,7 +15,8 @@ const cardImpl = {
       groupScope: 'unit',
       from: {},
       to: { clay: 2 },
-      conditions: { houseTypeClay: 1 },
+      conditions: { roomMaterialClay: 1 },
+      unitPrice: { clay: 3, reed: 2 },
     },
   ],
   listeners: [

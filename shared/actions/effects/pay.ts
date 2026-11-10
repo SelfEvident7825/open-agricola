@@ -12,7 +12,7 @@ import type {
   Resource,
 } from '../../contract/types'
 import type { CardPayment, EventSink, PaymentPurpose, ResourceLocation } from '../../contract/events'
-import { addCardResourcePaid, recordCardCostAttribution } from '../../cards/helpers/card-state'
+import { addCardResourceGained, addCardResourcePaid, recordCardCostAttribution } from '../../cards/helpers/card-state'
 import { PaymentSolver } from '../payment'
 import type { PaymentCtx, PaymentExecuteError, PaymentReceipt } from '../payment'
 import { returnCardToBoard } from '../../cards/helpers/return-card'
@@ -39,6 +39,7 @@ export type PayParams = {
   includeReturnedCard?: boolean
   playedCards?: string[]
   reserveResources?: Partial<Resource>
+  foodShortfallToBegging?: boolean
   candidateMetadataByFeeIndex?: Record<number, CardCostCandidateMetadata>
   seasonalAdjustments?: SeasonalAdjustment[]
   trackSourceCardPaymentStats?: boolean
@@ -74,6 +75,7 @@ const PAY_PARAM_KEYS = new Set([
   'includeReturnedCard',
   'playedCards',
   'reserveResources',
+  'foodShortfallToBegging',
   'candidateMetadataByFeeIndex',
   'seasonalAdjustments',
   'trackSourceCardPaymentStats',
@@ -159,6 +161,7 @@ const buildPaymentCtx = (
   paymentChoice,
   includeReturnedCard: p.includeReturnedCard,
   reserveResources: p.reserveResources,
+  foodShortfallToBegging: p.foodShortfallToBegging,
   candidateMetadataByFeeIndex: p.candidateMetadataByFeeIndex,
   seasonalAdjustments: p.seasonalAdjustments,
   paymentResourceProviders: PaymentSolver.isComplexCost(p.cost)
@@ -237,6 +240,7 @@ const buildSelectedResult = (
     returnCardToBoard(player, receipt.returnedCardId, state)
   }
   const resourcesPaid = receipt.resourcesPaid
+  const resourcesGained = receipt.foodShortfall ? { begging: receipt.foodShortfall } : undefined
   if (sourceCard && trackSourceCardPaymentStats) {
     addCardResourcePaid(player, sourceCard, resourcesPaid)
   }
@@ -249,6 +253,14 @@ const buildSelectedResult = (
     seasonalAdjustments: receipt.seasonalAdjustments,
     paymentResourceProviders: receipt.paymentResourceProviders as CardProvidedPaymentResourceProvider[] | undefined,
   })
+  if (resourcesGained) {
+    if (sourceCard && trackSourceCardPaymentStats) addCardResourceGained(player, sourceCard, resourcesGained)
+    eventSink?.emit<'resource.moved'>({
+      type: 'resource.moved', resources: resourcesGained,
+      from: { kind: 'supply' }, to: { kind: 'player', playerId: player.id }, reason: 'cardEffect',
+      ...(sourceCard ? { sourceCardId: sourceCard } : {}),
+    })
+  }
   recordCardCostAttribution(player, receipt.costAttribution)
   const extraData: Record<string, unknown> = {
     resourcesPaid,
@@ -272,6 +284,7 @@ const buildSelectedResult = (
   return {
     type: 'ok',
     resourcesPaid,
+    ...(resourcesGained ? { resourcesGained } : {}),
     extraData,
   }
 }

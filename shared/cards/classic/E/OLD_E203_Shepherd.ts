@@ -4,8 +4,8 @@ const CARD_ID = 'OLD_E203_Shepherd'
 const cardImpl = {
   effect: {
     id: CARD_ID,
-    computeBreedOffspringCount: (_state, player, type, count) =>
-      type === 'sheep' && player.resources.sheep >= 4 ? Math.max(2, count) : undefined,
+    computeBreedOffspringCount: (_state, _player, type, count, ctx) =>
+      type === 'sheep' && ctx.breedableCount >= 4 ? Math.max(2, count) : undefined,
   },
 } satisfies CardImpl
 export const OLD_E203_Shepherd = defineOccupationCard({

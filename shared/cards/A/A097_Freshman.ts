@@ -9,7 +9,7 @@ const CARD_ID = 'A097_Freshman'
 const canReplaceBake = (context: CardListenerContext) =>
   !context.actionContext?.checkedReplaceAction &&
   !isUsedThisTurnOrGap(context.player, CARD_ID, context.turnScopeProjection) &&
-  hasPlayableOccupationChoice(context.state, context.player, context.space.id, { exactCost: {} }, context?.actionHooks)
+  hasPlayableOccupationChoice(context.state, context.player, context.space.id, { exactCost: {} }, context?.actionHooks, context?.actionContext)
 const computeReplaceListener: CardListenerRegistration = {
   id: 'A97-freshman-replace-bake',
   cardIds: [CARD_ID],

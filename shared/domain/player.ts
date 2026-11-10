@@ -46,6 +46,15 @@ export const inactiveWorkersInSupply = (p: PlayerState): Worker[] =>
 export const hasInactiveWorkerInSupply = (p: PlayerState): boolean =>
   inactiveWorkersInSupply(p).length > 0
 
+export const familyGrowthCandidates = (p: PlayerState, actingWorkerId?: string): Worker[] =>
+  (p.workers ?? []).filter(worker => !worker.isActive && !worker.removedFromSupply && (
+    !worker.supplyUse || (worker.supplyUse.status === 'temporary' &&
+      worker.supplyUse.familyGrowthEligible === true && worker.id !== actingWorkerId)
+  ))
+
+export const hasFamilyGrowthCandidate = (p: PlayerState, actingWorkerId?: string): boolean =>
+  familyGrowthCandidates(p, actingWorkerId).length > 0
+
 export const newbornCount = (p: PlayerState): number =>
   (p.workers ?? []).filter(w => w.isActive && w.isNewborn).length
 

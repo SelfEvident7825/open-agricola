@@ -44,7 +44,7 @@ const minimumScheduleListener: CardListenerRegistration = {
       if (
         isLessonsSpaceId(context.actionId) &&
         context.player.occupationHand.includes(CARD_ID) &&
-        !hasPlayableOccupationChoice(context.state, context.player, context.actionId, undefined, context?.actionHooks)
+        !hasPlayableOccupationChoice(context.state, context.player, context.actionId, undefined, context?.actionHooks, context?.actionContext)
       ) {
         return { doable: false }
       }

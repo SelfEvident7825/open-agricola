@@ -24,6 +24,7 @@ export type PaymentCtx = {
   paymentChoice?: string
   includeReturnedCard?: boolean
   reserveResources?: Partial<Resource>
+  foodShortfallToBegging?: boolean
   candidateMetadataByFeeIndex?: Record<number, CardCostCandidateMetadata>
   seasonalAdjustments?: SeasonalAdjustment[]
   paymentResourceProviders?: CardProvidedPaymentResourceProvider[]
@@ -35,6 +36,7 @@ export type PaymentExecuteError =
 
 export type PaymentReceipt = {
   solution: PaymentSolution
+  foodShortfall?: number
   resourcesPaid: PaymentResourceMap
   bonusUsed?: string
   bonusChoiceIndex?: Record<string, number>

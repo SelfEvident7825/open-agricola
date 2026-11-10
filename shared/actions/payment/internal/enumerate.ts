@@ -271,7 +271,8 @@ const dominates = (a: PaymentSolution, b: PaymentSolution): boolean => {
     ...Object.keys(a.resourcesPaid),
     ...Object.keys(b.resourcesPaid),
   ] as PaymentResourceKey[])
-  let strictlyLess = false
+  if ((a.foodShortfall ?? 0) > (b.foodShortfall ?? 0)) return false
+  let strictlyLess = (a.foodShortfall ?? 0) < (b.foodShortfall ?? 0)
   for (const key of keys) {
     const aVal = a.resourcesPaid[key] ?? 0
     const bVal = b.resourcesPaid[key] ?? 0
@@ -330,8 +331,8 @@ export const sortPaymentSolutions = (
     const leftEntries = getPositiveResourceEntries(left)
     const rightEntries = getPositiveResourceEntries(right)
 
-    const leftTotal = leftEntries.reduce((sum, [, amount]) => sum + amount, 0)
-    const rightTotal = rightEntries.reduce((sum, [, amount]) => sum + amount, 0)
+    const leftTotal = leftEntries.reduce((sum, [, amount]) => sum + amount, left.foodShortfall ?? 0)
+    const rightTotal = rightEntries.reduce((sum, [, amount]) => sum + amount, right.foodShortfall ?? 0)
     if (leftTotal !== rightTotal) return leftTotal - rightTotal
 
     if (leftEntries.length !== rightEntries.length) {
@@ -872,9 +873,10 @@ export const generateTradeCombinations = (
 const canCoverCost = (
   resources: PaymentResourceMap,
   cost: Partial<Resource>,
+  foodShortfallToBegging = false,
 ): boolean => {
   const keys = Object.keys(cost) as ResourceKey[]
-  return keys.every((key) => (resources[key] ?? 0) >= (cost[key] ?? 0))
+  return keys.every((key) => (foodShortfallToBegging && key === 'food') || (resources[key] ?? 0) >= (cost[key] ?? 0))
 }
 
 const cardMatchesCostList = (
@@ -947,7 +949,10 @@ export const computeAllBuyableCombinations = (
   playedCards?: string[],
   costType?: CostModifierType,
   state?: GameState,
+  policy: { foodShortfallToBegging?: boolean; reserveResources?: Partial<Resource> } = {},
 ): PaymentSolution[] => {
+  const canPayRequiredResources = (resources: PaymentResourceMap) =>
+    canPayResources(player, policy.foodShortfallToBegging ? { ...resources, food: 0 } : resources)
   const normalizedCost = normalizeTypedFlatUnitCost(cost, costType)
   validateComplexCost(normalizedCost)
   const effectiveCost = costType
@@ -956,7 +961,7 @@ export const computeAllBuyableCombinations = (
   validateComplexCost(effectiveCost)
 
   // Provider backing is live action-space state, outside the cache key.
-  const canUseCache = !hasSupplyTokenCost(effectiveCost) && !effectiveCost.paymentResourceProviders?.length
+  const canUseCache = !policy.foodShortfallToBegging && !hasSupplyTokenCost(effectiveCost) && !effectiveCost.paymentResourceProviders?.length
   const cacheKey = canUseCache ? makeCacheKey(player, effectiveCost, costType, playedCards) : ''
   const cached = canUseCache ? solutionCache.get(cacheKey) : undefined
   if (cached) return cached
@@ -970,6 +975,19 @@ export const computeAllBuyableCombinations = (
     }
   }
   const playerResources: PaymentResourceMap = { ...player.resources, ...providerResources }
+  const foodAvailableAfterReservations = (resourcesPaid: PaymentResourceMap): number => {
+    const groupReserve = effectiveCost.resourceReserve
+    const otherReservedResources = groupReserve?.resources.includes('food')
+      ? groupReserve.resources.filter(resource => resource !== 'food').reduce((sum, resource) =>
+        sum + (player.resources[resource] ?? 0) - (resourcesPaid[resource] ?? 0), 0)
+      : 0
+    const reservedFood = Math.max(
+      0,
+      policy.reserveResources?.food ?? 0,
+      groupReserve?.resources.includes('food') ? groupReserve.minimum - otherReservedResources : 0,
+    )
+    return Math.max(0, (player.resources.food ?? 0) - reservedFood)
+  }
   const rawSolutions: InternalSolution[] = []
   const nb = effectiveCost.nb
 
@@ -1175,7 +1193,7 @@ export const computeAllBuyableCombinations = (
           const { resources: realCost, supplyTokens } = splitSupplyTokenCost(mergePaymentResources(effectiveCostFee, effectiveCost.protectedFee ?? {}))
           const providerCoverOptions = buildProviderCoverOptions(realCost, paymentResourceProviders)
           for (const providerCover of providerCoverOptions) {
-            if (!canCoverCost(tradeCombo.result, providerCover.remainingCost)
+            if (!canCoverCost(tradeCombo.result, providerCover.remainingCost, policy.foodShortfallToBegging)
               || !canPaySupplyTokens(state, player, mergePaymentResources(effectiveCostFee, effectiveCost.protectedFee ?? {}))) {
               continue
             }
@@ -1190,6 +1208,11 @@ export const computeAllBuyableCombinations = (
                 Object.entries(supplyTokens).map(([key, value]) => [key, -(value ?? 0)]),
               ),
             } as PaymentResourceMap
+            // A mandatory food fee may create debt, but food reserved for a later
+            // effect cannot fund a conversion into some other payment resource.
+            if (policy.foodShortfallToBegging
+              && Math.max(0, (playerResources.food ?? 0) - (tradeCombo.result.food ?? 0))
+                > foodAvailableAfterReservations(subtractResources(playerResources, remainingWithSupplyTokens))) continue
             rawSolutions.push({
               resourcesRemaining: remainingWithSupplyTokens,
               tradesUsed,
@@ -1224,7 +1247,7 @@ export const computeAllBuyableCombinations = (
           total + (cover.costResource === resource ? cover.costAmount : 0), 0)
         if (protectedAmount > 0) resourcesPaid[resource] = Math.max(resourcesPaid[resource] ?? 0, protectedAmount - covered)
       }
-      if (!canPayResources(player, resourcesPaid) || !canPaySupplyTokens(state, player, resourcesPaid)) continue
+      if (!canPayRequiredResources(resourcesPaid) || !canPaySupplyTokens(state, player, resourcesPaid)) continue
     }
     if (
       costType
@@ -1257,7 +1280,7 @@ export const computeAllBuyableCombinations = (
       : []
     const cardCost = cost.cards.cost ?? {}
     const alternativeCardCost = mergePaymentResources(cardCost, effectiveCost.protectedFee ?? {})
-    const canPayCardCost = canPayResources(player, alternativeCardCost)
+    const canPayCardCost = canPayRequiredResources(alternativeCardCost)
       && canPaySupplyTokens(state, player, alternativeCardCost)
 
     if (cost.cards.required) {
@@ -1266,7 +1289,7 @@ export const computeAllBuyableCombinations = (
         paymentSolutions.forEach((solution) => {
           eligibleCards.forEach((cardId) => {
             const resourcesPaid = mergePaymentResources(solution.resourcesPaid, cardCost)
-            if (!canPayResources(player, resourcesPaid) || !canPaySupplyTokens(state, player, resourcesPaid)) {
+            if (!canPayRequiredResources(resourcesPaid) || !canPaySupplyTokens(state, player, resourcesPaid)) {
               return
             }
             requiredCardSolutions.push({
@@ -1291,7 +1314,19 @@ export const computeAllBuyableCombinations = (
     }
   }
 
-  const budgetedSolutions = paymentSolutions.filter((solution) =>
+  const settledSolutions = policy.foodShortfallToBegging
+    ? paymentSolutions.map((solution): PaymentSolution => {
+      const availableFood = foodAvailableAfterReservations(solution.resourcesPaid)
+      const foodDue = solution.resourcesPaid.food ?? 0
+      const foodShortfall = Math.max(0, foodDue - availableFood)
+      return foodShortfall > 0 ? {
+        ...solution,
+        resourcesPaid: { ...solution.resourcesPaid, food: availableFood },
+        foodShortfall,
+      } : solution
+    })
+    : paymentSolutions
+  const budgetedSolutions = settledSolutions.filter((solution) =>
     withinPaymentBudget(solution, effectiveCost.paymentBudget)
       && Object.entries(effectiveCost.minimumResourcesPaid ?? {}).every(([resource, amount]) =>
         (solution.resourcesPaid[resource as PaymentResourceKey] ?? 0) >= (amount ?? 0))

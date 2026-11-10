@@ -41,4 +41,4 @@
 
 测试：`shared/actions/payment/__tests__/protected-fee.test.ts`、`server/__tests__/partner-fences-session.test.ts`、`shared/actions/payment/internal/__tests__/{candidate-closure,cost-modifier-permutation-probe,enumerate,cost-modifiers}.test.ts`、`shared/actions/payment/__tests__/{solver,card-purchase}.test.ts`、`shared/actions/effects/__tests__/{improvement-cost-candidates,pay-supply-token,pay-seasonal-adjustment,renovation}.test.ts`、`server/__tests__/{seasonal-fence-payment,seasonal-major-payment}-session.test.ts`。
 
-`Trade.groupScope: 'unit'` 使互斥组上限按购买单位生效：同一单位不能叠加替代基础费用，多个单位可以分别使用替代费用。职业支付会把卡面额外费用加在本次培训费用之上，免费培训仍保留卡面额外费用。
+`Trade.groupScope: 'unit'` 使互斥组上限按购买单位生效：同一单位不能叠加替代基础费用，多个单位可以分别使用替代费用。职业费用只指本次培训／行动费用；卡面 Individual Food Cost 由独立的 `individual-food-cost` onBuy 行动结算，食物不足可获乞讨，免费培训不能免除。强制职业可显式设置 `params.foodShortfallToBegging`，只传给该职业自己的 pay child，不传给其他反应。求解器仍应用正常成本变形并严格检查其他资源；食物只扣除未预留的库存，缺额存于可选的 `PaymentSolution.foodShortfall`，不临时发放食物，也不借食物进行资源转换。预览、选择身份、支配裁剪与回执均保留乞讨后果，结算发出实际食物支付与独立乞讨移动事件。省略标志及旧存档候选保持普通可负担性规则。测试：`shared/actions/payment/__tests__/food-shortfall.test.ts`、`server/__tests__/occupation-food-shortfall-session.test.ts`。

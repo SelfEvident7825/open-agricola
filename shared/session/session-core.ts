@@ -3294,12 +3294,14 @@ export class GameCore {
   }
 
   private executeFeedingLogic(): SessionResponse {
-    const indices = this.getHarvestPlayerIndices().sort(
-      (a, b) =>
-        getHarvestFeedingOrderPriority(this.state, this.state.players[a]!) -
-        getHarvestFeedingOrderPriority(this.state, this.state.players[b]!),
-    )
-    return this.continueHarvestFeedingQueue(indices.map((index) => ({ index })))
+    const feedQueue = this.getHarvestPlayerIndices()
+      .map((index) => ({
+        index,
+        priority: getHarvestFeedingOrderPriority(this.state, this.state.players[index]!),
+      }))
+      .sort((left, right) => left.priority - right.priority)
+      .map(({ index }) => ({ index }))
+    return this.continueHarvestFeedingQueue(feedQueue)
   }
 
   private continueEndHarvestEffects(playerIndex = 0, cardIndex = 0): SessionResponse {

@@ -297,6 +297,8 @@ export type ActionCostAttribution = {
 }
 
 export type PaymentSolution = {
+  /** Explicit mandatory-payment policy only; no food is added to the player's supply. */
+  foodShortfall?: number
   resourcesPaid: PaymentResourceMap
   tradesUsed: TradeUsage[]
   cardUsed?: string
@@ -341,6 +343,8 @@ export type Worker = {
     /** A scheduled guest cannot work before this round. */
     availableFromRound?: number
     returnRound?: number
+    /** A persistent card person may join the family through a family-growth action. */
+    familyGrowthEligible?: boolean
   }
 }
 

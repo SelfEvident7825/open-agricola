@@ -13,7 +13,8 @@ const cardImpl = {
       groupScope: 'unit',
       from: {},
       to: { wood: 3 },
-      conditions: { houseTypeWood: 1 },
+      conditions: { roomMaterialWood: 1 },
+      unitPrice: { wood: 2, reed: 2 },
     },
   ],
 } satisfies CardImpl

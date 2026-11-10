@@ -37,6 +37,7 @@ export type PromptKey =
   | 'ui.interactionChooseImprovement'
   | 'ui.interactionChooseMinorImprovement'
   | 'ui.interactionChooseOccupation'
+  | 'ui.interactionChooseFamilyGrowth'
   | 'ui.interactionGrainUtilizationChoice'
   | 'ui.interactionPlaceFarmerExtra'
   | 'ui.interactionRecallPlacedWorker'

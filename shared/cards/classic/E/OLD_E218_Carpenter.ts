@@ -1,11 +1,12 @@
 import { defineOccupationCard } from '../../card-source'
 import type { CardListenerRegistration, CardListenerContext } from '../../card-listeners'
-import type { ActionHookPhase, ActionHookResult } from '../../../actions/hooks'
+import type { ActionHookResult } from '../../../actions/hooks'
 import type { CardImpl } from '../../registry'
-import { constructUnitDiscountTrade } from '../../helpers/construct-cost'
+import { constructedRoomMaterial, constructUnitPriceTrade } from '../../helpers/construct-cost'
+
 const CARD_ID = 'OLD_E218_Carpenter'
 /**
- * B126 Carpenter — Every new room only costs 3 of the appropriate building resource
+ * E218 Carpenter — Every new room only costs 3 of the appropriate building resource
  * and 2 reed (instead of the standard 5+2).
  *
  * Reference: onPlayerComputeCostsConstruct calls Utils::addCost with [res => 3, REED => 2].
@@ -13,47 +14,22 @@ const CARD_ID = 'OLD_E218_Carpenter'
 const constructCostListener: CardListenerRegistration = {
   id: 'OLD_E218_Carpenter-carpenter-costs-construct',
   cardIds: [CARD_ID],
-  phases: ['computeCosts' as ActionHookPhase],
+  phases: ['computeCosts'],
   actions: ['construct'],
   handler: (context: CardListenerContext): ActionHookResult | void => {
-    const houseType = context.player.houseType
-    if (houseType === 'clay')
-      return {
-        trades: [
-          {
-            ...constructUnitDiscountTrade(CARD_ID, { clay: 2 }),
-            groupId: 'classic-room-base',
-            groupMax: 1,
-            groupScope: 'unit',
-          },
-        ],
-      }
-    if (houseType === 'stone')
-      return {
-        trades: [
-          {
-            ...constructUnitDiscountTrade(CARD_ID, { stone: 2 }),
-            groupId: 'classic-room-base',
-            groupMax: 1,
-            groupScope: 'unit',
-          },
-        ],
-      }
+    const material = constructedRoomMaterial(context) ?? context.player.houseType
     return {
-      trades: [
-        {
-          ...constructUnitDiscountTrade(CARD_ID, { wood: 2 }),
-          groupId: 'classic-room-base',
-          groupMax: 1,
-          groupScope: 'unit',
-        },
-      ],
+      trades: [{
+        ...constructUnitPriceTrade(context, CARD_ID, { [material]: 3, reed: 2 }),
+        groupId: 'classic-room-base',
+        groupMax: 1,
+        groupScope: 'unit',
+      }],
     }
   },
 }
 const cardImpl = {
   listeners: [constructCostListener],
-  reaches: [] as readonly string[],
 } satisfies CardImpl
 export const OLD_E218_Carpenter = defineOccupationCard({
   meta: {

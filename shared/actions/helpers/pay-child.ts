@@ -22,6 +22,7 @@ export type PayChildOptions = {
   actionContext?: Record<string, unknown>
   playedCards?: string[]
   reserveResources?: Partial<Resource>
+  foodShortfallToBegging?: boolean
   includeReturnedCard?: boolean
   sourceActionId?: string
   candidateMetadataByFeeIndex?: Record<number, CardCostCandidateMetadata>

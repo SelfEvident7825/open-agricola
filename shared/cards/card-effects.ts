@@ -59,6 +59,14 @@ export type BreedableAnimalCountHandler = (
   ctx: BreedThresholdContext,
 ) => number | undefined
 
+export type BreedOffspringCountHandler = (
+  state: GameState,
+  player: PlayerState,
+  animalType: BreedAnimalType,
+  currentCount: number,
+  ctx: BreedThresholdContext & { breedableCount: number },
+) => number | undefined
+
 export type AnimalScoreAdjustmentHandler = (
   state: GameState,
   player: PlayerState,
@@ -134,8 +142,10 @@ export type CardEffectField = CardEffectHook
   | 'computeResourceCommitments'
   | 'computeExtraRoomCapacity'
   | 'computeHarvestBreedOrderPriority'
+  | 'computeHarvestFeedingOrderPriority'
   | 'enforceReorganizeOnLastHarvest'
-  | 'computeBreedThreshold' | 'computeBreedableAnimalCount' | 'computeAnimalScoreAdjustment'
+  | 'computeBreedThreshold' | 'computeBreedableAnimalCount' | 'computeBreedOffspringCount'
+  | 'computeAnimalScoreAdjustment'
   | 'onComputeAnimalZones' | 'onComputeSharedAnimalZones' | 'onComputeSowableFields' | 'onSowExtraField'
   | 'computeLockedFarmTiles'
   | 'getInvalidAnimals'
@@ -290,7 +300,7 @@ export type CardEffect = {
   getStatePresentation?: (player: Readonly<PlayerState>) => CardStatePresentation | void
   computeHarvestBreedOrderPriority?: (state: GameState, player: PlayerState) => number | void
   /** Higher values feed later; equal priorities preserve the normal seat order. */
-  computeHarvestFeedingOrderPriority?: (state: GameState, player: PlayerState) => number
+  computeHarvestFeedingOrderPriority?: (state: GameState, player: PlayerState) => number | void
   /** Applies to ordinary and card-granted placements, including temporary guests. */
   blocksWorkerPlacement?: (state: GameState, player: PlayerState) => boolean
   permitsActionSpaceEntry?: (
@@ -306,7 +316,7 @@ export type CardEffect = {
   computeBreedThreshold?: BreedThresholdHandler
   computeBreedableAnimalCount?: BreedableAnimalCountHandler
   /** Number of offspring, after parent eligibility has been established. */
-  computeBreedOffspringCount?: BreedableAnimalCountHandler
+  computeBreedOffspringCount?: BreedOffspringCountHandler
   computeAnimalScoreAdjustment?: AnimalScoreAdjustmentHandler
   consumeAnimalPayment?: AnimalPaymentHandler
   onAnimalRemoved?: AnimalRemovedHandler
@@ -409,13 +419,37 @@ export const cardEffectsPermitSpaceEntry = (
     ),
   )
 
-export const getHarvestFeedingOrderPriority = (state: GameState, player: PlayerState): number =>
-  Math.max(
-    0,
-    ...[...player.improvements, ...player.minorPlayed, ...player.occupationPlayed].map(
-      (id) => getCardEffect(id)?.computeHarvestFeedingOrderPriority?.(state, player) ?? 0,
-    ),
-  )
+export const getHarvestFeedingOrderPriority = (
+  state: GameState,
+  player: PlayerState,
+): number => {
+  const allCards = [
+    ...(player.improvements ?? []),
+    ...(player.minorPlayed ?? []),
+    ...(player.occupationPlayed ?? []),
+  ]
+  let priority = 0
+  for (const cardId of allCards) {
+    const effect = getCardEffect(cardId)
+    const handler = effect?.computeHarvestFeedingOrderPriority
+    if (!handler) continue
+    try {
+      const next = handler(state, player)
+      if (typeof next !== 'number' || Number.isNaN(next)) continue
+      priority = Math.max(priority, Math.floor(next))
+    } catch (err) {
+      if (isCustomCard(cardId)) {
+        console.warn(
+          `[card-effects] custom card ${cardId} computeHarvestFeedingOrderPriority threw, skipping:`,
+          err,
+        )
+        continue
+      }
+      throw err
+    }
+  }
+  return priority
+}
 
 export const resourceCommitmentsSatisfied = (state: GameState): boolean => {
   const totals = new Map<string, Partial<Resource>>()
@@ -631,13 +665,28 @@ export const getBreedableAnimalCount = (
 export const getBreedOffspringCount = (
   state: GameState,
   player: PlayerState,
-  animal: BreedAnimalType,
-  ctx: BreedThresholdContext,
+  animalType: BreedAnimalType,
+  ctx: BreedThresholdContext & { breedableCount: number },
 ): number => {
+  const allCards = [
+    ...(player.improvements ?? []),
+    ...(player.minorPlayed ?? []),
+    ...(player.occupationPlayed ?? []),
+  ]
   let count = 1
-  for (const id of [...player.improvements, ...player.minorPlayed, ...player.occupationPlayed]) {
-    const next = getCardEffect(id)?.computeBreedOffspringCount?.(state, player, animal, count, ctx)
-    if (typeof next === 'number' && Number.isFinite(next)) count = Math.max(0, Math.floor(next))
+  for (const cardId of allCards) {
+    const handler = getCardEffect(cardId)?.computeBreedOffspringCount
+    if (!handler) continue
+    try {
+      const next = handler(state, player, animalType, count, ctx)
+      if (typeof next === 'number' && Number.isFinite(next)) count = Math.max(0, Math.floor(next))
+    } catch (err) {
+      if (isCustomCard(cardId)) {
+        console.warn(`[card-effects] custom card ${cardId} computeBreedOffspringCount threw, skipping:`, err)
+        continue
+      }
+      throw err
+    }
   }
   return count
 }

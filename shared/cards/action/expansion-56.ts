@@ -12,7 +12,7 @@ import { createFirstMissingResourceFlow, describeFirstMissingResourcePlan, first
 
 const canPlayOccupationWithFood = (spaceId: string, food: number): ActionDefinition['canBeExecutedByPlayer'] =>
   (state, player, context) =>
-    player.resources.food >= food && hasPlayableOccupationChoice(state, player, spaceId, undefined, context?.actionHooks)
+    player.resources.food >= food && hasPlayableOccupationChoice(state, player, spaceId, undefined, context?.actionHooks, context?.actionContext)
 
 export const lessons56TwoFood: ActionDefinition = {
   id: 'lessons-56-2f',
@@ -52,7 +52,7 @@ export const lessons56Variable: ActionDefinition = {
   linkedGroupId: 'lessons-modest-children-56',
   canBeExecutedByPlayer: (state, player, context) =>
     player.resources.food >= (player.occupationPlayed.length < 2 ? 1 : 2) &&
-    hasPlayableOccupationChoice(state, player, 'lessons-56-variable', undefined, context?.actionHooks),
+    hasPlayableOccupationChoice(state, player, 'lessons-56-variable', undefined, context?.actionHooks, context?.actionContext),
   execute: () => ({ type: 'ok' }),
   flow: {
     type: 'seq',

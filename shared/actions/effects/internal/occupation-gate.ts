@@ -20,7 +20,7 @@ export const occupationGateAction: ActionDefinition = {
       state,
       player,
       'occupation',
-      readOccupationParams(context?.actionContext), context?.actionHooks
+      readOccupationParams(context?.actionContext), context?.actionHooks, context?.actionContext
     ),
   execute: () => ({ type: 'ok' }),
 }

@@ -13,6 +13,7 @@
 import type {
   ActionExecutionResult,
   ChoiceDescriptionPreview,
+  ChoiceEffectPreview,
   CardCostCandidateMetadata,
   CardProvidedPaymentResourceProvider,
   ComplexCost,
@@ -116,10 +117,20 @@ export const describePaymentChoicePreview = (
   solution: PaymentSolution,
   includeReturnedCard: boolean,
   options: PaymentChoiceResultOptions = {},
-) => ({
-  effectPreview: describePaymentEffectPreview(solution, includeReturnedCard, options),
-  descriptionPreview: describePaymentOutcome(solution, includeReturnedCard, options),
-})
+): { effectPreview: ChoiceEffectPreview; descriptionPreview?: ChoiceDescriptionPreview } => {
+  const payment = describePaymentEffectPreview(solution, includeReturnedCard, options)
+  const descriptionPreview = describePaymentOutcome(solution, includeReturnedCard, options)
+  if (!solution.foodShortfall) return { effectPreview: payment, descriptionPreview }
+  const description: ChoiceDescriptionPreview = {
+    kind: 'group', operator: 'sequence', separator: ' → ', parts: [
+      descriptionPreview ?? { kind: 'action', labelKey: 'actions.pay.name', showLabel: false, effectPreview: payment },
+      { kind: 'action', labelKey: 'actions.gain.name', showLabel: false, effectPreview: {
+        kind: 'resourceExchange', resourcesGained: { begging: solution.foodShortfall },
+      } },
+    ],
+  }
+  return { effectPreview: { kind: 'rule', description }, descriptionPreview: description }
+}
 
 export const preservesResourceReserve = (
   resources: Partial<Resource>,

@@ -1,9 +1,17 @@
 import { defineOccupationCard } from '../../card-source'
 import type { CardImpl } from '../../registry'
+import { individualFoodCostRequest } from '../../../actions/helpers/individual-food-cost'
 const CARD_ID = 'OLD_E172_Chief'
 const cardImpl = {
   effect: {
     id: CARD_ID,
+    onBuy: () => ({
+      type: 'leaf', actionId: 'individual-food-cost', sourceCard: CARD_ID, params: { food: 2 },
+    }),
+    projectInteractionRequest: (_state, player, request, actionId) =>
+      actionId === 'individual-food-cost' && request.kind === 'choice'
+        ? individualFoodCostRequest(player, 2)
+        : request,
     computeBonusScore: (_state, player, _ctx) => (player.houseType === 'stone' ? player.rooms : 0),
   },
 } satisfies CardImpl
@@ -16,7 +24,7 @@ export const OLD_E172_Chief = defineOccupationCard({
     deck: 'E',
     number: 172,
     desc: ['打出此卡时，额外支付2份食物。游戏结束时，你的每间石屋都额外获得1分。'],
-    cost: { food: 2 },
+    cost: {},
     vp: 0,
     prerequisite: '',
     players: '1+',

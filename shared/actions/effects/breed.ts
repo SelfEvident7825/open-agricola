@@ -58,6 +58,7 @@ export const canBreedAnimals = (
     const ctx = { sourceCard: opts.sourceCard }
     const breedableCount = getBreedableAnimalCount(state, player, type, breedingAnimalCount(state, player, type), ctx)
     if (breedableCount < getBreedThreshold(state, player, type, ctx)) continue
+    if (getBreedOffspringCount(state, player, type, { ...ctx, breedableCount }) <= 0) continue
     return true
   }
   return false
@@ -68,8 +69,8 @@ export const canBreedAnimals = (
  *   - free capacity = `getTotalAnimalCapacity(player)` (no subtraction of
  *     assigned, matching prior harvest behaviour). Each newborn consumes one
  *     unit of free capacity.
- *   - For each requested animal type with ≥2 of that resource, +1 and record
- *     the increment in the returned summary.
+ *   - After parent eligibility, played-card offspring queries adjust the default
+ *     one newborn. Resources, placement minimums, summaries and events use that count.
  *
  * Consumed by both harvest path (sourceCard='harvest') and breed-shaped cards
  * such as A165 PigBreeder (sourceCard='A165_PigBreeder').
@@ -90,7 +91,7 @@ export const breed = (
     const breedableCount = getBreedableAnimalCount(state, player, type, breedingAnimalCount(state, player, type), ctx)
     const threshold = getBreedThreshold(state, player, type, ctx)
     if (breedableCount < threshold) continue
-    const offspring = getBreedOffspringCount(state, player, type, ctx)
+    const offspring = getBreedOffspringCount(state, player, type, { ...ctx, breedableCount })
     if (offspring <= 0) continue
     placementMinimums[type] =
       Math.max(0, threshold - (breedableCount - (player.resources[type] ?? 0))) + offspring

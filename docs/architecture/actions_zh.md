@@ -77,6 +77,8 @@ type ActionDefinition = {
 | 无人物使用与固定目标跳转 | 卡牌可不放置、不消耗人物而执行完整行动格 flow（`place-farmer.actionContext.viaCardJump`），或把绑定工人跳转到固定目标（`jumpLeaf`）。查询与执行绑定同一工人；费用、否决、联动封锁和防递归仍生效。 |
 | 授予的规则行动 | 卡牌授予规则行动时直接调用该行动；授予某行动不展开平时提供它的整个行动格。 |
 | `pass-minor-card-to-left` | 把已打出的小改良移入左侧玩家手牌，清除其卡牌状态，发出公开 `card.passed` 与私有手牌变更。后续触发读取 `card.passed`。 |
+| `family-growth` | 普通供应区工人成为新生儿。临时工人只有显式声明可选的 `supplyUse.familyGrowthEligible` 能力时才能改为加入家庭；执行生育的工人不能晋升自己。加入家庭保留原位置、不新增放人回执，并移除临时供应使用记录。放人准入与执行绑定同一名待放置工人。 |
+| `draw-ordinary-cards` | `params.replaceHand` 先弃掉指定类型的手牌，再从该类型剩余普通牌库抽取。实际抽到隐藏牌时设置既有撤销边界并报告受保护观察；空抽不泄露新信息。手牌变化只对持有者私密发送。 |
 | `individual-food-cost` | 职业的强制个人食物费用，独立于职业费用和 PaymentSolver：支付现有食物，缺口用乞讨补；缺粮时需显式确认；预览与结算读取实时库存。 |
 | `take-from-card` | 先扣来源卡 counter，再把入账交给一个 `receive` 子节点，因此 Receive reaction 能观察从卡上移出的货物，Gain reaction 观察不到。 |
 | `pop-card-stack` / `claim-farmyard-goods-tokens` / `claim-field-goods-tokens` | 移除卡上栈顶或可领取的农场货物标记，把真实货物交给一个 `receive` 子节点入账。农场格标记按来源领取，可选附带已提交坐标；非货物栈项只改变栈。 |
@@ -84,6 +86,7 @@ type ActionDefinition = {
 | `receive` | 已有货物进入供应区的唯一入账方式（[ADR 0030](../adr/0030-existing-goods-enter-supply-through-receive.md)）。它在一次 transaction 中为一名玩家结算到期的未来货物（见 [阶段 hook](hooks_zh.md#阶段-hook)），也为来源动作已从卡上移除的货物入账（`params.fromCard`）。`gain` 只表示从公共供应区获得新货物。 |
 | `activate-card` / `activate-card-effect` / `activate-extra-turn` | listener、阶段效果和额外回合 provider 的激活 leaf，见 [阶段 hook](hooks_zh.md#阶段-hook)与[Listener 纯度](hooks_zh.md#listener-纯度)。 |
 | `reap` | 普通收获与私人田间阶段收获，见 [阶段 hook](hooks_zh.md#阶段-hook)。 |
+| `breed` | 亲本资格成立后，`CardEffect.computeBreedOffspringCount()` 按已打出卡牌顺序从默认 1 只幼崽开始查询。运行时上下文包含已计入寄宿动物繁殖归属与卡牌修正的 `breedableCount`。有限结果向下取整且不低于零；`undefined` 保持当前数量。可用性和执行共用此查询；资源、安置下限、摘要与事件均使用所得数量。重排在保留所需非幼畜后逐只统计幼畜，同时扣减幼畜数和安置下限，沿用既有安置存档结构与事件身份。覆盖：`shared/actions/effects/__tests__/breed.test.ts`、`server/__tests__/harvest-breed-placement-session.test.ts`。 |
 
 - 职业可用性、选择提交和直接 / 免费打出共用同一个前置门禁。改良费用预览与支付以授予的 `sourceCard` 或实体行动格 ID 作为 `actionCardId`。
 - 选择类后续行动在 `actionContext` 中携带语义来源（例如 `extraCropPlacement`）；后续卡牌读取该标记，不读来源卡 ID。

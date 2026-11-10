@@ -15,6 +15,7 @@ import { getSuppressedBeforeListenerIds, suppressBeforeListeners } from '../engi
 import { getSkipComputeReplaceListenerIds, withSkippedComputeReplaceListeners } from '../engine/replace-guard'
 import { getPlayerActionSpaceConfig } from '../cards/player-action-space'
 import { candidateBuildFarmPlayers, withTargetFarm } from './helpers/target-farm'
+import { selectWorkerForMoorAction } from '../moor/heating'
 
 const deferredFlowDoableFns = new WeakSet<CanBeExecutedByPlayer>()
 const flowDerivedDoableFns = new WeakMap<CanBeExecutedByPlayer, FlowActionResolver | undefined>()
@@ -264,6 +265,10 @@ export const isPlacementActionDoableInFlowContext = (
   args: Parameters<typeof isActionDoableInFlowContext>[0] & { baseDoable?: () => boolean },
 ): boolean => {
   args = { ...args, actionSpaceUse: args.actionSpaceUse ?? { newPlacement: true } }
+  if (args.actionSpaceUse?.newPlacement && typeof args.actionContext?.placedWorkerId !== 'string') {
+    const worker = selectWorkerForMoorAction(args.state, args.player, args.space.id)
+    if (worker) args = { ...args, actionContext: { ...args.actionContext, placedWorkerId: worker.id } }
+  }
   const { action, resolveAction, baseDoable, ...context } = args
   if (isActionVetoedInFlowContext(context)) return false
   if (action.strictCanExecute && action.flow && !isFlowDerivedDoable(action.canBeExecutedByPlayer)

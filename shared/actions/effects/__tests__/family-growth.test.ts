@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import type { GameState, PlayerState, Resource, Worker } from '../../../contract/types'
+import type { ActionMutationContext, GameState, PlayerState, Resource, Worker } from '../../../contract/types'
 import { familyGrowthAction } from '../family-growth'
 
 const resources = (): Resource => ({
@@ -80,6 +80,64 @@ const state = (p: PlayerState): GameState => ({
 } as unknown as GameState)
 
 describe('family-growth supply gate', () => {
+  it('does not treat existing temporary workers as growth candidates without an explicit capability', () => {
+    const temporary = worker('3', false)
+    temporary.supplyUse = { status: 'temporary', sourceCard: 'test-card', availableFromRound: 1 }
+    const p = player([worker('1', true), worker('2', true), temporary])
+    p.rooms = 3
+    expect(familyGrowthAction.canBeExecutedByPlayer!(state(p), p)).toBe(false)
+  })
+
+  it('excludes the person performing growth while retaining ordinary newborn supply', () => {
+    const temporary = worker('3', false)
+    temporary.supplyUse = {
+      status: 'temporary', sourceCard: 'test-card', availableFromRound: 1, familyGrowthEligible: true,
+    }
+    const p = player([worker('1', true), worker('2', true), temporary])
+    p.rooms = 3
+    const context = { actionContext: { placedWorkerId: '3' } }
+    expect(familyGrowthAction.canBeExecutedByPlayer!(state(p), p, context)).toBe(false)
+    p.workers.push(worker('4', false))
+    expect(familyGrowthAction.canBeExecutedByPlayer!(state(p), p, context)).toBe(true)
+  })
+
+  it('promotes a placed eligible person without recalling it or recording another placement', () => {
+    const temporary = worker('3', false)
+    temporary.supplyUse = {
+      status: 'temporary', sourceCard: 'test-card', availableFromRound: 1, familyGrowthEligible: true,
+    }
+    const p = player([worker('1', true), worker('2', true), temporary])
+    p.rooms = 3
+    const game = state(p)
+    game.actionSpaces = [{ id: 'forest', takenBy: [{ playerId: p.id, workerId: '3' }] }] as GameState['actionSpaces']
+    const context = {
+      state: game, player: p, space: { id: 'wish-children' }, actionContext: { placedWorkerId: '1' },
+    } as ActionMutationContext
+    expect(familyGrowthAction.resolveChoice!(context, 'join-family:3')).toEqual({ type: 'ok' })
+    expect(temporary).toMatchObject({ isActive: true, isNewborn: false })
+    expect(temporary.supplyUse).toBeUndefined()
+    expect(game.actionSpaces[0]!.takenBy).toEqual([{ playerId: p.id, workerId: '3' }])
+    expect(p.stats.placedFarmers).toBe(0)
+  })
+
+  it('uses a relocated person identity rather than an earlier placement snapshot', () => {
+    const temporary = worker('3', false)
+    temporary.supplyUse = {
+      status: 'temporary', sourceCard: 'test-card', availableFromRound: 1, familyGrowthEligible: true,
+    }
+    const p = player([worker('1', true), worker('2', true), temporary])
+    p.rooms = 3
+    expect(familyGrowthAction.canBeExecutedByPlayer!(state(p), p, {
+      actionContext: { viaCardJump: true, workerId: '3', placedWorkerId: '1' },
+    })).toBe(false)
+    expect(familyGrowthAction.canBeExecutedByPlayer!(state(p), p, {
+      actionContext: { viaCardJump: true, workerId: '1', placedWorkerId: '3' },
+    })).toBe(true)
+    expect(familyGrowthAction.canBeExecutedByPlayer!(state(p), p, {
+      actionContext: { viaCardJump: true, placedWorkerId: '3' },
+    })).toBe(true)
+  })
+
   it('does not allow skip-room growth when all inactive workers were removed from supply', () => {
     const p = player([
       worker('1', true),
