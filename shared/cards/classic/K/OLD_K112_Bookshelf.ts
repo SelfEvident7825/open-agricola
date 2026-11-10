@@ -1,33 +1,52 @@
-// Generated classic import. Remove this line before manually porting a card.
 import { defineMinorCard } from '../../card-source'
 import type { CardListenerRegistration, CardListenerContext } from '../../card-listeners'
-import type { ActionHookPhase, ActionHookResult } from '../../../actions/hooks'
 import { gainLeaf } from '../../helpers/pay-gain-node'
 import type { CardImpl } from '../../registry'
+import { getOccupationActionCost, isOccupationPlayable } from '../../../actions/effects/occupation'
+import { PaymentSolver } from '../../../actions/payment'
+import { getOccupation } from '../../registry-display'
+import { meetsCardPrerequisites } from '../../helpers/prerequisites'
 
 const CARD_ID = 'OLD_K112_Bookshelf'
+
+const eligibleOccupations = (context: CardListenerContext) => {
+  const allowed = context.params?.allowedCards
+  return context.player.occupationHand.filter(id => {
+    const occupation = getOccupation(id)
+    return occupation && (!Array.isArray(allowed) || allowed.includes(id)) &&
+      meetsCardPrerequisites(context.player, occupation, context.state.round, context.state)
+  })
+}
+
+const canPlayWithBookshelf = (context: CardListenerContext) => {
+  const player = {
+    ...context.player,
+    resources: { ...context.player.resources, food: context.player.resources.food + 3 },
+  }
+  const exactCost = PaymentSolver.readExactCost({ ...context.actionContext, ...context.params })
+  const cost = exactCost ? PaymentSolver.resolveExactUnitCost(exactCost, 1)
+    : getOccupationActionCost(player, context.space?.id ?? '')
+  return eligibleOccupations(context).some(id => isOccupationPlayable(context.state, player, id, cost ?? undefined, context.sourceCard, context.actionHooks))
+}
 const beforeListener: CardListenerRegistration = {
-  id: 'OLD_K112_Bookshelf-bookshelf-before-occupation',
+  id: CARD_ID + '-before-occupation',
   cardIds: [CARD_ID],
-  phases: ['before' as ActionHookPhase],
+  phases: ['before'],
   actions: ['occupation'],
-  handler: (_context: CardListenerContext): ActionHookResult | void => {
-    return { flow: gainLeaf(CARD_ID, { food: 3 }), sourceCard: CARD_ID }
-  },
+  handler: context => canPlayWithBookshelf(context)
+    ? { flow: gainLeaf(CARD_ID, { food: 3 }), sourceCard: CARD_ID } : undefined,
 }
-
 const isDoableListener: CardListenerRegistration = {
-  id: 'OLD_K112_Bookshelf-bookshelf-isdoable-occupation',
+  id: CARD_ID + '-occupation-admission',
   cardIds: [CARD_ID],
-  phases: ['isDoable' as ActionHookPhase],
+  phases: ['isDoable'],
   actions: ['occupation'],
-  handler: (context: CardListenerContext): ActionHookResult | void => {
-    if (context.doable) return
-    if (context.actionContext?.skipBeforeTriggers === true) return
-    return { doable: true }
+  handler: context => {
+    if (eligibleOccupations(context).length === 0) return { doable: false }
+    if (context.doable || context.actionContext?.skipBeforeTriggers === true) return
+    return canPlayWithBookshelf(context) ? { doable: true } : undefined
   },
 }
-
 const cardImpl = {
   listeners: [beforeListener, isDoableListener],
   reaches: [] as readonly string[],

@@ -1,5 +1,12 @@
-// Generated classic import. Remove this line before manually porting a card.
 import { defineMinorCard } from '../../card-source'
+import { gainLeaf } from '../../helpers/pay-gain-node'
+import type { CardImpl } from '../../registry'
+
+const CARD_ID = 'OLD_K141_BoarBreeding'
+const cardImpl = {
+  effect: { id: CARD_ID, onBuy: () => gainLeaf(CARD_ID, { boar: 1 }) }
+} satisfies CardImpl
+
 export const OLD_K141_BoarBreeding = defineMinorCard({
   meta: {
     id: 'OLD_K141_BoarBreeding',
@@ -16,7 +23,7 @@ export const OLD_K141_BoarBreeding = defineMinorCard({
     prerequisite: '',
     passing: true,
     extraVp: false,
-    implemented: false,
+    implemented: true,
     artUrl: '/assets/classic/K/K141.png',
     locales: {
       zh: {
@@ -26,4 +33,6 @@ export const OLD_K141_BoarBreeding = defineMinorCard({
       },
     },
   },
+  impl: cardImpl,
 })
+export const OLD_K141_BoarBreeding_impl = OLD_K141_BoarBreeding.impl

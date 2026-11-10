@@ -1,5 +1,30 @@
-// Generated classic import. Remove this line before manually porting a card.
 import { defineMinorCard } from '../../card-source'
+import type { CardImpl } from '../../registry'
+import type { BonusScoreLevel } from '../../card-effects'
+import { createSingleHarvestExchange } from '../../helpers/stage-effects'
+
+const CARD_ID = 'OLD_K122_Sawmill'
+
+const cardImpl = {
+  effect: {
+    id: CARD_ID,
+    onHarvest: createSingleHarvestExchange(CARD_ID),
+    computeCostedBonus: (_state, player): BonusScoreLevel[] => [
+      {
+        cost: {},
+        score: 0,
+      },
+      ...[2, 4, 5].flatMap((amount, index) => player.resources.wood >= amount
+        ? [
+          {
+            cost: { wood: amount },
+            score: index + 1,
+          },
+        ] : []),
+    ],
+  },
+} satisfies CardImpl
+
 export const OLD_K122_Sawmill = defineMinorCard({
   meta: {
     id: 'OLD_K122_Sawmill',
@@ -16,7 +41,11 @@ export const OLD_K122_Sawmill = defineMinorCard({
     prerequisite: '退还A7家具工坊',
     passing: false,
     extraVp: true,
-    implemented: false,
+    implemented: true,
+    returnCards: ['Major_Joinery'],
+    alsoCountsAs: ['major'],
+    joineryIdentity: true,
+    exchanges: [{ from: { wood: 1 }, to: { food: 3 }, triggers: ['harvest'], max: 1 }],
     artUrl: '/assets/classic/K/K122.png',
     locales: {
       zh: {
@@ -28,4 +57,7 @@ export const OLD_K122_Sawmill = defineMinorCard({
       },
     },
   },
+  impl: cardImpl,
 })
+
+export const OLD_K122_Sawmill_impl = OLD_K122_Sawmill.impl

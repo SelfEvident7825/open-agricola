@@ -1,5 +1,61 @@
-// Generated classic import. Remove this line before manually porting a card.
 import { defineMinorCard } from '../../card-source'
+import { getLogicalFields } from '../../helpers/card-field'
+import { createEventQuery } from '../../../events/query'
+import type { ActionFlow, PlayerState } from '../../../contract/types'
+import type { CardImpl } from '../../registry'
+
+const CARD_ID = 'OLD_K127_Clapper'
+
+const isGrowthSpace = (id: string, round: number) =>
+  id === 'wish-children'
+  || id === 'urgent-wish-children'
+  || (id === 'modest-wish-children-56' && round >= 5)
+
+const growGrain = (player: PlayerState): ActionFlow | undefined => {
+  const locations = getLogicalFields(player)
+    .filter(field => {
+      const crop = field.stacks[0]?.kind
+      return (crop === 'grain' || crop === 'wood')
+        && field.stacks.every(stack => stack.kind === crop)
+    })
+    .map(field => ({ kind: 'field' as const, row: field.row, col: field.col }))
+  if (!locations.length) return
+  return {
+    type: 'leaf',
+    actionId: 'special-effect',
+    sourceCard: CARD_ID,
+    params: { kind: 'plant-additional-good', locations },
+  }
+}
+
+const cardImpl = {
+  effect: {
+    id: CARD_ID,
+    onBuy: (state, player) => {
+      const occupiesGrowth = state.actionSpaces.some(space =>
+        isGrowthSpace(space.id, state.round)
+        && space.takenBy.some(worker => worker.playerId === player.id && !worker.synthetic),
+      )
+      return occupiesGrowth ? growGrain(player) : undefined
+    },
+  },
+  listeners: [
+    {
+      id: `${CARD_ID}-grow-grain`,
+      cardIds: [CARD_ID],
+      actionSpaces: ['wish-children', 'urgent-wish-children', 'modest-wish-children-56'],
+      phases: ['after'],
+      handler: ({ state, player, space, actionEvents }) => {
+        if (!space || !isGrowthSpace(space.id, state.round)) return
+        // A purchase on this same space already applies the immediate onBuy effect.
+        if (createEventQuery(actionEvents ?? []).filter('card.played').some(event => event.cardId === CARD_ID)) return
+        const flow = growGrain(player)
+        return flow ? { flow, sourceCard: CARD_ID } : undefined
+      },
+    }
+  ],
+} satisfies CardImpl
+
 export const OLD_K127_Clapper = defineMinorCard({
   meta: {
     id: 'OLD_K127_Clapper',
@@ -18,7 +74,7 @@ export const OLD_K127_Clapper = defineMinorCard({
     prerequisite: '',
     passing: false,
     extraVp: false,
-    implemented: false,
+    implemented: true,
     artUrl: '/assets/classic/K/K127.png',
     locales: {
       zh: {
@@ -30,4 +86,6 @@ export const OLD_K127_Clapper = defineMinorCard({
       },
     },
   },
+  impl: cardImpl,
 })
+export const OLD_K127_Clapper_impl = OLD_K127_Clapper.impl

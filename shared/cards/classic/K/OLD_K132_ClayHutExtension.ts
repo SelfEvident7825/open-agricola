@@ -1,5 +1,21 @@
-// Generated classic import. Remove this line before manually porting a card.
 import { defineMinorCard } from '../../card-source'
+import type { CardImpl } from '../../registry'
+
+const CARD_ID = 'OLD_K132_ClayHutExtension'
+const cardImpl = {
+  prerequisiteCheck: player => player.houseType === 'clay',
+  effect: {
+    id: CARD_ID,
+    onBuy: () => ({
+      type: 'leaf',
+      actionId: 'construct',
+      optional: true,
+      sourceCard: CARD_ID,
+      actionContext: { max: 1, exactCost: { max: 1 }, targetFarmPolicy: 'own' },
+    }),
+  },
+} satisfies CardImpl
+
 export const OLD_K132_ClayHutExtension = defineMinorCard({
   meta: {
     id: 'OLD_K132_ClayHutExtension',
@@ -17,7 +33,7 @@ export const OLD_K132_ClayHutExtension = defineMinorCard({
     prerequisite: '',
     passing: true,
     extraVp: false,
-    implemented: false,
+    implemented: true,
     artUrl: '/assets/classic/K/K132.png',
     locales: {
       zh: {
@@ -27,4 +43,6 @@ export const OLD_K132_ClayHutExtension = defineMinorCard({
       },
     },
   },
+  impl: cardImpl,
 })
+export const OLD_K132_ClayHutExtension_impl = OLD_K132_ClayHutExtension.impl

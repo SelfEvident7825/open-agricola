@@ -1,5 +1,46 @@
-// Generated classic import. Remove this line before manually porting a card.
 import { defineMinorCard } from '../../card-source'
+import type { CardImpl } from '../../registry'
+import { animalKeysForState } from '../../../contract/animals'
+import { createEventQuery } from '../../../events/query'
+import { readCardExtraData } from '../../helpers/card-state'
+import { gainLeaf } from '../../helpers/pay-gain-node'
+
+const CARD_ID = 'OLD_K109_SpitRoast'
+
+const cardImpl = {
+  listeners: [
+    {
+      id: CARD_ID + '-feeding-cook',
+      cardIds: [CARD_ID],
+      actions: ['exchange'],
+      phases: ['after'],
+      handler: context => {
+        if (context.state.roundPhase !== 'feeding' || readCardExtraData(context.player, CARD_ID, 'feedingPhase') === context.state.completedFeedingPhases) return
+        const cooked = createEventQuery(context.actionEvents ?? []).filter('resource.exchanged').some(event => (event.gained.food ?? 0) > 0 && animalKeysForState(context.state).some(animal => (event.paid[animal] ?? 0) > 0))
+        if (!cooked) return
+        return {
+          sourceCard: CARD_ID,
+          flow: {
+            type: 'seq', children: [
+              {
+                type: 'leaf',
+                actionId: 'special-effect',
+                sourceCard: CARD_ID,
+                params: {
+                  kind: 'set-extra-data',
+                  key: 'feedingPhase',
+                  value: context.state.completedFeedingPhases,
+                },
+              },
+              gainLeaf(CARD_ID, { food: 1 }),
+            ]
+          },
+        }
+      },
+    },
+  ],
+} satisfies CardImpl
+
 export const OLD_K109_SpitRoast = defineMinorCard({
   meta: {
     id: 'OLD_K109_SpitRoast',
@@ -16,7 +57,7 @@ export const OLD_K109_SpitRoast = defineMinorCard({
     prerequisite: '',
     passing: false,
     extraVp: false,
-    implemented: false,
+    implemented: true,
     artUrl: '/assets/classic/K/K109.png',
     locales: {
       zh: {
@@ -26,4 +67,7 @@ export const OLD_K109_SpitRoast = defineMinorCard({
       },
     },
   },
+  impl: cardImpl,
 })
+
+export const OLD_K109_SpitRoast_impl = OLD_K109_SpitRoast.impl

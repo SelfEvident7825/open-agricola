@@ -1,7 +1,16 @@
-// Generated classic import. Remove this line before manually porting a card.
 import { defineMinorCard } from '../../card-source'
+import { gainLeaf } from '../../helpers/pay-gain-node'
+import type { CardImpl } from '../../registry'
+
+const CARD_ID = 'OLD_K143_StoneExchange'
+const cardImpl = {
+  effect: { id: CARD_ID, onBuy: () => gainLeaf(CARD_ID, { stone: 2 }) }
+} satisfies CardImpl
+
 export const OLD_K143_StoneExchange = defineMinorCard({
   meta: {
+    altCosts: [{ wood: 2 }, { clay: 2 }],
+
     id: 'OLD_K143_StoneExchange',
     originalId: 'K143_StoneExchange',
     gameEdition: 'classic',
@@ -14,7 +23,7 @@ export const OLD_K143_StoneExchange = defineMinorCard({
     prerequisite: '',
     passing: true,
     extraVp: false,
-    implemented: false,
+    implemented: true,
     artUrl: '/assets/classic/K/K143.png',
     locales: {
       zh: {
@@ -24,4 +33,6 @@ export const OLD_K143_StoneExchange = defineMinorCard({
       },
     },
   },
+  impl: cardImpl,
 })
+export const OLD_K143_StoneExchange_impl = OLD_K143_StoneExchange.impl

@@ -1,5 +1,30 @@
-// Generated classic import. Remove this line before manually porting a card.
 import { defineMinorCard } from '../../card-source'
+import type { CardImpl } from '../../registry'
+
+const CARD_ID = 'OLD_K111_BreadPaddle'
+
+const cardImpl = {
+  listeners: [
+    {
+      id: CARD_ID + '-occupation-bake',
+      cardIds: [CARD_ID],
+      actions: ['occupation'],
+      phases: ['after'],
+      handler: context => context.actionEvents?.some(event => event.type === 'card.played')
+        ? {
+          sourceCard: CARD_ID,
+          flow: {
+            type: 'leaf',
+            actionId: 'bake-bread',
+            optional: true,
+            sourceCard: CARD_ID,
+          },
+        }
+        : undefined,
+    },
+  ],
+} satisfies CardImpl
+
 export const OLD_K111_BreadPaddle = defineMinorCard({
   meta: {
     id: 'OLD_K111_BreadPaddle',
@@ -16,7 +41,7 @@ export const OLD_K111_BreadPaddle = defineMinorCard({
     prerequisite: '',
     passing: false,
     extraVp: false,
-    implemented: false,
+    implemented: true,
     artUrl: '/assets/classic/K/K111.png',
     locales: {
       zh: {
@@ -26,4 +51,7 @@ export const OLD_K111_BreadPaddle = defineMinorCard({
       },
     },
   },
+  impl: cardImpl,
 })
+
+export const OLD_K111_BreadPaddle_impl = OLD_K111_BreadPaddle.impl

@@ -1,5 +1,24 @@
-// Generated classic import. Remove this line before manually porting a card.
 import { defineMinorCard } from '../../card-source'
+import type { CardImpl } from '../../registry'
+import { queueFutureMeeplesFlow } from '../../../actions/effects/internal/future-meeples'
+
+const CARD_ID = 'OLD_K108_Beehive'
+
+const cardImpl = {
+  effect: {
+    id: CARD_ID,
+    onBuy: (state, player) => queueFutureMeeplesFlow(state, {
+      cardId: CARD_ID,
+      playerId: player.id,
+      entries: [2, 4, 6, 8, 10, 12, 14].filter(round => round > state.round)
+        .map(round => ({
+          round,
+          resources: { food: 1 },
+        })),
+    }),
+  },
+} satisfies CardImpl
+
 export const OLD_K108_Beehive = defineMinorCard({
   meta: {
     id: 'OLD_K108_Beehive',
@@ -20,7 +39,7 @@ export const OLD_K108_Beehive = defineMinorCard({
     },
     passing: false,
     extraVp: false,
-    implemented: false,
+    implemented: true,
     artUrl: '/assets/classic/K/K108.png',
     locales: {
       zh: {
@@ -32,4 +51,7 @@ export const OLD_K108_Beehive = defineMinorCard({
       },
     },
   },
+  impl: cardImpl,
 })
+
+export const OLD_K108_Beehive_impl = OLD_K108_Beehive.impl

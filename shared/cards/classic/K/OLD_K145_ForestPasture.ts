@@ -1,5 +1,22 @@
-// Generated classic import. Remove this line before manually porting a card.
 import { defineMinorCard } from '../../card-source'
+import type { CardImpl } from '../../registry'
+
+const CARD_ID = 'OLD_K145_ForestPasture'
+const cardImpl = {
+  effect: {
+    id: CARD_ID,
+    onComputeAnimalZones: () => [
+      {
+        id: `card:${CARD_ID}`,
+        zoneType: 'card',
+        cardId: CARD_ID,
+        capacity: Number.MAX_SAFE_INTEGER,
+        allowedAnimalType: 'boar',
+      }
+    ],
+  },
+} satisfies CardImpl
+
 export const OLD_K145_ForestPasture = defineMinorCard({
   meta: {
     id: 'OLD_K145_ForestPasture',
@@ -17,7 +34,7 @@ export const OLD_K145_ForestPasture = defineMinorCard({
     },
     passing: false,
     extraVp: false,
-    implemented: false,
+    implemented: true,
     artUrl: '/assets/classic/K/K145.png',
     locales: {
       zh: {
@@ -27,4 +44,6 @@ export const OLD_K145_ForestPasture = defineMinorCard({
       },
     },
   },
+  impl: cardImpl,
 })
+export const OLD_K145_ForestPasture_impl = OLD_K145_ForestPasture.impl

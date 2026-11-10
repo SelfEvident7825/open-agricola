@@ -1,7 +1,23 @@
-// Generated classic import. Remove this line before manually porting a card.
 import { defineMinorCard } from '../../card-source'
+import { makeCardFieldImpl } from '../../helpers/card-field'
+import type { CardImpl } from '../../registry'
+
+const CARD_ID = 'OLD_K137_TurnipField'
+const fieldImpl = makeCardFieldImpl(CARD_ID, { allowedCrops: ['vegetable'], capacity: 1 })
+const cardImpl = {
+  ...fieldImpl,
+  effect: {
+    ...fieldImpl.effect,
+    id: CARD_ID,
+    onBuy: () => ({ type: 'leaf', actionId: 'sow', optional: true, sourceCard: CARD_ID }),
+  },
+} satisfies CardImpl
+
 export const OLD_K137_TurnipField = defineMinorCard({
   meta: {
+    isField: true,
+    cardField: { allowedCrops: ['vegetable'], capacity: 1 },
+
     id: 'OLD_K137_TurnipField',
     originalId: 'K137_TurnipField',
     gameEdition: 'classic',
@@ -17,7 +33,7 @@ export const OLD_K137_TurnipField = defineMinorCard({
     },
     passing: false,
     extraVp: false,
-    implemented: false,
+    implemented: true,
     artUrl: '/assets/classic/K/K137.png',
     locales: {
       zh: {
@@ -27,4 +43,7 @@ export const OLD_K137_TurnipField = defineMinorCard({
       },
     },
   },
+  presentation: { cardFields: true },
+  impl: cardImpl,
 })
+export const OLD_K137_TurnipField_impl = OLD_K137_TurnipField.impl

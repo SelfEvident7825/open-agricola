@@ -1,5 +1,25 @@
-// Generated classic import. Remove this line before manually porting a card.
 import { defineMinorCard } from '../../card-source'
+import { getAssignedAnimalsByType } from '../../../domain/animals'
+import type { CardImpl } from '../../registry'
+
+const CARD_ID = 'OLD_K134_OxTeam'
+const cardImpl = {
+  prerequisiteCheck: (player, state) => getAssignedAnimalsByType(player, state).cattle >= 2,
+  effect: {
+    id: CARD_ID,
+    onBuy: state => {
+      const max = Math.min(3, 14 - state.round)
+      if (max <= 0) return
+      return {
+        type: 'seq',
+        children: Array.from({ length: max }, () => ({
+          type: 'leaf', actionId: 'plow', optional: true, sourceCard: CARD_ID,
+        })),
+      }
+    },
+  },
+} satisfies CardImpl
+
 export const OLD_K134_OxTeam = defineMinorCard({
   meta: {
     id: 'OLD_K134_OxTeam',
@@ -16,7 +36,7 @@ export const OLD_K134_OxTeam = defineMinorCard({
     prerequisite: '牛×2',
     passing: false,
     extraVp: false,
-    implemented: false,
+    implemented: true,
     artUrl: '/assets/classic/K/K134.png',
     locales: {
       zh: {
@@ -26,4 +46,6 @@ export const OLD_K134_OxTeam = defineMinorCard({
       },
     },
   },
+  impl: cardImpl,
 })
+export const OLD_K134_OxTeam_impl = OLD_K134_OxTeam.impl

@@ -1,5 +1,14 @@
-// Generated classic import. Remove this line before manually porting a card.
 import { defineMinorCard } from '../../card-source'
+import { makeCardFieldImpl } from '../../helpers/card-field'
+
+const CARD_ID = 'OLD_K105_Acreage'
+
+const cardImpl = makeCardFieldImpl(CARD_ID, {
+  allowedCrops: ['grain'],
+  capacity: 2,
+  separateFields: true,
+})
+
 export const OLD_K105_Acreage = defineMinorCard({
   meta: {
     id: 'OLD_K105_Acreage',
@@ -17,7 +26,9 @@ export const OLD_K105_Acreage = defineMinorCard({
     },
     passing: false,
     extraVp: false,
-    implemented: false,
+    implemented: true,
+    isField: true,
+    cardField: { allowedCrops: ['grain'], capacity: 2, separateFields: true },
     artUrl: '/assets/classic/K/K105.png',
     locales: {
       zh: {
@@ -26,5 +37,8 @@ export const OLD_K105_Acreage = defineMinorCard({
         prerequisite: '职业×1',
       },
     },
-  },
+  }, presentation: { cardFields: true },
+  impl: cardImpl,
 })
+
+export const OLD_K105_Acreage_impl = OLD_K105_Acreage.impl

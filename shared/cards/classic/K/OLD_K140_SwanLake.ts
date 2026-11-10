@@ -1,5 +1,21 @@
-// Generated classic import. Remove this line before manually porting a card.
 import { defineMinorCard } from '../../card-source'
+import { futureMeeplesNode } from '../../../actions/effects/internal/future-meeples'
+import type { CardImpl } from '../../registry'
+
+const CARD_ID = 'OLD_K140_SwanLake'
+const cardImpl = {
+  effect: {
+    id: CARD_ID,
+    onBuy: (state, player) => futureMeeplesNode({
+      cardId: CARD_ID,
+      playerId: player.id,
+      resources: { food: 1 },
+      startRound: state.round + 1,
+      count: 5,
+    }),
+  },
+} satisfies CardImpl
+
 export const OLD_K140_SwanLake = defineMinorCard({
   meta: {
     id: 'OLD_K140_SwanLake',
@@ -17,7 +33,7 @@ export const OLD_K140_SwanLake = defineMinorCard({
     },
     passing: false,
     extraVp: false,
-    implemented: false,
+    implemented: true,
     artUrl: '/assets/classic/K/K140.png',
     locales: {
       zh: {
@@ -29,4 +45,6 @@ export const OLD_K140_SwanLake = defineMinorCard({
       },
     },
   },
+  impl: cardImpl,
 })
+export const OLD_K140_SwanLake_impl = OLD_K140_SwanLake.impl

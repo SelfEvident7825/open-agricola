@@ -1,5 +1,36 @@
-// Generated classic import. Remove this line before manually porting a card.
 import { defineMinorCard } from '../../card-source'
+import type { CardImpl } from '../../registry'
+import { playerHasCardCapability } from '../../helpers/card-type'
+
+const CARD_ID = 'OLD_K125_Broom'
+
+const cardImpl = {
+  effect: {
+    id: CARD_ID,
+    onBuy: (_state, player) => ({
+      type: 'seq', children: [
+        {
+          type: 'leaf',
+          actionId: 'draw-ordinary-cards',
+          sourceCard: CARD_ID,
+          params: {
+            cardType: 'minor',
+            count: 7,
+            replaceHand: !playerHasCardCapability(player, 'preventsHandDiscard'),
+          },
+        },
+        {
+          type: 'leaf',
+          actionId: 'improvement',
+          optional: true,
+          sourceCard: CARD_ID,
+          actionContext: { types: ['minor'] },
+        },
+      ],
+    }),
+  },
+} satisfies CardImpl
+
 export const OLD_K125_Broom = defineMinorCard({
   meta: {
     id: 'OLD_K125_Broom',
@@ -18,7 +49,7 @@ export const OLD_K125_Broom = defineMinorCard({
     prerequisite: '',
     passing: false,
     extraVp: false,
-    implemented: false,
+    implemented: true,
     artUrl: '/assets/classic/K/K125.png',
     locales: {
       zh: {
@@ -30,4 +61,7 @@ export const OLD_K125_Broom = defineMinorCard({
       },
     },
   },
+  impl: cardImpl,
 })
+
+export const OLD_K125_Broom_impl = OLD_K125_Broom.impl

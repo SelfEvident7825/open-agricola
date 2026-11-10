@@ -1,4 +1,3 @@
-// Generated classic import. Remove this line before manually porting a card.
 import { defineMinorCard } from '../../card-source'
 import { gainLeaf } from '../../helpers/pay-gain-node'
 import type { CardImpl } from '../../registry'

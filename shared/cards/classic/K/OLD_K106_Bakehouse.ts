@@ -1,5 +1,20 @@
-// Generated classic import. Remove this line before manually porting a card.
 import { defineMinorCard } from '../../card-source'
+import type { CardImpl } from '../../registry'
+
+const CARD_ID = 'OLD_K106_Bakehouse'
+
+const cardImpl = {
+  effect: {
+    id: CARD_ID,
+    onBuy: () => ({
+      type: 'leaf',
+      actionId: 'bake-bread',
+      optional: true,
+      sourceCard: CARD_ID,
+    }),
+  },
+} satisfies CardImpl
+
 export const OLD_K106_Bakehouse = defineMinorCard({
   meta: {
     id: 'OLD_K106_Bakehouse',
@@ -18,7 +33,11 @@ export const OLD_K106_Bakehouse = defineMinorCard({
     prerequisite: '退还1个烤炉',
     passing: false,
     extraVp: false,
-    implemented: false,
+    implemented: true,
+    returnCards: ['Major_ClayOven', 'Major_StoneOven', 'OLD_E27_WoodredOven', 'OLD_WA012_CastironOven', 'OLD_G065_BeehiveOven', 'OLD_G073_ErrantOven'],
+    isBaking: true,
+    ovenIdentity: true,
+    exchanges: [{ from: { grain: 1 }, to: { food: 5 }, triggers: ['bake-bread'], max: 2 }],
     artUrl: '/assets/classic/K/K106.png',
     locales: {
       zh: {
@@ -30,4 +49,7 @@ export const OLD_K106_Bakehouse = defineMinorCard({
       },
     },
   },
+  impl: cardImpl,
 })
+
+export const OLD_K106_Bakehouse_impl = OLD_K106_Bakehouse.impl

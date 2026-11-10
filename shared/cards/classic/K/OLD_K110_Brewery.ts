@@ -1,5 +1,20 @@
-// Generated classic import. Remove this line before manually porting a card.
 import { defineMinorCard } from '../../card-source'
+import type { CardImpl } from '../../registry'
+import { createSingleHarvestExchange } from '../../helpers/stage-effects'
+import { getLogicalFields } from '../../helpers/card-field'
+
+const CARD_ID = 'OLD_K110_Brewery'
+
+const cardImpl = {
+  effect: {
+    id: CARD_ID,
+    onHarvestFeedingPhase: createSingleHarvestExchange(CARD_ID),
+    computeBonusScore: (_state, player) => player.resources.grain + getLogicalFields(player)
+      .flatMap(field => field.stacks).filter(stack => stack.kind === 'grain')
+      .reduce((total, stack) => total + stack.remaining, 0) >= 9 ? 1 : 0,
+  },
+} satisfies CardImpl
+
 export const OLD_K110_Brewery = defineMinorCard({
   meta: {
     id: 'OLD_K110_Brewery',
@@ -19,7 +34,8 @@ export const OLD_K110_Brewery = defineMinorCard({
     prerequisite: '',
     passing: false,
     extraVp: true,
-    implemented: false,
+    implemented: true,
+    exchanges: [{ from: { grain: 1 }, to: { food: 3 }, triggers: ['harvest'], max: 1 }],
     artUrl: '/assets/classic/K/K110.png',
     locales: {
       zh: {
@@ -31,4 +47,7 @@ export const OLD_K110_Brewery = defineMinorCard({
       },
     },
   },
+  impl: cardImpl,
 })
+
+export const OLD_K110_Brewery_impl = OLD_K110_Brewery.impl

@@ -1,69 +1,9 @@
-// Generated classic import. Remove this line before manually porting a card.
 import { defineMinorCard } from '../../card-source'
-import type { CardListenerRegistration, CardListenerContext } from '../../card-listeners'
-import type { ActionHookResult } from '../../../actions/hooks'
-import { getCardStack, pushToCardStack } from '../../helpers/card-state'
-import type { CardImpl } from '../../registry'
+import { classicPlow } from '../../helpers/classic-plow'
 
 const CARD_ID = 'OLD_K115_SwingPlough'
-const listener: CardListenerRegistration = {
-  id: 'OLD_K115_SwingPlough-swing-plow-before-place-farmer',
-  cardIds: [CARD_ID],
-  phases: ['before'],
-  actionSpaces: 'all',
-  handler: (context: CardListenerContext): ActionHookResult | void => {
-    if (context.space?.id !== 'farmland') return
-    const stack = getCardStack(context.player, CARD_ID)
-    if (stack.length === 0) return
 
-    if (stack.length >= 2) {
-      // 2+ fields remaining — offer up to 2 plows (nested optional)
-      return {
-        flow: {
-          type: 'seq',
-          optional: true,
-          children: [
-            { type: 'leaf', actionId: 'pop-card-stack', sourceCard: CARD_ID },
-            { type: 'leaf', actionId: 'plow', sourceCard: CARD_ID },
-            {
-              type: 'seq',
-              optional: true,
-              children: [
-                { type: 'leaf', actionId: 'pop-card-stack', sourceCard: CARD_ID },
-                { type: 'leaf', actionId: 'plow', sourceCard: CARD_ID },
-              ],
-            },
-          ],
-        },
-        sourceCard: CARD_ID,
-      }
-    } else {
-      // Only 1 field left — offer 1 plow
-      return {
-        flow: {
-          type: 'seq',
-          optional: true,
-          children: [
-            { type: 'leaf', actionId: 'pop-card-stack', sourceCard: CARD_ID },
-            { type: 'leaf', actionId: 'plow', sourceCard: CARD_ID },
-          ],
-        },
-        sourceCard: CARD_ID,
-      }
-    }
-  },
-}
-
-const cardImpl = {
-  listeners: [listener],
-  effect: {
-    id: CARD_ID,
-    onBuy: (_state, player) => {
-      pushToCardStack(player, CARD_ID, ['field', 'field', 'field', 'field'])
-    },
-  },
-  reaches: [] as readonly string[],
-} satisfies CardImpl
+const cardImpl = classicPlow(CARD_ID, 2, 2, ['farmland'])
 
 export const OLD_K115_SwingPlough = defineMinorCard({
   meta: {
@@ -88,6 +28,7 @@ export const OLD_K115_SwingPlough = defineMinorCard({
     passing: false,
     extraVp: false,
     implemented: true,
+    plowEffect: true,
     artUrl: '/assets/classic/K/K115.png',
     locales: {
       zh: {

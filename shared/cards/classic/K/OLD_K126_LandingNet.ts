@@ -1,5 +1,26 @@
-// Generated classic import. Remove this line before manually porting a card.
 import { defineMinorCard } from '../../card-source'
+import type { CardImpl } from '../../registry'
+import { sumActionSpaceMovedToTriggerPlayer } from '../../helpers/event-provenance'
+import { gainLeaf } from '../../helpers/pay-gain-node'
+
+const CARD_ID = 'OLD_K126_LandingNet'
+
+const cardImpl = {
+  listeners: [
+    {
+      id: CARD_ID + '-reed-food',
+      cardIds: [CARD_ID],
+      actionSpaces: 'all',
+      phases: ['after'],
+      handler: context => {
+        if (sumActionSpaceMovedToTriggerPlayer(context, 'reed') <= 0) return
+        const mixed = (['wood', 'clay', 'stone'] as const).some(resource => sumActionSpaceMovedToTriggerPlayer(context, resource) > 0)
+        return { sourceCard: CARD_ID, flow: gainLeaf(CARD_ID, { food: mixed ? 1 : 2 }) }
+      },
+    },
+  ],
+} satisfies CardImpl
+
 export const OLD_K126_LandingNet = defineMinorCard({
   meta: {
     id: 'OLD_K126_LandingNet',
@@ -18,7 +39,7 @@ export const OLD_K126_LandingNet = defineMinorCard({
     prerequisite: '',
     passing: false,
     extraVp: false,
-    implemented: false,
+    implemented: true,
     artUrl: '/assets/classic/K/K126.png',
     locales: {
       zh: {
@@ -30,4 +51,7 @@ export const OLD_K126_LandingNet = defineMinorCard({
       },
     },
   },
+  impl: cardImpl,
 })
+
+export const OLD_K126_LandingNet_impl = OLD_K126_LandingNet.impl

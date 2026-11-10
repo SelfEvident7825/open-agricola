@@ -1,5 +1,18 @@
-// Generated classic import. Remove this line before manually porting a card.
 import { defineMinorCard } from '../../card-source'
+import { getAssignedAnimalsByType } from '../../../domain/animals'
+import type { CardImpl } from '../../registry'
+
+const CARD_ID = 'OLD_K135_Horse'
+const cardImpl = {
+  effect: {
+    id: CARD_ID,
+    computeBonusScore: (state, player) => {
+      const animals = getAssignedAnimalsByType(player, state)
+      return animals.sheep === 0 || animals.boar === 0 || animals.cattle === 0 ? 2 : 0
+    },
+  },
+} satisfies CardImpl
+
 export const OLD_K135_Horse = defineMinorCard({
   meta: {
     id: 'OLD_K135_Horse',
@@ -16,7 +29,7 @@ export const OLD_K135_Horse = defineMinorCard({
     prerequisite: '',
     passing: false,
     extraVp: true,
-    implemented: false,
+    implemented: true,
     artUrl: '/assets/classic/K/K135.png',
     locales: {
       zh: {
@@ -28,4 +41,6 @@ export const OLD_K135_Horse = defineMinorCard({
       },
     },
   },
+  impl: cardImpl,
 })
+export const OLD_K135_Horse_impl = OLD_K135_Horse.impl

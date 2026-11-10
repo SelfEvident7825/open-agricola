@@ -1,5 +1,10 @@
-// Generated classic import. Remove this line before manually porting a card.
 import { defineMinorCard } from '../../card-source'
+import { classicPlow } from '../../helpers/classic-plow'
+
+const CARD_ID = 'OLD_K119_CrookedPlough'
+
+const cardImpl = classicPlow(CARD_ID, 1, 2, ['farmland'])
+
 export const OLD_K119_CrookedPlough = defineMinorCard({
   meta: {
     id: 'OLD_K119_CrookedPlough',
@@ -21,7 +26,8 @@ export const OLD_K119_CrookedPlough = defineMinorCard({
     },
     passing: false,
     extraVp: false,
-    implemented: false,
+    implemented: true,
+    plowEffect: true,
     artUrl: '/assets/classic/K/K119.png',
     locales: {
       zh: {
@@ -32,5 +38,8 @@ export const OLD_K119_CrookedPlough = defineMinorCard({
         prerequisite: '职业×1',
       },
     },
-  },
+  }, presentation: { stack: true },
+  impl: cardImpl,
 })
+
+export const OLD_K119_CrookedPlough_impl = OLD_K119_CrookedPlough.impl

@@ -1,4 +1,3 @@
-// Generated classic import. Remove this line before manually porting a card.
 import { defineMinorCard } from '../../card-source'
 import { queueFutureMeeplesFlow } from '../../../actions/effects/internal/future-meeples'
 import type { CardImpl } from '../../registry'

@@ -1,5 +1,25 @@
-// Generated classic import. Remove this line before manually porting a card.
 import { defineMinorCard } from '../../card-source'
+import { futureMeeplesNode } from '../../../actions/effects/internal/future-meeples'
+import { getLogicalFields } from '../../helpers/card-field'
+import type { CardImpl } from '../../registry'
+
+const CARD_ID = 'OLD_K130_HerbGarden'
+const cardImpl = {
+  prerequisiteCheck: player => getLogicalFields(player).some(field =>
+    field.stacks.some(stack => stack.kind === 'vegetable' && stack.remaining > 0),
+  ),
+  effect: {
+    id: CARD_ID,
+    onBuy: (state, player) => futureMeeplesNode({
+      cardId: CARD_ID,
+      playerId: player.id,
+      resources: { food: 1 },
+      startRound: state.round + 1,
+      count: 5,
+    }),
+  },
+} satisfies CardImpl
+
 export const OLD_K130_HerbGarden = defineMinorCard({
   meta: {
     id: 'OLD_K130_HerbGarden',
@@ -16,7 +36,7 @@ export const OLD_K130_HerbGarden = defineMinorCard({
     prerequisite: '菜田×1',
     passing: false,
     extraVp: false,
-    implemented: false,
+    implemented: true,
     artUrl: '/assets/classic/K/K130.png',
     locales: {
       zh: {
@@ -28,4 +48,6 @@ export const OLD_K130_HerbGarden = defineMinorCard({
       },
     },
   },
+  impl: cardImpl,
 })
+export const OLD_K130_HerbGarden_impl = OLD_K130_HerbGarden.impl

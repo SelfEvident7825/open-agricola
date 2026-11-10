@@ -1,5 +1,29 @@
-// Generated classic import. Remove this line before manually porting a card.
 import { defineMinorCard } from '../../card-source'
+import type { CardImpl } from '../../registry'
+
+const CARD_ID = 'OLD_K136_BrushwoodRoof'
+const cardImpl = {
+  modifiers: [
+    {
+      type: 'trade',
+      cardId: CARD_ID,
+      appliesTo: ['construct'],
+      scope: 'unit',
+      from: { wood: 1 },
+      to: { reed: 1 },
+      max: 2,
+    },
+    {
+      type: 'trade',
+      cardId: CARD_ID,
+      appliesTo: ['renovation'],
+      from: { wood: 1 },
+      to: { reed: 1 },
+      max: 2,
+    },
+  ],
+} satisfies CardImpl
+
 export const OLD_K136_BrushwoodRoof = defineMinorCard({
   meta: {
     id: 'OLD_K136_BrushwoodRoof',
@@ -17,7 +41,7 @@ export const OLD_K136_BrushwoodRoof = defineMinorCard({
     },
     passing: false,
     extraVp: false,
-    implemented: false,
+    implemented: true,
     artUrl: '/assets/classic/K/K136.png',
     locales: {
       zh: {
@@ -27,4 +51,6 @@ export const OLD_K136_BrushwoodRoof = defineMinorCard({
       },
     },
   },
+  impl: cardImpl,
 })
+export const OLD_K136_BrushwoodRoof_impl = OLD_K136_BrushwoodRoof.impl

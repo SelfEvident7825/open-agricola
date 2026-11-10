@@ -1,5 +1,12 @@
-// Generated classic import. Remove this line before manually porting a card.
 import { defineMinorCard } from '../../card-source'
+import { gainLeaf } from '../../helpers/pay-gain-node'
+import type { CardImpl } from '../../registry'
+
+const CARD_ID = 'OLD_K129_CornSheaf'
+const cardImpl = {
+  effect: { id: CARD_ID, onBuy: () => gainLeaf(CARD_ID, { grain: 1 }) }
+} satisfies CardImpl
+
 export const OLD_K129_CornSheaf = defineMinorCard({
   meta: {
     id: 'OLD_K129_CornSheaf',
@@ -14,7 +21,7 @@ export const OLD_K129_CornSheaf = defineMinorCard({
     prerequisite: '',
     passing: true,
     extraVp: false,
-    implemented: false,
+    implemented: true,
     artUrl: '/assets/classic/K/K129.png',
     locales: {
       zh: {
@@ -24,4 +31,6 @@ export const OLD_K129_CornSheaf = defineMinorCard({
       },
     },
   },
+  impl: cardImpl,
 })
+export const OLD_K129_CornSheaf_impl = OLD_K129_CornSheaf.impl

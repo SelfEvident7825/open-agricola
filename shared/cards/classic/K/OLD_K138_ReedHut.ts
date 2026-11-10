@@ -1,5 +1,35 @@
-// Generated classic import. Remove this line before manually porting a card.
 import { defineMinorCard } from '../../card-source'
+import { inactiveWorkersInSupply } from '../../../domain/player'
+import { registerHarvestFeedingRequirementModifier } from '../../../actions/helpers/harvest-feeding-requirement'
+import type { PlayerState } from '../../../contract/types'
+import type { CardImpl } from '../../registry'
+
+const CARD_ID = 'OLD_K138_ReedHut'
+const hutWorker = (player: PlayerState) => player.workers.find(worker =>
+  worker.supplyUse?.sourceCard === CARD_ID && worker.supplyUse.status === 'temporary',
+)
+
+registerHarvestFeedingRequirementModifier(CARD_ID, ({ player }) => hutWorker(player) ? 2 : 0)
+
+const cardImpl = {
+  effect: {
+    id: CARD_ID,
+    onBuy: (state, player) => {
+      const worker = inactiveWorkersInSupply(player)[0]
+      if (!worker) return
+      worker.supplyUse = {
+        sourceCard: CARD_ID,
+        disposition: 'return-to-supply',
+        status: 'temporary',
+        availableFromRound: state.round,
+        familyGrowthEligible: true,
+      }
+      worker.isNewborn = false
+    },
+    getStatePresentation: player => ({ heldWorkerId: hutWorker(player)?.id }),
+  },
+} satisfies CardImpl
+
 export const OLD_K138_ReedHut = defineMinorCard({
   meta: {
     id: 'OLD_K138_ReedHut',
@@ -19,7 +49,7 @@ export const OLD_K138_ReedHut = defineMinorCard({
     prerequisite: '',
     passing: false,
     extraVp: false,
-    implemented: false,
+    implemented: true,
     artUrl: '/assets/classic/K/K138.png',
     locales: {
       zh: {
@@ -31,4 +61,6 @@ export const OLD_K138_ReedHut = defineMinorCard({
       },
     },
   },
+  impl: cardImpl,
 })
+export const OLD_K138_ReedHut_impl = OLD_K138_ReedHut.impl

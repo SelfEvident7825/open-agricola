@@ -1,5 +1,15 @@
-// Generated classic import. Remove this line before manually porting a card.
 import { defineMinorCard } from '../../card-source'
+import type { CardImpl } from '../../registry'
+
+const CARD_ID = 'OLD_K123_WoodenStrongbox'
+
+const cardImpl = {
+  effect: {
+    id: CARD_ID,
+    computeBonusScore: (_state, player) => player.roomTiles.length >= 6 ? 4 : player.roomTiles.length >= 5 ? 2 : 0,
+  },
+} satisfies CardImpl
+
 export const OLD_K123_WoodenStrongbox = defineMinorCard({
   meta: {
     id: 'OLD_K123_WoodenStrongbox',
@@ -16,7 +26,7 @@ export const OLD_K123_WoodenStrongbox = defineMinorCard({
     prerequisite: '',
     passing: false,
     extraVp: true,
-    implemented: false,
+    implemented: true,
     artUrl: '/assets/classic/K/K123.png',
     locales: {
       zh: {
@@ -26,4 +36,7 @@ export const OLD_K123_WoodenStrongbox = defineMinorCard({
       },
     },
   },
+  impl: cardImpl,
 })
+
+export const OLD_K123_WoodenStrongbox_impl = OLD_K123_WoodenStrongbox.impl

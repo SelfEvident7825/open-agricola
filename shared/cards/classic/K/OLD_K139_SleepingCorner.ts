@@ -1,15 +1,15 @@
-// Generated classic import. Remove this line before manually porting a card.
 import { defineMinorCard } from '../../card-source'
 import type { CardListenerRegistration, CardListenerContext } from '../../card-listeners'
 import type { ActionHookPhase, ActionHookResult } from '../../../actions/hooks'
 import type { ActionChoiceOption } from '../../../contract/types'
 import { OCCUPIED_SPACE_CHOICE_PREFIX } from '../../../actions/effects/place-farmer'
+import { getLogicalFields } from '../../helpers/card-field'
 import { isSpaceOccupied } from '../../../domain/space'
 import type { CardImpl } from '../../registry'
 
 const CARD_ID = 'OLD_K139_SleepingCorner'
 /**
- * A26 Sleeping Corner — You can use any __Wish for Children__ action space
+ * K139 Sleeping Corner — You can use any __Wish for Children__ action space
  * even if it is occupied by one other player's person.
  *
  * Rule: onPlayerComputeArgsPlaceFarmer adds WishChildren spaces that have
@@ -25,7 +25,7 @@ const computeArgsListener: CardListenerRegistration = {
   handler: (context: CardListenerContext): ActionHookResult | void => {
     if (!context.player.minorPlayed.includes(CARD_ID)) return
     const wishChildrenSpaces = context.state.actionSpaces.filter(
-      (s) => s.id === 'wish-children' || s.id === 'urgent-wish-children',
+      (s) => s.id === 'wish-children' || s.id === 'urgent-wish-children' || (s.id === 'modest-wish-children-56' && context.state.round >= 5),
     )
     const extraOptions: ActionChoiceOption[] = wishChildrenSpaces
       .filter((space) => {
@@ -35,7 +35,7 @@ const computeArgsListener: CardListenerRegistration = {
           if (ref.synthetic) return false
           const owner = context.state.players.find((candidate) => candidate.id === ref.playerId)
           const worker = owner?.workers.find((candidate) => candidate.id === ref.workerId)
-          return worker?.isActive === true && worker.isNewborn === false
+          return !!worker && (worker.isActive || worker.supplyUse?.status === 'temporary') && !worker.isNewborn
         })
         return otherAdultWorkers.length === 1
       })
@@ -50,6 +50,7 @@ const computeArgsListener: CardListenerRegistration = {
 }
 
 const cardImpl = {
+  prerequisiteCheck: player => getLogicalFields(player).filter(field => field.stacks.some(stack => stack.kind === 'grain' && stack.remaining > 0)).length >= 2,
   listeners: [computeArgsListener],
   reaches: [] as readonly string[],
 } satisfies CardImpl

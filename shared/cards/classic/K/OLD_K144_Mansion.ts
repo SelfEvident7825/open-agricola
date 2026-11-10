@@ -1,5 +1,14 @@
-// Generated classic import. Remove this line before manually porting a card.
 import { defineMinorCard } from '../../card-source'
+import type { CardImpl } from '../../registry'
+
+const CARD_ID = 'OLD_K144_Mansion'
+const cardImpl = {
+  effect: {
+    id: CARD_ID,
+    computeBonusScore: (_state, player) => player.houseType === 'stone' ? 2 * player.rooms : 0,
+  },
+} satisfies CardImpl
+
 export const OLD_K144_Mansion = defineMinorCard({
   meta: {
     id: 'OLD_K144_Mansion',
@@ -19,7 +28,7 @@ export const OLD_K144_Mansion = defineMinorCard({
     prerequisite: '',
     passing: false,
     extraVp: true,
-    implemented: false,
+    implemented: true,
     artUrl: '/assets/classic/K/K144.png',
     locales: {
       zh: {
@@ -29,4 +38,6 @@ export const OLD_K144_Mansion = defineMinorCard({
       },
     },
   },
+  impl: cardImpl,
 })
+export const OLD_K144_Mansion_impl = OLD_K144_Mansion.impl
