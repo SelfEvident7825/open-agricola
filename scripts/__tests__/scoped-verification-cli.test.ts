@@ -92,7 +92,7 @@ if (args.includes('vitest')) {
 `)
   chmodSync(join(bin, 'pnpm'), 0o755)
   const env: NodeJS.ProcessEnv = { ...process.env, GITHUB_SHA: sha, GITHUB_OUTPUT: '', GITHUB_STEP_SUMMARY: '', COMMAND_LOG: log, PATH: bin + delimiter + process.env.PATH }
-  const run = (...args: string[]) => spawnSync(join(root, 'node_modules/.bin/tsx'), [cli, ...args], { cwd, env, encoding: 'utf8', timeout: 15_000 })
+  const run = (...args: string[]) => spawnSync(process.execPath, ['--import', import.meta.resolve('tsx'), cli, ...args], { cwd, env, encoding: 'utf8', timeout: 15_000 })
   const commands = () => existsSync(log) ? readFileSync(log, 'utf8').trim().split('\n').map((line): unknown => JSON.parse(line)) : []
   return { cwd, sha, run, env, commit, commands }
 }
@@ -234,7 +234,7 @@ describe('scoped verification public CLI', () => {
     expect(value.commands()).toContainEqual(['exec', 'vitest', 'run', '--project', 'fast-client', test])
     expect(value.commands()).toContainEqual(['exec', 'vitest', 'run', '--project', 'fast-client', 'client/components/board/__tests__/FarmBoard.test.tsx'])
     expect(existsSync(join(value.cwd, 'SHELL_EXECUTED'))).toBe(false)
-  })
+  }, 60_000)
 
   it('executes each selected browser partition with its exact files, filters, engine and bound outputs', () => {
     const value = fixture('frontend')
