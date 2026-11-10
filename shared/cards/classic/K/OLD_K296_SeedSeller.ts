@@ -1,4 +1,3 @@
-// Generated classic import. Remove this line before manually porting a card.
 import { defineOccupationCard } from '../../card-source'
 import type { CardListenerContext, CardListenerRegistration } from '../../card-listeners'
 import type { ActionHookResult } from '../../../actions/hooks'

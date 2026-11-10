@@ -1,5 +1,48 @@
-// Generated classic import. Remove this line before manually porting a card.
 import { defineOccupationCard } from '../../card-source'
+import type { CardImpl } from '../../registry'
+import { registerAdHocAction } from '../../../actions/helpers/ad-hoc-action-registry'
+import { executeActivatedRuleOperation } from '../../../actions/rule-activated-operation'
+import { openRoundForSpace } from '../../../actions/helpers/placement-availability'
+import type { ActionDefinition } from '../../../contract/types'
+
+const CARD_ID = 'OLD_K308_Foreman'
+const PLACE_FOOD = `card_${CARD_ID}_placeFood`
+const placeFood: ActionDefinition = {
+  id: PLACE_FOOD,
+  nameKey: `cards.${CARD_ID}.name`,
+  descriptionKey: `cards.${CARD_ID}.desc`,
+  roundAvailable: 1,
+  gainPerRound: {},
+  canBeExecutedByPlayer: () => true,
+  execute: context => ({
+    type: 'request',
+    request: {
+      kind: 'choice',
+      options: context.state.actionSpaces
+        .filter(space => openRoundForSpace(context.state, space) <= context.state.round)
+        .map(space => ({ value: space.id, labelKey: space.nameKey })),
+    },
+  }),
+  resolveChoice: (context, choice) => {
+    const space = context.state.actionSpaces.find(candidate => candidate.id === choice)
+    if (!space || openRoundForSpace(context.state, space) > context.state.round) {
+      return { type: 'fail', errorKey: 'log.actionFail' }
+    }
+    return executeActivatedRuleOperation({
+      kind: 'put-on-action-space',
+      spaceId: space.id,
+      resources: { food: 1 },
+    }, context)
+  },
+}
+registerAdHocAction(placeFood)
+const cardImpl = {
+  effect: {
+    id: CARD_ID,
+    onRoundStart: () => ({ type: 'leaf', actionId: PLACE_FOOD, sourceCard: CARD_ID, optional: true }),
+  },
+} satisfies CardImpl
+
 export const OLD_K308_Foreman = defineOccupationCard({
   meta: {
     id: 'OLD_K308_Foreman',
@@ -17,7 +60,7 @@ export const OLD_K308_Foreman = defineOccupationCard({
     players: '3+',
     passing: false,
     extraVp: false,
-    implemented: false,
+    implemented: true,
     artUrl: '/assets/classic/K/K308.png',
     locales: {
       zh: {
@@ -29,4 +72,7 @@ export const OLD_K308_Foreman = defineOccupationCard({
       },
     },
   },
+  impl: cardImpl,
 })
+
+export const OLD_K308_Foreman_impl = OLD_K308_Foreman.impl

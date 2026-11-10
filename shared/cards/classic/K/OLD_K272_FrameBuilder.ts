@@ -1,5 +1,40 @@
-// Generated classic import. Remove this line before manually porting a card.
 import { defineOccupationCard } from '../../card-source'
+import type { CardImpl } from '../../registry'
+
+const CARD_ID = 'OLD_K272_FrameBuilder'
+const cardImpl: CardImpl = {
+  modifiers: [
+    {
+      type: 'trade',
+      cardId: CARD_ID,
+      appliesTo: ['construct'],
+      scope: 'unit',
+      from: { wood: 1 },
+      to: { clay: 2 },
+      conditions: { roomMaterialClay: 1 },
+    },
+    {
+      type: 'trade',
+      cardId: CARD_ID,
+      appliesTo: ['construct'],
+      scope: 'unit',
+      from: { wood: 1 },
+      to: { stone: 2 },
+      conditions: { roomMaterialStone: 1 },
+    },
+    {
+      type: 'bonus',
+      cardId: CARD_ID,
+      appliesTo: ['renovation'],
+      optional: true,
+      choices: [
+        { discount: { wood: -1, clay: 1 }, minCost: { clay: 1 }, sources: [CARD_ID] },
+        { discount: { wood: -1, stone: 1 }, minCost: { stone: 1 }, sources: [CARD_ID] },
+      ],
+    },
+  ],
+}
+
 export const OLD_K272_FrameBuilder = defineOccupationCard({
   meta: {
     id: 'OLD_K272_FrameBuilder',
@@ -17,7 +52,7 @@ export const OLD_K272_FrameBuilder = defineOccupationCard({
     players: '1+',
     passing: false,
     extraVp: false,
-    implemented: false,
+    implemented: true,
     artUrl: '/assets/classic/K/K272.png',
     locales: {
       zh: {
@@ -29,4 +64,5 @@ export const OLD_K272_FrameBuilder = defineOccupationCard({
       },
     },
   },
+  impl: cardImpl,
 })

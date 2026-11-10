@@ -1,4 +1,3 @@
-// Generated classic import. Remove this line before manually porting a card.
 import { defineOccupationCard } from '../../card-source'
 import type { ActionFlow, GameState, PlayerState } from '../../../contract/types'
 import type { CardListenerRegistration, CardListenerContext } from '../../card-listeners'

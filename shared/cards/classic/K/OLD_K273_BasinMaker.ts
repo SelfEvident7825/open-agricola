@@ -1,5 +1,50 @@
-// Generated classic import. Remove this line before manually porting a card.
 import { defineOccupationCard } from '../../card-source'
+import type { CardImpl } from '../../registry'
+import { createEventQuery } from '../../../events/query'
+import { payLeaf } from '../../helpers/pay-gain-node'
+
+const CARD_ID = 'OLD_K273_BasinMaker'
+const cardImpl = {
+  effect: {
+    id: CARD_ID,
+    computeBonusScore: (_state, player) => {
+      const wood = player.cardStates[CARD_ID]?.counters?.wood ?? 0
+      return wood - Math.ceil(wood / 3)
+    },
+  },
+  listeners: [{
+    id: CARD_ID + '-cook-boar',
+    cardIds: [CARD_ID],
+    actions: ['exchange'],
+    phases: ['after'],
+    handler: (context) => {
+      const boar = createEventQuery(context.actionEvents ?? context.transactionEvents)
+        .filter('resource.exchanged')
+        .reduce((count, event) => count + ((event.gained.food ?? 0) > 0 ? (event.paid.boar ?? 0) : 0), 0)
+      if (boar <= 0) return
+      return {
+        sourceCard: CARD_ID,
+        flow: {
+          type: 'seq',
+          children: Array.from({ length: boar }, () => ({
+            type: 'seq' as const,
+            optional: true,
+            children: [
+              payLeaf({ cardId: CARD_ID, cost: { wood: 2 } }),
+              {
+                type: 'leaf' as const,
+                actionId: 'special-effect',
+                sourceCard: CARD_ID,
+                params: { kind: 'increment-counter', key: 'wood', amount: 2 },
+              },
+            ],
+          })),
+        },
+      }
+    },
+  }],
+} satisfies CardImpl
+
 export const OLD_K273_BasinMaker = defineOccupationCard({
   meta: {
     id: 'OLD_K273_BasinMaker',
@@ -17,7 +62,7 @@ export const OLD_K273_BasinMaker = defineOccupationCard({
     players: '1+',
     passing: false,
     extraVp: true,
-    implemented: false,
+    implemented: true,
     artUrl: '/assets/classic/K/K273.png',
     locales: {
       zh: {
@@ -29,4 +74,5 @@ export const OLD_K273_BasinMaker = defineOccupationCard({
       },
     },
   },
+  impl: cardImpl,
 })

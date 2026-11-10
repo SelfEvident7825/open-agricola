@@ -1,5 +1,20 @@
-// Generated classic import. Remove this line before manually porting a card.
 import { defineOccupationCard } from '../../card-source'
+import type { CardImpl } from '../../registry'
+
+const CARD_ID = 'OLD_K303_StoneBreaker'
+const cardImpl = {
+  listeners: [{
+    id: CARD_ID + '-renovate',
+    cardIds: [CARD_ID],
+    actions: ['anytime'],
+    phases: ['anytime'],
+    handler: context => context.player.houseType === 'clay' ? {
+      sourceCard: CARD_ID,
+      flow: { type: 'leaf', actionId: 'renovate-house', sourceCard: CARD_ID },
+    } : undefined,
+  }],
+} satisfies CardImpl
+
 export const OLD_K303_StoneBreaker = defineOccupationCard({
   meta: {
     id: 'OLD_K303_StoneBreaker',
@@ -15,7 +30,7 @@ export const OLD_K303_StoneBreaker = defineOccupationCard({
     players: '3+',
     passing: false,
     extraVp: false,
-    implemented: false,
+    implemented: true,
     artUrl: '/assets/classic/K/K303.png',
     locales: {
       zh: {
@@ -25,4 +40,7 @@ export const OLD_K303_StoneBreaker = defineOccupationCard({
       },
     },
   },
+  impl: cardImpl,
 })
+
+export const OLD_K303_StoneBreaker_impl = OLD_K303_StoneBreaker.impl

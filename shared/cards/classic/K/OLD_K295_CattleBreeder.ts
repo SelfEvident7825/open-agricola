@@ -1,5 +1,17 @@
-// Generated classic import. Remove this line before manually porting a card.
 import { defineOccupationCard } from '../../card-source'
+import type { CardImpl } from '../../registry'
+import { gainLeaf } from '../../helpers/pay-gain-node'
+import { breedLeaf } from '../../../actions/effects/breed'
+
+const CARD_ID = 'OLD_K295_CattleBreeder'
+const cardImpl = {
+  effect: {
+    id: CARD_ID,
+    onBuy: () => gainLeaf(CARD_ID, { cattle: 1 }),
+    onAfterRoundEnd: state => state.round === 12 ? breedLeaf(CARD_ID, ['cattle']) : undefined,
+  },
+} satisfies CardImpl
+
 export const OLD_K295_CattleBreeder = defineOccupationCard({
   meta: {
     id: 'OLD_K295_CattleBreeder',
@@ -15,7 +27,7 @@ export const OLD_K295_CattleBreeder = defineOccupationCard({
     players: '3+',
     passing: false,
     extraVp: false,
-    implemented: false,
+    implemented: true,
     artUrl: '/assets/classic/K/K295.png',
     locales: {
       zh: {
@@ -25,4 +37,7 @@ export const OLD_K295_CattleBreeder = defineOccupationCard({
       },
     },
   },
+  impl: cardImpl,
 })
+
+export const OLD_K295_CattleBreeder_impl = OLD_K295_CattleBreeder.impl

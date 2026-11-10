@@ -1,5 +1,22 @@
-// Generated classic import. Remove this line before manually porting a card.
 import { defineOccupationCard } from '../../card-source'
+import { gainLeaf } from '../../helpers/pay-gain-node'
+import type { Resource } from '../../../contract/types'
+import type { CardImpl } from '../../registry'
+
+const CARD_ID = 'OLD_K287_StorehouseClerk'
+const cardImpl = {
+  effect: {
+    id: CARD_ID,
+    onBeforeStartOfTurn: (_state, player) => {
+      const resources: Partial<Resource> = {}
+      for (const [resource, minimum] of [['stone', 5], ['reed', 6], ['clay', 7], ['wood', 8]] as const) {
+        if (player.resources[resource] >= minimum) resources[resource] = 1
+      }
+      if (Object.keys(resources).length) return gainLeaf(CARD_ID, resources)
+    },
+  },
+} satisfies CardImpl
+
 export const OLD_K287_StorehouseClerk = defineOccupationCard({
   meta: {
     id: 'OLD_K287_StorehouseClerk',
@@ -17,7 +34,7 @@ export const OLD_K287_StorehouseClerk = defineOccupationCard({
     players: '1+',
     passing: false,
     extraVp: false,
-    implemented: false,
+    implemented: true,
     artUrl: '/assets/classic/K/K287.png',
     locales: {
       zh: {
@@ -29,4 +46,5 @@ export const OLD_K287_StorehouseClerk = defineOccupationCard({
       },
     },
   },
+  impl: cardImpl,
 })

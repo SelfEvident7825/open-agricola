@@ -1,5 +1,28 @@
-// Generated classic import. Remove this line before manually porting a card.
 import { defineOccupationCard } from '../../card-source'
+import type { CardImpl } from '../../registry'
+import { animalKeysForState } from '../../../contract/animals'
+import { createEventQuery } from '../../../events/query'
+import { gainLeaf } from '../../helpers/pay-gain-node'
+
+const CARD_ID = 'OLD_K299_Slaughterman'
+const cardImpl = {
+  effect: {
+    id: CARD_ID,
+    computeHarvestFeedingOrderPriority: () => 1,
+  },
+  listeners: [{
+    id: CARD_ID + '-slaughter',
+    cardIds: [CARD_ID],
+    actions: ['exchange'],
+    phases: ['after'],
+    scope: 'opponent',
+    handler: context => createEventQuery(context.actionEvents ?? []).filter('resource.exchanged').some(event =>
+      (event.gained.food ?? 0) > 0 &&
+      animalKeysForState(context.state).some(animal => (event.paid[animal] ?? 0) > 0),
+    ) ? { sourceCard: CARD_ID, flow: gainLeaf(CARD_ID, { food: 1 }) } : undefined,
+  }],
+} satisfies CardImpl
+
 export const OLD_K299_Slaughterman = defineOccupationCard({
   meta: {
     id: 'OLD_K299_Slaughterman',
@@ -17,7 +40,7 @@ export const OLD_K299_Slaughterman = defineOccupationCard({
     players: '3+',
     passing: false,
     extraVp: false,
-    implemented: false,
+    implemented: true,
     artUrl: '/assets/classic/K/K299.png',
     locales: {
       zh: {
@@ -29,4 +52,7 @@ export const OLD_K299_Slaughterman = defineOccupationCard({
       },
     },
   },
+  impl: cardImpl,
 })
+
+export const OLD_K299_Slaughterman_impl = OLD_K299_Slaughterman.impl

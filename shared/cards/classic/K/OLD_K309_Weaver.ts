@@ -1,5 +1,15 @@
-// Generated classic import. Remove this line before manually porting a card.
 import { defineOccupationCard } from '../../card-source'
+import type { CardImpl } from '../../registry'
+import { gainLeaf } from '../../helpers/pay-gain-node'
+
+const CARD_ID = 'OLD_K309_Weaver'
+const cardImpl = {
+  effect: {
+    id: CARD_ID,
+    onWorkStart: (_state, player) => player.resources.sheep >= 2 ? gainLeaf(CARD_ID, { food: 1 }) : undefined,
+  },
+} satisfies CardImpl
+
 export const OLD_K309_Weaver = defineOccupationCard({
   meta: {
     id: 'OLD_K309_Weaver',
@@ -15,7 +25,7 @@ export const OLD_K309_Weaver = defineOccupationCard({
     players: '3+',
     passing: false,
     extraVp: false,
-    implemented: false,
+    implemented: true,
     artUrl: '/assets/classic/K/K309.png',
     locales: {
       zh: {
@@ -25,4 +35,7 @@ export const OLD_K309_Weaver = defineOccupationCard({
       },
     },
   },
+  impl: cardImpl,
 })
+
+export const OLD_K309_Weaver_impl = OLD_K309_Weaver.impl

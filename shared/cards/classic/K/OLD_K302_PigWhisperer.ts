@@ -1,5 +1,21 @@
-// Generated classic import. Remove this line before manually porting a card.
 import { defineOccupationCard } from '../../card-source'
+import type { CardImpl } from '../../registry'
+import { queueFutureMeeplesFlow } from '../../../actions/effects/internal/future-meeples'
+
+const CARD_ID = 'OLD_K302_PigWhisperer'
+const cardImpl = {
+  effect: {
+    id: CARD_ID,
+    onBuy: (state, player) => queueFutureMeeplesFlow(state, {
+      cardId: CARD_ID,
+      playerId: player.id,
+      entries: [4, 7, 10]
+        .map(offset => ({ round: state.round + offset, resources: { boar: 1 } }))
+        .filter(entry => entry.round <= 14),
+    }),
+  },
+} satisfies CardImpl
+
 export const OLD_K302_PigWhisperer = defineOccupationCard({
   meta: {
     id: 'OLD_K302_PigWhisperer',
@@ -17,7 +33,7 @@ export const OLD_K302_PigWhisperer = defineOccupationCard({
     players: '3+',
     passing: false,
     extraVp: false,
-    implemented: false,
+    implemented: true,
     artUrl: '/assets/classic/K/K302.png',
     locales: {
       zh: {
@@ -29,4 +45,7 @@ export const OLD_K302_PigWhisperer = defineOccupationCard({
       },
     },
   },
+  impl: cardImpl,
 })
+
+export const OLD_K302_PigWhisperer_impl = OLD_K302_PigWhisperer.impl

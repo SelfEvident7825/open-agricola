@@ -1,5 +1,23 @@
-// Generated classic import. Remove this line before manually porting a card.
 import { defineOccupationCard } from '../../card-source'
+import { gainLeaf } from '../../helpers/pay-gain-node'
+import { getOrdinaryNegativeScoreTotal } from '../../../domain/score-rules'
+import type { CardImpl } from '../../registry'
+
+const CARD_ID = 'OLD_K276_Constable'
+const cardImpl = {
+  effect: {
+    id: CARD_ID,
+    onBuy: (state) => {
+      const remaining = 14 - state.round
+      const wood = remaining >= 9 ? 4 : remaining >= 6 ? 3 : remaining >= 3 ? 2 : remaining >= 1 ? 1 : 0
+      if (wood) return gainLeaf(CARD_ID, { wood })
+    },
+    computeSharedPostScore: (_state, _owner, summaries) => summaries.flatMap(summary =>
+      getOrdinaryNegativeScoreTotal(summary) < 0 ? [] : [{ playerId: summary.playerId, score: 5 }],
+    ),
+  },
+} satisfies CardImpl
+
 export const OLD_K276_Constable = defineOccupationCard({
   meta: {
     id: 'OLD_K276_Constable',
@@ -17,7 +35,7 @@ export const OLD_K276_Constable = defineOccupationCard({
     players: '1+',
     passing: false,
     extraVp: true,
-    implemented: false,
+    implemented: true,
     artUrl: '/assets/classic/K/K276.png',
     locales: {
       zh: {
@@ -29,4 +47,5 @@ export const OLD_K276_Constable = defineOccupationCard({
       },
     },
   },
+  impl: cardImpl,
 })

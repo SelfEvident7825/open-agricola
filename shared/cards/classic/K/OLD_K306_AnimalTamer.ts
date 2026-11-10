@@ -1,5 +1,18 @@
-// Generated classic import. Remove this line before manually porting a card.
 import { defineOccupationCard } from '../../card-source'
+import type { CardImpl } from '../../registry'
+
+const CARD_ID = 'OLD_K306_AnimalTamer'
+const cardImpl = {
+  effect: {
+    id: CARD_ID,
+    onComputeAnimalZones: (player, zones) => {
+      for (const zone of zones) {
+        if (zone.zoneType === 'house') zone.occupiedZoneLimit = player.roomTiles.length
+      }
+    },
+  },
+} satisfies CardImpl
+
 export const OLD_K306_AnimalTamer = defineOccupationCard({
   meta: {
     id: 'OLD_K306_AnimalTamer',
@@ -15,7 +28,7 @@ export const OLD_K306_AnimalTamer = defineOccupationCard({
     players: '3+',
     passing: false,
     extraVp: false,
-    implemented: false,
+    implemented: true,
     artUrl: '/assets/classic/K/K306.png',
     locales: {
       zh: {
@@ -27,4 +40,7 @@ export const OLD_K306_AnimalTamer = defineOccupationCard({
       },
     },
   },
+  impl: cardImpl,
 })
+
+export const OLD_K306_AnimalTamer_impl = OLD_K306_AnimalTamer.impl

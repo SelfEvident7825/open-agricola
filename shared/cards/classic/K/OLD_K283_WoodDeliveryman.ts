@@ -1,5 +1,24 @@
-// Generated classic import. Remove this line before manually porting a card.
 import { defineOccupationCard } from '../../card-source'
+import { queueFutureMeeplesFlow } from '../../../actions/effects/internal/future-meeples'
+import type { CardImpl } from '../../registry'
+
+const CARD_ID = 'OLD_K283_WoodDeliveryman'
+const cardImpl = {
+  effect: {
+    id: CARD_ID,
+    onBuy: (state, player) => queueFutureMeeplesFlow(
+      state,
+      {
+        cardId: CARD_ID,
+        playerId: player.id,
+        entries: [8, 9, 10, 11, 12, 13, 14]
+          .filter(round => round > state.round)
+          .map(round => ({ round, resources: { wood: 1 } })),
+      }
+    ),
+  },
+} satisfies CardImpl
+
 export const OLD_K283_WoodDeliveryman = defineOccupationCard({
   meta: {
     id: 'OLD_K283_WoodDeliveryman',
@@ -17,7 +36,7 @@ export const OLD_K283_WoodDeliveryman = defineOccupationCard({
     players: '1+',
     passing: false,
     extraVp: false,
-    implemented: false,
+    implemented: true,
     artUrl: '/assets/classic/K/K283.png',
     locales: {
       zh: {
@@ -29,4 +48,5 @@ export const OLD_K283_WoodDeliveryman = defineOccupationCard({
       },
     },
   },
+  impl: cardImpl,
 })

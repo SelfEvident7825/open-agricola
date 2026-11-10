@@ -1,5 +1,33 @@
-// Generated classic import. Remove this line before manually porting a card.
 import { defineOccupationCard } from '../../card-source'
+import type { CardImpl } from '../../registry'
+import { countTriggerCardsAs } from '../../helpers/trigger-snapshot'
+
+const CARD_ID = 'OLD_K271_Educator'
+const cardImpl = {
+  listeners: [{
+    id: CARD_ID + '-opponent-occupation',
+    cardIds: [CARD_ID],
+    actions: ['occupation'],
+    phases: ['after'],
+    scope: 'opponent',
+    handler: (context) => {
+      const owner = context.ownerPlayer
+      if (!owner || owner.occupationHand.length === 0) return
+      return {
+        sourceCard: CARD_ID,
+        flow: {
+          type: 'leaf',
+          actionId: 'occupation',
+          sourceCard: CARD_ID,
+          targetPlayerId: owner.id,
+          optional: true,
+          params: { exactCost: { food: countTriggerCardsAs(context, owner, 'occupation') >= 3 ? 2 : 3 } },
+        },
+      }
+    },
+  }],
+} satisfies CardImpl
+
 export const OLD_K271_Educator = defineOccupationCard({
   meta: {
     id: 'OLD_K271_Educator',
@@ -17,7 +45,7 @@ export const OLD_K271_Educator = defineOccupationCard({
     players: '1+',
     passing: false,
     extraVp: false,
-    implemented: false,
+    implemented: true,
     artUrl: '/assets/classic/K/K271.png',
     locales: {
       zh: {
@@ -29,4 +57,5 @@ export const OLD_K271_Educator = defineOccupationCard({
       },
     },
   },
+  impl: cardImpl,
 })

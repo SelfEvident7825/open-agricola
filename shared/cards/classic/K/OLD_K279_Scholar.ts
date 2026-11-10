@@ -1,5 +1,35 @@
-// Generated classic import. Remove this line before manually porting a card.
 import { defineOccupationCard } from '../../card-source'
+import type { CardImpl } from '../../registry'
+
+const CARD_ID = 'OLD_K279_Scholar'
+const cardImpl = {
+  effect: {
+    id: CARD_ID,
+    stageEligibility: { onRoundStart: (_state, player) => player.houseType === 'stone' },
+    onRoundStart: (_state, player, ctx) => {
+      if (!ctx?.roundPreparation && player.houseType !== 'stone') return
+      return {
+        type: 'xor',
+        optional: true,
+        children: [
+          {
+            type: 'leaf',
+            actionId: 'occupation',
+            sourceCard: CARD_ID,
+            params: { exactCost: { food: 1 } },
+          },
+          {
+            type: 'leaf',
+            actionId: 'improvement',
+            sourceCard: CARD_ID,
+            actionContext: { types: ['major', 'minor'], trueAction: false },
+          },
+        ],
+      }
+    },
+  },
+} satisfies CardImpl
+
 export const OLD_K279_Scholar = defineOccupationCard({
   meta: {
     id: 'OLD_K279_Scholar',
@@ -17,7 +47,7 @@ export const OLD_K279_Scholar = defineOccupationCard({
     players: '1+',
     passing: false,
     extraVp: false,
-    implemented: false,
+    implemented: true,
     artUrl: '/assets/classic/K/K279.png',
     locales: {
       zh: {
@@ -29,4 +59,5 @@ export const OLD_K279_Scholar = defineOccupationCard({
       },
     },
   },
+  impl: cardImpl,
 })

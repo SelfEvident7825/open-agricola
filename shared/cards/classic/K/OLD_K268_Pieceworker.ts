@@ -1,5 +1,37 @@
-// Generated classic import. Remove this line before manually porting a card.
 import { defineOccupationCard } from '../../card-source'
+import type { CardImpl } from '../../registry'
+import { sumActionSpaceMovedToTriggerPlayer } from '../../helpers/event-provenance'
+import { payGainActionFlow } from '../../helpers/pay-gain-node'
+
+const CARD_ID = 'OLD_K268_Pieceworker'
+const cardImpl = {
+  listeners: [{
+    id: CARD_ID + '-piecework',
+    cardIds: [CARD_ID],
+    actionSpaces: 'all',
+    phases: ['after'],
+    handler: (context) => {
+      const resources = (['wood', 'clay', 'reed', 'stone', 'grain', 'vegetable'] as const)
+        .filter(resource => sumActionSpaceMovedToTriggerPlayer(context, resource) > 0)
+      if (resources.length === 0) return
+      return {
+        sourceCard: CARD_ID,
+        flow: {
+          type: 'seq',
+          children: resources.map(resource => ({
+            ...payGainActionFlow({
+              cardId: CARD_ID,
+              cost: { food: resource === 'vegetable' ? 2 : 1 },
+              gain: { [resource]: 1 },
+            }),
+            optional: true,
+          })),
+        },
+      }
+    },
+  }],
+} satisfies CardImpl
+
 export const OLD_K268_Pieceworker = defineOccupationCard({
   meta: {
     id: 'OLD_K268_Pieceworker',
@@ -17,7 +49,7 @@ export const OLD_K268_Pieceworker = defineOccupationCard({
     players: '1+',
     passing: false,
     extraVp: false,
-    implemented: false,
+    implemented: true,
     artUrl: '/assets/classic/K/K268.png',
     locales: {
       zh: {
@@ -29,4 +61,5 @@ export const OLD_K268_Pieceworker = defineOccupationCard({
       },
     },
   },
+  impl: cardImpl,
 })

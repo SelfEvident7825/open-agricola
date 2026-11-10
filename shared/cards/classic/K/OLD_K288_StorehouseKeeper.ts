@@ -1,41 +1,24 @@
-// Generated classic import. Remove this line before manually porting a card.
 import { defineOccupationCard } from '../../card-source'
-import type { CardListenerRegistration, CardListenerContext } from '../../card-listeners'
-import type { ActionHookResult } from '../../../actions/hooks'
 import { gainLeaf } from '../../helpers/pay-gain-node'
+import { sumActionSpaceMovedToTriggerPlayerFromSpace } from '../../helpers/event-provenance'
 import type { CardImpl } from '../../registry'
 
 const CARD_ID = 'OLD_K288_StorehouseKeeper'
-const RESOURCE_MARKET_SPACES = new Set(['resource-market', 'resource-market-4'])
-
-/**
- * B156 Storehouse Keeper — Each time you use the Resource Market action space,
- * you also get your choice of 1 CLAY or 1 GRAIN.
- *
- * Rule: isActionCardEvent('ResourceMarket') →
- * returns a NODE_XOR of gainNode([CLAY => 1]) / gainNode([GRAIN => 1]).
- */
-const listener: CardListenerRegistration = {
-  id: 'OLD_K288_StorehouseKeeper-storehouse-keeper-before-place-farmer',
-  cardIds: [CARD_ID],
-  phases: ['before'],
-  actionSpaces: 'all',
-  handler: (context: CardListenerContext): ActionHookResult | void => {
-    const spaceId = context.space?.id
-    if (!spaceId || !RESOURCE_MARKET_SPACES.has(spaceId)) return
-    return {
-      flow: {
-        type: 'xor',
-        children: [gainLeaf(CARD_ID, { clay: 1 }), gainLeaf(CARD_ID, { grain: 1 })],
-      },
-      sourceCard: CARD_ID,
-    }
-  },
-}
-
 const cardImpl = {
-  listeners: [listener],
-  reaches: [] as readonly string[],
+  listeners: [{
+    id: CARD_ID + '-take-reed-and-stone',
+    cardIds: [CARD_ID],
+    actionSpaces: 'all',
+    phases: ['after'],
+    handler: (context) => {
+      if (sumActionSpaceMovedToTriggerPlayerFromSpace(context, 'reed') <= 0
+        || sumActionSpaceMovedToTriggerPlayerFromSpace(context, 'stone') <= 0) return
+      return {
+        sourceCard: CARD_ID,
+        flow: { type: 'xor', children: [gainLeaf(CARD_ID, { clay: 1 }), gainLeaf(CARD_ID, { grain: 1 })] },
+      }
+    },
+  },],
 } satisfies CardImpl
 
 export const OLD_K288_StorehouseKeeper = defineOccupationCard({
