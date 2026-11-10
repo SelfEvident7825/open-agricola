@@ -151,7 +151,8 @@ const CARD_IMPL = ${mode === 'companion helper' ? "{ effect: { id: 'CUSTOM_Snaps
         })
 
         // 4. Run generate-register-all and compare against generatePrFiles output.
-        execFileSync('./node_modules/.bin/tsx', [
+        execFileSync(process.execPath, [
+          '--import', 'tsx',
           'scripts/generate-register-all.ts',
         ], {
           cwd: tmp,

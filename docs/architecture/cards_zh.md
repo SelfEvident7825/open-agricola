@@ -49,6 +49,7 @@ export const CardName = defineOccupationCard({   // the constant shares the file
 
 - 生产路径只通过生成目录与 `CardRegistry` 访问卡牌；测试可以导入单个 Card Source。Card Definition 是带 `kind: 'minor' | 'occupation' | 'playerAction' | 'major'` 的纯数据。
 - 生成目录必须保持同步（`pnpm run check:generated-cards-sync`）；工坊 PR 生成基于已拉取的上游生成文件打补丁，从不读部署机本地的卡牌树。
+- 目录补丁和仓库生成器共用 `shared/cards/catalog-codegen.ts`；插入卡牌后重新划分限长批次，保证再次运行标准生成器仍逐字节一致。
 - 带实现的大改良源码经两条生成路径进入后端：`scripts/generate-register-all.ts` 把它加入 `ALL_CARD_IMPLS`；`major/runtime.generated.ts` 提供 `majorCardSources`，`shared/cards/major/index.ts` 把其中的 `impl.effect` 合并进大改良 Card Definition。
 - 服务端与沙盒只注册自定义卡的运行时部分；主客户端只注册展示 metadata，从不导入自定义运行时注册表。
 

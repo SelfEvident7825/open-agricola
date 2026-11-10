@@ -133,4 +133,39 @@ export const CUSTOM_First = defineMinorCard({
       card_content: '',
     })).toBe(baseCatalog)
   })
+
+  it.each(['start', 'middle', 'end'] as const)(
+    'rebalances 100-card batches when inserting at the %s',
+    position => {
+      const ids = Array.from({ length: 100 }, (_, index) => {
+        const prefix = position === 'start' ? 'D' : position === 'end' ? 'A'
+          : index < 50 ? 'A' : 'D'
+        return `${prefix}${String(index).padStart(3, '0')}_Source`
+      })
+      const entries = ids.map(id => `  {\n    "id": "${id}",\n    "kind": "minor"\n  },`)
+      const source = `// generated
+const batch0: readonly GeneratedCatalogCardDefinition[] = [
+${entries.join('\n')}
+]
+export const catalogCardDefinitions: readonly GeneratedCatalogCardDefinition[] = [...batch0]
+// downstream consumers stay intact
+`
+      const patched = patchCatalogGenerated(source, {
+        card_id: 'CUSTOM_First',
+        card_type: 'minor',
+        card_content: `export const CUSTOM_First = defineMinorCard({
+  meta: { id: 'CUSTOM_First', name: 'First', deck: 'community', number: 0, desc: [], cost: {} },
+})`,
+      })
+      const batches = [...patched.matchAll(/const batch\d+: readonly GeneratedCatalogCardDefinition\[\] = \[\n([\s\S]*?)\n\]/g)]
+        .map(match => [...match[1]!.matchAll(/"id": "([^"]+)"/g)].map(id => id[1]!))
+      expect(batches.map(batch => batch.length)).toEqual([100, 1])
+      expect(batches.flat()).toEqual([...ids, 'CUSTOM_First'].sort((a, b) => a.localeCompare(b)))
+      expect(patched).toContain('= [...batch0, ...batch1]')
+      expect(patched.endsWith('// downstream consumers stay intact\n')).toBe(true)
+      expect(patchCatalogGenerated(patched, {
+        card_id: 'CUSTOM_First', card_type: 'minor', card_content: '',
+      })).toBe(patched)
+    },
+  )
 })

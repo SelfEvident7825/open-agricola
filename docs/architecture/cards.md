@@ -47,6 +47,7 @@ Tests: `shared/cards/__tests__/card-source-representatives.test.ts`, `scripts/ch
 
 - Production paths access cards only through the generated catalog and `CardRegistry`; tests may import a single Card Source. Card Definitions are plain data with `kind: 'minor' | 'occupation' | 'playerAction' | 'major'`.
 - The generated catalog must stay in sync (`pnpm run check:generated-cards-sync`); Workshop PR generation patches fetched upstream generated files, never the deployment host's local tree.
+- Catalog patches and the repository generator share `shared/cards/catalog-codegen.ts`; inserting a card rebuilds the bounded batches so canonical regeneration remains byte-identical.
 - An implementation-bearing major source enters the backend through two generated paths: `scripts/generate-register-all.ts` adds it to `ALL_CARD_IMPLS`, and `major/runtime.generated.ts` supplies `majorCardSources`, whose `impl.effect` `shared/cards/major/index.ts` merges into the major Card Definitions.
 - The server and sandbox register only custom runtime parts; the main client registers only display metadata and never imports the custom runtime registry.
 

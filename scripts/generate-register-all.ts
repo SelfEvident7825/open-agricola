@@ -4,6 +4,7 @@ import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { parseCardFile, type CardMeta } from './build-cards-manifest'
 import { walkSourceFiles } from './source-files'
+import { renderCatalogDefinitionBatches } from '../shared/cards/catalog-codegen'
 
 const CATALOG_DECKS = ['A', 'B', 'C', 'D', 'E', 'M', 'community', 'classic'] as const
 const RUNTIME_DECKS = [...CATALOG_DECKS, '__stubs__'] as const
@@ -139,7 +140,7 @@ const parseSourceMetas = (sources: readonly SourceExport[]) => {
   return metas
 }
 
-const definitionArray = (sources: readonly SourceExport[], metas: ReadonlyMap<string, CardMeta>) =>
+const definitionEntries = (sources: readonly SourceExport[], metas: ReadonlyMap<string, CardMeta>) =>
   sources
     .map((source) => {
       const meta = metas.get(source.name)
@@ -153,7 +154,9 @@ const definitionArray = (sources: readonly SourceExport[], metas: ReadonlyMap<st
           .join('\n') + ','
       )
     })
-    .join('\n')
+
+const definitionArray = (sources: readonly SourceExport[], metas: ReadonlyMap<string, CardMeta>) =>
+  definitionEntries(sources, metas).join('\n')
 
 export function buildRegisterAll(options: BuildOptions = {}): RegisterAllBuildResult {
   const repoRoot = options.repoRoot ?? process.cwd()
@@ -190,8 +193,7 @@ type GeneratedCatalogCardDefinition = CardDefinition & {
   kind: 'minor' | 'occupation' | 'playerAction'
 }
 
-${Array.from({ length: Math.ceil(catalogSources.length / 100) }, (_, i) => `const batch${i}: readonly GeneratedCatalogCardDefinition[] = [\n${definitionArray(catalogSources.slice(i * 100, (i + 1) * 100), catalogMetas)}\n]`).join('\n')}
-export const catalogCardDefinitions: readonly GeneratedCatalogCardDefinition[] = [${Array.from({ length: Math.ceil(catalogSources.length / 100) }, (_, i) => `...batch${i}`).join(', ')}]
+${renderCatalogDefinitionBatches(definitionEntries(catalogSources, catalogMetas))}
 
 const isMinorLike = (card: GeneratedCatalogCardDefinition) =>
   card.kind === 'minor' ||

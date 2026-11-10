@@ -10,6 +10,7 @@
  *   5. public/card-art/community/{card_id}.{ext}        — (optional) binary art
  */
 import ts from 'typescript'
+import { renderCatalogDefinitionBatches } from '../../shared/cards/catalog-codegen'
 
 // ---------------------------------------------------------------------------
 // C-12: AST helper scan
@@ -1045,6 +1046,49 @@ function catalogEntryLiteral(meta: Record<string, unknown>, cardType: string): s
   return lines
 }
 
+function patchCatalogBatches(source: string, cardId: string, entry: string): string | undefined {
+  const file = ts.createSourceFile('catalog.generated.ts', source, ts.ScriptTarget.Latest, true)
+  const batches = new Map<string, { statement: ts.VariableStatement; values: ts.ArrayLiteralExpression }>()
+  let catalog: { statement: ts.VariableStatement; values: ts.ArrayLiteralExpression } | undefined
+  for (const statement of file.statements) {
+    if (!ts.isVariableStatement(statement)) continue
+    for (const declaration of statement.declarationList.declarations) {
+      if (!ts.isIdentifier(declaration.name) || !declaration.initializer
+        || !ts.isArrayLiteralExpression(declaration.initializer)) continue
+      const value = { statement, values: declaration.initializer }
+      if (/^batch\d+$/.test(declaration.name.text)) batches.set(declaration.name.text, value)
+      if (declaration.name.text === 'catalogCardDefinitions') catalog = value
+    }
+  }
+  // Older upstream snapshots use one inline array; retain their patch format.
+  if (batches.size === 0) return undefined
+  if (!catalog) throw new Error('catalog.generated.ts batch export not recognized')
+
+  const entries: { id: string; source: string }[] = []
+  let start = catalog.statement.getStart(file)
+  for (const spread of catalog.values.elements) {
+    if (!ts.isSpreadElement(spread) || !ts.isIdentifier(spread.expression)) {
+      throw new Error('catalog.generated.ts batch reference not recognized')
+    }
+    const batch = batches.get(spread.expression.text)
+    if (!batch) throw new Error(`catalog.generated.ts missing ${spread.expression.text}`)
+    start = Math.min(start, batch.statement.getStart(file))
+    for (const value of batch.values.elements) {
+      const meta = staticJsonLikeValue(value, new Map(), 'catalog entry')
+      if (!meta || typeof meta !== 'object' || Array.isArray(meta)
+        || !('id' in meta) || typeof meta.id !== 'string') {
+        throw new Error('catalog.generated.ts entry id not recognized')
+      }
+      entries.push({ id: meta.id, source: `  ${value.getText(file)},` })
+    }
+  }
+  entries.push({ id: cardId, source: entry })
+  entries.sort((a, b) => a.id.localeCompare(b.id))
+  return source.slice(0, start)
+    + renderCatalogDefinitionBatches(entries.map(value => value.source))
+    + source.slice(catalog.statement.end)
+}
+
 export function patchCatalogGenerated(
   source: string,
   args: { card_id: string; card_type: string; card_content: string },
@@ -1052,6 +1096,8 @@ export function patchCatalogGenerated(
   if (source.includes(`"id": "${args.card_id}"`)) return source
   const meta = extractGeneratedCardMeta(args.card_content, args.card_id)
   const entryLines = catalogEntryLiteral(meta, args.card_type)
+  const batched = patchCatalogBatches(source, args.card_id, entryLines.join('\n'))
+  if (batched !== undefined) return batched
   const lines = source.split('\n')
   const idRe = /^\s+"id": "([^"]+)",?$/
   let insertAt: number | null = null
