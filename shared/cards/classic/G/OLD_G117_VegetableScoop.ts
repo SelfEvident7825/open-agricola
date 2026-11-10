@@ -18,12 +18,5 @@ export const OLD_G117_VegetableScoop = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G117.png',
-    locales: {
-      zh: {
-        name: '蔬菜勺',
-        desc: ['每当你使用蔬菜种子行动格时，你额外获得1个蔬菜'],
-        prerequisite: '',
-      },
-    },
   },
 })

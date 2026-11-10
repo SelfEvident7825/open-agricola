@@ -17,12 +17,5 @@ export const OLD_FR108_ShovelWorker = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR108.png',
-    locales: {
-      zh: {
-        name: '铲土工',
-        desc: ['在每个丰收时节的收割阶段，如果你有至少2/3/4/5个圈地，则你获得1/2/3/4份食物。'],
-        prerequisite: '',
-      },
-    },
   },
 })

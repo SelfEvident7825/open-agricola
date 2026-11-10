@@ -48,15 +48,6 @@ export const OLD_E187_ClayDeliveryman = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E187.png',
-    locales: {
-      zh: {
-        name: '运土工',
-        desc: [
-          '在第6至14回合中尚未进行的回合行动格上各放置1个砖头。这些回合开始时，你获得对应的砖头。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

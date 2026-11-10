@@ -58,15 +58,6 @@ export const OLD_E160_Farmer = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E160.png',
-    locales: {
-      zh: {
-        name: '农民',
-        desc: [
-          '下次你围建至少1根栅栏时，获得1只猪。在此之后，你每次围建至少1根栅栏时，获得1头牛。动物可以立即被转换成食物，即使你没有饲养空间。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

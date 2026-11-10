@@ -18,12 +18,5 @@ export const OLD_FR018_EncirclingWall = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR018.png',
-    locales: {
-      zh: {
-        name: '环绕围墙',
-        desc: ['打出时你可以将你农场里的一格免费围成圈地(需遵循圈地规则，算作一次“围栅栏”行动)。'],
-        prerequisite: '',
-      },
-    },
   },
 })

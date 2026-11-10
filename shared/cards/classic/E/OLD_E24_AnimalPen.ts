@@ -46,15 +46,6 @@ export const OLD_E24_AnimalPen = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E24.png',
-    locales: {
-      zh: {
-        name: '畜栏',
-        desc: [
-          '打出此卡时，在之后的每个回合行动格上各放2份食物。这些回合开始时，你获得对应的食物。',
-        ],
-        prerequisite: '职业×4',
-      },
-    },
   },
   impl: cardImpl,
 })

@@ -20,14 +20,5 @@ export const OLD_FL017_BobbinTable = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FL/FL017.png',
-    locales: {
-      zh: {
-        name: '梭形桌',
-        desc: [
-          '此卡是只有你能使用的额外行动格。使用此卡后，直到下个丰收时节开始前，所有行动格对你而言视为未被占用(起始玩家每回合只变动一次)爱情花园存在生娃行动',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

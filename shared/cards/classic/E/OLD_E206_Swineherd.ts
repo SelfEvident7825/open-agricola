@@ -36,13 +36,6 @@ export const OLD_E206_Swineherd = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E206.png',
-    locales: {
-      zh: {
-        name: '猪倌',
-        desc: ['每当你使用猪市场积累行动格时，你额外获得1头猪。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

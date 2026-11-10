@@ -19,14 +19,5 @@ export const OLD_WM011_Contractor = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM011.png',
-    locales: {
-      zh: {
-        name: '包工头',
-        desc: [
-          '每当你扩建房间/翻修/打主发/打次发时，你可以用1份食物代替1个建筑资源进行支付。扩建时最多代替2个资源，翻修/打主发/打次发时最多代替1个资源。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

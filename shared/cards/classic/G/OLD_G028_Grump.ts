@@ -19,14 +19,5 @@ export const OLD_G028_Grump = defineOccupationCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/G/G028.png',
-    locales: {
-      zh: {
-        name: '脾气暴躁者',
-        desc: [
-          '打出此卡时，若距离游戏结束还有1/3/6/9个完整回合，则你立即获得1/2/3/4根木头。游戏结束时，家庭成员最少的玩家额外获得2分。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

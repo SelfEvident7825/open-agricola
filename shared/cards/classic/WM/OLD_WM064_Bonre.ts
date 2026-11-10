@@ -19,14 +19,5 @@ export const OLD_WM064_Bonre = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM064.png',
-    locales: {
-      zh: {
-        name: '篝火',
-        desc: [
-          '从游戏供应区拿取1个木头放到你农场中的1格空地上。任意时刻，你可以退还此木头，在此回合内你可以将任意数量的动物转化为食物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

@@ -84,15 +84,6 @@ export const OLD_K269_Acrobat = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K269.png',
-    locales: {
-      zh: {
-        name: '空中飞人',
-        desc: [
-          '打出此卡后，每当你使用卖艺积累行动格后，在本回合工作阶段结束时，你可以将此家庭成员移动到未被占用（或者你通过其他卡牌效果能够使用）的小麦种子/犁田/粮食耕种[犁播]行动格并使用该格。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

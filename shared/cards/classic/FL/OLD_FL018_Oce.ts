@@ -25,17 +25,5 @@ export const OLD_FL018_Oce = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FL/FL018.png',
-    locales: {
-      zh: {
-        name: '办公室',
-        desc: [
-          '任意时刻：',
-          '[<CLAY> <ARROW> <STONE>]',
-          '[<GRAIN> <ARROW> <VEGETABLE>]',
-          '[<PIG> <ARROW> <CATTLE>]',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

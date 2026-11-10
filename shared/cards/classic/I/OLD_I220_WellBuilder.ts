@@ -56,13 +56,6 @@ export const OLD_I220_WellBuilder = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I220.png',
-    locales: {
-      zh: {
-        name: '打井人',
-        desc: ['对你来说，A10水井是张次要发展卡，并且只花费1木头+1石头。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

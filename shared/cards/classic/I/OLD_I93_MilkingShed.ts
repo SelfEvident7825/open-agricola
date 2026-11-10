@@ -35,15 +35,6 @@ export const OLD_I93_MilkingShed = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I93.png',
-    locales: {
-      zh: {
-        name: '挤奶棚',
-        desc: [
-          '每个丰收时节的收割阶段开始时，计算所有玩家农场中的羊和牛的总数，每有5只羊/3头牛，你额外获得1份食物。(卡牌提供的“收割阶段”不算，如：I92肥料)',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

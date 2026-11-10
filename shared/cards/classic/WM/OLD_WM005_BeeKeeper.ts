@@ -19,14 +19,5 @@ export const OLD_WM005_BeeKeeper = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM005.png',
-    locales: {
-      zh: {
-        name: '养蜂人',
-        desc: [
-          '打出此卡时，立即免费建造一个马厩并将其放倒。该马厩失去原先的功能，但仍然像马厩一样计分。每个丰收时节的喂养阶段，你获得1份食物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

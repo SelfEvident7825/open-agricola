@@ -18,12 +18,5 @@ export const OLD_FR057_WildGame = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR057.png',
-    locales: {
-      zh: {
-        name: '野味',
-        desc: ['获得5份食物使用后请将此卡交给下家，此卡将加入他的手牌。'],
-        prerequisite: '',
-      },
-    },
   },
 })

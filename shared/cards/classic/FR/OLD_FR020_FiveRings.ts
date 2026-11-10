@@ -16,14 +16,5 @@ export const OLD_FR020_FiveRings = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR020.png',
-    locales: {
-      zh: {
-        name: '五环',
-        desc: [
-          '如果你打出此卡时将木头/石头放在五环上，则你打出每张发展卡的费用减少1根木头/1个石头',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

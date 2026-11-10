@@ -20,14 +20,5 @@ export const OLD_WA008_SteamEngine = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WA/WA008.png',
-    locales: {
-      zh: {
-        name: '蒸汽机',
-        desc: [
-          '若你在每回合工作阶段使用的行动格是积累行动格，则你可在行动后立即执行1次“烤面包”行动和平岛田地',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

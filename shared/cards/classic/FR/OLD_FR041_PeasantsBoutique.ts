@@ -16,12 +16,5 @@ export const OLD_FR041_PeasantsBoutique = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR041.png',
-    locales: {
-      zh: {
-        name: '工坊',
-        desc: ['石屋'],
-        prerequisite: '',
-      },
-    },
   },
 })

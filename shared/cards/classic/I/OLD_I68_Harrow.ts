@@ -100,15 +100,6 @@ export const OLD_I68_Harrow = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I68.png',
-    locales: {
-      zh: {
-        name: '耙',
-        desc: [
-          '限1次：每当你使用犁田/粮食耕种[犁播]行动格时，可改为犁2块田。其他玩家可以支付给你2份食物使用此卡1次。每次使用犁田/粮食耕种[犁播]行动格时，只能使用1个犁/I68耙的效果。',
-        ],
-        prerequisite: '',
-      },
-    },
     plowEffect: true,
   },
   impl: cardImpl,

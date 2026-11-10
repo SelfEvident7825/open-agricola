@@ -19,14 +19,5 @@ export const OLD_WA048_FounderoftheOrder = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WA/WA048.png',
-    locales: {
-      zh: {
-        name: '宗教创始人',
-        desc: [
-          '每个工作阶段结束时，如果你当回合使用了第一个和最新翻出的回合行动格，你获得1份小麦+2份食物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

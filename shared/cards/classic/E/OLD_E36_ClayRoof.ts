@@ -41,13 +41,6 @@ export const OLD_E36_ClayRoof = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E36.png',
-    locales: {
-      zh: {
-        name: '砖造屋顶',
-        desc: ['每当你扩建/翻修时，对于每间房屋和每次翻修，你可以用至多2砖代替等量的芦苇。'],
-        prerequisite: '职业×1',
-      },
-    },
   },
   impl: cardImpl,
 })

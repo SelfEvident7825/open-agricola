@@ -46,13 +46,6 @@ export const OLD_E194_PloughDriver = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E194.png',
-    locales: {
-      zh: {
-        name: '驭犁者',
-        desc: ['一旦你的房屋等级是石屋，你可以在每回合开始时支付1份食物来犁1块田。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

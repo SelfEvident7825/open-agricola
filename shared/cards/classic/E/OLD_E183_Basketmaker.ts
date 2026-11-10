@@ -15,13 +15,6 @@ export const OLD_E183_Basketmaker = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E183.png',
-    locales: {
-      zh: {
-        name: '编筐工',
-        desc: ['每个丰收时节，你可以将至多1捆芦苇转化为3份食物。'],
-        prerequisite: '',
-      },
-    },
     exchanges: [
       {
         from: {

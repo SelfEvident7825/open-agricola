@@ -62,15 +62,6 @@ export const OLD_K308_Foreman = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K308.png',
-    locales: {
-      zh: {
-        name: '工头',
-        desc: [
-          '每回合开始时，你可以从游戏供应区拿取1份食物放置任意一个行动格上。（不能放在未翻开行动格上）',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

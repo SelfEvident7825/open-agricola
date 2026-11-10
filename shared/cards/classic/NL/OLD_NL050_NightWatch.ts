@@ -21,14 +21,5 @@ export const OLD_NL050_NightWatch = defineMinorCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/NL/NL050.png',
-    locales: {
-      zh: {
-        name: '夜巡',
-        desc: [
-          '此卡是一个额外行动格。每回合在此卡上补充1份小麦。使用此行动格的玩家需要支付2食物到游戏供应区，并获得此卡上的所有小麦，并且可以将其中任意数量的小麦换成等量的分数',
-        ],
-        prerequisite: '职业≤1',
-      },
-    },
   },
 })

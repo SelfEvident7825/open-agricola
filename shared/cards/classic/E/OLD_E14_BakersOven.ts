@@ -36,15 +36,6 @@ export const OLD_E14_BakersOven = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E14.png',
-    locales: {
-      zh: {
-        name: '烘焙师烤炉',
-        desc: [
-          '打出此卡时，你获得1次“烤面包”行动。每次你执行“烤面包”行动时，你可以将至多2份小麦各转换成5份食物。',
-        ],
-        prerequisite: '退还1个烤炉',
-      },
-    },
     isBaking: true,
     ovenIdentity: true,
     returnCards: [

@@ -16,12 +16,5 @@ export const OLD_FR010_BreakfastOutdoors = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR010.png',
-    locales: {
-      zh: {
-        name: '户外早餐',
-        desc: ['在每个丰收时节的喂养阶段，你获得1份食物'],
-        prerequisite: '',
-      },
-    },
   },
 })

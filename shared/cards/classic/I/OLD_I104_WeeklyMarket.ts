@@ -24,13 +24,6 @@ export const OLD_I104_WeeklyMarket = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I104.png',
-    locales: {
-      zh: {
-        name: '周末市场',
-        desc: ['立即获得2份蔬菜。使用后请将此卡交给下家，此卡将加入他的手牌。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

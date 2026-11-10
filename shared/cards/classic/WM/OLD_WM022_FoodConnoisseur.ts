@@ -19,14 +19,5 @@ export const OLD_WM022_FoodConnoisseur = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM022.png',
-    locales: {
-      zh: {
-        name: '业余吃货',
-        desc: [
-          '按右图所示将这些物品排列于此卡上，每当你使用临时工/钓鱼积累行动格/卖艺积累行动格时，你取走最上面的物品。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

@@ -19,14 +19,5 @@ export const OLD_FR076_DebtCollector = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR076.png',
-    locales: {
-      zh: {
-        name: '讨债人',
-        desc: [
-          '打出时在当前回合数+3或之后的回合行动格中选择一个放置1个食客标记。该回合开始时，你向当回合的起始玩家支付1份食物并先于他派遣这名食客，然后从起始玩家开始，按照正常顺序派遣家庭成员。本回合结束后，退还该食客。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

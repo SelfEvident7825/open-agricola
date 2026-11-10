@@ -23,14 +23,5 @@ export const OLD_G106_SharedWall = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G106.png',
-    locales: {
-      zh: {
-        name: '共享墙壁',
-        desc: [
-          '你的房屋成为圈地的天然边界，你不能将你的房屋扩建到以此法围起的圈地中。你仍然可以建造15根栅栏',
-        ],
-        prerequisite: '职业×2',
-      },
-    },
   },
 })

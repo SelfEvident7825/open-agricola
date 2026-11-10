@@ -76,15 +76,6 @@ export const OLD_K139_SleepingCorner = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K139.png',
-    locales: {
-      zh: {
-        name: '卧室',
-        desc: [
-          '即使已有其他1名玩家占据了写有“生娃”行动的行动格，你仍可使用此行动格。（1）你可占据五人局“技能培训/生娃“行动格，只执行”技能培训“行动（从第5回合起）。（2）被多名其他玩家占据，你不可以使用；被自己家庭成员占据，你不可以使用。（3）此卡牌打出条件“麦田×2”包括卡牌田。',
-        ],
-        prerequisite: '麦田×2',
-      },
-    },
   },
   impl: cardImpl,
 })

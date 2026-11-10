@@ -17,12 +17,5 @@ export const OLD_FL053_CafeSinger = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FL/FL053.png',
-    locales: {
-      zh: {
-        name: '咖啡厅歌手',
-        desc: ['每当你使用卖艺积累行动格时，你可以将1只羊转化为1份蔬菜/将1头牛转化为2份蔬菜。'],
-        prerequisite: '',
-      },
-    },
   },
 })

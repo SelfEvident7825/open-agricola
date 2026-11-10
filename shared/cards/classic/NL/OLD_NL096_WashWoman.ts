@@ -17,12 +17,5 @@ export const OLD_NL096_WashWoman = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL096.png',
-    locales: {
-      zh: {
-        name: '洗衣妇',
-        desc: ['当你使用钓鱼积累行动格时，如果上面恰好是3食物，则你获得1份小麦+1个任意建筑资源。'],
-        prerequisite: '',
-      },
-    },
   },
 })

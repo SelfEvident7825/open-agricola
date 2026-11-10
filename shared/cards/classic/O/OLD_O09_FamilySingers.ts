@@ -19,14 +19,5 @@ export const OLD_O09_FamilySingers = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/O/O09.png',
-    locales: {
-      zh: {
-        name: '家庭合唱团',
-        desc: [
-          '在每个行动阶段，你能将任意数量的家庭成员放到此卡上代替放置其他行动格上，每个到此卡上的家庭成员获得1分。（此卡不是一个行动格）',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

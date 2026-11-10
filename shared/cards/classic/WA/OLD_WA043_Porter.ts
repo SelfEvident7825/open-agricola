@@ -60,13 +60,6 @@ export const OLD_WA043_Porter = defineOccupationCard({
     passing: false,
     extraVp: false,
     artUrl: '/assets/classic/WA/WA043.png',
-    locales: {
-      zh: {
-        name: '搬运工',
-        desc: ['每当你从行动格上拿取不少于4份同种建筑资源时，你额外获得1个该建筑资源+1份食物。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

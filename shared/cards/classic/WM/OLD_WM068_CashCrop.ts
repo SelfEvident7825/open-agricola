@@ -21,14 +21,5 @@ export const OLD_WM068_CashCrop = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM068.png',
-    locales: {
-      zh: {
-        name: '经济作物',
-        desc: [
-          '此卡视作1个田。你可以在此卡上播种任意作物，从此卡上收割的每份作物必须被立即转化为1分。注:（1）因其他卡牌效果弃置此卡时，不影响之前已获得的分数。例：E38圣母像。（2）此卡上的作物因其他卡牌效果移除、取走或丢弃（非收割）不能转化为分数。例：I223秋收帮工。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

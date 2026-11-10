@@ -104,15 +104,6 @@ export const OLD_I223_HarvestHelper = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I223.png',
-    locales: {
-      zh: {
-        name: '秋收帮工',
-        desc: [
-          '每个丰收时节的喂养阶段开始时，你可以从其他玩家的至多1块田上拿走至多1份小麦，该名玩家从游戏供应区获得2份食物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

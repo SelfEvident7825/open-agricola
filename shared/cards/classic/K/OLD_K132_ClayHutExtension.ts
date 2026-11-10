@@ -35,13 +35,6 @@ export const OLD_K132_ClayHutExtension = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K132.png',
-    locales: {
-      zh: {
-        name: '扩建砖屋',
-        desc: ['立即免费扩建1间砖屋。使用后请将此卡交给下家，此卡将加入他的手牌。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

@@ -17,12 +17,5 @@ export const OLD_WM026_HedgeMaster = defineOccupationCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/WM/WM026.png',
-    locales: {
-      zh: {
-        name: '篱笆大师',
-        desc: ['每当你建造至少1根栅栏时，你获得1分。打出此卡时，你获得1次“围建栅栏”行动。'],
-        prerequisite: '',
-      },
-    },
   },
 })

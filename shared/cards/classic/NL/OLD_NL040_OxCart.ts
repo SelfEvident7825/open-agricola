@@ -18,12 +18,5 @@ export const OLD_NL040_OxCart = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL040.png',
-    locales: {
-      zh: {
-        name: '牛车',
-        desc: ['在你第一次拥有牛时，你可以立即犁等同于之后丰收时节数量的田'],
-        prerequisite: '11回合或之后',
-      },
-    },
   },
 })

@@ -16,12 +16,5 @@ export const OLD_WA028_FoieGras = defineMinorCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/WA/WA028.png',
-    locales: {
-      zh: {
-        name: '鹅肝',
-        desc: ['每当其他玩家使用芦苇滩/钓鱼积累行动格时，如果另一格已经被你占用，则你获得2份食物'],
-        prerequisite: '',
-      },
-    },
   },
 })

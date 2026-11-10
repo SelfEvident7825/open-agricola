@@ -20,14 +20,5 @@ export const OLD_FR040_ParkCemetary = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR040.png',
-    locales: {
-      zh: {
-        name: '公墓',
-        desc: [
-          '从游戏供应区拿取3个石头，放到犁田行动格上，使用此格的玩家可以拿走1个石头。如果石头被拿光，你可以犁一块田',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

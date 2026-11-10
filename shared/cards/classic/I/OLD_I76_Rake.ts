@@ -40,15 +40,6 @@ export const OLD_I76_Rake = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I76.png',
-    locales: {
-      zh: {
-        name: '钉耙',
-        desc: [
-          '游戏结束时，如果你有至少5个田地板块，则你获得2分。如果你有I68耙、I70夯具、K124轭具或犁，则需要至少6个田地板块。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

@@ -24,14 +24,5 @@ export const OLD_FR052_TreesfortheCitizens = defineMinorCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/FR/FR052.png',
-    locales: {
-      zh: {
-        name: '公有树林',
-        desc: [
-          '如果你有A7家具工坊/K122大家具工坊，则打出此卡时你无需支付木头。游戏结束时，每2张费用包含木头的发展卡使你获得1分',
-        ],
-        prerequisite: '职业×1',
-      },
-    },
   },
 })

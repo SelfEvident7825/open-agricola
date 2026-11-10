@@ -31,13 +31,6 @@ export const OLD_E165_YeomanFarmer = defineOccupationCard({
     extraVp: true,
     implemented: true,
     artUrl: '/assets/classic/E/E165.png',
-    locales: {
-      zh: {
-        name: '自由农民',
-        desc: ['游戏结束时，你只因为未使用的农场空格和乞讨卡而损失分数。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

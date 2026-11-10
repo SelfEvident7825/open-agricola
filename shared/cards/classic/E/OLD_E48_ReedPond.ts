@@ -40,15 +40,6 @@ export const OLD_E48_ReedPond = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E48.png',
-    locales: {
-      zh: {
-        name: '芦苇塘',
-        desc: [
-          '打出此卡时，在之后的3个回合行动格上各放1捆芦苇。这些回合开始时，你获得对应的芦苇。',
-        ],
-        prerequisite: '职业×3',
-      },
-    },
   },
   impl: cardImpl,
 })

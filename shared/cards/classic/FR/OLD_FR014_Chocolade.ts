@@ -16,12 +16,5 @@ export const OLD_FR014_Chocolade = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR014.png',
-    locales: {
-      zh: {
-        name: '巧克力',
-        desc: ['从游戏供应区拿取4份食物放到此卡上，你在支付职业培训费时可以使用此卡上的食物'],
-        prerequisite: '主发×1',
-      },
-    },
   },
 })

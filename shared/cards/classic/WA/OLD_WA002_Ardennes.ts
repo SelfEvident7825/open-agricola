@@ -16,12 +16,5 @@ export const OLD_WA002_Ardennes = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WA/WA002.png',
-    locales: {
-      zh: {
-        name: '密林',
-        desc: ['在之后的偶数回合行动格上各放置1根木头，这些回合开始时，你获得这根木头'],
-        prerequisite: '砖头×6',
-      },
-    },
   },
 })

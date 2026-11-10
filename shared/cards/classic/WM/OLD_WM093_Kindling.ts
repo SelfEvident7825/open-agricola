@@ -18,12 +18,5 @@ export const OLD_WM093_Kindling = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM093.png',
-    locales: {
-      zh: {
-        name: '引火柴',
-        desc: ['A1/A2火炉和A3/A4壁炉对你来说是次要发展卡，且花费减少1个砖头。'],
-        prerequisite: '',
-      },
-    },
   },
 })

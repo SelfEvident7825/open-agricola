@@ -75,15 +75,6 @@ export const OLD_E215_TenantFarmer = defineOccupationCard({
     extraVp: true,
     implemented: true,
     artUrl: '/assets/classic/E/E215.png',
-    locales: {
-      zh: {
-        name: '动物租用人',
-        desc: [
-          '你立即获得3种动物各1只。计分阶段开始前，你必须退还3种动物各1只，否则每只不退还的动物使你-1分。动物可以立即被转换成食物，即使你没有饲养空间。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   presentation: { counters: ['unreturned'] },
   impl: cardImpl,

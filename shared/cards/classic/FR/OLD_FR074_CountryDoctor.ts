@@ -17,12 +17,5 @@ export const OLD_FR074_CountryDoctor = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR074.png',
-    locales: {
-      zh: {
-        name: '乡村医生',
-        desc: ['限1次：如果你有3块麦田，你可以将一次“生娃”行动当成“生娃(无需空房间)”行动执行。'],
-        prerequisite: '',
-      },
-    },
   },
 })

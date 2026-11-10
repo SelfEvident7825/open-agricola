@@ -19,14 +19,5 @@ export const OLD_FR118_WoodGatherers = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR118.png',
-    locales: {
-      zh: {
-        name: '木头收集者',
-        desc: [
-          '每回合结束时，如果你在该回合通过打发展卡、扩建房屋、建造马厩、围建栅栏上总计花费了至少4根木头，你获得2根木头。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

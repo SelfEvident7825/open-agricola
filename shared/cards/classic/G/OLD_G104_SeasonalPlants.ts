@@ -22,12 +22,5 @@ export const OLD_G104_SeasonalPlants = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G104.png',
-    locales: {
-      zh: {
-        name: '季节性作物',
-        desc: ['每当你在偶数回合执行“播种”行动时，在你刚播种的田上额外放置一份对应的资源'],
-        prerequisite: '职业×1',
-      },
-    },
   },
 })

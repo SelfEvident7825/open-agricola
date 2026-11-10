@@ -19,14 +19,5 @@ export const OLD_FR110_Stroller = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR110.png',
-    locales: {
-      zh: {
-        name: '流浪者',
-        desc: [
-          '打出此卡时，在此卡上从上至下以任意顺序放置6个由你选择的建筑资源，且必须包含各种建筑资源。每个丰收时节的收割阶段，你获得此卡最上面的资源。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

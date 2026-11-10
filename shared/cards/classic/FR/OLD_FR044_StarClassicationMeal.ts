@@ -16,12 +16,5 @@ export const OLD_FR044_StarClassicationMeal = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR044.png',
-    locales: {
-      zh: {
-        name: '星级料理',
-        desc: ['在之后的回合行动格上各放置1份<FOOD>，这些回合开始时，你获得这份<FOOD>'],
-        prerequisite: '石屋阶段',
-      },
-    },
   },
 })

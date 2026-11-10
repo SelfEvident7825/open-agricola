@@ -37,13 +37,6 @@ export const OLD_E22_Raft = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E22.png',
-    locales: {
-      zh: {
-        name: '木筏',
-        desc: ['每当你使用钓鱼积累行动格时，额外获得1份食物/1捆芦苇。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

@@ -21,12 +21,5 @@ export const OLD_G099_ReedBeds = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G099.png',
-    locales: {
-      zh: {
-        name: '芦苇河床',
-        desc: ['每次你使用犁田行动格时，你额外获得1捆芦苇'],
-        prerequisite: '职业×1',
-      },
-    },
   },
 })

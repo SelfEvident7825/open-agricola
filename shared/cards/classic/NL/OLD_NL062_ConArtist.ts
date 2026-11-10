@@ -17,14 +17,5 @@ export const OLD_NL062_ConArtist = defineOccupationCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/NL/NL062.png',
-    locales: {
-      zh: {
-        name: '商业艺术家',
-        desc: [
-          '其他玩家使用卖艺积累行动格时，必须支付给你1份食物，同时你从游戏供应区获得1份食物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

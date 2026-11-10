@@ -65,15 +65,6 @@ export const OLD_NL114_CanalBoatman = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/NL/NL114.png',
-    locales: {
-      zh: {
-        name: '运河船夫',
-        desc: [
-          '每当你使用钓鱼或芦苇滩积累行动格时，你可以支付1份食物来立即放置你的另1名家庭成员到此卡上。若你如此做，则你获得3块石头，或1份小麦+1份蔬菜。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

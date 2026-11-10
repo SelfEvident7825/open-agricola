@@ -21,14 +21,5 @@ export const OLD_WM102_Ram = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM102.png',
-    locales: {
-      zh: {
-        name: '公羊',
-        desc: [
-          '公羊参与羊计数、计分和繁殖。在第6/8/10/12回合结束时，你的羊会额外进行1次繁殖。每次家庭成员喂养阶段，必须喂养公羊1份食物或者获得一份乞讨卡。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

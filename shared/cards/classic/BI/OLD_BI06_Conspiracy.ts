@@ -20,14 +20,5 @@ export const OLD_BI06_Conspiracy = defineMinorCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/BI/BI06.png',
-    locales: {
-      zh: {
-        name: 'Bi扩卡牌',
-        desc: [
-          '在每个丰收时节的收割阶段，你打出的每2张Bi扩卡牌使你获得1食物。游戏结束时，每位打出至少1/3/5张Bi扩卡牌的玩家获得1/3/5分。',
-        ],
-        prerequisite: '共谋1张',
-      },
-    },
   },
 })

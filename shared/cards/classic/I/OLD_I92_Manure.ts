@@ -38,15 +38,6 @@ export const OLD_I92_Manure = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I92.png',
-    locales: {
-      zh: {
-        name: '肥料',
-        desc: [
-          '每个不以丰收时节为结束的回合结束时，你可以执行1次丰收时节的收割行动。此“收割行动”可触发以下卡牌：I86谷仓、I103水磨坊(只能自用)、I226园丁。此卡牌打出条件“动物×2”不包括卡牌动物。',
-        ],
-        prerequisite: '动物×2',
-      },
-    },
   },
   impl: cardImpl,
 })

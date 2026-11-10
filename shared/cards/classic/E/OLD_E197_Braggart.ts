@@ -28,13 +28,6 @@ export const OLD_E197_Braggart = defineOccupationCard({
     extraVp: true,
     implemented: true,
     artUrl: '/assets/classic/E/E197.png',
-    locales: {
-      zh: {
-        name: '吹牛大王',
-        desc: ['游戏结束时，若你场上拥有5/6/7/8/9+张发展卡，则你可获得1/3/5/7/9分。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

@@ -45,13 +45,6 @@ export const OLD_E163_FieldWarden = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E163.png',
-    locales: {
-      zh: {
-        name: '护田人',
-        desc: ['即使已有其他玩家占据了蔬菜种子/犁田/粮食耕种[犁播]行动格，你仍可使用它们。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

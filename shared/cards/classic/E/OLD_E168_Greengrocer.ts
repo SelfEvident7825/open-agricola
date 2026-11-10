@@ -39,13 +39,6 @@ export const OLD_E168_Greengrocer = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E168.png',
-    locales: {
-      zh: {
-        name: '蔬菜商',
-        desc: ['每当你使用小麦种子行动格时，额外获得1份蔬菜。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

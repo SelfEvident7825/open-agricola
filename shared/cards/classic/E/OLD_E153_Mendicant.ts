@@ -32,13 +32,6 @@ export const OLD_E153_Mendicant = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E153.png',
-    locales: {
-      zh: {
-        name: '乞丐',
-        desc: ['游戏结束时，你可以弃掉至多2张乞讨卡。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

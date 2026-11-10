@@ -34,15 +34,6 @@ export const OLD_I246_MilkingHand = defineOccupationCard({
     extraVp: true,
     implemented: true,
     artUrl: '/assets/classic/I/I246.png',
-    locales: {
-      zh: {
-        name: '挤奶工',
-        desc: [
-          '每个丰收时节的收割阶段，若你有1/3/5+头牛，则你获得1/2/3份食物。游戏结束时，你每拥有2头牛便能额外获得1分。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

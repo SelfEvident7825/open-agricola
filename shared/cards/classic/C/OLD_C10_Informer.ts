@@ -17,14 +17,5 @@ export const OLD_C10_Informer = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/C/C10.png',
-    locales: {
-      zh: {
-        name: '告密者',
-        desc: [
-          '打出此卡时，翻面1张你已打出的职业卡，获得5食物/1头牛。该职业卡失效但算作1张职业卡。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

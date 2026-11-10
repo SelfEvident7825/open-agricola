@@ -17,12 +17,5 @@ export const OLD_NL090_WomanWeighingPearls = defineOccupationCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/NL/NL090.png',
-    locales: {
-      zh: {
-        name: '称珍珠的女人',
-        desc: ['每当其他玩家使用钓鱼积累行动格时，你可以支付给他1食物获得1分。'],
-        prerequisite: '',
-      },
-    },
   },
 })

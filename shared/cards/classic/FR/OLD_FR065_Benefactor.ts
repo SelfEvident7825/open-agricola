@@ -17,12 +17,5 @@ export const OLD_FR065_Benefactor = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR065.png',
-    locales: {
-      zh: {
-        name: '施主',
-        desc: ['限1次：如果你有4个圈地，则你可以支付1只动物来免费扩建1间木屋。'],
-        prerequisite: '',
-      },
-    },
   },
 })

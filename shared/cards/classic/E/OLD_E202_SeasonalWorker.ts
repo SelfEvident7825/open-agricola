@@ -48,15 +48,6 @@ export const OLD_E202_SeasonalWorker = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E202.png',
-    locales: {
-      zh: {
-        name: '季节工',
-        desc: [
-          '每当你使用临时工行动格时，你额外获得1份小麦。第6回合起，改为额外获得1份小麦/1份蔬菜。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

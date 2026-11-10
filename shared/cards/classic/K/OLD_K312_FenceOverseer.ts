@@ -73,15 +73,6 @@ export const OLD_K312_FenceOverseer = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K312.png',
-    locales: {
-      zh: {
-        name: '栅栏监管员',
-        desc: [
-          '每回合限一次：你可以支付1份食物免费将刚建成的马厩所在的格子围成1格圈地。(必须遵循圈地规则)',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

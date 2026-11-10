@@ -18,12 +18,5 @@ export const OLD_FR050_ThreshingMachinePlow = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR050.png',
-    locales: {
-      zh: {
-        name: '打谷犁',
-        desc: ['限1次：当你使用犁田行动格时，可以改为将你农场中心的3格犁成田(中心3格位置如图)'],
-        prerequisite: '',
-      },
-    },
   },
 })

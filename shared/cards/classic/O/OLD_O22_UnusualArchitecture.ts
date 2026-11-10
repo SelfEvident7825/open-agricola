@@ -18,12 +18,5 @@ export const OLD_O22_UnusualArchitecture = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/O/O22.png',
-    locales: {
-      zh: {
-        name: '特色建筑',
-        desc: ['你每扩建1间房屋，你获得2份食物。'],
-        prerequisite: '',
-      },
-    },
   },
 })

@@ -25,13 +25,6 @@ export const OLD_K141_BoarBreeding = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K141.png',
-    locales: {
-      zh: {
-        name: '野猪',
-        desc: ['立即获得1头猪。使用后请将此卡交给下家，此卡将加入他的手牌。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

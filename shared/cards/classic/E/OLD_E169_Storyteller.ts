@@ -43,13 +43,6 @@ export const OLD_E169_Storyteller = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E169.png',
-    locales: {
-      zh: {
-        name: '说书人',
-        desc: ['每当你使用卖艺积累行动格时，你可以留下1份食物在卖艺积累行动格，并获得1份蔬菜。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

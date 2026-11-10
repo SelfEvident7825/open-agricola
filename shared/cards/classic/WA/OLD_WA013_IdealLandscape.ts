@@ -16,12 +16,5 @@ export const OLD_WA013_IdealLandscape = defineMinorCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/WA/WA013.png',
-    locales: {
-      zh: {
-        name: '理想景观',
-        desc: ['游戏结束时，如果你有恰好4个圈地(总共6格)、5块田和4间房屋板块，则你获得4分'],
-        prerequisite: '空格×8',
-      },
-    },
   },
 })

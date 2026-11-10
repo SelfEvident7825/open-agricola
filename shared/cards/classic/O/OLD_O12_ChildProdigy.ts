@@ -17,12 +17,5 @@ export const OLD_O12_ChildProdigy = defineOccupationCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/O/O12.png',
-    locales: {
-      zh: {
-        name: '钢琴神童',
-        desc: ['每当你执行“生娃”行动时，你可以支付1/2根木头获得1/2分。'],
-        prerequisite: '',
-      },
-    },
   },
 })

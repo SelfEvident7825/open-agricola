@@ -25,13 +25,6 @@ export const OLD_E203_Shepherd = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E203.png',
-    locales: {
-      zh: {
-        name: '牧羊人',
-        desc: ['每个繁殖阶段，如果你有至少4只羊，你能繁殖2只羊而不是1只。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

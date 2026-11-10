@@ -17,12 +17,5 @@ export const OLD_WM039_Pawnbroker = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM039.png',
-    locales: {
-      zh: {
-        name: '典当商',
-        desc: ['任意时刻，你可以将你面前发展卡的1分转化为3份食物，之后你不能移除或退还该发展卡'],
-        prerequisite: '',
-      },
-    },
   },
 })

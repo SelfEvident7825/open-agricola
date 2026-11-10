@@ -17,12 +17,5 @@ export const OLD_G034_Inventor = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G034.png',
-    locales: {
-      zh: {
-        name: '发明家',
-        desc: ['所有费用印有需要花费4个或以上资源的发展卡，当你打出时皆可以少付任意一个资源。'],
-        prerequisite: '',
-      },
-    },
   },
 })

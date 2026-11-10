@@ -18,12 +18,5 @@ export const OLD_G081_Hayloft = defineMinorCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/G/G081.png',
-    locales: {
-      zh: {
-        name: '草棚',
-        desc: ['游戏结束时，如果你有3/4个马厩，则你获得1/2分'],
-        prerequisite: '',
-      },
-    },
   },
 })

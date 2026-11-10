@@ -40,13 +40,6 @@ export const OLD_E35_CornScoop = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E35.png',
-    locales: {
-      zh: {
-        name: '谷物铲',
-        desc: ['每当你使用小麦种子行动格时，额外获得1份小麦。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

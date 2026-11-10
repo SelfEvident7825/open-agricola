@@ -21,12 +21,5 @@ export const OLD_FR037_Necklace = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR037.png',
-    locales: {
-      zh: {
-        name: '项链',
-        desc: ['每个工作阶段结束时，如果你占用了两个正交相邻的行动格（大小相同，则你获得1份食物'],
-        prerequisite: '职业×1',
-      },
-    },
   },
 })

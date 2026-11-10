@@ -19,14 +19,5 @@ export const OLD_WM030_Hoarder = defineOccupationCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/WM/WM030.png',
-    locales: {
-      zh: {
-        name: '囤货商',
-        desc: [
-          '每个丰收时节，你可以在此卡上放置至多1个建筑资源。游戏结束时，如果此卡上有至少1/2/3/4种建筑资源，则你获得1/2/3/5分。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

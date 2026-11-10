@@ -37,13 +37,6 @@ export const OLD_NL060_Shack = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/NL/NL060.png',
-    locales: {
-      zh: {
-        name: '简陋木屋',
-        desc: ['每回合开始时，若你仍居住在木屋内，则你获得1份食物'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

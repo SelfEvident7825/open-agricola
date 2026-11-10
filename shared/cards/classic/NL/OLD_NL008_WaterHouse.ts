@@ -21,14 +21,5 @@ export const OLD_NL008_WaterHouse = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL008.png',
-    locales: {
-      zh: {
-        name: '水上小屋',
-        desc: [
-          '每回合资源补充阶段，在钓鱼积累行动格上额外补充1份食物，其他玩家使用钓鱼积累行动格后必须支付你2份食物痰盂',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

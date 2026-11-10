@@ -20,14 +20,5 @@ export const OLD_G071_CowBell = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G071.png',
-    locales: {
-      zh: {
-        name: '牛铃',
-        desc: [
-          '你可以在你未使用的每个空格上饲养至多2只牛，如此饲养的牛不能超过4只。(空地仍视作未使用)',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

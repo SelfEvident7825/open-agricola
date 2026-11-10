@@ -51,15 +51,6 @@ export const OLD_E218_Carpenter = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E218.png',
-    locales: {
-      zh: {
-        name: '木匠',
-        desc: [
-          '你扩建每间房屋只需花费2捆芦苇和3份对应你房屋类型的建材。例如：扩建1间石屋只需2捆芦苇+3个石头。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

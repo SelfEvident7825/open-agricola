@@ -19,14 +19,5 @@ export const OLD_NL119_Collector = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL119.png',
-    locales: {
-      zh: {
-        name: '收集者',
-        desc: [
-          '此卡是仅你可用的行动格：当你第1/2/3/4次使用此行动格时，拿取1张乞讨卡并获得由你任选的6/7/8/9个不同种的物品。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

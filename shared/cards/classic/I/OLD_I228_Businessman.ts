@@ -44,15 +44,6 @@ export const OLD_I228_Businessman = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I228.png',
-    locales: {
-      zh: {
-        name: '生意人',
-        desc: [
-          '每当你使用聚会场所行动格并打出1张次要发展卡后，你可以额外打出1张主要或次要发展卡。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

@@ -42,13 +42,6 @@ export const OLD_E50_BuildersTrowel = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E50.png',
-    locales: {
-      zh: {
-        name: '泥铲',
-        desc: ['你可以随时将木屋翻修成砖屋。(正常支付翻修费用)。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

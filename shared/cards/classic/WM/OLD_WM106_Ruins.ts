@@ -18,12 +18,5 @@ export const OLD_WM106_Ruins = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM106.png',
-    locales: {
-      zh: {
-        name: '废墟',
-        desc: ['打出时在此卡放置4个<STONE>，每个丰收时节的收割阶段，你从上获得1个<STONE>。'],
-        prerequisite: '',
-      },
-    },
   },
 })

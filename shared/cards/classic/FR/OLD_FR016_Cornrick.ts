@@ -18,12 +18,5 @@ export const OLD_FR016_Cornrick = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR016.png',
-    locales: {
-      zh: {
-        name: '玉米垛',
-        desc: ['在第7和9回合的行动格上各放置1份小麦，这些回合开始时，你获得这份小麦'],
-        prerequisite: '田×1',
-      },
-    },
   },
 })

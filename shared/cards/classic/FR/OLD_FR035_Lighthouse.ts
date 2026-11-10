@@ -19,12 +19,5 @@ export const OLD_FR035_Lighthouse = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR035.png',
-    locales: {
-      zh: {
-        name: '灯塔',
-        desc: ['此卡可容纳一名家庭成员'],
-        prerequisite: '石屋=2',
-      },
-    },
   },
 })

@@ -67,15 +67,6 @@ export const OLD_I90_PlanterBox = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I90.png',
-    locales: {
-      zh: {
-        name: '播种筒',
-        desc: [
-          '每当你播种时，如果播种的田地板块与你的房屋板块正交相邻，每列小麦必须额外放置2份小麦，每列蔬菜必须额外放置1份蔬菜。',
-        ],
-        prerequisite: '职业×2',
-      },
-    },
   },
   impl: cardImpl,
 })

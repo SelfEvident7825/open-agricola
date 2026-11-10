@@ -48,15 +48,6 @@ export const OLD_FL015_CourtyardGarden = defineMinorCard({
     passing: false,
     implemented: true,
     artUrl: '/assets/classic/FL/FL015.png',
-    locales: {
-      zh: {
-        name: '避暑宅院',
-        desc: [
-          '在计分时，若你居住在石屋内，则你的每块与房间正交相邻的空地都使你获得2分。（你仍然会因这些空地而扣分）',
-        ],
-        prerequisite: '木屋阶段',
-      },
-    },
   },
   impl: cardImpl,
 })

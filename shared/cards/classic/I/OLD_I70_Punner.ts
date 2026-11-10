@@ -73,13 +73,6 @@ export const OLD_I70_Punner = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I70.png',
-    locales: {
-      zh: {
-        name: '夯具',
-        desc: ['每当其他玩家使用犁或I68耙时，你可以犁1块田。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

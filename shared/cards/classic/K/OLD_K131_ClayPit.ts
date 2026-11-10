@@ -41,13 +41,6 @@ export const OLD_K131_ClayPit = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K131.png',
-    locales: {
-      zh: {
-        name: '黏土坑',
-        desc: ['每当你使用临时工行动格时，额外获得3个砖头。'],
-        prerequisite: '职业×3',
-      },
-    },
   },
   impl: cardImpl,
 })

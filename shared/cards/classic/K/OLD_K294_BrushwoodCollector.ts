@@ -46,13 +46,6 @@ export const OLD_K294_BrushwoodCollector = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K294.png',
-    locales: {
-      zh: {
-        name: '拾柴者',
-        desc: ['在每次翻修/扩建每间房屋时，你可以用1根木头来代替所需的1捆/2捆芦苇。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

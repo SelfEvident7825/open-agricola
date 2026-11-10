@@ -20,14 +20,5 @@ export const OLD_WM056_Almshouse = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM056.png',
-    locales: {
-      zh: {
-        name: '救济院',
-        desc: [
-          '每个丰收时节的喂养阶段后，你可以弃掉1张任意丰收时节因喂养家庭成员食物不足而领取的乞讨卡。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

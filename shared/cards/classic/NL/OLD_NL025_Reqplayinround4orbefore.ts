@@ -16,12 +16,5 @@ export const OLD_NL025_Reqplayinround4orbefore = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL025.png',
-    locales: {
-      zh: {
-        name: '最低薪资',
-        desc: ['每回合限1次：当你没有食物时，你得到1份食物'],
-        prerequisite: '第四回合或之前',
-      },
-    },
   },
 })

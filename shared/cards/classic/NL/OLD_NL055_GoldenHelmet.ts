@@ -20,14 +20,5 @@ export const OLD_NL055_GoldenHelmet = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL055.png',
-    locales: {
-      zh: {
-        name: '金制头盔',
-        desc: [
-          '每个以丰收时节为结束的回合限1次：你可以在放置1个家庭成员的行动完成后，从游戏供应区拿取1食物放在任意行动格上，下一个使用该行动格的玩家获得该食物白柏树家庭成',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

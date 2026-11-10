@@ -19,14 +19,5 @@ export const OLD_WM010_CloisterDweller = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM010.png',
-    locales: {
-      zh: {
-        name: '修道院士',
-        desc: [
-          '游戏结束时，你农场中每个满足以下条件的一竖列(3格)使你获得1分：3格都是房屋/3格都是田地/3格属于同一圈地。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

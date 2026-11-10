@@ -39,15 +39,6 @@ export const OLD_I239_CornProteer = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I239.png',
-    locales: {
-      zh: {
-        name: '小麦奸商',
-        desc: [
-          '你可以随时将1份小麦转化为3份食物，但任何1名其他玩家都可以通过支付你2份食物购买你的这份小麦来阻止你这么做。当有多位买家出现时，由你选择卖给谁。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: {
     effect: {

@@ -17,14 +17,5 @@ export const OLD_NL064_SheepHerder = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL064.png',
-    locales: {
-      zh: {
-        name: '牧羊人',
-        desc: [
-          '打出此卡时，你可以免费建造1个马厩。你可以在至多1格空地上饲养2只羊，该格仍视作未使用。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

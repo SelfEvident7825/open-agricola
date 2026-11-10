@@ -20,14 +20,5 @@ export const OLD_G085_IrrigationCanal = defineMinorCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/G/G085.png',
-    locales: {
-      zh: {
-        name: '灌溉渠',
-        desc: [
-          '当你犁田时，若新犁的田地旁边邻接着一块已播种的田，你可以从已播种的那块田上拿下一份作物播种到新犁的田上。新播种的田比起正常播种要少堆放一份作物肉馅饼',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

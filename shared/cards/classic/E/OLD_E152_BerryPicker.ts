@@ -45,13 +45,6 @@ export const OLD_E152_BerryPicker = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E152.png',
-    locales: {
-      zh: {
-        name: '采莓工',
-        desc: ['每当你从行动格上获得木头时，你额外获得1份食物。（通过卡牌获得的木头不算）'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

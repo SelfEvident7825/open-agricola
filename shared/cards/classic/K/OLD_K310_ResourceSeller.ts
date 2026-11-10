@@ -71,15 +71,6 @@ export const OLD_K310_ResourceSeller = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K310.png',
-    locales: {
-      zh: {
-        name: '资源销售商',
-        desc: [
-          '按右图所示将这些物品排列于此卡上，每当你获得与最上面的资源同种的资源时，你取走最上面的资源。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

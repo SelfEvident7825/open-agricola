@@ -73,15 +73,6 @@ export const OLD_I234_WoodBuyer = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I234.png',
-    locales: {
-      zh: {
-        name: '购木商',
-        desc: [
-          '每当其他玩家从行动格上获得木头时，你可以支付给他1份食物获得他的1根木头。（通过卡牌获得的木头不算）',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

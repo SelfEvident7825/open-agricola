@@ -22,13 +22,6 @@ export const OLD_K300_SchnapsDistiller = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K300.png',
-    locales: {
-      zh: {
-        name: '烈酒蒸馏师',
-        desc: ['每个丰收时节的喂养阶段，你可以将至多1份蔬菜转化为5份食物。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

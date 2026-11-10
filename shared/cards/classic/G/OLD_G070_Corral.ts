@@ -23,14 +23,5 @@ export const OLD_G070_Corral = defineMinorCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/G/G070.png',
-    locales: {
-      zh: {
-        name: '畜栏',
-        desc: [
-          '你的每个与房屋正交相邻的空田可以容纳2只同种动物。游戏结束时，每个如此饲养有动物的空田额外获得1分。',
-        ],
-        prerequisite: '职业×1',
-      },
-    },
   },
 })

@@ -57,13 +57,6 @@ export const OLD_I80_Spinney = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I80.png',
-    locales: {
-      zh: {
-        name: '灌木丛',
-        desc: ['每当其他玩家使用森林[3木]行动格时，他必须给你1根木头。'],
-        prerequisite: '职业×3',
-      },
-    },
   },
   impl: cardImpl,
 })

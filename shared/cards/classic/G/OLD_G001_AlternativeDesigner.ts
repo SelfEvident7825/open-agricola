@@ -19,14 +19,5 @@ export const OLD_G001_AlternativeDesigner = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G001.png',
-    locales: {
-      zh: {
-        name: '另类设计师',
-        desc: [
-          '每当你建造马厩或围建栅栏时，可以用至多2砖头/2石头代替2木头。每当你扩建房屋时，每间房屋资源可以用至多2砖头/2石头代替2木头。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

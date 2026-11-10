@@ -58,15 +58,6 @@ export const OLD_K117_Greenhouse = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K117.png',
-    locales: {
-      zh: {
-        name: '小型温室',
-        desc: [
-          '打出此卡时，将当前回合数加4和7，在对应回合行动格上各放1份蔬菜。这些回合开始时，你可支付1份食物，获得对应的蔬菜。',
-        ],
-        prerequisite: '职业×1',
-      },
-    },
   },
   impl: cardImpl,
 })

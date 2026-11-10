@@ -16,12 +16,5 @@ export const OLD_G078_GrainMarket = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G078.png',
-    locales: {
-      zh: {
-        name: '小麦市场',
-        desc: ['每次你收割了至少1个小麦后，你可以将1个小麦换成1个蔬菜打出条件麦田包括卡牌田'],
-        prerequisite: '麦田×3',
-      },
-    },
   },
 })

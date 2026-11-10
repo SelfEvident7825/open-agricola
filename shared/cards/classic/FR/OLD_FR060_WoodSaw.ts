@@ -66,13 +66,6 @@ export const OLD_FR060_WoodSaw = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/FR/FR060.png',
-    locales: {
-      zh: {
-        name: '木锯',
-        desc: ['每当所有其他玩家的家庭成员都比你多时，你可以在任意时刻执行1次“建造房屋”行动'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

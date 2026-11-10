@@ -62,13 +62,6 @@ export const OLD_K301_WoodCarver = defineOccupationCard({
     extraVp: true,
     implemented: true,
     artUrl: '/assets/classic/K/K301.png',
-    locales: {
-      zh: {
-        name: '木雕工',
-        desc: ['每回合限1次：你在打次发/扩建木屋/建造马厩/围栅栏时可以少花费1根木头。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

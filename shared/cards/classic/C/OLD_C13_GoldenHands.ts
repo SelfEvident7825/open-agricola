@@ -18,12 +18,5 @@ export const OLD_C13_GoldenHands = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/C/C13.png',
-    locales: {
-      zh: {
-        name: '点金手',
-        desc: ['每当你打出发展卡时，可以用1个任意建筑资源代替原本花费中的至多1个建筑资源。'],
-        prerequisite: '',
-      },
-    },
   },
 })

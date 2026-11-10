@@ -17,12 +17,5 @@ export const OLD_G022_GlassBlower = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G022.png',
-    locales: {
-      zh: {
-        name: '玻璃工',
-        desc: ['如果你拥有烤炉，每个丰收时节你可以将1/2块砖头转换为3/5份食物。'],
-        prerequisite: '',
-      },
-    },
   },
 })

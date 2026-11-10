@@ -17,12 +17,5 @@ export const OLD_Z333_GameDesigner = defineOccupationCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/Z/Z333.png',
-    locales: {
-      zh: {
-        name: '游戏设计师',
-        desc: ['任意时刻，你可以将1木+1砖+1芦苇+1石头转换成2食物+1分。'],
-        prerequisite: '',
-      },
-    },
   },
 })

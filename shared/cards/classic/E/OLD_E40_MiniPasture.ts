@@ -54,15 +54,6 @@ export const OLD_E40_MiniPasture = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E40.png',
-    locales: {
-      zh: {
-        name: '迷你圈地',
-        desc: [
-          '立即免费将你的1个农场格子围成圈地。（遵守围建栅栏的一般规则，且不能分割原有圈地。）使用后请将此卡交给下家，此卡将加入他的手牌。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

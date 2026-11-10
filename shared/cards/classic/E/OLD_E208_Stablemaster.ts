@@ -32,13 +32,6 @@ export const OLD_E208_Stablemaster = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E208.png',
-    locales: {
-      zh: {
-        name: '马厩管理员',
-        desc: ['你可在至多1个未被栅栏围住的马厩里饲养3只同种类型的动物。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

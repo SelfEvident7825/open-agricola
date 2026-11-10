@@ -69,15 +69,6 @@ export const OLD_I231_Manservant = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I231.png',
-    locales: {
-      zh: {
-        name: '男仆',
-        desc: [
-          '一旦你的房屋等级是石屋，在之后每回合的行动格上各放3份食物。这些回合开始时，你获得对应的食物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

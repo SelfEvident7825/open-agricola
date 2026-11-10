@@ -16,13 +16,6 @@ export const OLD_E209_Quarryman = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E209.png',
-    locales: {
-      zh: {
-        name: '采石工',
-        desc: ['任意时刻，你可以将1个石头转化为2份食物。'],
-        prerequisite: '',
-      },
-    },
     exchanges: [
       {
         from: {

@@ -27,14 +27,5 @@ export const OLD_E154_MasterBrewer = defineOccupationCard({
     passing: false,
     implemented: true,
     artUrl: '/assets/classic/E/E154.png',
-    locales: {
-      zh: {
-        name: '家庭酿酒师',
-        desc: [
-          '在每个丰收时节的喂养阶段时，你可用此卡将至多1份小麦转化成3份食物。（这不算作“烤面包”行动）',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

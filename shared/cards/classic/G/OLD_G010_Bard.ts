@@ -17,12 +17,5 @@ export const OLD_G010_Bard = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G010.png',
-    locales: {
-      zh: {
-        name: '琵琶演奏家',
-        desc: ['每当其他玩家使用卖艺积累行动格时，你获得1份食物+1个木头。'],
-        prerequisite: '',
-      },
-    },
   },
 })

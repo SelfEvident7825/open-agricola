@@ -19,14 +19,5 @@ export const OLD_WM040_Permaculturist = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM040.png',
-    locales: {
-      zh: {
-        name: '垦荒者',
-        desc: [
-          '你可以在未使用的农场空格上播种小麦，且不需要与现有农田相邻。已播种小麦的空格视作已使用。你可以随时移除空格上的小麦，计分前你必须移除空格上的小麦。注：I90播种筒和Z324稻草人不能额外播种这些空格的小麦。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

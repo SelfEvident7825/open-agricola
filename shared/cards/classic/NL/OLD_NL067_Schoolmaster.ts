@@ -17,12 +17,5 @@ export const OLD_NL067_Schoolmaster = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL067.png',
-    locales: {
-      zh: {
-        name: '学校管理员',
-        desc: ['其他玩家执行“生娃”行动时，如果他们有2-5/6+份食物，则必须先支付你1/2食物。'],
-        prerequisite: '',
-      },
-    },
   },
 })

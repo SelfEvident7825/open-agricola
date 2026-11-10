@@ -53,15 +53,6 @@ export const OLD_WA019_LaGraceFountain = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/WA/WA019.png',
-    locales: {
-      zh: {
-        name: '绵羊井',
-        desc: [
-          '在之后的n个回合行动格上各放置1份食物，n=你的羊的数量。这些回合开始时，你获得对应的食物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

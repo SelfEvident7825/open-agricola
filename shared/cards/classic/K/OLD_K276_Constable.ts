@@ -37,15 +37,6 @@ export const OLD_K276_Constable = defineOccupationCard({
     extraVp: true,
     implemented: true,
     artUrl: '/assets/classic/K/K276.png',
-    locales: {
-      zh: {
-        name: '警官',
-        desc: [
-          '打出此卡时，若距离游戏结束还有1/3/6/9个完整回合，则你立即获得1/2/3/4根木头。游戏结束时，没有负分项目的玩家都额外获得5分。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

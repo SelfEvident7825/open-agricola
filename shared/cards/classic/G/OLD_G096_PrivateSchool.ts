@@ -18,14 +18,5 @@ export const OLD_G096_PrivateSchool = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G096.png',
-    locales: {
-      zh: {
-        name: '私立学校',
-        desc: [
-          '打出1张职业(支付此卡玩家1份食物)这张牌是一个所有玩家共用的额外行动格。使用此卡的玩家必须支付你1份食物来打出一张职业卡',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

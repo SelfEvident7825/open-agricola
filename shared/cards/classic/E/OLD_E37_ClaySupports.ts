@@ -34,13 +34,6 @@ export const OLD_E37_ClaySupports = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E37.png',
-    locales: {
-      zh: {
-        name: '砖造支柱',
-        desc: ['每当你扩建砖屋时，你的每间砖屋可改用2块砖头+1根木头+1捆芦苇进行建造。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: {
     modifiers: [

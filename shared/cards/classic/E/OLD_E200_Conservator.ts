@@ -83,13 +83,6 @@ export const OLD_E200_Conservator = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E200.png',
-    locales: {
-      zh: {
-        name: '建筑复原师',
-        desc: ['在翻修房屋时，你可以跳过砖屋，直接将木屋翻修成石屋。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

@@ -19,14 +19,5 @@ export const OLD_O01_BigBacker = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/O/O01.png',
-    locales: {
-      zh: {
-        name: '金主',
-        desc: [
-          '每当其他玩家一次性获得至少2只同种动物时，你可以支付给他食物获得其中1只。羊/猪/牛分别需要2/3/4份食物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

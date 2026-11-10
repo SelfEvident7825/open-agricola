@@ -23,14 +23,5 @@ export const OLD_G068_Chronicle = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G068.png',
-    locales: {
-      zh: {
-        name: '编年史',
-        desc: [
-          '在每个未打出的主要发展卡上各放置1份食物，当这些主要发展卡被打出时，你获得上面对应的食物。',
-        ],
-        prerequisite: '职业×1',
-      },
-    },
   },
 })

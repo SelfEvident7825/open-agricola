@@ -20,14 +20,5 @@ export const OLD_FL020_LoveGarden = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FL/FL020.png',
-    locales: {
-      zh: {
-        name: '爱情花园',
-        desc: [
-          '每个工作阶段结束时，如果所有提供“生娃”和“扩建房屋”行动的行动格都被占用，你立即执行1次“生娃(需要空房间)”行动',
-        ],
-        prerequisite: '存在生娃行动格',
-      },
-    },
   },
 })

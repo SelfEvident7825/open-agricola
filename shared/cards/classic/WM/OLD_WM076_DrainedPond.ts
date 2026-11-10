@@ -23,14 +23,5 @@ export const OLD_WM076_DrainedPond = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM076.png',
-    locales: {
-      zh: {
-        name: '引水渠',
-        desc: [
-          '打出此卡时，将当前回合数加4，在该回合的行动格上放置1个田地板块。在此回合开始时，你可以支付1份食物来犁对应的田地板块。',
-        ],
-        prerequisite: '职业×2',
-      },
-    },
   },
 })

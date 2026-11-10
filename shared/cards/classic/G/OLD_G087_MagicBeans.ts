@@ -18,12 +18,5 @@ export const OLD_G087_MagicBeans = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G087.png',
-    locales: {
-      zh: {
-        name: '魔法豌豆',
-        desc: ['立即获得2份蔬菜使用后请将此卡交给下家，此卡将加入他的手牌。'],
-        prerequisite: '',
-      },
-    },
   },
 })

@@ -20,14 +20,5 @@ export const OLD_NL024_ParkBench = defineMinorCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/NL/NL024.png',
-    locales: {
-      zh: {
-        name: '公园长椅',
-        desc: [
-          '你下家(左手边玩家)选择一块1你的未使用空格，从游戏供应区拿取1木放在该格上，之后该格视为已使用且不能被用作其他用途',
-        ],
-        prerequisite: '未使用空格×8',
-      },
-    },
   },
 })

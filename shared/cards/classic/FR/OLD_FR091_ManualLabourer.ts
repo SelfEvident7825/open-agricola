@@ -17,12 +17,5 @@ export const OLD_FR091_ManualLabourer = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR091.png',
-    locales: {
-      zh: {
-        name: '手工劳动者',
-        desc: ['每回合结束时，如果你在该回合获得了恰好1种建筑资源，则你额外获得1个该种建筑资源。'],
-        prerequisite: '',
-      },
-    },
   },
 })

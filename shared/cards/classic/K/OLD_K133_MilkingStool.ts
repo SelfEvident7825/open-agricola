@@ -49,15 +49,6 @@ export const OLD_K133_MilkingStool = defineMinorCard({
     passing: false,
     implemented: true,
     artUrl: '/assets/classic/K/K133.png',
-    locales: {
-      zh: {
-        name: '挤奶凳',
-        desc: [
-          '每个丰收时节的收割阶段，若你有不少于1/3/5头牛，则你获得1/2/3份食物。游戏结束时，你每拥有2头牛便能额外获得1分。（卡牌提供的收割阶段不算）',
-        ],
-        prerequisite: '职业×2',
-      },
-    },
   },
   impl: cardImpl,
 })

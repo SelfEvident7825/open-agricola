@@ -19,12 +19,5 @@ export const OLD_FR032_Homework = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR032.png',
-    locales: {
-      zh: {
-        name: '家庭作业',
-        desc: ['立即免费打出两张职业卡。仍需要额外支付职业卡效果的花费灯塔'],
-        prerequisite: '',
-      },
-    },
   },
 })

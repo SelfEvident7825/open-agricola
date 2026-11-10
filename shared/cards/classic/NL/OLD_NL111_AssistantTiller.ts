@@ -17,12 +17,5 @@ export const OLD_NL111_AssistantTiller = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL111.png',
-    locales: {
-      zh: {
-        name: '耕种帮手',
-        desc: ['每当你使用临时工行动格时，你能额外犁一块田。'],
-        prerequisite: '',
-      },
-    },
   },
 })

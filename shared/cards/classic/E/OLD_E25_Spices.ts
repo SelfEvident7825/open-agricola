@@ -46,15 +46,6 @@ export const OLD_E25_Spices = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E25.png',
-    locales: {
-      zh: {
-        name: '调味料',
-        desc: [
-          '每当你使用A3/A4/E128壁炉、A1/A2火炉、E20简易火炉、I85烹饪角将蔬菜转换成食物时，每份蔬菜都额外获得1份食物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

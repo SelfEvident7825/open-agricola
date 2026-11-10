@@ -18,12 +18,5 @@ export const OLD_G102_SausageGrinder = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G102.png',
-    locales: {
-      zh: {
-        name: '香肠研磨机',
-        desc: ['每当你把动物转换成食物时，每只被转换的动物都使你额外获得1份食物对于哪些次发适用'],
-        prerequisite: '',
-      },
-    },
   },
 })

@@ -51,15 +51,6 @@ export const OLD_I84_ChickenCoop = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I84.png',
-    locales: {
-      zh: {
-        name: '鸡舍',
-        desc: [
-          '打出此卡时，在之后的8个回合行动格上各放1份食物。这些回合开始时，你获得对应的食物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

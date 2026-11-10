@@ -19,14 +19,5 @@ export const OLD_Z326_Gentleman = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/Z/Z326.png',
-    locales: {
-      zh: {
-        name: '绅士',
-        desc: [
-          '每回合的工作阶段，如果该回合最后1个行动的家庭成员属于你，在该成员执行完行动后你获得1份食物。如果你是用该成员打出此卡的，则改为2份食物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

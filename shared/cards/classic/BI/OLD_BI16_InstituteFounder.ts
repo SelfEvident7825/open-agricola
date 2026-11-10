@@ -19,14 +19,5 @@ export const OLD_BI16_InstituteFounder = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/BI/BI16.png',
-    locales: {
-      zh: {
-        name: '研究所创始人',
-        desc: [
-          '打出此卡时，你可以支付1份食物购买1份小麦。每次丰收时节的喂养阶段，你的第4、5位家庭成员每位只需要吃1食物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

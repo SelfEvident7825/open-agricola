@@ -64,13 +64,6 @@ export const OLD_I77_ShepherdsCrook = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I77.png',
-    locales: {
-      zh: {
-        name: '牧羊杖',
-        desc: ['每当你用栅栏围出1个占据不小于4个农场格子的圈地时，你立即获得2只羊。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

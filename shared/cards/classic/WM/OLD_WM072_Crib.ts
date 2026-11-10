@@ -20,14 +20,5 @@ export const OLD_WM072_Crib = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM072.png',
-    locales: {
-      zh: {
-        name: '摇篮床',
-        desc: [
-          '每个回合的工作阶段结束时，如果你在本回合执行了“生娃”行动，则你可以额外获得2份食物 或 支付2份食物立即获得1分。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

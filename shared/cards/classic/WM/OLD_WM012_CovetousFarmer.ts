@@ -17,12 +17,5 @@ export const OLD_WM012_CovetousFarmer = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM012.png',
-    locales: {
-      zh: {
-        name: '贪婪的农夫',
-        desc: ['每回合限1次：在你的轮次，你可以获得1个你没有而其他玩家都有的建筑资源。'],
-        prerequisite: '',
-      },
-    },
   },
 })

@@ -27,13 +27,6 @@ export const OLD_K309_Weaver = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K309.png',
-    locales: {
-      zh: {
-        name: '纺织工',
-        desc: ['每个工作阶段开始时，如果你有至少2只羊，则你获得1份食物。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

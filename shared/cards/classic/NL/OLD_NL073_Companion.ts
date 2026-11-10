@@ -19,14 +19,5 @@ export const OLD_NL073_Companion = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL073.png',
-    locales: {
-      zh: {
-        name: '同伴',
-        desc: [
-          '打出此卡的本回合，所有行动格对你而言均视为未占用(即使被你自己占据)。之后回合中，所有被其他玩家最后1位家庭成员使用的行动格对你而言均视为未占用。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

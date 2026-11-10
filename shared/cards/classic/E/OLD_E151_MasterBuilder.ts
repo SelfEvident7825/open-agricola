@@ -66,13 +66,6 @@ export const OLD_E151_MasterBuilder = defineOccupationCard({
     passing: false,
     extraVp: false,
     artUrl: '/assets/classic/E/E151.png',
-    locales: {
-      zh: {
-        name: '建筑大师',
-        desc: ['限1次：一旦你拥有不少于5间房屋，你可以随时再免费扩建1间房屋。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

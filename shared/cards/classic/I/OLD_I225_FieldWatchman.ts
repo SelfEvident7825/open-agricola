@@ -46,13 +46,6 @@ export const OLD_I225_FieldWatchman = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I225.png',
-    locales: {
-      zh: {
-        name: '农田巡逻',
-        desc: ['每当你使用小麦种子行动格时，你可以额外犁1块田。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

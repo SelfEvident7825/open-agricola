@@ -17,12 +17,5 @@ export const OLD_NL110_TreeCollector = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL110.png',
-    locales: {
-      zh: {
-        name: '树枝收集者',
-        desc: ['每当其他玩家从木头积累行动格得到1-3根木头时，你从游戏供应区额外获得1根木头。'],
-        prerequisite: '',
-      },
-    },
   },
 })

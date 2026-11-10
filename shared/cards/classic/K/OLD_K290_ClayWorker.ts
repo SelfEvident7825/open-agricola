@@ -35,13 +35,6 @@ export const OLD_K290_ClayWorker = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K290.png',
-    locales: {
-      zh: {
-        name: '黏土工',
-        desc: ['当你在行动格上获得木头或砖头时，你额外获得1块砖头。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

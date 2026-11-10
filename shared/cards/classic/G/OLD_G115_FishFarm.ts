@@ -23,14 +23,5 @@ export const OLD_G115_FishFarm = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G115.png',
-    locales: {
-      zh: {
-        name: '养鱼场',
-        desc: [
-          '每当其他玩家使用钓鱼积累行动格时，你可以从每块已播种的地上收割一个作物(这不算作收割阶段)',
-        ],
-        prerequisite: '职业×1+已播种的田×1',
-      },
-    },
   },
 })

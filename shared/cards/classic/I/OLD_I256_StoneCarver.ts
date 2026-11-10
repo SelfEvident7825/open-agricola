@@ -18,13 +18,6 @@ export const OLD_I256_StoneCarver = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I256.png',
-    locales: {
-      zh: {
-        name: '石雕工',
-        desc: ['每个丰收时节，你可以将至多1个石头换成3份食物。'],
-        prerequisite: '',
-      },
-    },
     exchanges: [
       {
         from: {

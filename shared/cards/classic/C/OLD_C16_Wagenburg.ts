@@ -20,14 +20,5 @@ export const OLD_C16_Wagenburg = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/C/C16.png',
-    locales: {
-      zh: {
-        name: '厢体货车',
-        desc: [
-          '打出此卡时，你可以为每块空地支付1根木头并在上面放1根栅栏条。你可以随时取回这些栅栏。有栅栏的这些空地视为已使用。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

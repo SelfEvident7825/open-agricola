@@ -45,15 +45,6 @@ export const OLD_FL035_Freemason = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/FL/FL035.png',
-    locales: {
-      zh: {
-        name: '共济会员',
-        desc: [
-          '只要你居住在仅有2个房间的砖屋/石屋内，在每回合的工作阶段开始时，你获得2块砖头/石头。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

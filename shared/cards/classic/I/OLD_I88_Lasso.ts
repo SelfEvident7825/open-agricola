@@ -86,15 +86,6 @@ export const OLD_I88_Lasso = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I88.png',
-    locales: {
-      zh: {
-        name: '套索',
-        desc: [
-          '轮到你行动时，你可以连续派遣2名家庭成员，只要这2名家庭成员中至少有1人使用了羊市场/猪市场/牛市场积累行动格。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

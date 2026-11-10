@@ -21,14 +21,5 @@ export const OLD_FL025_Cockaigne = defineMinorCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/FL/FL025.png',
-    locales: {
-      zh: {
-        name: '安乐乡',
-        desc: [
-          '限1次：如果你有1食物+1小麦+1蔬菜+1羊+1猪+1石头，你可以选择在本回合不放置任何家庭成员并获得7分',
-        ],
-        prerequisite: '职业≤1',
-      },
-    },
   },
 })

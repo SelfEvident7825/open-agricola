@@ -20,14 +20,5 @@ export const OLD_WA005_BeerMuseum = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WA/WA005.png',
-    locales: {
-      zh: {
-        name: '啤酒博物馆',
-        desc: [
-          '每个丰收时节的喂养阶段，你可以使用此卡将此卡将至多1份小麦转化为6份食物，你将在下个丰收时节的收割阶段获得这些食物。',
-        ],
-        prerequisite: '小麦×2',
-      },
-    },
   },
 })

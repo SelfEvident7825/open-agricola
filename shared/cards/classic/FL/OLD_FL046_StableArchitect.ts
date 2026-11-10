@@ -31,13 +31,6 @@ export const OLD_FL046_StableArchitect = defineOccupationCard({
     passing: false,
     implemented: true,
     artUrl: '/assets/classic/FL/FL046.png',
-    locales: {
-      zh: {
-        name: '马厩建造师',
-        desc: ['游戏结束时，你农场上每个未被栅栏围住的马厩都能使你获得1分。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

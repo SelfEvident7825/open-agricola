@@ -20,14 +20,5 @@ export const OLD_NL032_WoodenShoes = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL032.png',
-    locales: {
-      zh: {
-        name: '木鞋',
-        desc: [
-          '每当你使用第1至第4回合的行动格时，你可以先翻开下一回合的行动卡，且本回合只有你能使用。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

@@ -51,15 +51,6 @@ export const OLD_K138_ReedHut = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K138.png',
-    locales: {
-      zh: {
-        name: '芦苇小屋',
-        desc: [
-          '打出此卡时，如果你的个人供应区还有家庭成员，立即将1名个人供应区的家庭成员放在此卡上。可从本回合开始派遣此家庭成员。此家庭成员不算作你的家庭成员，需要喂养，可以通过其他家庭成员的“生娃”行动将其移入你个人农场的其他空间中。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

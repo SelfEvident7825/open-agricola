@@ -20,14 +20,5 @@ export const OLD_Z316_Bust = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/Z/Z316.png',
-    locales: {
-      zh: {
-        name: '胸像',
-        desc: [
-          '你必须在至少有一位其他玩家尚未打出他的第二张职业卡前打出此卡(3人游戏中改为第三张，2人游戏中改为第四张)',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

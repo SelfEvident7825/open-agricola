@@ -20,14 +20,5 @@ export const OLD_FR039_ParForceHunting = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR039.png',
-    locales: {
-      zh: {
-        name: '骑马狩猎',
-        desc: [
-          '当前回合数加4和7，在对应回合行动格上各放置1只猪，这些回合开始时，你可以支付1份食物获得对应的猪。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

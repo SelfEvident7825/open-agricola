@@ -18,12 +18,5 @@ export const OLD_G097_Pulley = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G097.png',
-    locales: {
-      zh: {
-        name: '滑轮',
-        desc: ['每当你使用临时工行动格时，你可以建造至多1个房间(正常支付费用)'],
-        prerequisite: '',
-      },
-    },
   },
 })

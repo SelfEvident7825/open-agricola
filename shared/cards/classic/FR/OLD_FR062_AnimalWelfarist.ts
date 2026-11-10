@@ -19,14 +19,5 @@ export const OLD_FR062_AnimalWelfarist = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR062.png',
-    locales: {
-      zh: {
-        name: '动物福利主义者',
-        desc: [
-          '每个工作阶段结束时，如果你本回合在行动格上执行了“建造马厩”行动，并且在建造圈地行动格上执行了“围建栅栏”行动，则你获得羊、猪、牛每种动物各1只。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

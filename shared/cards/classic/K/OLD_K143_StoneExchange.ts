@@ -25,13 +25,6 @@ export const OLD_K143_StoneExchange = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K143.png',
-    locales: {
-      zh: {
-        name: '石头交易',
-        desc: ['立即获得2个石头。使用后请将此卡交给下家，此卡将加入他的手牌。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

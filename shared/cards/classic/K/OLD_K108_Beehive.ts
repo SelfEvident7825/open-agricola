@@ -41,15 +41,6 @@ export const OLD_K108_Beehive = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K108.png',
-    locales: {
-      zh: {
-        name: '蜂巢',
-        desc: [
-          '打出此卡时，在之后的偶数回合行动格上各放1份食物。这些回合开始时，你获得对应的食物。',
-        ],
-        prerequisite: '职业×3+发展卡×2',
-      },
-    },
   },
   impl: cardImpl,
 })

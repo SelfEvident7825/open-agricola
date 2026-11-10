@@ -16,12 +16,5 @@ export const OLD_FR021_FlatHill = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR021.png',
-    locales: {
-      zh: {
-        name: '平坦小山',
-        desc: ['免费将你的木屋翻修成砖屋包括卡牌田。'],
-        prerequisite: '已播种的田×4',
-      },
-    },
   },
 })

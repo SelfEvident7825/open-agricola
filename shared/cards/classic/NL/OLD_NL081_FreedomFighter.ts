@@ -19,14 +19,5 @@ export const OLD_NL081_FreedomFighter = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL081.png',
-    locales: {
-      zh: {
-        name: '自由斗士',
-        desc: [
-          '打出此卡时，你需要额外支付2份食物。直到下一次丰收时节开始前，你可以使用被其他玩家占据的行动格。(被你自己占据则不可以使用)',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

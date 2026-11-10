@@ -21,14 +21,5 @@ export const OLD_WM079_FestivalHall = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM079.png',
-    locales: {
-      zh: {
-        name: '节日大厅',
-        desc: [
-          '每个丰收时节的收割阶段后，你可以将至多1份小麦转化为2份食物+任意1个建筑资源。注：（1）“麦田x2”包括卡牌田。（2）卡牌提供的收割阶段不算。',
-        ],
-        prerequisite: '麦田×2',
-      },
-    },
   },
 })

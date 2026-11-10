@@ -35,13 +35,6 @@ export const OLD_I257_StreetMusician = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I257.png',
-    locales: {
-      zh: {
-        name: '街头乐手',
-        desc: ['每当其他玩家使用卖艺积累行动格时，你获得1份小麦'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

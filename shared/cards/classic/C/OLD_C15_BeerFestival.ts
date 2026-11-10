@@ -18,12 +18,5 @@ export const OLD_C15_BeerFestival = defineMinorCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/C/C15.png',
-    locales: {
-      zh: {
-        name: '啤酒节',
-        desc: ['打出时获得一次“烤面包”行动。计分阶段，如果你拥有3/6/9份食物，你获得1/2/3分'],
-        prerequisite: '家庭成员≥3',
-      },
-    },
   },
 })

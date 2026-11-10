@@ -20,14 +20,5 @@ export const OLD_WA020_MarketFountain = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WA/WA020.png',
-    locales: {
-      zh: {
-        name: '人工水井',
-        desc: [
-          '下一回合开始时，在接下来的6个回合行动格上各放置1份食物，这些回合开始时，你获得这份食物，此卡算作1张水井朝圣之地发展卡总计至',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

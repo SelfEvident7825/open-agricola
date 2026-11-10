@@ -72,15 +72,6 @@ export const OLD_G064_BarteringHut = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/G/G064.png',
-    locales: {
-      zh: {
-        name: '交易小屋',
-        desc: [
-          '打出时你可以购买至多2只任意动物。羊/猪/牛分别花费2/3/4个建筑资源使用后请将此卡交给下家，此卡将加入他的手牌。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

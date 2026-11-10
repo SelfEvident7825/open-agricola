@@ -36,13 +36,6 @@ export const OLD_K145_ForestPasture = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K145.png',
-    locales: {
-      zh: {
-        name: '林间牧场',
-        desc: ['此卡可以容纳任意数量的猪。'],
-        prerequisite: '职业×3',
-      },
-    },
   },
   impl: cardImpl,
 })

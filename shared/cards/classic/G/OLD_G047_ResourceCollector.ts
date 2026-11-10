@@ -45,15 +45,6 @@ export const OLD_G047_ResourceCollector = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/G/G047.png',
-    locales: {
-      zh: {
-        name: '资源采集者',
-        desc: [
-          '在之后4个回合的行动格上分别放置1个木头、1个砖头、1捆芦苇和1个石头（顺序由你选择）。在这些回合开始时，你获得对应的物品。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

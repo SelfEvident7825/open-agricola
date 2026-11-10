@@ -91,15 +91,6 @@ export const OLD_I255_StoneBuyer = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I255.png',
-    locales: {
-      zh: {
-        name: '购石商',
-        desc: [
-          '每回合第一次有玩家从行动格上获得至少1个石头时，你可以支付该玩家1份食物，该玩家必须给你1个石头并从游戏供应区获得1份食物。（通过卡牌获得的石头不算）',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

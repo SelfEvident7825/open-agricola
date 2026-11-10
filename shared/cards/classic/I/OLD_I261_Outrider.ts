@@ -57,13 +57,6 @@ export const OLD_I261_Outrider = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I261.png',
-    locales: {
-      zh: {
-        name: '先驱者',
-        desc: ['每当你使用当回合新翻开的那张回合行动卡前，你先获得1份小麦。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

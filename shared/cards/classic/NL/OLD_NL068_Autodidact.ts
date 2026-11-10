@@ -17,12 +17,5 @@ export const OLD_NL068_Autodidact = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL068.png',
-    locales: {
-      zh: {
-        name: '自学自修者',
-        desc: ['在每回合翻开新的回合行动卡之前，你可以支付2食物作为技能培训费打出1张职业卡。'],
-        prerequisite: '',
-      },
-    },
   },
 })

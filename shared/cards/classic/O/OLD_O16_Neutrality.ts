@@ -21,14 +21,5 @@ export const OLD_O16_Neutrality = defineMinorCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/O/O16.png',
-    locales: {
-      zh: {
-        name: '中立主义',
-        desc: [
-          '在打出此卡的下一回合，你只能在所有其他玩家派遣完所有家庭成员后才能开始派遣家庭成员。你每有一个家庭成员受此卡影响，你便获得1分。',
-        ],
-        prerequisite: '2职业',
-      },
-    },
   },
 })

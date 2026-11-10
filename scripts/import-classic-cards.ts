@@ -122,13 +122,6 @@ for (const old of source) {
     extraVp: old.meta.extraVp === true,
     implemented: !!mapped,
     artUrl: `/assets/classic/${deck}/${old.id.split('_')[0]}.png`,
-    locales: {
-      zh: {
-        name: printed(old.meta.name),
-        desc: ((old.meta.desc ?? []) as unknown[]).map(printed),
-        prerequisite: originalPrerequisite,
-      },
-    },
   }
   if (mapped) {
     const sf = ts.createSourceFile(target, code, ts.ScriptTarget.Latest, true)

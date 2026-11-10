@@ -17,12 +17,5 @@ export const OLD_WA036_Doula = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WA/WA036.png',
-    locales: {
-      zh: {
-        name: '助产士',
-        desc: ['如果你没有执行过“生娃”行动，每当其他玩家执行“生娃”行动时，你获得1份小麦。'],
-        prerequisite: '',
-      },
-    },
   },
 })

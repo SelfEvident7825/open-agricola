@@ -19,14 +19,5 @@ export const OLD_NL086_Investor = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL086.png',
-    locales: {
-      zh: {
-        name: '投资商',
-        desc: [
-          '打出此卡时，你可以购买至多2张主要发展卡，每张只需支付1食物，然后弃置你所有未打出的手牌。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

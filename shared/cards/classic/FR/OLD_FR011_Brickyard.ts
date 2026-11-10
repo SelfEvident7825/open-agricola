@@ -21,14 +21,5 @@ export const OLD_FR011_Brickyard = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR011.png',
-    locales: {
-      zh: {
-        name: '砖厂',
-        desc: [
-          '每回合开始前，如果你的个人供应区里没有砖头，则在此卡上补充1砖，每当此卡上有至少4块砖，你获得这些砖，你不能无故弃掉砖头。',
-        ],
-        prerequisite: '职业×2',
-      },
-    },
   },
 })

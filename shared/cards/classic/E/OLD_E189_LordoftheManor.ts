@@ -44,15 +44,6 @@ export const OLD_E189_LordoftheManor = defineOccupationCard({
     passing: false,
     implemented: true,
     artUrl: '/assets/classic/E/E189.png',
-    locales: {
-      zh: {
-        name: '庄园领主',
-        desc: [
-          '游戏结束时，你每个获得了4分满分的计分项（包括4个被栅栏围住的马厩）都使你额外获得1分。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

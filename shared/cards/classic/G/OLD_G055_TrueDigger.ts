@@ -17,14 +17,5 @@ export const OLD_G055_TrueDigger = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G055.png',
-    locales: {
-      zh: {
-        name: '松露采集者',
-        desc: [
-          '每当你使用木头积累行动格时，若你农场中有1/2/3+头猪，则你额外获得1/2/3份食物。卡牌上的',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

@@ -19,14 +19,5 @@ export const OLD_NL116_PotatoEater = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL116.png',
-    locales: {
-      zh: {
-        name: '吃土豆的人',
-        desc: [
-          '每次丰收时节的喂养阶段，你在本次喂养阶段用蔬菜转换得来的每份食物都可以喂饱1名家庭成员。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

@@ -18,14 +18,5 @@ export const OLD_G074_ExtraEort = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G074.png',
-    locales: {
-      zh: {
-        name: '额外努力',
-        desc: [
-          '打出时你可以打出一张主要发展卡(正常支付)使用后请将此卡交给下家，此卡将加入他的手牌。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

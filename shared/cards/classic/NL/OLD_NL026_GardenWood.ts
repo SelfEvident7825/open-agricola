@@ -20,14 +20,5 @@ export const OLD_NL026_GardenWood = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL026.png',
-    locales: {
-      zh: {
-        name: '庭院木头',
-        desc: [
-          '每有一个与你房屋正交相邻的空地，你便获得1木头使用后请将此卡交给下家，此卡将加入他的手牌。丘陵宅院第2回合或',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

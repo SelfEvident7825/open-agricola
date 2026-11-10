@@ -36,15 +36,6 @@ export const OLD_I340_Rancher = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I340.png',
-    locales: {
-      zh: {
-        name: '农场工人',
-        desc: [
-          '每回合开始时，如果你农场中已使用的农场格子数量比所有人都多(一样多不算)，你获得1根木头。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

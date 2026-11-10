@@ -19,14 +19,5 @@ export const OLD_G060_Wintercrafter = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G060.png',
-    locales: {
-      zh: {
-        name: '织毛衣的人',
-        desc: [
-          '每个丰收时节，在之间喂养家庭成员之前，你可以打出1张次要发展卡，或支付2份食物打出1张主要发展卡。（仍需满足条件并支付资源）',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

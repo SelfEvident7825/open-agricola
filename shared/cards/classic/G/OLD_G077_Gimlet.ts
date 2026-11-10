@@ -21,14 +21,5 @@ export const OLD_G077_Gimlet = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G077.png',
-    locales: {
-      zh: {
-        name: '手钻',
-        desc: [
-          '你建造的每间木屋/砖屋/石屋费用减少1木/砖/石头。每个轮次中，你建造的每个马厩费用减少1木，总花费至多减少2木',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

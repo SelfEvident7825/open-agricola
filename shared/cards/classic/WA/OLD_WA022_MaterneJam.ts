@@ -21,14 +21,5 @@ export const OLD_WA022_MaterneJam = defineMinorCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/WA/WA022.png',
-    locales: {
-      zh: {
-        name: '神奇果酱',
-        desc: [
-          '每个丰收时节开始时，你可以展示并弃掉至多1张次发卡并获得1个此卡费用中的建筑资源萨克斯风',
-        ],
-        prerequisite: '职业×1',
-      },
-    },
   },
 })

@@ -19,13 +19,6 @@ export const OLD_I258_Cabinetmaker = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I258.png',
-    locales: {
-      zh: {
-        name: '家具匠',
-        desc: ['每个丰收时节，你可以将至多1根木头转化为2份食物。'],
-        prerequisite: '',
-      },
-    },
     exchanges: [
       {
         from: {

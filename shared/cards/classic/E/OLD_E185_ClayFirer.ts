@@ -16,13 +16,6 @@ export const OLD_E185_ClayFirer = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E185.png',
-    locales: {
-      zh: {
-        name: '烧砖工',
-        desc: ['任意时刻，你可以把砖头按照以下比例转化成石头：2砖头 → 1石头3砖头 → 2石头'],
-        prerequisite: '',
-      },
-    },
     exchanges: [
       {
         from: {

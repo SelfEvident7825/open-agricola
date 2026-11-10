@@ -34,15 +34,6 @@ export const OLD_K120_HouseGoat = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K120.png',
-    locales: {
-      zh: {
-        name: '家用山羊',
-        desc: [
-          '每个丰收时节的喂养阶段，你额外获得1份食物。无论如何，你的房子不能再容纳动物了。即使有卡牌允许你这样做，例：K306驯兽师。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

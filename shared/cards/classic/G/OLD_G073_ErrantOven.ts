@@ -16,12 +16,5 @@ export const OLD_G073_ErrantOven = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G073.png',
-    locales: {
-      zh: {
-        name: '移动烤炉',
-        desc: ['立即获得1次“烤面包”行动。使用后请将此卡交给下家，此卡将加入他的手牌。'],
-        prerequisite: '',
-      },
-    },
   },
 })

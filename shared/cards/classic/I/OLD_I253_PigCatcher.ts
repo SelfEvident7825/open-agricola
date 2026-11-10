@@ -42,15 +42,6 @@ export const OLD_I253_PigCatcher = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I253.png',
-    locales: {
-      zh: {
-        name: '捕猪人',
-        desc: [
-          '每当你从一个行动格上获得至少2根木头后，你可以支付2根木头来换1头猪。将所支付的木头放在对应的行动格上。（通过卡牌获得的木头不算）',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

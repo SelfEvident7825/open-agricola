@@ -19,14 +19,5 @@ export const OLD_WM037_MasterStableman = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM037.png',
-    locales: {
-      zh: {
-        name: '马厩大师',
-        desc: [
-          '每当你从动物积累行动格上获得至少2只动物前，你可以建造至多2个马厩，每个马厩花费1根木头。（通过卡牌获得的动物不算）',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

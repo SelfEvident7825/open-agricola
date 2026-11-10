@@ -36,13 +36,6 @@ export const OLD_NL043_Bottles = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/NL/NL043.png',
-    locales: {
-      zh: {
-        name: '玻璃瓶',
-        desc: ['在打出此卡时，你每拥有1名家庭成员就需要支付1块砖头和1份食物'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

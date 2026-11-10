@@ -18,12 +18,5 @@ export const OLD_G109_SheepskinRug = defineMinorCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/G/G109.png',
-    locales: {
-      zh: {
-        name: '羊皮地毯',
-        desc: ['游戏结束时，如果你有火炉，则你获得2分'],
-        prerequisite: '',
-      },
-    },
   },
 })

@@ -35,13 +35,6 @@ export const OLD_E23_Manger = defineMinorCard({
     passing: false,
     implemented: true,
     artUrl: '/assets/classic/E/E23.png',
-    locales: {
-      zh: {
-        name: '食槽',
-        desc: ['游戏结束时，若你所有的圈地总计覆盖了6/7/8/9+农场格子，额外获得1/2/3/4分。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

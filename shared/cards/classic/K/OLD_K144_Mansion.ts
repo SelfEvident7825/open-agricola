@@ -30,13 +30,6 @@ export const OLD_K144_Mansion = defineMinorCard({
     extraVp: true,
     implemented: true,
     artUrl: '/assets/classic/K/K144.png',
-    locales: {
-      zh: {
-        name: '豪宅',
-        desc: ['游戏结束时，你的每间石屋都额外获得2分。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

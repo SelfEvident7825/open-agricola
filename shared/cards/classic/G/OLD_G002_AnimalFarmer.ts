@@ -19,14 +19,5 @@ export const OLD_G002_AnimalFarmer = defineOccupationCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/G/G002.png',
-    locales: {
-      zh: {
-        name: '完美农夫',
-        desc: [
-          '游戏结束时，你每拥有1个达到最大饲养容量的圈地，便额外获得1分。若你所有圈地都达到了最大饲养容量，则你额外再获得1分。卡牌圈地（至少要有1个圈地）',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

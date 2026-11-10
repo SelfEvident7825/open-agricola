@@ -23,13 +23,6 @@ export const OLD_K129_CornSheaf = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K129.png',
-    locales: {
-      zh: {
-        name: '一捆小麦',
-        desc: ['立即获得1份小麦。使用后请将此卡交给下家，此卡将加入他的手牌。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

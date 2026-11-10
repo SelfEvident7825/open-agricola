@@ -16,12 +16,5 @@ export const OLD_FR049_ThePortLeHavre = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR049.png',
-    locales: {
-      zh: {
-        name: '勒阿佛尔港',
-        desc: ['每当你执行“烤面包”行动时，你可以将至多2块砖头转化为等量石头'],
-        prerequisite: '烤炉×1',
-      },
-    },
   },
 })

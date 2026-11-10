@@ -20,14 +20,5 @@ export const OLD_FL021_LionsMound = defineMinorCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/FL/FL021.png',
-    locales: {
-      zh: {
-        name: '山顶的狮子',
-        desc: [
-          '在1/2/3/4/5人游戏中，此卡只能在第13/11/9/7/4回合或之后打出。每个工作阶段结束时，如果没有其他玩家占用的行动格回合数比你占用的小，则你获得1分',
-        ],
-        prerequisite: '见下文',
-      },
-    },
   },
 })

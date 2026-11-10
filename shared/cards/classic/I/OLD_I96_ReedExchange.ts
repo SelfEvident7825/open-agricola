@@ -22,13 +22,6 @@ export const OLD_I96_ReedExchange = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I96.png',
-    locales: {
-      zh: {
-        name: '芦苇交易',
-        desc: ['立即获得2捆芦苇。使用后请将此卡交给下家，此卡将加入他的手牌。'],
-        prerequisite: '',
-      },
-    },
     altCosts: [
       {
         wood: 2,

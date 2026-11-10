@@ -35,15 +35,6 @@ export const OLD_E59_DrinkingTrough = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E59.png',
-    locales: {
-      zh: {
-        name: '饮水槽',
-        desc: [
-          '每个圈地（无论是否有马厩）可以多容纳2只动物。可扩充容量：E58兽笼、I102野生保护区、G070畜栏。不可扩充容量：BI05私家动物园、E208马厩管理员、E306驯兽师、WM013西部牛仔、FR105改革家、NL064牧羊人。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

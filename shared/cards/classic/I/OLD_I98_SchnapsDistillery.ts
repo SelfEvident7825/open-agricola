@@ -42,15 +42,6 @@ export const OLD_I98_SchnapsDistillery = defineMinorCard({
     extraVp: true,
     implemented: true,
     artUrl: '/assets/classic/I/I98.png',
-    locales: {
-      zh: {
-        name: '烈酒蒸馏器',
-        desc: [
-          '每个喂养阶段，你可使用此卡将至多1份蔬菜转化为4份食物。游戏结束时，你的第5和第6份蔬菜各值1分。',
-        ],
-        prerequisite: '',
-      },
-    },
     exchanges: [
       {
         from: {

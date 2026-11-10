@@ -24,13 +24,6 @@ export const OLD_E44_Outhouse = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E44.png',
-    locales: {
-      zh: {
-        name: '无水厕所',
-        desc: ['至少有1个其他玩家的职业数量≤1时，你才能打出此卡。'],
-        prerequisite: '见下文',
-      },
-    },
   },
   impl: cardImpl,
 })

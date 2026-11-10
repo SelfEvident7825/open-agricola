@@ -18,12 +18,5 @@ export const OLD_NL020_BeachChair = defineMinorCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/NL/NL020.png',
-    locales: {
-      zh: {
-        name: '海滩椅',
-        desc: ['每当其他玩家使用钓鱼积累行动格时，他们可以支付你1食物来获得1分'],
-        prerequisite: '',
-      },
-    },
   },
 })

@@ -68,13 +68,6 @@ export const OLD_E33_Ceramics = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E33.png',
-    locales: {
-      zh: {
-        name: '陶器',
-        desc: ['打出此卡时，你获得2份食物。从现在起，A8陶艺工坊对你来说是一张免费的次要发展卡。'],
-        prerequisite: '烤炉×1',
-      },
-    },
   },
   impl: cardImpl,
 })

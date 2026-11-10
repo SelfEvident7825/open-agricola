@@ -16,12 +16,5 @@ export const OLD_FR007_Baguette = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR007.png',
-    locales: {
-      zh: {
-        name: '法式长面包',
-        desc: ['每个丰收时节的喂养阶段开始时，你可以支付1根木头执行一次“烤面包”行动'],
-        prerequisite: '',
-      },
-    },
   },
 })

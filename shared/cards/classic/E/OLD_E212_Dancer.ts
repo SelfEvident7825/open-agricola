@@ -60,15 +60,6 @@ export const OLD_E212_Dancer = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E212.png',
-    locales: {
-      zh: {
-        name: '舞者',
-        desc: [
-          '每当你使用卖艺积累行动格时，你获得至少4份食物。如果你需要在卖艺格上留下食物，则留下食物后仍获得4份食物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

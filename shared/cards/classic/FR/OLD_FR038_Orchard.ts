@@ -18,14 +18,5 @@ export const OLD_FR038_Orchard = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR038.png',
-    locales: {
-      zh: {
-        name: '果园',
-        desc: [
-          '计算的已播种的田的数量，在之后等同于此数的回合行动格上各放置1份食物。这些回合开始时，你获得对应食物',
-        ],
-        prerequisite: '已播种的田×1',
-      },
-    },
   },
 })

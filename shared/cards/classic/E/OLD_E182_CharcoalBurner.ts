@@ -67,13 +67,6 @@ export const OLD_E182_CharcoalBurner = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E182.png',
-    locales: {
-      zh: {
-        name: '烧炭工',
-        desc: ['每当任意玩家（包括你自己）打出带有 图标的发展卡时，你便获得1根木头+1份食物。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

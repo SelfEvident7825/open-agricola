@@ -21,12 +21,5 @@ export const OLD_WM112_VillageSchool = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM112.png',
-    locales: {
-      zh: {
-        name: '乡村学校',
-        desc: ['每轮次限1次：每当你需要支付费用时，你可以弃掉你1张手牌来少支付1个建筑资源'],
-        prerequisite: '职业×1',
-      },
-    },
   },
 })

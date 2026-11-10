@@ -37,13 +37,6 @@ export const OLD_E147_LandAgent = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E147.png',
-    locales: {
-      zh: {
-        name: '地皮商',
-        desc: ['打出此卡时，你获得1份蔬菜。每当你使用蔬菜种子行动格时，额外获得1份小麦。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

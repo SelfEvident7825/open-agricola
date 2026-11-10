@@ -21,14 +21,5 @@ export const OLD_WM107_SlapdashRenovation = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM107.png',
-    locales: {
-      zh: {
-        name: '仓促翻修',
-        desc: [
-          '每当你使用了提供“翻修”行动的行动格后，在该轮次结束时，你将该家庭成员遣返回家，并在之后的轮次中再派遣他卡牌提供的翻修行动/行动格不算。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

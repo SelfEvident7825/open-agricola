@@ -19,14 +19,5 @@ export const OLD_NL092_FlyingHousewife = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL092.png',
-    locales: {
-      zh: {
-        name: '田径女冠军',
-        desc: [
-          '当你用第二名家庭成员使用第2季的生儿育女行动格后，你可以马上将其派遣到其他行动格(新生儿仍会占用行动格)',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

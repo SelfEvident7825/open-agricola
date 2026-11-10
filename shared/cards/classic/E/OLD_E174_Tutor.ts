@@ -34,13 +34,6 @@ export const OLD_E174_Tutor = defineOccupationCard({
     passing: false,
     implemented: true,
     artUrl: '/assets/classic/E/E174.png',
-    locales: {
-      zh: {
-        name: '家庭教师',
-        desc: ['游戏结束时，你在此卡之后打出的每个职业都能使你获得1分。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

@@ -52,15 +52,6 @@ export const OLD_E179_Merchant = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E179.png',
-    locales: {
-      zh: {
-        name: '商人',
-        desc: [
-          '每当你执行“打出主发或次发”或“打出次发”行动后，你可以支付1份食物来将该行动再执行一次。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

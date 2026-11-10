@@ -43,15 +43,6 @@ export const OLD_K285_Tinsmith = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K285.png',
-    locales: {
-      zh: {
-        name: '锡匠',
-        desc: [
-          '任意时刻，你可以将1块砖转化为1份食物。如果有人打出了A10水井/I66村中水井，则你可以将2块砖转化为3份食物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

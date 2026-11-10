@@ -52,13 +52,6 @@ export const OLD_I67_ThreshingBoard = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I67.png',
-    locales: {
-      zh: {
-        name: '打谷板',
-        desc: ['每当你使用犁田/粮食耕种[犁播]行动格时，可以获得1次“烤面包”行动。'],
-        prerequisite: '职业×2',
-      },
-    },
   },
   impl: cardImpl,
 })

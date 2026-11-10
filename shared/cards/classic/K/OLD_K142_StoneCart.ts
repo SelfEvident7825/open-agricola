@@ -46,15 +46,6 @@ export const OLD_K142_StoneCart = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K142.png',
-    locales: {
-      zh: {
-        name: '石头推车',
-        desc: [
-          '打出此卡时，在之后的偶数回合行动格上各放1个石头。这些回合开始时，你获得对应的石头。',
-        ],
-        prerequisite: '职业×2',
-      },
-    },
   },
   impl: cardImpl,
 })

@@ -40,13 +40,6 @@ export const OLD_K266_Serf = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K266.png',
-    locales: {
-      zh: {
-        name: '农奴',
-        desc: ['每当你使用粮食耕种[播烤]行动格前，你可以获得1份小麦，或者把1份小麦换成1份蔬菜。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

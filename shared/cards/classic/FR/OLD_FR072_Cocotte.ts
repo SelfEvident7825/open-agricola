@@ -19,14 +19,5 @@ export const OLD_FR072_Cocotte = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR072.png',
-    locales: {
-      zh: {
-        name: '娼妓',
-        desc: [
-          '每当你使用临时工行动格时，你可以打出1张次要发展卡，或者支付1份食物打出1张主要发展卡。（正常支付发展卡的费用）',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

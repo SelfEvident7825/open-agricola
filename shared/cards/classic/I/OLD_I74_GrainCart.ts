@@ -38,13 +38,6 @@ export const OLD_I74_GrainCart = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I74.png',
-    locales: {
-      zh: {
-        name: '小麦推车',
-        desc: ['每当你使用小麦种子行动格时，额外获得2份小麦。'],
-        prerequisite: '职业×2',
-      },
-    },
   },
   impl: cardImpl,
 })

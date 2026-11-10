@@ -19,14 +19,5 @@ export const OLD_C04_TeacherOfNations = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/C/C04.png',
-    locales: {
-      zh: {
-        name: '国家教师',
-        desc: [
-          '所有玩家打出每张职业卡的技能培训费都可以少花费1食物。每当其他玩家如此做，你获得1食物。职业卡额外的花费不会减少。比如：K291情圣。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

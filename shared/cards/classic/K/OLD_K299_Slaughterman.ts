@@ -42,15 +42,6 @@ export const OLD_K299_Slaughterman = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K299.png',
-    locales: {
-      zh: {
-        name: '屠宰工',
-        desc: [
-          '每次其他玩家将至少1只动物转化为食物时，你获得1份食物。每个丰收时节的喂养阶段，你最后进行结算。K299屠宰工和I97屠宰场的拥有者按照正常(下1回合)顺序结算。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

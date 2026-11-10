@@ -36,13 +36,6 @@ export const OLD_G075_FarmersMarket = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/G/G075.png',
-    locales: {
-      zh: {
-        name: '农夫市场',
-        desc: ['打出时你获得1个蔬菜使用后请将此卡交给下家，此卡将加入他的手牌。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

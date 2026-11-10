@@ -19,14 +19,5 @@ export const OLD_WM002_AnimalBuyer = defineOccupationCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/WM/WM002.png',
-    locales: {
-      zh: {
-        name: '动物商人',
-        desc: [
-          '每个丰收时节的收割阶段结束时，你可以1次购买至多2只任意动物。每只羊/猪/牛需要2/3/4份食物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

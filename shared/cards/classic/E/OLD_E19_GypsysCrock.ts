@@ -53,15 +53,6 @@ export const OLD_E19_GypsysCrock = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E19.png',
-    locales: {
-      zh: {
-        name: '三足锅',
-        desc: [
-          '每当你使用A1/A2火炉、A3/A4/E128壁炉、E20简易火炉、I85烹饪角将任意物品转化成食物时，每转化2个物品你就额外获得1份食物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

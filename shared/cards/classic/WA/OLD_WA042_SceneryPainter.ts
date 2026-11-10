@@ -17,12 +17,5 @@ export const OLD_WA042_SceneryPainter = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WA/WA042.png',
-    locales: {
-      zh: {
-        name: '风景画家',
-        desc: ['每个奇数回合开始时，如果你农场中央的3个农场格子都未被使用，你额外获得1份食物。'],
-        prerequisite: '',
-      },
-    },
   },
 })

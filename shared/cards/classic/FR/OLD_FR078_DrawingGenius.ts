@@ -19,14 +19,5 @@ export const OLD_FR078_DrawingGenius = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR078.png',
-    locales: {
-      zh: {
-        name: '绘图天才',
-        desc: [
-          '每当你使用当回合新翻开的那张回合行动卡之后，你可以打出1张主要或次要发展卡。（正常支付发展卡的费用）',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

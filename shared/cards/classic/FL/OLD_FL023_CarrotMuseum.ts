@@ -21,14 +21,5 @@ export const OLD_FL023_CarrotMuseum = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FL/FL023.png',
-    locales: {
-      zh: {
-        name: '胡萝卜博物馆',
-        desc: [
-          '在第8,10,12回合结束时，你的每块菜田使你获得1块石头，你个人供应区中的每份蔬菜使你获得1根木头',
-        ],
-        prerequisite: '7回合或之前',
-      },
-    },
   },
 })

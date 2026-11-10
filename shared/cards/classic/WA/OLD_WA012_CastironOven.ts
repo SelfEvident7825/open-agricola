@@ -18,14 +18,5 @@ export const OLD_WA012_CastironOven = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WA/WA012.png',
-    locales: {
-      zh: {
-        name: '铸铁烤炉',
-        desc: [
-          '每当你执行“烤面包”行动或在打出1张职业卡后，你可以使用此卡将至多1份小麦转化为4份食物',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

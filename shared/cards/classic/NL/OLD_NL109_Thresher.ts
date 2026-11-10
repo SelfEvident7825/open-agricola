@@ -86,15 +86,6 @@ export const OLD_NL109_Thresher = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/NL/NL109.png',
-    locales: {
-      zh: {
-        name: '打谷者',
-        desc: [
-          '每当你使用粮食生产[播烤]/犁田/粮食耕种[犁播]行动格前，你可以支付1份食物来购买1份小麦。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

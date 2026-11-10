@@ -25,13 +25,6 @@ export const OLD_I94_PavedRoad = defineMinorCard({
     extraVp: true,
     implemented: true,
     artUrl: '/assets/classic/I/I94.png',
-    locales: {
-      zh: {
-        name: '石板路',
-        desc: ['游戏结束时，拥有最有价值道路的玩家获得2分。(I94石板路>I89砖头路>I83木板路)'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

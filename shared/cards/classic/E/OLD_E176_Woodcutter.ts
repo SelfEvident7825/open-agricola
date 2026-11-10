@@ -45,13 +45,6 @@ export const OLD_E176_Woodcutter = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E176.png',
-    locales: {
-      zh: {
-        name: '伐木工',
-        desc: ['每当你从行动格上获得木头时，额外获得1根木头。（通过卡牌获得的木头不算）'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

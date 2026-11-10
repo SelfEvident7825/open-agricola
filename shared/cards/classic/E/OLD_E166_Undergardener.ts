@@ -36,13 +36,6 @@ export const OLD_E166_Undergardener = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E166.png',
-    locales: {
-      zh: {
-        name: '花园工人',
-        desc: ['每当你使用临时工行动格时，额外获得1份蔬菜。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

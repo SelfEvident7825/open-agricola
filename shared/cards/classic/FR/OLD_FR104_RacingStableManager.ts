@@ -17,12 +17,5 @@ export const OLD_FR104_RacingStableManager = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR104.png',
-    locales: {
-      zh: {
-        name: '赛马场经理',
-        desc: ['每次你建造至少1个马厩时，你可以支付1份食物来立即犁1块田。'],
-        prerequisite: '',
-      },
-    },
   },
 })

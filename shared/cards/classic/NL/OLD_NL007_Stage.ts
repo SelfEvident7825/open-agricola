@@ -18,12 +18,5 @@ export const OLD_NL007_Stage = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL007.png',
-    locales: {
-      zh: {
-        name: '舞台',
-        desc: ['每个工作阶段结束时，如果三个游戏版图都有你的家庭成员，则你额外获得1份食物。'],
-        prerequisite: '',
-      },
-    },
   },
 })

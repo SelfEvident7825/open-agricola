@@ -21,14 +21,5 @@ export const OLD_NL002_Parlor = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL002.png',
-    locales: {
-      zh: {
-        name: '起居室',
-        desc: [
-          '立即免费将一间房屋换成石屋(你无需再翻修此屋子，其他屋子不变，不改变你所住房子的等级)',
-        ],
-        prerequisite: '职业×2',
-      },
-    },
   },
 })

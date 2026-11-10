@@ -20,14 +20,5 @@ export const OLD_FR013_Chameleon = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR013.png',
-    locales: {
-      zh: {
-        name: '变色龙',
-        desc: [
-          '打出时获得1只猪。你可以在每个饲养羊的圈地里饲养至多1只猪(总容量不变)卡牌提供的圈地玉米垛',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

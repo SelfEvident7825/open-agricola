@@ -47,15 +47,6 @@ export const OLD_E159_HeadoftheFamily = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E159.png',
-    locales: {
-      zh: {
-        name: '一家之主',
-        desc: [
-          '即使已有其他玩家占据了能够提供“扩建房屋”和“增加家庭成员”行动的行动格，你仍可使用这些行动格。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

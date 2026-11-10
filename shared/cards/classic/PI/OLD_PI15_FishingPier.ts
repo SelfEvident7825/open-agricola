@@ -18,14 +18,5 @@ export const OLD_PI15_FishingPier = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/PI/PI15.png',
-    locales: {
-      zh: {
-        name: 'Animal Bedding',
-        desc: [
-          'You can keep 1 additional animal (of the same type) in each of your unfenced stables, and 2 additional animals (of the same type) in each pasture with stable.',
-        ],
-        prerequisite: '1 Grain Field',
-      },
-    },
   },
 })

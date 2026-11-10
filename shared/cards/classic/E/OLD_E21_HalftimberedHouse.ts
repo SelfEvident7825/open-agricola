@@ -34,13 +34,6 @@ export const OLD_E21_HalftimberedHouse = defineMinorCard({
     passing: false,
     implemented: true,
     artUrl: '/assets/classic/E/E21.png',
-    locales: {
-      zh: {
-        name: '半木梁房',
-        desc: ['游戏结束时，你的每间石屋都额外获得1分。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

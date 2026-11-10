@@ -19,14 +19,5 @@ export const OLD_NL112_GrainHarvester = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL112.png',
-    locales: {
-      zh: {
-        name: '割麦工',
-        desc: [
-          '打出此卡时，你获得1份小麦。在每个丰收时节的收割阶段，你可以从你的每块麦田上多收割1份小麦。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

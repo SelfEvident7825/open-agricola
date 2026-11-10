@@ -19,14 +19,5 @@ export const OLD_BI19_Deaconess = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/BI/BI19.png',
-    locales: {
-      zh: {
-        name: '女执事',
-        desc: [
-          '如果你只有两名家庭成员，在第1/2/3/4/5/6个丰收时节的喂养阶段，你获得1/2/3/4/5/6份食物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

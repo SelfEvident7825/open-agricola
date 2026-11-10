@@ -20,14 +20,5 @@ export const OLD_WM082_FlowerPots = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM082.png',
-    locales: {
-      zh: {
-        name: '花盆',
-        desc: [
-          '若你在第6回合/之前打出此卡，则在第8回合行动格上放置1份蔬菜。在第8回合开始时，你获得对应的蔬菜。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

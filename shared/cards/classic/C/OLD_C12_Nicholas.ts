@@ -19,14 +19,5 @@ export const OLD_C12_Nicholas = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/C/C12.png',
-    locales: {
-      zh: {
-        name: '大主教',
-        desc: [
-          '打出此卡时，获得等同于全体玩家家庭成员孩子数量的食物，且不多于6份(孩子指通过"生娃"行动增加的家庭成员)，此外孩子最少的玩家们都可以获得1份蔬菜。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

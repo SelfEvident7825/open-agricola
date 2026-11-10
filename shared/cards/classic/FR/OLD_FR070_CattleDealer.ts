@@ -17,12 +17,5 @@ export const OLD_FR070_CattleDealer = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR070.png',
-    locales: {
-      zh: {
-        name: '牛只贩子',
-        desc: ['每当你围建起一个占据至少3个农场空格的圈地时，你可以支付1捆芦苇获得2头牛。'],
-        prerequisite: '',
-      },
-    },
   },
 })

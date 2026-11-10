@@ -17,12 +17,5 @@ export const OLD_WA059_GermanbyChoice = defineOccupationCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/WA/WA059.png',
-    locales: {
-      zh: {
-        name: '德国选择党',
-        desc: ['游戏结束时，如果你的所有圈地和所有田地都构成矩形形状，你额外获得3分。'],
-        prerequisite: '',
-      },
-    },
   },
 })

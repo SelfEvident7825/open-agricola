@@ -19,12 +19,5 @@ export const OLD_WM084_FriendlyPastures = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM084.png',
-    locales: {
-      zh: {
-        name: '友谊牧场',
-        desc: ['你每个有马厩的圈地能饲养不同种类的动物。(不改变原有饲养空间)'],
-        prerequisite: '',
-      },
-    },
   },
 })

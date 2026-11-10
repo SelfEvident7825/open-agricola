@@ -19,14 +19,5 @@ export const OLD_NL082_Knight = defineOccupationCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/NL/NL082.png',
-    locales: {
-      zh: {
-        name: '骑士',
-        desc: [
-          '在最后1次丰收时节开始时，你获得等同于你石屋数量乘以牛数量的食物。如果此食物超过你所需喂养的数量，则每超过1份食物，你获得1分，上限是5分。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

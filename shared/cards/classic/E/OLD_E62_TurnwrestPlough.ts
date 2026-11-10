@@ -27,15 +27,6 @@ export const OLD_E62_TurnwrestPlough = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E62.png',
-    locales: {
-      zh: {
-        name: '转犁',
-        desc: [
-          '在此卡上放2个田地板块。限1次：每当你使用犁田/粮食耕种[犁播]行动格时，你可以使用此卡上2块田，改为犁3块田。每次使用犁田/粮食耕种[犁播]行动格时，只能使用1个犁/I68耙的效果。',
-        ],
-        prerequisite: '职业×2',
-      },
-    },
     plowEffect: true,
   },
   presentation: { stack: true },

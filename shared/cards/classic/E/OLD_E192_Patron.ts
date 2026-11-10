@@ -49,13 +49,6 @@ export const OLD_E192_Patron = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E192.png',
-    locales: {
-      zh: {
-        name: '赞助商',
-        desc: ['每当你打出1张职业卡前，你先获得2份食物。（在支付技能培训费之前）'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

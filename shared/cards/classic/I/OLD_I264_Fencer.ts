@@ -43,13 +43,6 @@ export const OLD_I264_Fencer = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I264.png',
-    locales: {
-      zh: {
-        name: '筑篱工',
-        desc: ['每当其他玩家建造1-4/5+根栅栏时，你额外获得1/2根木头。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

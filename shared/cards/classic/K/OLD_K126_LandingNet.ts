@@ -41,15 +41,6 @@ export const OLD_K126_LandingNet = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K126.png',
-    locales: {
-      zh: {
-        name: '手网',
-        desc: [
-          '每当你从行动格上获得芦苇时，额外获得2份食物。如果你从行动格上同时获得了其他建筑资源，则改为获得1份食物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

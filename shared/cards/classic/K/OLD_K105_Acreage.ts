@@ -30,13 +30,6 @@ export const OLD_K105_Acreage = defineMinorCard({
     isField: true,
     cardField: { allowedCrops: ['grain'], capacity: 2, separateFields: true },
     artUrl: '/assets/classic/K/K105.png',
-    locales: {
-      zh: {
-        name: '一亩田',
-        desc: ['每次播种时，你可以在此卡上播种至多2列小麦。(视作“2块麦田”)'],
-        prerequisite: '职业×1',
-      },
-    },
   }, presentation: { cardFields: true },
   impl: cardImpl,
 })

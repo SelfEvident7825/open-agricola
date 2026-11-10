@@ -59,13 +59,6 @@ export const OLD_K109_SpitRoast = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K109.png',
-    locales: {
-      zh: {
-        name: '烧烤叉',
-        desc: ['每个丰收时节的喂养阶段，如果你将至少1只动物转化为食物，则你额外获得1份食物。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

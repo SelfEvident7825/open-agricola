@@ -19,12 +19,5 @@ export const OLD_NL041_Canal = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL041.png',
-    locales: {
-      zh: {
-        name: '运河',
-        desc: ['每当你使用钓鱼积累行动格时，你可以获得至多2个你个人供应区没有的不同建筑资源'],
-        prerequisite: '职业×2',
-      },
-    },
   },
 })

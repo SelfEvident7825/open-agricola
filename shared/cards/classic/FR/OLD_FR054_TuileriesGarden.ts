@@ -22,12 +22,5 @@ export const OLD_FR054_TuileriesGarden = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR054.png',
-    locales: {
-      zh: {
-        name: '杜乐丽花园',
-        desc: ['每当你使用犁田行动格时，你可以获得1份小麦/蔬菜并将其播种'],
-        prerequisite: '职业×4',
-      },
-    },
   },
 })

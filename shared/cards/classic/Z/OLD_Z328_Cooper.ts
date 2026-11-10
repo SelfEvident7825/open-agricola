@@ -17,12 +17,5 @@ export const OLD_Z328_Cooper = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/Z/Z328.png',
-    locales: {
-      zh: {
-        name: '制桶工',
-        desc: ['每当任意玩家(包括你)从积累行动格上1次取得至少3份食物时，你额外获得1份食物。'],
-        prerequisite: '',
-      },
-    },
   },
 })

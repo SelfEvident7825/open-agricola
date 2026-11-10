@@ -65,15 +65,6 @@ export const OLD_NL078_WaterWorker = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/NL/NL078.png',
-    locales: {
-      zh: {
-        name: '水上工人',
-        desc: [
-          '当你使用钓鱼积累行动格或与其正交相邻的行动格(临时工、芦苇滩、第4回合行动格)时，你额外获得1捆芦苇。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

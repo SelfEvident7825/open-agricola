@@ -26,13 +26,6 @@ export const OLD_E216_AnimalKeeper = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E216.png',
-    locales: {
-      zh: {
-        name: '动物管理员',
-        desc: ['你的每个圈地可以饲养不同种类的动物。(K145林间牧场除外)'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

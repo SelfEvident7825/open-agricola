@@ -19,14 +19,5 @@ export const OLD_PI12_WoundedVeteran = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/PI/PI12.png',
-    locales: {
-      zh: {
-        name: 'Recluse',
-        desc: [
-          'As long as you have no minor improvements in front of you, you get 1 <FOOD> at the start of each round and 1 <WOOD> at the start of each harvest.',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

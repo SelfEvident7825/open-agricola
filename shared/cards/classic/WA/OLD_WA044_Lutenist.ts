@@ -65,13 +65,6 @@ export const OLD_WA044_Lutenist = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/WA/WA044.png',
-    locales: {
-      zh: {
-        name: '琵琶演奏家',
-        desc: ['每当其他玩家使用卖艺积累行动格时，你获得1份食物，并且可以花费2食物购买1份蔬菜。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

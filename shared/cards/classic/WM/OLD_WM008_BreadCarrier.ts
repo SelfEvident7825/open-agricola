@@ -19,14 +19,5 @@ export const OLD_WM008_BreadCarrier = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM008.png',
-    locales: {
-      zh: {
-        name: '面包运输工',
-        desc: [
-          '限1次：一旦任意玩家打出了烤炉，在之后的回合行动格上各放置1份食物。这些回合开始时，你获得对应的食物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

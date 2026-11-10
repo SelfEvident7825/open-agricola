@@ -44,15 +44,6 @@ export const OLD_K274_OrganicFarmer = defineOccupationCard({
     passing: false,
     implemented: true,
     artUrl: '/assets/classic/K/K274.png',
-    locales: {
-      zh: {
-        name: '有机农',
-        desc: [
-          '游戏结束时，你的每个饲养了至少1只动物，且未使用的容量还足以容纳至少3只动物的圈地都使你额外获得1分。(适用于K145林间牧场、E58兽笼、I102野生保护区)',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

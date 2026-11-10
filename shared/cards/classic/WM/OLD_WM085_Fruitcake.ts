@@ -21,12 +21,5 @@ export const OLD_WM085_Fruitcake = defineMinorCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/WM/WM085.png',
-    locales: {
-      zh: {
-        name: '水果蛋糕',
-        desc: ['下一次丰收时节的喂养阶段，你的每个家庭成员(包括新生儿)少喂养1份食物。'],
-        prerequisite: '职业×2',
-      },
-    },
   },
 })

@@ -16,12 +16,5 @@ export const OLD_FL005_Brabant = defineMinorCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/FL/FL005.png',
-    locales: {
-      zh: {
-        name: '人间乐园',
-        desc: ['游戏结束时，如果你有恰好2或3种动物的得分是-1分，则你获得5分'],
-        prerequisite: '',
-      },
-    },
   },
 })

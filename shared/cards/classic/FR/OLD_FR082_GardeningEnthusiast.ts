@@ -19,14 +19,5 @@ export const OLD_FR082_GardeningEnthusiast = defineOccupationCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/FR/FR082.png',
-    locales: {
-      zh: {
-        name: '园艺爱好者',
-        desc: [
-          '打出此卡时，立即获得1份小麦+1份蔬菜。计分阶段前，你必须退还1份小麦+1份蔬菜，每少退还1个你-1分。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

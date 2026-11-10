@@ -20,14 +20,5 @@ export const OLD_NL056_ImpossibleCrate = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL056.png',
-    locales: {
-      zh: {
-        name: '不可能的盒子',
-        desc: [
-          '当前回合数加3，在该回合行动格上放置12根栅栏条，该回合开始时，你可以拿回栅栏条并执行一次“围建栅栏”行动。(正常支付)',
-        ],
-        prerequisite: '未使用栅栏≥12',
-      },
-    },
   },
 })

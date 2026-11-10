@@ -5,16 +5,17 @@
   "deliveryOrigin": "Complete E/I archive rebased onto upstream main; K deck implemented with reviewed shared runtime fixes.",
   "languagePin": {
     "repository": "SelfEvident7825/open-agricola-i18n",
-    "revision": "b80e8da8926d57ee71cdbc6bc02d442dc7c476d6",
-    "manifestSha256": "37dfd9a591cf2cfccc120e965a078104a6dcd158e49e6116bac9c2d2964c234c"
+    "revision": "32c743e29327dca9f59853dff360b1ef42c22876",
+    "manifestSha256": "173ea8ac6a29f5795ae5cc6cb387c387ec37b794db5898e1248d8c7fd5fe6465"
   },
   "languageVerification": {
     "localTests": 10,
     "localFiles": 3,
-    "githubRun": "https://github.com/SelfEvident7825/open-agricola-i18n/actions/runs/42809635993",
+    "githubRun": "https://github.com/SelfEvident7825/open-agricola-i18n/actions/runs/42811977195",
     "status": "PASS",
     "upstreamPullRequest": "https://github.com/titanxxh/open-agricola-i18n/pull/21",
-    "upstreamStatus": "Awaiting maintainer workflow approval"
+    "upstreamStatus": "Awaiting maintainer workflow approval",
+    "sourceBoundary": "All 1,024 classic card translations are maintained in the language repository; card rule sources no longer embed meta.locales. Mechanical migration preserved both compiled language packs byte-for-byte."
   },
   "classic": {
     "handCards": 1024,
@@ -72,9 +73,9 @@
       "status": "PASS"
     },
     {
-      "scope": "Catalog, import preservation and card source generation",
-      "files": 7,
-      "passed": 36,
+      "scope": "Language-pack boundary, catalog, import preservation and card source generation",
+      "files": 8,
+      "passed": 38,
       "status": "PASS"
     },
     {

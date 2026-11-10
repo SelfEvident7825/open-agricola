@@ -59,15 +59,6 @@ export const OLD_I259_AnimalDealer = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I259.png',
-    locales: {
-      zh: {
-        name: '动物交易员',
-        desc: [
-          '每当你使用羊市场/猪市场/牛市场积累行动格时，你可以支付1份食物来额外购买1只对应动物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

@@ -19,14 +19,5 @@ export const OLD_NL108_Rationalist = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL108.png',
-    locales: {
-      zh: {
-        name: '理性主义者',
-        desc: [
-          '每当你打出1张需要实际花费石头的发展卡时，你可以支付1食物，然后把其中任意数量花费的石头用等量的砖头代替。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

@@ -39,13 +39,6 @@ export const OLD_K288_StorehouseKeeper = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K288.png',
-    locales: {
-      zh: {
-        name: '仓库管理员',
-        desc: ['每当你使用从行动格上同时获得芦苇和石头时，你额外获得1块砖头或1份小麦。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

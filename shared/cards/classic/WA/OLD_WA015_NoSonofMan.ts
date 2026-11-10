@@ -19,14 +19,5 @@ export const OLD_WA015_NoSonofMan = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WA/WA015.png',
-    locales: {
-      zh: {
-        name: '无人之子',
-        desc: [
-          '你获得1根木头并且可以立即派遣一名家庭成员使用后请将此卡交给下家，此卡将加入他的手牌。',
-        ],
-        prerequisite: '职业×1',
-      },
-    },
   },
 })

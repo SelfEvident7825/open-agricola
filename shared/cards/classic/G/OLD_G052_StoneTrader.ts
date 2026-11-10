@@ -17,14 +17,5 @@ export const OLD_G052_StoneTrader = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G052.png',
-    locales: {
-      zh: {
-        name: '石头贸易商',
-        desc: [
-          '每当你在行动格上获得石头时，可以立即支付1份食物，打出任意一张费用印有石头的发展卡。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

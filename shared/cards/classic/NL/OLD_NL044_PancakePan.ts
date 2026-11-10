@@ -18,12 +18,5 @@ export const OLD_NL044_PancakePan = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL044.png',
-    locales: {
-      zh: {
-        name: '煎饼锅',
-        desc: ['如果你有 发展卡，你可以随时将1份小麦转换成2份食物'],
-        prerequisite: '',
-      },
-    },
   },
 })

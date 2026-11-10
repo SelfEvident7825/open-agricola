@@ -17,12 +17,5 @@ export const OLD_O08_Environmentalist = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/O/O08.png',
-    locales: {
-      zh: {
-        name: '环保主义者',
-        desc: ['每当你打出发展卡时，你可以用1根木头代替花费中的任意1个建筑资源。'],
-        prerequisite: '',
-      },
-    },
   },
 })

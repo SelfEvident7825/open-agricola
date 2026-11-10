@@ -16,12 +16,5 @@ export const OLD_NL038_Undergrowth = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL038.png',
-    locales: {
-      zh: {
-        name: '灌木丛',
-        desc: ['立即获得2根木头使用后请将此卡交给下家，此卡将加入他的手牌。'],
-        prerequisite: '',
-      },
-    },
   },
 })

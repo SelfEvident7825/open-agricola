@@ -23,14 +23,5 @@ export const OLD_O21_Vineyard = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/O/O21.png',
-    locales: {
-      zh: {
-        name: '葡萄园',
-        desc: [
-          '当你执行"播种"行动时，你可以将至多3份食物，如同小麦般播种到此卡上。每次收割作物时，将此卡上的食物如同小麦般收割。（视作3块"已播种田"）',
-        ],
-        prerequisite: '4职业',
-      },
-    },
   },
 })

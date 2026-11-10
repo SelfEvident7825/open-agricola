@@ -44,15 +44,6 @@ export const OLD_I69_StrawberryPatch = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I69.png',
-    locales: {
-      zh: {
-        name: '草莓园',
-        desc: [
-          '打出此卡时，在之后的3个回合行动格上各放1份食物。这些回合开始时，你获得对应的食物。此卡牌打出条件“菜田×2”包括卡牌田。',
-        ],
-        prerequisite: '菜田×2',
-      },
-    },
   },
   impl: cardImpl,
 })

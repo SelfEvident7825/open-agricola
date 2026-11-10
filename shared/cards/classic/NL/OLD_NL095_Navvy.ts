@@ -19,14 +19,5 @@ export const OLD_NL095_Navvy = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL095.png',
-    locales: {
-      zh: {
-        name: '田间苦工',
-        desc: [
-          '打出此卡时，你可以用1份食物购买1份小麦。每回合限1次：在你执行“播种”行动后，你可以犁1块田。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

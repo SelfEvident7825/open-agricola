@@ -23,14 +23,5 @@ export const OLD_WA027_6thSenseAcademy = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WA/WA027.png',
-    locales: {
-      zh: {
-        name: '第六感学院',
-        desc: [
-          '每个轮次限一次，在小麦/蔬菜/木/砖/芦苇/石头中，如果你恰好没有其中1种，则你获得1个该种资源。对于任意一种物品，如果该物品只剩1个，你不能将其转化为食物',
-        ],
-        prerequisite: '职业×1',
-      },
-    },
   },
 })

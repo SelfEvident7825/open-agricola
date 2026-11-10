@@ -53,15 +53,6 @@ export const OLD_I101_AnimalFeed = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I101.png',
-    locales: {
-      zh: {
-        name: '畜食槽',
-        desc: [
-          '计分阶段前，你每拥有1种动物就额外获得1只该种动物。(I101畜食槽可在E215动物租用人之前发动）（需要饲养空间，不能转化为食物)此卡牌打出条件"已播种田×4"包括卡牌田。',
-        ],
-        prerequisite: '已播种田×4',
-      },
-    },
   },
   impl: cardImpl,
 })

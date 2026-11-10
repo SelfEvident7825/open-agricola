@@ -91,15 +91,6 @@ export const OLD_I251_ReedBuyer = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I251.png',
-    locales: {
-      zh: {
-        name: '购苇商',
-        desc: [
-          '每回合第一次有玩家从行动格上获得至少1捆芦苇时，你可以支付该玩家1份食物，该玩家必须给你1捆芦苇并从游戏供应区获得1份食物。（通过卡牌获得的芦苇不算）',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

@@ -43,13 +43,6 @@ export const OLD_NL049_Lumbermill = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/NL/NL049.png',
-    locales: {
-      zh: {
-        name: '锯木厂',
-        desc: ['每张发展卡所需的木头花费于你而言都减少1'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

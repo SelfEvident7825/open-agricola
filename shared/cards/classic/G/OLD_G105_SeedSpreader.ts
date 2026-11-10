@@ -19,12 +19,5 @@ export const OLD_G105_SeedSpreader = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G105.png',
-    locales: {
-      zh: {
-        name: '种子撒布机',
-        desc: ['每当你使用犁田行动格后，你可以播种1份小麦或1份蔬菜'],
-        prerequisite: '',
-      },
-    },
   },
 })

@@ -23,14 +23,5 @@ export const OLD_BI04_Spielwiese = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/BI/BI04.png',
-    locales: {
-      zh: {
-        name: '游乐场',
-        desc: [
-          '从牌库中随机抽取2张职业卡加入手牌。查看这两张牌的适用玩家数(如1+,3+,或4+)并取较小值，你获得等同于该数量的由你选择的不同种类的建筑资源。使用后请将此卡交给下家，此卡将加入他的手牌。',
-        ],
-        prerequisite: '职业≤1',
-      },
-    },
   },
 })

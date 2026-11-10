@@ -69,13 +69,6 @@ export const OLD_E207_Stablehand = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E207.png',
-    locales: {
-      zh: {
-        name: '马厩帮工',
-        desc: ['每轮次限1次：每当你建造至少1根栅栏，你便可以免费建造1个马厩。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

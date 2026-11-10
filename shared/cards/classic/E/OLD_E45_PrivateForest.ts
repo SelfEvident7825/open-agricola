@@ -45,15 +45,6 @@ export const OLD_E45_PrivateForest = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E45.png',
-    locales: {
-      zh: {
-        name: '私有林地',
-        desc: [
-          '打出此卡时，在之后的每个偶数回合行动格上各放1根木头。这些回合开始时，你获得对应的木头。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

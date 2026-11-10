@@ -52,15 +52,6 @@ export const OLD_NL012_Brook = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/NL/NL012.png',
-    locales: {
-      zh: {
-        name: '小溪',
-        desc: [
-          '每当你使用钓鱼积累行动格上方的森林[3木]、土矿[1砖]和芦苇滩积累行动格时，你都额外获得1份食物',
-        ],
-        prerequisite: '你有家庭成员在钓鱼',
-      },
-    },
   },
   impl: cardImpl,
 })

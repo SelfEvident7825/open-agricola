@@ -18,12 +18,5 @@ export const OLD_FR023_Goblet = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR023.png',
-    locales: {
-      zh: {
-        name: '高脚杯',
-        desc: ['对你而言，A10水井是次要发展卡。你打出井时改为在之后5回合各放置2份食物'],
-        prerequisite: '',
-      },
-    },
   },
 })

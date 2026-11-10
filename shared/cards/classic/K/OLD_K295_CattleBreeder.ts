@@ -29,13 +29,6 @@ export const OLD_K295_CattleBreeder = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K295.png',
-    locales: {
-      zh: {
-        name: '野牛哺育师',
-        desc: ['打出时立即获得1头牛。在第12回合结束时，你的牛将会进行一次繁殖。（需有饲养空间）'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

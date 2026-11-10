@@ -91,15 +91,6 @@ export const OLD_K275_PerpetualStudent = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K275.png',
-    locales: {
-      zh: {
-        name: '懒惰的学生',
-        desc: [
-          '每当你打出1张职业卡前，你可以获得3份食物，然后让一名其他玩家从你的手牌中随机选择一张职业牌，你必须打出此卡并支付相应的费用(如情圣)，你每缺少1份食物就获得1张乞讨卡。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

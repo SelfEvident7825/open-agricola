@@ -52,13 +52,6 @@ export const OLD_E188_ClayMixer = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E188.png',
-    locales: {
-      zh: {
-        name: '和泥匠',
-        desc: ['每当你从行动格上只获得了砖头时，额外获得2个砖头。（通过卡牌获得的砖头不算）'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

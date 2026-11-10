@@ -79,15 +79,6 @@ export const OLD_NL005_Studio = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/NL/NL005.png',
-    locales: {
-      zh: {
-        name: '工作室',
-        desc: [
-          '每个喂养阶段，你可以使用此卡将至多1个资源转化成食物。每个木头/砖头能转换成2食物，每个石头能转换成3食物',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

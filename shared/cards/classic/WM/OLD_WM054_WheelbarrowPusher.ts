@@ -19,14 +19,5 @@ export const OLD_WM054_WheelbarrowPusher = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM054.png',
-    locales: {
-      zh: {
-        name: '推车搬运工',
-        desc: [
-          '每当你从积累行动格上获得恰好1个建筑资源时，你额外获得1个任意建筑资源/1份食物。在4+人游戏中，改为1个任意建筑资源+1份食物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

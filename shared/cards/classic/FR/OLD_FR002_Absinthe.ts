@@ -21,14 +21,5 @@ export const OLD_FR002_Absinthe = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR002.png',
-    locales: {
-      zh: {
-        name: '苦艾酒',
-        desc: [
-          '在接下来的5个回合行动格上各放置1份食物，这些回合开始时，你将这份食物放到任意一个行动格上，第一个使用该格的玩家获得这份食物。',
-        ],
-        prerequisite: '职业×3',
-      },
-    },
   },
 })

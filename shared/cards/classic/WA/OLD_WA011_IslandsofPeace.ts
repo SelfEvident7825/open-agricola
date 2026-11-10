@@ -20,14 +20,5 @@ export const OLD_WA011_IslandsofPeace = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WA/WA011.png',
-    locales: {
-      zh: {
-        name: '和平岛',
-        desc: [
-          '从游戏供应区拿取食物放到农场里每组2×2空地的公共点上，一旦你使用了周围的4格空地，你获得中间的这份食物',
-        ],
-        prerequisite: '田地版块×2',
-      },
-    },
   },
 })

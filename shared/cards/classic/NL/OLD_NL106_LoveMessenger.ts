@@ -19,14 +19,5 @@ export const OLD_NL106_LoveMessenger = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL106.png',
-    locales: {
-      zh: {
-        name: '爱情使者',
-        desc: [
-          '下一回合及第13、14回合，在你的第一名家庭成员行动前，其他玩家不能使用提供“生娃”行动的行动格。（其他玩家可以使用第2位或之后的家庭成员执行行动）',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

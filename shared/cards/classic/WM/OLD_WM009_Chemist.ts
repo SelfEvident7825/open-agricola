@@ -19,14 +19,5 @@ export const OLD_WM009_Chemist = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM009.png',
-    locales: {
-      zh: {
-        name: '化学家',
-        desc: [
-          '每当你从建筑资源积累行动格获得木头时，你可以支付1块砖到另一个建筑资源积累行动格上并获得2份食物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

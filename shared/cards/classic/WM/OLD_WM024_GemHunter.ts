@@ -19,14 +19,5 @@ export const OLD_WM024_GemHunter = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM024.png',
-    locales: {
-      zh: {
-        name: '宝石猎人',
-        desc: [
-          '每当你从积累行动格上获得砖头时，你额外获得1个石头。如果在第9回合或之前，且该积累行动格有至少3个砖头，则你必须留下1个砖头来额外获得1个石头。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

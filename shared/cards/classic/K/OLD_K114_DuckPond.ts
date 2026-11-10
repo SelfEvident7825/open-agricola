@@ -39,15 +39,6 @@ export const OLD_K114_DuckPond = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K114.png',
-    locales: {
-      zh: {
-        name: '鸭塘',
-        desc: [
-          '打出此卡时，在之后的3个回合行动格上各放1份食物。这些回合开始时，你获得对应的食物。',
-        ],
-        prerequisite: '职业×2',
-      },
-    },
   },
   impl: cardImpl,
 })

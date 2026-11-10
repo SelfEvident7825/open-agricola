@@ -42,15 +42,6 @@ export const OLD_NL118_PotatoHarvester = defineOccupationCard({
     passing: false,
     extraVp: false,
     artUrl: '/assets/classic/NL/NL118.png',
-    locales: {
-      zh: {
-        name: '土豆收割工',
-        desc: [
-          '打出此卡时，你获得3份食物。在每个丰收时节的收割阶段，你每从田地里收割1份蔬菜，便额外获得1份食物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

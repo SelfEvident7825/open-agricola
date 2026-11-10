@@ -18,14 +18,5 @@ export const OLD_G092_PineForest = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G092.png',
-    locales: {
-      zh: {
-        name: '松树林',
-        desc: [
-          '每回合开始时，如果你没有木头，在此卡上补充1木头。当此卡上有5根木头时，将这些木头移入你的个人供应区。(你不能丢弃你的木头)',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

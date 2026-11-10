@@ -16,12 +16,5 @@ export const OLD_FR004_AppleGarden = defineMinorCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/FR/FR004.png',
-    locales: {
-      zh: {
-        name: '苹果园',
-        desc: ['游戏结束时，如果你没有小麦或蔬菜，则你获得至多2分(仍会因为缺少此种作物而扣分)'],
-        prerequisite: '',
-      },
-    },
   },
 })

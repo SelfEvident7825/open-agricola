@@ -20,14 +20,5 @@ export const OLD_G118_WinterGarden = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G118.png',
-    locales: {
-      zh: {
-        name: '冬季花园',
-        desc: [
-          '你可以在至多一个房间上播种并收割作物。当你家中有动物时，需要将房间上的作物全部弃掉。在第6、8、10、12回合结束时，你可以收割一次房间上的作物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

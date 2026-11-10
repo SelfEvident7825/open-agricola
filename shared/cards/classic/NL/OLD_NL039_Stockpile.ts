@@ -20,14 +20,5 @@ export const OLD_NL039_Stockpile = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL039.png',
-    locales: {
-      zh: {
-        name: '空投飞机',
-        desc: [
-          '每当翻开新的回合行动卡时，如果你恰好有0-1/2-3/4-5/6+份食物，你获得1木/砖/芦苇/石头(你可以在任意时刻丢弃食物)',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

@@ -19,14 +19,5 @@ export const OLD_WM020_FarmSchoolGraduate = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM020.png',
-    locales: {
-      zh: {
-        name: '农校毕业生',
-        desc: [
-          '此卡只能作为第一张职业卡打出。打出此卡后，你不能再使用技能培训行动格来打出职业卡。每个丰收时节开始时，你可以支付2份食物作为技能培训费来打出一张职业卡。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

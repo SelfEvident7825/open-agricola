@@ -45,15 +45,6 @@ export const OLD_E201_CattleWhisperer = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E201.png',
-    locales: {
-      zh: {
-        name: '驯牛人',
-        desc: [
-          '将当前回合数加5和9，在这些回合的行动格上各放1头牛。这些回合开始时，你获得对应的牛。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

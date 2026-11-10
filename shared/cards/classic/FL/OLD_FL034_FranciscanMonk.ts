@@ -19,14 +19,5 @@ export const OLD_FL034_FranciscanMonk = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FL/FL034.png',
-    locales: {
-      zh: {
-        name: '方济会修士',
-        desc: [
-          '打出此卡时，获得1份小麦，并且可以弃掉1张乞讨卡。任意时刻，你可以弃掉手牌中的1张次要发展卡，然后从牌库中随机抽取1张职业卡加入手牌。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

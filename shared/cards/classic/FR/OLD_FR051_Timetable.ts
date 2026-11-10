@@ -16,14 +16,5 @@ export const OLD_FR051_Timetable = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR051.png',
-    locales: {
-      zh: {
-        name: '时间表',
-        desc: [
-          '从游戏供应区拿取4种建筑资源各1个放到此卡上，你打次发时可以使用此卡上的资源来支付费用',
-        ],
-        prerequisite: '主发×1',
-      },
-    },
   },
 })

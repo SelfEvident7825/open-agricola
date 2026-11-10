@@ -23,14 +23,5 @@ export const OLD_NL015_RowBoat = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL015.png',
-    locales: {
-      zh: {
-        name: '划艇',
-        desc: [
-          '每当其他玩家使用钓鱼积累行动格时，你可以将你一位已派遣的家庭成员移动到钓鱼积累行动格并获得1食物(这不算使用钓鱼)',
-        ],
-        prerequisite: '职业×1',
-      },
-    },
   },
 })

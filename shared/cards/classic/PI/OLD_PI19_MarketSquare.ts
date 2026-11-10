@@ -18,14 +18,5 @@ export const OLD_PI19_MarketSquare = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/PI/PI19.png',
-    locales: {
-      zh: {
-        name: 'Briar Hedge',
-        desc: [
-          'You do not need to pay wood for fences that you build on the edge of your farmyard board.',
-        ],
-        prerequisite: '1 Animal of Each Type',
-      },
-    },
   },
 })

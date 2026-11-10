@@ -47,15 +47,6 @@ export const OLD_I73_Guest = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I73.png',
-    locales: {
-      zh: {
-        name: '客人',
-        desc: [
-          '立即获得1名食客。该食客可以在下回合派遣，回合结束时退还。使用后请将此卡交给下家，此卡将加入他的手牌。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

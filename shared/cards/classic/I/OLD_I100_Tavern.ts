@@ -41,15 +41,6 @@ export const OLD_I100_Tavern = definePlayerActionCard({
     extraVp: true,
     implemented: true,
     artUrl: '/assets/classic/I/I100.png',
-    locales: {
-      zh: {
-        name: '酒馆',
-        desc: [
-          '+（+ ）此卡是所有玩家都能使用的额外行动格。其他玩家使用时获得3份食物，你使用时获得3份食物/2分。',
-        ],
-        prerequisite: '',
-      },
-    },
     playerActionCardType: 'minor',
   },
   impl: cardImpl,

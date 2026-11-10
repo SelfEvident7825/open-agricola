@@ -40,13 +40,6 @@ export const OLD_E167_Conjurer = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E167.png',
-    locales: {
-      zh: {
-        name: '杂耍艺人',
-        desc: ['每当你使用卖艺积累行动格时，额外获得1份小麦。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

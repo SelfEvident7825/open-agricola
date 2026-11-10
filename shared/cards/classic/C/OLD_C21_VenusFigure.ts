@@ -20,14 +20,5 @@ export const OLD_C21_VenusFigure = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/C/C21.png',
-    locales: {
-      zh: {
-        name: '维纳斯雕像',
-        desc: [
-          '你使用生儿育女行动格时，可以额外获得一次“生娃(需要空房间)”行动生娃打出次发打出此卡，不能立即发动。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

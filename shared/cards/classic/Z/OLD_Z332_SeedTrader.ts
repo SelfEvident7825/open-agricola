@@ -19,14 +19,5 @@ export const OLD_Z332_SeedTrader = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/Z/Z332.png',
-    locales: {
-      zh: {
-        name: '种子交易商',
-        desc: [
-          '在此卡上放置2份小麦+2份蔬菜。你可以随时从此卡上购买它们：每份小麦需要2份食物；每份蔬菜需要3份食物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

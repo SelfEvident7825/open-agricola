@@ -69,15 +69,6 @@ export const OLD_E184_Grocer = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E184.png',
-    locales: {
-      zh: {
-        name: '杂货商',
-        desc: [
-          '从上到下将<REED><GRAIN><STONE><VEGETABLE><WOOD><CLAY><REED><VEGETABLE>排列于此卡上。任意时刻，你可以支付1<FOOD>来买走最上方的物品。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   presentation: { stack: true },
   impl: cardImpl,

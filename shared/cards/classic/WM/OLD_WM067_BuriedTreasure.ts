@@ -19,12 +19,5 @@ export const OLD_WM067_BuriedTreasure = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM067.png',
-    locales: {
-      zh: {
-        name: '地下宝藏',
-        desc: ['每当你使用犁田/粮食耕种[犁播]行动格时，额外获得1个石头。'],
-        prerequisite: '职业×2',
-      },
-    },
   },
 })

@@ -38,13 +38,6 @@ export const OLD_K134_OxTeam = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K134.png',
-    locales: {
-      zh: {
-        name: '公牛挽具',
-        desc: ['打出此卡时，计算剩余的完整回合数。你可以立即犁相等数量的田地板块，且至多3块。'],
-        prerequisite: '牛×2',
-      },
-    },
   },
   impl: cardImpl,
 })

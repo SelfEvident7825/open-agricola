@@ -61,13 +61,6 @@ export const OLD_E211_Stonecutter = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E211.png',
-    locales: {
-      zh: {
-        name: '切石工',
-        desc: ['打发展卡、建造房屋和翻修房屋所需的石头费用于你而言总是减少1。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

@@ -19,14 +19,5 @@ export const OLD_WA032_JourneymanThatcher = defineOccupationCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/WA/WA032.png',
-    locales: {
-      zh: {
-        name: '茅屋旅人',
-        desc: [
-          '打出此卡时，立即扩建1间房屋，并且少支付1捆芦苇。使用后请将此卡交给下家，此卡将加入他的手牌。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

@@ -19,14 +19,5 @@ export const OLD_PI11_SunriseHerder = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/PI/PI11.png',
-    locales: {
-      zh: {
-        name: 'Sunrise Herder',
-        desc: [
-          '每回合限1次：你可以你可以跳过你的第一个轮次，支付0/0/1<FOOD>获得1羊/猪/牛。你可以在后续的轮次继续派遣他。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

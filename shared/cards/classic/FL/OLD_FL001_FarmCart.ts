@@ -20,14 +20,5 @@ export const OLD_FL001_FarmCart = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FL/FL001.png',
-    locales: {
-      zh: {
-        name: '农用推车',
-        desc: [
-          '每当你执行“播种”行动时，你可以在麦田/菜田上播种至多1份蔬菜/小麦(每个田至多额外播种1份)原来的麦田仍然视为麦田卡牌田',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

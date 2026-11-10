@@ -81,15 +81,6 @@ export const OLD_I242_ClayHutBuilder = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I242.png',
-    locales: {
-      zh: {
-        name: '砖屋建筑工',
-        desc: [
-          '限一次：一旦你的房屋等级是砖屋/石屋，在之后5个回合的行动格上各放2块砖头。这些回合开始时，你获得对应的砖头。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

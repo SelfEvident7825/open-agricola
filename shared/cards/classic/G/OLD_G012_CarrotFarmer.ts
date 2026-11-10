@@ -17,14 +17,5 @@ export const OLD_G012_CarrotFarmer = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G012.png',
-    locales: {
-      zh: {
-        name: '胡萝卜种植者',
-        desc: [
-          '放置3份蔬菜在此卡上。每当你使用犁田行动格时，可以支付1份食物，获得此卡上的1份蔬菜。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

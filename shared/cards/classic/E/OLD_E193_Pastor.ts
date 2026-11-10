@@ -92,15 +92,6 @@ export const OLD_E193_Pastor = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E193.png',
-    locales: {
-      zh: {
-        name: '牧师',
-        desc: [
-          '限1次：打出此卡时，或在之后的游戏中，一旦你是场上唯一1名仅有2间房屋的玩家，你立即获得3根木头+2块砖头+1捆芦苇+1块石头。WM075移除木屋板块可立即获得资源，然后可使用此卡的资源围建WM075栅栏',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

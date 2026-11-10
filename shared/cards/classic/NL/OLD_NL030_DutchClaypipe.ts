@@ -45,13 +45,6 @@ export const OLD_NL030_DutchClaypipe = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/NL/NL030.png',
-    locales: {
-      zh: {
-        name: '陶制烟斗',
-        desc: ['在每回合的回家阶段，若你在当回合工作阶段获得了不少于7份建筑资源，则你获得2份食物'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

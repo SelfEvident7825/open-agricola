@@ -25,15 +25,6 @@ export const OLD_K278_Forester = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K278.png',
-    locales: {
-      zh: {
-        name: '护林人',
-        desc: [
-          '你可以在此卡上播种3列木头。木头的播种和收割遵循小麦的一般规则。（不能被K286小农种植额外木头。此卡上未收割的木头不算作你的资源，不计算任何职业和发展卡分数。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

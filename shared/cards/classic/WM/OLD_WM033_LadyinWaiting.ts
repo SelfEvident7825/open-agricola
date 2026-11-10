@@ -19,14 +19,5 @@ export const OLD_WM033_LadyinWaiting = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM033.png',
-    locales: {
-      zh: {
-        name: '侍女',
-        desc: [
-          '如果你在第一季打出此卡，将你个人供应区里的1名家庭成员放在第12回合的行动格上。第12回合开始时，你可以支付2份食物获得该家庭成员(无需空房间)，并可以在当回合开始派遣。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

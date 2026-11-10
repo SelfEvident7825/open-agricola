@@ -23,14 +23,5 @@ export const OLD_WM109_SteelPlow = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM109.png',
-    locales: {
-      zh: {
-        name: '金钢犁',
-        desc: [
-          '限1次：在你使用犁田/粮食耕种[犁播]行动格时，可以改为犁至多4块田每次使用犁田/粮食耕种[犁播]行动格时，只能使用1个犁/I68耙的效果。',
-        ],
-        prerequisite: '职业×3',
-      },
-    },
   },
 })

@@ -63,13 +63,6 @@ export const OLD_I243_Bricklayer = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I243.png',
-    locales: {
-      zh: {
-        name: '砌砖工',
-        desc: ['发展卡和翻修房屋所需的砖头费用都减少1，扩建每间房屋所需的砖头费用都减少2。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

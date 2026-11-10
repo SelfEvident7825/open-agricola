@@ -17,12 +17,5 @@ export const OLD_FR088_Journeyman = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR088.png',
-    locales: {
-      zh: {
-        name: '熟练工人',
-        desc: ['一旦你的房屋等级是石屋，每回合开始时，你可以支付1份食物购买1只任意动物。'],
-        prerequisite: '',
-      },
-    },
   },
 })

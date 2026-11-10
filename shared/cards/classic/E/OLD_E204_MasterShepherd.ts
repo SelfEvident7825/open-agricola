@@ -42,13 +42,6 @@ export const OLD_E204_MasterShepherd = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E204.png',
-    locales: {
-      zh: {
-        name: '牧羊人管理员',
-        desc: ['在之后3个回合行动格上各放1只羊。这些回合开始时，你获得对应的羊。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

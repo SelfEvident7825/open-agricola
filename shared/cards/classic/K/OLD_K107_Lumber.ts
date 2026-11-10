@@ -32,13 +32,6 @@ export const OLD_K107_Lumber = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K107.png',
-    locales: {
-      zh: {
-        name: '木料',
-        desc: ['立即获得3根木头。使用后请将此卡交给下家，此卡将加入他的手牌。'],
-        prerequisite: '职业×1',
-      },
-    },
   },
   impl: cardImpl,
 })

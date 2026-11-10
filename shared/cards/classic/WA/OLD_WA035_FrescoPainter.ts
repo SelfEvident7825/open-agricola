@@ -19,14 +19,5 @@ export const OLD_WA035_FrescoPainter = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WA/WA035.png',
-    locales: {
-      zh: {
-        name: '壁画画家',
-        desc: [
-          '每当你扩建/翻修时，对于每间扩建的房屋/每次翻修，你可以用至多2/1个石头代替等量的芦苇。对于每个如此被代替的芦苇，你获得2份食物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

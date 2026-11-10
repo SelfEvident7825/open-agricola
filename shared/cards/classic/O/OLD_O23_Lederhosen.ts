@@ -21,14 +21,5 @@ export const OLD_O23_Lederhosen = defineMinorCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/O/O23.png',
-    locales: {
-      zh: {
-        name: '皮短裤',
-        desc: [
-          '你每将1只羊转换成食物，便从游戏供应区拿取1份食物放在此卡上。游戏结束时，若此卡上的食物不少于你家庭成员数量(食客不计算在内)的1/2倍，则你获得2/3分。',
-        ],
-        prerequisite: '3职业',
-      },
-    },
   },
 })

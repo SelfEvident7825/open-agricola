@@ -48,15 +48,6 @@ export const OLD_I79_WoodCart = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I79.png',
-    locales: {
-      zh: {
-        name: '木头推车',
-        desc: [
-          '每当你从行动格上获得木头时，额外获得2根木头。（5人局版图“芦+石+木”和通过卡牌获得的木头不算）',
-        ],
-        prerequisite: '职业×3',
-      },
-    },
   },
   impl: cardImpl,
 })

@@ -19,14 +19,5 @@ export const OLD_FL031_OldMaster = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FL/FL031.png',
-    locales: {
-      zh: {
-        name: '绘画大师',
-        desc: [
-          '第3至7回合的工作阶段开始时，你获得1根木头。如果森林[3木]积累行动格上有至少6根木头，则改为获得1个石头。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

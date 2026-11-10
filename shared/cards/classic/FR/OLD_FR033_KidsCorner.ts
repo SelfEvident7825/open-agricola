@@ -18,12 +18,5 @@ export const OLD_FR033_KidsCorner = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR033.png',
-    locales: {
-      zh: {
-        name: '儿童天地',
-        desc: ['你的房间可以额外容纳1只任意动物。任意类型的动物'],
-        prerequisite: '',
-      },
-    },
   },
 })

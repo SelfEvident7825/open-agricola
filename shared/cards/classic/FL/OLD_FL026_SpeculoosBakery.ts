@@ -21,14 +21,5 @@ export const OLD_FL026_SpeculoosBakery = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FL/FL026.png',
-    locales: {
-      zh: {
-        name: '焦糖饼干店',
-        desc: [
-          '每当你通过行动格执行“烤面包”行动时，你可以支付1份小麦并获得1名食客标记，食客于当回合使用后退还',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

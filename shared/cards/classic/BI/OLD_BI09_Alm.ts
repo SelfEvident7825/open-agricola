@@ -20,14 +20,5 @@ export const OLD_BI09_Alm = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/BI/BI09.png',
-    locales: {
-      zh: {
-        name: '斗牛场',
-        desc: [
-          '打出此卡时，你可以从你的农场中退还1个马厩到个人供应区，并获得1只牛。此卡可以容纳任意数量的牛。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

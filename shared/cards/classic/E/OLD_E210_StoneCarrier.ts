@@ -59,15 +59,6 @@ export const OLD_E210_StoneCarrier = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E210.png',
-    locales: {
-      zh: {
-        name: '运石工',
-        desc: [
-          '每当你从行动格上获得石头时，你额外获得1个石头。如果你同时获得了其他种类的建筑资源，你需要支付1份食物。（通过卡牌获得的石头不算）',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

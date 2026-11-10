@@ -22,14 +22,5 @@ export const OLD_NL057_JoyHouse = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL057.png',
-    locales: {
-      zh: {
-        name: '欢乐屋',
-        desc: [
-          '工作阶段结束后，你可以支付1份食物将你的一位家庭成员放在此卡上(此卡上最多1人)。此后当你派遣此卡上的家庭成员时，你可以支付1份食物来使用垂直相邻的两个行动格，先执行上方的行动格(此卡上的家庭成员依然占用你的房间)',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

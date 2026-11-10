@@ -53,13 +53,6 @@ export const OLD_E338_FeedPellets = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E338.png',
-    locales: {
-      zh: {
-        name: '饲料颗粒',
-        desc: ['每个丰收时节的喂养阶段，你可以支付1份蔬菜，获得至多1只你已有的动物。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

@@ -16,14 +16,5 @@ export const OLD_NL017_MonasticVows = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL017.png',
-    locales: {
-      zh: {
-        name: '修士誓言',
-        desc: [
-          '每个工作阶段结束时，你可以获得1张乞讨卡+3食物+1名食客，你立即放置该食客然后将其退还。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

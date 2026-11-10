@@ -39,13 +39,6 @@ export const OLD_I240_Cowherd = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I240.png',
-    locales: {
-      zh: {
-        name: '牧牛人',
-        desc: ['每当你使用牛市场积累行动格时，额外获得1头牛。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

@@ -43,13 +43,6 @@ export const OLD_NL009_JunkRoom = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/NL/NL009.png',
-    locales: {
-      zh: {
-        name: '杂物房',
-        desc: ['每当你打出1张发展卡（包括此卡）后，你获得1份食物你有小溪家庭成员'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

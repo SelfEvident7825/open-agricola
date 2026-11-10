@@ -54,15 +54,6 @@ export const OLD_K304_Veterinarian = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K304.png',
-    locales: {
-      zh: {
-        name: '兽医',
-        desc: [
-          '打出时在一个袋子里放进4只羊+3只猪+2头牛，每回合开始时，随机抽取两只动物。如果抽出的两只动物相同，则你留下1只，放回1只。如果动物不同，则全部放回。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

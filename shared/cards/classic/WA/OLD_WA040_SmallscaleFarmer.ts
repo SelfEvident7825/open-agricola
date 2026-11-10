@@ -17,12 +17,5 @@ export const OLD_WA040_SmallscaleFarmer = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WA/WA040.png',
-    locales: {
-      zh: {
-        name: '小户农家',
-        desc: ['每回合开始时，如果你只有2间房屋，你获得1根木头。'],
-        prerequisite: '',
-      },
-    },
   },
 })

@@ -19,14 +19,5 @@ export const OLD_NL120_ChoirBoy = defineOccupationCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/NL/NL120.png',
-    locales: {
-      zh: {
-        name: '唱诗班男孩',
-        desc: [
-          '你只能在第11回合或之前且个人供应区不超过3份资源时打出此卡。游戏结束时，你每位家庭成员额外获得1分。(资源：建筑资源、小麦和蔬菜)',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

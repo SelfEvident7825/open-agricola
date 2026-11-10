@@ -19,14 +19,5 @@ export const OLD_NL087_DistantPrincess = defineOccupationCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/NL/NL087.png',
-    locales: {
-      zh: {
-        name: '远方的公主',
-        desc: [
-          '打出此卡时，若距离游戏结束还有6/9个完整回合，则你立即获得3/4根木头。游戏结束时，最后一位得到第5位家庭成员的玩家获得2分。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

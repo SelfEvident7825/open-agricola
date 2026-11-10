@@ -59,15 +59,6 @@ export const OLD_E173_ChiefsDaughter = defineOccupationCard({
     extraVp: true,
     implemented: true,
     artUrl: '/assets/classic/E/E173.png',
-    locales: {
-      zh: {
-        name: '酋长女儿',
-        desc: [
-          '当其他玩家打出了E172酋长，你可以立即免费打出此卡。游戏结束时，若你的房屋等级是砖屋/石屋，额外获得1/3分。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

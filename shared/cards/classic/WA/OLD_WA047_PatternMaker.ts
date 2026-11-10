@@ -69,13 +69,6 @@ export const OLD_WA047_PatternMaker = defineOccupationCard({
     passing: false,
     implemented: true,
     artUrl: '/assets/classic/WA/WA047.png',
-    locales: {
-      zh: {
-        name: '模型制造商',
-        desc: ['每当其他玩家翻修房屋时，你可以花费2根木头来获得1份小麦+1份食物+1分。'],
-        prerequisite: '',
-      },
-    },
   },
   presentation: { counters: ['bonusVp'] },
   impl: cardImpl,

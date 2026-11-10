@@ -61,15 +61,6 @@ export const OLD_E47_LettucePatch = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E47.png',
-    locales: {
-      zh: {
-        name: '莴苣田',
-        desc: [
-          '此卡视为1块田地，但此卡只能种植蔬菜。从此卡上收割的每份蔬菜可以立即被转化成4份食物。',
-        ],
-        prerequisite: '职业×3',
-      },
-    },
   },
   presentation: { cardFields: true },
   impl: cardImpl,

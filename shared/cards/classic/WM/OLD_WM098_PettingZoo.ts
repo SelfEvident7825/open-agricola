@@ -20,14 +20,5 @@ export const OLD_WM098_PettingZoo = defineMinorCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/WM/WM098.png',
-    locales: {
-      zh: {
-        name: '迷你动物园',
-        desc: [
-          '游戏结束时，如果你拥有3种动物，(不包括卡牌动物)若你有至少2羊，额外获得1分；若你有至少2猪，额外获得1分。（可以分别/同时获得）',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

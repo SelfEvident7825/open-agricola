@@ -19,14 +19,5 @@ export const OLD_PI10_Professor = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/PI/PI10.png',
-    locales: {
-      zh: {
-        name: 'Professor',
-        desc: [
-          '打出此卡后，你必须将手中未打出的职业牌弃掉，并从牌库中随机抽7张，并可以支付2<FOOD>打出一张职业卡。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

@@ -19,14 +19,5 @@ export const OLD_PI07_MarriageCounselor = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/PI/PI07.png',
-    locales: {
-      zh: {
-        name: 'Marriage Counselor',
-        desc: [
-          '每回合开始时，如果有玩家的家庭成员比你多2名或以上，或所有其他玩家的家庭成员都比你多，你可以支付1<FOOD>并在本回合使用1名食客。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

@@ -38,13 +38,6 @@ export const OLD_WA024_SmokingMantlepiece = defineMinorCard({
     passing: false,
     implemented: true,
     artUrl: '/assets/classic/WA/WA024.png',
-    locales: {
-      zh: {
-        name: '壁炉台',
-        desc: ['打出此卡时，距离游戏结束每之后1个完整回合，你就获得1分，你无法再翻修你的房屋'],
-        prerequisite: '砖屋或石屋',
-      },
-    },
   },
   presentation: { counters: ['bonusVp'] },
   impl: cardImpl,

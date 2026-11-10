@@ -20,14 +20,5 @@ export const OLD_Z317_FamilyPortrait = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/Z/Z317.png',
-    locales: {
-      zh: {
-        name: '全家福',
-        desc: [
-          '你可以为你的每名家庭成员支付2份食物，然后你获得4分使用后请将此卡交给下家，此卡将加入他的手牌。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

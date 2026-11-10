@@ -43,13 +43,6 @@ export const OLD_K124_Yoke = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K124.png',
-    locales: {
-      zh: {
-        name: '轭具',
-        desc: ['打出此卡时，场上每有1个犁或I68耙，你就能立即犁1块田。'],
-        prerequisite: '牛×1',
-      },
-    },
   },
   impl: cardImpl,
 })

@@ -19,14 +19,5 @@ export const OLD_FL044_Returnee = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FL/FL044.png',
-    locales: {
-      zh: {
-        name: '海归',
-        desc: [
-          '每个工作阶段结束时，在你最后使用的行动格上从游戏供应区放置1份小麦。下一回合，如果你使用该行动格，你首先获得这份小麦，否则弃掉此小麦。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

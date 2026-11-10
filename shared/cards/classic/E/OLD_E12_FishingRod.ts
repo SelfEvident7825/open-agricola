@@ -37,13 +37,6 @@ export const OLD_E12_FishingRod = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E12.png',
-    locales: {
-      zh: {
-        name: '鱼竿',
-        desc: ['每当你使用钓鱼积累行动格时，额外获得1份食物。从第8回合起，改为额外获得2份食物。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

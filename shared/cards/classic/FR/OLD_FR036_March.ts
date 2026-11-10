@@ -16,12 +16,5 @@ export const OLD_FR036_March = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR036.png',
-    locales: {
-      zh: {
-        name: '三月',
-        desc: ['打出时你可以支付2只不同动物并犁2块田'],
-        prerequisite: '',
-      },
-    },
   },
 })

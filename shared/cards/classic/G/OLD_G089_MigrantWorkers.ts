@@ -21,12 +21,5 @@ export const OLD_G089_MigrantWorkers = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G089.png',
-    locales: {
-      zh: {
-        name: '流动工人',
-        desc: ['每次你使用临时工行动格后，你可以支付1份食物来犁一块田'],
-        prerequisite: '职业×1',
-      },
-    },
   },
 })

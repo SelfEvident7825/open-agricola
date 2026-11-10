@@ -43,13 +43,6 @@ export const OLD_I254_Groom = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I254.png',
-    locales: {
-      zh: {
-        name: '马夫',
-        desc: ['一旦你的房屋等级是石屋，你可以在每回合开始时花费1根木头来建造1个马厩。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

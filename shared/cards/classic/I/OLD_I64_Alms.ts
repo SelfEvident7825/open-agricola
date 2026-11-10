@@ -28,13 +28,6 @@ export const OLD_I64_Alms = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I64.png',
-    locales: {
-      zh: {
-        name: '救济品',
-        desc: ['立即获得与已过完整回合数相等的食物。使用后请将此卡交给下家，此卡将加入他的手牌。'],
-        prerequisite: '职业=0',
-      },
-    },
   },
   impl: cardImpl,
 })

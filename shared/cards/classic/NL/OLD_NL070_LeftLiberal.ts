@@ -17,12 +17,5 @@ export const OLD_NL070_LeftLiberal = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL070.png',
-    locales: {
-      zh: {
-        name: '左派自由主义者',
-        desc: ['当你使用游戏公共区域版图最左边的6个行动格时，你额外得到1根木头。'],
-        prerequisite: '',
-      },
-    },
   },
 })

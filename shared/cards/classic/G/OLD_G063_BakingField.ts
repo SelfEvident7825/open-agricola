@@ -19,12 +19,5 @@ export const OLD_G063_BakingField = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G063.png',
-    locales: {
-      zh: {
-        name: '烘焙田',
-        desc: ['你可以在此卡上播种小麦，此卡上收割的小麦必须立刻通过“烤面包”行动转化成食物。'],
-        prerequisite: '职业×2和烤面包发展卡',
-      },
-    },
   },
 })

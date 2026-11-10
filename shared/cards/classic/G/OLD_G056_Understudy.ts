@@ -19,14 +19,5 @@ export const OLD_G056_Understudy = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G056.png',
-    locales: {
-      zh: {
-        name: '替身演员',
-        desc: [
-          '如果某行动格上有且仅有一名你的家庭成员，你可以再派遣一名家庭成员去使用此行动格。（新生儿算作家庭成员）',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

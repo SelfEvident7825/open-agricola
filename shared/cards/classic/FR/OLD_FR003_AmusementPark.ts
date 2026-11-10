@@ -18,14 +18,5 @@ export const OLD_FR003_AmusementPark = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR003.png',
-    locales: {
-      zh: {
-        name: '游乐园',
-        desc: [
-          '如果你有1/2/3/4+个圈地，在接下来的2/3/4/5个回合行动格上各放置1份食物，这些回合开始时，你获得这份食物',
-        ],
-        prerequisite: '圈地×1',
-      },
-    },
   },
 })

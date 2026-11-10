@@ -18,12 +18,5 @@ export const OLD_Z324_Scarecrow = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/Z/Z324.png',
-    locales: {
-      zh: {
-        name: '稻草人',
-        desc: ['每当你播种时，你可以支付1根木头，然后在至多一块空田上播种2列小麦。'],
-        prerequisite: '空田×2',
-      },
-    },
   },
 })

@@ -37,15 +37,6 @@ export const OLD_FL019_LanternWonder = defineMinorCard({
     passing: false,
     implemented: true,
     artUrl: '/assets/classic/FL/FL019.png',
-    locales: {
-      zh: {
-        name: '灯笼奇观',
-        desc: [
-          '游戏结束时，你手中每剩1张卡牌便扣1分。无论如何，你都不能弃除手中的卡牌了。若你已通过某种方式弃除过卡牌，则不能打出此卡。',
-        ],
-        prerequisite: '职业=0',
-      },
-    },
   },
   impl: cardImpl,
 })

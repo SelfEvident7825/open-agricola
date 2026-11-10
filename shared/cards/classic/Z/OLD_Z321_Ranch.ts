@@ -50,13 +50,6 @@ export const OLD_Z321_Ranch = defineMinorCard({
     passing: false,
     implemented: true,
     artUrl: '/assets/classic/Z/Z321.png',
-    locales: {
-      zh: {
-        name: '大农庄',
-        desc: ['打出此卡时，距离游戏结束每剩1个完整回合，你便可获得1分+2份食物稻草人'],
-        prerequisite: '农场无空格',
-      },
-    },
   },
   presentation: { counters: ['bonusVp'] },
   impl: cardImpl,

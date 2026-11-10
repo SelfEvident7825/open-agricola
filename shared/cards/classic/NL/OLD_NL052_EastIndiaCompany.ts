@@ -22,14 +22,5 @@ export const OLD_NL052_EastIndiaCompany = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL052.png',
-    locales: {
-      zh: {
-        name: '东印度公司',
-        desc: [
-          '在此卡上放置1份小麦、蔬菜、羊、猪、牛、木、砖、芦苇和石头。接下来每回合翻开新的回合行动格前，你可以从此卡上随机拿取1份物品。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

@@ -32,13 +32,6 @@ export const OLD_E11_Field = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E11.png',
-    locales: {
-      zh: {
-        name: '走耕',
-        desc: ['立即犁1块田。使用后请将此卡交给下家，此卡将加入他的手牌。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

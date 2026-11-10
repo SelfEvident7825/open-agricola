@@ -21,14 +21,5 @@ export const OLD_FL002_BeguineCourtyard = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FL/FL002.png',
-    locales: {
-      zh: {
-        name: '比利时庭院',
-        desc: [
-          '一旦你的房子呈现出如下图的形状，你立即将供应区的所有家庭成员移入你的房子，并于本回合开始派遣(看作成年人)',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

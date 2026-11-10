@@ -19,14 +19,5 @@ export const OLD_FR111_SunFarmer = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR111.png',
-    locales: {
-      zh: {
-        name: '太阳农夫',
-        desc: [
-          '每当你使用小麦种子行动格时，你额外获得1只羊。每当你使用羊市场积累行动格时，你额外获得1份小麦。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

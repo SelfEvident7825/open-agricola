@@ -25,21 +25,6 @@ export const OLD_E20_SimpleFireplace = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E20.png',
-    locales: {
-      zh: {
-        name: '简易火炉',
-        desc: [
-          '任意时刻：',
-          '[<VEGETABLE> <ARROW> 2 <FOOD>]',
-          '[<PIG> <ARROW> 2 <FOOD>]',
-          '[<SHEEP> <ARROW> 1 <FOOD>]',
-          '[<CATTLE> <ARROW> 3 <FOOD>]',
-          '“烤面包”行动:',
-          '[<GRAIN> <ARROW> 2 <FOOD>]',
-        ],
-        prerequisite: '',
-      },
-    },
     isCookery: true,
     isBaking: true,
     fireplaceIdentity: true,

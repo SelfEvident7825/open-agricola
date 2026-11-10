@@ -55,15 +55,6 @@ export const OLD_I260_Taster = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I260.png',
-    locales: {
-      zh: {
-        name: '试味员',
-        desc: [
-          '每回合开始时，如果你不是起始玩家，你可以支付起始玩家1份食物并先于他派遣一名家庭成员。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

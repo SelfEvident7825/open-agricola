@@ -16,12 +16,5 @@ export const OLD_FL003_BelgianShepherd = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FL/FL003.png',
-    locales: {
-      zh: {
-        name: '比利时牧羊犬',
-        desc: ['你可以在至多1格空地上饲养2只羊，仍视作未使用。你的房屋里不能再饲养动物'],
-        prerequisite: '羊×1',
-      },
-    },
   },
 })

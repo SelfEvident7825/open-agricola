@@ -64,15 +64,6 @@ export const OLD_I229_Sycophant = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I229.png',
-    locales: {
-      zh: {
-        name: '谄言者',
-        desc: [
-          '每当其他玩家使用小麦种子行动格前，必须先支付给你1份食物，同时你从游戏供应区获得1份食物。每当你使用小麦种子行动格时，你额外获得1份食物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

@@ -74,13 +74,6 @@ export const OLD_I249_Puppeteer = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I249.png',
-    locales: {
-      zh: {
-        name: '木偶艺人',
-        desc: ['每当其他玩家使用卖艺积累行动格时，你可以支付1份食物来打出一张职业卡。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

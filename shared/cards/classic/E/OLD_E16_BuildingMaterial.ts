@@ -27,13 +27,6 @@ export const OLD_E16_BuildingMaterial = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E16.png',
-    locales: {
-      zh: {
-        name: '建筑材料',
-        desc: ['立即获得1木/1砖。使用后请将此卡交给下家，此卡将加入他的手牌。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

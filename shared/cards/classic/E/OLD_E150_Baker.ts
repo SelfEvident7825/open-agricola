@@ -43,13 +43,6 @@ export const OLD_E150_Baker = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E150.png',
-    locales: {
-      zh: {
-        name: '烘焙师',
-        desc: ['打出此卡时，以及每个丰收时节的喂养阶段开始时，你都可以获得1次“烤面包”行动。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

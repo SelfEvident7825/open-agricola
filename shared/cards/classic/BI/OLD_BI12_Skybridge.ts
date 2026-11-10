@@ -18,14 +18,5 @@ export const OLD_BI12_Skybridge = defineMinorCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/BI/BI12.png',
-    locales: {
-      zh: {
-        name: '天空桥',
-        desc: [
-          '打出此卡时，从个人供应区拿取石头，在每两个正交相邻的房屋之间的交界处放置至多1个。每次丰收时节的喂养阶段，每个这样的石头使你获得1份小麦。游戏结束时，每个这样的石头使你获得1分。(可以放置任意数量的石头)',
-        ],
-        prerequisite: '石屋阶段',
-      },
-    },
   },
 })

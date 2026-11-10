@@ -17,12 +17,5 @@ export const OLD_NL098_IceSkateSharpener = defineOccupationCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/NL/NL098.png',
-    locales: {
-      zh: {
-        name: '速滑冠军',
-        desc: ['每次丰收时节结束时，你可以支付1木+1食物来使用任意1个行动格而无需派遣家庭成员。'],
-        prerequisite: '',
-      },
-    },
   },
 })

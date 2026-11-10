@@ -17,12 +17,5 @@ export const OLD_G053_Stonepiler = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G053.png',
-    locales: {
-      zh: {
-        name: '石头堆砌工',
-        desc: ['每当你建造马厩或围栅栏时，可以用石头代替全部或部分木头，每个石头可代替2根木头。'],
-        prerequisite: '',
-      },
-    },
   },
 })

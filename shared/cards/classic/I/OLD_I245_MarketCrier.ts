@@ -60,15 +60,6 @@ export const OLD_I245_MarketCrier = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I245.png',
-    locales: {
-      zh: {
-        name: '叫卖贩',
-        desc: [
-          '每当你使用小麦种子行动格时，你可以选择额外获得1份小麦+1份蔬菜。若如此做，则其他玩家各获得1份小麦。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

@@ -54,13 +54,6 @@ export const OLD_K291_Lover = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K291.png',
-    locales: {
-      zh: {
-        name: '情圣',
-        desc: ['打出此卡时，必须立即支付4份食物来执行一次“生娃（无需空房间）”行动。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

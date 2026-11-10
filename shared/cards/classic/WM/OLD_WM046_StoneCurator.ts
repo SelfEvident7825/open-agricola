@@ -19,14 +19,5 @@ export const OLD_WM046_StoneCurator = defineOccupationCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/WM/WM046.png',
-    locales: {
-      zh: {
-        name: '石头馆长',
-        desc: [
-          '每当你使用石头积累行动格时，你额外获得1份食物。游戏结束时，你每有2间石屋/2张费用包含石头的发展卡，你都额外获得1分。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

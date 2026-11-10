@@ -17,14 +17,5 @@ export const OLD_G011_CarrotCakeBaker = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G011.png',
-    locales: {
-      zh: {
-        name: '胡萝卜烘焙师',
-        desc: [
-          '你可以随时将1份蔬菜转化为2份食物。每当你将蔬菜转换为食物时，你获得一次“烤面包”行动。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

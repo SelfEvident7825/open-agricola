@@ -24,14 +24,5 @@ export const OLD_G112_StoneCrane = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G112.png',
-    locales: {
-      zh: {
-        name: '石头吊车',
-        desc: [
-          '其他玩家每扩建1间房间/翻修时，你可以扩建1间房间/翻修，而且对于每间房和每次翻修你可以减少一个任意资源花费',
-        ],
-        prerequisite: '职业×2',
-      },
-    },
   },
 })

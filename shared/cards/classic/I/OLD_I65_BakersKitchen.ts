@@ -34,15 +34,6 @@ export const OLD_I65_BakersKitchen = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I65.png',
-    locales: {
-      zh: {
-        name: '烘焙厨房',
-        desc: [
-          '打出此卡时，你获得1次“烤面包”行动。每次你执行“烤面包”行动时，你可以将至多2份小麦各转换成5份食物。',
-        ],
-        prerequisite: '退还1个烤炉',
-      },
-    },
     returnCards: [
       'Major_ClayOven',
       'Major_StoneOven',

@@ -41,13 +41,6 @@ export const OLD_K292_MarketWoman = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K292.png',
-    locales: {
-      zh: {
-        name: '女商贩',
-        desc: ['每当你使用行动格或次要发展卡获得蔬菜时，你额外获得2份小麦。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

@@ -72,15 +72,6 @@ export const OLD_E15_BakingTray = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E15.png',
-    locales: {
-      zh: {
-        name: '烤盘',
-        desc: [
-          'A5砖造烤炉和A6石造烤炉对你来说是次要发展卡。当你打出A5砖造烤炉、A6石造烤炉、E27木造烤炉时，可以减少任意1个建筑资源花费。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

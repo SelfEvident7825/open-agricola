@@ -17,12 +17,5 @@ export const OLD_WA050_Priest = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WA/WA050.png',
-    locales: {
-      zh: {
-        name: '神父',
-        desc: ['打出此卡时，若你住在仅有2个房间的砖屋内，则你立即获得4砖头+3芦苇+2石头。'],
-        prerequisite: '',
-      },
-    },
   },
 })

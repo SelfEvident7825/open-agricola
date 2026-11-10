@@ -54,15 +54,6 @@ export const OLD_E46_SackCart = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E46.png',
-    locales: {
-      zh: {
-        name: '运粮推车',
-        desc: [
-          '打出此卡时，在第5,8,11,14回合行动格上各放1份小麦。这些回合开始时，你获得对应的小麦。',
-        ],
-        prerequisite: '职业×2',
-      },
-    },
   },
   impl: cardImpl,
 })

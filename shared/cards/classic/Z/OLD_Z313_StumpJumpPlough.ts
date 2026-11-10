@@ -20,14 +20,5 @@ export const OLD_Z313_StumpJumpPlough = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/Z/Z313.png',
-    locales: {
-      zh: {
-        name: '碟犁',
-        desc: [
-          '如果你不住在木屋，则每次你通过家庭成员执行行动获得木头时，你可以支付1份食物来犁一块田胸像',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

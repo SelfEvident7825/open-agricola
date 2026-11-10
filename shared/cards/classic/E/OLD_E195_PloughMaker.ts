@@ -56,13 +56,6 @@ export const OLD_E195_PloughMaker = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E195.png',
-    locales: {
-      zh: {
-        name: '制犁工',
-        desc: ['每当你使用犁田/粮食耕种[犁播]行动格时，你可以花费1份食物额外犁1块田。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

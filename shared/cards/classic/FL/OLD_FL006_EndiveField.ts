@@ -21,12 +21,5 @@ export const OLD_FL006_EndiveField = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FL/FL006.png',
-    locales: {
-      zh: {
-        name: '菊苣田',
-        desc: ['打出时获得1份蔬菜，在以丰收时节为结束的回合结束时，你可以在此卡上播种蔬菜'],
-        prerequisite: '职业×2',
-      },
-    },
   },
 })

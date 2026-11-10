@@ -23,14 +23,5 @@ export const OLD_C22_Bible = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/C/C22.png',
-    locales: {
-      zh: {
-        name: '圣经',
-        desc: [
-          '在丰收时节前的那一回合，你使用了犁田/粮食耕种[犁播]/小麦种子/蔬菜种子/临时工行动格的家庭成员，在这个丰收时节的喂养阶段可以少喂养1食物',
-        ],
-        prerequisite: '职业×1',
-      },
-    },
   },
 })

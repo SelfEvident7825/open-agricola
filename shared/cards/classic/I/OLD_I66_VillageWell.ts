@@ -37,15 +37,6 @@ export const OLD_I66_VillageWell = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I66.png',
-    locales: {
-      zh: {
-        name: '村中水井',
-        desc: [
-          '打出此卡时，在之后的3个回合行动格上各放1份食物。这些回合开始时，你获得对应的食物。井：A10水井、I66村中水井、WM062后院水井、WA019绵羊井、WA020人工水井、NL042提水井。（本卡牌可算作1张次发/1张主发，但只算作1张发展卡。例：FR014巧克力、G004学徒工）草莓园',
-        ],
-        prerequisite: '退还1个井',
-      },
-    },
     returnCards: [
       'Major_Well',
       'OLD_WM062_BackyardWell',

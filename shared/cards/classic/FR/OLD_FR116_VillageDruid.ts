@@ -17,12 +17,5 @@ export const OLD_FR116_VillageDruid = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR116.png',
-    locales: {
-      zh: {
-        name: '橡木贤者',
-        desc: ['每当你打出1张职业卡后，你获得1只羊。(不包括此卡)'],
-        prerequisite: '',
-      },
-    },
   },
 })

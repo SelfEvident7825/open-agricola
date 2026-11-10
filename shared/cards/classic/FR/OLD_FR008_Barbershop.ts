@@ -19,12 +19,5 @@ export const OLD_FR008_Barbershop = defineMinorCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/FR/FR008.png',
-    locales: {
-      zh: {
-        name: '理发店',
-        desc: ['打出时获得等同于之后完整丰收时节数的分数'],
-        prerequisite: '',
-      },
-    },
   },
 })

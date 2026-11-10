@@ -20,14 +20,5 @@ export const OLD_Z323_GiantPumpkin = defineMinorCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/Z/Z323.png',
-    locales: {
-      zh: {
-        name: '巨无霸南瓜',
-        desc: [
-          '将1份蔬菜支付到此卡上。任意时刻，你可以将该蔬菜转化为食物。游戏结束时，如果此卡上有蔬菜，则你获得2分(该蔬菜参与计分)',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

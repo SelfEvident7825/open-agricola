@@ -20,14 +20,5 @@ export const OLD_FR027_GroundPickaxePlow = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR027.png',
-    locales: {
-      zh: {
-        name: '界镐犁',
-        desc: [
-          '限1次：当你使用犁田/粮食耕种[犁播]行动格时，你可以从你的供应区拿取木头，放在1/2个与该行动格正交相邻的行动格上各1个，然后额外犁1/2块田。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

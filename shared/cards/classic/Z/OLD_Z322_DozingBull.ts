@@ -16,12 +16,5 @@ export const OLD_Z322_DozingBull = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/Z/Z322.png',
-    locales: {
-      zh: {
-        name: '斗牛',
-        desc: ['如果你有至少1只牛，则在任意时刻，你可以重新布置你的栅栏'],
-        prerequisite: '',
-      },
-    },
   },
 })

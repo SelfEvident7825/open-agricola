@@ -49,15 +49,6 @@ export const OLD_E31_CarpPond = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E31.png',
-    locales: {
-      zh: {
-        name: '鲤鱼池',
-        desc: [
-          '打出此卡时，在之后的每个奇数回合行动格上各放1份食物。这些回合开始时，你获得对应的食物。',
-        ],
-        prerequisite: '职业×1+发展卡×2',
-      },
-    },
   },
   impl: cardImpl,
 })

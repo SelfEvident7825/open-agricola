@@ -17,12 +17,5 @@ export const OLD_G059_Wheedler = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G059.png',
-    locales: {
-      zh: {
-        name: '吹牛的骗子',
-        desc: ['每当你从行动格上获得食物时，可以额外获得1份食物。（通过卡牌获得的食物不算）'],
-        prerequisite: '',
-      },
-    },
   },
 })

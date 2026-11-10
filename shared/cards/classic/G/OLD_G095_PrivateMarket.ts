@@ -19,12 +19,5 @@ export const OLD_G095_PrivateMarket = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G095.png',
-    locales: {
-      zh: {
-        name: '私立市场',
-        desc: ['每回合限1次：你可以支付2份食物购买任意一个建筑资源'],
-        prerequisite: '',
-      },
-    },
   },
 })

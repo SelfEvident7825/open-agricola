@@ -35,13 +35,6 @@ export const OLD_E55_StoneHouseExtension = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E55.png',
-    locales: {
-      zh: {
-        name: '扩建石屋',
-        desc: ['立即免费扩建1间石屋。使用后请将此卡交给下家，此卡将加入他的手牌。'],
-        prerequisite: '石屋阶段',
-      },
-    },
   },
   impl: cardImpl,
 })

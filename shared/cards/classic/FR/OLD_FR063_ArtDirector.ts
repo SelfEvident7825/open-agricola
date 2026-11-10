@@ -17,12 +17,5 @@ export const OLD_FR063_ArtDirector = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR063.png',
-    locales: {
-      zh: {
-        name: '艺术总监',
-        desc: ['每当你使用卖艺积累行动格时，你额外获得1份食物+1个任意建筑资源。'],
-        prerequisite: '',
-      },
-    },
   },
 })

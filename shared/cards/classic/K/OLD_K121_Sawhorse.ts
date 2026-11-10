@@ -89,13 +89,6 @@ export const OLD_K121_Sawhorse = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K121.png',
-    locales: {
-      zh: {
-        name: '锯木架',
-        desc: ['你的下1个马厩和第3、6、9、12、15根栅栏可以免费建造。（需满足围建栅栏的一般规则）'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

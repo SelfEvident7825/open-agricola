@@ -64,15 +64,6 @@ export const OLD_K273_BasinMaker = defineOccupationCard({
     extraVp: true,
     implemented: true,
     artUrl: '/assets/classic/K/K273.png',
-    locales: {
-      zh: {
-        name: '制盆工',
-        desc: [
-          '每当你把猪转化为食物时，对于每只猪，你可以将你的2根木头放在此卡上。游戏结束时，除了第1、4、7、10根木头，此卡上的每根木头都使你额外获得1分。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

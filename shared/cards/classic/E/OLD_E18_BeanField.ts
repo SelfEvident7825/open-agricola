@@ -32,13 +32,6 @@ export const OLD_E18_BeanField = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E18.png',
-    locales: {
-      zh: {
-        name: '豆田',
-        desc: ['此卡视为1块田地，但此卡只能种植蔬菜。'],
-        prerequisite: '职业×2',
-      },
-    },
   },
   presentation: { cardFields: true },
   impl: cardImpl,

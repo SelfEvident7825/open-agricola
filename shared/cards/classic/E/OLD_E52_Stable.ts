@@ -41,13 +41,6 @@ export const OLD_E52_Stable = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E52.png',
-    locales: {
-      zh: {
-        name: '小马厩',
-        desc: ['立即免费建造1个马厩。使用后请将此卡交给下家，此卡将加入他的手牌。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

@@ -20,14 +20,5 @@ export const OLD_G079_Hammer = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G079.png',
-    locales: {
-      zh: {
-        name: '锤子',
-        desc: [
-          '打出时你必须向其他每个至少建造了1个栅栏的玩家支付1木头，然后获得一次“围栅栏”行动使用后请将此卡交给下家，此卡将加入他的手牌。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

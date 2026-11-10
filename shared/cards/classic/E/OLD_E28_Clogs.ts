@@ -26,13 +26,6 @@ export const OLD_E28_Clogs = defineMinorCard({
     extraVp: true,
     implemented: true,
     artUrl: '/assets/classic/E/E28.png',
-    locales: {
-      zh: {
-        name: '木靴',
-        desc: ['游戏结束时，如果你的房屋等级是砖屋/石屋，你便额外获得1/2分。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

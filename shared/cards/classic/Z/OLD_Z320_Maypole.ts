@@ -23,14 +23,5 @@ export const OLD_Z320_Maypole = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/Z/Z320.png',
-    locales: {
-      zh: {
-        name: '五朔节花柱',
-        desc: [
-          '此卡只能在第四回合结束前打出。在你的一个空格上立直一根你供应区的栅栏。直到游戏结束，如果你自己没有弄倒过这根栅栏，则你获得2分(该格视为已使用)',
-        ],
-        prerequisite: '职业×2',
-      },
-    },
   },
 })

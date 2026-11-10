@@ -23,14 +23,5 @@ export const OLD_NL036_SingleSidedPlow = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL036.png',
-    locales: {
-      zh: {
-        name: '单面犁',
-        desc: [
-          '放置1块田在此卡上，每当你使用犁田行动格时，你可以用此卡上的田地来额外犁1块田，若如此做，你可以立即在这个田上播种蔬菜',
-        ],
-        prerequisite: '职业×2',
-      },
-    },
   },
 })

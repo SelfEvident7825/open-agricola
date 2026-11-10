@@ -123,15 +123,6 @@ export const OLD_I236_HideFarmer = defineOccupationCard({
     extraVp: true,
     implemented: true,
     artUrl: '/assets/classic/I/I236.png',
-    locales: {
-      zh: {
-        name: '贫农',
-        desc: [
-          '游戏结束时，你可为你农场中任意数量的未使用的空格分别支付1份食物，你不会因为这些空格而损失分数。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

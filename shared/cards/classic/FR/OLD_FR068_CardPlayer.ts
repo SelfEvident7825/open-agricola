@@ -19,14 +19,5 @@ export const OLD_FR068_CardPlayer = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR068.png',
-    locales: {
-      zh: {
-        name: '卡牌玩家',
-        desc: [
-          '打出此卡时，从游戏供应区按右图所示拿取物品排列于此卡上。每回合结束时，将最上面的资源移到最下面。每当你获得此卡最上面/最下面的资源时，你额外获得1个/退还1个到游戏供应区。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

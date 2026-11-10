@@ -19,12 +19,5 @@ export const OLD_O15_FarmersBall = defineMinorCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/O/O15.png',
-    locales: {
-      zh: {
-        name: '乡村舞会',
-        desc: ['打出此卡时，所有玩家都可以选择支付5份食物并获得3分'],
-        prerequisite: '3职业',
-      },
-    },
   },
 })

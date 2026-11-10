@@ -21,12 +21,5 @@ export const OLD_FR053_TriptotheLake = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR053.png',
-    locales: {
-      zh: {
-        name: '散步湖畔',
-        desc: ['每当你使用钓鱼积累行动格时，你额外获得1根木头+1份食物'],
-        prerequisite: '职业×2',
-      },
-    },
   },
 })

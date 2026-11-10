@@ -19,14 +19,5 @@ export const OLD_NL071_Maidservant = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL071.png',
-    locales: {
-      zh: {
-        name: '女佣',
-        desc: [
-          '当你执行钓鱼积累行动格或与其正交相邻的行动格(临时工、芦苇滩、第4回合行动格)时，对于占据的这四格中每有1名工人(任意玩家，包括食客)，你都额外获得1份食物。(扣除你刚放置的家庭成员)',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

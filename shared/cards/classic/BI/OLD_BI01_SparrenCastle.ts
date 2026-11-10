@@ -25,14 +25,5 @@ export const OLD_BI01_SparrenCastle = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/BI/BI01.png',
-    locales: {
-      zh: {
-        name: '施帕仁堡',
-        desc: [
-          '每当任意玩家使用木头/石头积累行动格时，从游戏供应区放置1木头/1石头到此卡上。每当你使用提供“翻修”行动的行动格前，你可以将此卡上至多5个资源放入个人供应区。游戏结束计分前，移除此卡上的所有资源。',
-        ],
-        prerequisite: '职业×2',
-      },
-    },
   },
 })

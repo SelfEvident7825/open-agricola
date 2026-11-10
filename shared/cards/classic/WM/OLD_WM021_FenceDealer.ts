@@ -17,12 +17,5 @@ export const OLD_WM021_FenceDealer = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM021.png',
-    locales: {
-      zh: {
-        name: '栅栏商',
-        desc: ['你只能围建12根栅栏。每次你围建栅栏时，你每支付1根木头就可以围建2根栅栏。'],
-        prerequisite: '',
-      },
-    },
   },
 })

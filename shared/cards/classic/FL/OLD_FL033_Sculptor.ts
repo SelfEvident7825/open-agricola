@@ -17,12 +17,5 @@ export const OLD_FL033_Sculptor = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FL/FL033.png',
-    locales: {
-      zh: {
-        name: '雕刻家',
-        desc: ['每当你从积累行动格上只获得了砖头和/或石头时，你额外获得1份食物。'],
-        prerequisite: '',
-      },
-    },
   },
 })

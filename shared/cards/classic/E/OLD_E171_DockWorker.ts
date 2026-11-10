@@ -18,15 +18,6 @@ export const OLD_E171_DockWorker = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E171.png',
-    locales: {
-      zh: {
-        name: '码头工人',
-        desc: [
-          '任意时刻，你可以将3根木头转化为1砖/1芦苇/1石头，或者将2砖/2芦苇/2石头转化为1个其他建筑资源。',
-        ],
-        prerequisite: '',
-      },
-    },
     exchanges: [
       {
         from: {

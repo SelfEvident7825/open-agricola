@@ -19,14 +19,5 @@ export const OLD_O05_LovableVagebond = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/O/O05.png',
-    locales: {
-      zh: {
-        name: '迷人的流浪汉',
-        desc: [
-          '每个丰收时节的喂养阶段，如果你因为没有食物而要领取至少1张乞讨卡时，你少领取1张乞讨卡。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

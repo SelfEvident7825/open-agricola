@@ -66,15 +66,6 @@ export const OLD_E190_Maid = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E190.png',
-    locales: {
-      zh: {
-        name: '女仆',
-        desc: [
-          '限一次：一旦你的房屋等级是砖屋/石屋，在之后每回合的行动格上各放1份食物。这些回合开始时，你获得对应的食物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

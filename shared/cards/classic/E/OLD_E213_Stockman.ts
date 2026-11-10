@@ -49,15 +49,6 @@ export const OLD_E213_Stockman = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E213.png',
-    locales: {
-      zh: {
-        name: '牲畜饲养员',
-        desc: [
-          '打出此卡后，每当你建造了第2/3/4个马厩时，你立即获得1头牛/1头猪/1只羊。动物可以立即被转换成食物，即使你没有饲养空间。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

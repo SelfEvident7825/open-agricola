@@ -19,14 +19,5 @@ export const OLD_G023_Glutton = defineOccupationCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/G/G023.png',
-    locales: {
-      zh: {
-        name: '贪吃鬼',
-        desc: [
-          '丰每个收时节的家庭成员喂养阶段，你可以额外支付3份食物获得1分。你可以用此卡至多获得6分。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

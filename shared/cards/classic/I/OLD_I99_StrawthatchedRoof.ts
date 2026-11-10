@@ -31,15 +31,6 @@ export const OLD_I99_StrawthatchedRoof = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I99.png',
-    locales: {
-      zh: {
-        name: '麦造屋顶',
-        desc: [
-          '从现在起，你建造房屋和翻修房屋时都不再需要芦苇了。此卡牌打出条件“麦田×3”包括卡牌田。',
-        ],
-        prerequisite: '麦田×3',
-      },
-    },
   },
   impl: cardImpl,
 })

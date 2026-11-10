@@ -54,15 +54,6 @@ export const OLD_K342_AnimalTrainer = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K342.png',
-    locales: {
-      zh: {
-        name: '马戏驯兽师',
-        desc: [
-          '每当你使用卖艺积累行动格时，你可以使用上面的食物购买动物，羊/猪/牛分别花费2/2/3份食物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

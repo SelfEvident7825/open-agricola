@@ -79,15 +79,6 @@ export const OLD_K118_LiquidManure = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K118.png',
-    locales: {
-      zh: {
-        name: '水肥',
-        desc: [
-          '每当你执行"播种"行动时，在此次播种的田地上每列物品可以额外放置1份对应的物品。注：对任意播种资源和卡牌田有效。例：K278护林人、I78木头地、K105一亩田、Ö21葡萄园、WM104芦苇地此卡牌打出条件"动物×4"不包括卡牌动物。',
-        ],
-        prerequisite: '动物×4',
-      },
-    },
   },
   impl: cardImpl,
 })

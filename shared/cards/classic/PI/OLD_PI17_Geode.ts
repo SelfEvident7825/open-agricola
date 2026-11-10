@@ -20,14 +20,5 @@ export const OLD_PI17_Geode = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/PI/PI17.png',
-    locales: {
-      zh: {
-        name: 'Wood Saw',
-        desc: [
-          'Each time all other players have more people than you, you can take a __Build Rooms__ action without placing a person.',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

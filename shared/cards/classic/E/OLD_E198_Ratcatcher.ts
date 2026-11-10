@@ -41,15 +41,6 @@ export const OLD_E198_Ratcatcher = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E198.png',
-    locales: {
-      zh: {
-        name: '捕鼠人',
-        desc: [
-          '此卡只能在第九回合结束前打出。在第10和第12回合，所有其他玩家必须少派遣1名家庭成员的后代。(指第3、4、5名家庭成员)',
-        ],
-        prerequisite: '',
-      },
-    },
     maxRound: 9,
   },
   presentation: { heldWorker: true },

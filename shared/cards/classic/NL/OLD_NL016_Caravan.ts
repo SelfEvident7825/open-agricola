@@ -18,12 +18,5 @@ export const OLD_NL016_Caravan = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL016.png',
-    locales: {
-      zh: {
-        name: '房车',
-        desc: ['此卡可以为1名家庭成员提供居住空间'],
-        prerequisite: '',
-      },
-    },
   },
 })

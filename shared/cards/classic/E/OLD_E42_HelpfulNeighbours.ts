@@ -27,13 +27,6 @@ export const OLD_E42_HelpfulNeighbours = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E42.png',
-    locales: {
-      zh: {
-        name: '邻里互助',
-        desc: ['立即获得1芦苇/1石头。使用后请将此卡交给下家，此卡将加入他的手牌。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

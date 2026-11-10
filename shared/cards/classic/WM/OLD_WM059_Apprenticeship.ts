@@ -20,14 +20,5 @@ export const OLD_WM059_Apprenticeship = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM059.png',
-    locales: {
-      zh: {
-        name: '实习签约',
-        desc: [
-          '如果你的职业数量比其他玩家都少，则你可以立即打出一张职业卡。使用后请将此卡交给下家，此卡将加入他的手牌。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

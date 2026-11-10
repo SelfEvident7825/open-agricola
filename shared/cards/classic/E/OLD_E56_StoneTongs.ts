@@ -46,13 +46,6 @@ export const OLD_E56_StoneTongs = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E56.png',
-    locales: {
-      zh: {
-        name: '夹石钳',
-        desc: ['每当你使用石头积累行动格时，额外获得1个石头。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

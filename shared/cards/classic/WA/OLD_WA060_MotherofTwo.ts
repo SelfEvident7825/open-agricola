@@ -19,14 +19,5 @@ export const OLD_WA060_MotherofTwo = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WA/WA060.png',
-    locales: {
-      zh: {
-        name: '二胎母亲',
-        desc: [
-          '每个工作阶段，如果你有恰好4名家庭成员，则你可以将第二名家庭成员派遣到两个相邻的未被占用的1至7回合行动格之间，视为同时占用两格并以任意顺序执行。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

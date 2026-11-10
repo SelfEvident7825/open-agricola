@@ -33,15 +33,6 @@ export const OLD_E27_WoodredOven = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E27.png',
-    locales: {
-      zh: {
-        name: '木造烤炉',
-        desc: [
-          '打出此卡时，你获得1次“烤面包”行动。每次你执行“烤面包”行动时，你可以将任意数量的小麦各转换成3份食物。',
-        ],
-        prerequisite: '',
-      },
-    },
     isBaking: true,
     ovenIdentity: true,
     exchanges: [

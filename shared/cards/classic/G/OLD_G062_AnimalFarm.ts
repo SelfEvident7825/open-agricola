@@ -20,14 +20,5 @@ export const OLD_G062_AnimalFarm = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G062.png',
-    locales: {
-      zh: {
-        name: '动物农场',
-        desc: [
-          '每回合限1次：那你可以支付1只任意动物获得1个食客，你可以在本回合中派遣该食客，回合结束退还至游戏供应区。',
-        ],
-        prerequisite: '2种动物',
-      },
-    },
   },
 })

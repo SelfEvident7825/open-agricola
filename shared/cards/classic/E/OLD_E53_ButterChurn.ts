@@ -36,15 +36,6 @@ export const OLD_E53_ButterChurn = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E53.png',
-    locales: {
-      zh: {
-        name: '黄油桶',
-        desc: [
-          '每个丰收时节的收割阶段，你每拥有3只羊/2头牛，便可额外获得1份食物。(卡牌提供的“收割阶段”不算，如：I92肥料)',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

@@ -19,14 +19,5 @@ export const OLD_FR103_Prosecutor = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR103.png',
-    locales: {
-      zh: {
-        name: '检察官',
-        desc: [
-          '每当你打出发展卡前，如果你打出的发展卡数量比2/3/4位其他玩家少，那么你打出发展卡时可以少支付1/2/3个任意建筑资源。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

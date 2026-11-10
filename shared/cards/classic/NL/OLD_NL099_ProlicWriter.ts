@@ -19,14 +19,5 @@ export const OLD_NL099_ProlicWriter = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL099.png',
-    locales: {
-      zh: {
-        name: '多产作家',
-        desc: [
-          '打出此卡前，你获得2食物。每回合返家阶段，你必须从本回合打出过卡牌(职业卡、主发卡、次发卡)的玩家中选择1位(可以是自己)，获得1食物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

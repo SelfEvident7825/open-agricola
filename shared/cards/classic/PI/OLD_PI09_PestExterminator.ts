@@ -19,14 +19,5 @@ export const OLD_PI09_PestExterminator = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/PI/PI09.png',
-    locales: {
-      zh: {
-        name: 'Blackberry Farmer',
-        desc: [
-          'Each time you build fences, place 1 <FOOD> on each remaining round space, up to the number of fences just built. At the start of these rounds, you get the <FOOD>.',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

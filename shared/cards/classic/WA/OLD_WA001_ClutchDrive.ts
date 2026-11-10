@@ -21,12 +21,5 @@ export const OLD_WA001_ClutchDrive = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WA/WA001.png',
-    locales: {
-      zh: {
-        name: '离合器',
-        desc: ['每当你使用回合行动格的数量等于你个人供应区的木头数量后，你额外获得1根木头。'],
-        prerequisite: '职业×1',
-      },
-    },
   },
 })

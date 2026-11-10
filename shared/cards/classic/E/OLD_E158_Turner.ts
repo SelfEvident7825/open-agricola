@@ -16,13 +16,6 @@ export const OLD_E158_Turner = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E158.png',
-    locales: {
-      zh: {
-        name: '车工',
-        desc: ['任意时刻，你可以将1个木头转化成1份食物。'],
-        prerequisite: '',
-      },
-    },
     exchanges: [
       {
         from: {

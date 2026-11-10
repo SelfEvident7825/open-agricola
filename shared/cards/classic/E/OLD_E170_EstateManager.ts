@@ -33,15 +33,6 @@ export const OLD_E170_EstateManager = defineOccupationCard({
     extraVp: true,
     implemented: true,
     artUrl: '/assets/classic/E/E170.png',
-    locales: {
-      zh: {
-        name: '地产管理人',
-        desc: [
-          '游戏结束时，如果你三种动物都是数量最多（或者同时最多）的，在3/4/5+人游戏中额外获得2/3/4分。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

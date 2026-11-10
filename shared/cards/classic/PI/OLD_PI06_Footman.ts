@@ -19,14 +19,5 @@ export const OLD_PI06_Footman = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/PI/PI06.png',
-    locales: {
-      zh: {
-        name: 'Pioneer',
-        desc: [
-          'When you play this card and each time before you use the most recent action space card, you get 1 building resource of your choice and 1 <FOOD>.',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

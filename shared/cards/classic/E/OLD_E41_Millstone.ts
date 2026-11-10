@@ -34,13 +34,6 @@ export const OLD_E41_Millstone = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E41.png',
-    locales: {
-      zh: {
-        name: '磨盘',
-        desc: ['每次你执行“烤面包”行动时，额外获得2份食物。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

@@ -17,12 +17,5 @@ export const OLD_NL063_Excavator = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL063.png',
-    locales: {
-      zh: {
-        name: '挖掘工',
-        desc: ['每当你使用临时工行动格时，你额外获得1根木头+1块砖头。'],
-        prerequisite: '',
-      },
-    },
   },
 })

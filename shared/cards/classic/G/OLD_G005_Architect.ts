@@ -17,12 +17,5 @@ export const OLD_G005_Architect = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G005.png',
-    locales: {
-      zh: {
-        name: '建筑设计师',
-        desc: ['打出此卡后，你每建造1间房屋便获得2份食物，你每建造1个马厩便获得1份食物。'],
-        prerequisite: '',
-      },
-    },
   },
 })

@@ -17,12 +17,5 @@ export const OLD_G021_Hermit = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G021.png',
-    locales: {
-      zh: {
-        name: '隐士',
-        desc: ['游戏结束时，若你面前有且仅有这一张职业卡，你获得6分。'],
-        prerequisite: '',
-      },
-    },
   },
 })

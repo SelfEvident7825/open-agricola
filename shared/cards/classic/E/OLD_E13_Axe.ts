@@ -37,13 +37,6 @@ export const OLD_E13_Axe = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E13.png',
-    locales: {
-      zh: {
-        name: '斧头',
-        desc: ['你建造每间木屋只需花费2根木头和2捆芦苇。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

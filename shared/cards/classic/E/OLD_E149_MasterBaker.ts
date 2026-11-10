@@ -65,15 +65,6 @@ export const OLD_E149_MasterBaker = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E149.png',
-    locales: {
-      zh: {
-        name: '高级烘焙师',
-        desc: [
-          '每当有其他玩家执行"烤面包"行动时，如果你有<BAKE>符号发展卡，你获得1次"烤面包"行动。如果你自己执行了1次"烤面包"行动（没有使用此卡），你额外获得1份食物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

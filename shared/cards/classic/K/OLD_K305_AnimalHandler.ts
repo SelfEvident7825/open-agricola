@@ -51,15 +51,6 @@ export const OLD_K305_AnimalHandler = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K305.png',
-    locales: {
-      zh: {
-        name: '动物驯养员',
-        desc: [
-          '在第7、10、14回合的行动格上依次放置1只羊、1只猪和1头牛。这些回合开始时，你可以支付1份食物购买对应的动物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

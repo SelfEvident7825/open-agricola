@@ -42,15 +42,6 @@ export const OLD_NL117_Overwinterer = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/NL/NL117.png',
-    locales: {
-      zh: {
-        name: '冬季看守',
-        desc: [
-          '打出此卡时，你获得1份小麦。在每个丰收时节结束时，你可以支付2份食物来购买至多1份蔬菜。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

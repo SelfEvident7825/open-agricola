@@ -19,14 +19,5 @@ export const OLD_G057_Vegetarian = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G057.png',
-    locales: {
-      zh: {
-        name: '素食主义者',
-        desc: [
-          '打出此卡后，你再也不能将动物转换成食物。当你转换小麦或蔬菜成为食物时（包括直接食用），可以额外获得1份食物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

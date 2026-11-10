@@ -36,13 +36,6 @@ export const OLD_I95_FishTrap = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I95.png',
-    locales: {
-      zh: {
-        name: '鱼篓',
-        desc: ['每当你使用钓鱼积累行动格或从行动格上获得芦苇时，额外获得1份食物。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

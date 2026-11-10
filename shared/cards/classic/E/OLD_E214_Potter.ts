@@ -16,13 +16,6 @@ export const OLD_E214_Potter = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E214.png',
-    locales: {
-      zh: {
-        name: '制陶工',
-        desc: ['每个丰收时节，你可以将至多1块砖头转化为2份食物。'],
-        prerequisite: '',
-      },
-    },
     exchanges: [
       {
         from: {

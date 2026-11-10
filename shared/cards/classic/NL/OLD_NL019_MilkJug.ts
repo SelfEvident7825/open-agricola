@@ -66,15 +66,6 @@ export const OLD_NL019_MilkJug = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/NL/NL019.png',
-    locales: {
-      zh: {
-        name: '牛奶罐',
-        desc: [
-          '每当任意玩家（包括你）使用牛市场积累行动格时，你获得3份食物，而其他每位玩家各获得1份食物',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

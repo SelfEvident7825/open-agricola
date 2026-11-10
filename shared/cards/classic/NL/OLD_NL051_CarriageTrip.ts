@@ -16,12 +16,5 @@ export const OLD_NL051_CarriageTrip = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL051.png',
-    locales: {
-      zh: {
-        name: '马车之旅',
-        desc: ['立即派遣一位你的家庭成员。使用后请将此卡交给下家，此卡将加入他的手牌。'],
-        prerequisite: '工作阶段 家中有人',
-      },
-    },
   },
 })

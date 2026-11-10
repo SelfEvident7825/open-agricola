@@ -51,15 +51,6 @@ export const OLD_E196_MushroomCollector = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E196.png',
-    locales: {
-      zh: {
-        name: '采菇人',
-        desc: [
-          '每当你使用木头积累行动格后，你可以立即将1根木头转换成2份食物。若你如此做，将那根木头放在你所使用的积累行动格上。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

@@ -19,14 +19,5 @@ export const OLD_PI04_ChiselMaker = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/PI/PI04.png',
-    locales: {
-      zh: {
-        name: 'Wolf',
-        desc: [
-          'Pile (from bottom to top) 1 <CLAY>, 1 <WOOD>, and 1 <GRAIN> on this card. Each time you get a good matching the top item, you can move that item to your supply and get 1 <PIG>.',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

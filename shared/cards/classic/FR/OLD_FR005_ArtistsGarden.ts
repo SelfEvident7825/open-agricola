@@ -19,12 +19,5 @@ export const OLD_FR005_ArtistsGarden = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR005.png',
-    locales: {
-      zh: {
-        name: '艺术花园',
-        desc: ['在每回合的回家阶段，你可以对每块田进行一次收割'],
-        prerequisite: '职业×3',
-      },
-    },
   },
 })

@@ -20,14 +20,5 @@ export const OLD_FR006_Badger = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR006.png',
-    locales: {
-      zh: {
-        name: '獾',
-        desc: [
-          '立即在一个非额外行动格上放置一个标记，每回合开始时，你必须将此标记移动到一个正交相邻的行动格，任意玩家使用此行动格前获得1份食物',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

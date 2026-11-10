@@ -17,12 +17,5 @@ export const OLD_WM001_Amazon = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM001.png',
-    locales: {
-      zh: {
-        name: '女战士',
-        desc: ['每当你在第7/9/11/13回合使用钓鱼积累行动格时，你额外获得任意1只动物。'],
-        prerequisite: '',
-      },
-    },
   },
 })

@@ -19,14 +19,5 @@ export const OLD_FR084_GrainSpeculator = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR084.png',
-    locales: {
-      zh: {
-        name: '小麦投资商',
-        desc: [
-          '将当前回合数加1，3和5，在这些回合的行动格上各放置1份小麦。这些回合开始时，你获得这份小麦。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

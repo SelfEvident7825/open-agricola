@@ -20,14 +20,5 @@ export const OLD_C18_HopField = defineMinorCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/C/C18.png',
-    locales: {
-      zh: {
-        name: '啤酒花田',
-        desc: [
-          '立即支付1至4根木头，获得等量的食物，并将对应数量的栅栏条放到1块空田上(视为已播种)。游戏结束时，每根这样的栅栏使你获得1分',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

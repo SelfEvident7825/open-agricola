@@ -23,14 +23,5 @@ export const OLD_G107_SheepMarket = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G107.png',
-    locales: {
-      zh: {
-        name: '羊市场',
-        desc: [
-          '每个丰收时节开始时，你可以把至多1个小麦或1个蔬菜换成1只羊，或者把至多1只羊换成1个小麦或1个蔬菜',
-        ],
-        prerequisite: '职业×1',
-      },
-    },
   },
 })

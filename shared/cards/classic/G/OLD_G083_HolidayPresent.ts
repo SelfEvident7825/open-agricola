@@ -18,14 +18,5 @@ export const OLD_G083_HolidayPresent = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G083.png',
-    locales: {
-      zh: {
-        name: '节日礼物',
-        desc: [
-          '选择立即弃掉1张乞讨卡，或立即获得1只动物。使用后请将此卡交给下家，此卡将加入他的手牌。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

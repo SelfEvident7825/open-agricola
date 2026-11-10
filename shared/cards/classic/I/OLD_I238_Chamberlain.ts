@@ -37,15 +37,6 @@ export const OLD_I238_Chamberlain = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I238.png',
-    locales: {
-      zh: {
-        name: '内侍',
-        desc: [
-          '在第11回合开始时（如果在11回合后打出，则改为打出时），翻开剩下的回合行动格。只有你能使用这些行动格，其他玩家必须等到对应回合才能使用。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

@@ -17,12 +17,5 @@ export const OLD_G025_Businesswoman = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G025.png',
-    locales: {
-      zh: {
-        name: '女商人',
-        desc: ['打出此卡时，你可以立即打出至多两张发展卡。(需满足条件并正常支付费用)'],
-        prerequisite: '',
-      },
-    },
   },
 })

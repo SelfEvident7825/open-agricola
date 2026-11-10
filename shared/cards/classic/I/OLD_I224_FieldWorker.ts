@@ -44,13 +44,6 @@ export const OLD_I224_FieldWorker = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I224.png',
-    locales: {
-      zh: {
-        name: '种田工',
-        desc: ['在3/4+人游戏中，每当其他玩家播种了至少1块田时，你获得1份小麦/食物。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

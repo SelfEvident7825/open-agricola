@@ -61,15 +61,6 @@ export const OLD_E156_BrushMaker = defineOccupationCard({
     extraVp: true,
     implemented: true,
     artUrl: '/assets/classic/E/E156.png',
-    locales: {
-      zh: {
-        name: '制刷工',
-        desc: [
-          '每当你将猪转换成食物，就把转化的猪放在此卡上。游戏结束时，如果此卡上有2/3/4+头猪，额外获得1/2/3分。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   presentation: { counters: ['cookedBoar'] },
   impl: cardImpl,

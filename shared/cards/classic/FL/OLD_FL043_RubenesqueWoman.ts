@@ -19,14 +19,5 @@ export const OLD_FL043_RubenesqueWoman = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FL/FL043.png',
-    locales: {
-      zh: {
-        name: '玛丽·德·美第奇',
-        desc: [
-          '每回合，当你派遣你的第2名家庭成员去使用一个积累行动格时，你额外获得1份对应资源。每个丰收时节的喂养阶段，你必须额外支付1份食物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

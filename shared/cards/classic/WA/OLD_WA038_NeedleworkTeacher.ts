@@ -19,14 +19,5 @@ export const OLD_WA038_NeedleworkTeacher = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WA/WA038.png',
-    locales: {
-      zh: {
-        name: '针线活教师',
-        desc: [
-          '每当任意玩家使用聚会场所行动格时，如果你还有两名家庭成员待派遣(包括食客)，你获得2份食物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

@@ -19,14 +19,5 @@ export const OLD_G035_JobSeeker = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G035.png',
-    locales: {
-      zh: {
-        name: '求职者',
-        desc: [
-          '此卡不算为职业。每回合开始前，若你打出的职业数量少于其他两个玩家，则你可以支付1份食物打出一张职业卡。用该方式打出的职业卡不能收回手中。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

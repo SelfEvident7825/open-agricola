@@ -19,14 +19,5 @@ export const OLD_WM048_SundayWorker = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM048.png',
-    locales: {
-      zh: {
-        name: '周末工人',
-        desc: [
-          '第7/14回合，每回合限1次：每当你使用一个行动格后，你可以支付1份食物来立即额外执行1次该行动格。如果是积累行动格，则获得2倍数量的积累资源。注：如果在第7/14回合通过行动格打出此卡后，可以立即发动此卡效果：支付1份食物立即额外执行1次该行动格。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

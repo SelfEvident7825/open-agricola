@@ -19,12 +19,5 @@ export const OLD_FR028_Hammock = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR028.png',
-    locales: {
-      zh: {
-        name: '吊床',
-        desc: ['你的至多一间房屋可以额外容纳一名家庭成员。'],
-        prerequisite: '房屋×4',
-      },
-    },
   },
 })

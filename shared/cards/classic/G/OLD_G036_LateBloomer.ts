@@ -19,14 +19,5 @@ export const OLD_G036_LateBloomer = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G036.png',
-    locales: {
-      zh: {
-        name: '中年成家者',
-        desc: [
-          '任何时候，若你的家庭成员数量少于其他所有玩家，并且你家中有居住空间，则你可以立即获得1名新的家庭成员。此家庭成员不算作“新生儿”，本回合可以被派遣。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

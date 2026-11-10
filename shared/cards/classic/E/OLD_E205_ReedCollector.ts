@@ -42,15 +42,6 @@ export const OLD_E205_ReedCollector = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E205.png',
-    locales: {
-      zh: {
-        name: '打苇人',
-        desc: [
-          '打出此卡时，在之后的4个回合行动格上各放1捆芦苇。这些回合开始时，你获得对应的芦苇。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

@@ -21,13 +21,6 @@ export const OLD_I226_Gardener = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I226.png',
-    locales: {
-      zh: {
-        name: '园丁',
-        desc: ['每当你收割蔬菜时，改为从游戏供应区获得蔬菜，你的蔬菜留在田地上。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

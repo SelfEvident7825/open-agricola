@@ -18,12 +18,5 @@ export const OLD_FR043_Sofa = defineMinorCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/FR/FR043.png',
-    locales: {
-      zh: {
-        name: '沙发',
-        desc: ['游戏结束时，如果你有至多2/3间房子，你获得4/2分'],
-        prerequisite: '',
-      },
-    },
   },
 })

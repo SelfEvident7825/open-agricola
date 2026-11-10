@@ -19,14 +19,5 @@ export const OLD_WM044_SiloGirl = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM044.png',
-    locales: {
-      zh: {
-        name: '筒仓女孩',
-        desc: [
-          '一旦你的房屋等级是石屋，在余下的偶数/奇数回合行动格上各放置1份小麦/1份蔬菜。这些回合开始时，你获得这份作物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

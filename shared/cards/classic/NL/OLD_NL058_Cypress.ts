@@ -18,12 +18,5 @@ export const OLD_NL058_Cypress = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL058.png',
-    locales: {
-      zh: {
-        name: '白柏树',
-        desc: ['将打出此卡的家庭成员移出游戏。此卡只能通过行动格打出，且不能用食客打出'],
-        prerequisite: '家庭成员×3',
-      },
-    },
   },
 })

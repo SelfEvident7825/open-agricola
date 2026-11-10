@@ -62,15 +62,6 @@ export const OLD_E49_WritingDesk = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E49.png',
-    locales: {
-      zh: {
-        name: '写字台',
-        desc: [
-          '每当你使用技能培训行动格打出1张职业卡时，你可以额外支付2份食物作为技能培训费再打出1张职业卡。',
-        ],
-        prerequisite: '职业×2',
-      },
-    },
   },
   impl: cardImpl,
 })

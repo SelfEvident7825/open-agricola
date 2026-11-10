@@ -17,12 +17,5 @@ export const OLD_Z325_VillageBeauty = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/Z/Z325.png',
-    locales: {
-      zh: {
-        name: '小镇姑娘',
-        desc: ['任意时刻，你可以支付3食物来执行一次“生娃(需要空房间)”行动。'],
-        prerequisite: '',
-      },
-    },
   },
 })

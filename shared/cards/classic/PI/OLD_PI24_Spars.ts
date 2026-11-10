@@ -20,14 +20,5 @@ export const OLD_PI24_Spars = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/PI/PI24.png',
-    locales: {
-      zh: {
-        name: 'Sheep Rug',
-        desc: [
-          "You can use any __Wish for Children__ action space, even if it is occupied by another player's person.",
-        ],
-        prerequisite: '4 Sheep',
-      },
-    },
   },
 })

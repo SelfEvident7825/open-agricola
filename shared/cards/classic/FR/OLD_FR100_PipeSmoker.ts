@@ -39,13 +39,6 @@ export const OLD_FR100_PipeSmoker = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/FR/FR100.png',
-    locales: {
-      zh: {
-        name: '烟斗客',
-        desc: ['每个丰收时节开始时，如果你有至少1块麦田，你获得2根木头。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

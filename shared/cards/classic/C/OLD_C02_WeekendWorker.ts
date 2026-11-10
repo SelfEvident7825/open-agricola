@@ -19,14 +19,5 @@ export const OLD_C02_WeekendWorker = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/C/C02.png',
-    locales: {
-      zh: {
-        name: '周末工作者',
-        desc: [
-          '每当你执行“翻修”行动后，你可以扩建1间房屋，费用为1芦苇+1个翻修前房屋等级对应的建筑资源+2个翻修后房屋等级对应的建筑资源。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

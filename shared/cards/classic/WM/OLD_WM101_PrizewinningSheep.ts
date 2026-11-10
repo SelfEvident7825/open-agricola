@@ -16,12 +16,5 @@ export const OLD_WM101_PrizewinningSheep = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM101.png',
-    locales: {
-      zh: {
-        name: '羊毛奖励',
-        desc: ['立即获得1个任意建筑资源 。使用后请将此卡交给下家，此卡将加入他的手牌。'],
-        prerequisite: '羊×1',
-      },
-    },
   },
 })

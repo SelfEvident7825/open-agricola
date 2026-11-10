@@ -18,12 +18,5 @@ export const OLD_G076_GardeningTools = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G076.png',
-    locales: {
-      zh: {
-        name: '花园工具',
-        desc: ['每当其他玩家执行“播种”行动时，你可以支付1份食物到游戏供应区并执行一次“播种”行动'],
-        prerequisite: '',
-      },
-    },
   },
 })

@@ -19,14 +19,5 @@ export const OLD_PI08_MasterCarpenter = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/PI/PI08.png',
-    locales: {
-      zh: {
-        name: 'Land Surveyor',
-        desc: [
-          'In the field phase of each harvest, if you have at least 2/4/6/7 fields, you get 1/2/3/4 <FOOD>.',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

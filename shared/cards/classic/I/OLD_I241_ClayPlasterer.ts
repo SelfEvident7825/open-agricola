@@ -62,15 +62,6 @@ export const OLD_I241_ClayPlasterer = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I241.png',
-    locales: {
-      zh: {
-        name: '墙土修补工',
-        desc: [
-          '你将木屋翻修成砖屋的总费用改为1块砖头+1捆芦苇。你扩建每间砖屋所需的费用改为3块砖头+2捆芦苇。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

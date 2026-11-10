@@ -82,15 +82,6 @@ export const OLD_I103_WaterMill = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I103.png',
-    locales: {
-      zh: {
-        name: '水磨坊',
-        desc: [
-          '每个丰收时节的收割阶段后，所有玩家都可以使用此卡将至多1份小麦转化为3份食物。（这不是“烤面包”行动）其他玩家如此做之后必须支付给你1份食物。可触发I103水磨坊效果：I92肥料、FR005艺术花园、G061历书、G118冬季花园、NL047早熟麦。不可触发I103水磨坊效果：NL104小麦收割工、G080秋收盛宴、G115养鱼场、WM014轮耕农。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

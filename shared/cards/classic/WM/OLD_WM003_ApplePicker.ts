@@ -17,12 +17,5 @@ export const OLD_WM003_ApplePicker = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM003.png',
-    locales: {
-      zh: {
-        name: '苹果小贩',
-        desc: ['每当你使用小麦种子/蔬菜种子行动格时，你额外获得1根木头+1份食物。'],
-        prerequisite: '',
-      },
-    },
   },
 })

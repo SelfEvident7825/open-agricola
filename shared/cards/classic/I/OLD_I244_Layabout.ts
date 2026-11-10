@@ -33,15 +33,6 @@ export const OLD_I244_Layabout = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I244.png',
-    locales: {
-      zh: {
-        name: '懒汉',
-        desc: [
-          '打出此卡，你就不能参加下一个丰收时节。（你虽不用喂养家庭成员，但也不能收割作物或繁殖动物）',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

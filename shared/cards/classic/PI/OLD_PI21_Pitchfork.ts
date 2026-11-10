@@ -19,12 +19,5 @@ export const OLD_PI21_Pitchfork = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/PI/PI21.png',
-    locales: {
-      zh: {
-        name: '干草叉',
-        desc: ['每当你扩建或翻修房屋时，可以使用积累行动格上的芦苇进行支付。'],
-        prerequisite: '',
-      },
-    },
   },
 })

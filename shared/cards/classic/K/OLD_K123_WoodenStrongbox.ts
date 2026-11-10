@@ -28,13 +28,6 @@ export const OLD_K123_WoodenStrongbox = defineMinorCard({
     extraVp: true,
     implemented: true,
     artUrl: '/assets/classic/K/K123.png',
-    locales: {
-      zh: {
-        name: '木制保险箱',
-        desc: ['游戏结束时，如果你有5/6+个房间板块，额外获得2/4分。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

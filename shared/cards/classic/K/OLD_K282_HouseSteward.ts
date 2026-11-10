@@ -59,15 +59,6 @@ export const OLD_K282_HouseSteward = defineOccupationCard({
     passing: false,
     implemented: true,
     artUrl: '/assets/classic/K/K282.png',
-    locales: {
-      zh: {
-        name: '房屋管理员',
-        desc: [
-          '打出此卡时，若距离游戏结束还有1/3/6/9个完整回合，则你立即获得1/2/3/4根木头。游戏结束时，房屋板块数量最多的每位玩家都获得3分。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

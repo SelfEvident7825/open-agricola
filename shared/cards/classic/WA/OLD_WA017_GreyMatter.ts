@@ -20,14 +20,5 @@ export const OLD_WA017_GreyMatter = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WA/WA017.png',
-    locales: {
-      zh: {
-        name: '智谋',
-        desc: [
-          '打出时，对于每张你打出了但尚未使用其功能的发展卡，你都获得1根木头使用后请将此卡交给下家，此卡将加入他的手牌。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

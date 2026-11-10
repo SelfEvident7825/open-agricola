@@ -19,14 +19,5 @@ export const OLD_PI01_Alchemist = defineOccupationCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/PI/PI01.png',
-    locales: {
-      zh: {
-        name: 'Museum Caretaker',
-        desc: [
-          'At the start of each work phase, if you have at least 1 <WOOD>, 1 <CLAY>, 1 <REED>, 1 <STONE>, 1 <GRAIN>, and 1 <VEGETABLE> in your supply, you get 1 bonus <SCORE>.',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

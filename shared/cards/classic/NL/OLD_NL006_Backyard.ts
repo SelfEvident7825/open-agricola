@@ -23,14 +23,5 @@ export const OLD_NL006_Backyard = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL006.png',
-    locales: {
-      zh: {
-        name: '后院',
-        desc: [
-          '如果你的农场有2×2的空地且其中一个与房屋正交相邻，则这块空地可以容纳一名家庭成员。一旦其中一格被占用，你需要将该家庭成员移入空房间或个人供应区',
-        ],
-        prerequisite: '职业×2',
-      },
-    },
   },
 })

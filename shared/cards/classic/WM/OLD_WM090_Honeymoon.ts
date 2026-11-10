@@ -18,14 +18,5 @@ export const OLD_WM090_Honeymoon = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM090.png',
-    locales: {
-      zh: {
-        name: '蜜月旅行',
-        desc: [
-          '在第14回合，你必须少派遣2名家庭成员。注：第14回合，你必须能够派遣至少2名家庭成员。',
-        ],
-        prerequisite: '第13回合或之前',
-      },
-    },
   },
 })

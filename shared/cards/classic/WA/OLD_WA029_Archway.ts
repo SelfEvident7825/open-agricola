@@ -23,14 +23,5 @@ export const OLD_WA029_Archway = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WA/WA029.png',
-    locales: {
-      zh: {
-        name: '拱门',
-        desc: [
-          '此卡视为全体玩家可用的行动格。使用该行动格的玩家立即获得1份食物，并可在当回合回家阶段开始前，派遣此卡上的家庭成员去使用1个空的行动格',
-        ],
-        prerequisite: '职业=0',
-      },
-    },
   },
 })

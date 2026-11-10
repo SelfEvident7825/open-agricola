@@ -20,14 +20,5 @@ export const OLD_FL011_Towhead = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FL/FL011.png',
-    locales: {
-      zh: {
-        name: '黄发男孩',
-        desc: [
-          '第5回合行动格翻开时，将生儿育女行动格调整到第6回合(通过交换两张牌的位置)，在第5回合，你可以先使用第6回合的生儿育女行动格',
-        ],
-        prerequisite: '4回合或之前',
-      },
-    },
   },
 })

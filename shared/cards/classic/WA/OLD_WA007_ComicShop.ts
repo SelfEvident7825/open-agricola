@@ -21,14 +21,5 @@ export const OLD_WA007_ComicShop = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WA/WA007.png',
-    locales: {
-      zh: {
-        name: '漫画店',
-        desc: [
-          '此卡是所有玩家可用的额外行动格。只有家中无人时能使用此格，且直到回合结束家中不能有人。使用此格的玩家在之后2个回合中，每个轮次能派遣至多2名家庭成员。',
-        ],
-        prerequisite: '8或9回合',
-      },
-    },
   },
 })

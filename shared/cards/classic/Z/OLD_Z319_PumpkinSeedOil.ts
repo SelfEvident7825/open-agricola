@@ -18,14 +18,5 @@ export const OLD_Z319_PumpkinSeedOil = defineMinorCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/Z/Z319.png',
-    locales: {
-      zh: {
-        name: '南瓜籽油',
-        desc: [
-          '游戏中限3次，每回合限1次：你可以支付1份蔬菜到此卡上并获得3份食物，此卡上的蔬菜参与计分',
-        ],
-        prerequisite: '菜田×1',
-      },
-    },
   },
 })

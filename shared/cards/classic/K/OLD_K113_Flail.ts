@@ -52,13 +52,6 @@ export const OLD_K113_Flail = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K113.png',
-    locales: {
-      zh: {
-        name: '连枷',
-        desc: ['每当你使用犁田/粮食耕种[犁播]行动格时，额外获得1次“烤面包”行动。'],
-        prerequisite: '职业×1',
-      },
-    },
   },
   impl: cardImpl,
 })

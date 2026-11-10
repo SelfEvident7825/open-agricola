@@ -58,15 +58,6 @@ export const OLD_E162_MeatSeller = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E162.png',
-    locales: {
-      zh: {
-        name: '售肉商',
-        desc: [
-          '如果你拥有烤炉，你可以随时将动物转换成食物。每只羊2食物，每头猪3食物，每头牛4食物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

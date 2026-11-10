@@ -19,14 +19,5 @@ export const OLD_G006_Artisan = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G006.png',
-    locales: {
-      zh: {
-        name: '手艺人',
-        desc: [
-          '每个丰收时节限一次：若你在丰收时节通过发展卡将建筑资源转换为食物，则你额外获得2份食物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

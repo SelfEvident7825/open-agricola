@@ -16,12 +16,5 @@ export const OLD_FR055_VegetableHarvest = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR055.png',
-    locales: {
-      zh: {
-        name: '丰收菜园',
-        desc: ['如果你有烤炉，你可以随时将1份蔬菜转化为4份食物'],
-        prerequisite: '',
-      },
-    },
   },
 })

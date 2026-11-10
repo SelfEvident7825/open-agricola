@@ -63,15 +63,6 @@ export const OLD_E178_HutBuilder = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E178.png',
-    locales: {
-      zh: {
-        name: '小屋建造工',
-        desc: [
-          '若你在第1-4回合打出此卡，第11回合开始时，你的房屋等级是木屋/砖屋，则你可以免费扩建 1间房屋。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

@@ -66,13 +66,6 @@ export const OLD_I102_WildlifeReserve = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I102.png',
-    locales: {
-      zh: {
-        name: '野生保护区',
-        desc: ['你可以在此卡上饲养至多1只羊+1只猪+1只牛。(可被E29兽角笛和E59饮水槽扩充容量)'],
-        prerequisite: '职业×2',
-      },
-    },
   },
   impl: cardImpl,
 })

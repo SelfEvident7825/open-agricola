@@ -21,14 +21,5 @@ export const OLD_G088_MeatPie = defineMinorCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/G/G088.png',
-    locales: {
-      zh: {
-        name: '肉馅饼',
-        desc: [
-          '打出时你获得一次"烤面包"行动。每次你执行完"烤面包"行动后，你可以支付1份小麦+1只任意动物获得3分',
-        ],
-        prerequisite: '职业×1',
-      },
-    },
   },
 })

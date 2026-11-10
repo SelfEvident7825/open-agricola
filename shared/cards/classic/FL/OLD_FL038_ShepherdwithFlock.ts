@@ -19,14 +19,5 @@ export const OLD_FL038_ShepherdwithFlock = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FL/FL038.png',
-    locales: {
-      zh: {
-        name: '羊群主人',
-        desc: [
-          '此卡是只有你能使用的行动格。使用此格时，你获得等同于你羊数量的羊，但不能超过你未使用的空格数。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

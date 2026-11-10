@@ -17,12 +17,5 @@ export const OLD_NL088_ClothMaker = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL088.png',
-    locales: {
-      zh: {
-        name: '裁缝',
-        desc: ['其他玩家使用羊市场积累行动格时，你从游戏供应区获得1只羊。'],
-        prerequisite: '',
-      },
-    },
   },
 })

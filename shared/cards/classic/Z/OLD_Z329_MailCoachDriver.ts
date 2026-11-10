@@ -19,14 +19,5 @@ export const OLD_Z329_MailCoachDriver = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/Z/Z329.png',
-    locales: {
-      zh: {
-        name: '驿站车夫',
-        desc: [
-          '所有其他玩家在使用行动格后，在该回合结束时才获得对应行动格上的建筑资源、作物和动物(如果是通过卡牌获得资源，则不受此卡牌影响)。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

@@ -19,14 +19,5 @@ export const OLD_G015_FamilyCounselor = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G015.png',
-    locales: {
-      zh: {
-        name: '家庭顾问',
-        desc: [
-          '每个回合返家阶段开始前，若你所有的成年家庭成员都在同一游戏版图上，你有2/3/4+名成年家庭成员便可以获得1食物/1小麦/1蔬菜。（不包括食客和新生儿）',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

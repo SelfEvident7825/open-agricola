@@ -32,13 +32,6 @@ export const OLD_E172_Chief = defineOccupationCard({
     extraVp: true,
     implemented: true,
     artUrl: '/assets/classic/E/E172.png',
-    locales: {
-      zh: {
-        name: '酋长',
-        desc: ['打出此卡时，额外支付2份食物。游戏结束时，你的每间石屋都额外获得1分。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

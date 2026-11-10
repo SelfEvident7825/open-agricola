@@ -19,14 +19,5 @@ export const OLD_WM074_Donkey = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM074.png',
-    locales: {
-      zh: {
-        name: '毛驴',
-        desc: [
-          '你的一个圈地不能再容纳动物。每当你使用犁田/粮食耕种[犁播]行动格时，你可以额外犁1块田。',
-        ],
-        prerequisite: '圈地×1',
-      },
-    },
   },
 })

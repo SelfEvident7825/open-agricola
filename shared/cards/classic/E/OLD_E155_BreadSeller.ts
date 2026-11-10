@@ -41,15 +41,6 @@ export const OLD_E155_BreadSeller = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E155.png',
-    locales: {
-      zh: {
-        name: '面包贩',
-        desc: [
-          '每当任意玩家（包括你自己）执行“烤面包”行动时，每份被转化的小麦都使你额外获得1份食物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

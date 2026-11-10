@@ -19,14 +19,5 @@ export const OLD_WA058_BigBangTheorist = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WA/WA058.png',
-    locales: {
-      zh: {
-        name: '宇宙大爆炸理论家',
-        desc: [
-          '在第1/2/3/4/5个丰收时节开始时，每有1名其他玩家有0-10/0-8/0-6/0-3/0格未使用的空格，你便获得1食物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

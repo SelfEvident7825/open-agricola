@@ -21,14 +21,5 @@ export const OLD_O20_EmergencyHousing = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/O/O20.png',
-    locales: {
-      zh: {
-        name: '临时住宅',
-        desc: [
-          '你的一个你已建造的马厩失去其原有功能，并可以容纳1名家庭成员。计分时该马厩仍然视作马厩。',
-        ],
-        prerequisite: '1马厩',
-      },
-    },
   },
 })

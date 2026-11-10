@@ -78,15 +78,6 @@ export const OLD_E191_Mason = defineOccupationCard({
     passing: false,
     extraVp: false,
     artUrl: '/assets/classic/E/E191.png',
-    locales: {
-      zh: {
-        name: '泥水匠',
-        desc: [
-          '放置1个石屋在此卡上。一旦你拥有了不少于4间石屋，你便可随时免费扩建此卡上的这间石屋。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

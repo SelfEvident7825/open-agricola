@@ -31,15 +31,6 @@ export const OLD_K135_Horse = defineMinorCard({
     extraVp: true,
     implemented: true,
     artUrl: '/assets/classic/K/K135.png',
-    locales: {
-      zh: {
-        name: '马',
-        desc: [
-          '游戏结束时，如果你缺少某1种动物，你可以获得2分。(仍然会因为没有该种动物扣分)（缺少多种动物，也只获得2分）',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

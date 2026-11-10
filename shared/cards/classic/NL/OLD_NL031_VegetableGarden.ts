@@ -19,12 +19,5 @@ export const OLD_NL031_VegetableGarden = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL031.png',
-    locales: {
-      zh: {
-        name: '蔬菜园',
-        desc: ['打出此卡时，将2个蔬菜叠放在此卡上，收割完后你可以在此卡上种蔬菜(此卡不视为农田)'],
-        prerequisite: '职业×3',
-      },
-    },
   },
 })

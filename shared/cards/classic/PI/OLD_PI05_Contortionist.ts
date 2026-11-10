@@ -19,14 +19,5 @@ export const OLD_PI05_Contortionist = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/PI/PI05.png',
-    locales: {
-      zh: {
-        name: 'Spice Trader',
-        desc: [
-          'If you play this card in round 4 or before, place 3 <VEGETABLE> on the space for round 11. At the start of that round, you get the <VEGETABLE>.',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

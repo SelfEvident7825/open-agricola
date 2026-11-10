@@ -19,14 +19,5 @@ export const OLD_G004_Apprentice = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G004.png',
-    locales: {
-      zh: {
-        name: '学徒工',
-        desc: [
-          '每次丰收时节开始时，你每拥有一张分数至少2分的主要发展卡(包括其升级版)，可以额外获得1份食物。（若有主要发展卡被你视为次要发展卡，此时仍算作主要发展卡）升级版的主发',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

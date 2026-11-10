@@ -21,14 +21,5 @@ export const OLD_PI16_GardenersBothy = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/PI/PI16.png',
-    locales: {
-      zh: {
-        name: '园丁茅屋',
-        desc: [
-          '每当你使用犁田行动格后，你可以将该人立即移动到此卡上并获得1份小麦。每当你使用粮食耕种[犁播]行动格后，你可以将该人立即移动到此卡上并获得1份蔬菜。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

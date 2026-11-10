@@ -19,14 +19,5 @@ export const OLD_NL103_DancerandSpy = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL103.png',
-    locales: {
-      zh: {
-        name: '特工舞者',
-        desc: [
-          '当你使用卖艺积累行动格后，你可以将仅有1名占据某行动格的家庭成员移至卖艺行动格，此家庭成员不执行卖艺效果。之后，你可以立即派遣下一名家庭成员使用该行动格。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

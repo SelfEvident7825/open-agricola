@@ -21,14 +21,5 @@ export const OLD_O19_CompulsoryEducation = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/O/O19.png',
-    locales: {
-      zh: {
-        name: '义务教育',
-        desc: [
-          '每当你执行“生娃”行动时，你可以支付1份食物并打出1张职业卡。若你同时打出1张次要发展卡，首先执行打出职业卡的效果。',
-        ],
-        prerequisite: '1职业',
-      },
-    },
   },
 })

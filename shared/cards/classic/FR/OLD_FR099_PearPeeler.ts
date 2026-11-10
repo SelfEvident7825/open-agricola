@@ -19,14 +19,5 @@ export const OLD_FR099_PearPeeler = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR099.png',
-    locales: {
-      zh: {
-        name: '削梨工',
-        desc: [
-          '每当你从行动格上获得木头时，你可以留下1/2/3根木头而获得1份小麦/1份蔬菜/1份小麦+1份蔬菜。(留下的木头不能多于原来行动格上原来的木头)',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

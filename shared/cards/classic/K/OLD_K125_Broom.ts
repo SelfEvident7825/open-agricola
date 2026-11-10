@@ -51,15 +51,6 @@ export const OLD_K125_Broom = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K125.png',
-    locales: {
-      zh: {
-        name: '扫帚',
-        desc: [
-          '打出此卡时，立即弃掉你手中所有未打出的次要发展卡，从牌库中重新抽7张。然后你可以立即打出1张次要发展卡。(需满足条件并正常支付费用)',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

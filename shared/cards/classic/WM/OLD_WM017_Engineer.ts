@@ -19,14 +19,5 @@ export const OLD_WM017_Engineer = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM017.png',
-    locales: {
-      zh: {
-        name: '工程师',
-        desc: [
-          '每当你打出1张发展卡前，你获得1份食物。如果这张印在该发展卡上的费用包含至少1石头，则改为2份食物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

@@ -20,14 +20,5 @@ export const OLD_G094_PottersWheel = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G094.png',
-    locales: {
-      zh: {
-        name: '陶艺轮车',
-        desc: [
-          '打出1张职业(支付此卡玩家1份食物)。这张牌是一个所有玩家共用的额外行动格。使用此卡的玩家...',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

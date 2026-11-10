@@ -46,13 +46,6 @@ export const OLD_E30_Canoe = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E30.png',
-    locales: {
-      zh: {
-        name: '独木舟',
-        desc: ['每当你使用钓鱼积累行动格时，额外获得1份食物和1捆芦苇。'],
-        prerequisite: '职业×2',
-      },
-    },
   },
   impl: cardImpl,
 })

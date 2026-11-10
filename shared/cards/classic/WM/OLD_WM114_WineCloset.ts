@@ -19,14 +19,5 @@ export const OLD_WM114_WineCloset = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM114.png',
-    locales: {
-      zh: {
-        name: '酒窖',
-        desc: [
-          '打出时获得1份蔬菜。每回合限1次：你可以将1份蔬菜放到未来的行动格上，如果至少是5个回合后，则额外放一个蔬菜到此格上，在这回合开始时，你必须将上面的蔬菜各转换为2份食物/1分。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

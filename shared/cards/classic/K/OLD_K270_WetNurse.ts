@@ -77,15 +77,6 @@ export const OLD_K270_WetNurse = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K270.png',
-    locales: {
-      zh: {
-        name: '奶妈',
-        desc: [
-          '每当你扩建至少1间房间，对于每间新扩建的房间，你可以支付1份食物执行一次“生娃(需要空房间)”行动。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

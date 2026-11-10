@@ -20,13 +20,6 @@ export const OLD_E175_HedgeKeeper = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E175.png',
-    locales: {
-      zh: {
-        name: '篱笆护理员',
-        desc: ['每当你建造了至少1根栅栏时，可以额外免费建造3根栅栏。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: {
     modifiers: [

@@ -20,14 +20,5 @@ export const OLD_FL009_EbonyShoe = defineMinorCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/FL/FL009.png',
-    locales: {
-      zh: {
-        name: '乌木鞋',
-        desc: [
-          '打出时若距离游戏结束还有1/3/6/9个完整回合，则你立即获得1/2/3/4块砖头。下一位填满自己农场的玩家获得3分',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

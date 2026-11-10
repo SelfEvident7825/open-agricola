@@ -54,13 +54,6 @@ export const OLD_I82_WoodenCrane = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I82.png',
-    locales: {
-      zh: {
-        name: '木吊车',
-        desc: ['每当你使用石头积累行动格时，可以支付0/1份食物额外获得1/2个石头。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

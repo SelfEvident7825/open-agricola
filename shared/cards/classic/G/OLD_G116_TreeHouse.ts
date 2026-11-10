@@ -22,12 +22,5 @@ export const OLD_G116_TreeHouse = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G116.png',
-    locales: {
-      zh: {
-        name: '树屋',
-        desc: ['当你不住木屋，你的其中一个房间能额外容纳一名家庭成员。'],
-        prerequisite: '职业×3',
-      },
-    },
   },
 })

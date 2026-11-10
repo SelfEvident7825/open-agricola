@@ -72,15 +72,6 @@ export const OLD_I233_FarmSteward = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I233.png',
-    locales: {
-      zh: {
-        name: '农场干事',
-        desc: [
-          '限一次：一旦你的房屋等级是砖屋/石屋，你的下一次“生娃”行动可以当做“生娃(无需空房间)”行动执行。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

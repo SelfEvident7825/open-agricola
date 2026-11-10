@@ -16,12 +16,5 @@ export const OLD_FR058_WinterDeadwood = defineMinorCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/FR/FR058.png',
-    locales: {
-      zh: {
-        name: '冬季朽木',
-        desc: ['选择一项：支付1根木头获得1分；或获得1根木头并将此卡传递给下家'],
-        prerequisite: '',
-      },
-    },
   },
 })

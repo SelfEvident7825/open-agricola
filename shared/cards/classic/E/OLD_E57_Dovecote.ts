@@ -43,13 +43,6 @@ export const OLD_E57_Dovecote = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E57.png',
-    locales: {
-      zh: {
-        name: '鸽舍',
-        desc: ['打出此卡时，在第10至14回合行动格上各放1份食物。这些回合开始时，你获得对应的食物。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

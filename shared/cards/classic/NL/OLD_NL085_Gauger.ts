@@ -19,14 +19,5 @@ export const OLD_NL085_Gauger = defineOccupationCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/NL/NL085.png',
-    locales: {
-      zh: {
-        name: '测量官',
-        desc: [
-          '任意时刻，所有玩家可以使用此卡将1份小麦转换为2份食物。当其他玩家使用此卡转换1份或更多小麦时，你从游戏供应区获得1份食物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

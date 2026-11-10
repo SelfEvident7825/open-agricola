@@ -24,13 +24,6 @@ export const OLD_E181_Cook = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E181.png',
-    locales: {
-      zh: {
-        name: '厨师',
-        desc: ['每个丰收时节的喂养阶段，你的第3、4、5个家庭成员各只需喂养1份食物。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

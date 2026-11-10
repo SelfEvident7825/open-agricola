@@ -19,14 +19,5 @@ export const OLD_NL079_FarmersDaughter = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL079.png',
-    locales: {
-      zh: {
-        name: '农夫的女儿',
-        desc: [
-          '一旦你的房屋等级不是木屋，在之后的偶数回合的行动格上分别放置1份小麦，这些回合开始时，你获得对应的小麦。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

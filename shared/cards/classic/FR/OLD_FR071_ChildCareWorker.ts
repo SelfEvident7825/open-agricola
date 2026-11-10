@@ -19,14 +19,5 @@ export const OLD_FR071_ChildCareWorker = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR071.png',
-    locales: {
-      zh: {
-        name: '幼儿保姆',
-        desc: [
-          '每当其他玩家执行“生娃”行动时，你可以将至多1根木头转化为2份食物，或者将1根木头+1捆芦苇转化为5份食物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

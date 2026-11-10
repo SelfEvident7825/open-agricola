@@ -46,15 +46,6 @@ export const OLD_NL042_DrawWell = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/NL/NL042.png',
-    locales: {
-      zh: {
-        name: '提水井',
-        desc: [
-          '在之后的偶数回合行动格上各放置1食物，这些回合开始时，你获得对应的食物。这是1个井。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

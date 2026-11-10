@@ -74,15 +74,6 @@ export const OLD_K277_Manufacturer = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K277.png',
-    locales: {
-      zh: {
-        name: '制造商',
-        desc: [
-          '一旦你的房屋等级是砖屋/石屋，A7家具工坊、A8陶艺工坊、A9编筐工坊对你来说都是次要发展卡，而且所需花费减少两个任意资源。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

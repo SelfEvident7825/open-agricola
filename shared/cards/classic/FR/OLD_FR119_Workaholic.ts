@@ -19,14 +19,5 @@ export const OLD_FR119_Workaholic = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR119.png',
-    locales: {
-      zh: {
-        name: '工作狂人',
-        desc: [
-          '打出此卡时如果你没有动物，放置5木头+4砖头+3石头在此卡上，一旦你拥有至少5/7/9只动物(卡牌动物不算)，你获得此卡上的所有木头/砖头/石头。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

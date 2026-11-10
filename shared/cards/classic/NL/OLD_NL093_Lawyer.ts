@@ -19,14 +19,5 @@ export const OLD_NL093_Lawyer = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL093.png',
-    locales: {
-      zh: {
-        name: '律师',
-        desc: [
-          '打出此卡时，你获得任意2个不同的建筑资源。从第13回合起，你可以使用第13回合的行动格，即使它已经被其他玩家占据。(被自己占据则不可以)',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

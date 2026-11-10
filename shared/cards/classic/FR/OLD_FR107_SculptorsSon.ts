@@ -19,14 +19,5 @@ export const OLD_FR107_SculptorsSon = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR107.png',
-    locales: {
-      zh: {
-        name: '雕刻家之子',
-        desc: [
-          '如果你拥有A7家具工坊/K122大家具工坊、A8陶艺工坊/WM086大陶艺工坊、A9编筐工坊/FR041大编筐工坊，则每当你派遣家庭成员只从行动格上获得木头/砖头/芦苇时，你额外获得2木头/2砖头/1芦苇。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

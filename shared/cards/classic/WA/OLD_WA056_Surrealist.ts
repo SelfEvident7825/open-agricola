@@ -19,14 +19,5 @@ export const OLD_WA056_Surrealist = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WA/WA056.png',
-    locales: {
-      zh: {
-        name: '超现实主义者',
-        desc: [
-          '每当你执行1个“打出主要发展卡”行动时，你可以支付总计不少于9点的资源代替原本的资源来打出1张位于主发面板底部的主发卡。食物、芦苇价值1点，木头价值2点，砖头价值3点，石头价值4点。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

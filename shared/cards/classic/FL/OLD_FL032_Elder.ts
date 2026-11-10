@@ -19,14 +19,5 @@ export const OLD_FL032_Elder = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FL/FL032.png',
-    locales: {
-      zh: {
-        name: '长者',
-        desc: [
-          '打出此卡时，从游戏供应区拿取2份食物放在此卡上，你可以随时使用此卡上的食物。每个工作阶段结束时，你可以支付此卡上的1份食物来使用钓鱼积累行动格或执行"烤面包"行动无需派遣家庭成员。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

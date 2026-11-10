@@ -17,12 +17,5 @@ export const OLD_Z335_CubeCutter = defineOccupationCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/Z/Z335.png',
-    locales: {
-      zh: {
-        name: '骰子雕刻工',
-        desc: ['在每个丰收时节的收割阶段，你可使用此卡将恰好1木头+1食物换成1分。'],
-        prerequisite: '',
-      },
-    },
   },
 })

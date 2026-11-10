@@ -53,15 +53,6 @@ export const OLD_WA004_BeerTable = defineMinorCard({
     passing: false,
     implemented: true,
     artUrl: '/assets/classic/WA/WA004.png',
-    locales: {
-      zh: {
-        name: '啤酒桌',
-        desc: [
-          '每个丰收时节的收割阶段结束时，你可以支付1份小麦来获得2分。若你如此做，其他玩家分别获得1份食物漫画店8或9',
-        ],
-        prerequisite: '补给区无小麦',
-      },
-    },
   },
   presentation: { counters: ['bonusVp'] },
   impl: cardImpl,

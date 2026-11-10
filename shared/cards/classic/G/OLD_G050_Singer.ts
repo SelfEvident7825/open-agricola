@@ -17,12 +17,5 @@ export const OLD_G050_Singer = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G050.png',
-    locales: {
-      zh: {
-        name: '歌唱家',
-        desc: ['打出此卡时，立即获得2个建筑资源。（任意选择）'],
-        prerequisite: '',
-      },
-    },
   },
 })

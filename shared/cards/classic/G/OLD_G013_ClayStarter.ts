@@ -19,14 +19,5 @@ export const OLD_G013_ClayStarter = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G013.png',
-    locales: {
-      zh: {
-        name: '砖屋起家者',
-        desc: [
-          '打出此卡时，若你处于木屋阶段，且只有2间木屋，则你可以支付1份食物，立即将你的木屋免费翻修成砖屋。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

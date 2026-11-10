@@ -20,14 +20,5 @@ export const OLD_FR025_GrainMillOven = defineMinorCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/FR/FR025.png',
-    locales: {
-      zh: {
-        name: '麦磨烤炉',
-        desc: [
-          '打出时获得1次“烤面包”行动。砖造烤炉和石造烤炉对你而言是次发，下次你打出烤炉时可以弃掉此卡来免费打出。此卡不属于烤炉。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

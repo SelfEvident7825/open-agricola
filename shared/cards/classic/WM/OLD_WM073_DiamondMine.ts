@@ -19,14 +19,5 @@ export const OLD_WM073_DiamondMine = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM073.png',
-    locales: {
-      zh: {
-        name: '钻石矿车',
-        desc: [
-          '打出此卡时，在之后的2个回合行动格上各放1个石头。这些回合开始时，你获得对应的石头。',
-        ],
-        prerequisite: '职业×3',
-      },
-    },
   },
 })

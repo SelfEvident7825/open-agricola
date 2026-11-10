@@ -16,12 +16,5 @@ export const OLD_FR046_StrawThatchedHut = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR046.png',
-    locales: {
-      zh: {
-        name: '茅草小屋',
-        desc: ['你扩建砖屋的费用可以改为2砖+1小麦+1食物勒阿佛尔港'],
-        prerequisite: '已播种的田×2',
-      },
-    },
   },
 })

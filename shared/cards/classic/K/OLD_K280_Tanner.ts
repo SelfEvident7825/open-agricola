@@ -56,15 +56,6 @@ export const OLD_K280_Tanner = defineOccupationCard({
     extraVp: true,
     implemented: true,
     artUrl: '/assets/classic/K/K280.png',
-    locales: {
-      zh: {
-        name: '剥皮工',
-        desc: [
-          '每当你将猪或牛转换成食物后，可以将被转化的动物放到此卡上。游戏结束时，如果此卡上有至少2/4/6只猪或2/3/4头牛，你都获得1/2/3分。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

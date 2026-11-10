@@ -17,12 +17,5 @@ export const OLD_Z331_Sower = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/Z/Z331.png',
-    locales: {
-      zh: {
-        name: '播种工',
-        desc: ['每当你在非丰收时节的收割作物阶段获得蔬菜时，你可以立即将其播种。'],
-        prerequisite: '',
-      },
-    },
   },
 })

@@ -16,12 +16,5 @@ export const OLD_FL027_TrappistBeer = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FL/FL027.png',
-    locales: {
-      zh: {
-        name: '修道院啤酒',
-        desc: ['每个丰收时节开始时，你可以支付1份小麦跳过本次丰收时节的结算'],
-        prerequisite: '通过打主发行动打出',
-      },
-    },
   },
 })

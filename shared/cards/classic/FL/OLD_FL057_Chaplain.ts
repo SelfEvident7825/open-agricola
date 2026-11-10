@@ -17,12 +17,5 @@ export const OLD_FL057_Chaplain = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FL/FL057.png',
-    locales: {
-      zh: {
-        name: '随军牧师',
-        desc: ['每当其他玩家执行“生娃”行动后，你可以立即派遣1名家庭成员。'],
-        prerequisite: '',
-      },
-    },
   },
 })

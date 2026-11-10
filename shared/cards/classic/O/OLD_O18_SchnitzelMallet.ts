@@ -21,12 +21,5 @@ export const OLD_O18_SchnitzelMallet = defineMinorCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/O/O18.png',
-    locales: {
-      zh: {
-        name: '肉槌',
-        desc: ['每当你使用 发展卡将1头牛转换成食物时，你获得额外的1份食物+1分'],
-        prerequisite: '2职业',
-      },
-    },
   },
 })

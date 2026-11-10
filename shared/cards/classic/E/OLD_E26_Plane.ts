@@ -71,15 +71,6 @@ export const OLD_E26_Plane = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E26.png',
-    locales: {
-      zh: {
-        name: '木工刨',
-        desc: [
-          '每当你使用A7家具工坊、K122大家具工坊、I258家具匠将1个木头转化成食物时，额外获得1份食物，或额外将1根木头转化成2份食物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

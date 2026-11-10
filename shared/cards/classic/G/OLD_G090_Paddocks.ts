@@ -21,12 +21,5 @@ export const OLD_G090_Paddocks = defineMinorCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/G/G090.png',
-    locales: {
-      zh: {
-        name: '草地围栏',
-        desc: ['立即在已有的圈地内部免费建造4根栅栏使用后请将此卡交给下家，此卡将加入他的手牌。'],
-        prerequisite: '职业×1+圈地×1',
-      },
-    },
   },
 })

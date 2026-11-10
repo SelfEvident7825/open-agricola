@@ -22,12 +22,5 @@ export const OLD_G103_Scythe = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G103.png',
-    locales: {
-      zh: {
-        name: '长柄镰刀',
-        desc: ['你可以在已播种的田上播种同种资源，将新的资源叠放在原有每一列资源的上面。'],
-        prerequisite: '职业×1',
-      },
-    },
   },
 })

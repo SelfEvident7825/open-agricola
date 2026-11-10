@@ -20,14 +20,5 @@ export const OLD_WM057_AnimalNursery = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM057.png',
-    locales: {
-      zh: {
-        name: '动物哺育室',
-        desc: [
-          '你可以将繁殖出来的动物立即饲养在此卡上。此卡上的动物参与繁殖、计分和动物计数，不能移走或用作其他用途。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

@@ -21,12 +21,5 @@ export const OLD_G069_ClearCutting = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G069.png',
-    locales: {
-      zh: {
-        name: '皆伐',
-        desc: ['你每犁一块田就获得1根木头。卡牌田不算。'],
-        prerequisite: '职业×1',
-      },
-    },
   },
 })

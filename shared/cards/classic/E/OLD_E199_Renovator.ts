@@ -33,13 +33,6 @@ export const OLD_E199_Renovator = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E199.png',
-    locales: {
-      zh: {
-        name: '装修工',
-        desc: ['你翻修成砖屋/石屋的费用减少2砖头/2石头。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

@@ -17,12 +17,5 @@ export const OLD_G018_FishermansApprentice = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G018.png',
-    locales: {
-      zh: {
-        name: '渔夫学徒',
-        desc: ['每当其他玩家使用钓鱼积累行动格时，你可以向他支付1份食物，并打出1张职业卡。'],
-        prerequisite: '',
-      },
-    },
   },
 })

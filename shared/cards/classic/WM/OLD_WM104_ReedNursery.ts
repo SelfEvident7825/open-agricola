@@ -20,14 +20,5 @@ export const OLD_WM104_ReedNursery = defineMinorCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/WM/WM104.png',
-    locales: {
-      zh: {
-        name: '芦苇地',
-        desc: [
-          '你可以在田地板块上如同小麦一样种植芦苇。游戏结束时，你可以将你个人供应区和田里的芦苇转化为分数，1/4/6/8+捆芦苇可转化为1/2/3/4分。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

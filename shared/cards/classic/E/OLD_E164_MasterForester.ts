@@ -34,15 +34,6 @@ export const OLD_E164_MasterForester = definePlayerActionCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E164.png',
-    locales: {
-      zh: {
-        name: '林场主',
-        desc: [
-          '本卡将作为额外的树林行动格3人游戏中[2木积累行动格]。从下回合开始，每回合将积累2个木头放在此卡上。其他玩家使用此行动格前，必须先付给你2份食物。',
-        ],
-        prerequisite: '',
-      },
-    },
     playerActionCardType: 'occupation',
   },
   impl: cardImpl,

@@ -19,14 +19,5 @@ export const OLD_FR081_Fiddler = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR081.png',
-    locales: {
-      zh: {
-        name: '提琴手',
-        desc: [
-          '每回合结束时，如果你在该回合没有获得任何建筑资源，则你获得1根木头。如果是偶数回合，则你还额外获得1份食物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

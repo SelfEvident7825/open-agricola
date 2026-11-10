@@ -19,14 +19,5 @@ export const OLD_WA037_FoundingFather = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WA/WA037.png',
-    locales: {
-      zh: {
-        name: '开国元勋',
-        desc: [
-          '每当其他玩家使用卖艺积累行动格时，你可以将至多1个供应区的马厩放到此卡上，每当你打出1张发展卡时，你可以免费建造此卡上的至多1个马厩。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

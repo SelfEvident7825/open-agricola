@@ -52,15 +52,6 @@ export const OLD_E34_Basket = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E34.png',
-    locales: {
-      zh: {
-        name: '篮子',
-        desc: [
-          '每当你从行动格上取得不少于2根木头时，可以留下2根木头在所使用的行动格上，额外获得3份食物。(通过卡牌获得的木头不算)',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

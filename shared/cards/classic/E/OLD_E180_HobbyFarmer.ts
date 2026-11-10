@@ -41,15 +41,6 @@ export const OLD_E180_HobbyFarmer = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E180.png',
-    locales: {
-      zh: {
-        name: '小园主',
-        desc: [
-          '打出此卡时，你获得1份蔬菜。并且你获得1次播种行动，但此次播种行动你只能播种这份蔬菜。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

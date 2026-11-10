@@ -20,14 +20,5 @@ export const OLD_G082_HiredHelpers = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G082.png',
-    locales: {
-      zh: {
-        name: '雇佣助手',
-        desc: [
-          '每回合中，你可以选择获得1名食客并在回合结束时退还，若如此做，下一回合你必须少放置1名家庭成员。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

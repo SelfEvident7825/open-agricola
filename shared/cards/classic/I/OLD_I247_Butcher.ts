@@ -19,13 +19,6 @@ export const OLD_I247_Butcher = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I247.png',
-    locales: {
-      zh: {
-        name: '屠夫',
-        desc: ['任意时刻，你可以将1只羊/猪/牛转换成1/2/3份食物。'],
-        prerequisite: '',
-      },
-    },
     exchanges: [
       {
         from: {

@@ -46,15 +46,6 @@ export const OLD_K293_Ploughman = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K293.png',
-    locales: {
-      zh: {
-        name: '犁田工',
-        desc: [
-          '将当前回合数加4,7和10，在这些回合的行动格上各放置1块田地板块。在这些回合开始时，你可以支付1份食物来犁对应的田田地板块。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

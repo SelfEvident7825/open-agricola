@@ -90,13 +90,6 @@ export const OLD_FR045_StoneHouseReconstruction = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/FR/FR045.png',
-    locales: {
-      zh: {
-        name: '重建石屋',
-        desc: ['你可以在任意时刻将你的砖屋翻修成石屋(正常支付)'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

@@ -20,14 +20,5 @@ export const OLD_C23_HungerWall = defineMinorCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/C/C23.png',
-    locales: {
-      zh: {
-        name: '饥饿墙',
-        desc: [
-          '每个喂养阶段，所有玩家都可以支付至多1砖来喂养1名家庭成员，支付的砖头放在此卡上。游戏结束时，此卡上每有2块砖你便获得1分。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

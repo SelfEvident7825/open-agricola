@@ -28,13 +28,6 @@ export const OLD_E39_MarketStall = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E39.png',
-    locales: {
-      zh: {
-        name: '货摊',
-        desc: ['立即获得1份蔬菜。使用后请将此卡交给下家，此卡将加入他的手牌。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

@@ -19,14 +19,5 @@ export const OLD_FR097_ParquetSetter = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR097.png',
-    locales: {
-      zh: {
-        name: '木地板装修工',
-        desc: [
-          '每个工作阶段结束时，如果在该回合你未使用的空格减少了1/2+格，则你获得1木头/1木头+1食物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

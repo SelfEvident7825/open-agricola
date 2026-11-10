@@ -21,14 +21,5 @@ export const OLD_WM066_Brazier = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM066.png',
-    locales: {
-      zh: {
-        name: '火盆',
-        desc: [
-          '每个丰收时节的喂养阶段，你可以使用此卡将以下至多1个物品转化为食物：备用计划备用计划马厩×1',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

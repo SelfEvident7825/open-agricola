@@ -74,13 +74,6 @@ export const OLD_K112_Bookshelf = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K112.png',
-    locales: {
-      zh: {
-        name: '书架',
-        desc: ['每当你打出1张职业卡前，首先获得3份食物。（在支付技能培训费之前）'],
-        prerequisite: '职业×3',
-      },
-    },
   },
   impl: cardImpl,
 })

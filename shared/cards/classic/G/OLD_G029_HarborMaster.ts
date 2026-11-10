@@ -19,14 +19,5 @@ export const OLD_G029_HarborMaster = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G029.png',
-    locales: {
-      zh: {
-        name: '港口管理员',
-        desc: [
-          '每当你使用钓鱼积累行动格时，额外获得1捆芦苇；每当其他玩家使用钓鱼积累行动格时，你获得1捆芦苇+1份食物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

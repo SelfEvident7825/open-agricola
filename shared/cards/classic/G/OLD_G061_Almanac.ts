@@ -19,12 +19,5 @@ export const OLD_G061_Almanac = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G061.png',
-    locales: {
-      zh: {
-        name: '历书',
-        desc: ['立即执行1次收割阶段和繁殖阶段使用后请将此卡交给下家，此卡将加入他的手牌。'],
-        prerequisite: '',
-      },
-    },
   },
 })

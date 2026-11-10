@@ -42,13 +42,6 @@ export const OLD_E58_AnimalYard = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E58.png',
-    locales: {
-      zh: {
-        name: '兽笼',
-        desc: ['此卡可以容纳两只任意种类的动物。（可被E59饮水槽和E29兽角笛扩充容量）'],
-        prerequisite: '职业×1',
-      },
-    },
     animalHolder: true,
   },
   impl: cardImpl,

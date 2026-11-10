@@ -19,12 +19,5 @@ export const OLD_NL046_Poorhouse = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL046.png',
-    locales: {
-      zh: {
-        name: '救济院',
-        desc: ['每回合开始时，你从食物最少的玩家中选择一位，这位玩家获得1食物'],
-        prerequisite: '',
-      },
-    },
   },
 })

@@ -17,12 +17,5 @@ export const OLD_WM029_HillFarmer = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM029.png',
-    locales: {
-      zh: {
-        name: '丘陵农夫',
-        desc: ['每当你围建至少1根栅栏或犁至少1块田时，如果你有恰好2/3间房，则你获得2/1份食物。'],
-        prerequisite: '',
-      },
-    },
   },
 })

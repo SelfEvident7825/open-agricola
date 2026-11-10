@@ -51,15 +51,6 @@ export const OLD_NL033_HerringPot = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/NL/NL033.png',
-    locales: {
-      zh: {
-        name: '烹鱼锅',
-        desc: [
-          '每当你使用钓鱼积累行动格时，在之后3个回合的行动格上各放1份食物，在这些回合开始时，你获得这份食物',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

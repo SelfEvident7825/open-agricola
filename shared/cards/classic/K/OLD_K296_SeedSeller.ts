@@ -43,13 +43,6 @@ export const OLD_K296_SeedSeller = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K296.png',
-    locales: {
-      zh: {
-        name: '种子贩售商',
-        desc: ['打出时立即获得1份小麦。每当你使用小麦种子行动格时，你额外获得1份小麦。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

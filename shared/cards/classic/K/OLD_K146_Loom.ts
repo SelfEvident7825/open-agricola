@@ -50,15 +50,6 @@ export const OLD_K146_Loom = defineMinorCard({
     passing: false,
     implemented: true,
     artUrl: '/assets/classic/K/K146.png',
-    locales: {
-      zh: {
-        name: '织布机',
-        desc: [
-          '每个丰收时节的收割阶段，若你有不少于1/4/7只羊，则你获得1/2/3份食物。游戏结束时，你每拥有3只羊便能额外获得1分。（卡牌提供的收割阶段不算）',
-        ],
-        prerequisite: '职业×2',
-      },
-    },
   },
   impl: cardImpl,
 })

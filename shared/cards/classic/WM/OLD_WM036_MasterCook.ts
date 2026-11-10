@@ -19,14 +19,5 @@ export const OLD_WM036_MasterCook = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM036.png',
-    locales: {
-      zh: {
-        name: '星级大厨',
-        desc: [
-          '每回合你可以将你的第1名家庭成员放到此卡上并获得2份食物和1名当回合使用的食客。(此食客继承该成员的限制条件)(若你发动此卡效果，将不能使用任何卡牌效果连续派遣你的第1、2名家庭成员)',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

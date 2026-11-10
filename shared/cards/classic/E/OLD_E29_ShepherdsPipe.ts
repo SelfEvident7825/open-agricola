@@ -40,13 +40,6 @@ export const OLD_E29_ShepherdsPipe = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E29.png',
-    locales: {
-      zh: {
-        name: '兽角笛',
-        desc: ['每个饲养羊的圈地可以额外饲养2只羊，每个圈地外的马厩可以饲养2只羊。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

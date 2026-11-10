@@ -91,15 +91,6 @@ export const OLD_I262_WaterCarrier = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I262.png',
-    locales: {
-      zh: {
-        name: '运水工',
-        desc: [
-          '一旦任意玩家打出了主发A10水井，在之后回合的行动格上各放置1份食物。这些回合开始时，你获得对应的食物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

@@ -19,14 +19,5 @@ export const OLD_FR069_CatLover = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR069.png',
-    locales: {
-      zh: {
-        name: '爱猫人',
-        desc: [
-          '如果你有至少1/2/4/7只动物(卡牌动物不算)，则你扩建的每间木屋花费可减少1/2/3/4个任意建筑资源。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

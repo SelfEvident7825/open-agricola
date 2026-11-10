@@ -18,14 +18,5 @@ export const OLD_NL047_EarlyGrain = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL047.png',
-    locales: {
-      zh: {
-        name: '早熟麦',
-        desc: [
-          '立刻从你的每个麦田上各收割1份小麦。算不算收割呢使用后请将此卡交给下家，此卡将加入他的手牌。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

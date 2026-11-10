@@ -32,13 +32,6 @@ export const OLD_K303_StoneBreaker = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K303.png',
-    locales: {
-      zh: {
-        name: '碎石工',
-        desc: ['任意时刻，你可以将你的砖屋翻修成石屋。（正常支付费用）'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

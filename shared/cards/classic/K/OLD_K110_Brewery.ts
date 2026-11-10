@@ -37,15 +37,6 @@ export const OLD_K110_Brewery = defineMinorCard({
     implemented: true,
     exchanges: [{ from: { grain: 1 }, to: { food: 3 }, triggers: ['harvest'], max: 1 }],
     artUrl: '/assets/classic/K/K110.png',
-    locales: {
-      zh: {
-        name: '酿酒厂',
-        desc: [
-          '每个丰收时节的喂养阶段，你可以使用此卡将至多1份小麦转化为3份食物。游戏结束时，你的第9份小麦额外获得1分。（田地里的小麦算作在内）',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

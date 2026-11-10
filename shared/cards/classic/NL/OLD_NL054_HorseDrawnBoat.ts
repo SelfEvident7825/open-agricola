@@ -23,14 +23,5 @@ export const OLD_NL054_HorseDrawnBoat = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL054.png',
-    locales: {
-      zh: {
-        name: '马拉船',
-        desc: [
-          '在之后每个回合的行动格上交替放置1份食物和1只羊，先放食物。在这些回合开始时，你获得相应的物品',
-        ],
-        prerequisite: '3职业',
-      },
-    },
   },
 })

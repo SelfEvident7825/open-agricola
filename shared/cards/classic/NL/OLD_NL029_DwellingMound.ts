@@ -16,12 +16,5 @@ export const OLD_NL029_DwellingMound = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL029.png',
-    locales: {
-      zh: {
-        name: '丘陵宅院',
-        desc: ['从现在起，无论使用何种方式，你每犁1块田之前，都必须先额外支付1份食物'],
-        prerequisite: '第2回合或之前',
-      },
-    },
   },
 })

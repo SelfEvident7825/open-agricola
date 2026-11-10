@@ -19,14 +19,5 @@ export const OLD_WA049_Caregiver = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WA/WA049.png',
-    locales: {
-      zh: {
-        name: '看护人',
-        desc: [
-          '在第12至14回合，你可以额外获得一名食客，但你不能用你的前两名家庭成员去使用第12至14回合的行动格。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

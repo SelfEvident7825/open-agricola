@@ -80,15 +80,6 @@ export const OLD_O07_BuildingTycoon = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/O/O07.png',
-    locales: {
-      zh: {
-        name: '建筑大亨',
-        desc: [
-          '每当其他玩家扩建至少1间房屋后，你可以支付给他1份食物来扩建恰好1间房屋。（照常支付建造费用）',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

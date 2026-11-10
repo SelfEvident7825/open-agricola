@@ -66,15 +66,6 @@ export const OLD_I248_NetFisherman = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I248.png',
-    locales: {
-      zh: {
-        name: '网鱼人',
-        desc: [
-          '每回合返家阶段，如果本回合你有家庭成员使用了获得芦苇的行动格，则你可以获得钓鱼积累行动格上的所有食物。（通过卡牌获得的芦苇不算）',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

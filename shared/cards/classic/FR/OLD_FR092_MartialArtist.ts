@@ -17,12 +17,5 @@ export const OLD_FR092_MartialArtist = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR092.png',
-    locales: {
-      zh: {
-        name: '武术家',
-        desc: ['每个丰收时节开始时，你可以弃掉至多2张次发卡，每张使你获得2份食物。'],
-        prerequisite: '',
-      },
-    },
   },
 })

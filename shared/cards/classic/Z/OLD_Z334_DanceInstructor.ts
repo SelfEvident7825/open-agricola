@@ -17,12 +17,5 @@ export const OLD_Z334_DanceInstructor = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/Z/Z334.png',
-    locales: {
-      zh: {
-        name: '舞蹈教师',
-        desc: ['打出此卡前，你先获得4份食物。打出此卡后，将此卡收回手牌。'],
-        prerequisite: '',
-      },
-    },
   },
 })

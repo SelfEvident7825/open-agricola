@@ -18,14 +18,5 @@ export const OLD_FR034_KitchenTable = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR034.png',
-    locales: {
-      zh: {
-        name: '厨房餐桌',
-        desc: [
-          '对你而言，“烤面包”行动变成“烤面包/支付1份食物到此卡”行动。任意时刻，你可以弃掉此卡上的1份食物来执行一次“烤面包”行动',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

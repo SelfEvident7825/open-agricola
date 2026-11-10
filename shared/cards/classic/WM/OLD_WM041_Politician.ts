@@ -19,14 +19,5 @@ export const OLD_WM041_Politician = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM041.png',
-    locales: {
-      zh: {
-        name: '政客',
-        desc: [
-          '打出此卡时，你获得1个石头。每回合限2次：任意时刻，你可以将1捆芦苇换成1个石头，或把1个石头换成1捆芦苇。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

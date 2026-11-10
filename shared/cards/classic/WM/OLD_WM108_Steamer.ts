@@ -24,18 +24,5 @@ export const OLD_WM108_Steamer = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM108.png',
-    locales: {
-      zh: {
-        name: '蒸锅',
-        desc: [
-          '任意时刻',
-          '[<GRAIN> <VEGETABLE> <ARROW> 5 <FOOD>]',
-          '[<GRAIN> <SHEEP> <ARROW> 4 <FOOD>]',
-          '[<GRAIN> <PIG> <ARROW> 5 <FOOD>]',
-          '[<GRAIN> <CATTLE> <ARROW> 6 <FOOD>]',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

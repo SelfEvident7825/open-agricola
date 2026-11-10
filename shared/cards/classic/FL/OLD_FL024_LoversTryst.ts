@@ -21,14 +21,5 @@ export const OLD_FL024_LoversTryst = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FL/FL024.png',
-    locales: {
-      zh: {
-        name: '情人幽会',
-        desc: [
-          '如果你在聚会场所行动格打出此卡，你可以选择不移动起始玩家标记并执行一次“生娃(需要空房间)”行动。使用后请将此卡交给下家，此卡将加入他的手牌。',
-        ],
-        prerequisite: '职业×2',
-      },
-    },
   },
 })

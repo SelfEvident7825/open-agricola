@@ -18,12 +18,5 @@ export const OLD_FR031_Heatwave = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR031.png',
-    locales: {
-      zh: {
-        name: '热浪',
-        desc: ['免费打出火炉或将火炉升级成壁炉使用后请将此卡交给下家，此卡将加入他的手牌。'],
-        prerequisite: '砖屋或石屋',
-      },
-    },
   },
 })

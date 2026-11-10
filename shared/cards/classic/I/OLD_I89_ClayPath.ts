@@ -31,13 +31,6 @@ export const OLD_I89_ClayPath = defineMinorCard({
     extraVp: true,
     implemented: true,
     artUrl: '/assets/classic/I/I89.png',
-    locales: {
-      zh: {
-        name: '砖头路',
-        desc: ['游戏结束时，拥有最有价值道路的玩家获得2分。(I94石板路>I89砖头路>I83木板路)'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

@@ -19,14 +19,5 @@ export const OLD_WA051_TravelAgent = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WA/WA051.png',
-    locales: {
-      zh: {
-        name: '旅行社代理人',
-        desc: [
-          '在此卡上放置1小麦+1木+1砖+1芦苇+1羊，每当任意玩家使用聚会场所（起始玩家）行动格前，你获得此卡上的1个物品。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

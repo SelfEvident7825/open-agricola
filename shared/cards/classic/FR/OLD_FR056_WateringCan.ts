@@ -20,14 +20,5 @@ export const OLD_FR056_WateringCan = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR056.png',
-    locales: {
-      zh: {
-        name: '洒水壶',
-        desc: [
-          '立即在你所有已播种的田上额外放置1份对应作物麦子/蔬菜有效使用后请将此卡交给下家，此卡将加入他的手牌。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

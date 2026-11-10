@@ -18,12 +18,5 @@ export const OLD_WM095_MountainCave = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM095.png',
-    locales: {
-      zh: {
-        name: '山洞',
-        desc: ['每次丰收时节，你可以将至多1个木头转换为1个石头。'],
-        prerequisite: '',
-      },
-    },
   },
 })

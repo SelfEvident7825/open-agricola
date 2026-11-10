@@ -17,12 +17,5 @@ export const OLD_WM028_Herdsman = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM028.png',
-    locales: {
-      zh: {
-        name: '放牧人',
-        desc: ['每当你使用临时工行动格时，你额外获得1只羊。第6回合起，改为额外获得1只羊/1只猪。'],
-        prerequisite: '',
-      },
-    },
   },
 })

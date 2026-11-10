@@ -16,12 +16,5 @@ export const OLD_FR022_FullbottomedWig = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR022.png',
-    locales: {
-      zh: {
-        name: '法式假发',
-        desc: ['你翻修时不需支付芦苇'],
-        prerequisite: '羊×3',
-      },
-    },
   },
 })

@@ -24,13 +24,6 @@ export const OLD_E177_WoodenHutBuilder = defineOccupationCard({
     extraVp: true,
     implemented: true,
     artUrl: '/assets/classic/E/E177.png',
-    locales: {
-      zh: {
-        name: '木屋建筑工',
-        desc: ['游戏结束时，你所拥有的每间木屋都额外获得1分。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

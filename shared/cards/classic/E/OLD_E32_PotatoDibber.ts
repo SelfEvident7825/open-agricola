@@ -69,13 +69,6 @@ export const OLD_E32_PotatoDibber = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E32.png',
-    locales: {
-      zh: {
-        name: '土豆挖掘器',
-        desc: ['每当你播种蔬菜时，在每块新播种的菜田上额外叠放1份蔬菜。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

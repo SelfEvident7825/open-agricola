@@ -45,13 +45,6 @@ export const OLD_E38_MadonnaStatue = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E38.png',
-    locales: {
-      zh: {
-        name: '圣母像',
-        desc: ['打出此卡时，你必须弃掉2张你已打出的发展卡。'],
-        prerequisite: '见下文',
-      },
-    },
   },
   impl: cardImpl,
 })

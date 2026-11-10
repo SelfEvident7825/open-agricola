@@ -18,12 +18,5 @@ export const OLD_NL014_Ditch = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL014.png',
-    locales: {
-      zh: {
-        name: '壕沟',
-        desc: ['每当你犁一块田，你可以把蔬菜播种在两块直角相邻的田的交界处。'],
-        prerequisite: '家庭成员×3',
-      },
-    },
   },
 })

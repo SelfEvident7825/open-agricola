@@ -51,15 +51,6 @@ export const OLD_K268_Pieceworker = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K268.png',
-    locales: {
-      zh: {
-        name: '计件工',
-        desc: [
-          '每当你从行动格上获得木/砖/芦苇/石头/小麦时，对于每种资源，你可以支付1份食物来额外获得1个对应资源。当你从行动格上获得蔬菜时，可以支付2份食物来额外获得1份蔬菜。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

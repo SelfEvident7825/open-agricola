@@ -20,14 +20,5 @@ export const OLD_WA030_RiverPort = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WA/WA030.png',
-    locales: {
-      zh: {
-        name: '河运港口',
-        desc: [
-          '每回合工作阶段开始时，查看场上拥有单一资源最多的积累行动格，你可以支付1份食物购买至多1份此种资源(一样多则你选择1种资源)',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

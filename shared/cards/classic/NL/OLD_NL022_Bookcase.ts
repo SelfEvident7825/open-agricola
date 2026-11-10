@@ -43,13 +43,6 @@ export const OLD_NL022_Bookcase = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/NL/NL022.png',
-    locales: {
-      zh: {
-        name: '书柜',
-        desc: ['每当你打出1个职业后，你额外获得1份蔬菜如果通过职业打出此卡，可以获得此蔬菜。'],
-        prerequisite: '职业×1',
-      },
-    },
   },
   impl: cardImpl,
 })

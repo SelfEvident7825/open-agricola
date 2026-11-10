@@ -177,15 +177,6 @@ export const OLD_K267_AdoptiveParents = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K267.png',
-    locales: {
-      zh: {
-        name: '养父母',
-        desc: [
-          '每当你执行“生娃”行动后，你可以支付1份食物将新增的家庭成员放到家中，并在后续轮次派遣他。若如此做，此家庭成员将不算作“新生儿”。（本回合先“生娃”后打出此卡，可发动此卡效果）',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

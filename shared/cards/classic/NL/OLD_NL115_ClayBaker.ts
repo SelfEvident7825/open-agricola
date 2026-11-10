@@ -17,12 +17,5 @@ export const OLD_NL115_ClayBaker = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL115.png',
-    locales: {
-      zh: {
-        name: '黏土烘焙师',
-        desc: ['打出此卡时，你获得2个砖头。任意时刻，你可以将1砖转换成1食物。'],
-        prerequisite: '',
-      },
-    },
   },
 })

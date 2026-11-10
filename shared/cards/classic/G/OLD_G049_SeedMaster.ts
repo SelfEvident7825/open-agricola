@@ -19,14 +19,5 @@ export const OLD_G049_SeedMaster = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G049.png',
-    locales: {
-      zh: {
-        name: '播种能手',
-        desc: [
-          '你可以随时将个人供应区的1份蔬菜转化为1份小麦。你可以随时支付1份食物，将个人供应区的1份小麦转化为1份蔬菜。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

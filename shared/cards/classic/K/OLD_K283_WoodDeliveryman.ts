@@ -38,15 +38,6 @@ export const OLD_K283_WoodDeliveryman = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K283.png',
-    locales: {
-      zh: {
-        name: '运木工',
-        desc: [
-          '在第8至14回合中尚未开启的回合行动格上各放置1根木头。这些回合开始时，你获得对应的木头。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

@@ -18,12 +18,5 @@ export const OLD_FL029_BirdTrap = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FL/FL029.png',
-    locales: {
-      zh: {
-        name: '捕鸟器',
-        desc: ['每个丰收时节的收割阶段，你获得1份食物，并且可以从至多1块田上额外收割至多1份作物'],
-        prerequisite: '麦田×1',
-      },
-    },
   },
 })

@@ -70,15 +70,6 @@ export const OLD_E341_Guildmaster = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E341.png',
-    locales: {
-      zh: {
-        name: '公会主席',
-        desc: [
-          '打出此卡后，每当你打出I258家具匠/A7家具工坊、E214制陶工/A8陶艺工坊、E183编筐工/A9编筐工坊时，你对应获得4木、4砖、3芦苇。若打出此卡时，你已拥有上述某卡，对于每张卡，你获得对应的2个资源。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

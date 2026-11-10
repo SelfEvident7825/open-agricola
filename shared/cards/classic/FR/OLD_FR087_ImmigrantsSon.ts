@@ -19,14 +19,5 @@ export const OLD_FR087_ImmigrantsSon = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR087.png',
-    locales: {
-      zh: {
-        name: '移民者的儿子',
-        desc: [
-          '打出此卡后，当你打出你的第5、6、7个职业时，你可以犁一块田。(打出此卡时不能触发)WM070发条人可以触发。E148智者可以犁两块。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

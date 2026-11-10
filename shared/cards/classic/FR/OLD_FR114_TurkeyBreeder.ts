@@ -19,14 +19,5 @@ export const OLD_FR114_TurkeyBreeder = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR114.png',
-    locales: {
-      zh: {
-        name: '火鸡饲养员',
-        desc: [
-          '打出此卡时，你可以免费建造至多4根栅栏+1个马厩。最后一个丰收时节结束时，你必须退还4根木头，每少退还1根木头，你必须领取1张乞讨卡。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

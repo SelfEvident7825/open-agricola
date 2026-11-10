@@ -21,14 +21,5 @@ export const OLD_NL013_GrasshopperBundles = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL013.png',
-    locales: {
-      zh: {
-        name: '蚱蜢',
-        desc: [
-          '繁殖阶段时，如果你可以繁殖羊/猪/牛，且你刚好有0-3/4-7/8+份田地里的小麦，则你额外获得1只新生的羊/猪/牛。',
-        ],
-        prerequisite: '圈地×2',
-      },
-    },
   },
 })

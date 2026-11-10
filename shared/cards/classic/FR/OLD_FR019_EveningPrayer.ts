@@ -19,12 +19,5 @@ export const OLD_FR019_EveningPrayer = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR019.png',
-    locales: {
-      zh: {
-        name: '晚祷',
-        desc: ['如果你有1/2个田地板块，则立即支付1/2份食物作为技能培训费打出1/2张职业卡'],
-        prerequisite: '职业=0',
-      },
-    },
   },
 })

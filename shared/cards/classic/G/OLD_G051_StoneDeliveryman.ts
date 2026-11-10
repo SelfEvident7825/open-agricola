@@ -17,12 +17,5 @@ export const OLD_G051_StoneDeliveryman = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G051.png',
-    locales: {
-      zh: {
-        name: '运石工',
-        desc: ['在第8,10,12和14回合的行动格上各放1个石头。这些回合开始时，你获得对应的石头。'],
-        prerequisite: '',
-      },
-    },
   },
 })

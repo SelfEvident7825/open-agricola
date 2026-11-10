@@ -19,14 +19,5 @@ export const OLD_C01_Governor = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/C/C01.png',
-    locales: {
-      zh: {
-        name: '统治者',
-        desc: [
-          '从牌库中抽取4张职业卡，并从中选择其中2张加入手牌。如果满足条件，你可以立即免费打出其中1张。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

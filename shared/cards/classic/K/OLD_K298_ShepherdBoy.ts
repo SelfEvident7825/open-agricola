@@ -68,15 +68,6 @@ export const OLD_K298_ShepherdBoy = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K298.png',
-    locales: {
-      zh: {
-        name: '放羊的男孩',
-        desc: [
-          '一旦你的房屋等级是石屋，在之后回合的行动格上各放置1只羊。这些回合开始时，你获得对应的羊。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

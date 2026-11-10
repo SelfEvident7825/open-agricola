@@ -43,13 +43,6 @@ export const OLD_K111_BreadPaddle = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K111.png',
-    locales: {
-      zh: {
-        name: '面包托铲',
-        desc: ['每当你打出1张职业卡后，额外获得1次“烤面包”行动。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

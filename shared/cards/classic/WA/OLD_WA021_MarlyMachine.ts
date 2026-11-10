@@ -19,12 +19,5 @@ export const OLD_WA021_MarlyMachine = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WA/WA021.png',
-    locales: {
-      zh: {
-        name: '泥磨机',
-        desc: ['回合开始时，如果有至少1名玩家获得水井的食物，则你获得1份食物壁炉台砖屋或石'],
-        prerequisite: '其他玩家有水井',
-      },
-    },
   },
 })

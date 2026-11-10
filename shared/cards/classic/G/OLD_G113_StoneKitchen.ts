@@ -18,12 +18,5 @@ export const OLD_G113_StoneKitchen = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G113.png',
-    locales: {
-      zh: {
-        name: '石制厨房',
-        desc: ['任意时刻：“烤面包”行动'],
-        prerequisite: '',
-      },
-    },
   },
 })

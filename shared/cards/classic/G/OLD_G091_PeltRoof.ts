@@ -21,14 +21,5 @@ export const OLD_G091_PeltRoof = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G091.png',
-    locales: {
-      zh: {
-        name: '毛皮屋顶',
-        desc: [
-          '你每将2羊/1猪/1牛转换成食物时，从游戏供应区拿取1芦苇放在此卡上，你在扩建/翻修房屋时可以使用此卡上的芦苇',
-        ],
-        prerequisite: '职业×2',
-      },
-    },
   },
 })

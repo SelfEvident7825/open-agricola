@@ -49,15 +49,6 @@ export const OLD_K116_Granary = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K116.png',
-    locales: {
-      zh: {
-        name: '粮仓',
-        desc: [
-          '打出此卡时，在第8,10,12回合行动格上各放1份小麦。这些回合开始时，你获得对应的小麦。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

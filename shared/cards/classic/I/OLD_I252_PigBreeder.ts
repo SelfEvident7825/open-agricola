@@ -53,13 +53,6 @@ export const OLD_I252_PigBreeder = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I252.png',
-    locales: {
-      zh: {
-        name: '野猪哺育师',
-        desc: ['打出时立即获得1头猪。在第12回合结束时，你的猪将会进行一次繁殖。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

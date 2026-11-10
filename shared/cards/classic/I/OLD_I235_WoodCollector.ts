@@ -42,13 +42,6 @@ export const OLD_I235_WoodCollector = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I235.png',
-    locales: {
-      zh: {
-        name: '拾木工',
-        desc: ['在之后5个回合的行动格上各放1根木头。这些回合开始时，你获得对应的木头。'],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

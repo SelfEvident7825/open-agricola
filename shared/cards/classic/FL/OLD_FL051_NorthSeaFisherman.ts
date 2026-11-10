@@ -19,14 +19,5 @@ export const OLD_FL051_NorthSeaFisherman = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FL/FL051.png',
-    locales: {
-      zh: {
-        name: '北海渔民',
-        desc: [
-          '每当你使用本回合新翻开的回合行动格时，你可以获得钓鱼积累行动格上的所有食物。其他玩家使用钓鱼积累行动格时额外获得1份食物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

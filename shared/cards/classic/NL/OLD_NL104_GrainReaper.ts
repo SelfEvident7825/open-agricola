@@ -19,14 +19,5 @@ export const OLD_NL104_GrainReaper = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL104.png',
-    locales: {
-      zh: {
-        name: '小麦收割工',
-        desc: [
-          '在你使用犁田/粮食耕种[犁播]行动格前，你可以收割一次作物。（这不算作丰收时节的收割行动）',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

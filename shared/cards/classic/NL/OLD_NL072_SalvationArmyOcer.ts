@@ -19,14 +19,5 @@ export const OLD_NL072_SalvationArmyOcer = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL072.png',
-    locales: {
-      zh: {
-        name: '救世军军官',
-        desc: [
-          '每回合新翻开回合行动卡之前，如果有其他玩家没有食物，你可以从个人供应区给该玩家1份食物并选择从游戏供应区获得1小麦/木头/砖头/芦苇或羊。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

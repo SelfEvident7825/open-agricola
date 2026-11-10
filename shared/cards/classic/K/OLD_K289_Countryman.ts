@@ -51,15 +51,6 @@ export const OLD_K289_Countryman = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K289.png',
-    locales: {
-      zh: {
-        name: '乡下人',
-        desc: [
-          '每回合所有玩家派遣完家庭成员后，你可以将1个你在小麦种子或蔬菜种子行动格上的家庭成员移动到一个未被占用的（）可以提供"播种"行动的行动格并使用该格。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

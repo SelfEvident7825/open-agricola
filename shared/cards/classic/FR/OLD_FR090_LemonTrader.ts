@@ -17,12 +17,5 @@ export const OLD_FR090_LemonTrader = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR090.png',
-    locales: {
-      zh: {
-        name: '柠檬交易商',
-        desc: ['每回合限2次：你可以支付1份小麦/1份蔬菜获得1/2个不同的建筑资源。'],
-        prerequisite: '',
-      },
-    },
   },
 })

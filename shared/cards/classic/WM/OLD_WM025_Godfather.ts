@@ -17,12 +17,5 @@ export const OLD_WM025_Godfather = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM025.png',
-    locales: {
-      zh: {
-        name: '教父',
-        desc: ['每当你使用与已被占用的生儿育女/求子心切行动格正交相邻的行动格前，你获得1份小麦。'],
-        prerequisite: '',
-      },
-    },
   },
 })

@@ -21,14 +21,5 @@ export const OLD_NL021_LargeGreenhouse = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/NL/NL021.png',
-    locales: {
-      zh: {
-        name: '大型温室',
-        desc: [
-          '将当前回合数加5,7,9，在这些回合的行动格上各放1份蔬菜，这些回合开始时，你获得这份蔬菜',
-        ],
-        prerequisite: '职业×2',
-      },
-    },
   },
 })

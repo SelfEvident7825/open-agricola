@@ -19,14 +19,5 @@ export const OLD_FR120_WritingManiac = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR120.png',
-    locales: {
-      zh: {
-        name: '写作狂人',
-        desc: [
-          '在第5、7、9和11回合行动格上各倒扣你的1张职业牌，这些回合开始时，你可以支付2份食物打出这张职业卡，否则收回手牌。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

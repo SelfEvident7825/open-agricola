@@ -18,12 +18,5 @@ export const OLD_G086_ItinerantLaborers = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/G/G086.png',
-    locales: {
-      zh: {
-        name: '流动雇工',
-        desc: ['打出时获得一次“播种”行动使用后请将此卡交给下家，此卡将加入他的手牌。'],
-        prerequisite: '',
-      },
-    },
   },
 })

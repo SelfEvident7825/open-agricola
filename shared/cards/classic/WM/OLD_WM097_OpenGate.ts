@@ -18,12 +18,5 @@ export const OLD_WM097_OpenGate = defineMinorCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/WM/WM097.png',
-    locales: {
-      zh: {
-        name: '散养区',
-        desc: ['每个丰收时节的喂养阶段前，你可以支付至多1只羊并额外获得1分。'],
-        prerequisite: '',
-      },
-    },
   },
 })

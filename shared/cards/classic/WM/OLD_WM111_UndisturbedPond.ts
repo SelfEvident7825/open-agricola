@@ -21,14 +21,5 @@ export const OLD_WM111_UndisturbedPond = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/WM/WM111.png',
-    locales: {
-      zh: {
-        name: '原状池塘',
-        desc: [
-          '计算已过的完整回合数，在接下来的这个数目的行动格上各放置1份食物，这些回合开始时，你获得这份食物',
-        ],
-        prerequisite: '职业=0',
-      },
-    },
   },
 })

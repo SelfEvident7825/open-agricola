@@ -20,15 +20,6 @@ export const OLD_I75_HandMill = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I75.png',
-    locales: {
-      zh: {
-        name: '手磨机',
-        desc: [
-          '每个丰收时节的喂养阶段，你可以将至多2份小麦各转化为2份食物。（这不算作“烤面包”行动）',
-        ],
-        prerequisite: '',
-      },
-    },
     exchanges: [
       {
         from: {

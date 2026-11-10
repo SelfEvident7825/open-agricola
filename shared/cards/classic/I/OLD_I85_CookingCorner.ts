@@ -18,13 +18,6 @@ export const OLD_I85_CookingCorner = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/I/I85.png',
-    locales: {
-      zh: {
-        name: '烹饪角',
-        desc: ['任意时刻：“烤面包”行动'],
-        prerequisite: '退还壁炉',
-      },
-    },
     returnCards: ['Major_CookingHearth1', 'Major_CookingHearth2', 'OLD_K128_CookingHearth'],
     isCookery: true,
     isBaking: true,

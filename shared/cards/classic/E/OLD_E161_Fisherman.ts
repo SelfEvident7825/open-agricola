@@ -86,15 +86,6 @@ export const OLD_E161_Fisherman = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E161.png',
-    locales: {
-      zh: {
-        name: '渔夫',
-        desc: [
-          '每当你使用钓鱼积累行动格时，你可以获得等于该行动格两倍数量的食物。然后你要付给E12鱼竿、E22木筏、E30独木舟 、I95鱼篓、K126渔网的玩家各1份食物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

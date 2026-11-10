@@ -17,12 +17,5 @@ export const OLD_FR089_LandscapeGardener = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR089.png',
-    locales: {
-      zh: {
-        name: '园艺大师',
-        desc: ['打出此卡时，你获得1次“播种”行动。此卡视为2块田。(不参与计分)'],
-        prerequisite: '',
-      },
-    },
   },
 })

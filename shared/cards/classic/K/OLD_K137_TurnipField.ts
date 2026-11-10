@@ -35,13 +35,6 @@ export const OLD_K137_TurnipField = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K137.png',
-    locales: {
-      zh: {
-        name: '萝卜地',
-        desc: ['打出此卡时，你获得1次“播种”行动。此卡视为1块田地，但此卡只能种植蔬菜。'],
-        prerequisite: '职业×3',
-      },
-    },
   },
   presentation: { cardFields: true },
   impl: cardImpl,

@@ -30,15 +30,6 @@ export const OLD_K306_AnimalTamer = defineOccupationCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K306.png',
-    locales: {
-      zh: {
-        name: '驯兽师',
-        desc: [
-          '你的房屋里不再总计限养1只动物了，而改为能在你的每间房屋里各饲养1只任意种类的动物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
   impl: cardImpl,
 })

@@ -20,14 +20,5 @@ export const OLD_PI23_ShelterintheField = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/PI/PI23.png',
-    locales: {
-      zh: {
-        name: 'Iron Hoe',
-        desc: [
-          'At the end of each work phase, if you occupy both the __Grain Seeds__ and __Vegetable Seeds__ action spaces, you can plow 1 field.',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

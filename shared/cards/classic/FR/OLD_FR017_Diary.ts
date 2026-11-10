@@ -21,14 +21,5 @@ export const OLD_FR017_Diary = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR017.png',
-    locales: {
-      zh: {
-        name: '日记本',
-        desc: [
-          '每当你打出1张职业卡时，你额外获得1根木头。如果打出某张职业卡时同时打出此卡，可获得此木头。',
-        ],
-        prerequisite: '职业×2',
-      },
-    },
   },
 })

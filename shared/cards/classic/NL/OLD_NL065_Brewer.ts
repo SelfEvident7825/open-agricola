@@ -17,12 +17,5 @@ export const OLD_NL065_Brewer = defineOccupationCard({
     extraVp: true,
     implemented: false,
     artUrl: '/assets/classic/NL/NL065.png',
-    locales: {
-      zh: {
-        name: '酿酒师',
-        desc: ['在每个丰收时节为结束的回合结束时，你可用此卡将至多1份小麦转化成3份食物或1分。'],
-        prerequisite: '',
-      },
-    },
   },
 })

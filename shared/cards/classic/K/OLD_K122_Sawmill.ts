@@ -47,15 +47,6 @@ export const OLD_K122_Sawmill = defineMinorCard({
     joineryIdentity: true,
     exchanges: [{ from: { wood: 1 }, to: { food: 3 }, triggers: ['harvest'], max: 1 }],
     artUrl: '/assets/classic/K/K122.png',
-    locales: {
-      zh: {
-        name: '大家具工坊',
-        desc: [
-          '每个丰收时节，你可以将至多1根木头转化为3份食物。游戏结束时，如果你有2/4/5+根木头，额外获得1/2/3分。(多余的木头不能再用于A7家具工坊的计分)（本卡牌可算作1张次发/1张主发，但只算作1张发展卡。',
-        ],
-        prerequisite: '退还A7家具工坊',
-      },
-    },
   },
   impl: cardImpl,
 })

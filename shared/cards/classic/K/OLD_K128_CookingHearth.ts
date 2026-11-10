@@ -32,13 +32,6 @@ export const OLD_K128_CookingHearth = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/K/K128.png',
-    locales: {
-      zh: {
-        name: '壁炉',
-        desc: ['任意时刻：“烤面包”行动：火炉：A1/A2火炉、E20简易火炉'],
-        prerequisite: '退还火炉',
-      },
-    },
   },
   impl: cardImpl,
 })

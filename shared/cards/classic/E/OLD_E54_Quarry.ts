@@ -38,13 +38,6 @@ export const OLD_E54_Quarry = defineMinorCard({
     extraVp: false,
     implemented: true,
     artUrl: '/assets/classic/E/E54.png',
-    locales: {
-      zh: {
-        name: '采石场',
-        desc: ['每当你使用临时工行动格时，额外获得3个石头。'],
-        prerequisite: '职业×4',
-      },
-    },
   },
   impl: cardImpl,
 })

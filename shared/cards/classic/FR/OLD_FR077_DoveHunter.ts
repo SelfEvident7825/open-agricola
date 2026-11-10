@@ -17,14 +17,5 @@ export const OLD_FR077_DoveHunter = defineOccupationCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FR/FR077.png',
-    locales: {
-      zh: {
-        name: '鸽子猎人',
-        desc: [
-          '每个丰收时节的喂养阶段，你可以将至多1只羊转化为4份食物，或将至多1头牛转化为6份食物。',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })

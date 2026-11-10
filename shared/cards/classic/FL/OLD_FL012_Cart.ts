@@ -18,14 +18,5 @@ export const OLD_FL012_Cart = defineMinorCard({
     extraVp: false,
     implemented: false,
     artUrl: '/assets/classic/FL/FL012.png',
-    locales: {
-      zh: {
-        name: '马车',
-        desc: [
-          '如果某个行动格上有至少6木/5砖/4芦苇/3石头，则只有你可以派遣第一名家庭成员使用该格W',
-        ],
-        prerequisite: '',
-      },
-    },
   },
 })
